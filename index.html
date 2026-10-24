@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SSD ROM Tool</title>
+<meta name="description" content="Программа для специалистов по восстановлению данных: определяет SSD, возвращает «зависшие» накопители к жизни, снимает образ и достаёт файлы.">
+<link rel="canonical" href="https://ssdtool.ai/">
+<link rel="alternate" hreflang="ru" href="https://ssdtool.ai/">
+<link rel="alternate" hreflang="en" href="https://ssdtool.ai/en/">
+<link rel="alternate" hreflang="x-default" href="https://ssdtool.ai/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SSD ROM Tool">
+<meta property="og:title" content="SSD ROM Tool">
+<meta property="og:description" content="Программа для специалистов по восстановлению данных: определяет SSD, возвращает «зависшие» накопители к жизни, снимает образ и достаёт файлы.">
+<meta property="og:url" content="https://ssdtool.ai/">
+<meta property="og:locale" content="ru_RU">
+<meta name="theme-color" content="#8E6B58">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Mono:wght@400;600&family=Onest:wght@400;500;600;700&display=swap">
+<style>
+/* Concept: a framed scene after the owner's reference. A dusk sky, hills and a field in warm taupe; the product (an SSD board,
+   drawn here in isometric projection) stands where the reference has a house; big capital serif type, a white floating card,
+   one brown note card.  Everything is a token, the second theme is a night version of the same scene. */
+:root {
+  --page: #E8E6E7; --surface: #FBFAF9; --ink: #2A1D17; --muted: #6B5B53; --line: #D9D2CE; --brown: #8E6B58;
+  --brown-ink: #F7EEE8; --accent: #B84F18; --accent-ink: #FFFFFF; --pill: #3B2A22; --pill-ink: #F7EEE8;
+  --sky1: #C7C6D4; --sky2: #E6D3C8; --hill1: #A6AABA; --hill2: #8E8F7D; --field1: #6E6C49; --field2: #4F4D33;
+  --hero-ink: #2A1D17; --field-ink: #F6EEE6; --glass: rgba(255, 255, 255, 0.93); --slab-top: #B58F78; --slab-left: #8C6852; --slab-right: #6F513F;
+  --chip-top: #4B515E; --chip-left: #353A45; --chip-right: #262B34; --soft: #F1ECE9;
+  --serif: "Cormorant Garamond", "Cormorant", Georgia, "Times New Roman", serif;
+  --sans: "Onest", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  --gutter: clamp(16px, 3vw, 28px); --radius: 26px; color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page: #12100F; --surface: #1C1917; --ink: #F1E8E1; --muted: #B3A59B; --line: #34302D; --brown: #7A5B49;
+    --brown-ink: #F7EEE8; --accent: #F08A4B; --accent-ink: #1A0F08; --pill: #F1E8E1; --pill-ink: #1B1210;
+    --sky1: #1A1F2E; --sky2: #3A2D38; --hill1: #2B3244; --hill2: #2A2F36; --field1: #2B2D1D; --field2: #1E2014;
+    --hero-ink: #F1E8E1; --field-ink: #F6EEE6; --glass: rgba(28, 25, 23, 0.92); --slab-top: #A8836C; --slab-left: #7C5B47; --slab-right: #5E4334;
+    --chip-top: #5A6070; --chip-left: #434856; --chip-right: #313640; --soft: #231F1D; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --page: #12100F; --surface: #1C1917; --ink: #F1E8E1; --muted: #B3A59B; --line: #34302D; --brown: #7A5B49;
+  --brown-ink: #F7EEE8; --accent: #F08A4B; --accent-ink: #1A0F08; --pill: #F1E8E1; --pill-ink: #1B1210;
+  --sky1: #1A1F2E; --sky2: #3A2D38; --hill1: #2B3244; --hill2: #2A2F36; --field1: #2B2D1D; --field2: #1E2014;
+  --hero-ink: #F1E8E1; --field-ink: #F6EEE6; --glass: rgba(28, 25, 23, 0.92); --slab-top: #A8836C; --slab-left: #7C5B47; --slab-right: #5E4334;
+  --chip-top: #5A6070; --chip-left: #434856; --chip-right: #313640; --soft: #231F1D; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+body { margin: 0; background: var(--page); color: var(--ink); font: 400 1.0625rem/1.6 var(--sans); -webkit-text-size-adjust: 100%; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+p { margin: 0; }
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+.serif { font-family: var(--serif); }
+.wrap { max-width: 1180px; margin-inline: auto; padding-inline: var(--gutter); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 15px 30px; border-radius: 999px;
+       font: 600 0.9rem/1 var(--sans); letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none;
+       background: var(--pill); color: var(--pill-ink); border: 0; transition: transform .15s; }
+.btn:hover { transform: translateY(-1px); }
+.btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* the scene */
+.frame { padding: var(--gutter); }
+.hero { position: relative; border-radius: var(--radius); overflow: hidden; color: var(--hero-ink);
+        background: linear-gradient(180deg, var(--sky1) 0%, var(--sky2) 70%); isolation: isolate; }
+.hills { position: absolute; inset: auto 0 0 0; width: 100%; height: 52%; z-index: -1; }
+.hero-inner { display: grid; gap: clamp(20px, 3vw, 36px); padding: clamp(18px, 3vw, 34px); }
+.nav { display: flex; align-items: center; gap: 16px 34px; }
+.logo { display: flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; letter-spacing: -0.01em; }
+.logo-mark { width: 28px; height: 28px; flex: none; }
+.logo span { white-space: nowrap; }
+.nav nav { display: flex; gap: 6px 30px; margin-inline: auto; font-size: 0.82rem; }
+.nav nav a { text-decoration: none; padding: 6px 0; opacity: .82; }
+.nav nav a:hover { opacity: 1; text-decoration: underline; text-underline-offset: 5px; }
+.nav-right { display: flex; align-items: center; gap: 22px; margin-left: auto; font-size: 0.78rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+.nav nav + .nav-right { margin-left: 0; }
+.lang { display: flex; gap: 10px; align-items: center; }
+.lang a { text-decoration: none; opacity: .65; } .lang a:hover { opacity: 1; }
+.lang span { padding-right: 10px; border-right: 1px solid currentColor; }
+.nav-download { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1.5px; }
+
+.top { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(16px, 3vw, 40px); align-items: start; }
+.headline { padding-block: clamp(10px, 4vw, 54px) 0; display: grid; gap: 22px; justify-items: start; }
+h1.serif { font-weight: 500; text-transform: uppercase; font-size: clamp(3rem, 9.4vw, 7.6rem); line-height: .94; letter-spacing: .01em; }
+h1 span { display: block; }
+.slash { font-size: 1rem; opacity: .85; }
+.slash::before { content: "/ "; } .slash::after { content: " /"; }
+
+.right { position: relative; min-width: 0; padding-bottom: 150px; }
+.card { background: var(--glass); color: var(--ink); border-radius: 30px; padding: 26px 26px 210px; display: grid; gap: 14px;
+        box-shadow: 0 22px 50px -26px rgba(40, 25, 15, .45); position: relative; z-index: 1; backdrop-filter: blur(6px); }
+.tags { display: flex; gap: 8px; flex-wrap: wrap; }
+.tags span { font-size: .72rem; font-weight: 600; padding: 6px 13px; border-radius: 999px; border: 1px solid var(--line); }
+.tags span:last-child { background: var(--pill); color: var(--pill-ink); border-color: var(--pill); }
+.card h2 { font: 500 1.3rem/1.2 var(--sans); }
+.card p { color: var(--muted); font-size: .88rem; }
+.passport { background: var(--soft); border-radius: 18px; padding: 14px 16px; display: grid; gap: 3px; position: relative; }
+.passport pre { margin: 0; font: 400 .78rem/1.65 var(--mono); white-space: pre-wrap; overflow-wrap: anywhere; color: var(--muted); }
+.passport b { color: var(--ink); font-weight: 600; }
+.passport .tag { position: absolute; top: -10px; right: 14px; font: 600 .66rem/1 var(--mono); color: var(--accent); background: var(--surface);
+                 border: 1px solid var(--accent); border-radius: 999px; padding: 4px 9px; text-transform: uppercase; letter-spacing: .06em; }
+.scene { position: absolute; z-index: 2; width: min(98%, 540px); right: 0; bottom: 0; height: auto; }
+
+.bottom { display: grid; grid-template-columns: minmax(0, 330px) minmax(0, 1fr) minmax(0, 340px); gap: clamp(16px, 3vw, 40px); align-items: end;
+          padding-top: clamp(28px, 6vw, 70px); }
+.callout { background: var(--brown); color: var(--brown-ink); border-radius: 28px; padding: 22px 22px 18px; display: grid;
+           grid-template-columns: minmax(0, 1fr) 118px; gap: 8px 10px; align-items: center; }
+.callout h3 { font: 500 1.1rem/1.2 var(--sans); }
+.callout p { font-size: .8rem; opacity: .85; margin-top: 6px; }
+.copy-art { width: 118px; height: auto; }
+.stat { display: grid; gap: 2px; justify-items: center; text-align: center; color: var(--field-ink); }
+.stat b { font: italic 500 clamp(3rem, 6vw, 4.6rem)/1 var(--serif); }
+.stat span { font-size: .8rem; max-width: 18em; opacity: .85; }
+.tag-line { display: grid; gap: 14px; justify-items: start; color: var(--field-ink); }
+.tag-line p { font: 500 clamp(1.15rem, 2vw, 1.6rem)/1.2 var(--serif); text-transform: uppercase; letter-spacing: .05em; }
+.tag-line a { font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; text-underline-offset: 6px; }
+
+/* the rest of the page */
+.facts ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.facts li { padding: 8px clamp(12px, 2vw, 24px); border-left: 1px solid var(--line); display: grid; gap: 2px; align-content: start; }
+.facts li:first-child { border-left: 0; padding-left: 0; }
+.facts strong { font-weight: 600; } .facts span { color: var(--muted); font-size: .88rem; }
+section { padding-block: clamp(48px, 8vw, 104px); }
+.facts-sec { padding-block: clamp(28px, 4vw, 44px) 0; }
+.head { display: grid; gap: 14px; max-width: 36em; margin-bottom: clamp(26px, 4vw, 46px); }
+h2.serif { font-weight: 500; text-transform: uppercase; font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1; letter-spacing: .01em; }
+.head p { color: var(--muted); font-size: 1.15rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 16px; }
+.cell { background: var(--surface); border-radius: 26px; padding: 28px 26px 30px; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.cell .ico { width: 54px; height: 54px; border-radius: 50%; background: var(--soft); display: grid; place-items: center; }
+.cell svg { width: 26px; height: 26px; fill: none; stroke: var(--accent); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.cell h3 { font: 600 1.15rem/1.25 var(--sans); }
+.cell p { color: var(--muted); }
+.care { margin-top: 16px; background: var(--brown); color: var(--brown-ink); border-radius: 26px; padding: 26px 28px; display: grid; gap: 8px; }
+.care h3 { font: 500 1.7rem/1.1 var(--serif); text-transform: uppercase; letter-spacing: .02em; }
+.care p { max-width: 46em; opacity: .92; }
+.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(18px, 3vw, 36px); list-style: none; margin: 0; padding: 0; }
+.steps li { border-top: 1.5px solid var(--ink); padding-top: 18px; display: grid; gap: 8px; align-content: start; }
+.steps .n { font: italic 500 2.6rem/1 var(--serif); color: var(--accent); }
+.steps h3 { font: 600 1.15rem/1.25 var(--sans); } .steps p { color: var(--muted); }
+.who { margin-top: clamp(30px, 5vw, 56px); max-width: 44em; display: grid; gap: 10px; }
+.who h3 { font: 500 1.7rem/1.1 var(--serif); text-transform: uppercase; letter-spacing: .02em; }
+.who p { color: var(--muted); font-size: 1.15rem; }
+.faq { max-width: 52em; border-top: 1px solid var(--line); }
+details { border-bottom: 1px solid var(--line); }
+summary { cursor: pointer; list-style: none; padding: 20px 44px 20px 0; font-weight: 600; position: relative; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; position: absolute; right: 6px; top: 14px; font: 400 1.7rem/1.2 var(--mono); color: var(--accent); }
+details[open] summary::after { content: "–"; }
+details p { color: var(--muted); padding: 0 44px 22px 0; max-width: 44em; }
+.final { margin: var(--gutter); border-radius: var(--radius); background: var(--brown); color: var(--brown-ink); }
+.final .wrap { display: flex; flex-wrap: wrap; gap: 22px 40px; align-items: center; justify-content: space-between; padding-block: clamp(36px, 6vw, 72px); }
+.final h2 { font: 500 clamp(2rem, 4.6vw, 3.4rem)/1 var(--serif); text-transform: uppercase; }
+.final p { opacity: .85; margin-top: 10px; }
+.final .btn { background: var(--surface); color: var(--ink); }
+footer { padding-block: 10px 30px; color: var(--muted); font-size: .88rem; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 10px 24px; justify-content: space-between; }
+
+@media (max-width: 980px) {
+  .top { grid-template-columns: minmax(0, 1fr); }
+  .right { padding-bottom: 0; }
+  .card { padding-bottom: 26px; }
+  .scene { position: static; width: min(100%, 520px); margin: -6px auto -28px; display: block; }
+  .bottom { grid-template-columns: minmax(0, 1fr); gap: 22px; padding-top: 6px; }
+  .stat, .tag-line { justify-items: start; text-align: left; }
+}
+@media (max-width: 720px) {
+  .nav nav { display: none; }
+  .nav-right { gap: 14px; }
+  .facts ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .facts li:nth-child(3) { border-left: 0; padding-left: 0; }
+  .facts li:nth-child(n+3) { border-top: 1px solid var(--line); padding-top: 14px; margin-top: 8px; }
+  .steps { grid-template-columns: minmax(0, 1fr); }
+  .callout { grid-template-columns: minmax(0, 1fr) 96px; } .copy-art { width: 96px; }
+}
+</style>
+</head>
+<body>
+<div class="frame"><header class="hero">
+  <svg class="hills" viewBox="0 0 1200 260" preserveAspectRatio="none" aria-hidden="true"><path d="M0 150 L90 120 L170 142 L260 96 L330 128 L420 84 L520 132 L610 112 L700 140 L800 100 L900 138 L1010 106 L1110 134 L1200 112 L1200 260 L0 260Z" fill="var(--hill1)"/><path d="M0 176 C160 150 280 188 430 170 C600 150 720 190 880 172 C1020 156 1110 176 1200 164 L1200 260 L0 260Z" fill="var(--hill2)"/><path d="M0 206 C200 190 360 214 560 200 C760 186 980 212 1200 196 L1200 260 L0 260Z" fill="var(--field1)"/><path d="M0 232 C240 222 480 240 720 230 C920 222 1080 236 1200 228 L1200 260 L0 260Z" fill="var(--field2)"/></svg>
+  <div class="hero-inner">
+    <div class="nav">
+      <a class="logo" href="/"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="8" fill="var(--accent)"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="var(--accent-ink)" stroke-width="2"/><circle cx="16" cy="16" r="2.6" fill="var(--accent-ink)"/><path d="M22.5 22.5l3.5 3.5" stroke="var(--accent-ink)" stroke-width="2.4" stroke-linecap="round"/></svg><span>SSD ROM Tool</span></a>
+      <nav aria-label="Разделы страницы"><a href="#features">Возможности</a><a href="#how">Как это работает</a><a href="#faq">Вопросы</a></nav>
+      <div class="nav-right"><div class="lang" aria-label="Язык"><span>RU</span><a href="/en/" hreflang="en" lang="en" aria-label="English">EN</a></div>
+        <a class="nav-download" href="https://yadi.sk/d/Y9lu8DDmLLZ0_w" rel="noopener">Скачать</a></div>
+    </div>
+    <div class="top">
+      <div class="headline">
+        <h1 class="serif"><span>Данные</span><span>вернутся</span></h1>
+        <p class="slash">программа для восстановления данных с SSD</p>
+        <a class="btn" href="https://yadi.sk/d/Y9lu8DDmLLZ0_w" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4.500-4.500M12 15l4.500-4.500M5 20h14"/></svg>Скачать для Windows</a>
+      </div>
+      <div class="right">
+        <div class="card">
+          <div class="tags"><span>SATA</span><span>NVMe</span><span>USB</span></div>
+          <h2>Паспорт накопителя</h2>
+          <p>Что с диском, ещё до начала работы</p>
+          <div class="passport"><span class="tag">пример</span><pre><b>Модель диска - Example SSD 512GB</b>
+<b>Прошивка - FW 2.1</b>
+Серийный номер - 0000-0000
+<b>Память: 3D TLC, 8 микросхем</b>
+<b>Объём диска - 512 ГБ</b></pre></div>
+        </div>
+        <svg class="scene" viewBox="0 0 490 340" role="img" aria-label="SSD" preserveAspectRatio="xMidYMid meet"><defs><filter id="soft" x="-20%" y="-20%" width="140%" height="160%"><feGaussianBlur stdDeviation="9"/></filter></defs><polygon points="160.0,70.0 478.7,254.0 333.2,338.0 14.5,154.0" fill="#000" opacity=".28" filter="url(#soft)"/><polygon points="471.8,226.0 333.2,306.0 333.2,292.4 471.8,212.4" fill="var(--slab-right)"/><polygon points="21.4,126.0 333.2,306.0 333.2,292.4 21.4,112.4" fill="var(--slab-left)"/><polygon points="160.0,32.4 471.8,212.4 333.2,292.4 21.4,112.4" fill="var(--slab-top)"/><polygon points="194.6,100.4 139.2,132.4 139.2,120.4 194.6,88.4" fill="var(--chip-right)"/><polygon points="87.3,102.4 139.2,132.4 139.2,120.4 87.3,90.4" fill="var(--chip-left)"/><polygon points="142.7,58.4 194.6,88.4 139.2,120.4 87.3,90.4" fill="var(--chip-top)"/><polygon points="312.4,140.4 263.9,168.4 263.9,156.4 312.4,128.4" fill="var(--chip-right)"/><polygon points="191.2,126.4 263.9,168.4 263.9,156.4 191.2,114.4" fill="var(--chip-left)"/><polygon points="239.7,86.4 312.4,128.4 263.9,156.4 191.2,114.4" fill="var(--chip-top)"/><polygon points="257.0,172.4 208.5,200.4 208.5,188.4 257.0,160.4" fill="var(--chip-right)"/><polygon points="135.8,158.4 208.5,200.4 208.5,188.4 135.8,146.4" fill="var(--chip-left)"/><polygon points="184.2,118.4 257.0,160.4 208.5,188.4 135.8,146.4" fill="var(--chip-top)"/><polygon points="395.6,188.4 347.1,216.4 347.1,204.4 395.6,176.4" fill="var(--chip-right)"/><polygon points="274.3,174.4 347.1,216.4 347.1,204.4 274.3,162.4" fill="var(--chip-left)"/><polygon points="322.8,134.4 395.6,176.4 347.1,204.4 274.3,162.4" fill="var(--chip-top)"/><polygon points="340.1,220.4 291.6,248.4 291.6,236.4 340.1,208.4" fill="var(--chip-right)"/><polygon points="218.9,206.4 291.6,248.4 291.6,236.4 218.9,194.4" fill="var(--chip-left)"/><polygon points="267.4,166.4 340.1,208.4 291.6,236.4 218.9,194.4" fill="var(--chip-top)"/><polygon points="451.3,218.6 440.9,224.6 440.9,223.4 451.3,217.4" fill="var(--accent)"/><polygon points="428.5,217.4 440.9,224.6 440.9,223.4 428.5,216.2" fill="var(--accent)"/><polygon points="438.9,210.2 451.3,217.4 440.9,223.4 428.5,216.2" fill="var(--accent)"/><polygon points="432.3,229.6 421.9,235.6 421.9,234.4 432.3,228.4" fill="var(--accent)"/><polygon points="409.4,228.4 421.9,235.6 421.9,234.4 409.4,227.2" fill="var(--accent)"/><polygon points="419.8,221.2 432.3,228.4 421.9,234.4 409.4,227.2" fill="var(--accent)"/><polygon points="413.2,240.6 402.8,246.6 402.8,245.4 413.2,239.4" fill="var(--accent)"/><polygon points="390.4,239.4 402.8,246.6 402.8,245.4 390.4,238.2" fill="var(--accent)"/><polygon points="400.8,232.2 413.2,239.4 402.8,245.4 390.4,238.2" fill="var(--accent)"/><polygon points="394.2,251.6 383.8,257.6 383.8,256.4 394.2,250.4" fill="var(--accent)"/><polygon points="371.3,250.4 383.8,257.6 383.8,256.4 371.3,249.2" fill="var(--accent)"/><polygon points="381.7,243.2 394.2,250.4 383.8,256.4 371.3,249.2" fill="var(--accent)"/><polygon points="375.1,262.6 364.7,268.6 364.7,267.4 375.1,261.4" fill="var(--accent)"/><polygon points="352.3,261.4 364.7,268.6 364.7,267.4 352.3,260.2" fill="var(--accent)"/><polygon points="362.6,254.2 375.1,261.4 364.7,267.4 352.3,260.2" fill="var(--accent)"/><polygon points="356.1,273.6 345.7,279.6 345.7,278.4 356.1,272.4" fill="var(--accent)"/><polygon points="333.2,272.4 345.7,279.6 345.7,278.4 333.2,271.2" fill="var(--accent)"/><polygon points="343.6,265.2 356.1,272.4 345.7,278.4 333.2,271.2" fill="var(--accent)"/></svg>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="callout"><div><h3>Работает с копией!</h3><p>Снимает полный образ диска и дальше работает с ним.</p></div><svg class="copy-art" viewBox="0 0 190 150" aria-hidden="true"><polygon points="153.5,63.9 118.2,84.3 118.2,78.5 153.5,58.1" fill="var(--slab-right)"/><polygon points="38.7,38.4 118.2,84.3 118.2,78.5 38.7,32.6" fill="var(--slab-left)"/><polygon points="74.0,12.2 153.5,58.1 118.2,78.5 38.7,32.6" fill="var(--slab-top)"/><polygon points="95.3,32.2 76.2,43.2 76.2,38.1 95.3,27.1" fill="var(--chip-right)"/><polygon points="57.1,32.2 76.2,43.2 76.2,38.1 57.1,27.1" fill="var(--chip-left)"/><polygon points="76.2,16.0 95.3,27.1 76.2,38.1 57.1,27.1" fill="var(--chip-top)"/><polygon points="120.4,46.6 101.2,57.7 101.2,52.6 120.4,41.5" fill="var(--chip-right)"/><polygon points="80.6,45.8 101.2,57.7 101.2,52.6 80.6,40.7" fill="var(--chip-left)"/><polygon points="99.8,29.6 120.4,41.5 101.2,52.6 80.6,40.7" fill="var(--chip-top)"/><polygon points="144.8,60.8 140.4,63.3 140.4,62.8 144.8,60.2" fill="var(--accent)"/><polygon points="135.1,60.2 140.4,63.3 140.4,62.8 135.1,59.7" fill="var(--accent)"/><polygon points="139.5,57.2 144.8,60.2 140.4,62.8 135.1,59.7" fill="var(--accent)"/><polygon points="136.7,65.4 132.3,68.0 132.3,67.5 136.7,64.9" fill="var(--accent)"/><polygon points="127.0,64.9 132.3,68.0 132.3,67.5 127.0,64.4" fill="var(--accent)"/><polygon points="131.4,61.9 136.7,64.9 132.3,67.5 127.0,64.4" fill="var(--accent)"/><polygon points="128.6,70.1 124.2,72.7 124.2,72.1 128.6,69.6" fill="var(--accent)"/><polygon points="118.9,69.6 124.2,72.7 124.2,72.1 118.9,69.1" fill="var(--accent)"/><polygon points="123.3,66.5 128.6,69.6 124.2,72.1 118.9,69.1" fill="var(--accent)"/><polygon points="120.5,74.8 116.1,77.3 116.1,76.8 120.5,74.3" fill="var(--accent)"/><polygon points="110.8,74.3 116.1,77.3 116.1,76.8 110.8,73.8" fill="var(--accent)"/><polygon points="115.2,71.2 120.5,74.3 116.1,76.8 110.8,73.8" fill="var(--accent)"/><polygon points="112.4,79.5 108.0,82.0 108.0,81.5 112.4,78.9" fill="var(--accent)"/><polygon points="102.7,78.9 108.0,82.0 108.0,81.5 102.7,78.4" fill="var(--accent)"/><polygon points="107.1,75.9 112.4,78.9 108.0,81.5 102.7,78.4" fill="var(--accent)"/><polygon points="104.3,84.1 99.9,86.7 99.9,86.2 104.3,83.6" fill="var(--accent)"/><polygon points="94.6,83.6 99.9,86.7 99.9,86.2 94.6,83.1" fill="var(--accent)"/><polygon points="99.0,80.6 104.3,83.6 99.9,86.2 94.6,83.1" fill="var(--accent)"/><polygon points="153.5,46.9 118.2,67.3 118.2,61.5 153.5,41.1" fill="var(--slab-right)"/><polygon points="38.7,21.4 118.2,67.3 118.2,61.5 38.7,15.6" fill="var(--slab-left)"/><polygon points="74.0,-4.8 153.5,41.1 118.2,61.5 38.7,15.6" fill="var(--slab-top)"/><polygon points="95.3,15.2 76.2,26.2 76.2,21.1 95.3,10.1" fill="var(--chip-right)"/><polygon points="57.1,15.2 76.2,26.2 76.2,21.1 57.1,10.1" fill="var(--chip-left)"/><polygon points="76.2,-1.0 95.3,10.1 76.2,21.1 57.1,10.1" fill="var(--chip-top)"/><polygon points="120.4,29.6 101.2,40.7 101.2,35.6 120.4,24.5" fill="var(--chip-right)"/><polygon points="80.6,28.8 101.2,40.7 101.2,35.6 80.6,23.7" fill="var(--chip-left)"/><polygon points="99.8,12.6 120.4,24.5 101.2,35.6 80.6,23.7" fill="var(--chip-top)"/><polygon points="144.8,43.8 140.4,46.3 140.4,45.8 144.8,43.2" fill="var(--accent)"/><polygon points="135.1,43.2 140.4,46.3 140.4,45.8 135.1,42.7" fill="var(--accent)"/><polygon points="139.5,40.2 144.8,43.2 140.4,45.8 135.1,42.7" fill="var(--accent)"/><polygon points="136.7,48.4 132.3,51.0 132.3,50.5 136.7,47.9" fill="var(--accent)"/><polygon points="127.0,47.9 132.3,51.0 132.3,50.5 127.0,47.4" fill="var(--accent)"/><polygon points="131.4,44.9 136.7,47.9 132.3,50.5 127.0,47.4" fill="var(--accent)"/><polygon points="128.6,53.1 124.2,55.7 124.2,55.1 128.6,52.6" fill="var(--accent)"/><polygon points="118.9,52.6 124.2,55.7 124.2,55.1 118.9,52.1" fill="var(--accent)"/><polygon points="123.3,49.5 128.6,52.6 124.2,55.1 118.9,52.1" fill="var(--accent)"/><polygon points="120.5,57.8 116.1,60.3 116.1,59.8 120.5,57.3" fill="var(--accent)"/><polygon points="110.8,57.3 116.1,60.3 116.1,59.8 110.8,56.8" fill="var(--accent)"/><polygon points="115.2,54.2 120.5,57.3 116.1,59.8 110.8,56.8" fill="var(--accent)"/><polygon points="112.4,62.5 108.0,65.0 108.0,64.5 112.4,61.9" fill="var(--accent)"/><polygon points="102.7,61.9 108.0,65.0 108.0,64.5 102.7,61.4" fill="var(--accent)"/><polygon points="107.1,58.9 112.4,61.9 108.0,64.5 102.7,61.4" fill="var(--accent)"/><polygon points="104.3,67.1 99.9,69.7 99.9,69.2 104.3,66.6" fill="var(--accent)"/><polygon points="94.6,66.6 99.9,69.7 99.9,69.2 94.6,66.1" fill="var(--accent)"/><polygon points="99.0,63.6 104.3,66.6 99.9,69.2 94.6,66.1" fill="var(--accent)"/></svg></div>
+      <div class="stat"><b>13</b><span>семейств SSD, с которыми программа умеет работать</span></div>
+      <div class="tag-line"><p>Возвращает диск к жизни и достаёт файлы</p><a href="#features">Подробнее</a></div>
+    </div>
+  </div>
+</header></div>
+
+<main>
+<section class="facts-sec facts"><div class="wrap"><ul><li><strong>Один файл</strong><span>без установки и настройки</span></li><li><strong>Windows 10 и 11</strong><span>64-разрядные</span></li><li><strong>Русский / English</strong><span>интерфейс переключается</span></li><li><strong>Обновляется сама</strong><span>новые версии подтягиваются</span></li></ul></div></section>
+
+<section id="features"><div class="wrap">
+  <div class="head"><h2 class="serif">Что она делает</h2><p>Всё, что нужно на столе у специалиста: от первого взгляда на диск до готовых файлов.</p></div>
+  <div class="grid"><div class="cell"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></svg></div><h3>Узнаёт диск сама</h3><p>Подключили накопитель, и программа сразу показывает, что это за диск, в каком он состоянии и из какой памяти собран.</p></div><div class="cell"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 10h5M7 14h10"/></svg></div><h3>Настоящий паспорт</h3><p>Модель, прошивка, серийный номер и ёмкость берутся из самого накопителя. Они видны, даже когда Windows показывает диск пустым или на пару мегабайт.</p></div><div class="cell"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l2.2-5 4 10 2.3-5H21"/></svg></div><h3>Оживляет «зависшие» диски</h3><p>Помогает вернуть в рабочее состояние SSD, которые не определяются или застряли в аварийном режиме. Для поддерживаемых моделей.</p></div><div class="cell"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg></div><h3>Работает с копией</h3><p>Снимает полный образ диска и дальше работает с ним. Исходный накопитель после этого можно не трогать.</p></div><div class="cell"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><h3>Показывает файлы до сохранения</h3><p>Находит разделы и файлы, открывает документы, фотографии и PDF и сохраняет только то, что нужно.</p></div><div class="cell"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/><path d="M12 8v4l3 2"/></svg></div><h3>Возвращает прежнее состояние</h3><p>Для части дисков умеет вернуться к одному из прежних состояний, чтобы достать то, что было удалено или потеряно после сбоя.</p></div></div>
+  <div class="care"><h3>Осторожно с чужими данными</h3><p>Каждое действие названо понятно. Всё, что меняет диск, вынесено в отдельные кнопки, и перед записью программа сохраняет служебные данные накопителя, где это возможно.</p></div>
+</div></section>
+
+<section id="how" style="padding-top:0"><div class="wrap">
+  <div class="head"><h2 class="serif">Как это работает</h2></div>
+  <ol class="steps"><li><span class="n">1</span><h3>Подключите диск</h3><p>Напрямую по SATA или NVMe, через USB-переходник или в порт для флешек.</p></li><li><span class="n">2</span><h3>Посмотрите паспорт</h3><p>Программа определит накопитель и покажет, что с ним и что с ним можно сделать.</p></li><li><span class="n">3</span><h3>Снимите образ и достаньте файлы</h3><p>Образ сохраняется на ваш компьютер. Из него извлекаются файлы, которые вы выберете.</p></li></ol>
+  <div class="who"><h3>Для кого</h3><p>Для мастерских по восстановлению данных, сервисных центров и ИТ-специалистов, которым приходят диски, переставшие открываться.</p></div>
+</div></section>
+
+<section id="faq" style="padding-top:0"><div class="wrap">
+  <div class="head"><h2 class="serif">Вопросы</h2></div>
+  <div class="faq"><details><summary>Какие диски поддерживаются?</summary><p>SATA, NVMe и USB-накопители разных производителей. Список растёт с каждой версией. Если диска нет в списке, программа так и скажет и не станет угадывать.</p></details><details><summary>Гарантируете результат?</summary><p>Нет. Результат зависит от состояния накопителя. Если микросхемы памяти повреждены физически, программа не поможет.</p></details><details><summary>Нужен ли интернет?</summary><p>Для работы с диском нет. Интернет нужен для обновлений и для загрузки служебных данных под отдельные модели.</p></details><details><summary>Windows предупреждает о незнакомом файле</summary><p>Файл пока не подписан сертификатом издателя, поэтому при первом запуске Windows может попросить подтверждение. Нажмите «Подробнее», затем «Выполнить в любом случае».</p></details></div>
+</div></section>
+
+<div class="final"><div class="wrap">
+  <div><h2>Попробуйте на своём диске</h2><p>Скачайте программу и посмотрите, что она покажет.</p></div>
+  <a class="btn" href="https://yadi.sk/d/Y9lu8DDmLLZ0_w" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4.500-4.500M12 15l4.500-4.500M5 20h14"/></svg>Скачать для Windows</a>
+</div></div>
+</main>
+
+<footer><div class="wrap"><span>SSD ROM Tool. Программа для специалистов по восстановлению данных с SSD.</span><span>© 2026 · ssdtool.ai</span></div></footer>
+</body>
+</html>
