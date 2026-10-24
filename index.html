@@ -1,252 +1,678 @@
-<!doctype html>
-<html lang="ru">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SSD ROM Tool</title>
-<meta name="description" content="Программа для специалистов по восстановлению данных: определяет SSD, возвращает «зависшие» накопители к жизни, снимает образ и достаёт файлы.">
-<link rel="canonical" href="https://ssdtool.ai/">
-<link rel="alternate" hreflang="ru" href="https://ssdtool.ai/">
-<link rel="alternate" hreflang="en" href="https://ssdtool.ai/en/">
-<link rel="alternate" hreflang="x-default" href="https://ssdtool.ai/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="SSD ROM Tool">
-<meta property="og:title" content="SSD ROM Tool">
-<meta property="og:description" content="Программа для специалистов по восстановлению данных: определяет SSD, возвращает «зависшие» накопители к жизни, снимает образ и достаёт файлы.">
-<meta property="og:url" content="https://ssdtool.ai/">
-<meta property="og:locale" content="ru_RU">
-<meta name="theme-color" content="#8E6B58">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Mono:wght@400;600&family=Onest:wght@400;500;600;700&display=swap">
-<style>
-/* Concept: a framed scene after the owner's reference. A dusk sky, hills and a field in warm taupe; the product (an SSD board,
-   drawn here in isometric projection) stands where the reference has a house; big capital serif type, a white floating card,
-   one brown note card.  Everything is a token, the second theme is a night version of the same scene. */
-:root {
-  --page: #E8E6E7; --surface: #FBFAF9; --ink: #2A1D17; --muted: #6B5B53; --line: #D9D2CE; --brown: #8E6B58;
-  --brown-ink: #F7EEE8; --accent: #B84F18; --accent-ink: #FFFFFF; --pill: #3B2A22; --pill-ink: #F7EEE8;
-  --sky1: #C7C6D4; --sky2: #E6D3C8; --hill1: #A6AABA; --hill2: #8E8F7D; --field1: #6E6C49; --field2: #4F4D33;
-  --hero-ink: #2A1D17; --field-ink: #F6EEE6; --glass: rgba(255, 255, 255, 0.93); --slab-top: #B58F78; --slab-left: #8C6852; --slab-right: #6F513F;
-  --chip-top: #4B515E; --chip-left: #353A45; --chip-right: #262B34; --soft: #F1ECE9;
-  --serif: "Cormorant Garamond", "Cormorant", Georgia, "Times New Roman", serif;
-  --sans: "Onest", "Segoe UI", system-ui, -apple-system, sans-serif;
-  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
-  --gutter: clamp(16px, 3vw, 28px); --radius: 26px; color-scheme: light;
+<!DOCTYPE html> <html> <head> <meta charset="utf-8" /> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--metatextblock--> <title>SSD ROM Tool</title> <meta name="description" content="SSD ROM Tool - SM2263XT, SM2259XT2, SM2258XT, SM3281, YS9082HP, RTS5735DLQ, RTS5766DL, PS3111" /> <meta property="og:url" content="https://kostikn.github.io/ssdtool-site/" /> <meta property="og:title" content="SSD ROM Tool" /> <meta property="og:description" content="SSD ROM Tool - SM2263XT, SM2259XT2, SM2258XT, SM3281, YS9082HP, RTS5735DLQ, RTS5766DL, PS3111" /> <meta property="og:type" content="website" /> <link rel="canonical" href="https://kostikn.github.io/ssdtool-site/"> <!--/metatextblock--> <meta name="format-detection" content="telephone=no" /> <meta http-equiv="x-dns-prefetch-control" content="on"> <link rel="dns-prefetch" href="https://ws.tildacdn.com"> <link rel="dns-prefetch" href="https://static.tildacdn.pub"> <!--favicons--> <link rel="icon" href="favicon.svg" type="image/svg+xml"/> <!--/favicons--> <!-- Assets --> <script src="https://neo.tildacdn.com/js/tilda-fallback-1.0.min.js" async charset="utf-8"></script> <link rel="stylesheet" href="https://static.tildacdn.pub/css/tilda-grid-3.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';"/> <link rel="stylesheet" href="https://static.tildacdn.pub/ws/project47962609/tilda-blocks-page304949209.min.css?t=1792753539" type="text/css" media="all" onerror="this.loaderr='y';" /> <link rel="stylesheet" href="https://static.tildacdn.pub/css/fonts-tildasans.css" type="text/css" media="all" onerror="this.loaderr='y';" /> <script nomodule src="https://static.tildacdn.pub/js/tilda-polyfill-1.0.min.js" charset="utf-8"></script> <script type="text/javascript">function t_onReady(func) {if(document.readyState!='loading') {func();} else {document.addEventListener('DOMContentLoaded',func);}}
+function t_onFuncLoad(funcName,okFunc,time) {if(typeof window[funcName]==='function') {okFunc();} else {setTimeout(function() {t_onFuncLoad(funcName,okFunc,time);},(time||100));}}</script> <script src="https://static.tildacdn.pub/js/tilda-scripts-3.0.min.js" charset="utf-8" defer onerror="this.loaderr='y';"></script> <script src="https://static.tildacdn.pub/ws/project47962609/tilda-blocks-page304949209.min.js?t=1792753539" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="https://static.tildacdn.pub/js/tilda-lazyload-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="https://static.tildacdn.pub/js/tilda-events-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script type="text/javascript">window.dataLayer=window.dataLayer||[];</script> <script type="text/javascript">(function() {var ttt='cebo';var tt='oog';var re=new RegExp("bot|g" + tt + "le|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|fa" + ttt + "ok","i");if((re.test(navigator.userAgent))===false&&typeof(sessionStorage)!='undefined'&&sessionStorage.getItem('visited')!=='y'&&document.visibilityState){var style=document.createElement('style');style.type='text/css';style.innerHTML='@media screen and (min-width: 980px) {.t-records {opacity: 0;}.t-records_animated {-webkit-transition: opacity ease-in-out .2s;-moz-transition: opacity ease-in-out .2s;-o-transition: opacity ease-in-out .2s;transition: opacity ease-in-out .2s;}.t-records.t-records_visible {opacity: 1;}}';document.getElementsByTagName('head')[0].appendChild(style);function t_setvisRecs(){var alr=document.querySelectorAll('.t-records');Array.prototype.forEach.call(alr,function(el) {el.classList.add("t-records_animated");});setTimeout(function() {Array.prototype.forEach.call(alr,function(el) {el.classList.add("t-records_visible");});sessionStorage.setItem("visited","y");},400);}
+document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();</script></head> <body class="t-body" style="margin:0;"> <!--allrecords--> <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="47962609" data-tilda-page-id="304949209" data-tilda-formskey="0f20c9abd80499eb3b4e0b8d47962609" data-tilda-cookie="no" data-tilda-lazy="yes" data-tilda-root-zone="com" data-tilda-project-country="RU"> <div id="rec4771968201" class="r t-rec" style=" " data-record-type="1370"> <!-- T1370 --> <div class="t1370"> <!-- nominify begin --> <style>
+.vb-k7t,
+.vb-k7t * { box-sizing: border-box; }
+.vb-k7t input,
+.vb-k7t textarea,
+.vb-k7t select { font: inherit; }
+
+.vb-k7t {
+  --vb-bg: #E7DFD3;
+  --vb-surface: #F5F0E8;
+  --vb-surface-2: #EFE8DD;
+  --vb-ink: #2A211A;
+  --vb-muted: #6B5D50;
+  --vb-line: #D5CBBB;
+  --vb-accent: #A94F2E;
+  --vb-accent-ink: #FBF6EF;
+  --vb-chip: #E6DBCB;
+  --vb-shadow: 0 18px 40px -28px rgba(52, 38, 26, 0.45);
+  --vb-font-head: var(--t-headline-font, Georgia, "Times New Roman", serif);
+  --vb-font-text: var(--t-text-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif);
+  background: var(--vb-bg);
+  color: var(--vb-ink);
+  font-family: var(--vb-font-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --page: #12100F; --surface: #1C1917; --ink: #F1E8E1; --muted: #B3A59B; --line: #34302D; --brown: #7A5B49;
-    --brown-ink: #F7EEE8; --accent: #F08A4B; --accent-ink: #1A0F08; --pill: #F1E8E1; --pill-ink: #1B1210;
-    --sky1: #1A1F2E; --sky2: #3A2D38; --hill1: #2B3244; --hill2: #2A2F36; --field1: #2B2D1D; --field2: #1E2014;
-    --hero-ink: #F1E8E1; --field-ink: #F6EEE6; --glass: rgba(28, 25, 23, 0.92); --slab-top: #A8836C; --slab-left: #7C5B47; --slab-right: #5E4334;
-    --chip-top: #5A6070; --chip-left: #434856; --chip-right: #313640; --soft: #231F1D; color-scheme: dark;
+  .vb-k7t {
+    --vb-bg: #191512;
+    --vb-surface: #241E19;
+    --vb-surface-2: #1F1A15;
+    --vb-ink: #EFE7DB;
+    --vb-muted: #B5A695;
+    --vb-line: #3A3128;
+    --vb-accent: #D8794F;
+    --vb-accent-ink: #1C1512;
+    --vb-chip: #F0E7D9;
+    --vb-shadow: 0 18px 40px -26px rgba(0, 0, 0, 0.7);
   }
 }
-:root[data-theme="dark"] {
-  --page: #12100F; --surface: #1C1917; --ink: #F1E8E1; --muted: #B3A59B; --line: #34302D; --brown: #7A5B49;
-  --brown-ink: #F7EEE8; --accent: #F08A4B; --accent-ink: #1A0F08; --pill: #F1E8E1; --pill-ink: #1B1210;
-  --sky1: #1A1F2E; --sky2: #3A2D38; --hill1: #2B3244; --hill2: #2A2F36; --field1: #2B2D1D; --field2: #1E2014;
-  --hero-ink: #F1E8E1; --field-ink: #F6EEE6; --glass: rgba(28, 25, 23, 0.92); --slab-top: #A8836C; --slab-left: #7C5B47; --slab-right: #5E4334;
-  --chip-top: #5A6070; --chip-left: #434856; --chip-right: #313640; --soft: #231F1D; color-scheme: dark;
+
+.vb-k7t h1,
+.vb-k7t h2,
+.vb-k7t h3 {
+  font-family: var(--vb-font-head);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  margin: 0;
 }
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
-body { margin: 0; background: var(--page); color: var(--ink); font: 400 1.0625rem/1.6 var(--sans); -webkit-text-size-adjust: 100%; }
-a { color: inherit; }
-:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
-p { margin: 0; }
-h1, h2, h3 { margin: 0; text-wrap: balance; }
-.serif { font-family: var(--serif); }
-.wrap { max-width: 1180px; margin-inline: auto; padding-inline: var(--gutter); }
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 15px 30px; border-radius: 999px;
-       font: 600 0.9rem/1 var(--sans); letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none;
-       background: var(--pill); color: var(--pill-ink); border: 0; transition: transform .15s; }
-.btn:hover { transform: translateY(-1px); }
-.btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.vb-k7t p { margin: 0; text-wrap: pretty; }
+.vb-k7t a { color: inherit; }
+.vb-k7t img { display: block; max-width: 100%; }
+.vb-k7t ol,
+.vb-k7t ul { margin: 0; padding: 0; list-style: none; }
 
-/* the scene */
-.frame { padding: var(--gutter); }
-.hero { position: relative; border-radius: var(--radius); overflow: hidden; color: var(--hero-ink);
-        background: linear-gradient(180deg, var(--sky1) 0%, var(--sky2) 70%); isolation: isolate; }
-.hills { position: absolute; inset: auto 0 0 0; width: 100%; height: 52%; z-index: -1; }
-.hero-inner { display: grid; gap: clamp(20px, 3vw, 36px); padding: clamp(18px, 3vw, 34px); }
-.nav { display: flex; align-items: center; gap: 16px 34px; }
-.logo { display: flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; letter-spacing: -0.01em; }
-.logo-mark { width: 28px; height: 28px; flex: none; }
-.logo span { white-space: nowrap; }
-.nav nav { display: flex; gap: 6px 30px; margin-inline: auto; font-size: 0.82rem; }
-.nav nav a { text-decoration: none; padding: 6px 0; opacity: .82; }
-.nav nav a:hover { opacity: 1; text-decoration: underline; text-underline-offset: 5px; }
-.nav-right { display: flex; align-items: center; gap: 22px; margin-left: auto; font-size: 0.78rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
-.nav nav + .nav-right { margin-left: 0; }
-.lang { display: flex; gap: 10px; align-items: center; }
-.lang a { text-decoration: none; opacity: .65; } .lang a:hover { opacity: 1; }
-.lang span { padding-right: 10px; border-right: 1px solid currentColor; }
-.nav-download { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1.5px; }
-
-.top { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(16px, 3vw, 40px); align-items: start; }
-.headline { padding-block: clamp(10px, 4vw, 54px) 0; display: grid; gap: 22px; justify-items: start; }
-h1.serif { font-weight: 500; text-transform: uppercase; font-size: clamp(3rem, 9.4vw, 7.6rem); line-height: .94; letter-spacing: .01em; }
-h1 span { display: block; }
-.slash { font-size: 1rem; opacity: .85; }
-.slash::before { content: "/ "; } .slash::after { content: " /"; }
-
-.right { position: relative; min-width: 0; padding-bottom: 150px; }
-.card { background: var(--glass); color: var(--ink); border-radius: 30px; padding: 26px 26px 210px; display: grid; gap: 14px;
-        box-shadow: 0 22px 50px -26px rgba(40, 25, 15, .45); position: relative; z-index: 1; backdrop-filter: blur(6px); }
-.tags { display: flex; gap: 8px; flex-wrap: wrap; }
-.tags span { font-size: .72rem; font-weight: 600; padding: 6px 13px; border-radius: 999px; border: 1px solid var(--line); }
-.tags span:last-child { background: var(--pill); color: var(--pill-ink); border-color: var(--pill); }
-.card h2 { font: 500 1.3rem/1.2 var(--sans); }
-.card p { color: var(--muted); font-size: .88rem; }
-.passport { background: var(--soft); border-radius: 18px; padding: 14px 16px; display: grid; gap: 3px; position: relative; }
-.passport pre { margin: 0; font: 400 .78rem/1.65 var(--mono); white-space: pre-wrap; overflow-wrap: anywhere; color: var(--muted); }
-.passport b { color: var(--ink); font-weight: 600; }
-.passport .tag { position: absolute; top: -10px; right: 14px; font: 600 .66rem/1 var(--mono); color: var(--accent); background: var(--surface);
-                 border: 1px solid var(--accent); border-radius: 999px; padding: 4px 9px; text-transform: uppercase; letter-spacing: .06em; }
-.scene { position: absolute; z-index: 2; width: min(98%, 540px); right: 0; bottom: 0; height: auto; }
-
-.bottom { display: grid; grid-template-columns: minmax(0, 330px) minmax(0, 1fr) minmax(0, 340px); gap: clamp(16px, 3vw, 40px); align-items: end;
-          padding-top: clamp(28px, 6vw, 70px); }
-.callout { background: var(--brown); color: var(--brown-ink); border-radius: 28px; padding: 22px 22px 18px; display: grid;
-           grid-template-columns: minmax(0, 1fr) 118px; gap: 8px 10px; align-items: center; }
-.callout h3 { font: 500 1.1rem/1.2 var(--sans); }
-.callout p { font-size: .8rem; opacity: .85; margin-top: 6px; }
-.copy-art { width: 118px; height: auto; }
-.stat { display: grid; gap: 2px; justify-items: center; text-align: center; color: var(--field-ink); }
-.stat b { font: italic 500 clamp(3rem, 6vw, 4.6rem)/1 var(--serif); }
-.stat span { font-size: .8rem; max-width: 18em; opacity: .85; }
-.tag-line { display: grid; gap: 14px; justify-items: start; color: var(--field-ink); }
-.tag-line p { font: 500 clamp(1.15rem, 2vw, 1.6rem)/1.2 var(--serif); text-transform: uppercase; letter-spacing: .05em; }
-.tag-line a { font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; text-underline-offset: 6px; }
-
-/* the rest of the page */
-.facts ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.facts li { padding: 8px clamp(12px, 2vw, 24px); border-left: 1px solid var(--line); display: grid; gap: 2px; align-content: start; }
-.facts li:first-child { border-left: 0; padding-left: 0; }
-.facts strong { font-weight: 600; } .facts span { color: var(--muted); font-size: .88rem; }
-section { padding-block: clamp(48px, 8vw, 104px); }
-.facts-sec { padding-block: clamp(28px, 4vw, 44px) 0; }
-.head { display: grid; gap: 14px; max-width: 36em; margin-bottom: clamp(26px, 4vw, 46px); }
-h2.serif { font-weight: 500; text-transform: uppercase; font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1; letter-spacing: .01em; }
-.head p { color: var(--muted); font-size: 1.15rem; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 16px; }
-.cell { background: var(--surface); border-radius: 26px; padding: 28px 26px 30px; display: grid; gap: 12px; align-content: start; min-width: 0; }
-.cell .ico { width: 54px; height: 54px; border-radius: 50%; background: var(--soft); display: grid; place-items: center; }
-.cell svg { width: 26px; height: 26px; fill: none; stroke: var(--accent); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-.cell h3 { font: 600 1.15rem/1.25 var(--sans); }
-.cell p { color: var(--muted); }
-.care { margin-top: 16px; background: var(--brown); color: var(--brown-ink); border-radius: 26px; padding: 26px 28px; display: grid; gap: 8px; }
-.care h3 { font: 500 1.7rem/1.1 var(--serif); text-transform: uppercase; letter-spacing: .02em; }
-.care p { max-width: 46em; opacity: .92; }
-.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(18px, 3vw, 36px); list-style: none; margin: 0; padding: 0; }
-.steps li { border-top: 1.5px solid var(--ink); padding-top: 18px; display: grid; gap: 8px; align-content: start; }
-.steps .n { font: italic 500 2.6rem/1 var(--serif); color: var(--accent); }
-.steps h3 { font: 600 1.15rem/1.25 var(--sans); } .steps p { color: var(--muted); }
-.who { margin-top: clamp(30px, 5vw, 56px); max-width: 44em; display: grid; gap: 10px; }
-.who h3 { font: 500 1.7rem/1.1 var(--serif); text-transform: uppercase; letter-spacing: .02em; }
-.who p { color: var(--muted); font-size: 1.15rem; }
-.faq { max-width: 52em; border-top: 1px solid var(--line); }
-details { border-bottom: 1px solid var(--line); }
-summary { cursor: pointer; list-style: none; padding: 20px 44px 20px 0; font-weight: 600; position: relative; }
-summary::-webkit-details-marker { display: none; }
-summary::after { content: "+"; position: absolute; right: 6px; top: 14px; font: 400 1.7rem/1.2 var(--mono); color: var(--accent); }
-details[open] summary::after { content: "–"; }
-details p { color: var(--muted); padding: 0 44px 22px 0; max-width: 44em; }
-.final { margin: var(--gutter); border-radius: var(--radius); background: var(--brown); color: var(--brown-ink); }
-.final .wrap { display: flex; flex-wrap: wrap; gap: 22px 40px; align-items: center; justify-content: space-between; padding-block: clamp(36px, 6vw, 72px); }
-.final h2 { font: 500 clamp(2rem, 4.6vw, 3.4rem)/1 var(--serif); text-transform: uppercase; }
-.final p { opacity: .85; margin-top: 10px; }
-.final .btn { background: var(--surface); color: var(--ink); }
-footer { padding-block: 10px 30px; color: var(--muted); font-size: .88rem; }
-footer .wrap { display: flex; flex-wrap: wrap; gap: 10px 24px; justify-content: space-between; }
-
-@media (max-width: 980px) {
-  .top { grid-template-columns: minmax(0, 1fr); }
-  .right { padding-bottom: 0; }
-  .card { padding-bottom: 26px; }
-  .scene { position: static; width: min(100%, 520px); margin: -6px auto -28px; display: block; }
-  .bottom { grid-template-columns: minmax(0, 1fr); gap: 22px; padding-top: 6px; }
-  .stat, .tag-line { justify-items: start; text-align: left; }
+.vb-k7t__wrap {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 clamp(18px, 4vw, 32px);
 }
-@media (max-width: 720px) {
-  .nav nav { display: none; }
-  .nav-right { gap: 14px; }
-  .facts ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .facts li:nth-child(3) { border-left: 0; padding-left: 0; }
-  .facts li:nth-child(n+3) { border-top: 1px solid var(--line); padding-top: 14px; margin-top: 8px; }
-  .steps { grid-template-columns: minmax(0, 1fr); }
-  .callout { grid-template-columns: minmax(0, 1fr) 96px; } .copy-art { width: 96px; }
+
+/* ---------- header ---------- */
+.vb-k7t-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--vb-bg);
+  border-bottom: 1px solid var(--vb-line);
 }
-</style>
-</head>
-<body>
-<div class="frame"><header class="hero">
-  <svg class="hills" viewBox="0 0 1200 260" preserveAspectRatio="none" aria-hidden="true"><path d="M0 150 L90 120 L170 142 L260 96 L330 128 L420 84 L520 132 L610 112 L700 140 L800 100 L900 138 L1010 106 L1110 134 L1200 112 L1200 260 L0 260Z" fill="var(--hill1)"/><path d="M0 176 C160 150 280 188 430 170 C600 150 720 190 880 172 C1020 156 1110 176 1200 164 L1200 260 L0 260Z" fill="var(--hill2)"/><path d="M0 206 C200 190 360 214 560 200 C760 186 980 212 1200 196 L1200 260 L0 260Z" fill="var(--field1)"/><path d="M0 232 C240 222 480 240 720 230 C920 222 1080 236 1200 228 L1200 260 L0 260Z" fill="var(--field2)"/></svg>
-  <div class="hero-inner">
-    <div class="nav">
-      <a class="logo" href="/"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="8" fill="var(--accent)"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="var(--accent-ink)" stroke-width="2"/><circle cx="16" cy="16" r="2.6" fill="var(--accent-ink)"/><path d="M22.5 22.5l3.5 3.5" stroke="var(--accent-ink)" stroke-width="2.4" stroke-linecap="round"/></svg><span>SSD ROM Tool</span></a>
-      <nav aria-label="Разделы страницы"><a href="#features">Возможности</a><a href="#how">Как это работает</a><a href="#faq">Вопросы</a></nav>
-      <div class="nav-right"><div class="lang" aria-label="Язык"><span>RU</span><a href="/en/" hreflang="en" lang="en" aria-label="English">EN</a></div>
-        <a class="nav-download" href="https://yadi.sk/d/Y9lu8DDmLLZ0_w" rel="noopener">Скачать</a></div>
-    </div>
-    <div class="top">
-      <div class="headline">
-        <h1 class="serif"><span>Данные</span><span>вернутся</span></h1>
-        <p class="slash">программа для восстановления данных с SSD</p>
-        <a class="btn" href="https://yadi.sk/d/Y9lu8DDmLLZ0_w" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4.500-4.500M12 15l4.500-4.500M5 20h14"/></svg>Скачать для Windows</a>
-      </div>
-      <div class="right">
-        <div class="card">
-          <div class="tags"><span>SATA</span><span>NVMe</span><span>USB</span></div>
-          <h2>Паспорт накопителя</h2>
-          <p>Что с диском, ещё до начала работы</p>
-          <div class="passport"><span class="tag">пример</span><pre><b>Модель диска - Example SSD 512GB</b>
-<b>Прошивка - FW 2.1</b>
-Серийный номер - 0000-0000
-<b>Память: 3D TLC, 8 микросхем</b>
-<b>Объём диска - 512 ГБ</b></pre></div>
-        </div>
-        <svg class="scene" viewBox="0 0 490 340" role="img" aria-label="SSD" preserveAspectRatio="xMidYMid meet"><defs><filter id="soft" x="-20%" y="-20%" width="140%" height="160%"><feGaussianBlur stdDeviation="9"/></filter></defs><polygon points="160.0,70.0 478.7,254.0 333.2,338.0 14.5,154.0" fill="#000" opacity=".28" filter="url(#soft)"/><polygon points="471.8,226.0 333.2,306.0 333.2,292.4 471.8,212.4" fill="var(--slab-right)"/><polygon points="21.4,126.0 333.2,306.0 333.2,292.4 21.4,112.4" fill="var(--slab-left)"/><polygon points="160.0,32.4 471.8,212.4 333.2,292.4 21.4,112.4" fill="var(--slab-top)"/><polygon points="194.6,100.4 139.2,132.4 139.2,120.4 194.6,88.4" fill="var(--chip-right)"/><polygon points="87.3,102.4 139.2,132.4 139.2,120.4 87.3,90.4" fill="var(--chip-left)"/><polygon points="142.7,58.4 194.6,88.4 139.2,120.4 87.3,90.4" fill="var(--chip-top)"/><polygon points="312.4,140.4 263.9,168.4 263.9,156.4 312.4,128.4" fill="var(--chip-right)"/><polygon points="191.2,126.4 263.9,168.4 263.9,156.4 191.2,114.4" fill="var(--chip-left)"/><polygon points="239.7,86.4 312.4,128.4 263.9,156.4 191.2,114.4" fill="var(--chip-top)"/><polygon points="257.0,172.4 208.5,200.4 208.5,188.4 257.0,160.4" fill="var(--chip-right)"/><polygon points="135.8,158.4 208.5,200.4 208.5,188.4 135.8,146.4" fill="var(--chip-left)"/><polygon points="184.2,118.4 257.0,160.4 208.5,188.4 135.8,146.4" fill="var(--chip-top)"/><polygon points="395.6,188.4 347.1,216.4 347.1,204.4 395.6,176.4" fill="var(--chip-right)"/><polygon points="274.3,174.4 347.1,216.4 347.1,204.4 274.3,162.4" fill="var(--chip-left)"/><polygon points="322.8,134.4 395.6,176.4 347.1,204.4 274.3,162.4" fill="var(--chip-top)"/><polygon points="340.1,220.4 291.6,248.4 291.6,236.4 340.1,208.4" fill="var(--chip-right)"/><polygon points="218.9,206.4 291.6,248.4 291.6,236.4 218.9,194.4" fill="var(--chip-left)"/><polygon points="267.4,166.4 340.1,208.4 291.6,236.4 218.9,194.4" fill="var(--chip-top)"/><polygon points="451.3,218.6 440.9,224.6 440.9,223.4 451.3,217.4" fill="var(--accent)"/><polygon points="428.5,217.4 440.9,224.6 440.9,223.4 428.5,216.2" fill="var(--accent)"/><polygon points="438.9,210.2 451.3,217.4 440.9,223.4 428.5,216.2" fill="var(--accent)"/><polygon points="432.3,229.6 421.9,235.6 421.9,234.4 432.3,228.4" fill="var(--accent)"/><polygon points="409.4,228.4 421.9,235.6 421.9,234.4 409.4,227.2" fill="var(--accent)"/><polygon points="419.8,221.2 432.3,228.4 421.9,234.4 409.4,227.2" fill="var(--accent)"/><polygon points="413.2,240.6 402.8,246.6 402.8,245.4 413.2,239.4" fill="var(--accent)"/><polygon points="390.4,239.4 402.8,246.6 402.8,245.4 390.4,238.2" fill="var(--accent)"/><polygon points="400.8,232.2 413.2,239.4 402.8,245.4 390.4,238.2" fill="var(--accent)"/><polygon points="394.2,251.6 383.8,257.6 383.8,256.4 394.2,250.4" fill="var(--accent)"/><polygon points="371.3,250.4 383.8,257.6 383.8,256.4 371.3,249.2" fill="var(--accent)"/><polygon points="381.7,243.2 394.2,250.4 383.8,256.4 371.3,249.2" fill="var(--accent)"/><polygon points="375.1,262.6 364.7,268.6 364.7,267.4 375.1,261.4" fill="var(--accent)"/><polygon points="352.3,261.4 364.7,268.6 364.7,267.4 352.3,260.2" fill="var(--accent)"/><polygon points="362.6,254.2 375.1,261.4 364.7,267.4 352.3,260.2" fill="var(--accent)"/><polygon points="356.1,273.6 345.7,279.6 345.7,278.4 356.1,272.4" fill="var(--accent)"/><polygon points="333.2,272.4 345.7,279.6 345.7,278.4 333.2,271.2" fill="var(--accent)"/><polygon points="343.6,265.2 356.1,272.4 345.7,278.4 333.2,271.2" fill="var(--accent)"/></svg>
-      </div>
-    </div>
-    <div class="bottom">
-      <div class="callout"><div><h3>Работает с копией!</h3><p>Снимает полный образ диска и дальше работает с ним.</p></div><svg class="copy-art" viewBox="0 0 190 150" aria-hidden="true"><polygon points="153.5,63.9 118.2,84.3 118.2,78.5 153.5,58.1" fill="var(--slab-right)"/><polygon points="38.7,38.4 118.2,84.3 118.2,78.5 38.7,32.6" fill="var(--slab-left)"/><polygon points="74.0,12.2 153.5,58.1 118.2,78.5 38.7,32.6" fill="var(--slab-top)"/><polygon points="95.3,32.2 76.2,43.2 76.2,38.1 95.3,27.1" fill="var(--chip-right)"/><polygon points="57.1,32.2 76.2,43.2 76.2,38.1 57.1,27.1" fill="var(--chip-left)"/><polygon points="76.2,16.0 95.3,27.1 76.2,38.1 57.1,27.1" fill="var(--chip-top)"/><polygon points="120.4,46.6 101.2,57.7 101.2,52.6 120.4,41.5" fill="var(--chip-right)"/><polygon points="80.6,45.8 101.2,57.7 101.2,52.6 80.6,40.7" fill="var(--chip-left)"/><polygon points="99.8,29.6 120.4,41.5 101.2,52.6 80.6,40.7" fill="var(--chip-top)"/><polygon points="144.8,60.8 140.4,63.3 140.4,62.8 144.8,60.2" fill="var(--accent)"/><polygon points="135.1,60.2 140.4,63.3 140.4,62.8 135.1,59.7" fill="var(--accent)"/><polygon points="139.5,57.2 144.8,60.2 140.4,62.8 135.1,59.7" fill="var(--accent)"/><polygon points="136.7,65.4 132.3,68.0 132.3,67.5 136.7,64.9" fill="var(--accent)"/><polygon points="127.0,64.9 132.3,68.0 132.3,67.5 127.0,64.4" fill="var(--accent)"/><polygon points="131.4,61.9 136.7,64.9 132.3,67.5 127.0,64.4" fill="var(--accent)"/><polygon points="128.6,70.1 124.2,72.7 124.2,72.1 128.6,69.6" fill="var(--accent)"/><polygon points="118.9,69.6 124.2,72.7 124.2,72.1 118.9,69.1" fill="var(--accent)"/><polygon points="123.3,66.5 128.6,69.6 124.2,72.1 118.9,69.1" fill="var(--accent)"/><polygon points="120.5,74.8 116.1,77.3 116.1,76.8 120.5,74.3" fill="var(--accent)"/><polygon points="110.8,74.3 116.1,77.3 116.1,76.8 110.8,73.8" fill="var(--accent)"/><polygon points="115.2,71.2 120.5,74.3 116.1,76.8 110.8,73.8" fill="var(--accent)"/><polygon points="112.4,79.5 108.0,82.0 108.0,81.5 112.4,78.9" fill="var(--accent)"/><polygon points="102.7,78.9 108.0,82.0 108.0,81.5 102.7,78.4" fill="var(--accent)"/><polygon points="107.1,75.9 112.4,78.9 108.0,81.5 102.7,78.4" fill="var(--accent)"/><polygon points="104.3,84.1 99.9,86.7 99.9,86.2 104.3,83.6" fill="var(--accent)"/><polygon points="94.6,83.6 99.9,86.7 99.9,86.2 94.6,83.1" fill="var(--accent)"/><polygon points="99.0,80.6 104.3,83.6 99.9,86.2 94.6,83.1" fill="var(--accent)"/><polygon points="153.5,46.9 118.2,67.3 118.2,61.5 153.5,41.1" fill="var(--slab-right)"/><polygon points="38.7,21.4 118.2,67.3 118.2,61.5 38.7,15.6" fill="var(--slab-left)"/><polygon points="74.0,-4.8 153.5,41.1 118.2,61.5 38.7,15.6" fill="var(--slab-top)"/><polygon points="95.3,15.2 76.2,26.2 76.2,21.1 95.3,10.1" fill="var(--chip-right)"/><polygon points="57.1,15.2 76.2,26.2 76.2,21.1 57.1,10.1" fill="var(--chip-left)"/><polygon points="76.2,-1.0 95.3,10.1 76.2,21.1 57.1,10.1" fill="var(--chip-top)"/><polygon points="120.4,29.6 101.2,40.7 101.2,35.6 120.4,24.5" fill="var(--chip-right)"/><polygon points="80.6,28.8 101.2,40.7 101.2,35.6 80.6,23.7" fill="var(--chip-left)"/><polygon points="99.8,12.6 120.4,24.5 101.2,35.6 80.6,23.7" fill="var(--chip-top)"/><polygon points="144.8,43.8 140.4,46.3 140.4,45.8 144.8,43.2" fill="var(--accent)"/><polygon points="135.1,43.2 140.4,46.3 140.4,45.8 135.1,42.7" fill="var(--accent)"/><polygon points="139.5,40.2 144.8,43.2 140.4,45.8 135.1,42.7" fill="var(--accent)"/><polygon points="136.7,48.4 132.3,51.0 132.3,50.5 136.7,47.9" fill="var(--accent)"/><polygon points="127.0,47.9 132.3,51.0 132.3,50.5 127.0,47.4" fill="var(--accent)"/><polygon points="131.4,44.9 136.7,47.9 132.3,50.5 127.0,47.4" fill="var(--accent)"/><polygon points="128.6,53.1 124.2,55.7 124.2,55.1 128.6,52.6" fill="var(--accent)"/><polygon points="118.9,52.6 124.2,55.7 124.2,55.1 118.9,52.1" fill="var(--accent)"/><polygon points="123.3,49.5 128.6,52.6 124.2,55.1 118.9,52.1" fill="var(--accent)"/><polygon points="120.5,57.8 116.1,60.3 116.1,59.8 120.5,57.3" fill="var(--accent)"/><polygon points="110.8,57.3 116.1,60.3 116.1,59.8 110.8,56.8" fill="var(--accent)"/><polygon points="115.2,54.2 120.5,57.3 116.1,59.8 110.8,56.8" fill="var(--accent)"/><polygon points="112.4,62.5 108.0,65.0 108.0,64.5 112.4,61.9" fill="var(--accent)"/><polygon points="102.7,61.9 108.0,65.0 108.0,64.5 102.7,61.4" fill="var(--accent)"/><polygon points="107.1,58.9 112.4,61.9 108.0,64.5 102.7,61.4" fill="var(--accent)"/><polygon points="104.3,67.1 99.9,69.7 99.9,69.2 104.3,66.6" fill="var(--accent)"/><polygon points="94.6,66.6 99.9,69.7 99.9,69.2 94.6,66.1" fill="var(--accent)"/><polygon points="99.0,63.6 104.3,66.6 99.9,69.2 94.6,66.1" fill="var(--accent)"/></svg></div>
-      <div class="stat"><b>13</b><span>семейств SSD, с которыми программа умеет работать</span></div>
-      <div class="tag-line"><p>Возвращает диск к жизни и достаёт файлы</p><a href="#features">Подробнее</a></div>
-    </div>
-  </div>
-</header></div>
+.vb-k7t-header__row {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 2.5vw, 28px);
+  min-height: 68px;
+}
+.vb-k7t-header__brand {
+  font-family: var(--vb-font-head);
+  font-size: 1.12rem;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+.vb-k7t-nav {
+  display: flex;
+  gap: clamp(14px, 2.2vw, 26px);
+  margin: 0 auto;
+  font-size: 0.95rem;
+}
+.vb-k7t-nav a {
+  color: var(--vb-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.vb-k7t-nav a:hover { color: var(--vb-ink); }
+.vb-k7t-header__side {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+}
+.vb-k7t-lang {
+  display: inline-flex;
+  border: 1px solid var(--vb-line);
+  border-radius: 999px;
+  padding: 3px;
+  background: var(--vb-surface);
+}
+.vb-k7t-lang__btn {
+  border: 0;
+  background: transparent;
+  color: var(--vb-muted);
+  font-family: var(--vb-font-text);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 5px 11px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.vb-k7t-lang__btn.is-active {
+  background: var(--vb-ink);
+  color: var(--vb-bg);
+}
+.vb-k7t-lang__btn:focus-visible,
+.vb-k7t a:focus-visible,
+.vb-k7t summary:focus-visible,
+.vb-k7t .t-btnflex:focus-visible {
+  outline: 2px solid var(--vb-accent);
+  outline-offset: 2px;
+}
 
-<main>
-<section class="facts-sec facts"><div class="wrap"><ul><li><strong>Один файл</strong><span>без установки и настройки</span></li><li><strong>Windows 10 и 11</strong><span>64-разрядные</span></li><li><strong>Русский / English</strong><span>интерфейс переключается</span></li><li><strong>Обновляется сама</strong><span>новые версии подтягиваются</span></li></ul></div></section>
+/* ---------- buttons ---------- */
+.vb-k7t .t-btnflex {
+  background: var(--vb-accent) !important;
+  color: var(--vb-accent-ink) !important;
+  border: 0 !important;
+  border-radius: 14px !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+.vb-k7t .t-btnflex:hover { filter: brightness(0.93); }
+.vb-k7t .t-btnflex__text { font-family: var(--vb-font-text); white-space: nowrap; }
+.vb-k7t .t-btnflex_sm .t-btnflex__text { font-size: 0.9rem; }
+.vb-k7t .t-btnflex_lg .t-btnflex__text { font-size: 1.06rem; }
 
-<section id="features"><div class="wrap">
-  <div class="head"><h2 class="serif">Что она делает</h2><p>Всё, что нужно на столе у специалиста: от первого взгляда на диск до готовых файлов.</p></div>
-  <div class="grid"><div class="cell"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></svg></div><h3>Узнаёт диск сама</h3><p>Подключили накопитель, и программа сразу показывает, что это за диск, в каком он состоянии и из какой памяти собран.</p></div><div class="cell"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 10h5M7 14h10"/></svg></div><h3>Настоящий паспорт</h3><p>Модель, прошивка, серийный номер и ёмкость берутся из самого накопителя. Они видны, даже когда Windows показывает диск пустым или на пару мегабайт.</p></div><div class="cell"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l2.2-5 4 10 2.3-5H21"/></svg></div><h3>Оживляет «зависшие» диски</h3><p>Помогает вернуть в рабочее состояние SSD, которые не определяются или застряли в аварийном режиме. Для поддерживаемых моделей.</p></div><div class="cell"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg></div><h3>Работает с копией</h3><p>Снимает полный образ диска и дальше работает с ним. Исходный накопитель после этого можно не трогать.</p></div><div class="cell"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><h3>Показывает файлы до сохранения</h3><p>Находит разделы и файлы, открывает документы, фотографии и PDF и сохраняет только то, что нужно.</p></div><div class="cell"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/><path d="M12 8v4l3 2"/></svg></div><h3>Возвращает прежнее состояние</h3><p>Для части дисков умеет вернуться к одному из прежних состояний, чтобы достать то, что было удалено или потеряно после сбоя.</p></div></div>
-  <div class="care"><h3>Осторожно с чужими данными</h3><p>Каждое действие названо понятно. Всё, что меняет диск, вынесено в отдельные кнопки, и перед записью программа сохраняет служебные данные накопителя, где это возможно.</p></div>
-</div></section>
+/* ---------- hero ---------- */
+.vb-k7t-hero { padding: clamp(48px, 8vw, 104px) 0 clamp(44px, 7vw, 84px); }
+.vb-k7t-hero__grid {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: clamp(30px, 5vw, 64px);
+  align-items: center;
+}
+.vb-k7t-hero__eyebrow {
+  font-size: 0.95rem;
+  color: var(--vb-accent);
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.vb-k7t-hero__title {
+  font-size: clamp(2.5rem, 6.4vw, 4.5rem);
+  letter-spacing: -0.03em;
+  margin-bottom: 18px;
+}
+.vb-k7t-hero__sub {
+  font-size: clamp(1.12rem, 2.1vw, 1.4rem);
+  color: var(--vb-muted);
+  max-width: 34ch;
+  margin-bottom: 22px;
+}
+.vb-k7t-hero__text {
+  font-size: 1.02rem;
+  color: var(--vb-muted);
+  max-width: 52ch;
+  margin-bottom: 32px;
+}
+.vb-k7t-hero__cta { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.vb-k7t-hero__note { font-size: 0.88rem; color: var(--vb-muted); }
+.vb-k7t-hero__media {
+  border-radius: 26px;
+  overflow: hidden;
+  border: 1px solid var(--vb-line);
+  box-shadow: var(--vb-shadow);
+  background: var(--vb-surface);
+}
+.vb-k7t-hero__media img {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  max-height: 460px;
+  object-fit: cover;
+}
 
-<section id="how" style="padding-top:0"><div class="wrap">
-  <div class="head"><h2 class="serif">Как это работает</h2></div>
-  <ol class="steps"><li><span class="n">1</span><h3>Подключите диск</h3><p>Напрямую по SATA или NVMe, через USB-переходник или в порт для флешек.</p></li><li><span class="n">2</span><h3>Посмотрите паспорт</h3><p>Программа определит накопитель и покажет, что с ним и что с ним можно сделать.</p></li><li><span class="n">3</span><h3>Снимите образ и достаньте файлы</h3><p>Образ сохраняется на ваш компьютер. Из него извлекаются файлы, которые вы выберете.</p></li></ol>
-  <div class="who"><h3>Для кого</h3><p>Для мастерских по восстановлению данных, сервисных центров и ИТ-специалистов, которым приходят диски, переставшие открываться.</p></div>
-</div></section>
+/* ---------- sections ---------- */
+.vb-k7t-sec { padding: clamp(44px, 7vw, 88px) 0; }
+.vb-k7t-sec__head { max-width: 60ch; margin-bottom: clamp(28px, 4vw, 44px); }
+.vb-k7t-sec__title { font-size: clamp(1.7rem, 3.4vw, 2.5rem); margin-bottom: 14px; }
+.vb-k7t-sec__descr { color: var(--vb-muted); font-size: 1.04rem; max-width: 62ch; }
 
-<section id="faq" style="padding-top:0"><div class="wrap">
-  <div class="head"><h2 class="serif">Вопросы</h2></div>
-  <div class="faq"><details><summary>Какие диски поддерживаются?</summary><p>SATA, NVMe и USB-накопители разных производителей. Список растёт с каждой версией. Если диска нет в списке, программа так и скажет и не станет угадывать.</p></details><details><summary>Гарантируете результат?</summary><p>Нет. Результат зависит от состояния накопителя. Если микросхемы памяти повреждены физически, программа не поможет.</p></details><details><summary>Нужен ли интернет?</summary><p>Для работы с диском нет. Интернет нужен для обновлений и для загрузки служебных данных под отдельные модели.</p></details><details><summary>Windows предупреждает о незнакомом файле</summary><p>Файл пока не подписан сертификатом издателя, поэтому при первом запуске Windows может попросить подтверждение. Нажмите «Подробнее», затем «Выполнить в любом случае».</p></details></div>
-</div></section>
+/* ---------- features ---------- */
+.vb-k7t-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(14px, 2vw, 22px);
+}
+.vb-k7t-card {
+  background: var(--vb-surface);
+  border: 1px solid var(--vb-line);
+  border-radius: 22px;
+  padding: clamp(22px, 2.6vw, 30px);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.vb-k7t-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: var(--vb-chip);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vb-k7t-card__icon img { width: 24px; height: 24px; }
+.vb-k7t-card__title { font-size: 1.16rem; margin: 0; }
+.vb-k7t-card__text { color: var(--vb-muted); font-size: 0.98rem; }
 
-<div class="final"><div class="wrap">
-  <div><h2>Попробуйте на своём диске</h2><p>Скачайте программу и посмотрите, что она покажет.</p></div>
-  <a class="btn" href="https://yadi.sk/d/Y9lu8DDmLLZ0_w" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4.500-4.500M12 15l4.500-4.500M5 20h14"/></svg>Скачать для Windows</a>
-</div></div>
-</main>
+/* ---------- warning ---------- */
+.vb-k7t-warn {
+  background: var(--vb-surface-2);
+  border: 1px solid var(--vb-line);
+  border-radius: 24px;
+  padding: clamp(24px, 3.4vw, 38px);
+  display: flex;
+  gap: clamp(18px, 2.6vw, 28px);
+  align-items: flex-start;
+}
+.vb-k7t-warn__icon {
+  flex: 0 0 auto;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: var(--vb-chip);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vb-k7t-warn__icon img { width: 26px; height: 26px; }
+.vb-k7t-warn__title { font-size: 1.3rem; margin-bottom: 10px; }
+.vb-k7t-warn__text { color: var(--vb-muted); max-width: 70ch; }
 
-<footer><div class="wrap"><span>SSD ROM Tool. Программа для специалистов по восстановлению данных с SSD.</span><span>© 2026 · ssdtool.ai</span></div></footer>
-</body>
-</html>
+/* ---------- steps ---------- */
+.vb-k7t-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(16px, 2.4vw, 26px);
+  counter-reset: none;
+}
+.vb-k7t-step {
+  background: var(--vb-surface);
+  border: 1px solid var(--vb-line);
+  border-radius: 22px;
+  padding: clamp(22px, 2.6vw, 30px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.vb-k7t-step__num {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--vb-accent);
+  color: var(--vb-accent-ink);
+  font-family: var(--vb-font-head);
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vb-k7t-step__title { font-size: 1.16rem; margin: 0; }
+.vb-k7t-step__text { color: var(--vb-muted); font-size: 0.98rem; }
+
+/* ---------- facts ---------- */
+.vb-k7t-facts-band { background: var(--vb-surface-2); border-top: 1px solid var(--vb-line); border-bottom: 1px solid var(--vb-line); }
+.vb-k7t-facts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: clamp(30px, 4vw, 46px);
+}
+.vb-k7t-fact {
+  padding: 4px clamp(14px, 2vw, 26px);
+  font-size: 0.99rem;
+  color: var(--vb-muted);
+}
+.vb-k7t-fact + .vb-k7t-fact { border-left: 1px solid var(--vb-line); }
+.vb-k7t-fact strong { color: var(--vb-ink); font-weight: 600; }
+.vb-k7t-ctrl {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 clamp(20px, 3vw, 44px);
+}
+.vb-k7t-ctrl__item {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  padding: 15px 0;
+  border-top: 1px solid var(--vb-line);
+  font-size: 0.99rem;
+  color: var(--vb-muted);
+}
+.vb-k7t-ctrl__name {
+  font-family: var(--vb-font-head);
+  font-weight: 600;
+  color: var(--vb-ink);
+  white-space: nowrap;
+}
+@media (max-width: 640px) {
+  .vb-k7t-ctrl { grid-template-columns: 1fr; }
+}
+
+/* ---------- audience ---------- */
+.vb-k7t-aud {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: clamp(26px, 4.5vw, 56px);
+  align-items: center;
+}
+.vb-k7t-aud__media {
+  border-radius: 26px;
+  overflow: hidden;
+  border: 1px solid var(--vb-line);
+  box-shadow: var(--vb-shadow);
+}
+.vb-k7t-aud__media img { width: 100%; height: 100%; min-height: 260px; max-height: 400px; object-fit: cover; }
+.vb-k7t-aud__title { font-size: clamp(1.6rem, 3.2vw, 2.3rem); margin-bottom: 16px; }
+.vb-k7t-aud__text { color: var(--vb-muted); font-size: 1.06rem; max-width: 48ch; }
+
+/* ---------- faq ---------- */
+.vb-k7t-faq { display: grid; gap: 12px; max-width: 860px; }
+.vb-k7t-faq__item {
+  background: var(--vb-surface);
+  border: 1px solid var(--vb-line);
+  border-radius: 18px;
+  padding: 4px clamp(18px, 2.4vw, 26px);
+}
+.vb-k7t-faq__item summary {
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--vb-font-head);
+  font-size: 1.12rem;
+  padding: 16px 34px 16px 0;
+  position: relative;
+}
+.vb-k7t-faq__item summary::-webkit-details-marker { display: none; }
+.vb-k7t-faq__item summary::after {
+  content: "";
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  border-right: 2px solid var(--vb-muted);
+  border-bottom: 2px solid var(--vb-muted);
+  transform: translateY(-70%) rotate(45deg);
+  transition: transform 0.25s ease;
+}
+.vb-k7t-faq__item[open] summary::after { transform: translateY(-30%) rotate(225deg); }
+.vb-k7t-faq__answer {
+  color: var(--vb-muted);
+  padding: 0 0 18px;
+  max-width: 68ch;
+}
+
+/* ---------- final cta ---------- */
+.vb-k7t-final {
+  background: var(--vb-surface);
+  border: 1px solid var(--vb-line);
+  border-radius: 30px;
+  padding: clamp(34px, 5.5vw, 66px) clamp(22px, 4vw, 56px);
+  text-align: center;
+  box-shadow: var(--vb-shadow);
+}
+.vb-k7t-final__title { font-size: clamp(1.8rem, 4vw, 2.9rem); margin-bottom: 16px; }
+.vb-k7t-final__text {
+  color: var(--vb-muted);
+  font-size: 1.08rem;
+  max-width: 44ch;
+  margin: 0 auto 30px;
+}
+
+/* ---------- footer ---------- */
+.vb-k7t-footer {
+  border-top: 1px solid var(--vb-line);
+  padding: 26px 0 34px;
+  color: var(--vb-muted);
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.vb-k7t-footer__brand { font-family: var(--vb-font-head); color: var(--vb-ink); }
+
+/* ---------- reveal ---------- */
+.vb-k7t-anim .vb-k7t-rv {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.vb-k7t-anim .vb-k7t-rv.vb-k7t-in { opacity: 1; transform: none; }
+.vb-k7t-anim .vb-k7t-grid > .vb-k7t-rv:nth-child(2),
+.vb-k7t-anim .vb-k7t-steps > .vb-k7t-rv:nth-child(2) { transition-delay: 0.08s; }
+.vb-k7t-anim .vb-k7t-grid > .vb-k7t-rv:nth-child(3),
+.vb-k7t-anim .vb-k7t-steps > .vb-k7t-rv:nth-child(3) { transition-delay: 0.16s; }
+.vb-k7t-anim .vb-k7t-grid > .vb-k7t-rv:nth-child(4) { transition-delay: 0.24s; }
+.vb-k7t-anim .vb-k7t-grid > .vb-k7t-rv:nth-child(5) { transition-delay: 0.32s; }
+.vb-k7t-anim .vb-k7t-grid > .vb-k7t-rv:nth-child(6) { transition-delay: 0.4s; }
+@media (prefers-reduced-motion: reduce) {
+  .vb-k7t-anim .vb-k7t-rv { opacity: 1; transform: none; transition: none; }
+  .vb-k7t * { scroll-behavior: auto !important; }
+}
+
+/* ---------- anchors ---------- */
+.vb-k7t [id] { scroll-margin-top: 88px; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 1060px) {
+  .vb-k7t-grid { grid-template-columns: repeat(2, 1fr); }
+  .vb-k7t-facts { grid-template-columns: repeat(2, 1fr); gap: 18px 0; }
+  .vb-k7t-fact:nth-child(3) { border-left: 0; }
+}
+@media (max-width: 960px) {
+  .vb-k7t-nav { display: none; }
+  .vb-k7t-hero__grid { grid-template-columns: 1fr; }
+  .vb-k7t-hero__media { order: -1; }
+  .vb-k7t-hero__media img { max-height: 320px; }
+  .vb-k7t-steps { grid-template-columns: 1fr; }
+  .vb-k7t-aud { grid-template-columns: 1fr; }
+  .vb-k7t-aud__media { order: -1; }
+  .vb-k7t-aud__media img { max-height: 300px; }
+}
+@media (max-width: 640px) {
+  .vb-k7t-header .t-btnflex { display: none; }
+  .vb-k7t-grid { grid-template-columns: 1fr; }
+  .vb-k7t-facts { grid-template-columns: 1fr; }
+  .vb-k7t-fact + .vb-k7t-fact { border-left: 0; border-top: 1px solid var(--vb-line); padding-top: 14px; }
+  .vb-k7t-warn { flex-direction: column; }
+  .vb-k7t-footer { flex-direction: column; }
+}
+@media (max-width: 480px) {
+  .vb-k7t-hero__title { font-size: clamp(2.1rem, 11vw, 2.8rem); }
+  .vb-k7t-hero__cta .t-btnflex { width: 100%; justify-content: center; }
+}
+</style> <div class="vb-k7t" id="vb-k7t-root"> <header class="vb-k7t-header" data-section-name="шапка" data-vibeblock-unique-section="yes"> <div class="vb-k7t__wrap vb-k7t-header__row"> <span class="vb-k7t-header__brand">SSD ROM Tool</span> <nav class="vb-k7t-nav" aria-label="Основная навигация" data-i18n-aria="nav.label"> <a href="#vb-k7t-features" data-i18n="nav.features">Возможности</a> <a href="#vb-k7t-steps" data-i18n="nav.steps">Как это работает</a> <a href="#vb-k7t-faq" data-i18n="nav.faq">Вопросы и ответы</a> </nav> <div class="vb-k7t-header__side"> <div class="vb-k7t-lang" role="group" aria-label="Язык" data-i18n-aria="lang.label"> <button type="button" class="vb-k7t-lang__btn is-active" data-lang="ru" aria-pressed="true">RU</button> <button type="button" class="vb-k7t-lang__btn" data-lang="en" aria-pressed="false">EN</button> </div> <a class="t-btnflex t-btnflex_sm" href="https://github.com/kostikn/ssdtool-site/releases/download/setup/SSD_ROM_Tool.exe" target="_blank" rel="noopener noreferrer"><div class="t-btnflex__text" data-i18n="btn.download">Скачать для Windows</div></a> </div> </div> </header> <section class="vb-k7t-hero" id="vb-k7t-hero" data-section-name="главный экран" aria-labelledby="vb-k7t-hero-title" data-vibeblock-unique-section="yes"> <div class="vb-k7t__wrap vb-k7t-hero__grid"> <div> <p class="vb-k7t-hero__eyebrow vb-k7t-rv">SSD ROM Tool</p> <h1 class="vb-k7t-hero__title vb-k7t-rv" id="vb-k7t-hero-title" data-i18n="hero.title">Что внутри вашего SSD</h1> <p class="vb-k7t-hero__sub vb-k7t-rv" data-i18n="hero.sub">программа для чтения паспорта и определения памяти SSD</p> <p class="vb-k7t-hero__text vb-k7t-rv" data-i18n="hero.text">Бесплатная утилита для Windows. Определяет установленную память, читает настоящий паспорт диска — модель, прошивку, серийный номер — и поддерживает множество контроллеров.</p> <div class="vb-k7t-hero__cta vb-k7t-rv"> <a class="t-btnflex t-btnflex_lg" href="https://github.com/kostikn/ssdtool-site/releases/download/setup/SSD_ROM_Tool.exe" target="_blank" rel="noopener noreferrer"><div class="t-btnflex__text" data-i18n="btn.download">Скачать для Windows</div></a> <span class="vb-k7t-hero__note" data-i18n="hero.note">Бесплатно · без регистрации · без установки</span> </div> </div> <div class="vb-k7t-hero__media vb-k7t-rv"> <img src="https://static.tildacdn.pub/tild3934-6230-4762-b331-353361373638/photo.png" alt="Накопитель SSD крупным планом" data-i18n-alt="hero.imgAlt" width="640" height="460" loading="eager"> </div> </div> </section> <section class="vb-k7t-sec" id="vb-k7t-features" data-section-name="возможности" aria-labelledby="vb-k7t-features-title" data-vibeblock-unique-section="yes"> <div class="vb-k7t__wrap"> <div class="vb-k7t-sec__head"> <h2 class="vb-k7t-sec__title" id="vb-k7t-features-title" data-i18n="feat.title">Что определяет программа</h2> <p class="vb-k7t-sec__descr" data-i18n="feat.descr">Шесть вещей, которые программа показывает про любой подключённый SSD.</p> </div> <div class="vb-k7t-grid"> <article class="vb-k7t-card vb-k7t-rv"> <span class="vb-k7t-card__icon"><img src="https://static.tildacdn.pub/lib/icons/tilda/research_eye_browser.svg" alt="" width="24" height="24"></span> <h3 class="vb-k7t-card__title" data-i18n="feat.1.t">Определяет тип памяти</h3> <p class="vb-k7t-card__text" data-i18n="feat.1.d">Показывает, какая память установлена в SSD: тип, производитель чипов и другие характеристики.</p> </article> <article class="vb-k7t-card vb-k7t-rv"> <span class="vb-k7t-card__icon"><img src="https://static.tildacdn.pub/lib/icons/tilda/star_box_branding.svg" alt="" width="24" height="24"></span> <h3 class="vb-k7t-card__title" data-i18n="feat.2.t">Настоящий паспорт диска</h3> <p class="vb-k7t-card__text" data-i18n="feat.2.d">Модель, прошивка, серийный номер и ёмкость берутся из самого накопителя. Они видны, даже когда Windows показывает диск пустым или на пару мегабайт.</p> </article> <article class="vb-k7t-card vb-k7t-rv"> <span class="vb-k7t-card__icon"><img src="https://static.tildacdn.pub/lib/icons/tilda/groups_diversity.svg" alt="" width="24" height="24"></span> <h3 class="vb-k7t-card__title" data-i18n="feat.3.t">Знает множество контроллеров</h3> <p class="vb-k7t-card__text" data-i18n="feat.3.d">Поддерживает контроллеры Phison, SMI, Realtek, Yeestore, Maxio и другие. Список растёт с каждой версией.</p> </article> <article class="vb-k7t-card vb-k7t-rv"> <span class="vb-k7t-card__icon"><img src="https://static.tildacdn.pub/lib/icons/tilda/reload.svg" alt="" width="24" height="24"></span> <h3 class="vb-k7t-card__title" data-i18n="feat.4.t">Читает даже «молчащие» диски</h3> <p class="vb-k7t-card__text" data-i18n="feat.4.d">Умеет будить диск из служебных режимов, чтобы прочитать паспорт у SSD, который не определяется в системе.</p> </article> <article class="vb-k7t-card vb-k7t-rv"> <span class="vb-k7t-card__icon"><img src="https://static.tildacdn.pub/lib/icons/tilda/dashboard.svg" alt="" width="24" height="24"></span> <h3 class="vb-k7t-card__title" data-i18n="feat.5.t">Показывает всё в одном окне</h3> <p class="vb-k7t-card__text" data-i18n="feat.5.d">Паспорт диска, тип памяти, контроллер и другие сведения собраны на одном экране — без таблиц и логов.</p> </article> <article class="vb-k7t-card vb-k7t-rv"> <span class="vb-k7t-card__icon"><img src="https://static.tildacdn.pub/lib/icons/tilda/lock_shield_protect.svg" alt="" width="24" height="24"></span> <h3 class="vb-k7t-card__title" data-i18n="feat.6.t">Только чтение, без риска</h3> <p class="vb-k7t-card__text" data-i18n="feat.6.d">Программа не пишет на диск и не меняет его содержимое. Можно спокойно проверять даже чужие SSD.</p> </article> </div> </div> </section> <section class="vb-k7t-sec" id="vb-k7t-warning" data-section-name="только чтение" aria-labelledby="vb-k7t-warning-title" data-vibeblock-unique-section="yes"> <div class="vb-k7t__wrap"> <div class="vb-k7t-warn vb-k7t-rv"> <span class="vb-k7t-warn__icon"><img src="https://static.tildacdn.pub/lib/icons/tilda/lock_shield_protect.svg" alt="" width="26" height="26"></span> <div> <h2 class="vb-k7t-warn__title" id="vb-k7t-warning-title" data-i18n="warn.title">Только чтение — ничего не пишет на диск</h2> <p class="vb-k7t-warn__text" data-i18n="warn.text">Все операции информационные: программа только запрашивает данные у диска и показывает их. Содержимое накопителя остаётся нетронутым.</p> </div> </div> </div> </section> <section class="vb-k7t-sec" id="vb-k7t-steps" data-section-name="как это работает" aria-labelledby="vb-k7t-steps-title" data-vibeblock-unique-section="yes"> <div class="vb-k7t__wrap"> <div class="vb-k7t-sec__head"> <h2 class="vb-k7t-sec__title" id="vb-k7t-steps-title" data-i18n="steps.title">Как это работает</h2> <p class="vb-k7t-sec__descr" data-i18n="steps.descr">Три шага от подключённого диска до полного паспорта.</p> </div> <ol class="vb-k7t-steps"> <li class="vb-k7t-step vb-k7t-rv"> <span class="vb-k7t-step__num" aria-hidden="true">1</span> <h3 class="vb-k7t-step__title" data-i18n="steps.1.t">Подключите диск</h3> <p class="vb-k7t-step__text" data-i18n="steps.1.d">Напрямую по SATA или NVMe, через USB-переходник или в порт для флешек.</p> </li> <li class="vb-k7t-step vb-k7t-rv"> <span class="vb-k7t-step__num" aria-hidden="true">2</span> <h3 class="vb-k7t-step__title" data-i18n="steps.2.t">Посмотрите паспорт</h3> <p class="vb-k7t-step__text" data-i18n="steps.2.d">Программа определит накопитель и покажет, что с ним и что можно сделать.</p> </li> <li class="vb-k7t-step vb-k7t-rv"> <span class="vb-k7t-step__num" aria-hidden="true">3</span> <h3 class="vb-k7t-step__title" data-i18n="steps.3.t">Узнайте, что внутри</h3> <p class="vb-k7t-step__text" data-i18n="steps.3.d">Программа покажет тип памяти, контроллер и паспорт диска в одном окне.</p> </li> </ol> </div> </section> <section class="vb-k7t-sec vb-k7t-facts-band" id="vb-k7t-facts" data-section-name="факты" aria-labelledby="vb-k7t-facts-title" data-vibeblock-unique-section="yes"> <div class="vb-k7t__wrap"> <h2 class="vb-k7t-sec__title" id="vb-k7t-facts-title" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;" data-i18n="facts.title">Факты о программе</h2> <div class="vb-k7t-facts"> <p class="vb-k7t-fact vb-k7t-rv" data-i18n="facts.1"><strong>Бесплатно</strong>, без регистрации и ограничений</p> <p class="vb-k7t-fact vb-k7t-rv" data-i18n="facts.2"><strong>Windows 10 и 11</strong>, 64-разрядные</p> <p class="vb-k7t-fact vb-k7t-rv" data-i18n="facts.3"><strong>Русский и английский</strong> интерфейс</p> <p class="vb-k7t-fact vb-k7t-rv" data-i18n="facts.4"><strong>Без установки</strong>, один файл</p> </div> <ul class="vb-k7t-ctrl"> </ul> </div> </section> <section class="vb-k7t-sec" id="vb-k7t-audience" data-section-name="для кого" aria-labelledby="vb-k7t-aud-title" data-vibeblock-unique-section="yes"> <div class="vb-k7t__wrap vb-k7t-aud"> <div class="vb-k7t-aud__media vb-k7t-rv"> <img src="https://static.tildacdn.pub/tild3139-3863-4130-a136-653331363563/photo.png" alt="Внешний SSD-накопитель" data-i18n-alt="aud.imgAlt" width="560" height="400" loading="lazy"> </div> <div> <h2 class="vb-k7t-aud__title vb-k7t-rv" id="vb-k7t-aud-title" data-i18n="aud.title">Для кого</h2> <p class="vb-k7t-aud__text vb-k7t-rv" data-i18n="aud.text">Для инженеров, энтузиастов, продавцов техники и всех, кто хочет узнать, что внутри SSD — например, перед покупкой или при диагностике.</p> </div> </div> </section> <section class="vb-k7t-sec" id="vb-k7t-faq" data-section-name="вопросы и ответы" aria-labelledby="vb-k7t-faq-title" data-vibeblock-unique-section="yes"> <div class="vb-k7t__wrap"> <div class="vb-k7t-sec__head"> <h2 class="vb-k7t-sec__title" id="vb-k7t-faq-title" data-i18n="faq.title">Вопросы и ответы</h2> </div> <div class="vb-k7t-faq"> <details class="vb-k7t-faq__item"> <summary data-i18n="faq.1.q">Что именно определяет программа?</summary> <p class="vb-k7t-faq__answer" data-i18n="faq.1.a">Тип и характеристики установленной памяти, модель диска, прошивку, серийный номер и используемый контроллер. Если диск не поддерживается, программа скажет об этом прямо.</p> </details> <details class="vb-k7t-faq__item"> <summary data-i18n="faq.2.q">Программа бесплатна?</summary> <p class="vb-k7t-faq__answer" data-i18n="faq.2.a">Да. Программа полностью бесплатна, без регистрации и без ограничений по числу проверок.</p> </details> <details class="vb-k7t-faq__item"> <summary data-i18n="faq.3.q">Программа что-нибудь пишет на диск?</summary> <p class="vb-k7t-faq__answer" data-i18n="faq.3.a">Нет. Программа только читает данные с диска. Содержимое накопителя остаётся нетронутым.</p> </details> </div> </div> </section> <section class="vb-k7t-sec" id="vb-k7t-download" data-section-name="скачать" aria-labelledby="vb-k7t-final-title" data-vibeblock-unique-section="yes"> <div class="vb-k7t__wrap"> <div class="vb-k7t-final vb-k7t-rv"> <h2 class="vb-k7t-final__title" id="vb-k7t-final-title" data-i18n="final.title">Попробуйте на своём SSD</h2> <p class="vb-k7t-final__text" data-i18n="final.text">Скачайте утилиту, подключите любой SSD и посмотрите, что внутри.</p> <a class="t-btnflex t-btnflex_lg" href="https://github.com/kostikn/ssdtool-site/releases/download/setup/SSD_ROM_Tool.exe" target="_blank" rel="noopener noreferrer"> <div class="t-btnflex__text" data-i18n="btn.download">Скачать для Windows</div> </a> </div> </div> </section> <footer class="vb-k7t-footer-wrap" data-section-name="подвал" data-vibeblock-unique-section="yes"> <div class="vb-k7t__wrap vb-k7t-footer"> <span class="vb-k7t-footer__brand">SSD ROM Tool</span> <span data-i18n="footer.note">Утилита для чтения паспорта и определения памяти SSD · Windows 10 и 11</span> </div> </footer> </div> <script>
+(function () {
+  var root = document.getElementById('vb-k7t-root');
+  if (!root) return;
+
+  var TITLES = { ru: 'SSD ROM Tool — что внутри вашего SSD', en: 'SSD ROM Tool — what is inside your SSD' };
+
+  var DICT = {
+    ru: {
+      'nav.label': 'Основная навигация',
+      'lang.label': 'Язык',
+      'nav.features': 'Возможности',
+      'nav.steps': 'Как это работает',
+      'nav.faq': 'Вопросы и ответы',
+      'btn.download': 'Скачать для Windows',
+      'hero.title': 'Что внутри вашего SSD',
+      'hero.sub': 'программа для чтения паспорта и определения памяти SSD',
+      'hero.text': 'Бесплатная утилита для Windows. Определяет установленную память, читает настоящий паспорт диска — модель, прошивку, серийный номер — и поддерживает множество контроллеров.',
+      'hero.note': 'Бесплатно · без регистрации · без установки',
+      'hero.imgAlt': 'Накопитель SSD крупным планом',
+      'feat.title': 'Что определяет программа',
+      'feat.descr': 'Шесть вещей, которые программа показывает про любой подключённый SSD.',
+      'feat.1.t': 'Определяет тип памяти',
+      'feat.1.d': 'Показывает, какая память установлена в SSD: тип, производитель чипов и другие характеристики.',
+      'feat.2.t': 'Настоящий паспорт диска',
+      'feat.2.d': 'Модель, прошивка, серийный номер и ёмкость берутся из самого накопителя. Они видны, даже когда Windows показывает диск пустым или на пару мегабайт.',
+      'feat.3.t': 'Знает множество контроллеров',
+      'feat.3.d': 'Поддерживает контроллеры Phison, SMI, Realtek, Yeestore, Maxio и другие. Список растёт с каждой версией.',
+      'feat.4.t': 'Читает даже «молчащие» диски',
+      'feat.4.d': 'Умеет будить диск из служебных режимов, чтобы прочитать паспорт у SSD, который не определяется в системе.',
+      'feat.5.t': 'Показывает всё в одном окне',
+      'feat.5.d': 'Паспорт диска, тип памяти, контроллер и другие сведения собраны на одном экране — без таблиц и логов.',
+      'feat.6.t': 'Только чтение, без риска',
+      'feat.6.d': 'Программа не пишет на диск и не меняет его содержимое. Можно спокойно проверять даже чужие SSD.',
+      'warn.title': 'Только чтение — ничего не пишет на диск',
+      'warn.text': 'Все операции информационные: программа только запрашивает данные у диска и показывает их. Содержимое накопителя остаётся нетронутым.',
+      'steps.title': 'Как это работает',
+      'steps.descr': 'Три шага от подключённого диска до полного паспорта.',
+      'steps.1.t': 'Подключите диск',
+      'steps.1.d': 'Напрямую по SATA или NVMe, через USB-переходник или в порт для флешек.',
+      'steps.2.t': 'Посмотрите паспорт',
+      'steps.2.d': 'Программа определит накопитель и покажет, что с ним и что можно сделать.',
+      'steps.3.t': 'Узнайте, что внутри',
+      'steps.3.d': 'Программа покажет тип памяти, контроллер и паспорт диска в одном окне.',
+      'facts.title': 'Факты о программе',
+      'facts.1': '<strong>Бесплатно</strong>, без регистрации и ограничений',
+      'facts.2': '<strong>Windows 10 и 11</strong>, 64-разрядные',
+      'facts.3': '<strong>Русский и английский</strong> интерфейс',
+      'facts.4': '<strong>Без установки</strong>, один файл',
+      'ctrl.1.d': 'запуск штатной прошивки из режима SATAFIRM, чтобы прочитать паспорт',
+      'ctrl.2.d': 'в планах; пока только вывод из busy-режима, и не на всех дисках',
+      'ctrl.3.d': 'встречается в дисках ADATA',
+      'ctrl.4.d': 'не путать с HC — это немного разные контроллеры',
+      'ctrl.5.d': 'поддержка проверяется; подключите диск в штатный SATA-порт и посмотрите, определит ли программа контроллер. Если нет — программа так и напишет',
+      'aud.title': 'Для кого',
+      'aud.text': 'Для инженеров, энтузиастов, продавцов техники и всех, кто хочет узнать, что внутри SSD — например, перед покупкой или при диагностике.',
+      'aud.imgAlt': 'Внешний SSD-накопитель',
+      'faq.title': 'Вопросы и ответы',
+      'faq.1.q': 'Что именно определяет программа?',
+      'faq.1.a': 'Тип и характеристики установленной памяти, модель диска, прошивку, серийный номер и используемый контроллер. Если диск не поддерживается, программа скажет об этом прямо.',
+      'faq.2.q': 'Программа бесплатна?',
+      'faq.2.a': 'Да. Программа полностью бесплатна, без регистрации и без ограничений по числу проверок.',
+      'faq.3.q': 'Программа что-нибудь пишет на диск?',
+      'faq.3.a': 'Нет. Программа только читает данные с диска. Содержимое накопителя остаётся нетронутым.',
+      'final.title': 'Попробуйте на своём SSD',
+      'final.text': 'Скачайте утилиту, подключите любой SSD и посмотрите, что внутри.',
+      'footer.note': 'Утилита для чтения паспорта и определения памяти SSD · Windows 10 и 11'
+    },
+    en: {
+      'nav.label': 'Main navigation',
+      'lang.label': 'Language',
+      'nav.features': 'Features',
+      'nav.steps': 'How it works',
+      'nav.faq': 'FAQ',
+      'btn.download': 'Download for Windows',
+      'hero.title': 'What is inside your SSD',
+      'hero.sub': 'a tool for reading the SSD passport and detecting its memory',
+      'hero.text': 'A free Windows utility. It identifies the installed memory, reads the real drive passport — model, firmware, serial number — and supports many controllers.',
+      'hero.note': 'Free · no signup · no installation',
+      'hero.imgAlt': 'Close-up of an SSD drive',
+      'feat.title': 'What the program identifies',
+      'feat.descr': 'Six things the program shows about any connected SSD.',
+      'feat.1.t': 'Detects the memory type',
+      'feat.1.d': 'Shows what memory is installed in the SSD: type, chip manufacturer and other characteristics.',
+      'feat.2.t': 'A real drive passport',
+      'feat.2.d': 'Model, firmware, serial number and capacity come from the drive itself. They are visible even when Windows shows the disk as empty or a couple of megabytes in size.',
+      'feat.3.t': 'Knows many controllers',
+      'feat.3.d': 'Supports Phison, SMI, Realtek, Yeestore, Maxio and others. The list grows with every version.',
+      'feat.4.t': 'Reads even "silent" drives',
+      'feat.4.d': 'Can wake the drive from service modes to read the passport of an SSD that does not show up in the system.',
+      'feat.5.t': 'Shows everything in one window',
+      'feat.5.d': 'The drive passport, memory type, controller and other details are gathered on a single screen — no tables or logs to dig through.',
+      'feat.6.t': 'Read-only, safe to use',
+      'feat.6.d': 'The program does not write to the drive or change its contents. You can safely check other people\u2019s SSDs.',
+      'warn.title': 'Read-only — never writes to the drive',
+      'warn.text': 'All operations are informational: the program only requests data from the drive and shows it. The contents of the drive remain untouched.',
+      'steps.title': 'How it works',
+      'steps.descr': 'Three steps from a connected drive to a complete passport.',
+      'steps.1.t': 'Connect the drive',
+      'steps.1.d': 'Directly over SATA or NVMe, via a USB adapter, or into a flash-drive port.',
+      'steps.2.t': 'Check the passport',
+      'steps.2.d': 'The program identifies the drive and shows what is wrong with it and what can be done.',
+      'steps.3.t': 'See what is inside',
+      'steps.3.d': 'The program shows the memory type, controller and drive passport in one window.',
+      'facts.title': 'Facts about the program',
+      'facts.1': '<strong>Free</strong>, no signup, no limits',
+      'facts.2': '<strong>Windows 10 and 11</strong>, 64-bit',
+      'facts.3': '<strong>Russian and English</strong> interface',
+      'facts.4': '<strong>No installation</strong>, a single file',
+      'ctrl.1.d': 'launches the stock firmware from SATAFIRM mode to read the passport',
+      'ctrl.2.d': 'planned; for now it only wakes drives out of busy mode, and not on all of them',
+      'ctrl.3.d': 'found in ADATA drives',
+      'ctrl.4.d': 'do not confuse with HC \u2014 these are slightly different controllers',
+      'ctrl.5.d': 'support is being verified; connect the drive to a regular SATA port and see if the program identifies the controller. If not, the program will say so',
+      'aud.title': 'Who it is for',
+      'aud.text': 'For engineers, enthusiasts, hardware resellers and anyone who wants to know what is inside an SSD — for example before buying or while troubleshooting.',
+      'aud.imgAlt': 'An external SSD drive',
+      'faq.title': 'Questions and answers',
+      'faq.1.q': 'What exactly does the program identify?',
+      'faq.1.a': 'The type and characteristics of the installed memory, drive model, firmware, serial number and controller used. If the drive is not supported, the program will say so directly.',
+      'faq.2.q': 'Is the program free?',
+      'faq.2.a': 'Yes. The program is completely free, with no signup and no limit on the number of checks.',
+      'faq.3.q': 'Does the program write anything to the drive?',
+      'faq.3.a': 'No. The program only reads data from the drive. The contents of the drive remain untouched.',
+      'final.title': 'Try it on your SSD',
+      'final.text': 'Download the utility, connect any SSD and see what is inside.',
+      'footer.note': 'A utility for reading the SSD passport and detecting its memory · Windows 10 and 11'
+    }
+  };
+
+  var FACT_KEYS = ['facts.1', 'facts.2', 'facts.3', 'facts.4'];
+
+  function applyLang(lang) {
+    var dict = DICT[lang] || DICT.ru;
+    root.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n');
+      if (!dict[key]) return;
+      el.textContent = dict[key];
+    });
+    root.querySelectorAll('[data-i18n-alt]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-alt');
+      if (dict[key]) el.setAttribute('alt', dict[key]);
+    });
+    root.querySelectorAll('[data-i18n-aria]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-aria');
+      if (dict[key]) el.setAttribute('aria-label', dict[key]);
+    });
+    root.querySelectorAll('.vb-k7t-lang__btn').forEach(function (btn) {
+      var active = btn.getAttribute('data-lang') === lang;
+      btn.classList.toggle('is-active', active);
+      btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+    document.documentElement.setAttribute('lang', lang);
+    if (TITLES[lang]) document.title = TITLES[lang];
+  }
+
+  function renderFacts(lang) {
+    var dict = DICT[lang] || DICT.ru;
+    root.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n');
+      if (FACT_KEYS.indexOf(key) === -1) return;
+      var raw = dict[key];
+      var parts = raw.split(/<strong>|<\/strong>/);
+      el.textContent = '';
+      parts.forEach(function (part, i) {
+        if (!part) return;
+        if (i % 2 === 1) {
+          var strong = document.createElement('strong');
+          strong.textContent = part;
+          el.appendChild(strong);
+        } else {
+          el.appendChild(document.createTextNode(part));
+        }
+      });
+    });
+  }
+
+  root.querySelectorAll('.vb-k7t-lang__btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var lang = btn.getAttribute('data-lang');
+      applyLang(lang);
+      renderFacts(lang);
+    });
+  });
+
+  root.querySelectorAll('.vb-k7t-nav a').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      var id = link.getAttribute('href');
+      if (!id || id.charAt(0) !== '#') return;
+      var target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+    });
+  });
+
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    root.classList.add('vb-k7t-anim');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('vb-k7t-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    root.querySelectorAll('.vb-k7t-rv').forEach(function (el) { io.observe(el); });
+  }
+})();
+</script> <style data-vb-overrides="true">
+#vb-k7t-hero-title {
+    text-transform: none;
+}
+</style> <!-- nominify end --> </div> <script>(()=>{const record=document.getElementById('rec4771968201');if(!record) {return;}
+const elements=record.querySelectorAll('.t1370 [data-vibeblock-anchor]');const anchors=Array.from(elements,element=>({element,parentNode:element.parentNode,anchorName:element.getAttribute('data-vibeblock-anchor'),}));for(const {element,parentNode,anchorName} of anchors) {if(!anchorName) continue;const anchor=document.createElement('a');anchor.name=anchorName;anchor.setAttribute('style','font-size:0');parentNode.insertBefore(anchor,element);}})();</script> </div> </div> <!--/allrecords--> <!-- Tilda copyright. Don't remove this line --> <div class="t-tildalabel t-tildalabel-free" id="tildacopy" data-tilda-sign="47962609#304949209"> <div class="t-tildalabel-free__main"> <a href="https://tilda.cc/" target="_blank" style="padding-bottom:12px; display: block;"><img alt="" style="width:40px;" src="https://static.tildacdn.pub/img/tildacopy.png" fetchpriority="low"></a> <div style="padding-bottom: 15px;">This site was made on <a href="https://tilda.cc/" target="_blank" style="text-decoration: none; color:inherit;">Tilda &mdash; a website builder</a> that helps to&nbsp;create a&nbsp;website without any code</div> <a href="https://tilda.cc/registration/" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 13px; border-radius: 50px; background-color: #fff; color:#000; text-decoration: none;">Create a website</a> </div> <div class="t-tildalabel-free__links-wr"> <a class="t-tildalabel-free__txt-link" href="https://help.tilda.cc/white-label" target="_blank">How to remove this block?</a> <a class="t-tildalabel-free__txt-link" href="https://tilda.cc/" target="_blank">About platform</a> <a class="t-tildalabel-free__txt-link" href="https://tilda.cc/abuse/" target="_blank">Submit a complaint</a> </div> </div> <!-- Stat --> <script type="text/javascript">if(!window.mainTracker) {window.mainTracker='tilda';}
+window.tildastatcookie='no';setTimeout(function(){(function(d,w,k,o,g) {var n=d.getElementsByTagName(o)[0],s=d.createElement(o),f=function(){n.parentNode.insertBefore(s,n);};s.type="text/javascript";s.async=true;s.key=k;s.id="tildastatscript";s.src=g;if(w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded",f,false);} else {f();}})(document,window,'5603deb8264e4d6a3ebb2b7856fe4362','script','https://static.tildacdn.pub/js/tilda-stat-1.0.min.js');},2000);</script> </body> </html>
