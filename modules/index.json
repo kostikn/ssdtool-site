@@ -1,0 +1,28 @@
+{
+ "v": 1,
+ "kind": "modules",
+ "serial": 1,
+ "modules": [
+  {
+   "family": "smi_nvme",
+   "version": 1,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_nvme-1.ssdmod",
+   "size": 77223,
+   "sha256": "8c2ef1b59401fd8690e412a57e0cc719c09e3d741345789eb021da61e61e6814",
+   "modules": [
+    "controllers.smi.sm2263xt.service"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-10-25T19:04:55+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "I-2026-1025-01-1D52"
+  }
+ ],
+ "revoked": [],
+ "issued": "2026-10-25T19:04:57+05:00",
+ "sig": "7ad984eff728f3063204e705e98d9e66f4553c2145f7e3dcd6f598fa39e0e051df60b7aa8b5ace4bb4a50a1795e427a099eb2225a6da510a6acc3aa051dc90da2f488b9dfb74bd854f5f3043876708fccb94df2e55cee3bc3ca40cd68e72ffb8a6a5674e3ea0f30218f63071f5fc2c98dc5aba7102a551ec98321bd7c380f3b74786ebdad870cb0ce3aa413fde2b7d4e8b240fdd8cd9ed45cbd39642a854cf18cbad4c9468e818434f409404214418c4fe381bf84067bf8bb962ce52bea3c9353411f48c83f30ef15b9ae51e315395c43cb1dff5aa0983d2d49b192284af78fae1cd7c1fe2ee8a777fe975e5f486355004819d9f90797634f02e6b0609d88bf8dde6b5d32f200447038008da1263d8562142acdce1ba870d74066707e8e2cf4822a55ed436c05d97fa0d46bd3bcaac85baaec0e76195258c123817c265e51888b26fdfcfd7844aa848c0f96925a89ff86a7f8b838ae312bf3fda28e34e9ade4ff13a52304e17a76ad5398aa81c506153afed54615ebe15a9e7a1588d547ae9d0"
+}
