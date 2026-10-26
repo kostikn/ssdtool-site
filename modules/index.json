@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 11,
+ "serial": 12,
  "modules": [
   {
    "family": "smi_nvme",
@@ -235,9 +235,33 @@
    "issued": "2026-10-26T05:53:27+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "I-2026-1022-06-7EC9"
+  },
+  {
+   "family": "maxio",
+   "version": 5,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-5.ssdmod",
+   "size": 1015615,
+   "sha256": "411e5c2d8eec9017930c7506f6171e799e8d10004edd09fc8651de4e2995aae8",
+   "modules": [
+    "controllers.maxio.mas1102.codeblock_build",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.retry",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-10-26T06:49:55+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "I-2026-1022-06-7EC9"
   }
  ],
  "revoked": [],
- "issued": "2026-10-26T05:53:29+05:00",
- "sig": "23968aae2dbd2c2acc50c83385daa972d3e590bdf2e504a17e0e7540bdf75414d46f927c1051b6a67eae9b19bd4251e143a1a9cd491a51ba07354fd14b95371d2fd8b719acff9024ee038cf2ce77f1c6d0dd6b4d014b828edb469d7806a09ee41c76fceb82216df89439f40c512c288c36444e0f3647ee7331c505987d027aa2ecf87b610c6d2b0260ee4519096e9880d4c6fef2a907fbee952fc518f63c2f371846ec480f3c095bca1e69e228e76f4d6ba1a1739085f2dd820cb55a0c8c1c0d5465c960be782bb49cfb66bd583edc6a4f7ebb4678ad3ea9bace2f43f50b3f3ee9a49a8232c0ab49472a5b2aee1986a9406f28be7d386f95c7cdef704af56530e5e2e699126329aea319d11d3f36df6a3d472d1ca8fa04cd0bc50d7754deadb6de0898e85a99e7f3148217d76b5a05a5882d6d5f72e55d45882f3e866f0ed56c4178fd719c8fd7bf9335c31e4b25b44fb038702a40f6b567f0be60c6ad15f2e33165eeca6b332bc057aea6c9bbb2a0d30f05914159758837f9c23359c91d524e"
+ "issued": "2026-10-26T06:50:03+05:00",
+ "sig": "1aae91342265db58a8a3756341f4345f1e9e9333fcb166bfd529ec3c1a870473e120d51276aab919b1e8b904da3c972d4b554943960019c11ed7718877b0b3ecc5e3573c4af1fd42f56f9505439563f62bd60b06695d67ad88d9ebf84a182cf65d713b20273a763373499b2d02cf0e589f5b7257755bbdb12846403054c4efdfa76275767f0d0d86d2050248f4c5320902f7dd655219c09dbde538d56e08cc3ce7abaae531621f9d55e43758707e9eef473c8bdae8138740f6c6cfd88b40af98a2ecca3e75a61288b1c1b8863f43b705dc71f9a897f2f0079d3ab583aabaee1fc1aa20393be9249c41f054bf009ee5d27d67703d898daad4d7e018499a372159edbb0d180cf6725cec10ba3dbd44beb7b2d15383dc9a39060945e2ffb13a2ad23b8c5bb58d6af8695f8903e7408d2c3725a9ba6746dba4cf7a818493528921e873c6c9a360b2caf02f7eacb3804fb19c53d107fe005d639bb8b4e7da8f3488d53ca3e059192b8497d7a78d5e4eb047d3df93e986ff817a74223f8aee03b7e7ad"
 }
