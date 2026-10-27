@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 36,
+ "serial": 37,
  "modules": [
   {
    "family": "smi_nvme",
@@ -872,9 +872,37 @@
    "issued": "2026-10-27T12:47:21+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "I-2026-1027-02-1D52"
+  },
+  {
+   "family": "smi_nvme",
+   "version": 15,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_nvme-15.ssdmod",
+   "size": 1425778,
+   "sha256": "efda4622e2bbedfa822a70a36dba2653cc4b4963eabcf7936179fa974a8280c7",
+   "modules": [
+    "controllers.smi.sm2263xt.binding",
+    "controllers.smi.sm2263xt.bringup",
+    "controllers.smi.sm2263xt.freshness",
+    "controllers.smi.sm2263xt.gui_actions",
+    "controllers.smi.sm2263xt.passport_reader",
+    "controllers.smi.sm2263xt.safe_read",
+    "controllers.smi.sm2263xt.service",
+    "controllers.smi.sm2263xt.start_disk",
+    "controllers.smi.sm2263xt.survey",
+    "controllers.smi.sm2263xt.translator",
+    "controllers.smi.sm2263xt.work"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-10-27T12:51:48+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "I-2026-1027-02-1D52"
   }
  ],
  "revoked": [],
- "issued": "2026-10-27T12:47:27+05:00",
- "sig": "6a3766428a8268ac890f1cd6b59bebaf714e910588c99ca7cb9ad485dc25e3338b3e745eafc7bb4693338c15eb59060ff9bb13d03bfb9a82584a14f6825f4b5f191258c0383a453e63e04dc3c2e79dd6d33f334008678172ec23b767552651ef3aa91e49dd83e7f7665ecaeb32889e12c5b2e4fc29c1609a340d57c974564d5c66afb6d544e7cca262545c296348c3e3d5436dbf5d0b04111c0aca149b48776ae75372e553ec85756c9af53fae134cde3de947412f3dafd75bb73f61bf2f42ad107138646283160812a59b38566e3eb557b8f09bed423052fed410e7a69943c1d300bb8fdf4c5813a9e0ef50386ce687e3b8e96dda3904ef96f36e4e4419a1271aede5f99342fe79a4a049c2dfbd079a86ee01b7daef2fda1491863de72d2f3c8f5abe881815cd7ab07576c66d4519393dc29ba4feb03be7ed89f600549b8cdb87d76e1b1d9f3ca792adcc2a902978add1731f113dfc646284cbb783fad431d448f8999c3262c7496540bbc7bdbdb00662eab6b0ea174e4c54f787847ab5f7e6"
+ "issued": "2026-10-27T12:51:55+05:00",
+ "sig": "26be81cc1712bfb1c08ef5461cc6365c2c5b072f1d47ffdff99f89a94fb12cff3e37da5a7dfc2becb5a6aaf57e5cd1fb27e35725d97e3f233e1c31ea2ca3022c83a773bbec924a7a144503990dee0b0b3af4faef5b0543d9cb21239df09a37116f5e230e2ca6c93b342002051c6d6820c3fd6f33292d48b459d813104dd5e9a7979f42efa153acd92a09d348f87f09ba344cf9fd537c66f03bb2f4f2d956e43a5c3a134f6c0af8d6763554d8d8c9eac8febce0871f1aa4f0fc5431e32b39f4fcb9a0f5af290315d9237c97d25a997f886548a8876a138213945f03c53ec64a4f3ed8c0c0ef2f3ddf71d10c879eecef621efe1be5c2c95a47078f54f4f4987104b9df60b11fd70151b315f96235c9e2130b6d61819f8fc4a6933f700f404120bcfca647e817e6c9dbcfaa141643044c0df8e1f05775bec0c073fcb3a75a7d615e79327ea48b4b5ed8ec02caf204046ed89b9b6a28a7c3c3b5c729646139d7ce213aac63ac12affbd13509bccc4d3f172fc1182a2d5aff532f0a1720406e4e3ad8"
 }
