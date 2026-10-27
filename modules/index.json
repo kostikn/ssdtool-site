@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 48,
+ "serial": 49,
  "modules": [
   {
    "family": "smi_nvme",
@@ -1217,9 +1217,36 @@
    "issued": "2026-10-27T20:20:23+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "I-2026-1027-05-DEBA"
+  },
+  {
+   "family": "yeestor",
+   "version": 11,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-11.ssdmod",
+   "size": 1062000,
+   "sha256": "cae30d2602e9bcb12e8cafe16f3f6e235c4a639d0ca2b3260dd3b8223f53e561",
+   "modules": [
+    "controllers.yeestor._shared.boot_area",
+    "controllers.yeestor._shared.client_log",
+    "controllers.yeestor._shared.freshness",
+    "controllers.yeestor._shared.generation_branch",
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.index_checkpoint",
+    "controllers.yeestor._shared.passport_search",
+    "controllers.yeestor._shared.service_bringup",
+    "controllers.yeestor._shared.translator",
+    "controllers.yeestor._shared.ys_state"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-10-27T22:05:34+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "I-2026-1027-03-8E4F"
   }
  ],
  "revoked": [],
- "issued": "2026-10-27T20:20:25+05:00",
- "sig": "82685442704270466e19e99437aa55e555deb8ab6613defda7a13fb5c519d916cbba839b1f26050538c30186394d1fa881c2ecf1ee8d02dcc593b3e6157d7ea744c12858081585d6f30a15f93e7ff410c3e1d06ac1b4cb86928ac3321f462fdd3cf31abbbb0b6e5d62e314205a181487a03db1caa4743317028675960f0f3ea3ad447d4bb83756bf2bf007a0eba0c594c2ee56307e30724d796abb901d22ee604152de137962e99bbdc679faa2e93762f8e5e7c38a6e31ebdb251717d8d5f7a2268e2f46252cb2f506231b96cd40ef4bff8d0f051a8e4b7e8b4479e8054d6d7ce947f4f1797d7711b9fa841d26e7b1b809ae7192521616c787c42d72830355561ee5b65dff380f006bfc1583a532fedf7c7421ee9d583a431454f311c999d3cc8c1499e0b9a9f8749d9b6eb2bf89c373bd38de97fd6c4488b7559570572c88c834a0fb0d301ae57302b57bdce75d6f6b596e7d62e60c5ec9a65e59668b40303aa65943479d852f0b1b85e004a85fd1d005ac28e0633daeaae84d272635112a73"
+ "issued": "2026-10-27T22:05:35+05:00",
+ "sig": "4748dc4f5184a1535646a398c6ce9e84ce998cc70d7ef891155e9faabcde81af2ac1ab8f4dc5153755951878aea715d213d31480bc07eeb496cf496823eed52eb424a9295614ea85816d2f99cf77090d0ed6b3977a440484ecfb18ad6ad1f5894329dd7bb203b7d176d8f000bea19a2937e9ef401b68edcfe26983fab601b12527c88673dca8437d4aa1e079b74149d3567d4b3bac36be8d2bc1251b98aed28f16ef673b7f36be1c943669a9077949287367d3402672fbaa291957a3f01f8e77ce22e7370ff719d734c06373a61277616b8aa6cc2aecb1265842ac08b84ae0c48884bee41e78a3985d7bd0dbf1fbc2b2048e1e42e591cb3467cad9bbca179f84f211bf898ca64585121e26122e9a5d092c29ceb4eb1e6ff67d9ae92510772f91bc68dc3a38ffce620252fafbee7fdee284b4b0d5d273860a5eb005a99813f3978bdf0c42590887ffed7291da692c9cd9603e136e6cb810dab6b90b3138ec1dbfe07af222caecff9751f0e0358ee8ac7a657962ff5a1ef919bbf8074e0d32e49b"
 }
