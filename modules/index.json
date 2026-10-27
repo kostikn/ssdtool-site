@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 42,
+ "serial": 43,
  "modules": [
   {
    "family": "smi_nvme",
@@ -1041,9 +1041,35 @@
    "issued": "2026-10-27T16:12:45+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "I-2026-1027-08-1D52"
+  },
+  {
+   "family": "yeestor",
+   "version": 10,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-10.ssdmod",
+   "size": 951806,
+   "sha256": "a89b3217835de61566d3db1d337d133c072a4b05255cfe6deb22550a000d06a9",
+   "modules": [
+    "controllers.yeestor._shared.client_log",
+    "controllers.yeestor._shared.freshness",
+    "controllers.yeestor._shared.generation_branch",
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.index_checkpoint",
+    "controllers.yeestor._shared.passport_search",
+    "controllers.yeestor._shared.service_bringup",
+    "controllers.yeestor._shared.translator",
+    "controllers.yeestor._shared.ys_state"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-10-27T17:10:38+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "I-2026-1027-01-5BFA"
   }
  ],
  "revoked": [],
- "issued": "2026-10-27T16:12:58+05:00",
- "sig": "935174feb9b06d5130c2ee93cd2d4a7de11936f54df8f7b2b9df0c97a7c5a725ed3b34f6ef9f0714595024ec52bc44681d108c2c430b50ab10f0d9209503dc77d12dd5d737423569516f5bb60badc85d70554a6e40c0129e60094bf688a6e645613f45ccf04d7bfd3da8ab190a351546f1e857521554aeca150236153a070756803fa624405b98c7517b043402dc40da91047fe6fa374e681bd2de2bad02461da3f204be5c23c6daac2d4ac4247e510e76d142ccd08936c425f4a6335f593e24823a55e22651a0c166c0f49acf3e817b520014633acf0074fdde5dc224c7a72d1549b305709bb1a3787a6dc3d4dc93a750ea30d519ebedae757e188e81931345121fe0d88339a91dc2bf61800dfbcc29e993c7465e276d2392d32dca9f3fb1bed53cdfa8ac3021cb137cce9e7aed87795f2b11384703fd10d07d52da3efdae79dc9a8ab531f2025ab930e20a1172b15861befbcbeccab6ecabc445100598373efe82b4a174d67636069bf927b5a1ef6a345897b6550d6e6093da5e2c57755f2c"
+ "issued": "2026-10-27T17:10:40+05:00",
+ "sig": "073cdfe034ce92677300a2bffd70b4d0ea2824905aaa999c7eb0202aa5fb62b745d7ddd591e0642cd5d83778d32b06320d23267d75a05dff01058cbacac1ec5cb9c2b0577fba9ccddd1bc34d3482c40df2d53952b26ff7565f0d4bf7e64edd57c36e9c846318b5b9423bf3b703e493806e1d8587e9b3b4032ccf80711501cafedff148aa1d10b6eb5b82a2ca411918b815313b01c175943070e0d3a9094f2e29918572f1cb970f95239e2e55beacd5f3ae6c5e7b01d695ebf1c08d678687b0fcc9c27066033604dfd586f211d5dd14b1a53298d0f5e0eaef910fc04fcd3a32cb35b17138586a5b1cc4cf87365ee45f938784c48adf1745a7c0f1d6b8a15c0e0cb2fe4217afb8d48373df0d4e64117726d013452a63679359a28186878c8c2d1673a5432bc7a6e824c4db09caae640be5955c188ba13d953038499e2fff69e0279b16a109ba820a269e1c44b2bee3632e6e44dff82165127ebde6589f1e72c903e16386d6c92f52dac038bd24f823ea127a7428e24a71f2d26b76dc85ed825eb5"
 }
