@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 33,
+ "serial": 34,
  "modules": [
   {
    "family": "smi_nvme",
@@ -791,9 +791,34 @@
    "issued": "2026-10-27T11:55:45+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "I-2026-1027-02-1D52"
+  },
+  {
+   "family": "yeestor",
+   "version": 9,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-9.ssdmod",
+   "size": 898211,
+   "sha256": "988026eb405e5b697ed34f80e51e830707bbe79ab131bb0f1dfddb082f87fbcb",
+   "modules": [
+    "controllers.yeestor._shared.client_log",
+    "controllers.yeestor._shared.freshness",
+    "controllers.yeestor._shared.generation_branch",
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.index_checkpoint",
+    "controllers.yeestor._shared.service_bringup",
+    "controllers.yeestor._shared.translator",
+    "controllers.yeestor._shared.ys_state"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-10-27T12:34:42+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "I-2026-1027-01-7EC9"
   }
  ],
  "revoked": [],
- "issued": "2026-10-27T11:56:00+05:00",
- "sig": "64ff635f2fc638d9465cba616e8dfbbd7548b686d02bf936e5fa8daaa1c29c9bc0cd4d8811ef64459a4629fea2eb233a54b6b4757168fcfb468cfdd5c4d71e07ae10adcdc4a39f964f4dc6a0d1e10dc9c2c4ec7fe0c5b3ff5e09dffb445b74b1d49cb12564294df5a10f87325b7750af5181fef82aa3cb4752f0870570465733938484bdb4aea7c2b53b810f375708e36aae5d5c1fadaa457904f71c02e22b905d0034d4242ce66c23145e50191cc55e521ccf5b656719b4f9db0ccda274bf3436a0cb44d297c0e07e76e03a30ff5fddcb7efad38260aedb0c96883c400fb46d081ea5ed88a3e7fd670a360ecdc88a3db201f6c1cb8d4792c0e429f6b1bf4472d2cb9858f8d59d8e086cb38256ff0fbc9f5ce55cf140f825c4f98db292162ddbe19d7c93255d5a68e1a489d9a17afee7f5dbdf4c389dea964eb7597132be8aef2223aaa7c4db99c7a84a847767141a868e5b88dde56b762672dbfb3467e4b87d9d5c20d27f28809c0f23efba6bd5012515f4035af1afbb3e27eb3b684b0b5ccb"
+ "issued": "2026-10-27T12:35:03+05:00",
+ "sig": "2d73f55911e19033a28dd584cae391ca4aa914e633611ca01ceefefa3bc13bcc7e1974045c3a0c43c247c4d49ec9b92a76b07bd0638c5180cba61124809dc047a1ccaee32cccff8622f57607cf61dba4ea3f984596c0185d84ab3b0516ed9adef929e5c6e15c958455f8d3980283093128b426cbb33201f9f8676b1250dc1330e1789641ade7a8aab1b15a12d2040696bd043638ea98d949e0e15461426f29e17b66ef980ccb4660ff5ee37417f6fd3e85e1feba91300248dd9f3f6686d1ab1ee3dcf279b0591e79ade1d00dce9852cc5bc9dea47a9c1a13580aace0f917c78b847e14a3acbcd206a4cb56bafe2b16e4c72efc796592955b51e0320cc62515ff64dc4936cc404172c5cd5d04f2ff440a979c8358953296ce3d5a0a5fb4e95134c7a8fdc4a1ac3c5f009e225479318a5ae107bd043a6ad2fa426e2e7859136d1813a27fddce1b474528df1d058a936282d856b01bdcb909c4225b71b5c0dfd6725c8428c156bdb2798a884a5f2bb73b60e6ac2793503ddf19996d9c243d592e57"
 }
