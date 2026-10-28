@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 72,
+ "serial": 73,
  "modules": [
   {
    "family": "smi_nvme",
@@ -1966,9 +1966,41 @@
    "issued": "2026-10-29T00:06:50+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "repair-resources-2026-10-28"
+  },
+  {
+   "family": "maxio",
+   "version": 19,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-19.ssdmod",
+   "size": 1953838,
+   "sha256": "6c155de6825bf0032080884f675597d70cf79f57470ba823aeb0e2465415cd4a",
+   "modules": [
+    "controllers.maxio.mas1102.codeblock_build",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.locate",
+    "controllers.maxio.mas1102.passport_nand",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.retry",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-10-29T00:13:30+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "translator-leaf-codec-2026-10-29"
   }
  ],
  "revoked": [],
- "issued": "2026-10-29T00:06:52+05:00",
- "sig": "7df4df0bb2b4a7c8c6b0e8a77a88eafa21269e22dd4ed4f46b29491e34eee2137a8759db390f01b97a48f85d3f09779ddc6102717552d562260f547fd38129c9b7c4b9aada9c2a80e4e0a30b2faea95ebcc531ed5d74f1ad1cb43f70e90f8e5f124a6e9eb37bb866a973cf144736572d29504d0323809b49d9a05b662c0a93016a8edc01bcfcb337b836e93cfc54003285645198342dff006ac22ad3f4b3f79271add048ca56716601bfceec3300be03c3f655643edbf0288f657dfd283ece7f7b601300aa9846d054bed9680bba073c99ba8bb58949b01de00177852204313906f68d4e483450c05c865593e72428935d9b6939a0481cb20fdc7f62a2ca9fe2d0ef528723c577d896995fc072b9860c85603267534ccd8726fbe6deb0d5852e52428c6103f1ca8188df6ab0338e5c69e9b457f9ef51638cf9d8104232abf6ed60a38004076286591f89d767518b52aab91e927bafa1627cf384d9e5e8408bf905ec06d933336b511a38ef7022223ba65ed15a29a78796598ff39b198bc7406c"
+ "issued": "2026-10-29T00:13:32+05:00",
+ "sig": "232f859aa1387ef40798747e443def9ee4f2af4bbc39c5362f031228d4dab10d22af51a9403391b1033bbbf1d44bd9089a8b844ce5236a379332d3f00cfcf63bb79c25a634a9fab7864f466cc9b217aaec49ea2258f79e07b9f1954cc0faec23d44a70aa11462b65a8546dd1011d4c5698e5593973f7cca7196135895d88cc0200935bccc5211b67df0ca5880d89327988182a8ae47f505e55a247102c111c6c28bdfc0832ed08affbe9856926e5895ea5f6aaad91c5619d7277b6042fb21acde17a9a98e6da0cd7fe0a574b66d6b95a95d0ed47da09ded64833e22aeef51ca129a10e2661a097ce506ef13ebad7faf2e0060efd43b1b9186942b7774c4dec7309b0c11289fab26d5fc52e7fc26f1b21c132366bcb5a7b9c8c0dc7935750ff37371b607ca3ddb031bf47ee75655c6b86c2142f5b7e6bb7803862cc4502e51e7946fce7d1435d16645323d1f644c795298e847d17b2aa33786bcf89f710aed2f2551817dc96c3e63b4c69727d5fa5badbaf8bc7e00c4a3e54890bb2d924ec0d66"
 }
