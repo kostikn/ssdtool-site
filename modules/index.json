@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 58,
+ "serial": 59,
  "modules": [
   {
    "family": "smi_nvme",
@@ -1516,9 +1516,36 @@
    "issued": "2026-10-28T14:16:07+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "ram-start-m6-2026-10-28"
+  },
+  {
+   "family": "yeestor",
+   "version": 14,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-14.ssdmod",
+   "size": 1074984,
+   "sha256": "ce85284e5161c56af758cc6d46da78b65a5c5eb1ec1208d5e8cc598399415973",
+   "modules": [
+    "controllers.yeestor._shared.boot_area",
+    "controllers.yeestor._shared.client_log",
+    "controllers.yeestor._shared.freshness",
+    "controllers.yeestor._shared.generation_branch",
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.index_checkpoint",
+    "controllers.yeestor._shared.passport_search",
+    "controllers.yeestor._shared.service_bringup",
+    "controllers.yeestor._shared.translator",
+    "controllers.yeestor._shared.ys_state"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-10-28T14:55:32+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "I-2026-1028-09-8E4F"
   }
  ],
  "revoked": [],
- "issued": "2026-10-28T14:16:08+05:00",
- "sig": "7a9b893dfc438e8b57cc8428aee510d66ccba5c77514007a21798c542bfd6d631ec7ab52409f2980ed018ef4e060a310e80c86a7b4c80557ffd1e5ba9b17c54a10e7552ba138b439905506cc23270c741cdf086edf62cfeff9848b4501e2f271c142d1a74a29feb3b6d90cd75a2e66bc96d42be4e48eda59ce712f2e33ce19665d02590dcbb942ecd4fc57d101d37d27e1a1babecd6df9c2157b5acdd738b1183a65443e6c52e0ec0d19f152c86df33a4654e9ab977890779782bb21544316cfd3136cf9118862f258678a9bc453b65cdb66b48f6b234d0ca2c54c98810d55e6cc18fc02572e8858446079e6f6d7eb05f28819b11b46b82fa1c85cd3d0d026b8af567f89ca31e947c7124836ebd6f1a6bd309a2b8f6b00b2fc2a5deffcc8a9d7854d472a2ccd5db32c7f9a6e1dc79216246e5214dc32c88cf18d31e0457966e5892d1c29070ee0ec729fb63472ab86e7e406b259bfc50d8325e408e11c067f053e83ef4a449366f458093290e89969ebd522b39198d304093637e393de0c1c7e"
+ "issued": "2026-10-28T14:55:33+05:00",
+ "sig": "5adb01f4bdfd4749dde79b1a4ba065da35a8b7fd9232941ac02886bfe73d86f2ff956757539eb7b59ffcbf154f11a713121e8247a7329a45113236780fbb3c0c33cc3bb51351051ac40960a8b99f744ad47788ffb3193a5ef378da9f772e64dccb8d58a96d98cd986a7642982a95261180228cc079dbf679270efb46be25d5c98bbe47e71e323a09fea3056ac054bdd949da0f47e63e02eebf9bc444955d3ca632a110ebc933b0a0f1cf9a506c0215a69e910140ecc7c0c035167f9ce75d28ce9f97c2ce6ac1f5fdeb5798d2d45701ab0409ca53205b6fb499a09d3912fae2f70abfa009258b5abf537df74308e4d921e3204baf79adf2752a82f842faeb6be0d72f9dfee0fe387fd5a6cd3585252a68ed27ae093bd1dbd93a5d17b63f0bdecf3a85858db491cd4add11c195a15c63473abf2be41348d77577d40db73b27b03c802569fc267ee81f3abec8a824fb331ee4ad09f12e37d86ca0174be90c32aed29b7dfb76232b97bbdb3910db860b56063de386878de6b32e707705af957fdd74"
 }
