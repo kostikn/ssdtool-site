@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 79,
+ "serial": 80,
  "modules": [
   {
    "family": "smi_nvme",
@@ -2148,9 +2148,44 @@
    "issued": "2026-10-29T09:56:16+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "repair-resources-2026-10-28"
+  },
+  {
+   "family": "smi_nvme",
+   "version": 36,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_nvme-36.ssdmod",
+   "size": 2185637,
+   "sha256": "40478721789b260ca5bd505edff3425d437819b589a656fb5d6e1baa1b24be9f",
+   "modules": [
+    "controllers.smi.sm2263xt.binding",
+    "controllers.smi.sm2263xt.bringup",
+    "controllers.smi.sm2263xt.freshness",
+    "controllers.smi.sm2263xt.ftl",
+    "controllers.smi.sm2263xt.fw_flash_id",
+    "controllers.smi.sm2263xt.gui_actions",
+    "controllers.smi.sm2263xt.history",
+    "controllers.smi.sm2263xt.keep",
+    "controllers.smi.sm2263xt.loader",
+    "controllers.smi.sm2263xt.passport",
+    "controllers.smi.sm2263xt.passport_reader",
+    "controllers.smi.sm2263xt.probe",
+    "controllers.smi.sm2263xt.safe_read",
+    "controllers.smi.sm2263xt.service",
+    "controllers.smi.sm2263xt.start_disk",
+    "controllers.smi.sm2263xt.survey",
+    "controllers.smi.sm2263xt.translator",
+    "controllers.smi.sm2263xt.work"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-10-29T10:36:12+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "repair-resources-2026-10-28"
   }
  ],
  "revoked": [],
- "issued": "2026-10-29T09:56:18+05:00",
- "sig": "5452dd2f850767af13db885423a3a197a2bad274ca4336d9b763ba02e44a2c2745d8d079c9bb491ab9e83c03327f4597cc992b335cac922792621011618614dcc993c4323e4b32af09f77fb4daeceafb8c1344934df051bbaab46a90412fc90918a3e034c199e68864c75b1aee0b64b824814bb14498c13424943a896619b3469c3242227a544bb86de51a534c007c5b1517af216fc9165d44de55efe90cce651e8832bb6c02f83da2519bd71690a4feafb8aab8389f99ccf4e133a16c30d67ff1c9b188ba686b28723eb9732f42bf20287c31e25a3752d55b19404c0ef0c8faf1fe29eac037f599c65c0e749526680eca4cec2c781ce7cb99d8bd05354359a6783e173744f1bb5e029301ef4bde3589a6024e617527b2ae6758f774ec7c2a2c816475a6a5decad1fb0b45756307dd0cbbc67fbe19fd46f6ce71b3adbeca755bb6c7eb0b22fbf23a27c2a99549f1ce2dd86fae56e2b66330f977965dc8823776076ce56447a29d527dc8760837289302b4370f77ce83dcf17420e9f4f806d42e"
+ "issued": "2026-10-29T10:36:13+05:00",
+ "sig": "4a2487d6fe76b54a83276dcdb0177d363f73592eb3f3b8d063d4b85488542d2e5fa2b84adf27b3588399daf5e189a6e63ee949e94ebfae09931230d47dad6df8cb296525dd7eaf0e48945e36b26ea167db882189c43ce3d4bc2fc0521bf2f3bf712e564a35d1805a3c182daec96ecee0a3f61f525d1ce3246fc16b9b1ecba84aec4752926383b43c8fc6632ef497436d51c2a9b005066d66a594f870ce13d166b23b2642ce2100df0f7dc0853a0a6317ef932d58b228cc4fbe239da61f985132eceaf36d1450cd78dac6298ed0b831283f42c6efe3b3c5d13d8341b243722ededf72265bf47c5e8e53ff28085cca1443d6f13782bdbd1d8c7da46fa1882cf7613e2ae78081c80f2e65b34c8a20f9d3a96a29e4ab18f2f591fd4d25707e1c833bcc8a6499f03f26a104b47419527fda705ccec5fd857c1288b3467eddc439f6733fccd873dda421ff46ead7208417cff69e476f1091929d016c925679bcd00e522ffefeda0f37dd3d40935d0474148458f8c01c195c4cc5ed94efa722db730b85"
 }
