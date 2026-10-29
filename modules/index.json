@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 85,
+ "serial": 86,
  "modules": [
   {
    "family": "smi_nvme",
@@ -2324,9 +2324,33 @@
    "issued": "2026-10-29T14:55:32+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "I-2026-1029-01-0ED5"
+  },
+  {
+   "family": "phison",
+   "version": 7,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-7.ssdmod",
+   "size": 665336,
+   "sha256": "9b96d12c361548f2be35c877f6d9de1f1fca3d0041f517be3e9908e3df3a3a8e",
+   "modules": [
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.sa_diagnosis"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-10-29T15:00:54+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "I-2026-1029-01-0ED5"
   }
  ],
  "revoked": [],
- "issued": "2026-10-29T14:55:45+05:00",
- "sig": "10935c7349058faf5816715f5585d57d4b723373c6bd93e869ccbec8096d2cf50af07cd31b677f602080c16c78f60ab696a50daebf65153739c923cad83148cdf7c750d9616e0b8e43e6e5ceb55e0656cd9d14599ed3f31648c3cea8b2fd3e31310de68037778ef84a5750199219cd3f535fae9be761b0d54078f4baf00ebddd31ddf74702341d088ca1f302ac0db9b0514198a0ca1caaf595401b0bfaa49f4865e413fe986eee59760757c74ccd98117b7bd4681c2d2a924920a76bca46975428c01223789a28c211d73da7ef8337634c86693407f8872a80b2499278ca7002121353590dd7bff9783dbdf59b9025b3fafea3806ef5b36befdb797d9be22c26e3c569e711a963c937af224631aa773d0a35239c9a8af4a4b8e7ea6afc82e068fa66114b9a47b59c05986419930fdc533e65e88b9c35a40eac9b47d76cf5931de7b99970dc1c79e02101635f1ab54825c58a35c5a23b261b0d0d95e7889c869e7b105cc86220a621b6f39beabc8f793a4a4c3fa7e312d9d1a10828407c290e4a"
+ "issued": "2026-10-29T15:01:07+05:00",
+ "sig": "8681bb9c4c4f3c395223d69e0459930c71a782a677432b53d338fc9a73a9d5b21d9b1e8b61fee4d4aa816ea8ef6fa10806bd625e8d4aff97aa47ec76071b507d63b06e25f40d2bea90d1aa31a02e367affa1a1ecc3e4e608a2596ae46264804f9406946c542c01e4f99724ea69d600368592746a43967b42b23338e845417c244d120a50efa29cfb3670d0ebdba63bbafcd6af4133ca8e99f7f3e02cd383632777a2ab7443b4358370156109f29fff6a3a9a061e252abdc9646c8c3edc7626c6130512568faf82d8ed5c519534dcd772abde96955d8f429fe8104c31370818835c164bfc19bb2f49f0485050dea49c7515b79af033490971085201f9939cb6f554ebd3c499a70fa9c77f80fb563fb7cfc3ecac5776529bc94da3451cee665d5647a6a478b4e5c4cffd865904bb7461f6ea6ffa855e6c5fc0b43247f8c0b2f93743f04e187151dffbec8f8667d37202ef1fc0c0b2d81db312b9a5dac19715c01be7d56dfb402acfbd86b85e3956fedef9ab545679b958d3fc8de91f7f0bc2493c"
 }
