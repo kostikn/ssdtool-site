@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 86,
+ "serial": 87,
  "modules": [
   {
    "family": "smi_nvme",
@@ -2348,9 +2348,37 @@
    "issued": "2026-10-29T15:00:54+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "I-2026-1029-01-0ED5"
+  },
+  {
+   "family": "phison",
+   "version": 8,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-8.ssdmod",
+   "size": 976805,
+   "sha256": "5e92bc72081475acc7f97128755257a709f86a24f4479fd8b19fe231e0ef8423",
+   "modules": [
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.sa_diagnosis"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-10-29T15:32:10+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "I-2026-1029-01-0ED5"
   }
  ],
  "revoked": [],
- "issued": "2026-10-29T15:01:07+05:00",
- "sig": "8681bb9c4c4f3c395223d69e0459930c71a782a677432b53d338fc9a73a9d5b21d9b1e8b61fee4d4aa816ea8ef6fa10806bd625e8d4aff97aa47ec76071b507d63b06e25f40d2bea90d1aa31a02e367affa1a1ecc3e4e608a2596ae46264804f9406946c542c01e4f99724ea69d600368592746a43967b42b23338e845417c244d120a50efa29cfb3670d0ebdba63bbafcd6af4133ca8e99f7f3e02cd383632777a2ab7443b4358370156109f29fff6a3a9a061e252abdc9646c8c3edc7626c6130512568faf82d8ed5c519534dcd772abde96955d8f429fe8104c31370818835c164bfc19bb2f49f0485050dea49c7515b79af033490971085201f9939cb6f554ebd3c499a70fa9c77f80fb563fb7cfc3ecac5776529bc94da3451cee665d5647a6a478b4e5c4cffd865904bb7461f6ea6ffa855e6c5fc0b43247f8c0b2f93743f04e187151dffbec8f8667d37202ef1fc0c0b2d81db312b9a5dac19715c01be7d56dfb402acfbd86b85e3956fedef9ab545679b958d3fc8de91f7f0bc2493c"
+ "issued": "2026-10-29T15:32:12+05:00",
+ "sig": "2eeebedd7192e4f7658900780ed65699c3aaed951d585ac72fdf71ce1fde1f6b790b0dd33f178c0f97199006ac01f39b7a20d56e08d47d1554871309c01d27efcd8cb96ee23eb30e2bc1d3ada1586eb92a0d665f91dfffdc59a47de4cc0e5b7ef89d7f1a1103aa2b8d62af9f31c3359a57ebf6e5e416a23786d4c5f17a9f8c024e4d7c92c68043ed72ae6d5480e5d2f2468a37fff9364834b1cabae2a042f93f92a2d55766880191c86feb64b4a7db832468ae19610266ab2cf2937ccc40fc981e93c217561a842805470bfb65a123d156167ebb8f0265598af40105ddde10a569d6bc285b9361aa5d299b2a22c26002d1ec3f3743e6b85b15c0c22dace037942d92cb921f774392dea6d7ec6de27608d70bf1945cb634223a290d813d5f9a851bb479dc6695278f2d44085ced760cb7da4c4beab87cc8674ee31b2b6a84ecb28b100f47ff43e3db15d0a215270241a98f5a4603c6201c1397026982c781524903f712842d2b92dc189fa8533fa3bc44a98e67e9a85429b89817462f2786c063"
 }
