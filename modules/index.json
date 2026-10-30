@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 94,
+ "serial": 95,
  "modules": [
   {
    "family": "smi_nvme",
@@ -2615,9 +2615,41 @@
    "issued": "2026-10-30T16:22:28+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "sm2263xt-loaders-fallback-2026-10-30"
+  },
+  {
+   "family": "yeestor",
+   "version": 17,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-17.ssdmod",
+   "size": 1325063,
+   "sha256": "cf35d9f7749fd7962270b9994e5253417a0f990ba295ae05e78217d719d91d0e",
+   "modules": [
+    "controllers.yeestor._shared.boot_area",
+    "controllers.yeestor._shared.cache_index",
+    "controllers.yeestor._shared.client_log",
+    "controllers.yeestor._shared.freshness",
+    "controllers.yeestor._shared.generation_branch",
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.index_checkpoint",
+    "controllers.yeestor._shared.leaf_history",
+    "controllers.yeestor._shared.leaf_store",
+    "controllers.yeestor._shared.passport_search",
+    "controllers.yeestor._shared.por_journal",
+    "controllers.yeestor._shared.service_bringup",
+    "controllers.yeestor._shared.slc_stream",
+    "controllers.yeestor._shared.translator",
+    "controllers.yeestor._shared.ys_state"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-10-30T20:52:41+05:00",
+   "python_tag": "cp313-win_amd64",
+   "note": "N38A/N38B: служба на собственной конфигурации диска (UDP); INDEX — страница поколения, не зеркало (Силкин 30.10)"
   }
  ],
  "revoked": [],
- "issued": "2026-10-30T16:22:37+05:00",
- "sig": "5ee922b27278b6aa0e2ff9cf9a8487985bee48c44b22b82afd4e5204416ff9beac54e91edbd82a83790cf6323060f5fa64f41615eb5578c754f29a862bd91604c08eb62ccfe37f0d0e31ee5e1a8cee09f7094c33e8e95b88d1a172b8943be7ecb847e74d47b3c39a21ce2008ccce886dbd2c23aa2da4f40af9d6f41185d594a3ea9f9d4fc11ae429e1e13ae4606b8902feee2f9bb2bb902add5c22c97f168ca0bb3d809fb5bf35fdca2ab3285289aeccb93ce8cb08583fb9f09b0779c998a1bc8e35917428f7fec6adae4e5b3166e64b841aaf75a54e6c57196cd5e68bba6e02d3a6931fddd466239a1448820c86513232df6728718dc20b945f3f9179aa949d535b730f6275d28390c673acd4f497f5fe772c9599689a5a18088f9b2f515f8209310f6984bd8adfc30c44ad40d0121b12bf7371008b74add91fc7109435b10ebb1c88fa3f7d7c7592a82b6e5324948757df8b5fdbee9b916479122b3b46b76b088fc3a044c23e865a60e9611f1bda4c7134865993d3fd71cb0e0fce5ef8b955"
+ "issued": "2026-10-30T20:52:43+05:00",
+ "sig": "49002b6495bced63624deb143624863f3a2178b03f9123780a30375fccaf3d08800cf8a86e1b639cff6c94fafee019b099bc751018702c75e73ebfe1aa753ef4057c381ac92a9170dc05bfa4d5cb32ff2e586dca8b1e2d9f0b64d956f05458d621b11891745599ee6eda28be4f9c25b813892dfae57df4a8e2022e58df7a943f4db3680da9041e577373fe84ded8ebfaedd2a6e56a980401e347ec9695cb7e7dbbef6fed65604ec81633df269dcbb6fef98b9780d524b880cefd8be6e7b7fc77c6d01a24f65e8b215b83ededec63913461c921321fd7bea033647f329a1ae24372e53948b1024693b0cf501f3303a76a4a3924a28b71ec2e9c68a8d6bfde4db85b8390e4db6a9a521dfe4aa07dc61496baa21c537cb756d2a88bb33b94e795147f9f208888f4922ee458b5b7deea05c2961d4ebddb215b8326d769ad82088a9e7ef482d9b361040b7acd838c2047bcefad293f6634fc94715623871e5a77b81feb0856b76fec6e83d3e9b77dd5435a947a568ddf61e42b8b94b8aaa15b1c136c"
 }
