@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-10-30T15:44:24",
+ "generated": "2026-10-30T16:28:34",
  "files": {
   "_firmware/known.json.sealed": {
    "size": 3325,
@@ -7146,6 +7146,182 @@
    "size": 111510,
    "sha256": "9e3d9801f83ae69971707d80e6df3fb01d29c838f7835e3a1e12aa2455a1f0af"
   },
+  "MPISP_Base/SM2263XT/2CA37832E510/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "60ab1f3f82cb6c255be49026bd370f80a5a50226700e5825264cf6ee4faf8da5"
+  },
+  "MPISP_Base/SM2263XT/2CA40832A100/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "f1c2ce106fc811ce5b01b63f5030b52efa59c53055c7dac5a14815275553f7dd"
+  },
+  "MPISP_Base/SM2263XT/2CA40832A100/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "97f59e9563b1687b8ae9488bccacb8acfc401cdd04b727b585ab8b757e5ba78f"
+  },
+  "MPISP_Base/SM2263XT/2CA40832A100/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "e5102e8952e1ad701b430dea27f29251890cf86080327e3405b09f5fbaacd363"
+  },
+  "MPISP_Base/SM2263XT/2CA40832A104/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "64e36147f327f33a01429477791cf15a1fd301763348ee9c18f881c9f65ed3ed"
+  },
+  "MPISP_Base/SM2263XT/2CA40832A104/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "36909c736714147713a62bda28cd695816e0201e825ab52e4dd126a8aa8c4b8e"
+  },
+  "MPISP_Base/SM2263XT/2CA40832A108/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "9582e9aa69cd93ff80baa4592e81058ddd6e0e90993a1c185466d7fc73e8f165"
+  },
+  "MPISP_Base/SM2263XT/2CC30832E600/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "f02ec4dc33fff731f5978b830215e7e2d3b0dd5e19af472b4c0714c462f588e7"
+  },
+  "MPISP_Base/SM2263XT/2CC30832E600/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "5d2a5888df8f54b8f73f78479b804dda47419b79270e36105619b5b3fbec8720"
+  },
+  "MPISP_Base/SM2263XT/2CC30832E600/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "2ff963bc478ca2ccf05f9d4cbe38e5fddba47f3756cc70af20965e8ee46ec2d0"
+  },
+  "MPISP_Base/SM2263XT/2CC30832E601/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "75506cf74e0b97adf5a4cae2dad5717dc33e7802e2fc76e2019e9c54e13f5d96"
+  },
+  "MPISP_Base/SM2263XT/2CC30832E604/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "f469d0a58b5b0945f1d399df3afd7118d168566bb32825f2d4ba59d5978db645"
+  },
+  "MPISP_Base/SM2263XT/2CC30832E604/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "d4d2eaadcefe34527a99d9b597fddb9b7d953056e6fd1e40bb62609fd337e6d9"
+  },
+  "MPISP_Base/SM2263XT/2CC30832E604/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "cec2fc10c7ce48aaa1c858ae46347fb3396a8caa467482a758cd539eea404fa8"
+  },
+  "MPISP_Base/SM2263XT/2CC30832EA30/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "b1f5033041958290cd150a7aba633274006890e3a52b93145960d69e86bb01f7"
+  },
+  "MPISP_Base/SM2263XT/2CC30832EA30/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "78f8c78eed47431e87494afe416b94c11edbfa24c8c7f7df2f48cad3aa6a0625"
+  },
+  "MPISP_Base/SM2263XT/2CC30832EA30/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "c8947a462e0ed32570f56239d2db5bd281f12a0c4c0ffe1ccf32f5b8cd217904"
+  },
+  "MPISP_Base/SM2263XT/2CC30832EA31/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "afba69a277925ef983e0a787b13224a0e381d26de7114cf895102ec7fa4b882b"
+  },
+  "MPISP_Base/SM2263XT/2CC30832EA31/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "b816fa9bf46188708acff5c07c1572fb549a7342da054518bdc07682098e4094"
+  },
+  "MPISP_Base/SM2263XT/2CC30832EA31/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "c4cab854dd10b3e3b446f26c8899ad3da48adc095b92ad35417b0e5711aa881a"
+  },
+  "MPISP_Base/SM2263XT/2CC30832EA34/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "f7e2ba4bb007d1d87af514d812979a0e23772c1ac238ab9e684212326853f869"
+  },
+  "MPISP_Base/SM2263XT/2CC30832EA36/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "084cb3fde8ae673feaa2216dcdfdadac76037a5b3004a1f5aa0e3e056436d122"
+  },
+  "MPISP_Base/SM2263XT/2CC30832EA36/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "e9f25bcb65653127a315489523f8691dcd89d9df920312f796b4dbf4f7e6f19b"
+  },
+  "MPISP_Base/SM2263XT/2CC30832EA36/spares.txt.sealed": {
+   "size": 72,
+   "sha256": "c125acf583e5fa8f14d0c1b3bea264e624805662bd51a1468045ee43f8691d3b"
+  },
+  "MPISP_Base/SM2263XT/2CC37832EA10/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "fab5a50041d39cc621e262f8d3cbf545dbe51695c69a302d46482879fa6082ac"
+  },
+  "MPISP_Base/SM2263XT/2CC37832EA10/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "6850af477158f9fad960cc6e3f966f047cb21fe865cbfde90686aba57f0bbb32"
+  },
+  "MPISP_Base/SM2263XT/2CC37832EA10/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "c4f654d26f8f23428538a907079faf88b838132ba9d76204e35c195f2576af2d"
+  },
+  "MPISP_Base/SM2263XT/2CC40832A200/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "95cdd6f374238bf2ae59ae3cab175519ec852b5f780404a895305b941b5c8416"
+  },
+  "MPISP_Base/SM2263XT/2CC40832A600/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "9ecd639307f5155096ac80aec4af371b6a032ea9c66a021fbb6ab3debb4bbc08"
+  },
+  "MPISP_Base/SM2263XT/2CC40832A601/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "bc454d418dba3dba2032c95a51065d3815a985eaaab9bfa0ffa1842a8c797f16"
+  },
+  "MPISP_Base/SM2263XT/2CC41832A200/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "832384d0b74f7ddd53fc8aa7fbed78e8332f8ffbae6924cbba04d47943363095"
+  },
+  "MPISP_Base/SM2263XT/2CC41832A200/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "06907dd04b510d1da8154108df668af0d94a46872bdea6b4b74dfe71403b0dd9"
+  },
+  "MPISP_Base/SM2263XT/2CC41832A200/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "4838e7b6ec6128c4c7717cc5033ae62243505f1ef57e266ff50bf4af19e4d1b1"
+  },
+  "MPISP_Base/SM2263XT/2CC41832A201/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "a3edf62a45ed39d66616ee9eb8791d9df95a1acd1674068a73c9383ca56b627c"
+  },
+  "MPISP_Base/SM2263XT/2CC41832A201/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "113512faf95e482aef708a2158d8f84e12c5726511a49881230222086d64957a"
+  },
+  "MPISP_Base/SM2263XT/2CC48932A100/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "4ab9fd273e697967b103cfce6ec4c9fceee0ccfb38725403e96e5b934408a320"
+  },
+  "MPISP_Base/SM2263XT/2CC48932A101/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "33c5a86baa1fcbfb75e879473c35fe860dd7201f37240a9e7cf8dde898c488aa"
+  },
+  "MPISP_Base/SM2263XT/2CD30832E830/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "38612a90fe8a7fc9eae0d55f438ad6448561af0a301b2c92b2566d2d425a2539"
+  },
+  "MPISP_Base/SM2263XT/2CD30832E830/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "ac37b5bd4abc6920fbb20ccb400856d4a14cad9e9ac6994c6a4ef93997b27a57"
+  },
+  "MPISP_Base/SM2263XT/2CD30832E831/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "edd00d3c89ab5e6fd162d943f4e29d77787bf5a5cad97fec235235fb5d1f0d89"
+  },
+  "MPISP_Base/SM2263XT/2CD30832E831/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "79472379cd814f0dd5176303c0d2cd6ff62d65a8b915c974bc67f5f470dffe7b"
+  },
+  "MPISP_Base/SM2263XT/2CD30C32EA30/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "f5460787e6502648e09cf762f9902a0e4ae7a635bbbf8385c29270a276a248d6"
+  },
+  "MPISP_Base/SM2263XT/2CD30C32EA30/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "c62c18981217b1657ed67735e1a2cf22ea395520670ddd7ff155ef937bc5772e"
+  },
+  "MPISP_Base/SM2263XT/2CD30C32EA30/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "cf76129a6cb72240a0f509ccbd4aeb206bf0ee9ef3ea0409f1dee2742e6d4f3b"
+  },
   "MPISP_Base/SM2263XT/2CD31C32C600/FlashID.bin.sealed": {
    "size": 2099,
    "sha256": "cdaf2d6ff8ba4a1982d51c8681c20dfcc9529d181e315fa19f6329716e4aea0d"
@@ -7153,6 +7329,738 @@
   "MPISP_Base/SM2263XT/2CD31C32C600/MPISP2263XT.bin.sealed": {
    "size": 91187,
    "sha256": "fffb55b58accf23ac5aa0d6e232f3ac040fd2439020e17195a7f6e69a4edfbae"
+  },
+  "MPISP_Base/SM2263XT/2CD31C32C600/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "c1179b7b3c8e20356ec141ebc7f7bfd99d25afda0ceb7dd874cec754876da1ad"
+  },
+  "MPISP_Base/SM2263XT/2CD38932E600/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "552b7562caa57f7c45c071e467597044735eefad14a5f4afbf1443273649e6b2"
+  },
+  "MPISP_Base/SM2263XT/2CD38932E600/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "886c9b9267ba8a121374120c3ac88dac031255869161450b4d5e88734c984877"
+  },
+  "MPISP_Base/SM2263XT/2CD38932E600/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "b724a1ebcca496c865879961dae9436355528bf416fcfc3f04767143dca588fd"
+  },
+  "MPISP_Base/SM2263XT/2CD38932E601/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "a1c7241fafed86b0fcc0ed135d161cb667b2866d6273b78bffe07d4bf326cd3b"
+  },
+  "MPISP_Base/SM2263XT/2CD38932E601/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "c03ce8f4e97361e3a36fe48ac8cd5ca3e439a98a8263491ea47b57908c79760a"
+  },
+  "MPISP_Base/SM2263XT/2CD38932E601/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "b3dcfd1fe9cfde00ad7ce1f604ab4a739d6c0063a9961ed339a8c2353054cdaf"
+  },
+  "MPISP_Base/SM2263XT/2CD38932EA30/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "b7e325d2cebcada289c0540ad92f0c99b7c696a127c36f368e3ef54456c68c38"
+  },
+  "MPISP_Base/SM2263XT/2CD38932EA30/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "126c42f32503df69df97f7e9570c6525cc3106cbdd753150da5e9075c64173a6"
+  },
+  "MPISP_Base/SM2263XT/2CD38932EA30/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "9cb4fdcaba45917094c45732a4d10203e70e02d0c0cf228f7b89f690063b4392"
+  },
+  "MPISP_Base/SM2263XT/2CD38932EA31/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "4e95d6a2d66cd07087a8da566ce5e81654dd1954a8c1f62209f4999ed9168bcd"
+  },
+  "MPISP_Base/SM2263XT/2CD38932EA31/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "74a808f230655c0364c6a0d36686791f7d34877c643192e3ba406616541b4be5"
+  },
+  "MPISP_Base/SM2263XT/2CD38932EA31/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "41fe1d1202616322972c0077c8d42d766361e0b434139fbfde6ec4283672bbb3"
+  },
+  "MPISP_Base/SM2263XT/2CD39C32C600/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "9f2e079decf2a33be4ea92afcb452388bd0d45c5347c6cddf2cd1a4fdd03eb4d"
+  },
+  "MPISP_Base/SM2263XT/2CD39C32C600/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "7fcaae7bd4d00e265458bc4cf6c791d8d2a9c198919054b07a766b4a1c835daf"
+  },
+  "MPISP_Base/SM2263XT/2CD3F932EA10/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "f4d3194c3406e622d869ddeb84f9256b5878b538079a8f4ebd153b2209e0aabc"
+  },
+  "MPISP_Base/SM2263XT/2CD3F932EA10/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "1610cafada2d6a05176804ad71131cfda7f7773e60d460cbb1c3322703ffca46"
+  },
+  "MPISP_Base/SM2263XT/2CD3F932EA10/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "a6c715111966840f93296c2e77221fdb6e2cecca5722f911d7cb6fe4285b796d"
+  },
+  "MPISP_Base/SM2263XT/2CD48932A600/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "4c50c648311537e6c0ae457bede70f9d70222e3328241c73c932894a67bacea3"
+  },
+  "MPISP_Base/SM2263XT/2CD48932A601/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "da807bbc4f5e38577828a2aedba454258c8e7522d624658e2930e6cde9a40cf6"
+  },
+  "MPISP_Base/SM2263XT/2CD49932A200/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "aefdd63393e724405135dcb20ac158b900e7cf8e762372f235401631c98e1ba9"
+  },
+  "MPISP_Base/SM2263XT/2CD49932A201/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "c70a58b7378cd71630c95ac0e858ecfa0231f35e311706abc7187ff7e5efa636"
+  },
+  "MPISP_Base/SM2263XT/2CE38A32EA30/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "d02213ff8c4908cd412212b2d5b2095e9f15b1093935575acc946fc50df465dc"
+  },
+  "MPISP_Base/SM2263XT/2CE38A32EA30/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "55aef5d26a4b0780cbfd05d501a3edc8565a7239d57db60bc39f7c1eadd051c8"
+  },
+  "MPISP_Base/SM2263XT/2CE38A32EA30/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "846f04742072062e47150548e4890bde548f1f4bed5ab9b861584b87e15f5ff0"
+  },
+  "MPISP_Base/SM2263XT/2CE38D32EA30/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "66c6dd363f35bb8124adfa60112eab843787e258e42e74d102dc1a5e9366834d"
+  },
+  "MPISP_Base/SM2263XT/2CE38D32EA30/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "ff5e223590f362ee088c498a65bba9820d1b4465cba52800043168f7de42d33a"
+  },
+  "MPISP_Base/SM2263XT/2CE38D32EA30/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "5e491548b5fdcc423ae6aa623d27389932367dca5f83f5ee4007b21ccc1e6db3"
+  },
+  "MPISP_Base/SM2263XT/2CE39D32C600/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "cad80144751a630b0b088fdbaa3209654da9a4962420e6a351f1d8617699ab1b"
+  },
+  "MPISP_Base/SM2263XT/2CE39D32C600/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "d710802d4ef924c1b63255fb7a0da7258dc12c233aaa07b87fdb613cc7ed12f4"
+  },
+  "MPISP_Base/SM2263XT/2CE48A32A600/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "e4bd43b44d24738017a54141c36d51da11714dcd77723cff34e5526196abed5e"
+  },
+  "MPISP_Base/SM2263XT/2CE48A32A601/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "c05cff17a708cb622d5e6ce9878a3bc6ace3bc588e2a9dcd4dc76e97ba00ed73"
+  },
+  "MPISP_Base/SM2263XT/2CF38E32EA30/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "0d3013ee7166003d1d9f74cb7ebdb444b1666db2649c94fcdcbe8ec4158a7bc3"
+  },
+  "MPISP_Base/SM2263XT/2CF38E32EA30/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "ba5d033a4dfc15d39840f84eda65e0d17eec5d17ce854b57828b16d17fa3ebf9"
+  },
+  "MPISP_Base/SM2263XT/2CF38E32EA30/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "5666c5f5b0649d9042181b468cfbe6ef5f5a1403c630e6427911f640bc88125f"
+  },
+  "MPISP_Base/SM2263XT/453A98B37672/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "b96764c4e49b86c3a9de017d8265ba829b63bcb83ad99374da4a0069f6aa50e4"
+  },
+  "MPISP_Base/SM2263XT/453C98B37663/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "a98f5cf7977aa9a85928fd64ed17552804c6a247fa71fca3323ea7ecdd91c867"
+  },
+  "MPISP_Base/SM2263XT/453C98B37663/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "fac54500bf1901c5a2ac44de6a0f8274da81e83176f63823f1e095a480f18fb0"
+  },
+  "MPISP_Base/SM2263XT/453C98B37663/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "a90a335acef6bbf4cfe9d7712d32d354349248291a721683b83e280c1b30fcd4"
+  },
+  "MPISP_Base/SM2263XT/453C98B37672/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "03cd639175e30958e97091e6ee029396d307e04cfc8b4404584b28964c86da88"
+  },
+  "MPISP_Base/SM2263XT/453C98B37672/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "5d75b9584cd674b383615fe97c9576eba15df449d87ffe19523a9d8d43ad6527"
+  },
+  "MPISP_Base/SM2263XT/453C98B37672/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "36666e3511ac8e1ed8535fd9489b9bbb7a66510d12801c29acf5f1cfce934c81"
+  },
+  "MPISP_Base/SM2263XT/453C98B37679/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "32911a3b27637c866c4213f64204d46a24ab6f5e5a39a0dc651c3c23b937c37b"
+  },
+  "MPISP_Base/SM2263XT/453E98037664/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "c866528c7b59113867e6e0efd95d4a5289355a7768870a850be6178e160800f7"
+  },
+  "MPISP_Base/SM2263XT/453E98037664/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "fdcaf55b5e2ceaf41a13f81e12dc561db734e7805fc5c54bdc668a8cf0800abc"
+  },
+  "MPISP_Base/SM2263XT/453E98037664/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "caacbd6918093e61a216278dcc8ba8933de4f3065900d4fef483891f34f6c76d"
+  },
+  "MPISP_Base/SM2263XT/453E98B37663/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "53b2a71c0ad3e41bd83f35160d37d611ecbeed695b8b4eadff0015e99a04952e"
+  },
+  "MPISP_Base/SM2263XT/453E98B37663/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "15415ac2f49113619d1776dcbdc51906f08934a56bca0f4f5d3133a8d609d440"
+  },
+  "MPISP_Base/SM2263XT/453E98B37663/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "02ea72ce0ddae8566862135c2d7d1a7aec23937cbf04e02e79540bf5850e47ed"
+  },
+  "MPISP_Base/SM2263XT/453E98B3766B/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "d846be9af382c7f932f0389d308c51330db13544bb41ab92d8e1c6b8b4a4d155"
+  },
+  "MPISP_Base/SM2263XT/453E98B37672/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "7587d46d9273e4bb694dfefbfeea00dac1574c3ab710feb6b5c047d9b4975d56"
+  },
+  "MPISP_Base/SM2263XT/453E98B37672/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "5a3fdd1eecd7aa3b2fb71c8b59894874fe91a3b01beaeb2352bf3b71a46a0720"
+  },
+  "MPISP_Base/SM2263XT/453E98B37672/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "a9b60ff99fa6901a45a813eadee7d366844f347d5e6303917965b1c484080259"
+  },
+  "MPISP_Base/SM2263XT/453E98B376E3/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "de1b838971a24b9f98d1618591daf19328756b744ac7e27790961151cfcb3b48"
+  },
+  "MPISP_Base/SM2263XT/453E98B376E3/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "9280013d6a2280377452d025cb1ab8eb53337ba4b917f7be75f21274fb405599"
+  },
+  "MPISP_Base/SM2263XT/453E98B376EB/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "7a060b4146d77a05c0f4ae9c4b827f58492448b9c516807dc3e7c7d185f80b42"
+  },
+  "MPISP_Base/SM2263XT/453E98B376F2/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "e53268f953f4aff694e271275f8519eece6894bdb040b7934a467d01bf442b79"
+  },
+  "MPISP_Base/SM2263XT/453E98B3F663/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "6d1f848fec6871a1952352f891e804294de14fe6fee2ad6512c27b1335bc571f"
+  },
+  "MPISP_Base/SM2263XT/453E98B3F663/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "675147823edb7aa6487ec1f47a52d23d1a0866fc0ad94185168afcb9195f13b6"
+  },
+  "MPISP_Base/SM2263XT/453E98B3F6E3/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "8f1ab5d9f91518a90a8423cc696212987ae7ecad94979e29bc1d9a5a138fde32"
+  },
+  "MPISP_Base/SM2263XT/453E98B3F6E3/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "4b52281b415484da9be263085e5202e4f614b910bf1b402462e430e42d7f0b77"
+  },
+  "MPISP_Base/SM2263XT/453E98B3F6EB/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "7d68306bc6b53945abea8ae52aa631fea81155382493ad1c0b952d219d09e06b"
+  },
+  "MPISP_Base/SM2263XT/453E98B3F6EB/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "6305e43b62af21cca8e09fb8145adcfe4af05cc8482c47edb53294f9ee153cee"
+  },
+  "MPISP_Base/SM2263XT/453E99B37A63/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "2a4a4cb8fcebd794d8f9eacb4301fb317d63a8f0d964c28139a917b2cfda1310"
+  },
+  "MPISP_Base/SM2263XT/453E99B37A72/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "4c0639ea11c9574dfc0bc8d7593d8066a156b6e96304d83884e0ed2c9e6f89d3"
+  },
+  "MPISP_Base/SM2263XT/454898037664/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "730d37108f007f190c71cf4592aad7c075fb3435cef8c8bab3b099427c86ccc6"
+  },
+  "MPISP_Base/SM2263XT/454898037664/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "5c06bd2a4929b10c778e5bbce21158abce10fc5d3deaa73c23128e5278dc0ca3"
+  },
+  "MPISP_Base/SM2263XT/454898037664/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "54ff0c2e40fcb5e7234a179c2f7330f6d2d9435d569a5c79a2ebd25f1ba30ad5"
+  },
+  "MPISP_Base/SM2263XT/454899037A64/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "e2473a1425bf5c9ba56b35d8f9df61435816eeb522c41648dc5d5ad9e01c9b8c"
+  },
+  "MPISP_Base/SM2263XT/454899037A64/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "605e227f52644c9a090553acdc4d7e624c0fb8dbf139318cb86c818b09f0c456"
+  },
+  "MPISP_Base/SM2263XT/454899037A64/spares.txt.sealed": {
+   "size": 72,
+   "sha256": "50ff7b5a309b18e6ed831c0669400ee1b62b57775aa47fda110cba7d4bf0e609"
+  },
+  "MPISP_Base/SM2263XT/454899B37A63/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "daf51b9d0f234c79074d12a8a07c279db13e2825a01122a2a03e23061411b030"
+  },
+  "MPISP_Base/SM2263XT/454899B37A6B/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "5fd882fd8855509c0a019eea62196fb4cf6b1c3e6b0a1accf8df56fbf7b39ea0"
+  },
+  "MPISP_Base/SM2263XT/454899B37AE3/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "687eae7c9ad6884731079b985218bc1d3479736300a7e2d4e78be46187e7c0f3"
+  },
+  "MPISP_Base/SM2263XT/454899B37AE3/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "cb5a8458756f395017cd4a84da0de5dd6987afe31f09561b7f34fc71a63a9b5e"
+  },
+  "MPISP_Base/SM2263XT/454899B37AE3/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "f4f39f1c762b120d536053588bc9db7b2239b0e330f85a1f8c627557f51c4c33"
+  },
+  "MPISP_Base/SM2263XT/454899B37AEB/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "76547b46ba7a6096ac692114695f49dc802acad71a9b8f4e3e59aa68900a83f7"
+  },
+  "MPISP_Base/SM2263XT/454899B37AEB/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "671ee099f673976ac5aa75767afe514c216ba319cf4ca6a95e93a6ee22d333ce"
+  },
+  "MPISP_Base/SM2263XT/454899B37AEB/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "aced7f777cb13995c0e37d352e036570a13100dae6a127486055a761a5c1e71a"
+  },
+  "MPISP_Base/SM2263XT/454899B3FA63/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "01a5e7f4d6ae070c3955d1c0d5f491017dc009f8ca5c478dd7267bce4997772c"
+  },
+  "MPISP_Base/SM2263XT/454899B3FA63/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "33615a2360195d74fff859d88630b8e245708978ba05bf4f5b1df3de4d74dfdd"
+  },
+  "MPISP_Base/SM2263XT/454899B3FAE3/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "625f3482aba07075e70f239df0d5cd3c389d2daf99fe7bcac7b86296d7f31e9a"
+  },
+  "MPISP_Base/SM2263XT/454899B3FAE3/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "a9592ee2fc69261f90d1151d9d5fb64513521638b039a845f1dd500c17db1d9b"
+  },
+  "MPISP_Base/SM2263XT/454899B3FAEB/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "084091f9bdabcc95d449facae083de08be1c48ecd109362515c1baa8720cd3c4"
+  },
+  "MPISP_Base/SM2263XT/454899B3FAEB/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "ad87aad58a50b0b46d053e687cd69d9f632f563c277236f7f4dd5bff6f6c7db8"
+  },
+  "MPISP_Base/SM2263XT/45489AB37E63/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "265f4e5f9acd47ab54e28f65f663b2aef0c5b259a175746889aa0c1be5cb8e12"
+  },
+  "MPISP_Base/SM2263XT/45489AB37E72/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "3dca691d1f758f08a83616f7c068e76375678e35d594473762335d144dd73f48"
+  },
+  "MPISP_Base/SM2263XT/454999037A64/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "d3fdc5edbbe38af3520c7872e3acb2f40a44a1b89cb40495f936382b61d21a2e"
+  },
+  "MPISP_Base/SM2263XT/454999037A64/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "1391914e222de3fd09b1f7b444e0ee993aab402ae0f12ad7f6099e57ecdcf1fb"
+  },
+  "MPISP_Base/SM2263XT/45499A037E64/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "8d879573e468867243c232f37c32efdd45b04c12a5fb2cedaefa8877b53686f7"
+  },
+  "MPISP_Base/SM2263XT/45499A037E64/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "d879b51486fbad0efc49eed6862e872c62ff8b980e4f710d5e0675d1ae685bc6"
+  },
+  "MPISP_Base/SM2263XT/45499A037E64/spares.txt.sealed": {
+   "size": 72,
+   "sha256": "645bdebd4d22c52a7848a3400216a1155454a8e2b3ab50ef1a7c97b020833d34"
+  },
+  "MPISP_Base/SM2263XT/45499AB37E63/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "8af282144ef50d89d8d36ee1f2b89f08057694d6d72f2c80e6e875d993f08e9e"
+  },
+  "MPISP_Base/SM2263XT/45499AB37E63/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "c5441a0a52fb2e93c4ca46a086fcb5cab035fbc67cbf37ae4a9d676a3e3f70da"
+  },
+  "MPISP_Base/SM2263XT/45499AB37E6B/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "009eb77323f1dc7de2f08242b5fef176c6369e742fa193eeee3d5ecca50010db"
+  },
+  "MPISP_Base/SM2263XT/45499AB37E6B/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "911f67e58ddfcfa737c742ad117c27260c8683cb638356d46106ce1f9d1cbc51"
+  },
+  "MPISP_Base/SM2263XT/45499AB37E6B/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "15138f157b3a592401c610b08ecfc6b24aeb10fa8fc786a10d5eb4029dacf32f"
+  },
+  "MPISP_Base/SM2263XT/45499AB3FE63/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "91ec3892b06cac9b4d66ce745d7cc6f3e0bb03555ddea65574e10fca1200a1b8"
+  },
+  "MPISP_Base/SM2263XT/45499AB3FE63/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "7f490e73461d44ad1657b72f5dbb37129b84661e7b1efb9faea34c302cfbe25d"
+  },
+  "MPISP_Base/SM2263XT/45499AB3FEE3/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "7c0405cef4f60b5f76c58c2f90a5c14b284f57b7526e24f18c2b108ab5766a28"
+  },
+  "MPISP_Base/SM2263XT/45499AB3FEE3/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "b954ecff60c7183d06a3dbf3d770c6784508ab7cb68feb99986358cf0ab796c9"
+  },
+  "MPISP_Base/SM2263XT/45499AB3FEEB/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "ace5d0ab716a3b623b8d432c89159a6c36e1eabcedf4ea471a78fb23edfdbd0f"
+  },
+  "MPISP_Base/SM2263XT/45499AB3FEEB/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "8d28d9de563cedb7cc61c6a8c7ef497e699e4683d2582f8844d4204bbd049169"
+  },
+  "MPISP_Base/SM2263XT/45FF98037664/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "1b14eb6fe8285d13c36b4d6d14668d166cc10526f8963312c6a4ac843b833381"
+  },
+  "MPISP_Base/SM2263XT/45FF98037664/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "a5877949335042393d31c1cfdd64a1203532d0a5c439801eeb67079807a63486"
+  },
+  "MPISP_Base/SM2263XT/898418128200/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "e24f87f7f4a3f4db43b72b9610df37ff5f6cf46b5df2dc7a98710b5c42c25296"
+  },
+  "MPISP_Base/SM2263XT/898418128200/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "40d98988a73263e7d57172cd81813b2f7765a49a8fe289cd8afe2ab916277490"
+  },
+  "MPISP_Base/SM2263XT/89A40832A100/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "32a77782726ba43a239072d839b8622201e7b2cd59c4d2f63d2d3e9deb627b11"
+  },
+  "MPISP_Base/SM2263XT/89C30832E600/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "e25569e9cb1eaed9bc214f19aa243e5affcd3d755772e2ae8e594cd6f7f9690e"
+  },
+  "MPISP_Base/SM2263XT/89C40832A600/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "2299dee7393401c07f4eda2896bc3d5bedfe08ea19894adb02f1f3348a26a649"
+  },
+  "MPISP_Base/SM2263XT/89C41832A200/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "7001728ada989b1b8450ac68cf213b174fe30c1e0d683d7573d816551e3e87ab"
+  },
+  "MPISP_Base/SM2263XT/89C41832A200/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "d0edb6568b6777ea3bc5968527995b18df72df107647bb1e84bf3b09edaa1a4a"
+  },
+  "MPISP_Base/SM2263XT/89C41832A200/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "44e4b7f02b03bfc93e77202d07a881377d4684d555ef01d65de7b1a0c9494147"
+  },
+  "MPISP_Base/SM2263XT/89C42832A200/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "a897a06694638245c9f57fbaa4f85d9ba4b6b184448a9e3b7ac4744ea4e69b18"
+  },
+  "MPISP_Base/SM2263XT/89C42832A200/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "06021c19a4351f3c491b714b2ba1a3c1674cfc60e42211bb23d11bb813177797"
+  },
+  "MPISP_Base/SM2263XT/89C48932A100/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "5ac8d375b460860857ca7d5eeada918dd7adfc134ea4c47390a9a007976cd9ac"
+  },
+  "MPISP_Base/SM2263XT/89CB9832C204/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "78b811821e6dbf5bca033dd7c38804199d110c03a00df66149fef311e77f190a"
+  },
+  "MPISP_Base/SM2263XT/89CB9832C204/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "9c9d0bab7d031252c3a2eb5bf074f134bf9deadd792961e36b0ab90e42fec61f"
+  },
+  "MPISP_Base/SM2263XT/89D3AC32C204/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "5c3e8c539d3f39d5977d8ede5bafb10f0f1632f0da4fc418f2328b89d944036e"
+  },
+  "MPISP_Base/SM2263XT/89D3AC32C204/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "eeef95ef96e618869cf3c0594cf62aa4eabbaba1eade13cf7a37e1340d9a2cea"
+  },
+  "MPISP_Base/SM2263XT/89D3AC32C600/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "e5d1cf19abbfcd530947c66ad466f911be30ede2b2bc48e5e75dd539e182bfdd"
+  },
+  "MPISP_Base/SM2263XT/89D3AC32C600/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "c6fc8afc4049c16fc053752d12b17cdd6eaed4f6afdc5220220c2cf9e2f132d6"
+  },
+  "MPISP_Base/SM2263XT/89D3AC32C600/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "13e012116a77e6776bb38c8301eca4f510938f688b74be11491b9003c65378a3"
+  },
+  "MPISP_Base/SM2263XT/89D48932A600/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "eecfef0104c4feb17fa86825f412df683748d8e31cc57f1f30cc82616b66e8e3"
+  },
+  "MPISP_Base/SM2263XT/89E48A32A600/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "f639777e49749246569d7f89b909e5134d98a8818526c5acd9da05ecfd77dfde"
+  },
+  "MPISP_Base/SM2263XT/983C98B37672/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "58fab1c9cd0e7f6aab123d2d0d71c3ccee12969906f690ef4a5fbee35293377f"
+  },
+  "MPISP_Base/SM2263XT/983C98B37672/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "d731099912dace918888a65f5584c8adf50b105706505ddf2ebf149dd5d050a1"
+  },
+  "MPISP_Base/SM2263XT/983C98B37672/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "34e33a792030c31a34723ab4ee8a43243612763e0222431394d07d6e79d7ec4c"
+  },
+  "MPISP_Base/SM2263XT/983C98B376E3/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "681922d1fd9fb3f338154d6e33c62e66120e46b1887ddeabcfac626909a87b77"
+  },
+  "MPISP_Base/SM2263XT/983C98B376E3/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "623b6f0c6011f4e7be46f42040017468bd1d167eb34ce3988133303852b7b72e"
+  },
+  "MPISP_Base/SM2263XT/983C98B376E3/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "f7135275a9d782969019e3c2bd4fd31e7955a29a81068d9cfee4c4ff218f27f0"
+  },
+  "MPISP_Base/SM2263XT/983C98B376F2/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "f15fc065f1af04dc42131a693e184ebe2c269d758df7449311435df79027d52a"
+  },
+  "MPISP_Base/SM2263XT/983C98B376F2/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "e73d7b8ff7718dc847ba195ee3495eaf8011559af2d87eccd9bd13e844748bda"
+  },
+  "MPISP_Base/SM2263XT/983C98B376F2/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "4d0f6c52c4cf4c96085b888105d2d0ab374d24a454e79a60d08e1e78e822f2d7"
+  },
+  "MPISP_Base/SM2263XT/983E98037664/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "f0b746c0b381cc95c854a9c14a7195e0d0690a0604b534dd8b2fb1b5902d91af"
+  },
+  "MPISP_Base/SM2263XT/983E98037664/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "1e674f55b32fe8e9bbe2fde76e2497cf728e0acbe51d2ac59cf95da20208dbe3"
+  },
+  "MPISP_Base/SM2263XT/983E980376E4/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "2a70f24a6348899e8d2e43bcd7a32ab8c9db57761fc3a104dd0e2133e8e8a029"
+  },
+  "MPISP_Base/SM2263XT/983E980376E4/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "a2e09a995d59455568af52f2b5acf2269b52530614ba4d28bbc9534d03fa5d77"
+  },
+  "MPISP_Base/SM2263XT/983E980376E4/spares.txt.sealed": {
+   "size": 72,
+   "sha256": "3fe50f2bc403062e29b401f2ee47e4ac261b08286fa27cc4c69dc4a364c64428"
+  },
+  "MPISP_Base/SM2263XT/983E98B376E3/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "7da0616be993e64262b53b6c08f1c263372c7bafe5e878a308def96091dfe968"
+  },
+  "MPISP_Base/SM2263XT/983E98B376E3/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "820e268da93bf9de292839801e66e340bd0580cd186dbd10567e85eafdc4a318"
+  },
+  "MPISP_Base/SM2263XT/983E98B376E3/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "22e4c5e9484d46b5c8ddd9004c043b4bac3d22c47a81fef52fa0f4403477220c"
+  },
+  "MPISP_Base/SM2263XT/983E98B3F6E3/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "c74a378618d2da5ef746eb4368f2f6ce6876ffb6eb84af46337972de8b0c847b"
+  },
+  "MPISP_Base/SM2263XT/983E98B3F6E3/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "a7a8fd1143eb7266045172e7ed3d7d5c79948c2a5cbe07d63db3f06c19c6a02e"
+  },
+  "MPISP_Base/SM2263XT/983E99B37A72/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "c7acc110af264f781cf2617a03c29acbb6466cdd949e7c02d16f02b342c4bd8f"
+  },
+  "MPISP_Base/SM2263XT/983E99B37AE3/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "b279226ac1c6e26d144bdb8dc83e09ea03f9e1f45d40dfb86dc2297206f653bb"
+  },
+  "MPISP_Base/SM2263XT/983E99B37AE3/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "e09085e72ed3fbaa75da43fb7eae7dc2f916402c0bc175fb57cc1e34aa909bd2"
+  },
+  "MPISP_Base/SM2263XT/983E99B37AE3/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "3c90cd64b803be04f4594a34d6708dd7348bb30f71d8da25c15f6b659c2034f5"
+  },
+  "MPISP_Base/SM2263XT/983E99B37AF2/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "c8d7a5941422260fa913332cbf5434cff01b41e6bb8e05442e886234deef8cc8"
+  },
+  "MPISP_Base/SM2263XT/983EA8037A64/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "c0247c6acc25d71ad5e8c072743d5716412a16e8691c2eb6bc0584462092ec72"
+  },
+  "MPISP_Base/SM2263XT/983EA8037A64/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "add60da3650844cd1d51af586cf55e795e9912d21c803f3c94a0804fbf6eaca0"
+  },
+  "MPISP_Base/SM2263XT/9848980376E4/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "441ca18246f9f55efb80a467f44cb721a899dd21920565ee514bcbdf067cd55b"
+  },
+  "MPISP_Base/SM2263XT/9848980376E4/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "149f40b359945e26820510359376681b92da0fe0dc3956f0cb15fb9a4f4ce9fa"
+  },
+  "MPISP_Base/SM2263XT/9848980376E4/spares.txt.sealed": {
+   "size": 72,
+   "sha256": "8910d8ec76589108d13dd2c5934ef3c6c5d38e875fc845afc8abc02b136d1862"
+  },
+  "MPISP_Base/SM2263XT/984899037A64/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "f89d88d7c8d404f9cc5ca8f4e4ce5bc6270d11a57403ead344af8f6abbe9134d"
+  },
+  "MPISP_Base/SM2263XT/984899037A64/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "d76f5d02e59a42971003fce264d0b1010e9c7ab4ee7c38f0cc632b57b4b5b44c"
+  },
+  "MPISP_Base/SM2263XT/984899B37AF2/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "c041ab444a0d41abac687f837bc057b71ccc41dc2778de26823a072f1c6a018b"
+  },
+  "MPISP_Base/SM2263XT/984899B37AF2/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "228bf4a8fb7ed36c5b93c5d67508c4167936a9e58a7b348b91e9c3c70adb3706"
+  },
+  "MPISP_Base/SM2263XT/984899B37AF2/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "46e99e68d7f4933497806e8968fc8a36199c79b9df543697f2f4fc913a82ba5a"
+  },
+  "MPISP_Base/SM2263XT/9BC348251000/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "b351b8a57760839a1ef7f233967cf1162ad19fcc6abc60780029323e24afa63e"
+  },
+  "MPISP_Base/SM2263XT/9BC348251000/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "f30291674a5214aef3b96c4c418ee5990934407d6f515a164638b8f2e4ca66b8"
+  },
+  "MPISP_Base/SM2263XT/9BC348251000/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "143a293a8c93e940d1f770bb59ee7d3cb6c08f683902c010bf34d9ee4555f20a"
+  },
+  "MPISP_Base/SM2263XT/9BC428492000/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "33462a6580796cc0ae5becffa79fe6f3f83064206c402dc4ded8eb66b7b91350"
+  },
+  "MPISP_Base/SM2263XT/9BC428493000/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "026847be508ec11568138d2ebf6cd5e4ee673a5118e116fbe155e4150fe887e9"
+  },
+  "MPISP_Base/SM2263XT/9BC428493000/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "b58edeff855dfb2c8e2ce9c832b99d7af12cb6f4c04f97a83639309da510a1fd"
+  },
+  "MPISP_Base/SM2263XT/9BC428493000/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "4a3c02cea791b89436c2059280abb37c1533d7b917ccb3d84eb133a20e0a4dc9"
+  },
+  "MPISP_Base/SM2263XT/9BC429493000/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "9ebfaa30bc2be03ab87ba4077e4fa928b445e4c5fb73498176852889c887bd5b"
+  },
+  "MPISP_Base/SM2263XT/9BC429493000/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "7837afb892540f00ec746c926d3978738cbc067c1fc03b8dbd2d2e2dbf93debc"
+  },
+  "MPISP_Base/SM2263XT/9BC449251000/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "f3297ecc754436e520379d8642aaf08d724a3bf8f8ccceb6f5010dfa379c6efd"
+  },
+  "MPISP_Base/SM2263XT/9BC529492000/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "c653ab7e65324121b5bb7b53a3b99e094691128f104919c95aea1fc88e4028df"
+  },
+  "MPISP_Base/SM2263XT/9BC558713000/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "052d7aad4d380069b1cf37aebfbedf8814ab860cbb54eba66a5d57d8f49854fe"
+  },
+  "MPISP_Base/SM2263XT/9BC558713000/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "ffd4557bb3eb4d99d03b96d23dbd601905a0b8b0fd8d754a7514111a5d64be49"
+  },
+  "MPISP_Base/SM2263XT/9BC558713000/spares.txt.sealed": {
+   "size": 72,
+   "sha256": "f333f577e4930f5fb8fd48b17db6acdf92d54f3ddeea1f9ec9604e35fc62256f"
+  },
+  "MPISP_Base/SM2263XT/9BC62A492000/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "6e6b7e98f4d08335aa97926c465e53d0fe6bc1c95993787aaa009126ca37d112"
+  },
+  "MPISP_Base/SM2263XT/9BC62A492000/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "bcd875eabffe9ce6d2be9e33f8d2c54fc66a0e683087810c5b7d34d8697ded97"
+  },
+  "MPISP_Base/SM2263XT/AD5C282A0190/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "22ed53a8040acde6500e4990e2bf09becc9c1894ba505458dcdd9338641b3843"
+  },
+  "MPISP_Base/SM2263XT/AD5C282A0190/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "6beea527e0b1c488c8bb9ffed0010057a5b677704447ffc91c0dd8e04948b9e8"
+  },
+  "MPISP_Base/SM2263XT/AD5C28BA0080/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "69395bb1378a170b575db2c6deca9f483c53a08d960ff348b8fc763a7cb6ba2b"
+  },
+  "MPISP_Base/SM2263XT/AD5C28BA0080/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "0c0084e0362315290a406b150866e0267efcd62b76cf94e6d814349ba46e8e26"
+  },
+  "MPISP_Base/SM2263XT/AD5C292A0190/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "f59dec625ea1cfea88dfdf3992bcc7b55813c3ee38499d846d1fcdd4f88aed5f"
+  },
+  "MPISP_Base/SM2263XT/AD5C292A0190/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "e8423efb0d3d01ad8073a4548d1724010494bd1c8dc7a4fdae471a60f5b949d9"
+  },
+  "MPISP_Base/SM2263XT/AD5C2A2A0190/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "fb21c69ee7715a3e52ee9f2772565f2fa7a1a4de3841c074d05a36ca1445eaca"
+  },
+  "MPISP_Base/SM2263XT/AD5C2A2A0190/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "22e6298af13c4db5852409edf8df7edff3b815289619364eb54a4a8bb769847e"
   },
   "MPISP_Base/SM2263XT/AD7E280B00C0/FlashID.bin.sealed": {
    "size": 2099,
@@ -7162,9 +8070,309 @@
    "size": 91187,
    "sha256": "543f2fa94ca6186e4d42a9484d713d2f7b5630e86e80478e9812a76ef0fc93f0"
   },
+  "MPISP_Base/SM2263XT/AD7E280B00C0/spares.txt.sealed": {
+   "size": 72,
+   "sha256": "a270a32011d83fb6d8f75f386e3071a81c602f769baf78a82bd66ad7f24d089f"
+  },
+  "MPISP_Base/SM2263XT/AD7E285302B0/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "18ce80bcc495bf91ee4873b95efe599dd41574f01411a318efca9ea46c7080fe"
+  },
+  "MPISP_Base/SM2263XT/AD7E285302B0/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "c564e7c81867a5a86d10fe39fce81d773825a017c88b15d558a72dafac099784"
+  },
+  "MPISP_Base/SM2263XT/AD7E285302B0/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "79e6f8968a4668fde36d7ec70a27e89c13d400c6626489afffc310619faa934e"
+  },
+  "MPISP_Base/SM2263XT/AD7E285302B2/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "9566361b327170539b69aa7c8766ba47c5137ce0afcb1e8d9f9e22119185281c"
+  },
+  "MPISP_Base/SM2263XT/AD7E285302B2/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "95f3e7cb0ee6c818dbd495f2de030ec3bd09271307c5a875a9fc3459e4ad10ea"
+  },
+  "MPISP_Base/SM2263XT/AD7E290B00C0/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "6b86ba2a70ffebe28904e16ece635f646f2964b4ee9e164a5e595c86c9286757"
+  },
+  "MPISP_Base/SM2263XT/AD7E290B00C0/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "48fc8f3babef1b06a0cc2204be21aa8cfad76e9d47274ab8e56f663d47868cf0"
+  },
+  "MPISP_Base/SM2263XT/AD7E290B00C0/spares.txt.sealed": {
+   "size": 72,
+   "sha256": "ae12a0056d3f22cfda2399f8319e943360534d6a172cec1cf540a99b94c5b390"
+  },
+  "MPISP_Base/SM2263XT/AD7E295302B0/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "56ef0adb027b321e8fb15ebab1a4e35da850163a74121ce6b97a0caf8c4f0e97"
+  },
+  "MPISP_Base/SM2263XT/AD7E295302B0/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "ed800e48c6be1af29e516cd3ccc7d862e7483e1f420a122848d66271bb3d21d9"
+  },
+  "MPISP_Base/SM2263XT/AD7E295302B0/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "07de368700253ac8fbdb5933129cd76599ce9c54d0a1af570e8e1f45a2ff463e"
+  },
+  "MPISP_Base/SM2263XT/AD89285300B0/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "47675d5e72a3e092c3d864f8ea55eb4e564bb138704f4d9599f3e6531d0b5a38"
+  },
+  "MPISP_Base/SM2263XT/AD89285300B2/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "d2b2162c44bebba4fc54ff8478bab43c8b874baacf4793a3e4ed67462d28dbbd"
+  },
+  "MPISP_Base/SM2263XT/AD89285300B2/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "c540467344b8a251ea4d9e577332c9650b67dae50945969875bfd1917cc2caa9"
+  },
+  "MPISP_Base/SM2263XT/AD89295300B2/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "afa8d4fc47aceafa4f58330e8003eda65b063c31669d493d4d621303031477da"
+  },
+  "MPISP_Base/SM2263XT/AD89295300B2/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "e09597d0fffecf0119740ed1b1f0a27e8dd9df8811838d23faa055cbdc1c91b1"
+  },
+  "MPISP_Base/SM2263XT/EC1C982F84C9/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "4898f910f96b88b0dae2431dbb0e439e678d4dd037a5695af5aa735d80ebe4fb"
+  },
+  "MPISP_Base/SM2263XT/EC1C983F84CB/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "63b72bc95ceab4a22b3817cae7ebe904fc84cb2c4be5b75433af3caae254599e"
+  },
+  "MPISP_Base/SM2263XT/EC1C983F84CB/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "a6a14c671b50b1b6e82d692b7096784947f7b190857fa4e6df9c7aa91e55adb4"
+  },
+  "MPISP_Base/SM2263XT/EC1C983F84CB/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "b320c6031356d9858b4064f20ba14049c2d50998c516ae56670129e19d30ad75"
+  },
+  "MPISP_Base/SM2263XT/EC1C98AF84CD/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "be5f0f202237ccfea31efbddd8e0dd39a7a5a5e0aa81f22faf61cfbb76f3248d"
+  },
+  "MPISP_Base/SM2263XT/EC1C98AF84CD/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "06022658470d352e0acc7e6abf0b611ad5a53d2991d8ab9b79a6f756f6c30018"
+  },
+  "MPISP_Base/SM2263XT/EC1C98AF84CD/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "d77515656dfe5460e7b5b7e9618c96ad1e6f147318600db53b62c162548e7695"
+  },
+  "MPISP_Base/SM2263XT/EC1C98BF84CC/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "fd3bdfef7afc983048d603446280fb192ceb8ab525b1a95c7dfbb2b9da4cab4c"
+  },
+  "MPISP_Base/SM2263XT/EC1C98BF84CC/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "43a65b8329c7c602f4c41d8195ec591e680c07da1f303ebed04cbaf7eb4660dc"
+  },
+  "MPISP_Base/SM2263XT/EC1C98BF84CC/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "537487538cfc0c87a970462c881b432dc711a4d91c2c0eeeb5195a339bc6c5eb"
+  },
+  "MPISP_Base/SM2263XT/EC1E983F84CB/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "6d75a396ddf504f1e6d9042a30974cccb32101db19bb1aa68e63b278894d96dd"
+  },
+  "MPISP_Base/SM2263XT/EC1E98AF84CD/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "2dd3170fa5931caa52eaf26774dd0fabe3ccfb3c2e43d564e0b06a38bc13694a"
+  },
+  "MPISP_Base/SM2263XT/EC1E98BF84CC/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "0d166e289b0ef544e2082058bbe9e74ccbd76927bb7da4a791d8b0519b401c3f"
+  },
+  "MPISP_Base/SM2263XT/EC1ED9BF88CC/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "74cada987ac8fa2bca46220c34ba6c2b60b3e9e60c52dbdf27a30e5c06c7644c"
+  },
+  "MPISP_Base/SM2263XT/EC1ED9BF88CC/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "aa75dee81f4ee74367ae0baf0ee16db622e77ac28d777bb3ab842e58cc055f4d"
+  },
+  "MPISP_Base/SM2263XT/EC1ED9BF88CC/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "4f72b1206ec7f986a61630bc19ae03af791a2cc2138da6f48544201f4fe0add6"
+  },
+  "MPISP_Base/SM2263XT/EC1FD93F88CB/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "4fc6c8002e16c835c1d761f5acff00563cb959d6313edaf68d0a65aba3a19dd4"
+  },
+  "MPISP_Base/SM2263XT/EC1FD93F88CB/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "4725799dd37e73e326a71a82bdfa86bf5d9a5c68ca8c44c10c4b7bce3ae9c2f0"
+  },
+  "MPISP_Base/SM2263XT/EC1FD93F88CB/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "affd07e16c7a5f655f6cfd349c79643f42e3e2455743afa7f581e45f1794b221"
+  },
+  "MPISP_Base/SM2263XT/EC5C98AF84CD/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "9625d7db74df7205d0973ce5e0986d0a7f925a95b7656d2e422db06cc8718e57"
+  },
+  "MPISP_Base/SM2263XT/EC5C98BF84C0/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "06d31a329e3ddc0a5e36c4baf699806b1d16bb93326c04bd331ff2f28c1bca1f"
+  },
+  "MPISP_Base/SM2263XT/EC5C98BF84CC/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "490fc7822109ee9ed35383e390fece41ef07fb95cf93d61ab261fa0defad0d04"
+  },
+  "MPISP_Base/SM2263XT/EC5E981F84C2/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "c730aba6ee7ade5bf3a8cdd28e8e8f479efe9acf5fe3dcaced171ce3a40729fc"
+  },
+  "MPISP_Base/SM2263XT/EC5E981F84C2/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "afcd48e50acce40c40e949819b4f7e7246d801bb0b5c8bf50409da0f2c3f0b9e"
+  },
+  "MPISP_Base/SM2263XT/EC5E98AF84CD/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "47bb7c3c1868d7f223a1102e01979ef72c881b485694726e9a2af87411b6dbde"
+  },
+  "MPISP_Base/SM2263XT/EC5E98AF84CD/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "f78eb4178a65a14f8210999158738c5c89be1130f2f5bcfdbc8447650fb500a8"
+  },
+  "MPISP_Base/SM2263XT/EC5E98AF84CD/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "3cf493a6a5a5324eaa073b54a0933a2b82373aba64977bab54f5a361a1843c5f"
+  },
+  "MPISP_Base/SM2263XT/EC5E98BF84CC/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "80246b1ddbe8769915f315c8162eccb1d2591cf3561e63db1f8b8e5357b9fbe1"
+  },
+  "MPISP_Base/SM2263XT/EC5E98BF84CC/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "fb71399842418603b0b4709b579bcc4080a2500a925d2ca0aa9e6a46920c45dc"
+  },
+  "MPISP_Base/SM2263XT/EC5E98BF84CC/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "d25b8966e7927ceddaf30f3b1e50564c4be69de41d3c32f7c80b5a347882d69d"
+  },
+  "MPISP_Base/SM2263XT/EC5ED9AF88CD/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "1680bd389a558b91adfa2652863ca6e7919cc57c9d9680bf993b8026f032ee01"
+  },
+  "MPISP_Base/SM2263XT/EC5ED9AF88CD/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "0b8826d3421926f85b0704149d6da948fcbfdaf2093aace1d865c178378d7486"
+  },
+  "MPISP_Base/SM2263XT/EC5ED9AF88CD/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "01fd1a48360629fb4647d659c0780490df227c6950487bba14ca89fa61ff1cdf"
+  },
+  "MPISP_Base/SM2263XT/EC5FD9AF88CD/FlashID.bin.sealed": {
+   "size": 2099,
+   "sha256": "bc5d28ba37d1327ddd0fcd37053cfa3f730cd0abe2d5755b85fcaba91d72789d"
+  },
+  "MPISP_Base/SM2263XT/EC5FD9AF88CD/MPISP2263XT.bin.sealed": {
+   "size": 91187,
+   "sha256": "4b9364e1fafc7f34b472dd1b2fecde897334aa067b8361d09762131fcb982619"
+  },
+  "MPISP_Base/SM2263XT/EC5FD9AF88CD/spares.txt.sealed": {
+   "size": 93,
+   "sha256": "1516bf392c39723fdf63195af38e2cc698d20e9bb1fc269ca450992b12db97dc"
+  },
   "MPISP_Base/SM2263XT/MPISP2263XT.bin.sealed": {
    "size": 91187,
    "sha256": "a3d4775620b1906f201efa0824822759f8808ec2e77f9b208222b83790c71761"
+  },
+  "MPISP_Base/SM2263XT/spares/R0503A_fa0bfe36.bin.sealed": {
+   "size": 91187,
+   "sha256": "0c7d707786c11dce3d3cd466850e20d7f197429beb3c36f4f5b9a9d404668ea8"
+  },
+  "MPISP_Base/SM2263XT/spares/R0704A_e298c7af.bin.sealed": {
+   "size": 91187,
+   "sha256": "2ae2a0d81dc0f75a1425a110be52c6b77bd207474e3d7eecfe9c082cce69252f"
+  },
+  "MPISP_Base/SM2263XT/spares/R1114A_8c70b4bc.bin.sealed": {
+   "size": 91187,
+   "sha256": "895e7c84f47cae6e44e641283e9c494385e82fa6e108734e67da84c37b6b1e9e"
+  },
+  "MPISP_Base/SM2263XT/spares/S0215A_e77aed7c.bin.sealed": {
+   "size": 91187,
+   "sha256": "98bc8aa9dfbe214944db83fdd5ca0fdfaf0c27550e36ae787ce1c5e50b175f85"
+  },
+  "MPISP_Base/SM2263XT/spares/S1001A_0e43bb62.bin.sealed": {
+   "size": 91187,
+   "sha256": "b011e079380f5cdf20118d8b556be272406728a78853e4e0467eb8bb968b56c7"
+  },
+  "MPISP_Base/SM2263XT/spares/S1104A_dcc6aa94.bin.sealed": {
+   "size": 91187,
+   "sha256": "3096f3e57a17f5faf620953b74ebd60bcbb4ce146b3e5d6d795554444e03ac37"
+  },
+  "MPISP_Base/SM2263XT/spares/T0326A_4d98ee72.bin.sealed": {
+   "size": 91187,
+   "sha256": "db9d05a907959b4cbb76915b49cc917fe5641010532f2adefcab00d914c9ae3d"
+  },
+  "MPISP_Base/SM2263XT/spares/T0617A_be15a24c.bin.sealed": {
+   "size": 91187,
+   "sha256": "47b9c4939884b626530e598f435ef4d3097e4b67da2090dff057f4b3af749204"
+  },
+  "MPISP_Base/SM2263XT/spares/T1216A_a7a58afe.bin.sealed": {
+   "size": 91187,
+   "sha256": "ae713a4cd5d31df310551cb9264d6dde14deb76781b5028f72af7ab1892cb743"
+  },
+  "MPISP_Base/SM2263XT/spares/U0122A_5cbe34a8.bin.sealed": {
+   "size": 91187,
+   "sha256": "f6138ce2cf14a2d8010290cfd944b5d80a5e67d6ac687d48ca97bd908f75ae9e"
+  },
+  "MPISP_Base/SM2263XT/spares/U0429A_f42fe36f.bin.sealed": {
+   "size": 91187,
+   "sha256": "66a1d4bafd4b1ee42deaf1c74c042025376725517249d707c2d19f41223f2d29"
+  },
+  "MPISP_Base/SM2263XT/spares/U0617A_5100bf78.bin.sealed": {
+   "size": 91187,
+   "sha256": "b8d067e42322e12146c406114de7e1db9bf00a274bc3638029934cabc62ab1c5"
+  },
+  "MPISP_Base/SM2263XT/spares/U0723A_0ba3ee05.bin.sealed": {
+   "size": 91187,
+   "sha256": "34dfa483fb2886dccd7ff79d03decd47d0cf4271edfac7dcbe49dfc7c83c1827"
+  },
+  "MPISP_Base/SM2263XT/spares/U0817A_3c3262f4.bin.sealed": {
+   "size": 91187,
+   "sha256": "321e255fbbe2c2318316d5eb74f9e4c2bef1431764aaa76346c993b418de3e83"
+  },
+  "MPISP_Base/SM2263XT/spares/U0929A_804692c6.bin.sealed": {
+   "size": 91187,
+   "sha256": "e8097b1fe156f5e9cd66a47878793c098c7c393b132bc68d7aa244bc84751045"
+  },
+  "MPISP_Base/SM2263XT/spares/V0126A_2247f3cc.bin.sealed": {
+   "size": 91187,
+   "sha256": "f8709b14c3ed71717ef640339c5e4b02183c86bdb919f0e4dad07166aa395adf"
+  },
+  "MPISP_Base/SM2263XT/spares/V0302A_830c83eb.bin.sealed": {
+   "size": 91187,
+   "sha256": "c5a55060cc0a8a155317a93afc291d39ddf4363c76f4911a5fb22a566532f38e"
+  },
+  "MPISP_Base/SM2263XT/spares/V0311A_1e6beafe.bin.sealed": {
+   "size": 91187,
+   "sha256": "1edb46dd3eb5d2c16c06009dc1d41493a1995a19e2ff0456c4bbbb497bc17e9b"
+  },
+  "MPISP_Base/SM2263XT/spares/V0530A_c022db64.bin.sealed": {
+   "size": 91187,
+   "sha256": "dcba86f8841a3ba23b03a38d67a55182b367976e63017d91b2efb299aeccb70b"
+  },
+  "MPISP_Base/SM2263XT/spares/V0621A_c934af41.bin.sealed": {
+   "size": 91187,
+   "sha256": "a2ea352a556d0de7c960397228b69843df6f32900a4f9155f0fc7dd4dffa3df7"
+  },
+  "MPISP_Base/SM2263XT/spares/V0930A_e1da1e29.bin.sealed": {
+   "size": 91187,
+   "sha256": "2a93fd3f4d421fa14cf72da70c3acc7bf9d435212559ed57e83544a46d676caa"
+  },
+  "MPISP_Base/SM2263XT/spares/W0706A_2d5e8ddc.bin.sealed": {
+   "size": 91187,
+   "sha256": "811375cca264a02b82a52744a7fbe86fb85316cc6dd585d337ac19150364edf8"
   },
   "NAND/retry/2CA37832E510_TLC.json.sealed": {
    "size": 151,
@@ -10006,6 +11214,10 @@
    "size": 3527,
    "sha256": "496a787a03269eb013ff902b42b15e5fc5a2cc9d303a4ab4cdbf3f42514b0e6a"
   },
+  "YS9082HC/chips/454899037A64.json.sealed": {
+   "size": 3543,
+   "sha256": "21e3b530e76362845d518b46615fb561a76472e12ab9579c0a282e6152df8844"
+  },
   "YS9082HC/chips/454899037A6C.json.sealed": {
    "size": 3543,
    "sha256": "b76952052d52ae728dcbab224ee53a3424ae61b905bc4ebe14220a21fe29fef5"
@@ -10065,6 +11277,14 @@
   "YS9082HC/chips/454999B37A6B.json.sealed": {
    "size": 12208,
    "sha256": "5781935c1be0bf07d0c08fb34e5d6bf98820d30bd7cd9d2e9d01546fb6d46734"
+  },
+  "YS9082HC/chips/45499A037E64.json.sealed": {
+   "size": 3544,
+   "sha256": "b5d3b1d7f304ba4fead782b7306f2ec200441bd43e4dcd8341c3fd28a9cdffe1"
+  },
+  "YS9082HC/chips/45499A037E6C.json.sealed": {
+   "size": 3544,
+   "sha256": "844a2ca5752e442c93f9b8233f1828624d2eaaddfd150408f469f492cd0f2340"
   },
   "YS9082HC/chips/45499AB37E6B.json.sealed": {
    "size": 12210,
@@ -10231,8 +11451,8 @@
    "sha256": "0729f118b50511a77c599472bcc148a3c2893acbcda4c14bfe7be81572e9cfc6"
   },
   "YS9082HC/chips/983E99B37AF2.json.sealed": {
-   "size": 3562,
-   "sha256": "c87c8355e5568bb1e6bb0df71c33044fd37a090486dbb068e0b49e29dfda8350"
+   "size": 2723,
+   "sha256": "af890d68ef090bc970f2d9e6180d8c5b922c7cc5c03484d754b40089e7a4868f"
   },
   "YS9082HC/chips/984898037664.json.sealed": {
    "size": 3538,
@@ -10375,24 +11595,24 @@
    "sha256": "c670123e9e2689cb8d56da910b6162515142e321b24b06a640db026b1554e527"
   },
   "YS9082HC/chips/AD5E293300A0.json.sealed": {
-   "size": 13772,
-   "sha256": "9acc951b9642980058caf4a054e6c169a4d20a803f1d70e5154814238cf99a95"
+   "size": 12925,
+   "sha256": "57810f59958fd804e127e137822f77afdf3b2996d83835f4e7d7725ae7fe0e6b"
   },
   "YS9082HC/chips/AD5E295302B0.json.sealed": {
-   "size": 13774,
-   "sha256": "8747a9d52277437f9c8fd5f8b6d3f55686edf62ecfbf1d5f125637b2317e311a"
+   "size": 12925,
+   "sha256": "3542e0162dadecc8b7602619e14915c759186b322a791cad6d9cd14d1c42f0ae"
   },
   "YS9082HC/chips/AD5E2A3300A0.json.sealed": {
-   "size": 13786,
-   "sha256": "0426104e4037797f0f654ef362d07448c778d0933f225bf3d883b7f98b1b8c97"
+   "size": 12925,
+   "sha256": "c0a310eb5100588a645703958819746125bd0861c5bbd817b93d37e64e00494e"
   },
   "YS9082HC/chips/AD5E2A5302B0.json.sealed": {
-   "size": 13777,
-   "sha256": "65cf86c7508989f37e07013dd5389a225f5fcaabd0b565ce5ce3873b4a0eea74"
+   "size": 9772,
+   "sha256": "bc4fdd4b607efb9734b28d038df4d2ed92fc12f4751735ada0f697edc44ee08b"
   },
   "YS9082HC/chips/AD5E2B3300A0.json.sealed": {
-   "size": 13772,
-   "sha256": "f23f521b78326d7002eced684713fa57dd3871389dc5ea0540ef69a864254f3f"
+   "size": 12925,
+   "sha256": "792851a6e11f6b58ca052bff298608f4996c0375589f10994c7f89753d787736"
   },
   "YS9082HC/chips/AD7E280B00C0.json.sealed": {
    "size": 13784,
@@ -10443,20 +11663,20 @@
    "sha256": "d945579ca67f7382d3096489a5f97e53a04f54b3c467c5ee57a3a234b2881ab9"
   },
   "YS9082HC/chips/AD89295300B0.json.sealed": {
-   "size": 13769,
-   "sha256": "c82fcf5eeb2cebdd6244909a045a935f9ad9af5320e0200c4fa5e6e9cc97b3de"
+   "size": 12925,
+   "sha256": "11a2a4c76ee639854a66974b27f5d286610aa7d90f2abab9a08733e355b63146"
   },
   "YS9082HC/chips/AD89295300B2.json.sealed": {
    "size": 3888,
    "sha256": "a73cfa6af04408f6925b9166c83dc7ec4760826d5ba94009e34e56e5dabd50ea"
   },
   "YS9082HC/chips/AD892A5300B0.json.sealed": {
-   "size": 13769,
-   "sha256": "c2c08f24be9ad931e36df576656dac386ec464a1f814ec3adffb6cb6f4f08d49"
+   "size": 12925,
+   "sha256": "11b783bdcc15e2ec80ba72fbfc0c8d63ad20c60498d845b1d3174b47d13fd7a4"
   },
   "YS9082HC/chips/AD892B5300B0.json.sealed": {
-   "size": 13769,
-   "sha256": "904c90603fcac50fdba73f2e7cc1bb4fde6181cb5a14cd9070ebf67abe89139b"
+   "size": 12925,
+   "sha256": "056529c70d999d777887534ff8cfe2cd59640e0a6130f94488a2cfedf1bb0821"
   },
   "YS9082HC/chips/AD892C5330A0.json.sealed": {
    "size": 15549,
@@ -10595,156 +11815,356 @@
    "sha256": "1220e25a4563e4f142215268cb3791d614fb75ea92980fcd5aae5aed4cc7d40b"
   },
   "YS9082HC/chips/index.json.sealed": {
-   "size": 3287,
-   "sha256": "b0cf046b7d82b93ebeef4a599625f5f8217c7de79dd8ce7e24453b5249a2ce41"
+   "size": 3335,
+   "sha256": "0dc082bcef4423120b40ff1a563af279b06a7a05d047e7abf277da792576ec0b"
   },
   "YS9082HC/families.json.sealed": {
-   "size": 14026,
-   "sha256": "8ad5a5f32c686aeeb5c7455186f86fd81d58fd2af1429d43dc623d54c54825b8"
+   "size": 27347,
+   "sha256": "58c808276e19b4367c23c85c277c95a150c857bbf0311f467d2237415302d39f"
+  },
+  "YS9082HC/loaders/3dv3_gfgm/56822b666fad/writebootalgtabscan.bin.sealed": {
+   "size": 122275,
+   "sha256": "4478a3a099530b6db8792bf0619f860bbfd8d09befb90c73c3afb3dbc93254f6"
   },
   "YS9082HC/loaders/3dv3_gfgm/writebootalgtabscan.bin.sealed": {
    "size": 121475,
    "sha256": "a0548baa4c9745439973b23a383a6867e78e80dc40a85eabe75fc5be35c1bc9f"
   },
+  "YS9082HC/loaders/3dv3_gfgm_2lun/writebootalgtabscan.bin.sealed": {
+   "size": 121475,
+   "sha256": "97ea5745f8a355be7b336394933939fc424893a2ad0f789b5e96bfca30f089a4"
+  },
+  "YS9082HC/loaders/3dv4_afga_2lun/56822b666fad/writebootalgtabscan.bin.sealed": {
+   "size": 122275,
+   "sha256": "fec41fe9592927f70a721ef3352fe6dbe24557fbfcad03429c7fa44ead498854"
+  },
   "YS9082HC/loaders/3dv4_afga_2lun/writebootalgtabscan.bin.sealed": {
    "size": 121475,
    "sha256": "4a944d56f642f7f0969522f60f89d4a45a20d388d74cbbfac2b8dd190b39edc6"
+  },
+  "YS9082HC/loaders/3dv5_afgb/56822b666fad/writebootalgtabscan.bin.sealed": {
+   "size": 122275,
+   "sha256": "652c2fd55efa2049731757bd0dad4834d8c090f4da0d0551760497381d5301db"
   },
   "YS9082HC/loaders/3dv5_afgb/writebootalgtabscan.bin.sealed": {
    "size": 121475,
    "sha256": "ca4c9b05ba96c3ef5d37f6e02d2e6c1c3f2a8809ece2930ca640d4cdb29e25f5"
   },
+  "YS9082HC/loaders/3dv5_afgb_2lun/56822b666fad/writebootalgtabscan.bin.sealed": {
+   "size": 122275,
+   "sha256": "b41119c95476481afaa91003c5e1434fc104ef734ef5e8334c45074e7b17cf97"
+  },
   "YS9082HC/loaders/3dv5_afgb_2lun/writebootalgtabscan.bin.sealed": {
    "size": 121475,
    "sha256": "f82b3031fa7ca5c03730822fbd6e9f942b4dea8b6e80b8d984e8030fc785f3b0"
+  },
+  "YS9082HC/loaders/3dv6_afgc/56822b666fad/writebootalgtabscan.bin.sealed": {
+   "size": 122275,
+   "sha256": "389c00c3fb893f7e15c0467877542451ef2f132bb8c6b15aa237641f02d3a7c0"
   },
   "YS9082HC/loaders/3dv6_afgc/writebootalgtabscan.bin.sealed": {
    "size": 121475,
    "sha256": "21aed11ddb7a6497cf5ee638f18625727492ce80c69eeddf91601ab554dd88c2"
   },
+  "YS9082HC/loaders/3dv6_afgc_2lun/56822b666fad/writebootalgtabscan.bin.sealed": {
+   "size": 122275,
+   "sha256": "08fdd62b3a5e419e2d547857627f44645974d31848d80f2e344d5de9b3f983b5"
+  },
   "YS9082HC/loaders/3dv6_afgc_2lun/writebootalgtabscan.bin.sealed": {
    "size": 121475,
    "sha256": "413b18e8ecd9fc2a6724eeba7d579f4a23a0c52dd1c279821c2b252d4bc821c4"
+  },
+  "YS9082HC/loaders/8a1m/4214920b6159/writebootalgtabscan.bin.sealed": {
+   "size": 119907,
+   "sha256": "4da1ee5039fcdd5a92870530c64a08527248832ab7a269befff8e85c9d3f51a6"
   },
   "YS9082HC/loaders/8a1m/writebootalgtabscan.bin.sealed": {
    "size": 119107,
    "sha256": "99eb5e3d4a0c0baee196bc170ee7ff29a8e437ebfb5ab10e142ab39c2ea80154"
   },
+  "YS9082HC/loaders/8d4m/4214920b6159/writebootalgtabscan.bin.sealed": {
+   "size": 119907,
+   "sha256": "d4f37fb469bfb67f06617e7f113bf7fa960d08d651945a4095730429402ecee6"
+  },
   "YS9082HC/loaders/8d4m/writebootalgtabscan.bin.sealed": {
    "size": 119107,
    "sha256": "da6ede2cab559468c53119c1b9b1fffdbca0472f7f0657fd6673653d499ed7fc"
+  },
+  "YS9082HC/loaders/8f24_sandisk/writebootalgtabscan.bin.sealed": {
+   "size": 127427,
+   "sha256": "d56b136b528712894705db94b5d5b7bc9ad7d99593defffb936d32b476e6cc9f"
+  },
+  "YS9082HC/loaders/8m2a_hy/writebootalgtabscan.bin.sealed": {
+   "size": 124387,
+   "sha256": "8ff3aed5fa8503643b0ee955679bf978c6628469c1965d83086fd005aa5d0ee2"
+  },
+  "YS9082HC/loaders/8m2m/06e6023b481b/writebootalgtabscan.bin.sealed": {
+   "size": 119587,
+   "sha256": "0d20f9698095ab77bb349350619a3fd353e97bf624f63a17660780e8f345f26c"
   },
   "YS9082HC/loaders/8m2m/writebootalgtabscan.bin.sealed": {
    "size": 118787,
    "sha256": "c620261376fc611b55f876971ea64bd62c5ec86abe55d3c83bcd7d0521dd850d"
   },
+  "YS9082HC/loaders/8t23_sandisk/87dcb1d9fefa/writebootalgtabscan.bin.sealed": {
+   "size": 125859,
+   "sha256": "3f8729a2154c6bda9febed7f450fb67d2d22109126b067868d541dbae511c9cf"
+  },
   "YS9082HC/loaders/8t23_sandisk/writebootalgtabscan.bin.sealed": {
    "size": 125059,
    "sha256": "19d799807c753c4820ef5fca079497e1b704058e04800bf2c28afdd9fd260665"
+  },
+  "YS9082HC/loaders/8t23_toshiba/99538f863ef2/writebootalgtabscan.bin.sealed": {
+   "size": 127427,
+   "sha256": "9e1ca312f1f63360cc0c439fc570046094f9bb31355bb26a528dec1047751ef5"
+  },
+  "YS9082HC/loaders/8t23_toshiba/writebootalgtabscan.bin.sealed": {
+   "size": 126947,
+   "sha256": "e8eee60bade6f476ad780a3b53750b822aabff29ee7d16c06703dff38276b55b"
+  },
+  "YS9082HC/loaders/8t2f/709c930a2905/writebootalgtabscan.bin.sealed": {
+   "size": 122339,
+   "sha256": "d7d04ad9a0832a0834818f7e11d9edb5392951d074f0f52c3c4fb09713151917"
   },
   "YS9082HC/loaders/8t2f/writebootalgtabscan.bin.sealed": {
    "size": 121027,
    "sha256": "d958c5adbf6708112f600c9e604546071e964854f2ac1192519f7132f487eddf"
   },
+  "YS9082HC/loaders/8t2x_multi_lun/77ae9af04d78/writebootalgtabscan.bin.sealed": {
+   "size": 120099,
+   "sha256": "537799460b8e9592e7a861101e90e22b24c4703fc51f7fa86e240ca016ba51f6"
+  },
   "YS9082HC/loaders/8t2x_multi_lun/writebootalgtabscan.bin.sealed": {
    "size": 121027,
    "sha256": "eff3846fb64983cbf186dedaad4b877abd53fbc5a99e1f0d4ab962c1e8af368a"
+  },
+  "YS9082HC/loaders/b08t/e5165a334df5/writebootalgtabscan.bin.sealed": {
+   "size": 119811,
+   "sha256": "9a485a2486bc4a54e014122da61f44776d3443df198130cdea41642574fc65dd"
   },
   "YS9082HC/loaders/b08t/writebootalgtabscan.bin.sealed": {
    "size": 119011,
    "sha256": "1552a8af0f19b8c9241cbe7e9511675e86b183caa41dff24d4c2f19c2bb13335"
   },
+  "YS9082HC/loaders/b08t_2lun/e5165a334df5/writebootalgtabscan.bin.sealed": {
+   "size": 119811,
+   "sha256": "2815545f079dde1b5b553ccacda490f6b276cd9b1d4b9c8e6aed549efb508790"
+  },
   "YS9082HC/loaders/b08t_2lun/writebootalgtabscan.bin.sealed": {
    "size": 119011,
    "sha256": "d994179f6b915c1bf79f8238af2038d68202986bab16e63799bf5c4228eda560"
+  },
+  "YS9082HC/loaders/b0kb/b3f1dac04cd0/writebootalgtabscan.bin.sealed": {
+   "size": 124115,
+   "sha256": "744e55cf8cd21e3344b0de1f916ab526fba30dcf3d9905c47d968a77e5194a72"
   },
   "YS9082HC/loaders/b0kb/writebootalgtabscan.bin.sealed": {
    "size": 122515,
    "sha256": "b102234869164ea9cf6341c03046c122d41e5063271e3e9046742440974e2932"
   },
+  "YS9082HC/loaders/b0kb_28/6e5a7d12e0b9/writebootalgtabscan.bin.sealed": {
+   "size": 123923,
+   "sha256": "e0eff8022ea4dfffebbe454dcfb63e65eead02befeff8874280c415883905b45"
+  },
+  "YS9082HC/loaders/b0kb_28/writebootalgtabscan.bin.sealed": {
+   "size": 122515,
+   "sha256": "16137b720fccb7ac294e320c5b4d173c929d30a528d1d80eb4e4e34317f6f429"
+  },
+  "YS9082HC/loaders/b16a/badb4e9b230c/writebootalgtabscan.bin.sealed": {
+   "size": 122995,
+   "sha256": "c01ca71d7f06f1547b56e4050c2312e2a92a9678329b72605b780d57bd1d779b"
+  },
   "YS9082HC/loaders/b16a/writebootalgtabscan.bin.sealed": {
    "size": 122195,
    "sha256": "3d35699275c3fa3aae5115ea488f7f69e033f297eefecf552af26a878d3a9e5f"
+  },
+  "YS9082HC/loaders/b17a/a624361ca12f/writebootalgtabscan.bin.sealed": {
+   "size": 119731,
+   "sha256": "e8c9a0aa26da5c1e1f8eb6f53d249f049aaf51b00d20f3d0e96b9b2d5f78e0dd"
   },
   "YS9082HC/loaders/b17a/writebootalgtabscan.bin.sealed": {
    "size": 118931,
    "sha256": "0edbf2782bdaeab75c90cebb5672bb4ae7bdf99dfb18348d3cde6f327a0c25fa"
   },
+  "YS9082HC/loaders/b27a/269259c80c60/writebootalgtabscan.bin.sealed": {
+   "size": 119827,
+   "sha256": "933d6b56c7a0fde98ff8eee3b995a992c466db9218a1fea48409d86879044acf"
+  },
   "YS9082HC/loaders/b27a/writebootalgtabscan.bin.sealed": {
    "size": 119059,
    "sha256": "8dc7e5aa5bab28f3805d7d0688e3b8d19cebc5e02d8c6c572b8a09f3e9789125"
+  },
+  "YS9082HC/loaders/b27b/c676127643c9/writebootalgtabscan.bin.sealed": {
+   "size": 119859,
+   "sha256": "925c195910bb752034379654711f5cc26eb3862486556941c3e359d45e4c472a"
   },
   "YS9082HC/loaders/b27b/writebootalgtabscan.bin.sealed": {
    "size": 119059,
    "sha256": "a749bd18a472531258a8f4c93a38c256a12614704c3dc8d67435938010b58b45"
   },
+  "YS9082HC/loaders/b37r/468db63d56ea/writebootalgtabscan.bin.sealed": {
+   "size": 119571,
+   "sha256": "5446a79552565f978a6933472fe05ffe674806ad1dcc41c2270af843cffafe72"
+  },
   "YS9082HC/loaders/b37r/writebootalgtabscan.bin.sealed": {
    "size": 118771,
    "sha256": "6d8763fe081cee7c6bc949318839811a92135b1f1a1363c13c722a36e7789c78"
+  },
+  "YS9082HC/loaders/b47r/4311285cd6bf/writebootalgtabscan.bin.sealed": {
+   "size": 120115,
+   "sha256": "670d5528e96565eeee0e18d69721f5f9584b43aeb798803628b25320e16c7b1e"
   },
   "YS9082HC/loaders/b47r/writebootalgtabscan.bin.sealed": {
    "size": 119347,
    "sha256": "0438bcaa53719f2f15fd94817c3d9065321f7dba1f1ba08d14a9a72ac900b2fb"
   },
+  "YS9082HC/loaders/bics5/87dcb1d9fefa/writebootalgtabscan.bin.sealed": {
+   "size": 125859,
+   "sha256": "a4725b0d23dcd9248b9e175d8ef63107ba6275d1e5f399b085d8323bd9c3d78f"
+  },
   "YS9082HC/loaders/bics5/writebootalgtabscan.bin.sealed": {
    "size": 125059,
    "sha256": "fe812cd4d16f3bf44bbd7cd039c74d62ea189b08315fd09c2e78488dc75ab7ec"
+  },
+  "YS9082HC/loaders/bics5_2lun/87dcb1d9fefa/writebootalgtabscan.bin.sealed": {
+   "size": 125859,
+   "sha256": "00356e2b06fab2f890814ceb33e7c6880a3eb0461916dd2094289c3d3596f1a4"
   },
   "YS9082HC/loaders/bics5_2lun/writebootalgtabscan.bin.sealed": {
    "size": 125059,
    "sha256": "2708288f94b2b29b0a785cebe8143503332d4f43e9ba3e3ae05657c3e3088f7c"
   },
+  "YS9082HC/loaders/bics_8f24/87326a6f9b78/writebootalgtabscan.bin.sealed": {
+   "size": 125987,
+   "sha256": "7183230c6ea3dec0b4d4294a2f3f66ec0ad52f63018d87959c3ea8114cc928b0"
+  },
   "YS9082HC/loaders/bics_8f24/writebootalgtabscan.bin.sealed": {
    "size": 125219,
    "sha256": "8d5389131152787f7864bc8be56c841356efe6d2a37d692740bb1aee9a5b40a8"
+  },
+  "YS9082HC/loaders/gcgf/a56383c71f15/writebootalgtabscan.bin.sealed": {
+   "size": 122435,
+   "sha256": "a19d2da01b4580425c458571022522f60ac5d270f997c66939ccdcbbf8eaa298"
   },
   "YS9082HC/loaders/gcgf/writebootalgtabscan.bin.sealed": {
    "size": 121635,
    "sha256": "24f4fe0dfda336ffa172fba2e5c995187e19563bc89bf98d8a3ffef2e8e56463"
   },
+  "YS9082HC/loaders/hynix_3d_tlc/4214920b6159/writebootalgtabscan.bin.sealed": {
+   "size": 119907,
+   "sha256": "128da8df1c7cb31f12bf9924aca1c2a0a877b435f00d2f76cb2df33066cbc7d8"
+  },
+  "YS9082HC/loaders/hynix_3d_tlc/writebootalgtabscan.bin.sealed": {
+   "size": 119107,
+   "sha256": "279d211f550c226ff33f8cf8a0708adf424a0fd0407cdae3c16e1b03abb11b67"
+  },
+  "YS9082HC/loaders/hynix_3dv7/4214920b6159/writebootalgtabscan.bin.sealed": {
+   "size": 119907,
+   "sha256": "e0f9c1b7793e98e721d7f43fc613d2a4030a01624323d78db184399b3780d4aa"
+  },
   "YS9082HC/loaders/hynix_3dv7/writebootalgtabscan.bin.sealed": {
    "size": 119107,
    "sha256": "50f39bdc3d7bd797b0407577f85bb95d851d76b01307b52dd9c9a82b3dda4931"
+  },
+  "YS9082HC/loaders/k9adga/56822b666fad/writebootalgtabscan.bin.sealed": {
+   "size": 122275,
+   "sha256": "e0d25ca383b22131c637498b943827bef885e61d4d3a9cd35127a6f3436c993d"
   },
   "YS9082HC/loaders/k9adga/writebootalgtabscan.bin.sealed": {
    "size": 121475,
    "sha256": "449103c8c5bb7194fe208d3f9a1f7f66db5fdbae5d3fd8397403014dcf628eb7"
   },
+  "YS9082HC/loaders/k9af/56822b666fad/writebootalgtabscan.bin.sealed": {
+   "size": 122275,
+   "sha256": "a5fe6eb78bee0d560a1fd93b0f232169ba5f4f9a881de1edb3838c7c0241686e"
+  },
   "YS9082HC/loaders/k9af/writebootalgtabscan.bin.sealed": {
    "size": 121475,
    "sha256": "35696f01abe043fc8317189b9436718f4614ff85e6c6b2f9bfe4ab696d9a4247"
+  },
+  "YS9082HC/loaders/k9af_3tm/56822b666fad/writebootalgtabscan.bin.sealed": {
+   "size": 122275,
+   "sha256": "74de1135cc1a11b22003690e9f65483f02d3115783b53f8f5182c985d9e10e11"
   },
   "YS9082HC/loaders/k9af_3tm/writebootalgtabscan.bin.sealed": {
    "size": 121475,
    "sha256": "e2b890b5f2c63eda9acc247556366fdcd7772341a9e63890c999ba523ffe6471"
   },
+  "YS9082HC/loaders/k9af_3tm_2lun/56822b666fad/writebootalgtabscan.bin.sealed": {
+   "size": 122275,
+   "sha256": "8d62212a09729f67994f70c2014d1edcdb5cb4497e676cfb333eb620ba943544"
+  },
   "YS9082HC/loaders/k9af_3tm_2lun/writebootalgtabscan.bin.sealed": {
    "size": 121475,
    "sha256": "ec4ff37165bb06a7318a757de5e090dfadad338c2bfa6824742e1afdc2061879"
+  },
+  "YS9082HC/loaders/l06b/389084b88aa2/writebootalgtabscan.bin.sealed": {
+   "size": 121555,
+   "sha256": "0cff030adfd605ad76141b6533e14ddf38e5dfe15a2e263beedf691eadc10287"
   },
   "YS9082HC/loaders/l06b/writebootalgtabscan.bin.sealed": {
    "size": 120755,
    "sha256": "3ea429b7c3e667ea5a62e32f94e295fc5fca91a961d40d7b94e755c527701fd7"
   },
+  "YS9082HC/loaders/l06b_b0kb/389084b88aa2/writebootalgtabscan.bin.sealed": {
+   "size": 121555,
+   "sha256": "af7975ef72b57834f6a5d87958219d5b53f0f0c68d116bc6bec1795d537ec5fb"
+  },
+  "YS9082HC/loaders/l06b_b0kb/writebootalgtabscan.bin.sealed": {
+   "size": 120755,
+   "sha256": "b20b1d7d0981e4d909db3c1330504a73565c148cc8831c6989274687420b4ef1"
+  },
+  "YS9082HC/loaders/m16/5aba119d87f8/writebootalgtabscan.bin.sealed": {
+   "size": 119155,
+   "sha256": "dbd8f517395fb0491ed20a3ccc03ec3a983d694eff0452918be5360e539c0e2e"
+  },
   "YS9082HC/loaders/m16/writebootalgtabscan.bin.sealed": {
    "size": 118387,
    "sha256": "ca7bc9b79f3b87bdc32dd13b2842ddd668c36ee855763e82ce02ebf5008e7448"
+  },
+  "YS9082HC/loaders/m26a/7285e080b1df/writebootalgtabscan.bin.sealed": {
+   "size": 121563,
+   "sha256": "22d2c85a51a8762e8d2c770fa3fa7d77d669a2882aaa6532b017c3a4f3b2726f"
   },
   "YS9082HC/loaders/m26a/writebootalgtabscan.bin.sealed": {
    "size": 120763,
    "sha256": "79ee950af72dd921f77fea712e162f40507d33d711b73cec18e038ebf8ad9015"
   },
+  "YS9082HC/loaders/m26a_2048p/7285e080b1df/writebootalgtabscan.bin.sealed": {
+   "size": 121563,
+   "sha256": "8b04dd6b1a7ff1146daea2c0bea628a3eef9b6ddb0eb1f40c949af8e02868e0e"
+  },
   "YS9082HC/loaders/m26a_2048p/writebootalgtabscan.bin.sealed": {
    "size": 120699,
    "sha256": "a1bfb985ae290eeaf697b1fb0e35d358330df75bc8a8f64b0f7a4b138fa1ed76"
+  },
+  "YS9082HC/loaders/n18/c83d8b4346b5/writebootalgtabscan.bin.sealed": {
+   "size": 119355,
+   "sha256": "40fea45453fbdf4c1379b6dbfe59e952147208beb1de7539ee6647955b12f390"
   },
   "YS9082HC/loaders/n18/writebootalgtabscan.bin.sealed": {
    "size": 118587,
    "sha256": "b01d168bea7fcad66b3057c04d38e589539c9d7b2b57ca2d5f7c55445d3bdf62"
   },
+  "YS9082HC/loaders/n28a/878a8ac0a525/writebootalgtabscan.bin.sealed": {
+   "size": 121531,
+   "sha256": "41a2251fca66e9e7a6821ba1f7dc44ba58e5cc0c18ace283b748a507802b6304"
+  },
   "YS9082HC/loaders/n28a/writebootalgtabscan.bin.sealed": {
    "size": 120731,
    "sha256": "819ef4c7fefb3686f4ca056a2f50fbd255b9cf78c358f505050e6d24dd6d097b"
+  },
+  "YS9082HC/loaders/n28a_new_order/878a8ac0a525/writebootalgtabscan.bin.sealed": {
+   "size": 121531,
+   "sha256": "9ed9a989e4348bc7534b7066fdd17c5f79d28bae010e165a3616a786c3250b18"
+  },
+  "YS9082HC/loaders/n28a_new_order/writebootalgtabscan.bin.sealed": {
+   "size": 120731,
+   "sha256": "d0e5d0c8912a04c14da5807536a7f794258a02304577bc3dbeda0d2f73aa4c78"
+  },
+  "YS9082HC/loaders/n38a/7402603c6c7d/writebootalgtabscan.bin.sealed": {
+   "size": 120603,
+   "sha256": "977a724a4ab53d9a524df7898ddf642c587727741356e00b45237f302269bb2d"
   },
   "YS9082HC/loaders/n38a/writebootalgtabscan.bin.sealed": {
    "size": 119803,
@@ -10918,6 +12338,14 @@
    "size": 31779,
    "sha256": "a1c0ec6f3c24c8ac8c1e963777647205c9a362ba112b31553ffee5dc0b818527"
   },
+  "YS9082HP/chips/2CD49932A200.json.sealed": {
+   "size": 3809,
+   "sha256": "fdd0a7d3b571cfe3a5a06413b80ff43604328c7b41a557ee0cd0768526ef7b89"
+  },
+  "YS9082HP/chips/2CD49932A201.json.sealed": {
+   "size": 3809,
+   "sha256": "c075eaf957c85dbbad6b1e7291b2bc018b7401b3d8039b1d7d28b24916a90dda"
+  },
   "YS9082HP/chips/2CE38D32EA30.json.sealed": {
    "size": 14821,
    "sha256": "21806495b3383814bc1b0a6fe2d111d4068710806fd274f4cd7eb4615029655c"
@@ -10970,6 +12398,10 @@
    "size": 11308,
    "sha256": "e787fb923a04d38f5e13228999668b5fc9ffa0aaa6853c57f43fad6ff9b451de"
   },
+  "YS9082HP/chips/45409A037EE4.json.sealed": {
+   "size": 3605,
+   "sha256": "dfd1fcf98235d8d59cb287af9528ffa101b041fd3159dae46dad47ac1debc6a4"
+  },
   "YS9082HP/chips/45409BB37E63.json.sealed": {
    "size": 11267,
    "sha256": "99bf5b189f94b8f86f681a0a80beeaf940bbe903cde969621436088f4e9f054a"
@@ -10986,6 +12418,10 @@
    "size": 9718,
    "sha256": "c759c2c38a7e520fd504852ac146f1837b81030e2f389e529cd75fdbc9775367"
   },
+  "YS9082HP/chips/454899037A64.json.sealed": {
+   "size": 3586,
+   "sha256": "f5fa824ec39d09b7b786d0d814d6edafbc67379cd9894e8c9266c88b59672786"
+  },
   "YS9082HP/chips/454899037A6C.json.sealed": {
    "size": 11285,
    "sha256": "46a54f2797fd8c2f76d342602988d587ae90bab6b85c113543e7d77ba9a98494"
@@ -10998,9 +12434,21 @@
    "size": 11988,
    "sha256": "a28a49001ce3324b5297d9f05b8ca712ae148032dd64f72cdf7a956116cefe89"
   },
+  "YS9082HP/chips/454899B37AE3.json.sealed": {
+   "size": 3592,
+   "sha256": "611fa8f58ee82354b60e09996a3a22e37fdb79d228fe21f21af2e861ff0bdad2"
+  },
+  "YS9082HP/chips/454899B37AEB.json.sealed": {
+   "size": 3596,
+   "sha256": "c7c6c673f976da6298f0175a346ada752be0f8f9389bf8ffd2f99a7f3d4f4779"
+  },
   "YS9082HP/chips/454899B37AF2.json.sealed": {
    "size": 11262,
    "sha256": "8f0bb0e84c9c8e1762e601241ca84061b95aaf536af842087e897e7f0e766d7b"
+  },
+  "YS9082HP/chips/45489AB37E63.json.sealed": {
+   "size": 3592,
+   "sha256": "0798d35af09ebabf4b85fbc6f0cde7c62b3b2b8892d919770539ca88e9c4cf7b"
   },
   "YS9082HP/chips/45489AB37E6B.json.sealed": {
    "size": 11267,
@@ -11022,6 +12470,14 @@
    "size": 14671,
    "sha256": "3d44902967c44233ffb7cdb30945aa3485e23d85c4aa37542b588f8d5f2866b9"
   },
+  "YS9082HP/chips/45499A037E64.json.sealed": {
+   "size": 3591,
+   "sha256": "b98ac22b6cb92ef66e90af4a5c222121655bcddad6d04ff8f7d316ddd1fdebf0"
+  },
+  "YS9082HP/chips/45499A037E6C.json.sealed": {
+   "size": 3591,
+   "sha256": "370058a914b9892af138f4cda9535826378f5d1612d9471bae5affa8f97c21a8"
+  },
   "YS9082HP/chips/45499AB37E63.json.sealed": {
    "size": 11278,
    "sha256": "545407e82b3e125cc7c238307ce70989ac7f183cd27730bb71780032d509f690"
@@ -11033,6 +12489,10 @@
   "YS9082HP/chips/45499AB37E72.json.sealed": {
    "size": 11268,
    "sha256": "cd356e66ff9ae504f0d8923f48a4ca965dfc83bdf966bd79d2507dc9d6542864"
+  },
+  "YS9082HP/chips/45499AB37EE3.json.sealed": {
+   "size": 3585,
+   "sha256": "a20741f778e1a246991d9e9bc2af0928d19c394e0770f52d95de892f72703132"
   },
   "YS9082HP/chips/45499BB37E63.json.sealed": {
    "size": 11281,
@@ -11069,6 +12529,18 @@
   "YS9082HP/chips/45779DB37A6B.json.sealed": {
    "size": 14675,
    "sha256": "e84542b86cb75bdd18aa3c1aaf3ebf6d6ad641160896e055301ced1df77f68c7"
+  },
+  "YS9082HP/chips/45FF9C037664.json.sealed": {
+   "size": 3602,
+   "sha256": "7aa13bf65a1303d2a601280ab78226f7a95b5ec5b6fc8c6757d62f8a8762ffb5"
+  },
+  "YS9082HP/chips/89092832C200.json.sealed": {
+   "size": 19204,
+   "sha256": "641f1bcd18c56688420e6ff729462ec5af6bc0f2c10af24ccb5037bdda3df6d3"
+  },
+  "YS9082HP/chips/89092832C204.json.sealed": {
+   "size": 19205,
+   "sha256": "535c3ad66825211849ca655d15672004822fb6f3a9bb8815bf426e15f517e0a7"
   },
   "YS9082HP/chips/89A40832A100.json.sealed": {
    "size": 12575,
@@ -11134,6 +12606,14 @@
    "size": 32361,
    "sha256": "23c427960da8a70905ee4a0be41b3cdcb82d4cb9b2cb235e3616dc168fdfe458"
   },
+  "YS9082HP/chips/89E3AD32C204.json.sealed": {
+   "size": 18862,
+   "sha256": "65183f05ac963c5da9e96ecbb3e9ca1525daf6b008e0aabeb25f541d397feb38"
+  },
+  "YS9082HP/chips/89E3AD32C600.json.sealed": {
+   "size": 19138,
+   "sha256": "465c105c4787bb3c947874a98ad2a510a61b8b0f5b1eef51c224f2f7d4a79a8a"
+  },
   "YS9082HP/chips/983C98B3766B.json.sealed": {
    "size": 11309,
    "sha256": "ee6a67c5e93420484858ac2feff6544c93b2a19fe21eaf58be87f5c293ca99c2"
@@ -11190,6 +12670,10 @@
    "size": 11309,
    "sha256": "c13ea862a60c720add6e2008ad69683ea7a41ca74274bc957e1458961fc7fc97"
   },
+  "YS9082HP/chips/983EA8037AE4.json.sealed": {
+   "size": 3584,
+   "sha256": "e723c41f80e53fef3dc0ad8b4413a008c6952db2b02f3585964e9c61aff44518"
+  },
   "YS9082HP/chips/984898037664.json.sealed": {
    "size": 11268,
    "sha256": "c70e03bcddfc2e01191d18b3c1e2b4091bb372515066e67b16f207bb95a773ce"
@@ -11206,9 +12690,29 @@
    "size": 11284,
    "sha256": "c432e74d1eb4b6c9b515ce909d7617fc94e532c7f2d630497934ea187e94049d"
   },
+  "YS9082HP/chips/984899B37AE3.json.sealed": {
+   "size": 3587,
+   "sha256": "d602e049804d25f2f0cab27b6136120ee34ef5926044ec23d4b62e88024f8eca"
+  },
   "YS9082HP/chips/984899B37AF2.json.sealed": {
    "size": 11275,
    "sha256": "6934bef759c1eb18611a88f5169a12adbcf4780c25a6fe6a8350d1d7ff0558a7"
+  },
+  "YS9082HP/chips/98489AB37E72.json.sealed": {
+   "size": 3588,
+   "sha256": "dcb89e59b9f62566ba89d38014c3693f2e195c5f82da41b06aa63441969661c9"
+  },
+  "YS9082HP/chips/98489AB37EE3.json.sealed": {
+   "size": 3598,
+   "sha256": "3fa16db0d6d1e99b6f4bd9e5822ac396a701cdfa1dc4ba54bb37bbad4fd81f5e"
+  },
+  "YS9082HP/chips/98489AB37EF2.json.sealed": {
+   "size": 3588,
+   "sha256": "d45a01765bbb83aeed925566b376889ff2fbba3e751d350a62ebb243a699d635"
+  },
+  "YS9082HP/chips/98499AB37EE3.json.sealed": {
+   "size": 3598,
+   "sha256": "8844da5b6ff708fd0a6ac20b068bd05cc6a1f2366950980603ac3e0ff5146df0"
   },
   "YS9082HP/chips/98739CB376E3.json.sealed": {
    "size": 14723,
@@ -11253,6 +12757,14 @@
   "YS9082HP/chips/9BC529492000.json.sealed": {
    "size": 13394,
    "sha256": "5cb63b0fbe10a96d8aad166ed3275e884a5fbabd013279eb5cdc151eb751e9cf"
+  },
+  "YS9082HP/chips/9BC558713000.json.sealed": {
+   "size": 18894,
+   "sha256": "9f774f2bb2fd3460351ebfdc72e82930da789b6dc775d44271c6329abb9d5999"
+  },
+  "YS9082HP/chips/9BC55C553000.json.sealed": {
+   "size": 18881,
+   "sha256": "c201e98542a02770107c72fcc70c70ba1e39846761822afd8b010e7b1ece6b39"
   },
   "YS9082HP/chips/9BD5588D2000.json.sealed": {
    "size": 18863,
@@ -11318,6 +12830,10 @@
    "size": 13795,
    "sha256": "57073a2a9fc58a035821ba102de8202e8e47dc52f7d5e6f2b016607fe9ee0cb6"
   },
+  "YS9082HP/chips/AD7E280B00C2.json.sealed": {
+   "size": 13842,
+   "sha256": "abeaaaec3a99387c86ee7aae75f785dfdd864c05af500e7d2112b6a1775c7c1e"
+  },
   "YS9082HP/chips/AD7E283300A0.json.sealed": {
    "size": 13769,
    "sha256": "f8615053a9462a9df0568545407cfed3723a71910ac7a3431ce83cce3ccc6fa8"
@@ -11325,6 +12841,10 @@
   "YS9082HP/chips/AD7E283300A2.json.sealed": {
    "size": 13771,
    "sha256": "4d9eef86134b096277ac4d627937a5f7ee5097f0eeee82ad01533e13ccdc96d9"
+  },
+  "YS9082HP/chips/AD7E283B00D0.json.sealed": {
+   "size": 13836,
+   "sha256": "b66c1f0766f3f65c651fbe5a07842b74922e5bc19ae7faa76b23ec98a3d30242"
   },
   "YS9082HP/chips/AD7E285302B0.json.sealed": {
    "size": 13767,
@@ -11338,6 +12858,10 @@
    "size": 13809,
    "sha256": "916d74cb377ee0d8b0bf6b9128451f0bc2b687ca6c06fa701cddab9b3fa0abe5"
   },
+  "YS9082HP/chips/AD7E290B00C2.json.sealed": {
+   "size": 13857,
+   "sha256": "5304e90ccb694a53e9f6902aec3a4fa7ac19c9aed61096c1a199e58323a2100f"
+  },
   "YS9082HP/chips/AD7E293300A0.json.sealed": {
    "size": 13780,
    "sha256": "b9ffa6bba6f9d332f5dc9472c63826dd2f06f1187576142713f31ddde2479f1f"
@@ -11345,6 +12869,10 @@
   "YS9082HP/chips/AD7E293300A2.json.sealed": {
    "size": 13770,
    "sha256": "8baa7e109c782506437f33524a2d00d01bf5203d74b29bbe18bfc28fea91f860"
+  },
+  "YS9082HP/chips/AD7E293B00D0.json.sealed": {
+   "size": 13854,
+   "sha256": "ded8a48eea4b7113a02cf325b477fbaaad5b9c3dd57d9d3663532add6f0e76a6"
   },
   "YS9082HP/chips/AD7E295302B0.json.sealed": {
    "size": 13041,
@@ -11354,9 +12882,17 @@
    "size": 13809,
    "sha256": "811b97e4fcb1eb1aecce01d456ed1de18201f8fab5442548148acd7f3322ce60"
   },
+  "YS9082HP/chips/AD7E2A0B00C2.json.sealed": {
+   "size": 13857,
+   "sha256": "4d2fbac37e2bf0038667409d52e7ed9a5ce0f17dcedb8fc01303b34da4ffdcd9"
+  },
   "YS9082HP/chips/AD7E2A3300A0.json.sealed": {
    "size": 13778,
    "sha256": "f080e9b754dc8672a48e4741f6bb9a813ac1a9eecf7ce62c452d36d835bfb3a8"
+  },
+  "YS9082HP/chips/AD7E2A3B00D0.json.sealed": {
+   "size": 13854,
+   "sha256": "0391cfb833c4c1c4ae11ce249a1954c51605b6265f479ac4bcc9ae71f1c725ba"
   },
   "YS9082HP/chips/AD7E2A5302B0.json.sealed": {
    "size": 13041,
@@ -11366,6 +12902,10 @@
    "size": 13043,
    "sha256": "73fcc759a27abcb7513de9700f18a2892260c61e3c2e555b0f659c621d71c8c6"
   },
+  "YS9082HP/chips/AD89283B00D0.json.sealed": {
+   "size": 13840,
+   "sha256": "5abe722d983f4dd54ce5f4aba2a63a90fc70cac1a52127707ff1f367dd798528"
+  },
   "YS9082HP/chips/AD89285300B0.json.sealed": {
    "size": 13775,
    "sha256": "bc66d70e88688043db21a20ba26b3b13874b6e9fb6476d791d0f313431214f72"
@@ -11374,9 +12914,17 @@
    "size": 13785,
    "sha256": "f9155816c94248062138350dc1627981c2c95a39ce578017ccdf3ac953a068ae"
   },
+  "YS9082HP/chips/AD89293B00D0.json.sealed": {
+   "size": 15985,
+   "sha256": "51f75c633946acd6aba1a894836afc490309855b97b7a8b258c94ae87630661f"
+  },
   "YS9082HP/chips/AD89295300B0.json.sealed": {
    "size": 13043,
    "sha256": "3ceb63c8725c17d4d8f7e63516b72ed3b977d8d06f18325dbae76607a138b2fa"
+  },
+  "YS9082HP/chips/AD892A3B00D0.json.sealed": {
+   "size": 11715,
+   "sha256": "a2f840e4cd57cd42474a43cb032f7243ec01ed22b0e1aeb6aa9e3d37a47c0cf2"
   },
   "YS9082HP/chips/AD892A5300B0.json.sealed": {
    "size": 13780,
@@ -11394,9 +12942,25 @@
    "size": 18986,
    "sha256": "89942641087ed8541c3bf1e55f1294e7cd2f3009fd94ce4ed9457089be60d18d"
   },
+  "YS9082HP/chips/AD892D1B30C0.json.sealed": {
+   "size": 19041,
+   "sha256": "0220c209c70d723e4da0745562a43f94f365fe06e9415fa917f2c8ed71e69d42"
+  },
+  "YS9082HP/chips/AD892E1B30C0.json.sealed": {
+   "size": 19041,
+   "sha256": "c49945dc9a05c2877f33264cdf0e2e14070d580612c02df863355ba559927a93"
+  },
   "YS9082HP/chips/B5A46432AA04.json.sealed": {
    "size": 10919,
    "sha256": "962109641425b722e8c03035a937d935b90f3d8344c0afa1a76ff25edaaa22eb"
+  },
+  "YS9082HP/chips/EC1197536EC9.json.sealed": {
+   "size": 11620,
+   "sha256": "3e35fa2f7480c3af45934daf04acff3ac3bbba87a8e912128d4edea0c0fa3ce9"
+  },
+  "YS9082HP/chips/EC119B2F8EC9.json.sealed": {
+   "size": 11577,
+   "sha256": "417487f4dc987d7d71d57ed2eb255e9a61eee446f8d59b81d1cf614b70fb3aa8"
   },
   "YS9082HP/chips/EC1A94F364C8.json.sealed": {
    "size": 8093,
@@ -11406,6 +12970,10 @@
    "size": 10749,
    "sha256": "e02c8131c296ce0b153720d99346973ddfd25a61f3aa89fd1576b5d2a9724427"
   },
+  "YS9082HP/chips/EC1C981F84C2.json.sealed": {
+   "size": 11712,
+   "sha256": "9144b3d6054cbd11f427ef5b4bed3bdaa751d0b631c50263d34473399281863d"
+  },
   "YS9082HP/chips/EC1C982F84C9.json.sealed": {
    "size": 11577,
    "sha256": "042d524b99f5d7268ebbec0f6a3c37c5197592a68e378fc323194ccfc54b3abb"
@@ -11413,6 +12981,10 @@
   "YS9082HP/chips/EC1C983F84CB.json.sealed": {
    "size": 15180,
    "sha256": "a9c8864fb449453d22b51b4550093d060609bcbdf0c3787b0c9ea770459eaec7"
+  },
+  "YS9082HP/chips/EC1C988F84C1.json.sealed": {
+   "size": 14075,
+   "sha256": "f8ce1b256b40eb615c199658737847cea7d2f7ef1c022578b93fefe0c58f0596"
   },
   "YS9082HP/chips/EC1C98AF84CD.json.sealed": {
    "size": 11650,
@@ -11422,9 +12994,17 @@
    "size": 10012,
    "sha256": "16296ffec0e700751f41534b31fb0af232d7ee773c32e0d5565ac416a144cec6"
   },
+  "YS9082HP/chips/EC1E981F84C2.json.sealed": {
+   "size": 11716,
+   "sha256": "9887f9d69ae5640a52135bee1d77f670e548d349fad1f25c13cf74948c00fc67"
+  },
   "YS9082HP/chips/EC1E983F84CB.json.sealed": {
    "size": 11572,
    "sha256": "10f0ab14ca835b4814a4baa9f1e0b69ad575a073a9c1af52eba27386bc56c495"
+  },
+  "YS9082HP/chips/EC1E988F84C1.json.sealed": {
+   "size": 14075,
+   "sha256": "651f4207c9f69e98e2f917e02ef23c401d624879050aa6ac94b05241e68dcc6d"
   },
   "YS9082HP/chips/EC1E98AF84CD.json.sealed": {
    "size": 11651,
@@ -11446,6 +13026,14 @@
    "size": 11453,
    "sha256": "94cbeaddd920922db032ea82456fe50bf4b1a624cf330c7bce835e993947c431"
   },
+  "YS9082HP/chips/EC5C981F84C2.json.sealed": {
+   "size": 11716,
+   "sha256": "25a4a12525ee1beadd33199bd9cd97ae38e53dba932e4fa7ab85883ba2a6d0a4"
+  },
+  "YS9082HP/chips/EC5C988F84C1.json.sealed": {
+   "size": 14075,
+   "sha256": "d9248912baacd6163192ea4a343ce7c69ee963e73f28c4c7b40ae18bb60564ce"
+  },
   "YS9082HP/chips/EC5C98AF84CD.json.sealed": {
    "size": 11650,
    "sha256": "f151a5a3bfd62ca80c8690bbd1cbb9d955041cabe851f4452b58703bb47589d9"
@@ -11453,6 +13041,10 @@
   "YS9082HP/chips/EC5C98BF84CC.json.sealed": {
    "size": 13191,
    "sha256": "a9cd4afe8fad1363bc9ce158da7756cbc3be507b9ee9eae5892d601cb578d2e8"
+  },
+  "YS9082HP/chips/EC5E981F84C2.json.sealed": {
+   "size": 11716,
+   "sha256": "a514286591618d1179cf2e98d11322e681f3ebef21b34ed42c8bbc9581b641ed"
   },
   "YS9082HP/chips/EC5E983F84CB.json.sealed": {
    "size": 11569,
@@ -11466,6 +13058,22 @@
    "size": 11595,
    "sha256": "34a1873386aa48b509c39789e5bccc616a0fe7cb0183d5d17e38ab44b5afb6b8"
   },
+  "YS9082HP/chips/EC5EA88F88C1.json.sealed": {
+   "size": 14075,
+   "sha256": "6fd611056d4651a44d395cadbdfc05e0dc464443a08fcec5ef6171462cc6e080"
+  },
+  "YS9082HP/chips/EC5ED9BF88CC.json.sealed": {
+   "size": 2875,
+   "sha256": "981b3476559c08601f84ded7250c81103624c0ec64bd26f044e353d599b01733"
+  },
+  "YS9082HP/chips/EC5F9ABF8CCC.json.sealed": {
+   "size": 11675,
+   "sha256": "a5ba5147d61821b9e1af328f73a6a4536d3c9394a030a31fab1ee25cf21b71a3"
+  },
+  "YS9082HP/chips/EC5FD93F88CB.json.sealed": {
+   "size": 11617,
+   "sha256": "25d5c1e9009a46e4bd96f7ccd46d0449bb1030a02879e26f548819b02ecf9a27"
+  },
   "YS9082HP/chips/EC5FD9AF88CD.json.sealed": {
    "size": 11666,
    "sha256": "ea395e0771233d1f583e262e3b317616cf4252a6756126ac256dadb50b08224d"
@@ -11473,6 +13081,10 @@
   "YS9082HP/chips/EC5FD9BF88CC.json.sealed": {
    "size": 11637,
    "sha256": "5f558cc1f953c5b834a00d0cabe8f5187851b728c161842aa02f9dd8e237a674"
+  },
+  "YS9082HP/chips/EC5FE98F8EC1.json.sealed": {
+   "size": 14085,
+   "sha256": "be00a481d5292b022eb4edea0467e9c772b47974808b5283fcca90e837c682b3"
   },
   "YS9082HP/chips/ECB694BF64C8.json.sealed": {
    "size": 11561,
@@ -11491,20 +13103,28 @@
    "sha256": "1a6c4fca8657985a7d21ababe8f3ed9659f4b4899a40b69f46eb66e4d945c580"
   },
   "YS9082HP/chips/index.json.sealed": {
-   "size": 3054,
-   "sha256": "807cfc693d976ccd321b560ba2542bb7f625bca352f6cd1e54a6d9e75af3104c"
+   "size": 3822,
+   "sha256": "359a9bcf6df6d6960716908d0da5eac0c08f958f8fa769307ac06cdc13bfc11d"
   },
   "YS9082HP/families.json.sealed": {
-   "size": 13389,
-   "sha256": "f86c2bd361f68a0bfff4386dd556525f49613d4f625fa70b1e5bd7123bc20e12"
+   "size": 19570,
+   "sha256": "02b2f6e1b789b4629eafcbe88f7f19de69b324220303dee8fb36cf9cd6d56944"
   },
   "YS9082HP/loaders/3dv5_afgb/writebootalgtabscan.bin.sealed": {
    "size": 116571,
    "sha256": "edd037f9cf5bcb9112f84320f823163d851584d929e22131fdf4a77d60dac375"
   },
+  "YS9082HP/loaders/3dv6_afgc/f6c2a7e9d242/writebootalgtabscan.bin.sealed": {
+   "size": 114947,
+   "sha256": "eaad4d0884901165591edb53f966226db2950c9217da31841b43a9368a2e30a9"
+  },
   "YS9082HP/loaders/3dv6_afgc/writebootalgtabscan.bin.sealed": {
    "size": 116891,
    "sha256": "8151586db7ddddb4e8db8e2f386c7d20f6bcb8b24fba7fa5a6c55cdfd794b5b7"
+  },
+  "YS9082HP/loaders/3dv6_afgc_2lun/f6c2a7e9d242/writebootalgtabscan.bin.sealed": {
+   "size": 114947,
+   "sha256": "7ba9ac073233682012c2d12efa5751b7045dfb1aaa0e3e2aeb40ec66f391f97a"
   },
   "YS9082HP/loaders/3dv6_afgc_2lun/writebootalgtabscan.bin.sealed": {
    "size": 116891,
@@ -11522,6 +13142,14 @@
    "size": 130907,
    "sha256": "97d823fafba2a46cd366957890df77436e8e821fc45eaa5219c3e4bea16a0e89"
   },
+  "YS9082HP/loaders/8t23_toshiba/writebootalgtabscan.bin.sealed": {
+   "size": 130683,
+   "sha256": "606ad29966e24f9f018ffa0b85153c5e3f2629d95a629002eb11e25cfcdb25ee"
+  },
+  "YS9082HP/loaders/b08t/251d58edcde3/writebootalgtabscan.bin.sealed": {
+   "size": 127299,
+   "sha256": "33de1556a1f2ce5526c1ffa7e549c1fe19d31a82d88d94af6747cceeb11cef1e"
+  },
   "YS9082HP/loaders/b08t/writebootalgtabscan.bin.sealed": {
    "size": 124987,
    "sha256": "f50bb84c5e7bce96a6ff2e7d5c88f9adc24a5846168a4b39b07f1b2900e57370"
@@ -11530,25 +13158,49 @@
    "size": 124987,
    "sha256": "be4bcbf6efffac637233df3e8ef9609280469b407223477386c7292504ff6192"
   },
+  "YS9082HP/loaders/b16a/f84ae104d705/writebootalgtabscan.bin.sealed": {
+   "size": 122227,
+   "sha256": "4d5323cc0232b30873a0e3cc907bb27dca49c415161936ebcf824d6ba96a7cea"
+  },
   "YS9082HP/loaders/b16a/writebootalgtabscan.bin.sealed": {
    "size": 114155,
    "sha256": "a133f5bb0c73e1cbfa675d0f35d7fb7f4de144124fd1fc565bc749488981cdca"
+  },
+  "YS9082HP/loaders/b17a/f84ae104d705/writebootalgtabscan.bin.sealed": {
+   "size": 122227,
+   "sha256": "1a37d96cf323a5ce37c537b2d77d3a758756acd5e99ed88ddf8632e0c7dac5be"
   },
   "YS9082HP/loaders/b17a/writebootalgtabscan.bin.sealed": {
    "size": 119595,
    "sha256": "e0b772df5221bfad79e62dff5c1177eedcdf0d250a3915bb1d62da11cd2a15f3"
   },
+  "YS9082HP/loaders/b27a/42bc2a7f8b37/writebootalgtabscan.bin.sealed": {
+   "size": 119123,
+   "sha256": "02cf3dfd7aefe6854f1bbbc0ba22349a4e33bbc6cd31e99f3f34c7f578d96944"
+  },
   "YS9082HP/loaders/b27a/writebootalgtabscan.bin.sealed": {
    "size": 111051,
    "sha256": "3460c3860efd59a0bc1ae4f82f35d60f5f0bf0002718dd4d2ee1fc8ea880722a"
+  },
+  "YS9082HP/loaders/b27b/c3ce112329eb/writebootalgtabscan.bin.sealed": {
+   "size": 129747,
+   "sha256": "27a9de44bb041622f24762bcda4a470fa9256cf13d9449fbb09173dbc0acf838"
   },
   "YS9082HP/loaders/b27b/writebootalgtabscan.bin.sealed": {
    "size": 121771,
    "sha256": "de9835bbe4493b0327b8d2cf5cf3c68a2f6f4b91b468ba0d370ea95b3fee7bf3"
   },
+  "YS9082HP/loaders/b37r/7aec2e58b69d/writebootalgtabscan.bin.sealed": {
+   "size": 129747,
+   "sha256": "ec7b5f61d07171812f22d64299fc551ed28d1b29a136f2f60b2355787241e54c"
+  },
   "YS9082HP/loaders/b37r/writebootalgtabscan.bin.sealed": {
    "size": 121067,
    "sha256": "3418e0433ba208d7b16c559b8171ef2c39bf1158a6ac90d360e8d3ced0783c7f"
+  },
+  "YS9082HP/loaders/b47r/76481d616337/writebootalgtabscan.bin.sealed": {
+   "size": 120235,
+   "sha256": "347e24a5e8d81ff7b07d2204081a3997cd6a393cda7acadfe2cff9df1062b75c"
   },
   "YS9082HP/loaders/b47r/writebootalgtabscan.bin.sealed": {
    "size": 126475,
@@ -11582,9 +13234,17 @@
    "size": 130907,
    "sha256": "2b500a67e19dc990f61fa5768cfa737c7d72f93af9027237645f92effd7acc88"
   },
+  "YS9082HP/loaders/hynix_3d_tlc/5c1422a128f4/writebootalgtabscan.bin.sealed": {
+   "size": 123299,
+   "sha256": "49c9f6a3259e3d1b692be6e81aa0deff9433f0a102d1cdb4f5042d41d7f6c353"
+  },
   "YS9082HP/loaders/hynix_3d_tlc/writebootalgtabscan.bin.sealed": {
    "size": 125147,
    "sha256": "d6e539d9d6dd1f8fea7b5ba1d1ae4391a05392e39beaa52cb9c4492532cc870a"
+  },
+  "YS9082HP/loaders/hynix_3dv5_qlc/477127a8eb55/writebootalgtabscan.bin.sealed": {
+   "size": 125659,
+   "sha256": "b1195d95c808eaf3733a23e9a055b16780f181d58a98645b3e0a078329bad5d0"
   },
   "YS9082HP/loaders/hynix_3dv5_qlc/writebootalgtabscan.bin.sealed": {
    "size": 125147,
@@ -11594,6 +13254,10 @@
    "size": 125147,
    "sha256": "32032f6b85ec615bd7cf2adf0c99d44728bb14f2915b0a2364e2090be1d5661e"
   },
+  "YS9082HP/loaders/hynix_3dv7_tlc/5c1422a128f4/writebootalgtabscan.bin.sealed": {
+   "size": 123299,
+   "sha256": "7d5d7afdd7f7eeff09267f343f2c9be2454cd2350b774be2accdaeda5013d881"
+  },
   "YS9082HP/loaders/hynix_3dv7_tlc/writebootalgtabscan.bin.sealed": {
    "size": 125147,
    "sha256": "bc4c3fa06bae7b9bacc3b73fcad7430e31d57245a77b9ed38ed453d536d572ec"
@@ -11602,21 +13266,41 @@
    "size": 125147,
    "sha256": "6b98574ca88367ee2cb2e7424c8026ea37ac8bff449d7d1e12df5c8e41f9b3ae"
   },
+  "YS9082HP/loaders/k9af/e4fd0c533391/writebootalgtabscan.bin.sealed": {
+   "size": 116891,
+   "sha256": "2b7e6e3d6c220c6e93cff51af2307a62ce2623fcb131ef7d09df3c1d61226ad1"
+  },
   "YS9082HP/loaders/k9af/writebootalgtabscan.bin.sealed": {
    "size": 118459,
    "sha256": "6997a83917c5e20e4af42c4f96671836447dc07537e562bfc3a60c0d1ad86850"
+  },
+  "YS9082HP/loaders/m16/3954a35a96bc/writebootalgtabscan.bin.sealed": {
+   "size": 117355,
+   "sha256": "7ecba9c1a7b66af73be2b5b43897c6e52ba98ac8f0cd2d1bb6cfb5498027ffc1"
   },
   "YS9082HP/loaders/m16/writebootalgtabscan.bin.sealed": {
    "size": 117579,
    "sha256": "17bd91f894c1d4869fc5c0ecb49dab51fd0bbe1c8c9ef3470cf30fd1f5350909"
   },
+  "YS9082HP/loaders/n18/16f3f3ac36eb/writebootalgtabscan.bin.sealed": {
+   "size": 119763,
+   "sha256": "85ffef9b1cf24a9f2d5b0b1e06d9702a7341cb983b4b151898653f3d470cb183"
+  },
   "YS9082HP/loaders/n18/writebootalgtabscan.bin.sealed": {
    "size": 119987,
    "sha256": "9e99881dbba0f2489ae5e1ea9a8383c33e396b1a36a5c8a01139458d51d9ae36"
   },
+  "YS9082HP/loaders/n28a/973c06e72a0b/writebootalgtabscan.bin.sealed": {
+   "size": 125755,
+   "sha256": "3ba649189c5840ef30286b1b1d0204f7efd63b320042c40cb601b60ce1fa7027"
+  },
   "YS9082HP/loaders/n28a/writebootalgtabscan.bin.sealed": {
    "size": 122611,
    "sha256": "52d92b4e60ed560486406584ca80859dae46c559d4016e2bf810fb9f442678a1"
+  },
+  "YS9082HP/loaders/n28a_new_order/writebootalgtabscan.bin.sealed": {
+   "size": 122611,
+   "sha256": "9f4ff1f2ac5c9284f5d321df6ec956393c910bf6dcff5acd96f3197451bb63e3"
   },
   "YS9082HP/loaders/n38a/writebootalgtabscan.bin.sealed": {
    "size": 121043,
@@ -11626,17 +13310,37 @@
    "size": 126035,
    "sha256": "e6d2d5d5dbf8a20ea5f0efb2d21442e56cde6171767420e2324ffbe501f8f488"
   },
+  "YS9082HP/loaders/n48a/writebootalgtabscan.bin.sealed": {
+   "size": 82219,
+   "sha256": "76b813a725252b1fc6d689b3460a4d31e67e3d2978c32b04f138d6cdedc3d113"
+  },
+  "YS9082HP/loaders/n48r/e8da149778f2/writebootalgtabscan.bin.sealed": {
+   "size": 125251,
+   "sha256": "abff7b5a1d11071959f5c81eb93b878c12217e131b6c6522ac6c21d2c08baa25"
+  },
   "YS9082HP/loaders/n48r/writebootalgtabscan.bin.sealed": {
    "size": 120651,
    "sha256": "504d9dcd4c3e95bf4dd299c585e7a855d1329dfad8ef4f12342251234595f76a"
+  },
+  "YS9082HP/loaders/ymtc_x2_6070/fd7774601f86/writebootalgtabscan.bin.sealed": {
+   "size": 130723,
+   "sha256": "6f7d1e8f4b0c4f944dcab91d3276d5e2717b13cd75d9c66bf7b484ab3b27b887"
   },
   "YS9082HP/loaders/ymtc_x2_6070/writebootalgtabscan.bin.sealed": {
    "size": 128027,
    "sha256": "8f4c117ee4fc97c73d3f40117e9139b7027235cf94b9fdbacbe8829f035a2edb"
   },
+  "YS9082HP/loaders/ymtc_x2_9060/fd7774601f86/writebootalgtabscan.bin.sealed": {
+   "size": 130723,
+   "sha256": "035b1b72c77083771440f380fe292276388f026ddd1c8a2f52bbbbd7710f1e6b"
+  },
   "YS9082HP/loaders/ymtc_x2_9060/writebootalgtabscan.bin.sealed": {
    "size": 124955,
    "sha256": "469c5ab81ba36ffda0be090d81b4a17c7c6e5f0323f2d393fb88e8b4458e19f4"
+  },
+  "YS9082HP/loaders/ymtc_x2_9060_2lun/fd7774601f86/writebootalgtabscan.bin.sealed": {
+   "size": 130723,
+   "sha256": "64a93ff687be176b2026272dfccfeba7b2f79355b6f11726283e0e672f82f3f5"
   },
   "YS9082HP/loaders/ymtc_x2_9060_2lun/writebootalgtabscan.bin.sealed": {
    "size": 124955,
@@ -11761,6 +13465,14 @@
   "YS9085N/chips/2CC30832E604.json.sealed": {
    "size": 15027,
    "sha256": "5fd66db2fa2f2f63b256df24460fcfc6fc0bf0c4d6dab68d507c3b09ad59a619"
+  },
+  "YS9085N/chips/2CC30832E630.json.sealed": {
+   "size": 13089,
+   "sha256": "ed3517543480cccf986959ce1f0d97496296af9eddd803eea2789c5a3c6c2342"
+  },
+  "YS9085N/chips/2CC30832E631.json.sealed": {
+   "size": 13089,
+   "sha256": "e1ee8965d4d2c4fc35a955beca2cd892409710ee86753087f94e35da21c859cc"
   },
   "YS9085N/chips/2CC30832EA30.json.sealed": {
    "size": 13216,
@@ -11914,6 +13626,10 @@
    "size": 3558,
    "sha256": "40e7ab95520582ab31629dbee20e91b0dee28e8c5038d5f210cff2a3f8f1d08e"
   },
+  "YS9085N/chips/453EA8037AE5.json.sealed": {
+   "size": 14441,
+   "sha256": "43b276e5f3accfa0cefd314e43ad93f10d3cc7391445f9afe9293c1ea5377989"
+  },
   "YS9085N/chips/45409BB37E63.json.sealed": {
    "size": 847,
    "sha256": "c42c15928feacecfb9cf6f61359e68ce076ddf4fc21e5d8d15b9d90d59507a6a"
@@ -11998,6 +13714,14 @@
    "size": 3563,
    "sha256": "0747e323c28a84be3838353bd6b74f036fde2d86f86639f3f15eb654b4df42e5"
   },
+  "YS9085N/chips/4548A8037A65.json.sealed": {
+   "size": 14445,
+   "sha256": "ff91b42e8a3f92bb19bce5f30b9c37f4aa54105dc70d82e495aa3f361c367684"
+  },
+  "YS9085N/chips/4548A8037AE5.json.sealed": {
+   "size": 14445,
+   "sha256": "3d6f1c02b0f540e1edde37cbf5ea08845dc51c0bed9766cc684daf44a7b977f2"
+  },
   "YS9085N/chips/45499A037E64.json.sealed": {
    "size": 3544,
    "sha256": "f428f4b4690cd0c29662fc8785dbdb8b5e4375797c7a0cc205bd92ebe3664505"
@@ -12046,6 +13770,10 @@
    "size": 3583,
    "sha256": "d9002da7eb22b2739379404f5dc383faddf8e4e22c541fb8fb3ed870d079af6a"
   },
+  "YS9085N/chips/4549AD037EE5.json.sealed": {
+   "size": 14460,
+   "sha256": "0eeaa386d60aa2e0b5b4abac6a152e82a07ec1f5ee80b151e97cd7e3ac14ff7c"
+  },
   "YS9085N/chips/45739CB37663.json.sealed": {
    "size": 3555,
    "sha256": "b9d2d1b34cd66f2a7383a716cfabd08c1981647442552e48ddeedcf91d345034"
@@ -12077,6 +13805,18 @@
   "YS9085N/chips/89092832C204.json.sealed": {
    "size": 19153,
    "sha256": "175a6fcb3081c13e506b7ed84c4d3b5633d3e2ec4b99d1fa742a22f8aa38ec61"
+  },
+  "YS9085N/chips/89092932C200.json.sealed": {
+   "size": 18926,
+   "sha256": "f442cd32acf9dc2e871278b65c7eab3245a0eda0ee591adbf1f7abb9e3159ff9"
+  },
+  "YS9085N/chips/89092A32C200.json.sealed": {
+   "size": 19245,
+   "sha256": "9b4000cac9489713c275f62728fdaab0e330048ac75b4cbfaa2129065e8eb43f"
+  },
+  "YS9085N/chips/89092B32C200.json.sealed": {
+   "size": 19245,
+   "sha256": "6d9b39758da97001a2aea85aa98da697f26f6e108668fffd00d1f031a320624e"
   },
   "YS9085N/chips/89A40832A100.json.sealed": {
    "size": 12567,
@@ -12141,6 +13881,14 @@
   "YS9085N/chips/89D40C32AA00.json.sealed": {
    "size": 32354,
    "sha256": "278cc9b8450c6d333c737263b48b308edda6e89bdb95deffdcf333314353796f"
+  },
+  "YS9085N/chips/89E3AD32C204.json.sealed": {
+   "size": 18800,
+   "sha256": "e92ea85ef470ad0ec888d501a26e862c1e713520cb14bc5f9a2c9aeed95dca7c"
+  },
+  "YS9085N/chips/89E3AD32C600.json.sealed": {
+   "size": 19147,
+   "sha256": "cc0b43d2fcf8a777291c086827ca9c219256964dfacbc8f7234d60b5a2efec8b"
   },
   "YS9085N/chips/983C98B3766B.json.sealed": {
    "size": 3561,
@@ -12230,6 +13978,14 @@
    "size": 3541,
    "sha256": "0652bf8d909fc13874d68e2502c4fa4624d10a918c61ce29f82e1eb11cb58c4f"
   },
+  "YS9085N/chips/9848A8037AE5.json.sealed": {
+   "size": 14451,
+   "sha256": "4a588f97d013c5b6f03208d7e4449185db28a39eb64cc43d56323e3b34764c68"
+  },
+  "YS9085N/chips/9849A9037EE5.json.sealed": {
+   "size": 14468,
+   "sha256": "749351a800d2817449dbe3a27026feab3b3add27f588b2008644e345097e0bee"
+  },
   "YS9085N/chips/98739CB376E3.json.sealed": {
    "size": 3615,
    "sha256": "aec21c7585586a50e01fc2548ab8252ead128bc40801cd1e4351312200fbb5a2"
@@ -12273,6 +14029,14 @@
   "YS9085N/chips/9BC529492000.json.sealed": {
    "size": 13390,
    "sha256": "43f5bfb1e42c2e51d116609c1b255676a8792ec772a248002fa615094014e7a6"
+  },
+  "YS9085N/chips/9BC558713000.json.sealed": {
+   "size": 18923,
+   "sha256": "b731a76d8b126137ed9ccfe4ec0bd8536b4d1c3ffec0a59a4e2ec6a2bfe2217b"
+  },
+  "YS9085N/chips/9BC55C553000.json.sealed": {
+   "size": 18913,
+   "sha256": "71b315a2c739c66b49308b8fbed377290cde965fadcf41e42048ea34414f642d"
   },
   "YS9085N/chips/9BD5588D2000.json.sealed": {
    "size": 18879,
@@ -12354,6 +14118,14 @@
    "size": 13767,
    "sha256": "e74f9bc7010fb311cc1327296a34ea239cd9f77a5460ca490a2741889761cb2e"
   },
+  "YS9085N/chips/AD7E283B00D0.json.sealed": {
+   "size": 13872,
+   "sha256": "3ea3e8012b4804170dcb7f6ba56dbd86e7e138676d92064e5e0ea30d28984f78"
+  },
+  "YS9085N/chips/AD7E283B00D2.json.sealed": {
+   "size": 13862,
+   "sha256": "cf7c9245a8f420fc5164c5a0a62142d62193d91ac727285bc42e33f03d0555d4"
+  },
   "YS9085N/chips/AD7E285302B0.json.sealed": {
    "size": 13763,
    "sha256": "39d6261c6af9fdcf3ad7887a94cb6b910fe34aa228248906a559a68de20a6477"
@@ -12378,6 +14150,10 @@
    "size": 13775,
    "sha256": "58cfd2219df76fbf841a61a12fe5a986fe257cfb273fce2536981979c1dee769"
   },
+  "YS9085N/chips/AD7E293B00D0.json.sealed": {
+   "size": 13889,
+   "sha256": "58b5c1dc4dbd8737c888370fe79a4bd704aae7515cfa119d11426ba7da80dd9e"
+  },
   "YS9085N/chips/AD7E295302B0.json.sealed": {
    "size": 13782,
    "sha256": "340b231b9315e5d2708b9dea2988ab20b04eb9a8fd9086b938c55e4020e992b9"
@@ -12394,6 +14170,10 @@
    "size": 13789,
    "sha256": "93133a54a17586b02f64df6320746d77e06e2f27b327fb8f3ffd83ea3c7b7a8f"
   },
+  "YS9085N/chips/AD7E2A3B00D0.json.sealed": {
+   "size": 13872,
+   "sha256": "5ffc3277c204af1386270fac56a7db9a03b70f1770982c0638dd63eaff218a8c"
+  },
   "YS9085N/chips/AD7E2A5302B0.json.sealed": {
    "size": 13783,
    "sha256": "e8a007e23c3d827cd39a1aceab07c2c2f363a129980cc7397ff3df0c083ff411"
@@ -12401,6 +14181,10 @@
   "YS9085N/chips/AD7E2B3300A0.json.sealed": {
    "size": 13038,
    "sha256": "c591158a1721b591ae062c412aeab56d16668a30d34daaaec22b8997d4324663"
+  },
+  "YS9085N/chips/AD89283B00D0.json.sealed": {
+   "size": 13878,
+   "sha256": "84ea8d26cba4a48d85c45edd7802ab487ec7721de96334e8a7cd48a46ecb4fc4"
   },
   "YS9085N/chips/AD89285300B0.json.sealed": {
    "size": 13771,
@@ -12410,9 +14194,17 @@
    "size": 13780,
    "sha256": "56d2604d82d461e1859693556fef592d88adeaa17a5eca889a34a49edbd94b08"
   },
+  "YS9085N/chips/AD89293B00D0.json.sealed": {
+   "size": 16028,
+   "sha256": "24d45d9283425fb98fe690259fa2c97e21afd2f6420468577024f108a32cdef2"
+  },
   "YS9085N/chips/AD89295300B0.json.sealed": {
    "size": 13038,
    "sha256": "4b2c6f01575a805b8c7ee369a12c6eca826f926d7a05106052aeb5f8e1aeeb92"
+  },
+  "YS9085N/chips/AD892A3B00D0.json.sealed": {
+   "size": 11758,
+   "sha256": "0c49392fb989240aa6e68fccbe496768482c17c6b0921332180f8fc9293804f6"
   },
   "YS9085N/chips/AD892A5300B0.json.sealed": {
    "size": 13781,
@@ -12502,6 +14294,10 @@
    "size": 11596,
    "sha256": "4b641c7068fe86f49861d75e2d894c0bedeaa6d689385e1327764c81f2179b3d"
   },
+  "YS9085N/chips/EC1ED55368C9.json.sealed": {
+   "size": 10827,
+   "sha256": "a54082d5975381b478a3dba8c16999ee29b84ccb8f469efa346a98be1a4170ec"
+  },
   "YS9085N/chips/EC1ED92F88C9.json.sealed": {
    "size": 11597,
    "sha256": "90b89b4da40f5b7742e04c4982274328f5ea381b3798744c1f0e20aeee289212"
@@ -12518,6 +14314,30 @@
    "size": 615,
    "sha256": "30044772445d1d9f1c182ec0944e74ae7426a2a523c8a84bfaba5eb6994e3135"
   },
+  "YS9085N/chips/EC51DAAF8CCD.json.sealed": {
+   "size": 11734,
+   "sha256": "94fd5fd447730dd395a6c8552e0d5cbb3e208e7beb8db011c5a0c4751e2378f1"
+  },
+  "YS9085N/chips/EC51ED4B8CC1.json.sealed": {
+   "size": 14106,
+   "sha256": "706b5c6e4e6ff48ecd7a93436664424a72d71e6c1f4093c5714836156fc0bd68"
+  },
+  "YS9085N/chips/EC52DBAF8ECD.json.sealed": {
+   "size": 11727,
+   "sha256": "b54aa39072a105d748e8df60a4e4e53288ce91eba455b47c3b632e90111e8319"
+  },
+  "YS9085N/chips/EC52DE1F8CCB.json.sealed": {
+   "size": 12368,
+   "sha256": "49d290f172164231888eac30d6e501406e48d382333bc3591869d683c22d4fcc"
+  },
+  "YS9085N/chips/EC53DF1F8ECB.json.sealed": {
+   "size": 11660,
+   "sha256": "de13bd88488ab1a916c26a69a8ee12128c64b028a06e54fc3865faefb52ba009"
+  },
+  "YS9085N/chips/EC53EF4B81C1.json.sealed": {
+   "size": 14103,
+   "sha256": "24e1ee567a7cf9596646b96511bfd61f054462c7d53ba9c0ca55178f00649331"
+  },
   "YS9085N/chips/EC5C981F84C2.json.sealed": {
    "size": 11667,
    "sha256": "7b9fa0acb4c84ce1294d0ef8ac99ae65a4615677af150f427e6bb229ac47d90d"
@@ -12533,6 +14353,10 @@
   "YS9085N/chips/EC5C98BF84CC.json.sealed": {
    "size": 13188,
    "sha256": "d78395c5658817e900dcf97204412505fe16da593a369ae25a35821ed88469fe"
+  },
+  "YS9085N/chips/EC5E7388CCC9.json.sealed": {
+   "size": 10818,
+   "sha256": "319c5c161aacb6d2f769f1d9b9c30fbe49872fa604e571c56fe8b2f5d6458df9"
   },
   "YS9085N/chips/EC5E981F84C2.json.sealed": {
    "size": 11671,
@@ -12554,6 +14378,14 @@
    "size": 11592,
    "sha256": "041eddd7b2c7acef9feff004d66eb32ef31e42ea066b9c9e9da5bc36dbfb30f8"
   },
+  "YS9085N/chips/EC5EA88F88C1.json.sealed": {
+   "size": 14087,
+   "sha256": "f075f29f5c340c3b1af03b7092efa4e6bc9613c5595e6e04b74824fccb5598bf"
+  },
+  "YS9085N/chips/EC5FA83F88CF.json.sealed": {
+   "size": 14098,
+   "sha256": "2bb1b908a663a244b1388ee69f3455b8d6c9d32839fa2c9da455660156441632"
+  },
   "YS9085N/chips/EC5FD93F88CB.json.sealed": {
    "size": 11566,
    "sha256": "9adf61882874df2a1970099ce9ea1307695ed47dffa05170e4e0ba104cb5199c"
@@ -12565,6 +14397,10 @@
   "YS9085N/chips/EC5FD9BF88CC.json.sealed": {
    "size": 11635,
    "sha256": "6b63f9ea414ec3a4c444564ee3c12a7b174cda22a97c4a4dfac88e6d36a5e709"
+  },
+  "YS9085N/chips/EC5FDAAF8CCD.json.sealed": {
+   "size": 11726,
+   "sha256": "bd088174e15f0e8048ec75b437512300918e076ce9296f36b40e7d8197377825"
   },
   "YS9085N/chips/EC5FE98F8EC1.json.sealed": {
    "size": 14035,
@@ -12587,64 +14423,124 @@
    "sha256": "81c805ac971c9b035ebf94d0bd56ab7244f3589f3c01821a1097e413fb4e1c3a"
   },
   "YS9085N/chips/index.json.sealed": {
-   "size": 3669,
-   "sha256": "08a6eab9856a7ed0b70f66d35a63ebc2a74ffc483af0a41aff87531346294c67"
+   "size": 4197,
+   "sha256": "d97fe3d1d40c896896bdb44f79081c45ec84ab0bf2341fc639359e7e6baa1d34"
   },
   "YS9085N/families.json.sealed": {
-   "size": 12192,
-   "sha256": "825ab7cef8e9fae074ddd66f275166f1e88707240210d8369e179e85eb10a5f2"
+   "size": 19768,
+   "sha256": "f9bfea4f8ee932b82ace61132ad17521f1ae0fad055cd28c7afa7c8909c445d2"
+  },
+  "YS9085N/loaders/3dv5_afgb/da8bb64bf0a3/writebootalgtabscan.bin.sealed": {
+   "size": 83899,
+   "sha256": "bd69e960321023d3fceda735a15d4a19595c6764e6303900015b70a42f05618c"
   },
   "YS9085N/loaders/3dv5_afgb/writebootalgtabscan.bin.sealed": {
    "size": 87131,
    "sha256": "430cdbb789f5dbbcc9f7ccfbb84ad980838827cfd4c1379469ec6c810f1b09e0"
   },
+  "YS9085N/loaders/3dv6_afgc/145804a35a92/writebootalgtabscan.bin.sealed": {
+   "size": 87547,
+   "sha256": "08b9f6ecd6adc0b9f462b7c05e3093a0306df7fb47e136a6803c4c67a3806466"
+  },
   "YS9085N/loaders/3dv6_afgc/writebootalgtabscan.bin.sealed": {
    "size": 87387,
    "sha256": "a800d27d5dd77eea1d05a635d76eda6f7dca4140da2163989507468fdf009755"
+  },
+  "YS9085N/loaders/3dv6_afgc_2lun/da8bb64bf0a3/writebootalgtabscan.bin.sealed": {
+   "size": 83899,
+   "sha256": "ffa467fbfe2c55a04180ad141c58b51fa8e29cf527d6b0030a8e99c716955a6b"
   },
   "YS9085N/loaders/3dv6_afgc_2lun/writebootalgtabscan.bin.sealed": {
    "size": 87387,
    "sha256": "a54ba3cec8c23375105e6f942f4ecb02c2ffd6868a32d7890773f9cef96da161"
   },
+  "YS9085N/loaders/3dv6_plus_ahge/9962fc1a6a3f/writebootalgtabscan.bin.sealed": {
+   "size": 87547,
+   "sha256": "10931acf674183b0b17cc4b929caf0a8aadebbcb8e67796c9eecffaf7b5dfbaf"
+  },
   "YS9085N/loaders/3dv6_plus_ahge/writebootalgtabscan.bin.sealed": {
    "size": 87387,
    "sha256": "4bea3ef526a1e5fee75b47af9bf2d2039892ac192a9ddf24d36c7dedb9750fc3"
+  },
+  "YS9085N/loaders/3dv7_afgd/871c8f45ccd9/writebootalgtabscan.bin.sealed": {
+   "size": 87611,
+   "sha256": "044706bec9ee0446549b27371461250d9bfa35c39dbab2723633192050f146aa"
   },
   "YS9085N/loaders/3dv7_afgd/writebootalgtabscan.bin.sealed": {
    "size": 87451,
    "sha256": "004bdef846988d176dd549c59b6095a1a7f8cb9d2849283e180bc3db3d622b99"
   },
+  "YS9085N/loaders/3dv7_afgd_2lun/writebootalgtabscan.bin.sealed": {
+   "size": 87451,
+   "sha256": "fc691e89a2407b01923586a40cc1961d8cd05b4eddd607ffbc60292de23beeb1"
+  },
+  "YS9085N/loaders/8a1m_2lun/6b54825f71f5/writebootalgtabscan.bin.sealed": {
+   "size": 83675,
+   "sha256": "99342ba9bbc3fb472fc274f9f100ff5971acb615f04367e56a91ad21a9412049"
+  },
   "YS9085N/loaders/8a1m_2lun/writebootalgtabscan.bin.sealed": {
    "size": 87803,
    "sha256": "541a4f9a02348736f0df64db9934813ec1f3e10a33297e8e7fe5d230beab7f56"
+  },
+  "YS9085N/loaders/8t23_sandisk/eb92e624fc70/writebootalgtabscan.bin.sealed": {
+   "size": 83003,
+   "sha256": "125e9d9b75e0a43bd35d46f9f48259b02e2c3c7f7fec340573ed910f0fd3e85b"
   },
   "YS9085N/loaders/8t23_sandisk/writebootalgtabscan.bin.sealed": {
    "size": 89563,
    "sha256": "63c8f2375d211938c06da363c4aa0dcd9809f2cc576fdc694f97a524f674cb12"
   },
+  "YS9085N/loaders/b08t/03b006d08b78/writebootalgtabscan.bin.sealed": {
+   "size": 83803,
+   "sha256": "eb50e54956721860af9abb909c58d50e8bac6e62c69658d5116a2bce7d585483"
+  },
   "YS9085N/loaders/b08t/writebootalgtabscan.bin.sealed": {
    "size": 87643,
    "sha256": "8d697d5aec9091e8c96701e28af01799b4c337eff33d5a1edeb1f8c1ca568cd8"
+  },
+  "YS9085N/loaders/b16a/2a0770c0ef2c/writebootalgtabscan.bin.sealed": {
+   "size": 86027,
+   "sha256": "c501aa753b0460f9d0fdf01e8111edad01433ba480743e3dcb350c7db228b8d0"
   },
   "YS9085N/loaders/b16a/writebootalgtabscan.bin.sealed": {
    "size": 89067,
    "sha256": "330dfa50026db5b2b9d9cfa4e956afe592169281bdb7c052d651a81c2b5d9ec4"
   },
+  "YS9085N/loaders/b17a/8fa444b1445d/writebootalgtabscan.bin.sealed": {
+   "size": 83371,
+   "sha256": "9af4d002f7a60538d870a73626ef6ce7d2212e5aed33fc0deab275b9aa7d031f"
+  },
   "YS9085N/loaders/b17a/writebootalgtabscan.bin.sealed": {
    "size": 87051,
    "sha256": "ff856bedf797c28072833a077a9ac256fd134f0a9d3807e1dcfbfc4ec189bb9c"
+  },
+  "YS9085N/loaders/b27a/cd87071a50e4/writebootalgtabscan.bin.sealed": {
+   "size": 84107,
+   "sha256": "2db3635856668ce4d4e21b1ab63e815a064e6a944bcae64c2668c69b6d33ab8b"
   },
   "YS9085N/loaders/b27a/writebootalgtabscan.bin.sealed": {
    "size": 87115,
    "sha256": "c665c9e9cd965464d9fea5017f2292e8551e3cae804bd0ce2d10c53ec1cf202e"
   },
+  "YS9085N/loaders/b27b/4931d3bf4498/writebootalgtabscan.bin.sealed": {
+   "size": 84395,
+   "sha256": "2d2025d9858eb6daa6276da1f2f6255a2628c0e247ae7ebc807cbbc34cde8b28"
+  },
   "YS9085N/loaders/b27b/writebootalgtabscan.bin.sealed": {
    "size": 88011,
    "sha256": "6616d74b166e1f0bf83e7ea70807f70235fab8498ee6aeea42f8ca03d4690cdd"
   },
+  "YS9085N/loaders/b37r/9a85ba7f1c5e/writebootalgtabscan.bin.sealed": {
+   "size": 83947,
+   "sha256": "d8ba2b391b26b748888e28d2c827dae1f621e6072cca3e8d94856cdaaa4566fa"
+  },
   "YS9085N/loaders/b37r/writebootalgtabscan.bin.sealed": {
    "size": 87595,
    "sha256": "6355fede3e301c807403daf78b313786c5c90b970c9654d0f4073bab99b23d59"
+  },
+  "YS9085N/loaders/b47r/f2d87d939fe4/writebootalgtabscan.bin.sealed": {
+   "size": 84619,
+   "sha256": "5b4e4cb4f35d6866f08b5ec40797a4d8681beacc13ef9f5d87c81bd42da7fd09"
   },
   "YS9085N/loaders/b47r/writebootalgtabscan.bin.sealed": {
    "size": 87243,
@@ -12654,21 +14550,41 @@
    "size": 87243,
    "sha256": "1ba15486e593477883c513733b3a614a9e67ee08cc599ff665624fa15dfa9cc5"
   },
+  "YS9085N/loaders/b58r/f2d87d939fe4/writebootalgtabscan.bin.sealed": {
+   "size": 84619,
+   "sha256": "0fa28f0a7379206bfd7ce0d3f39a093e2f8021ac101cf82d4b09ae45e1a414b5"
+  },
   "YS9085N/loaders/b58r/writebootalgtabscan.bin.sealed": {
    "size": 87659,
    "sha256": "c7587b44c0dda8a0c7f2901a5baaf9c76a1015329c8c3bfbe3e226ed6ce3b936"
+  },
+  "YS9085N/loaders/bics5/5cb8c5a36227/writebootalgtabscan.bin.sealed": {
+   "size": 85467,
+   "sha256": "535f406f3a1beae648076179d7a6ee2c0257dec6a8bd7e5c596e78f9e7a9f620"
   },
   "YS9085N/loaders/bics5/writebootalgtabscan.bin.sealed": {
    "size": 89947,
    "sha256": "1b6e01d8986fd131932913321922451c25a259db59297132fbe75237d839ad2e"
   },
+  "YS9085N/loaders/bics5_qlc/40808b80333d/writebootalgtabscan.bin.sealed": {
+   "size": 86715,
+   "sha256": "b63c5b44fb1ef4bc2480c9386ee64b91242274f13ad5bfc1f25e9025cfa682af"
+  },
   "YS9085N/loaders/bics5_qlc/writebootalgtabscan.bin.sealed": {
    "size": 89947,
    "sha256": "4cb92f492bbc95ffb576f406809c245eb51d22abfdd359b3214876597ef807f1"
   },
+  "YS9085N/loaders/bics_8f24/40808b80333d/writebootalgtabscan.bin.sealed": {
+   "size": 86715,
+   "sha256": "11e4e54c4d89c0b4b4cf4ae1cdd6b9e3f9f06ea7e9262793bf9a149ceb5bf7cf"
+  },
   "YS9085N/loaders/bics_8f24/writebootalgtabscan.bin.sealed": {
    "size": 89979,
    "sha256": "b222499daa55cab51e877090763a6c7734a3802b1c0d7d59d79433564b0b21f6"
+  },
+  "YS9085N/loaders/hynix_3d_tlc/6b54825f71f5/writebootalgtabscan.bin.sealed": {
+   "size": 83675,
+   "sha256": "ba6a89b3fdd32ef0c371c3c63272b38f8e0eab297e07555ddcd9a629aca9f021"
   },
   "YS9085N/loaders/hynix_3d_tlc/writebootalgtabscan.bin.sealed": {
    "size": 87803,
@@ -12678,17 +14594,33 @@
    "size": 88219,
    "sha256": "2a6010cf8e76e2643141147b6bdd00133eb86dced3181bc20c502dfdaeebcaab"
   },
+  "YS9085N/loaders/hynix_3dv7_qlc/6b54825f71f5/writebootalgtabscan.bin.sealed": {
+   "size": 83675,
+   "sha256": "9c9443f080c83af0437af6a2a853d68ed970fb125ddfd7054ecdac6788e574e6"
+  },
   "YS9085N/loaders/hynix_3dv7_qlc/writebootalgtabscan.bin.sealed": {
    "size": 88219,
    "sha256": "45cbd88ff6093f318839879cc45808972e06971197d380dd59297b084c754457"
+  },
+  "YS9085N/loaders/hynix_3dv7_tlc/6b54825f71f5/writebootalgtabscan.bin.sealed": {
+   "size": 83675,
+   "sha256": "518ebcbfa5f1c81cae254b4123adc54772c0b1d13e86f8b230027f0985f0d4d1"
   },
   "YS9085N/loaders/hynix_3dv7_tlc/writebootalgtabscan.bin.sealed": {
    "size": 87803,
    "sha256": "e8d899661f8e84f89138087e930aca3da6957c5b583e19639a353174d73ad8ab"
   },
+  "YS9085N/loaders/hynix_3dv7_tlc_2lun/6b54825f71f5/writebootalgtabscan.bin.sealed": {
+   "size": 83675,
+   "sha256": "23c25a2ccfde0edb068593087249eedf751e0fb37e300e575271e717aa151a1e"
+  },
   "YS9085N/loaders/hynix_3dv7_tlc_2lun/writebootalgtabscan.bin.sealed": {
    "size": 87803,
    "sha256": "7e88a396dd71083b5f43bf6447e464e39136b74e23069822b96918a4770ebbe3"
+  },
+  "YS9085N/loaders/k9af/da8bb64bf0a3/writebootalgtabscan.bin.sealed": {
+   "size": 83899,
+   "sha256": "64ac9effcb177461244a059a834bb3d76b3a3e17dce1670b3fd2ea2f40ebc9a9"
   },
   "YS9085N/loaders/k9af/writebootalgtabscan.bin.sealed": {
    "size": 87099,
@@ -12698,17 +14630,41 @@
    "size": 79755,
    "sha256": "4ac70780949a60754678f089195e1ffd1e4b045fb76cb193513f2edc9ba9f262"
   },
+  "YS9085N/loaders/n18/3ab4d6557076/writebootalgtabscan.bin.sealed": {
+   "size": 82331,
+   "sha256": "d5e773c7d6fca3d4e0bd882ab7576157664cba401d9f5bd157e32777742ce775"
+  },
   "YS9085N/loaders/n18/writebootalgtabscan.bin.sealed": {
    "size": 88347,
    "sha256": "4570bb20e05c65d6626df637ee038e0babd7a46008ae0d9490350b95fd9261e9"
+  },
+  "YS9085N/loaders/n28a/552871751585/writebootalgtabscan.bin.sealed": {
+   "size": 85075,
+   "sha256": "3c84917e66faede31d1168cfcb4c78721849a978803e16d0ecba232e46f17a6e"
   },
   "YS9085N/loaders/n28a/writebootalgtabscan.bin.sealed": {
    "size": 88499,
    "sha256": "b1f79d5f154eebdbf417e9fccaa682fe51d7d545a037b9f27e4c3db7dc2d201c"
   },
+  "YS9085N/loaders/n28a_new_order/552871751585/writebootalgtabscan.bin.sealed": {
+   "size": 85075,
+   "sha256": "d416ae06f28101c10423261132948a99003e0889a6bebcccf93eaffb3ca4cb72"
+  },
+  "YS9085N/loaders/n28a_new_order/writebootalgtabscan.bin.sealed": {
+   "size": 88499,
+   "sha256": "8024ddceed2ba0cfdbe8364d6b82ec939f1294d74a5da7bde0b132ae2415e678"
+  },
+  "YS9085N/loaders/n38a/ab5bb75cec64/writebootalgtabscan.bin.sealed": {
+   "size": 83851,
+   "sha256": "22a7e755868b76f8494455f6987da50da6243de7776511e9bc32301fe008b760"
+  },
   "YS9085N/loaders/n38a/writebootalgtabscan.bin.sealed": {
    "size": 87723,
    "sha256": "638d2103105a571c694f5426f9152ba9316254860b78d96abd690fc6f6035c22"
+  },
+  "YS9085N/loaders/n38b/ab5bb75cec64/writebootalgtabscan.bin.sealed": {
+   "size": 83851,
+   "sha256": "2882ff0f2cf4759076dc610fe1f4378571cc1a6974c3656aa11cfb673522c106"
   },
   "YS9085N/loaders/n38b/writebootalgtabscan.bin.sealed": {
    "size": 87819,
@@ -12722,13 +14678,25 @@
    "size": 87139,
    "sha256": "19f046cf741267b17c4193133739459215f158abfc8c30e0a9417a7c61da1738"
   },
+  "YS9085N/loaders/ymtc_x2_6070/7e9e5b810893/writebootalgtabscan.bin.sealed": {
+   "size": 83611,
+   "sha256": "5c074469d7f40fed5938988b581d6805cae16fe56e317f79f632b96accb50808"
+  },
   "YS9085N/loaders/ymtc_x2_6070/writebootalgtabscan.bin.sealed": {
    "size": 89979,
    "sha256": "533a6e953b2a2f579cc617988ce9a7684ddcb9d934c3f68a89f1d791b2ccdca1"
   },
+  "YS9085N/loaders/ymtc_x2_9060/3138cd19d8b1/writebootalgtabscan.bin.sealed": {
+   "size": 83515,
+   "sha256": "291ca69b6d71cfa337c9f33b6eeeb55c9ef3acd8a9dc3171c288a7a1a8527809"
+  },
   "YS9085N/loaders/ymtc_x2_9060/writebootalgtabscan.bin.sealed": {
    "size": 87483,
    "sha256": "4c414b79fbd12152a260cc884156a23a447298fc3bf13bf681cc27cca96cd618"
+  },
+  "YS9085N/loaders/ymtc_x2_9060_2lun/3138cd19d8b1/writebootalgtabscan.bin.sealed": {
+   "size": 83515,
+   "sha256": "6ea1544ea240d60ee7d64339b305dd7239628ccdf24f9b89939cae565ef022fa"
   },
   "YS9085N/loaders/ymtc_x2_9060_2lun/writebootalgtabscan.bin.sealed": {
    "size": 87483,
@@ -12763,5 +14731,5 @@
    "sha256": "9eb19364a85a095c58f3fb4b6fe98620f1b5c5655bf451ca2487c759e361060d"
   }
  },
- "sig": "6cdec682e67a0ae32d02aeba01be297a5af40e417723e2ee1b60426f9798308e3b1808815e3e87760db8d130732a4a66a1aebb0e46fd429906a79e2107049d43f7d96e9d38ba936e79ed0a71bf68f189209e6f9801dd33ea98aeee50f9890d5a0867a06dac4f1a994dee521808ce2049748b64503b4a11446acefc11225cd9592342e05c5d1a29ba47b1c536097d417497760b4f304807d7b92781a98dfd11e5a86dedd15db7dd5fd327f3a4ce5b3c0c3677bf1fdd4b7b62eea134861383bea2ff77780ef1a547889623e36056afde17d53286e5ca38f72da6a0f6b16b9548cc31b432d67cf50058da0e0bc22a7dadb6d2334c73b8b4a776ccc7e6f2c92d5dad7e87299f9d4d8425400d93b49d08a3d963f960b5909194156fc0d6a34d58a94c669d9c04befad9a20cced5450f1b9f66b889a19e5b231bc87b6e070a288b1f779c1eceae810e93a52f32138c83fe6fd8b5191008a0bd65bb4244dd780e49ab896f10196c56cb93f00a8f463c75cd9e65ce9e6457df9315509dea4b15724898c9"
+ "sig": "84c8208b452aac4d8b3cc3f5c679a63bd2a396c78503d3d2089befa34015c94ed9ff19ce5cff5551f460a075bdded909b7a0c7dfd18a36e8af426a61f05896b71a7ef5ed90849813e20492d92306803bb89854ba18ca853d1add6cbc2bb616250649bbb2ff20696d96de33b00b873e81739c6823693821f43d0f719b8d52586e352043b41e43006ed5d9e85e98f26fe914ce699a2509b121362b0d7370536758a1bcdca2f555a56b32aab7eecc67f814c33007f91e0bc7cacd7bae2464bfac81e46d88f3edf2a4c80c02c2fdb1d64e62e9d018c8a5e9605fae4b7916434223b26ba89510773a1aaf0b607abc790551f9e8cd00c0a9ab0cc0b11c0eb99b5b6737d678ab44706a02ace754cd3d9e3dbf81e75f99c01f9b4e0626dd0b2223f547c3b6422e3501a81cd6e14a53235a3a868a10c436c933d36c9120434223386a07dfc260dd151bc97f9f394cf1084f5508137e927060d0b3b2f607c31ebc425d714216e68d4d6ec301517f8419bb3cddfb36d2d5b8972db22e56c21c8af25f2b34d5"
 }
