@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 95,
+ "serial": 96,
  "modules": [
   {
    "family": "smi_nvme",
@@ -2647,9 +2647,46 @@
    "issued": "2026-10-30T20:52:41+05:00",
    "python_tag": "cp313-win_amd64",
    "note": "N38A/N38B: служба на собственной конфигурации диска (UDP); INDEX — страница поколения, не зеркало (Силкин 30.10)"
+  },
+  {
+   "family": "yeestor",
+   "version": 18,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-18.ssdmod",
+   "size": 1571899,
+   "sha256": "62fa9196183646b8c54889ba29704865a5751b4d5920fb8f5d512d8b8fd2bf6d",
+   "modules": [
+    "controllers.yeestor._shared.boot_area",
+    "controllers.yeestor._shared.cache_index",
+    "controllers.yeestor._shared.client_log",
+    "controllers.yeestor._shared.dialect",
+    "controllers.yeestor._shared.family_select",
+    "controllers.yeestor._shared.freshness",
+    "controllers.yeestor._shared.generation_branch",
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.index_checkpoint",
+    "controllers.yeestor._shared.leaf_history",
+    "controllers.yeestor._shared.leaf_store",
+    "controllers.yeestor._shared.open_streams",
+    "controllers.yeestor._shared.passport_search",
+    "controllers.yeestor._shared.por_journal",
+    "controllers.yeestor._shared.service_bringup",
+    "controllers.yeestor._shared.slc_stream",
+    "controllers.yeestor._shared.tail_scan",
+    "controllers.yeestor._shared.translator",
+    "controllers.yeestor._shared.ys_state"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-10-31T14:40:46+05:00",
+   "python_tag": "cp313-win_amd64",
+   "note": "Аудит констант 31.10: журнал потоков до конца слота по UDP; хвост — CE по Flash ID; допуск второго журнала INDEX; диалект закреплённых — из базы; предел кэша по UDP",
+   "case": "AUDIT-2026-10-31"
   }
  ],
  "revoked": [],
- "issued": "2026-10-30T20:52:43+05:00",
- "sig": "49002b6495bced63624deb143624863f3a2178b03f9123780a30375fccaf3d08800cf8a86e1b639cff6c94fafee019b099bc751018702c75e73ebfe1aa753ef4057c381ac92a9170dc05bfa4d5cb32ff2e586dca8b1e2d9f0b64d956f05458d621b11891745599ee6eda28be4f9c25b813892dfae57df4a8e2022e58df7a943f4db3680da9041e577373fe84ded8ebfaedd2a6e56a980401e347ec9695cb7e7dbbef6fed65604ec81633df269dcbb6fef98b9780d524b880cefd8be6e7b7fc77c6d01a24f65e8b215b83ededec63913461c921321fd7bea033647f329a1ae24372e53948b1024693b0cf501f3303a76a4a3924a28b71ec2e9c68a8d6bfde4db85b8390e4db6a9a521dfe4aa07dc61496baa21c537cb756d2a88bb33b94e795147f9f208888f4922ee458b5b7deea05c2961d4ebddb215b8326d769ad82088a9e7ef482d9b361040b7acd838c2047bcefad293f6634fc94715623871e5a77b81feb0856b76fec6e83d3e9b77dd5435a947a568ddf61e42b8b94b8aaa15b1c136c"
+ "issued": "2026-10-31T14:41:13+05:00",
+ "sig": "0ef68ac8f6494ee5233a49263cf2951f5af466a37db4b35fac80e6b8022d90d861c1a2da8d4dec088cedb1526d93da0e1913f9ac356035c8ff7ba1beba862f98eba376ec059932654b7c641044e49d532c8e3cd054403d59354f96b806668d0554c80b228b0b110eb6367d111132dea6fce41f1e1e93ea4bc37e97a0e3ac1732986f351ae9c9f54d9f61794ccf208e62214e6ae45abf18aef0241dd05b928aec2ee474eb667c2c364f3092d2ee19ab70559aec68761ae52363c69c73b90a5aafbb5e9ae69ea9211aaa8272340e74a548ce52dc2d907956a247b2be969f7416c99a010b8c6fcab17cfd33e48f74b0751edaa159a066941fab213893072fef49a29f6bc138a1a2edab5ea739dbbfdceab7e72dd8caa0f142c8ae743ba5e4df34768fca4d0e3c7c1beb7fc8c96eafc4dfa77d05099f31d25c9fe9ff262a64505f1ceca9760dea194217d2230ddedd61285f60806d2e1aea896b8532966c96b11c4b98c6dc807e517a281ba163c9c7ad09017aa75eca468937a5d6cf6232ab7c12a2"
 }
