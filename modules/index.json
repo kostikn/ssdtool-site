@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 99,
+ "serial": 100,
  "modules": [
   {
    "family": "smi_nvme",
@@ -2798,9 +2798,40 @@
    "python_tag": "cp313-win_amd64",
    "note": "Аудит 01.11 №16: период зерна скремблера SG9081CC — из UDP диска (0x548, seed_period_from_udp); строка chip_config_fields N28A снята",
    "case": "AUDIT-2026-11-01-16"
+  },
+  {
+   "family": "phison",
+   "version": 10,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-10.ssdmod",
+   "size": 1265712,
+   "sha256": "25d0a47ee101692eed9e4050ec4a7863a4b1a95302d862102961f75ea9c6c7f1",
+   "modules": [
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.sa_diagnosis"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-01T15:59:13+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "PS3111: любой бит защиты из кода диска; «Записать патч в FW» после подготовки любым путём (SPCC 01.11)"
   }
  ],
  "revoked": [],
- "issued": "2026-11-01T15:35:50+05:00",
- "sig": "022cbaa89433ad72eb93edfe39fdd8bc737a7938d03e2e5a8626a0bad211e00c8b6662c37218e420318570506efb9cddeff2a7f6200d9d5974cdfe1172c20959b956bea9fade4f42bb9a7865fddf46f05c65e77a496c0d6cb16d31b7580395012681455ea9707fd53faf369b56b96376645be01b38c71fa1278cefa3183e16c8e69d3d912a72fbe629eeb3556cb042b1124a1482252e7947677f334b1384b1dd2be568b6e90683baa0018d6b63f5f7edfbc67fbd3c7b35649ec86f4a8419fa08fe08c73dd0e14a4f3c706aef37679f9cc6e74848fddbc04e65a88ae7e72ba2085c002969b6dfd5c3c620fb9015bd7731c07287bc45ccc9cc0f88fb430f88695bd2e45f4d29f211dfd5de22b5a0e5e987eaef404f61ae3edfabdcc79c6c5ad623bb5586d65a3f66e84cee05238e9da7701df8e26509334365e0e2c2c9aa320d1606938b2ecc3537220c420a6eb9812a21c506b0b788e960d3fe807e4582e0590a3ca9a6f92a267ffa595a0ca3825ce94dd7c89edefea346c551e7376289d1218d"
+ "issued": "2026-11-01T15:59:16+05:00",
+ "sig": "0872711e357c48000b8e1cf12f4ed9556c547183aa8aade86ed96581065f6efeff15a0dfd231afc5ed5f8c792be7ff208f458b3a3fd885fd481a4f01b9a5f5a83be6bf02ad2591d8517396050e43e0d4f6f28012b3efd2c934fec3325984a1d123b935305352d7cfef199af86e0448944961372fd81f4952a42f0eeabc97e9a55eda4fe9ff1d3de920d34a47ecd6b377c787372dd7fce3b4b76bd17c3bee769c2b81ef9a98925b3b4590a9ff7ba6fbf6ecede51330e5459d2d3465d632195926bafa0d5b0c7160087c207630bd0ac3fcce73747742780323900ff3f7c3184cfb47a07eb9bdfe05f95ef2340d24f4ece666c7fc55ee14d75e4eab71b20735c8ec2e3661449ec39ac110f141cc0391481a9305a39bc3fc1e71036c3ab135c0c19ea7d92cf1abdbd14fdc5f48224a6824c317e0115597c9cb42a3465b228f3ead9dd0993d702cf667ce065b0e31a3fdd2bd6454f7327a2da43c1bb189de63b028726dfaf8d854eea250cafecbc05824abdca17ef947d00b91c47009d48d55d6c4e9"
 }
