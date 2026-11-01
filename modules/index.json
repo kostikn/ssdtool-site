@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 98,
+ "serial": 99,
  "modules": [
   {
    "family": "smi_nvme",
@@ -2755,9 +2755,52 @@
    "python_tag": "cp313-win_amd64",
    "note": "Аудит 01.11: CE указателя — номер микросхемы диска (CE0+CE2); расписание поиска загрузки из services.json; неизвестный LDPC — отказ",
    "case": "AUDIT-2026-11-01"
+  },
+  {
+   "family": "yeestor",
+   "version": 20,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-20.ssdmod",
+   "size": 1942339,
+   "sha256": "f60c097bad409b40390c3b27090dc66595b36ee6a5da1224da277b214b4367fc",
+   "modules": [
+    "controllers.yeestor._shared.boot_area",
+    "controllers.yeestor._shared.boot_search",
+    "controllers.yeestor._shared.cache_index",
+    "controllers.yeestor._shared.client_log",
+    "controllers.yeestor._shared.container_gen",
+    "controllers.yeestor._shared.dialect",
+    "controllers.yeestor._shared.family_select",
+    "controllers.yeestor._shared.freshness",
+    "controllers.yeestor._shared.generation_branch",
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.index_checkpoint",
+    "controllers.yeestor._shared.leaf_history",
+    "controllers.yeestor._shared.leaf_store",
+    "controllers.yeestor._shared.open_streams",
+    "controllers.yeestor._shared.passport_search",
+    "controllers.yeestor._shared.por_journal",
+    "controllers.yeestor._shared.service_bringup",
+    "controllers.yeestor._shared.slc_stream",
+    "controllers.yeestor._shared.table_address",
+    "controllers.yeestor._shared.table_cache",
+    "controllers.yeestor._shared.tail_scan",
+    "controllers.yeestor._shared.translator",
+    "controllers.yeestor._shared.translator_ecc_reader",
+    "controllers.yeestor._shared.wire",
+    "controllers.yeestor._shared.ys_state"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-01T15:35:48+05:00",
+   "python_tag": "cp313-win_amd64",
+   "note": "Аудит 01.11 №16: период зерна скремблера SG9081CC — из UDP диска (0x548, seed_period_from_udp); строка chip_config_fields N28A снята",
+   "case": "AUDIT-2026-11-01-16"
   }
  ],
  "revoked": [],
- "issued": "2026-11-01T15:21:05+05:00",
- "sig": "3cbcf778c0ee4a5d5de7671e3248c9415d4461502fa828eadf5446256e4f462704bdff56d6492cd86f746a827106b36f362501fcc226d7101b4f1cf4be8a275a9cd244f6186a8e74827e703dd65f1c7dd411c1401342d0c1d229860771993450adfb0e5a3cf4d3bc14504ff60e954e1b1c8dc380dd620bbf86c236eb47a159d4215ec3a952dfdd57fe2fa7eaed0f0d931bc6f98a83941627d25bfa3dcf819a6e3a871f8c3f53a8368dc2ad7201fe1a06e9657f40077a988b68b43dc2f0fc32290765a7d93b3131a3834ad048d21f912582ae4b09d88eaf3127bccf494c54ab5612dd9a9f7d538bd3c04f71a3a6ef36be7354740e470a1ebbffafd1f065232d37bd4cee960d8a33c9cdc7f1aa35b53f3791755a9e087228026c88d96a7892f7b729bcd5a95fb4cb5c37ba117ab12fdecac4568e77557c4d0605bec82cfd99fb68c7e4f481bd8608dd6751fdc8462f7db0b8f9c8fee0cb0b2fdcf1d8c83bcf34e1ffbeefdc2e82a72ad71ba9be95ba9bb018fd5bacb12c6d47e76ca01664ef2b80"
+ "issued": "2026-11-01T15:35:50+05:00",
+ "sig": "022cbaa89433ad72eb93edfe39fdd8bc737a7938d03e2e5a8626a0bad211e00c8b6662c37218e420318570506efb9cddeff2a7f6200d9d5974cdfe1172c20959b956bea9fade4f42bb9a7865fddf46f05c65e77a496c0d6cb16d31b7580395012681455ea9707fd53faf369b56b96376645be01b38c71fa1278cefa3183e16c8e69d3d912a72fbe629eeb3556cb042b1124a1482252e7947677f334b1384b1dd2be568b6e90683baa0018d6b63f5f7edfbc67fbd3c7b35649ec86f4a8419fa08fe08c73dd0e14a4f3c706aef37679f9cc6e74848fddbc04e65a88ae7e72ba2085c002969b6dfd5c3c620fb9015bd7731c07287bc45ccc9cc0f88fb430f88695bd2e45f4d29f211dfd5de22b5a0e5e987eaef404f61ae3edfabdcc79c6c5ad623bb5586d65a3f66e84cee05238e9da7701df8e26509334365e0e2c2c9aa320d1606938b2ecc3537220c420a6eb9812a21c506b0b788e960d3fe807e4582e0590a3ca9a6f92a267ffa595a0ca3825ce94dd7c89edefea346c551e7376289d1218d"
 }
