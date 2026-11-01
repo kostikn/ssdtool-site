@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 96,
+ "serial": 97,
  "modules": [
   {
    "family": "smi_nvme",
@@ -2684,9 +2684,37 @@
    "python_tag": "cp313-win_amd64",
    "note": "Аудит констант 31.10: журнал потоков до конца слота по UDP; хвост — CE по Flash ID; допуск второго журнала INDEX; диалект закреплённых — из базы; предел кэша по UDP",
    "case": "AUDIT-2026-10-31"
+  },
+  {
+   "family": "phison",
+   "version": 9,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-9.ssdmod",
+   "size": 985368,
+   "sha256": "24785a7b02aaa28d71ce79a0192651915ded5567d5c56695e925c1e0eb9438a5",
+   "modules": [
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.sa_diagnosis"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-01T11:56:09+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "PS3111 SBFM71 защита 0x01: кнопка снимает флаг при загруженном трансляторе (01.11)"
   }
  ],
  "revoked": [],
- "issued": "2026-10-31T14:41:13+05:00",
- "sig": "0ef68ac8f6494ee5233a49263cf2951f5af466a37db4b35fac80e6b8022d90d861c1a2da8d4dec088cedb1526d93da0e1913f9ac356035c8ff7ba1beba862f98eba376ec059932654b7c641044e49d532c8e3cd054403d59354f96b806668d0554c80b228b0b110eb6367d111132dea6fce41f1e1e93ea4bc37e97a0e3ac1732986f351ae9c9f54d9f61794ccf208e62214e6ae45abf18aef0241dd05b928aec2ee474eb667c2c364f3092d2ee19ab70559aec68761ae52363c69c73b90a5aafbb5e9ae69ea9211aaa8272340e74a548ce52dc2d907956a247b2be969f7416c99a010b8c6fcab17cfd33e48f74b0751edaa159a066941fab213893072fef49a29f6bc138a1a2edab5ea739dbbfdceab7e72dd8caa0f142c8ae743ba5e4df34768fca4d0e3c7c1beb7fc8c96eafc4dfa77d05099f31d25c9fe9ff262a64505f1ceca9760dea194217d2230ddedd61285f60806d2e1aea896b8532966c96b11c4b98c6dc807e517a281ba163c9c7ad09017aa75eca468937a5d6cf6232ab7c12a2"
+ "issued": "2026-11-01T11:56:11+05:00",
+ "sig": "5ae26f9592cb0f825a0bcac208295fa2a9d2e50503c1c49983e8c567170bce01a84f1fb9902555ae3c1d6b17912345e666d62bea0092e83783e2548b8933019edbba0a2f00198e2306d8e2482269a98ffdb60c199b14e79017310aab3107d2608619a3c5bd6f4fa32fe317ae9df43fcdc7ee31cadfed4a91e30b2e3b2025c7950e47be375d314c71b1fc7d0c0956a178fc038cf2341f8bf47595880df910bd33445f8e80adb152e092997507f4daa942b5640500fae69900bd739185cd74264119b0601f598b9520f361f27b8b01bc151c9e545fa3b06e32edc69dbfb83fdcbc053f3005ced69d852ed5133b08788a516987cc3011f68df38b3686ceb0b72f88eaf99ecc89206a9b0476339f9c7db0520a50b20899a12e8137b8b3a4efbb9a884b780de087cf881608603c695a60cabe446701d15d29dc2384c213b2b1fb6e215b45a6eebeb746fce8b0fb2dc8a57956b7bbd42944bec28ad728ecf74f474718b1bffe021e5f2483ed8fc163e87089907381a1e82df0913d9bd325f6ee30f90f"
 }
