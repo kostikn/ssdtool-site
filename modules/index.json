@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 103,
+ "serial": 104,
  "modules": [
   {
    "family": "smi_nvme",
@@ -2919,9 +2919,42 @@
    "issued": "2026-11-01T18:23:22+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "после сборки 184: листья семьи как в EXE (аудит универсальности 01.11, SM2320)"
+  },
+  {
+   "family": "maxio",
+   "version": 24,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-24.ssdmod",
+   "size": 2060191,
+   "sha256": "3768999fd50ee5bf10d188061846ccf8f2a10756bdc76c61f2542d87e564aa36",
+   "modules": [
+    "controllers.maxio.mas1102.codeblock_build",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.locate",
+    "controllers.maxio.mas1102.passport_nand",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.retry",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-01T18:35:20+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "после сборки 184: листья семьи как в EXE (аудит универсальности 01.11, SM2320)"
   }
  ],
  "revoked": [],
- "issued": "2026-11-01T18:23:24+05:00",
- "sig": "3b7ae049b068bae20d2c0de317476133a2e14a9e7bdd0eb93e54d3a1e3343430e547bfbd5baef535ff05fd50d20ba060ce65a7445b3d968070c20b3cae72605ffd474e76994ed5851c7007cdc50c2588d64733976ae68d38b7ad6397a52667fedb0aea261de9f3a21813b5c43f35fb60272aad362be327ef6f77a42289f5a95e715ef464c281df98b50cfc0c1ddedf46827545bc7c924eb18e3a0354029f49e93aca61373776be76c126485b3cb6e8afdf33d4da58bfd3a417ad216a2b4dc6bc97e9ac93d554258903a3e3ab2c47d0d372c62d101566b9996cae86aa67b8a65e16cb6e684dedeeebe239675ae0a95e1c4ba936107d0c2eeb87057650382f72e4040caaae29f32baf6e7f484ff00f9de3e864f90ccd9a563ebe4720fb5a2784cf4eff4c672aaeb6f2530827c3281b14788592cb7c72cf9143f06e4ed3786f7a4498a3c10da75b804c6b6daf8f83ee91c08ead825950d59d8a43303d4fe230ff80665128e1a3a6d60cbe823b8f076f5438104f587d9d7784d33c78f96a7ecc90db"
+ "issued": "2026-11-01T18:35:22+05:00",
+ "sig": "69b77d48218f177bc7946a3b79dd12046733ebe7d6be1dab21c026cf35d364ba5b1d1731d3c067cb5385e3178ac94f142d2ffdd75f34225a9a40bc3eedfacba351d7754ccc0133822f063a2e9a5585042e4aeb6da30b5a3acf8864645c0d4d36d370dd7095f0f322b3e7dce94d59d9bc5ff2b86c2f9c55a49484ed23489462067c5bcbaf3b54dd01f7d1bf14e6d02991993a343f8ded39909d57d9f4c9f09b8d9b43f482a3b12ab6bfab402339226f70c8ccd386a8c71b493d668e58829cf68afc889bb937750af56b39b1db02a44fa734fe5c8529491fb322ef6bd804d7269e9de7320c793d44eb9fc54827c4122921d82c53847518684d7a28cd74f1c12c2e0cca5b666a02a07fce6ea202a3cad32151c4503d0f0cfaf799a0223facaa03ca8bdacfdbb8d49673e5a55a0f3101eb9be924a5092d41586ee667c28517027901fd9ecbc3ae73c5de6f74485d30ebc87f22a34f60e3755a43e47771643388c07b642f3fe34bf0cd73e856538f624bdc4cb57419cb4873c35b6633187145b66e0b"
 }
