@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 100,
+ "serial": 101,
  "modules": [
   {
    "family": "smi_nvme",
@@ -2829,9 +2829,40 @@
    "issued": "2026-11-01T15:59:13+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "PS3111: любой бит защиты из кода диска; «Записать патч в FW» после подготовки любым путём (SPCC 01.11)"
+  },
+  {
+   "family": "phison",
+   "version": 11,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-11.ssdmod",
+   "size": 1276438,
+   "sha256": "1216a7ce16a0b0c3b8415bb103be0f9b295df584da93f00f67c1cecb2e6b4ef2",
+   "modules": [
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.sa_diagnosis"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-01T16:09:59+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "PS3111: проверка после холодного старта по набору опорных секторов; правки аудита 01.11"
   }
  ],
  "revoked": [],
- "issued": "2026-11-01T15:59:16+05:00",
- "sig": "0872711e357c48000b8e1cf12f4ed9556c547183aa8aade86ed96581065f6efeff15a0dfd231afc5ed5f8c792be7ff208f458b3a3fd885fd481a4f01b9a5f5a83be6bf02ad2591d8517396050e43e0d4f6f28012b3efd2c934fec3325984a1d123b935305352d7cfef199af86e0448944961372fd81f4952a42f0eeabc97e9a55eda4fe9ff1d3de920d34a47ecd6b377c787372dd7fce3b4b76bd17c3bee769c2b81ef9a98925b3b4590a9ff7ba6fbf6ecede51330e5459d2d3465d632195926bafa0d5b0c7160087c207630bd0ac3fcce73747742780323900ff3f7c3184cfb47a07eb9bdfe05f95ef2340d24f4ece666c7fc55ee14d75e4eab71b20735c8ec2e3661449ec39ac110f141cc0391481a9305a39bc3fc1e71036c3ab135c0c19ea7d92cf1abdbd14fdc5f48224a6824c317e0115597c9cb42a3465b228f3ead9dd0993d702cf667ce065b0e31a3fdd2bd6454f7327a2da43c1bb189de63b028726dfaf8d854eea250cafecbc05824abdca17ef947d00b91c47009d48d55d6c4e9"
+ "issued": "2026-11-01T16:10:01+05:00",
+ "sig": "52700cd1ec3919946a0e6576e5704c1baa3b03fd667099efe34cc0412dbe5c9bbe532d58ebd10ca386f658e161499faa2bf82ab8768eb911397ebd68d3f2dc0d644ed612a6e9e8ded5e7822135ff401b7bbabdb4bb64a325dcd960fcbc34da3f42ca54d69595a7fb312e89bdf4d627b0e31b7793575c43294f9cc27cb0aad8f99d9f141d078334dc71a5151bbca221b2a257ca38527aa12debf192a841c4ec3de5e3bf66388219e7db486837dfc07cc0792ffdeefed9290407bada6a8bae1766b7b94ac9613091c83bad13be7683da28851b9abc80dddcc48111e96244266c613c03b3314bab7f5d6d96c47b411e8c4a45000eff0b4bf97c1a2a7a6d96fd3c0b08583ee884378b98830904a779c1947200022e8f2cbe1d3bade544ca676cf9ac7faafa41ead08bb036df13164424e97b36491ccdd6e314ed9a3923cedf2a1e9e431b4226d4260729089c4ae800f8b41bf6f1b668e468eeff88a3b0e9ff56b6a78bcb5bf5d6aba9c8090f7da73096447ee6082db19acfae193604eeb1719e22b9"
 }
