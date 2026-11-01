@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 97,
+ "serial": 98,
  "modules": [
   {
    "family": "smi_nvme",
@@ -2712,9 +2712,52 @@
    "issued": "2026-11-01T11:56:09+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "PS3111 SBFM71 защита 0x01: кнопка снимает флаг при загруженном трансляторе (01.11)"
+  },
+  {
+   "family": "yeestor",
+   "version": 19,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-19.ssdmod",
+   "size": 1938185,
+   "sha256": "b7f2468141340ccf1ee1474d7ffa3eadb15c2f0fcceaf99893d7a7a29a874c02",
+   "modules": [
+    "controllers.yeestor._shared.boot_area",
+    "controllers.yeestor._shared.boot_search",
+    "controllers.yeestor._shared.cache_index",
+    "controllers.yeestor._shared.client_log",
+    "controllers.yeestor._shared.container_gen",
+    "controllers.yeestor._shared.dialect",
+    "controllers.yeestor._shared.family_select",
+    "controllers.yeestor._shared.freshness",
+    "controllers.yeestor._shared.generation_branch",
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.index_checkpoint",
+    "controllers.yeestor._shared.leaf_history",
+    "controllers.yeestor._shared.leaf_store",
+    "controllers.yeestor._shared.open_streams",
+    "controllers.yeestor._shared.passport_search",
+    "controllers.yeestor._shared.por_journal",
+    "controllers.yeestor._shared.service_bringup",
+    "controllers.yeestor._shared.slc_stream",
+    "controllers.yeestor._shared.table_address",
+    "controllers.yeestor._shared.table_cache",
+    "controllers.yeestor._shared.tail_scan",
+    "controllers.yeestor._shared.translator",
+    "controllers.yeestor._shared.translator_ecc_reader",
+    "controllers.yeestor._shared.wire",
+    "controllers.yeestor._shared.ys_state"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-01T15:21:03+05:00",
+   "python_tag": "cp313-win_amd64",
+   "note": "Аудит 01.11: CE указателя — номер микросхемы диска (CE0+CE2); расписание поиска загрузки из services.json; неизвестный LDPC — отказ",
+   "case": "AUDIT-2026-11-01"
   }
  ],
  "revoked": [],
- "issued": "2026-11-01T11:56:11+05:00",
- "sig": "5ae26f9592cb0f825a0bcac208295fa2a9d2e50503c1c49983e8c567170bce01a84f1fb9902555ae3c1d6b17912345e666d62bea0092e83783e2548b8933019edbba0a2f00198e2306d8e2482269a98ffdb60c199b14e79017310aab3107d2608619a3c5bd6f4fa32fe317ae9df43fcdc7ee31cadfed4a91e30b2e3b2025c7950e47be375d314c71b1fc7d0c0956a178fc038cf2341f8bf47595880df910bd33445f8e80adb152e092997507f4daa942b5640500fae69900bd739185cd74264119b0601f598b9520f361f27b8b01bc151c9e545fa3b06e32edc69dbfb83fdcbc053f3005ced69d852ed5133b08788a516987cc3011f68df38b3686ceb0b72f88eaf99ecc89206a9b0476339f9c7db0520a50b20899a12e8137b8b3a4efbb9a884b780de087cf881608603c695a60cabe446701d15d29dc2384c213b2b1fb6e215b45a6eebeb746fce8b0fb2dc8a57956b7bbd42944bec28ad728ecf74f474718b1bffe021e5f2483ed8fc163e87089907381a1e82df0913d9bd325f6ee30f90f"
+ "issued": "2026-11-01T15:21:05+05:00",
+ "sig": "3cbcf778c0ee4a5d5de7671e3248c9415d4461502fa828eadf5446256e4f462704bdff56d6492cd86f746a827106b36f362501fcc226d7101b4f1cf4be8a275a9cd244f6186a8e74827e703dd65f1c7dd411c1401342d0c1d229860771993450adfb0e5a3cf4d3bc14504ff60e954e1b1c8dc380dd620bbf86c236eb47a159d4215ec3a952dfdd57fe2fa7eaed0f0d931bc6f98a83941627d25bfa3dcf819a6e3a871f8c3f53a8368dc2ad7201fe1a06e9657f40077a988b68b43dc2f0fc32290765a7d93b3131a3834ad048d21f912582ae4b09d88eaf3127bccf494c54ab5612dd9a9f7d538bd3c04f71a3a6ef36be7354740e470a1ebbffafd1f065232d37bd4cee960d8a33c9cdc7f1aa35b53f3791755a9e087228026c88d96a7892f7b729bcd5a95fb4cb5c37ba117ab12fdecac4568e77557c4d0605bec82cfd99fb68c7e4f481bd8608dd6751fdc8462f7db0b8f9c8fee0cb0b2fdcf1d8c83bcf34e1ffbeefdc2e82a72ad71ba9be95ba9bb018fd5bacb12c6d47e76ca01664ef2b80"
 }
