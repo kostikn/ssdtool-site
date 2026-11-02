@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 109,
+ "serial": 110,
  "modules": [
   {
    "family": "smi_nvme",
@@ -3144,9 +3144,32 @@
    "issued": "2026-11-02T14:33:18+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "Yeestor: read-retry проверяет сырую команду NAND общей защитой справочника команд (на EXE 186 — как раньше)"
+  },
+  {
+   "family": "smi_sata",
+   "version": 7,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-7.ssdmod",
+   "size": 690810,
+   "sha256": "dd4de62738a42c553da12f79bf5e710ec60822277c6bbe00249956bae370d0b2",
+   "modules": [
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-02T15:10:44+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "SM2258XT + Samsung с неизвестным режимом CE: первым загрузчик CERCE3 (2fe0d423), без правок SM2259AB"
   }
  ],
  "revoked": [],
- "issued": "2026-11-02T14:33:23+05:00",
- "sig": "0da19f755c18bb49100d13e22d4604f3c4a582ce80286a125cb58cbbdbff81fa006f3dcc133b43d039c1a1bf83639c9e247a0932a907bcd6df5ce254a634a1e352630add6b4f2100604dba38832fc425342e4b64f775af7f1e8480fdc21636bd6a03fcc05d48aa57a1660374d6274a473bbaa526d2f9fc62f4ac68b646d42b9348c4b80c20267b1b8efe531d96fc9503f340ae18df2b362d74405a1e7301c2da4bfc29363821f1755886eff5ff308d65f7b25d57c80544d57b556afd99590018c30da56fcce9664feb3e04bd2233754f81e3ca3dc28aae5d1b7caa11d442919336f04084c1735f892d6b70e43649286a5c2cbfa23cb9bed2ce55b790cd1ab40287b7c098ec4094b2ad9feb3b5bfe27269e12dfd0691189c786e026a64e09779b355b10eccd66f73613e6b08a7ef809f687b59f7fa500608792ee97b29e822c9c00e7e9b00e5fd35a105606ebec3ba5f67118188145a07da93a7761b995f5f7e8dfac3dc412af28287b1299c65707654b8ddd38e8c220346e7dd46122f25d5614"
+ "issued": "2026-11-02T15:10:51+05:00",
+ "sig": "2249f2ede89f892bd3a06335070308e15c9a45149f616ff4f06b9bbf1a83f75e99c7bc085888ef96c818edd431769a07bda73947bec2ac7b6a5f478e67944047c56af702fdc8eb33c45390fb50b1950eae11e1bcd4da7a68316d61d0f735a7559d1bc732609d3dddc3823d0764acdba8a17079f750fb77f10a24825129eb0fb0f099a485e0aa6cdb95ce8109b4955d8b6df027faef97daf3d9b77a14aecf46769ad9293c4020467f2e1cbfb9aac6e1876483973186adadf6fd6b96daa6a0240cb21683cd7176150851ace9f0f781c49a61c052a3820688d18dba19f40afd27cb4c998580690e509efcf1314a2396852053f820591f06a34f11b2583b24ef7167467cca8ef4113752eca4919309cc58bbd2c738e546acd7a5e155dd13b9fc3facaec989a4612a68538dbf53596b0ad861831fd21ed99baa360bdf44bc93f09937b81a60b29cf31b5e2ce8a5c510b359a0936f35615b01ece5727f042093b86a45ddb19f4833975e930854951c9ad25c71ef257a7742b5b0c78cf0cd92760142b7"
 }
