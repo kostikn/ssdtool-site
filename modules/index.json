@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 112,
+ "serial": 113,
  "modules": [
   {
    "family": "smi_nvme",
@@ -3224,9 +3224,35 @@
    "issued": "2026-11-02T17:00:11+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "MAS1102: Запустить диск через ОЗУ из файла (mas1102_ram_start_file, только по лицензии: владелец, Юра, Димитр)"
+  },
+  {
+   "family": "smi_sata",
+   "version": 9,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-9.ssdmod",
+   "size": 979597,
+   "sha256": "a9a11535374281a60c944db00daceeda9383cbf859f48edadfb4330c50e4eec0",
+   "modules": [
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-02T18:50:49+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "SM2258XT: перезагрузка загрузчика по признаку сбоя и раз в 32 повтора (срыв после многих проходов); продолжение после зависания с EXE 189"
   }
  ],
  "revoked": [],
- "issued": "2026-11-02T17:00:33+05:00",
- "sig": "4154c427a2a2dce2f84caae8e9170eac59528f2d9e5aaf36720b5b88fe4307115234658b9f44a77e6b0c1ec9acace645142e29f1a43361ce8e89c34b34cda6aa30c8c9a62e2c8d5baa1375cf3f152530fd9bd83ce3d979516311e5303515daa0f9ee38eb41014ea52a3eacd9cc75f69e056b12e1fb1ed7546a99c5f41a3646b83f28c1bb021bab8c91a2616f8e7d70acec8026a0ed74024ac9b39da748361c1d99796979d22dc9edbb4897afb4eb23267b1852954c7ad0a592e3408c045500d40aec093f181348980ca59d64677a53372d4469b6f518243081e1805335f249e54f2a6e39bdeb95a06dac9b678369313dc73d18d61010680fc18f680507a6e59d5c0e7a6750899542a1ac4f98c0a9ca4d02b13f80c823333c7c654fde8e970cededda9b7a821a34d1891be9cdc4354c51771b7d9c80c48eaab19712ea4f2ef8b49c7d4cfcaafe2d6c4a8fdf86ba00cf2a0040048c6f81e28a57dc9a0ad3e67ce18619a73aa62a2fc2c97ea4060fe1aa58e9ffa619729fd99f690c0a660e0e4e3b"
+ "issued": "2026-11-02T18:51:06+05:00",
+ "sig": "1dd2ddf6d747414d96486c4c581973d2c4fc2bce7a6ea8d14001214ed32210cebad63600f0f200817740b593624a69a140a92fa374d9c19ff595964c3add333a05fa4fef88e660ac13c4332477c0162cfc5cc6ed0f3a8b7b8cd6e82ece51954b3fe347d95ea7fe06954ecc81c178ffb6b37438d17724d7ab58939977aa4e6c618644d2a9861d6dc27aa600c458d393d13a951e8b3a9c8815a84c4d2af6e63a918727aa3c59038dcbc7b14dc7c67d25f6c281a588c2ab6d36901b5ab7ae97fdb6fb309143a35960d0fd82fa29b94cf47d53e3d2f8bf44da2ed011d43c206021aa1b3dbdc0d0949b760cd8b8fabc217f1d30a32396a393875d4f0ab00c9b56a6fac2d0769d906b69e24f51cfb7b850c14526cdd80e60bec85bff1563b0b8d570c2fb593cd5c2c11e802512d52ab58b8a546617e8ecf8d380fcfb5a7d08a710bacd2a3f6ec23c842505648f36d69d90d0bb91035c3d3ecac0a2e0222a4275f68fedb879445f9adc8a7c2c94a52f9b51ab5159e54efd521dcf3de0e50b5a1fba40a9"
 }
