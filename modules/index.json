@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 108,
+ "serial": 109,
  "modules": [
   {
    "family": "smi_nvme",
@@ -3101,9 +3101,52 @@
    "issued": "2026-11-02T11:21:05+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "SM2263XT: продолжение образа после зависания и переподключения (диск после штатного запуска узнаётся, места отказа пропускаются)"
+  },
+  {
+   "family": "yeestor",
+   "version": 21,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-21.ssdmod",
+   "size": 2007331,
+   "sha256": "432f2696775e16a11faa4c558ed82398c22df17be57027530331ddce19d74138",
+   "modules": [
+    "controllers.yeestor._shared.boot_area",
+    "controllers.yeestor._shared.boot_search",
+    "controllers.yeestor._shared.cache_index",
+    "controllers.yeestor._shared.client_log",
+    "controllers.yeestor._shared.container_gen",
+    "controllers.yeestor._shared.dialect",
+    "controllers.yeestor._shared.family_select",
+    "controllers.yeestor._shared.freshness",
+    "controllers.yeestor._shared.generation_branch",
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.index_checkpoint",
+    "controllers.yeestor._shared.leaf_history",
+    "controllers.yeestor._shared.leaf_store",
+    "controllers.yeestor._shared.open_streams",
+    "controllers.yeestor._shared.passport_search",
+    "controllers.yeestor._shared.por_journal",
+    "controllers.yeestor._shared.read_retry",
+    "controllers.yeestor._shared.service_bringup",
+    "controllers.yeestor._shared.slc_stream",
+    "controllers.yeestor._shared.table_address",
+    "controllers.yeestor._shared.table_cache",
+    "controllers.yeestor._shared.tail_scan",
+    "controllers.yeestor._shared.translator",
+    "controllers.yeestor._shared.translator_ecc_reader",
+    "controllers.yeestor._shared.wire",
+    "controllers.yeestor._shared.ys_state"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-02T14:33:18+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "Yeestor: read-retry проверяет сырую команду NAND общей защитой справочника команд (на EXE 186 — как раньше)"
   }
  ],
  "revoked": [],
- "issued": "2026-11-02T11:21:21+05:00",
- "sig": "3bb32717fdb622344f1a89142d4fd65f721e413c35eded6ea488f9f34bda784a06dc5dcb3e5581d2755b17ddb4cb14fcaa7733001b80b4f6f8fee8ac68199d3373afdbcff8644adfdf11e8ac78d4c8f2938d1194130583458d0e71440b47dd17642d7390db18fbfe438e2779950d44c34f878500028479f5baddef5593afa9e1e6e90d80877c0096ef8769837628b66512f8e23b211ac6ca32161ff4eae1a5e5b23ce75b67a1a0f9ad19a63b94ff3b1a1b20d87ae9819f9797eeb362e0544651f458c2201600ea27192f47bed6191b11983a8c654f5e1f15323579a23242442558b2362abcace5dd9d9cb6b5dcf6dfee7d5662918c5182e7ef30b4db146bce0e61315f19345f445bc8dc107a34422f9763c7d69e817c38e719cc13f28e62534bdf5b3b0bedd8983e6ecdcb1e0930780212156b419b3dbc19b50683063a626963d355b57d9a7975a94ec4519981fd9337c4e59f78db9a2de21a8e800d5b3cb59c51f24f953e8ebf8f23ecd766aa53406847510036dbb64dab36edb49312ecbf70"
+ "issued": "2026-11-02T14:33:23+05:00",
+ "sig": "0da19f755c18bb49100d13e22d4604f3c4a582ce80286a125cb58cbbdbff81fa006f3dcc133b43d039c1a1bf83639c9e247a0932a907bcd6df5ce254a634a1e352630add6b4f2100604dba38832fc425342e4b64f775af7f1e8480fdc21636bd6a03fcc05d48aa57a1660374d6274a473bbaa526d2f9fc62f4ac68b646d42b9348c4b80c20267b1b8efe531d96fc9503f340ae18df2b362d74405a1e7301c2da4bfc29363821f1755886eff5ff308d65f7b25d57c80544d57b556afd99590018c30da56fcce9664feb3e04bd2233754f81e3ca3dc28aae5d1b7caa11d442919336f04084c1735f892d6b70e43649286a5c2cbfa23cb9bed2ce55b790cd1ab40287b7c098ec4094b2ad9feb3b5bfe27269e12dfd0691189c786e026a64e09779b355b10eccd66f73613e6b08a7ef809f687b59f7fa500608792ee97b29e822c9c00e7e9b00e5fd35a105606ebec3ba5f67118188145a07da93a7761b995f5f7e8dfac3dc412af28287b1299c65707654b8ddd38e8c220346e7dd46122f25d5614"
 }
