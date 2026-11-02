@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 110,
+ "serial": 111,
  "modules": [
   {
    "family": "smi_nvme",
@@ -3167,9 +3167,33 @@
    "issued": "2026-11-02T15:10:44+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "SM2258XT + Samsung с неизвестным режимом CE: первым загрузчик CERCE3 (2fe0d423), без правок SM2259AB"
+  },
+  {
+   "family": "smi_sata",
+   "version": 8,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-8.ssdmod",
+   "size": 812295,
+   "sha256": "35ca922b91389cbb4c7b2eefb2a8f40c23bdae4b04ea2f3d3facae05fcf5abfa",
+   "modules": [
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-02T16:00:40+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "SMI SATA: Авто без ROMDEBUG — не больше 2 сборок, затем загрузчик MPISP; без правок SM2259AB"
   }
  ],
  "revoked": [],
- "issued": "2026-11-02T15:10:51+05:00",
- "sig": "2249f2ede89f892bd3a06335070308e15c9a45149f616ff4f06b9bbf1a83f75e99c7bc085888ef96c818edd431769a07bda73947bec2ac7b6a5f478e67944047c56af702fdc8eb33c45390fb50b1950eae11e1bcd4da7a68316d61d0f735a7559d1bc732609d3dddc3823d0764acdba8a17079f750fb77f10a24825129eb0fb0f099a485e0aa6cdb95ce8109b4955d8b6df027faef97daf3d9b77a14aecf46769ad9293c4020467f2e1cbfb9aac6e1876483973186adadf6fd6b96daa6a0240cb21683cd7176150851ace9f0f781c49a61c052a3820688d18dba19f40afd27cb4c998580690e509efcf1314a2396852053f820591f06a34f11b2583b24ef7167467cca8ef4113752eca4919309cc58bbd2c738e546acd7a5e155dd13b9fc3facaec989a4612a68538dbf53596b0ad861831fd21ed99baa360bdf44bc93f09937b81a60b29cf31b5e2ce8a5c510b359a0936f35615b01ece5727f042093b86a45ddb19f4833975e930854951c9ad25c71ef257a7742b5b0c78cf0cd92760142b7"
+ "issued": "2026-11-02T16:00:42+05:00",
+ "sig": "7522c50bdc56f9f681389500ba0532e691a71c7483d5f4b5f15d590f7a42afb9307e28833c22c901bb4aed9d88e0c291a287825b982eee09011e32261cc6ca03f2c31dfbd179f2bc99ce4c1d495c8cabb5f34db0008c753a5d388d77a97ea4f321ec2d5d751b686d4e6f11e968417e08079de6ff10258d5d55cbde04a9df6cd14eb81b910a543240fb08a57a414b625265fcb1a8bbb87d2c3c44a8b4a639d7a2b11badfb9444baba10f5eb01983bd3fe7110db46e0baa76a0f347543751fd64e249a526f8da8a73f96e6cf564f4a91db9c212967347ab263fb5f2604b50d9f2bca7586412e0355b8b79f2e80a3d84a732490bf0d66df673805d4af93eaddbd6a6c5bdedf97ce712543a23105d3f6b21237815d10453f30dbe50a7cccd9f30f04a070eaccba8367453f97dbbc159dd4eab12475584b8516aad9a4e35ea26a09ff04a07ea2afcca918108a2f5b2daada0210e50f121d87007e0214199cf05faa4a61208f77c5baaeaf345609d7688fe0914d069ffef187bcd3f872164261ac9c76"
 }
