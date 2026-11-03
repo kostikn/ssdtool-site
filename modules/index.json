@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 126,
+ "serial": 127,
  "modules": [
   {
    "family": "smi_nvme",
@@ -3713,7 +3713,56 @@
    "case": "после EXE 191: листья семьи как в EXE (service.py — название контроллера в журнал)"
   }
  ],
- "revoked": [],
- "issued": "2026-11-03T19:38:14+05:00",
- "sig": "44560f4584166ae7d63d0329731b4906f577019145116bc402c31a636a4c172cb897a4cc46f89bc94f61cc932b2d4a1e1bef906413a663bd589f45d5ff898b224c4aa70f4dd0d49fcfac9eda186ea50ad47bebb19c3b2dd9ccc43acaa0bb653d60cbcda138051a62150de12c15f68f99ffa88bceee5500bbcbbb496429833d14595c538c0f84e9ab733ba05938d5ad03d4b3ffc7290e3b40e0f3f79d8a058a6db618a70cd549384e7f377065234ebf2af88c9d35d8d1d1d60e0946fbad224bba9ea84bc0c0218e556547965da61b53356a5853a6a4bb53f2c708e4e6b68727ee03ace08357d0e96f7dd2cef26a4cadb049348c145218d2a1df4535d973da579c1cd70204e78767459e31f95a89e4f38e88580ad10103ad691c83866c9d0575ee0fde85a586ee7319f71edd443e25ed5a8c285e08e068694bbe831924bf3eee54e1839236dd4b4772b632f5dda778c118d516d4242bbd990de54425084f00694183fb32855bbf67c0c02f7a6b822a579ac6b81c5ee699a6342ea2ecad5a93e769"
+ "revoked": [
+  {
+   "family": "phison",
+   "version": 1
+  },
+  {
+   "family": "phison",
+   "version": 2
+  },
+  {
+   "family": "phison",
+   "version": 3
+  },
+  {
+   "family": "phison",
+   "version": 4
+  },
+  {
+   "family": "phison",
+   "version": 5
+  },
+  {
+   "family": "phison",
+   "version": 6
+  },
+  {
+   "family": "phison",
+   "version": 7
+  },
+  {
+   "family": "phison",
+   "version": 8
+  },
+  {
+   "family": "phison",
+   "version": 9
+  },
+  {
+   "family": "phison",
+   "version": 10
+  },
+  {
+   "family": "phison",
+   "version": 11
+  },
+  {
+   "family": "phison",
+   "version": 12
+  }
+ ],
+ "issued": "2026-11-03T19:54:30+05:00",
+ "sig": "880a0e5c7bfc198bc4395c2edaea26285dfd0125d392268fc3272fb3904eb557c13284eedf736d5030a572f7b63c7bb37ead6fd6eb03addc1ebf48052b48c6cc60e824eb1cbd469b927cbbc79593d946a1be425a9a34e16b7ab4c84ea15410454f97d96bf5ee99f4251f6a447f4c914c16ba8fcd7be635475646b21106a72370670884b10d6b91c86459725e6790bb9d4a675460ace5b0abb7392d62891a93658848579b4f6888ca1d314654a69ff6a59676c975a358c95bab6263c721c5ef70f5b4de26645224ee5117f88bc54acdc706819adadd68fe507b5fd77ba7fdf5eba164e5ef3c789132eaf148318ce485a93870ed599664889bcfce4a0aeac9b221a51ec8ca3b0347806beeac04605e148dca214cacd794e204b23efb2566197ddcfd763a66b0c5a676e1e97c9dd7f5e4d446a1b63ce4e6ae31248bfa892c755500c79f72135a1e22969cdb318bee5d6295bcaded97393c483e26b6360abf7724a2ff71e29b9eef876ef3509755c6570e8e2cb36e655d9f1a077c2664eb3020e9be"
 }
