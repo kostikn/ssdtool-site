@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 122,
+ "serial": 123,
  "modules": [
   {
    "family": "smi_nvme",
@@ -3587,9 +3587,41 @@
    "issued": "2026-11-03T12:37:01+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "SM2263XT: «Подготовка к созданию образа» для выданной полной лицензии на диск (features «full», не только «*») — L-26 03.11"
+  },
+  {
+   "family": "phison",
+   "version": 12,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-12.ssdmod",
+   "size": 1389034,
+   "sha256": "6c40f3ee798e3f102c99cb3eba7c358deed7b96efc68a339b698340ad6876460",
+   "modules": [
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.revive",
+    "controllers.phison.ps3111.sa_diagnosis"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-03T14:52:17+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "PS3111: подготовка из ROM — подбор прошивки из облака (своя из SA, затем M/1…), флаг-патч ДО старта, успех = транслятор + настоящий сектор 0; память победителя по Flash ID (TL100 03.11)"
   }
  ],
  "revoked": [],
- "issued": "2026-11-03T12:37:09+05:00",
- "sig": "1c023547f6acd71d620a53db0af804f4c89da0c6a053eaf40e1935f050cb98d5748b2cb5b677b464e8714897a02a5e433c6e14ecb969a505f751da62f37ea6c19527c30a8d32e3681e2473d7cf11e66d0f7deadfe055e9d7bf34af1cba8de243f848b8385031cb2263f0fc2b504055d566a808e527cdfc207ff01be60f04a408d8c34454855e7a771e4db863c57d5f757f783d16bea6b96c21859fa4fbdf7ac3e2438f0a8ba96ded44125d55f2e69bd2efa24c300b215e19b7b2b1797741314cceedbe1184ac04bea8e4bdafa2631cc654ad19353a08768179983fa36d162453252c31569cd34d6b4648c46b2ea6df9f1e8e6bb1fa387c1e5761b303641f9a9ef50cefd05b895e835a4c526afccf91762dbe79b075f1cd809312abba6370e2ce0838ba7360ade29ebbd2d04614ea3582f3130399659a08e829da0166be3930b8bc380325a2cf70e30877f38a6c914eb4296715dc4d5d74e3b5142384e2a6c3257d0fe1617cdcad545e3d1ebbba0add8a03a713285740cc46f994839c4cf446a4"
+ "issued": "2026-11-03T14:52:33+05:00",
+ "sig": "203d87929fda7c8042cf24ecef63042e0f1917fbd1e7c9b98c7c4c8d35dfacce5e8cd025b5886057e2e4658a45bb87584711a1ad1acc30bb58f883a1317170489c4f295b75a4ccf7b2aa6ac1452d737d0d5a10a85dd81a0c8d8cbfe9ad7dba96099b6db7a9aae9494caee8f9c7e1157a023a0e7795976adb6751065b160bd5988d63dd6cf79e8aad030536a61dd16446b31f8f8cdd1b3100391df4f01a04ee92385d825caea266efd7db8d4b3d0bcd77973609169d878e1bd90599f9db8e535fc35c4639528f7d57dd9876a6e02ac9e5085c9f112ed91bc6f42a90c7d4841f3fe1e62005bc78880487468a7bcfe3d90913138b4439d05577e878e6d4de40bbfb72f1c24baabd533117a6f86746ec20b1e89116eba869bdd409edb09f4cd7389a333e88faf0893d7f0027777841a6d95bbde8ffe6cd6849682950eec6b65d64bb8000e2fc7234ff44e3581ae089ba151224594a06327ad4db9f3db8bbde46aeeebc5b7235a58318886100126feeb8648d8781f9c5e6a82d94e370b9ceac56c7e7"
 }
