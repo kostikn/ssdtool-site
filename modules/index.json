@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 124,
+ "serial": 125,
  "modules": [
   {
    "family": "smi_nvme",
@@ -3646,9 +3646,36 @@
    "issued": "2026-11-03T15:03:37+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "SM2258AB-00-… (ROM, поднявшийся сам) — ROM, не загрузчик: is_mpisp_model / is_rom_model (03.11, диск с USB-питанием на 040000)"
+  },
+  {
+   "family": "smi_sata",
+   "version": 11,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-11.ssdmod",
+   "size": 1029927,
+   "sha256": "79cb6caca8ad3f40125a5ac88eda0cc2dc8927cc39d9d871b40fadab40d18121",
+   "modules": [
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-03T16:33:51+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "SM2258 донорский 8002: байт +0x30 = 2+2·log2(кристаллов на канал) из PARA диска — вход DBG прошёл (TYPEC PSSD, 03.11)"
   }
  ],
  "revoked": [],
- "issued": "2026-11-03T15:03:56+05:00",
- "sig": "9be9553217879fc526ed18003cfc70ae35dfaeef5c350102957f0b68dd8e02f4f0953ed160a0a7904a2ca0794b2c1058b206e030c8a1701c3634c3102a830316e6f25ae30ad1a62890c1f80598de389091a81286436f979cf24583df7f60cd02efab9c90036685a206d90352a372fb424236353d6a00549e7f30ae47f1dff47760978fedf2ed67b5c435023984b0159eee14c6b89d8e4124591bd257da6f52962524617edcfdc99a3376ac47d3f736aaca8ce27796740660ba55294e37c1079d0a2e116a252e330c4e5eb8d66708158c6eaedb34d4ff23ed639ad6ba455c9046e86f0fe098fe72c9e6fe8a916a93db57d45f1170fd8ef484cdcec0ba66ceffde8e0b7362e5bfe68312e7f22c3aa32400e3a91fd11b3309dc82ea1838418a8b01d44a8c5cbf8455f4d46327f1f3a275a9f3ebbd24db8ef9a2927b4dd49a8c9a7a1df11b8296f9333fb9e3c2cec7397eee8bbc51316e42ec5429306b1528bfc25fa7be714e07a7ee19401b2dc31500b5aaadd6a8a427f53b2d56d45e98b870ed3e"
+ "issued": "2026-11-03T16:33:58+05:00",
+ "sig": "51d99036e5806dd8103138307d9ef266e987d886d47790322c7bfe74fec9efa530d5e399db32f70322c462355d449715d37a3ffdb3a28f047f0d0ac91eea5cfdee1f07d58dcfd64ddedfad2234a1ab9b8ef621de6bf99636bb6959ad68fab6117edac536b9d2e79497339dd971aa0958947a011401c03fcd920cd63ae1bb1ce024ef209be4f92d799098c07c2bc74b754c4ebde9b5986ffd797302569a4f832ee32de4b9b6ee46c7fd6bc7e75fbca90d47a1a2647f96358e823e14be127fb7446cbbdca7fa2f0c6382781ed7e30c73de5d404507cc12d896f4be7bca2c2ee7aeaa4aa343acf38c37b75686fb0ad705e30190935adb16a36f958968132fdc8076e8a1bcf2b2809b71381f6b1d9016c4468a3349884f40a8b076045eed5be290105a3c63705f76ce3ad522bcc632e89fcb5b0282f1f1c2740d5d375e2ffce8a5cd0a0f0c9859c4521416f49b37d39263b0b8f70553bafc36bf8b84022d11093c905a618551710e0b500667a6314ae87b9863bdccf0caaa812647570d23980b44ce"
 }
