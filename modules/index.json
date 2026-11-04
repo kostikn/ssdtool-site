@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 140,
+ "serial": 141,
  "modules": [
   {
    "family": "smi_nvme",
@@ -4138,6 +4138,40 @@
    "issued": "2026-11-04T16:19:33+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "MAS1102: кнопки по списку владельца (BUSY и проверки запуска скрыты, «Подготовка к созданию образа из NAND»); нет устройства на порту — переподключение своего порта перед чтением (I-2026-1104-11-6854)"
+  },
+  {
+   "family": "maxio",
+   "version": 36,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-36.ssdmod",
+   "size": 2412046,
+   "sha256": "483372198ef3f10d8d47d0d34920dd8356294093057aead2abdda6afd639a210",
+   "modules": [
+    "controllers.maxio.mas1102.catalogue",
+    "controllers.maxio.mas1102.codeblock_build",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.locate",
+    "controllers.maxio.mas1102.passport_nand",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.retry",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-04T17:04:47+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "MAS1102: веха «готов» в терминале — свой порт сразу, порт не показался — честная строка без повторной укладки; порт отмечается запущенным для ядра (note_started/forget_started по наличию); журнал программы в посылке о запуске (I-2026-1104-12/13-6854)"
   }
  ],
  "revoked": [
@@ -4190,6 +4224,6 @@
    "version": 12
   }
  ],
- "issued": "2026-11-04T16:19:35+05:00",
- "sig": "380d11c2cca4926154db6c3abae2f1050cd36977dfc988e9075fcd552718f2e6cd4af5cdbf410df69d8820726276a2617a6d954fabd0e2e029607ffd48ded00d761d1b60fdd33638622738b3e15f46f1de2e653023be23377bba4724f906710a4b7ccff2c6a75e83be0c1b62d84612cfc29b53a621989e7ca74c08f0d642dc898a49cf329dabf9238780d9c2d9837450ea9fdc72e2fd3b451015c0adc3a7c7db82423add9b4a20641d03803cc49aaf38898b49cad35c854102144d2c00813e3bb56a8fae8b218dcad48aa8d0c65d997e06c63fb3e2f95cf306530623bcfd069cb6a42ee5a0d43bea77ff02f7cd06ae23986122dbe42a82c284d674b0d52e4cfdd813bc29074ceba0c6bf60a25f8971cc27dcc98e11106a74c9f806a7637dfd97394d607cb7ae907aebfdb343b846d49ea4fd542b656273c79e013edf95f314ed46e61f319800c55739ac19a08b1f25dfc5926fbcdf313fcf02ad1f05d7abaefdbf86b6168c876080cfdcc81107441e358d08d3dcafd26194e9f911b59042f24e"
+ "issued": "2026-11-04T17:05:00+05:00",
+ "sig": "79c99fb0c29b1b6c978e7ba5c4a13503499b7188123fab88be25629f42039c74d6209782b4b4453a489e29f7a552c47959ab3aee3e0fcb6d842218fd0415329e44314e7a96d8eb264d409b1ab1dd85f8a0845228af86307a74dbae021e72aca50770e29a0f8ab9f813c5696f00abcdadac4d55354c81d4f7a50c30924630b1896ee473fc5fb87d4f8c13708e146337a9a69e35563bbc39dbb1b41997a4caf8a20b5b0f00a8ec1e14085ea36b7e44cbbe6dcfcf56fa82a3fdb16f14c2cc69bb754b5b6a3da7efa18ead07d569fb5f325903a9b5f5cae794015f14670949ff7ccd960c724afc6182d1791bf5a53eb1912f47724801358cfc23b334c9b1de5ea3e7d87f006fabc6330c6f0f1feb86d622b4927ba863f63b313daad5ca828f948d57f21d5283806f5fc5e602d927c16da92572732fcd747d147fc7ab96cad17117818aeb0f45a614c5d44afb551f266f95abe63ee854d4d619c387ce180b84d4bc621e0d4463dc6546af80256258530cca34c18aa0c6ea7416074dcb21906dc74d76"
 }
