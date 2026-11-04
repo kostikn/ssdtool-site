@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 131,
+ "serial": 132,
  "modules": [
   {
    "family": "smi_nvme",
@@ -3837,6 +3837,39 @@
    "issued": "2026-11-04T12:14:07+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "SM225x: порядок страниц TLC подбирается по диску, когда проверка транслятора не прошла (SM2259XT2 SSV6, 3 стр. линии за шаг); переподключение только своего порта, вопрос о соседях (04.11)"
+  },
+  {
+   "family": "maxio",
+   "version": 28,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-28.ssdmod",
+   "size": 2171504,
+   "sha256": "85e2055d9f039702cffc20c99b71ce13d49f94f5f71442a9ef6bc7f8f6cbfb44",
+   "modules": [
+    "controllers.maxio.mas1102.codeblock_build",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.locate",
+    "controllers.maxio.mas1102.passport_nand",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.retry",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-04T12:27:52+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "MAS1102: read-retry Micron N48R больше не считается мёртвым (вывод по диску 8 опровергнут 04.11); переподключение только своего порта и вопрос о соседях"
   }
  ],
  "revoked": [
@@ -3889,6 +3922,6 @@
    "version": 12
   }
  ],
- "issued": "2026-11-04T12:14:20+05:00",
- "sig": "12b340e1442e9ee8b44bf8268682948efa35d7ea036c9ce7f494eb49367d50a80ea1ea11c6d202a76d840d12bb7ef92b4425a67935ef178e4032a680cbedd5b32055abf322c77e2e0f260169af1216ef5b9f637f6512e84a994008e46796c67ba764fb77052eff54f4eb207e869c409b5fd993f48774006d72f2b9c230ab9c3f006866a10aa5526395504ef594e22d09c1a703c923f7bc6e36fa1a75190e44ac6c84aa922396618fd1c1c2fac51152b1f81f1789ff045549e2d0590a46dbe239977147aeb2fd2c69c397782d842dd302887d28c33df1300e9f8783675531d4b007ca908f2c2f2903fb2ec47c803ccbe724f0e7763170ddc9c294b38f3d30ce5d6336ecbb0be121b592538c5f848ad4e163740099e702ba8e84c578200593fd1cbc89ae8aee3f2dbdb08d6d9fd74ddd1f321802cb44eb1b42b018d90109f8b681d2884d9a6f6e9727b7f0b893ce92a77817d680807246cf252350cecd9b26f56c5b5b509778b97b0e5416c5beb35009c453335f3224eb8d1a975d7d2d14986834"
+ "issued": "2026-11-04T12:28:05+05:00",
+ "sig": "221e533c8679e822ef65629a8efe0f4c437f5fc4e2907d0bff02d62b11b66f09ad05b6b844b29a1c26f790e72e89b3950338b0c7cbb4b46d9b53c10466c89dd21c624f65015638096b922bb1b73ddd8e9da3395a29687653a133faaefda1596a8ddabeaa84524849030adb572b5528bc9dddd5e2c4b8ce39443a4f6010ba033c56c219ed7c6f8e87f6594083b5cf531b2b8e400f5c9aa28a6b7ad8760ce970f4687b77d114172861299e0340230a952c9ef109f1921c6a2c389abb3e087cf8acd984d8e4476b1589755f9e338c2467d4e552d1158c43e3052ae86a78bae867c19079a91d36b39752c36e3a6feab94af763d5660c4e8de7f2f1ab786f6235f15c8a626810874d9e1d283b532cc588b41f210cde84e077d100f21ed0dc9dc3bf70b918571a4d55ed33294ae89a5bd32cf6d378b6aaa79041e5ccec148b0705c7e904df3ebf220653c7f66569ade0b6f1bdba6e90c9669f3a873cc547c5585079bc68102b122ec4a6e5524994b28d3bac80f1cfa07b0d3748120ebf7b50b3651c9e"
 }
