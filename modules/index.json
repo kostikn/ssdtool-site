@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 138,
+ "serial": 139,
  "modules": [
   {
    "family": "smi_nvme",
@@ -4070,6 +4070,40 @@
    "issued": "2026-11-04T16:02:43+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "MAS1102 запуск через ОЗУ: после запуска список устройств обновляется сам (кнопка «Создание образа»), шаги окна «Запускаю диск в памяти» / «Жду запуска диска» (I-2026-1104-08-6854)"
+  },
+  {
+   "family": "maxio",
+   "version": 34,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-34.ssdmod",
+   "size": 2384425,
+   "sha256": "4b07e27eab0cd696cc6effd4fc4cfb0930cfb829e8364666009fe5c5dd014206",
+   "modules": [
+    "controllers.maxio.mas1102.catalogue",
+    "controllers.maxio.mas1102.codeblock_build",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.locate",
+    "controllers.maxio.mas1102.passport_nand",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.retry",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-04T16:08:54+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "MAS1102: запущенный из ОЗУ диск — источник «Создания образа» по своему порту (ATA по паспорту, когда Windows держит старое опознание); уже запущенный диск не сбрасывается (I-2026-1104-08-6854)"
   }
  ],
  "revoked": [
@@ -4122,6 +4156,6 @@
    "version": 12
   }
  ],
- "issued": "2026-11-04T16:02:52+05:00",
- "sig": "191503e38dccc1f6cb8c4e63f777d27ae07d7941907183c0b0b01215bc903a6150c8be58bae00e9a7a748c96c3dca85246f5425a56667c72aa9488563efa0d9471d8b82abb7f6f385ee78283ad69fba0f3ee19c9272fe0a77bc09cf7aa081dc39ca71d0d9404db7bcacf04dff8e213c6bf3d5252f5fa69b080e53fff9305679e3154f4345d89ed11449a3c5ecafdfb2803b5a545895827cfaff83175499d1477ea597e31ba2e2e47cfad79cd33a7d2a0c21a469afce73e9fdf3593d67527e8798d21a329f960f5321de04ea366d2b19b663a026fb5a093a50b11bb96eb48e3694509c49805dbabc5cc775cc07775466a8140c19b65939f19c9166a3eb00618d17423a0fb6359b484f007f61d320e36c5c5913d2ead780703028adf38ac1ad067b9557790e2f441f7734f3ac1a30f776dbbfeee1939f55722b079a7de6cd29e7a67239928a2876ee122415d5afed41286b47e1d747956aa1034b1b2963ef28983750d051a86a860ed6f64b56d1099b32ab4f8427f6a2218030cd9f4e494c245ac"
+ "issued": "2026-11-04T16:09:03+05:00",
+ "sig": "8e92a4197844cc8fc87237aa0b3323d2ffd33459dc9b22984533b29ab1c992df64c92eb817e30ed337db0b77ad1d0e5c67f3c4db3b1416f60b053fdae9b3cac5d5874c203990a3916851c838e6451a8e6607c6e3d6471cc03dd5c108ee15e3fabae9d8e41d39be0a036ccfdd00149bf6c87707b5560e373fe5358823860b443a43db39c81abb7aee298870a688acbcc2c269b69a6962c753c9ed3ba3c604188cf719d4f8b0944f9af53d03f57dcc4adc4cfccc2931a49f4ebf04d020b2d48ae4be396c5fefdfe37e64f0a9999e337f8f77e1c2a17542c3593a6e1f17b8c3740398466f4584697bb50675b0783520a6270e78d4f8b904c9cd49a756c2947553bd7093e5e3fbc724205c24ee7c8c402d7869a5ce94c583f3623bf857cd136b4f908bc3e31aaf7df9a772f8b7da86a4f8a2aa9bc34bd712660fa41708d21136b02c8d60c075c1409a157866c54828c5daa9a74a73178bb5ec4993ea4ea64c1b746c35013f13cc4c7b422f8e555baa576d1008c3dd0902435fe811e8b2319065612c"
 }
