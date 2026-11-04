@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 130,
+ "serial": 131,
  "modules": [
   {
    "family": "smi_nvme",
@@ -3808,6 +3808,35 @@
    "issued": "2026-11-03T21:54:08+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "SM225x: стёртый ISP — вход в DBG с донорским 8002 и готовый транслятор диска вместо постройки заново; оценка окна TLC по числу положений (TYPEC PSSD 03.11)"
+  },
+  {
+   "family": "smi_sata",
+   "version": 13,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-13.ssdmod",
+   "size": 1337379,
+   "sha256": "3b0f49c39a48450f533c59e92cf5e37272fdb08b1f52f8ded90357f2b18761bd",
+   "modules": [
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-04T12:14:07+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "SM225x: порядок страниц TLC подбирается по диску, когда проверка транслятора не прошла (SM2259XT2 SSV6, 3 стр. линии за шаг); переподключение только своего порта, вопрос о соседях (04.11)"
   }
  ],
  "revoked": [
@@ -3860,6 +3889,6 @@
    "version": 12
   }
  ],
- "issued": "2026-11-03T21:54:23+05:00",
- "sig": "0f18f520d81c007e0cab69458650f62c24d30eed15b3c9cd8115a982391217bf4e2d73f34ef528d524c55eeac5c923e69a8cc84b6d5a690eb636e7455154eba68548ad10a3c690402755d7029b43f8dc6b207babc418e24f855523efbcaeee3ebd512d78fd5ef8a0bf05a6508008342492bfa7658e6c3101ca04d06ee537a73ad9c19057ded9cb0de4785214416c03edc43da83ba4d5588557251637797e7b3daf09b0e77fb4ad232dd27803eae8312fc293988f9f0666af4e373b6e4b5a3079096cbce658bb83595163f54b472a41f1d040b2946b9a461977f83cd5e1a5b8199b3dac09358f5741d92243b30a9571ea64734bf9d1b2a44fc510729682037523f93eb55ba40c6f48067d322b5b9e3985d83cede0947e26affce5bcf01b52e08ebddd75760063047f17f524990801e7eaf2cb54e824c2b93a15309f6d8f93b8086870c30ee89d17b18d0ee60843b4833ccbe40942435a2e3c41400e2bb88b9d2f0463b6f07876f5eb4480a59f2835710cd1cc1f88499bcc27369a92198bd830d9"
+ "issued": "2026-11-04T12:14:20+05:00",
+ "sig": "12b340e1442e9ee8b44bf8268682948efa35d7ea036c9ce7f494eb49367d50a80ea1ea11c6d202a76d840d12bb7ef92b4425a67935ef178e4032a680cbedd5b32055abf322c77e2e0f260169af1216ef5b9f637f6512e84a994008e46796c67ba764fb77052eff54f4eb207e869c409b5fd993f48774006d72f2b9c230ab9c3f006866a10aa5526395504ef594e22d09c1a703c923f7bc6e36fa1a75190e44ac6c84aa922396618fd1c1c2fac51152b1f81f1789ff045549e2d0590a46dbe239977147aeb2fd2c69c397782d842dd302887d28c33df1300e9f8783675531d4b007ca908f2c2f2903fb2ec47c803ccbe724f0e7763170ddc9c294b38f3d30ce5d6336ecbb0be121b592538c5f848ad4e163740099e702ba8e84c578200593fd1cbc89ae8aee3f2dbdb08d6d9fd74ddd1f321802cb44eb1b42b018d90109f8b681d2884d9a6f6e9727b7f0b893ce92a77817d680807246cf252350cecd9b26f56c5b5b509778b97b0e5416c5beb35009c453335f3224eb8d1a975d7d2d14986834"
 }
