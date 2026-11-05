@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 142,
+ "serial": 143,
  "modules": [
   {
    "family": "smi_nvme",
@@ -4203,6 +4203,38 @@
    "issued": "2026-11-05T13:54:01+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "I-2026-1105-01-A200"
+  },
+  {
+   "family": "smi_sata",
+   "version": 16,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-16.ssdmod",
+   "size": 1669782,
+   "sha256": "5eeef733c152c6ccf3467f5f4bf48ae12dbce26ca6e4d39f32c125eb178b1fad",
+   "modules": [
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.dbg_reader",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.passport_sata",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_geometry",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-05T17:06:31+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "I-2026-1105-01-74F2"
   }
  ],
  "revoked": [
@@ -4255,6 +4287,6 @@
    "version": 12
   }
  ],
- "issued": "2026-11-05T13:54:11+05:00",
- "sig": "414d76ee65bd064503b359b5e7418bdc472cf720a0b71897f96557c0ec6b8fd352c3fd4a0fefcdeeaf1980482f5974d101ac62be8f4c63992ac2c27804692361ec578a27aa3bcf900aff2a8473e71cc50909029f5267d5f0159369d7ab23d23ad8a25db0fb15a9b577a3f363ddeee80bdc6248ff23ff170ed8e81f8b936924d4456d450793144547619e08e001925419f13bfb7dd00ce89cbeccc6e4e2dc95f2df4af6621b17a331f1f5d62d23b221fdf4057b1852fbc0ba02910ae628fcd7f65845a67f655a48a8fadf5fa3c4a41ffb304b52cb8b3850cb2e4bd11766ff5dd3968d57dc283a61ce553f8f312e7dcccdca0b7e04e29d8f9ee3e2297527734f5531c11aa4fe3d38371207ecb913a58e7b95105bd56fb3f495765771d2959b545bfdb589856463dd1ce5a49e5a4272555a4706c94f4f03ec4805f4e063f9c5e9020f77dd2e4869d608a066aaeb4949117201bbe98f1d11c02b9bc3b85ad799e4f4a21b0677f5cd36ab45dedbd9e0dbd3c8ddf56493984eb5f0c1415e6c780b20eb"
+ "issued": "2026-11-05T17:06:40+05:00",
+ "sig": "502f258b106acde9b47c6bd4539994ec56049d018e34da89838d680ba646f83d57039cfc326e38408a0552222d9cea6af6e6686be68cdf7718e28899b12755d9aca5bc72240bb64c7258dcfabe33e351e2ed4d14b3c40b492132333be0c66882ceda7297922f0019f678bcc797535ef3829d68124ebea74a09e4a1e6b4bbba48f2de8448e53c409d55deb305290701b81a303a904a1d648247dc53061c856cbee52e514c6b61ea3527110e42415a74fa22219e2722ab1ef6fee976488303bfadd59e48a40330562c6e7b97f2172e25f68dc121bb7af9ac97ef8acdf36ef0f65adae7ab67cda97fd28f84f402a27a432187e30fcdfabef48c1877fdc128257eaf5145927be51cc0b455e0417eb80781b66bcfe3856e899586c7e7ed985569fbaa93d23803d60b221ed9c95a612b9073dcb0448d8355fd8afbd8255351e1cb8528ee7fc2acb42c45f487f8dfd5a3aa1cd8d5730cacbfd18999d4a45b81899f49e8c0e86641d527f838e578f15b8c5c28f6d23542b74f459bb816a921e496d57589"
 }
