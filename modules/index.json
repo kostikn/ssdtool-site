@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 144,
+ "serial": 145,
  "modules": [
   {
    "family": "smi_nvme",
@@ -4269,6 +4269,41 @@
    "issued": "2026-11-05T19:43:11+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "MAS1102: готовность по вехам терминала [PBT]E/[crst]E/HoPl; перескан порта по вехам; ожидание без предела при живом терминале; повторное нажатие не уводит живую прошивку в ПЗУ (998F)"
+  },
+  {
+   "family": "maxio",
+   "version": 38,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-38.ssdmod",
+   "size": 2564381,
+   "sha256": "1e1f8ad28f7316f0c224e68261acfd70c12fdef82c854ec6c592c5ffd72e3789",
+   "modules": [
+    "controllers.maxio.mas1102.catalogue",
+    "controllers.maxio.mas1102.codeblock_build",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.locate",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.passport_nand",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.retry",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-06T01:50:39+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "MAS1102: P2L — транслятор достраивается метками страниц данных (только пробелы таблиц, новейшая копия по поколению, остальные — старые версии), эхо чётности RAID отсеивается, кэш SLC вне карты читается; кнопка «Достроить транслятор по меткам страниц» только по имени в лицензии (998F, диск 0: эталон 0 расхождений, все записи $MFT)"
   }
  ],
  "revoked": [
@@ -4321,6 +4356,6 @@
    "version": 12
   }
  ],
- "issued": "2026-11-05T19:43:19+05:00",
- "sig": "126064b42db78278f12b1d77fd74098c54c22da21c86ed1d498fdfb959cfc499bdf5da3e82e9cb8d1ab38dcc097f8f1a017e17242bf189c503a6c57afeccd37e993d6fbb0a78ffc3d3df3bb101d58a08765582525df60938605e6ea543c5bd9b55d24506139a07d096699c110497b03f7a1492ef480e80a337f0d12df93c8cd97414b7e3840844b4fb4ef1c8862d4eb34988fa36f960d27d94206343da3815b75609190b91d817bec3d5bd47df26633ed018d45256091455156d0c8e3e75a6ceabb488c5a41bbd258c2cf903be24a5e0789d5573c17d5f2554bcddb0613ec4163ba79a847b7a8ec6fb031d90a0a0df913c76115c0484020417f3e25cfd081b64ae626c329fd92576455871d70afb2c244cec8bb2a08c3548bab8e8aaad30c634c77fa697590d7c828cd110674850e33c91d1cc9864ffee5f3abddde358d92c27dd555e537fe0f96fbb73a1018e7f51c91b8edea16a995940a7ae014ce08a024fe2c532275ef8c4e285ee5a9ec933e0bcb586cba98556b43a488d7843d1e0f66a"
+ "issued": "2026-11-06T01:50:41+05:00",
+ "sig": "032de092dfec34534b38a371675be5fe7c0ae96c624769126e56c0113d8e9f17e4054e7c6d6e49a6a4a6d699d6527d045df9c177cc940e78f85488c5fbe64b416e9da43a10fd06cda640e784603d4157a617616b457b80dd70f8051cd3f29c443dffa185aa9bc2a2a12989482e7001321f72a3c9438fbddad0eeec86940d30049fc623e68931206356e51f592bd6bf8881e9ece63db10ea3f69e2c7a0600268ae3a7167803b2d5c6dc49d5a1df8c76d416913a494c588857493288d5d4307f31e0b28c5b34a1d9bc5425b5a9920668b3fb6a0ff86745a2b0b4e343bcf10db43e0f064c4c5fec09cb955e41e43948bdb7a01e8b064d1a7ac9c472479378d1b4c1ec87190be943887e7c1d53ec828aa894a74ef4722b8c6bbfb3fd43b5ea5973bfc465d623c2e30be1141b425e336de47ab8da4f40329238f68cda6694b2013a54912ac54aae0db25308bbfd0617e28bec1f4c33b69e27ea10683f7a7cfff6a1fa21ab40b2bd1fc405f7a80cd3965c91db3bce1ad704294232914d77cfdac474a3"
 }
