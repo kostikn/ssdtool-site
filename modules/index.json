@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 143,
+ "serial": 144,
  "modules": [
   {
    "family": "smi_nvme",
@@ -4235,6 +4235,40 @@
    "issued": "2026-11-05T17:06:31+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "I-2026-1105-01-74F2"
+  },
+  {
+   "family": "maxio",
+   "version": 37,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-37.ssdmod",
+   "size": 2420060,
+   "sha256": "8e18fd27f367e47b88699dd6d6ddc0a7d2b5010c40b5ec7fbf9b2b59cebf8244",
+   "modules": [
+    "controllers.maxio.mas1102.catalogue",
+    "controllers.maxio.mas1102.codeblock_build",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.locate",
+    "controllers.maxio.mas1102.passport_nand",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.retry",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-05T19:43:11+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "MAS1102: готовность по вехам терминала [PBT]E/[crst]E/HoPl; перескан порта по вехам; ожидание без предела при живом терминале; повторное нажатие не уводит живую прошивку в ПЗУ (998F)"
   }
  ],
  "revoked": [
@@ -4287,6 +4321,6 @@
    "version": 12
   }
  ],
- "issued": "2026-11-05T17:06:40+05:00",
- "sig": "502f258b106acde9b47c6bd4539994ec56049d018e34da89838d680ba646f83d57039cfc326e38408a0552222d9cea6af6e6686be68cdf7718e28899b12755d9aca5bc72240bb64c7258dcfabe33e351e2ed4d14b3c40b492132333be0c66882ceda7297922f0019f678bcc797535ef3829d68124ebea74a09e4a1e6b4bbba48f2de8448e53c409d55deb305290701b81a303a904a1d648247dc53061c856cbee52e514c6b61ea3527110e42415a74fa22219e2722ab1ef6fee976488303bfadd59e48a40330562c6e7b97f2172e25f68dc121bb7af9ac97ef8acdf36ef0f65adae7ab67cda97fd28f84f402a27a432187e30fcdfabef48c1877fdc128257eaf5145927be51cc0b455e0417eb80781b66bcfe3856e899586c7e7ed985569fbaa93d23803d60b221ed9c95a612b9073dcb0448d8355fd8afbd8255351e1cb8528ee7fc2acb42c45f487f8dfd5a3aa1cd8d5730cacbfd18999d4a45b81899f49e8c0e86641d527f838e578f15b8c5c28f6d23542b74f459bb816a921e496d57589"
+ "issued": "2026-11-05T19:43:19+05:00",
+ "sig": "126064b42db78278f12b1d77fd74098c54c22da21c86ed1d498fdfb959cfc499bdf5da3e82e9cb8d1ab38dcc097f8f1a017e17242bf189c503a6c57afeccd37e993d6fbb0a78ffc3d3df3bb101d58a08765582525df60938605e6ea543c5bd9b55d24506139a07d096699c110497b03f7a1492ef480e80a337f0d12df93c8cd97414b7e3840844b4fb4ef1c8862d4eb34988fa36f960d27d94206343da3815b75609190b91d817bec3d5bd47df26633ed018d45256091455156d0c8e3e75a6ceabb488c5a41bbd258c2cf903be24a5e0789d5573c17d5f2554bcddb0613ec4163ba79a847b7a8ec6fb031d90a0a0df913c76115c0484020417f3e25cfd081b64ae626c329fd92576455871d70afb2c244cec8bb2a08c3548bab8e8aaad30c634c77fa697590d7c828cd110674850e33c91d1cc9864ffee5f3abddde358d92c27dd555e537fe0f96fbb73a1018e7f51c91b8edea16a995940a7ae014ce08a024fe2c532275ef8c4e285ee5a9ec933e0bcb586cba98556b43a488d7843d1e0f66a"
 }
