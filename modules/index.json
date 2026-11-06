@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 147,
+ "serial": 148,
  "modules": [
   {
    "family": "smi_nvme",
@@ -4374,6 +4374,41 @@
    "issued": "2026-11-06T12:06:47+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "MAS1102: P2L на общем слое ядра (лист — поставщик parts/read_rows/pointer; на EXE 200 без слоя — прежний путь), готовность по вехам терминала с переподключением узла и контроллера порта, без модального окна «не вышел в готовность — ждём/отмена» (ожидание молча, строка «Жду запуска диска: N мин; последняя веха»), 998F диск 0 — эталон 0 расхождений"
+  },
+  {
+   "family": "maxio",
+   "version": 41,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-41.ssdmod",
+   "size": 2673064,
+   "sha256": "358e8154c48f7cfb29395890cef0697ab95b574c142675a2b4067bbf320e768c",
+   "modules": [
+    "controllers.maxio.mas1102.catalogue",
+    "controllers.maxio.mas1102.codeblock_build",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.locate",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.passport_nand",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.retry",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-06T15:54:14+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "MAS1102: аудит универсальности 06.11, части А и Б — параметры с диска вместо умолчаний (каналы, раскладка FAA, слово дескриптора, адрес кольца по образу GDP, размер страницы вместо 16 КиБ/4 фрагментов, типы частей голосованием, замер порядка кристаллов у 2-LUN, ёмкость паспорта с подтверждением, предел чтения из замера), стёртые страницы в P2L; диск 0 — оба пути тот же эталон, 0 расхождений"
   }
  ],
  "revoked": [
@@ -4426,6 +4461,6 @@
    "version": 12
   }
  ],
- "issued": "2026-11-06T12:06:49+05:00",
- "sig": "2e2c83f2833e9a5f2c87b5716b0da67dc196f4989a7a3de193d4cfe62f12f0d6eeb2750155b599382237212847f46b9725c6b3f491107bdb1c68f2af83f137f9e0d0c4b838c044d607f79c6aa2155c93b9fb245d6ca1a9264bca32bfbf33bbcf857c26b8fb9e79e4223d4ce16e5ed485c466cfae0ae339ab9f055925296f4beaf8cefcf0e6754428361e596c2eca58fb19a47ec18ac947280d030b134f702f9937191cbbea77cd7afd854e533164b3acbbf224c0f44757d5070ce29682050aa49246681f5e2c1ddaf20f2244f94e9dbb091ad3524d5c661250d3ceea483286c9dd1970f72748fd7834c3e3e5cd6c658eb4c357198aaa2cafdf4fac2a549d32ea1149e573bd2a46aceff72ef2757c5b7264d2d117c4dcef24c4c5f3cca21830a73988ea5d4ceb03983a4a2a153714a1d57d864431359b8c92d7a86c8e00224bff1ef053953f397c4a76b29868bae2aaf0969fc32f1b73c8fd105262be0c02136a207cc4808c1f97b450e18675e5de2bd04036b97ea48d7077566b14e47e8e371c"
+ "issued": "2026-11-06T15:54:22+05:00",
+ "sig": "682a92a49584ad0b0ba763fb26b05b2a72f40bb5fa07916b1a9b7fb8f50e0940329ba374c8acfdd1820f639dae79d10e3d31a89159173972df39c8e50b476e28e85042d46ac7f2af526c7f938281bb9f3a7008c2dc8e695bc02897281946f5f24c69e906e0d6199b8cbc68b560f3944c49746c39af6dcfedcdfa8f12e5e5c32423d7b5a1fa50dbf3fe96d1f3c610990bbce0fe63a0d80913da9a1c68403a8b66681584dede0d620e743252ea8a6e9f95e941d3abedf17c133710c1e1fabbf3ea318227995c97ecddb34d7d3d00b0e106817dbb5da90a56e59b723859bd88470b29ac50bcbf11133a7db0511ae1314f315d2b6072317484d57df49d0a97c264dad02f22632167887c8d27e6e1c8366748f7bef072fe07855993f4a884134809412e05bc51152b99a9cf6c88790bad155a8ad390e050e4934330991ca196ebfc0820a914a0ad4df2d78a24180fc520448af3792456e7c71c864056efc57bb8c4d25018fb3bcf09bd9b298515bf7c251b667e4a8141eca417043726dce8c468c0ac"
 }
