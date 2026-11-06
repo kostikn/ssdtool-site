@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 150,
+ "serial": 151,
  "modules": [
   {
    "family": "smi_nvme",
@@ -4482,6 +4482,41 @@
    "issued": "2026-11-06T16:24:13+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "SM2263XT: «Очистить журнал» находит журнал, у которого в плоскости свой чистый заголовок и за ним страницы E5 (T-прошивка после MP: диск Дорина, заголовок на ch1/c1/p0) — плоскость считается журналом при любом их числе"
+  },
+  {
+   "family": "maxio",
+   "version": 43,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-43.ssdmod",
+   "size": 2685026,
+   "sha256": "3bcdcd12c6f6201b2125ea560bc589771de2f69200c8af5fe6f3e92a2aafb9c6",
+   "modules": [
+    "controllers.maxio.mas1102.catalogue",
+    "controllers.maxio.mas1102.codeblock_build",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.locate",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.passport_nand",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.retry",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-06T20:47:33+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "MAS1102: пустая команда в правках прошивки берётся из самого образа (перепись 46C0/BF00): прошивки MAS1102 — Thumb-1, NOP = C046; прежний 00BF был неопределённой командой и вешал прошивку"
   }
  ],
  "revoked": [
@@ -4534,6 +4569,6 @@
    "version": 12
   }
  ],
- "issued": "2026-11-06T16:24:15+05:00",
- "sig": "966c45ab9e177d56626b5b8350a950441c2b79d07fa1d99622d74a75b979406a612c58c58532628663a60b775f6d6ae7d58f547559dc966ce9dd4b13bd14c58c9d099d72180ce6d9983a9b9cbd1085730213978fa07fefde4dc754c49d3276c89993580e8fc1c54366dc87ac771988242ded11821c252a507d756549c786f23416b81d9a93f4443a4b753f3a83809537737e9f7c20bea0ae4268f37bf239b8ae71ff136d72ceeeb992585506bba8a6dab34d0bf2544be9550d0595044df9155c1b5e1df5c1fab86021d2cd158c77e85c7af47e453461351ff1dc494e33dea8a4952995422b7bbe11eb61149f1ee8845754d93e8aebe00442769ea9ea5a6bb13b8e4e7d40f3e1e49bb53ef073d424483f3bf59a92c0ed773c6c2625400f92562764e44466637656a5702825e25d5041e52b2a4a4a89fc4192681eafbce381b0c56eb9839f6de84bb000b8fea17a67e0f2c5ace82c8a345909171f7f385b5e0880effbb790ead9f993aa479f2c7ebb8eda046740553d40f8042fd5db45aa2ed578"
+ "issued": "2026-11-06T20:47:35+05:00",
+ "sig": "098bdb5218f2e6a6f52f95e8cf04c679336c9352afb7784773f6ae7a588188040d4ed8bfef1972e4429a01c859b925e048b800c6895ac65a5fc3ca509ccdd8f4925ab29fba42648eefa8f4ab31703efd16249fadbd68e91038dc52a7682981450cd6a4dc78f8706d7549c8c7492928d80d2876e1911d3a96eff5ec858c4efca5bdd002c5847465493635f63e318d112d580b05a8d5f7331c603c5eaffe425a8af70fa15e2d0f066f57884b51b968823902d24c25fbecc648e248f1a6af4c253705b3f6d2c4624ddf0d88b56b20f78b861f756b5c662b29e738e066b17ff6b5ef3b16c23bfb08fc0f75863849aa38f5bc018cbc00f66f1710543b5c4e1f65407c846bf30ef5b8cb451504e64d7f96f4fbbdd44e7738e0b045ecf608b3fc0b68c4b28bad906c63366947ac78142f4046b0a3a57c28f5cd7e2a2f8fb24d9459c481487f589407b22ea554f8da99626785f3e3b0b1e2d7a90ad11a50306cd9bc3850d57726b85b91348d7bbb46f03d70a881c83931f0de632882032b2f9719912251"
 }
