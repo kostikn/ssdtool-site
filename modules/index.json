@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 148,
+ "serial": 149,
  "modules": [
   {
    "family": "smi_nvme",
@@ -4409,6 +4409,41 @@
    "issued": "2026-11-06T15:54:14+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "MAS1102: аудит универсальности 06.11, части А и Б — параметры с диска вместо умолчаний (каналы, раскладка FAA, слово дескриптора, адрес кольца по образу GDP, размер страницы вместо 16 КиБ/4 фрагментов, типы частей голосованием, замер порядка кристаллов у 2-LUN, ёмкость паспорта с подтверждением, предел чтения из замера), стёртые страницы в P2L; диск 0 — оба пути тот же эталон, 0 расхождений"
+  },
+  {
+   "family": "maxio",
+   "version": 42,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-42.ssdmod",
+   "size": 2675590,
+   "sha256": "46fdae72d528d83fd72b8c981ddfa66fc69163befe5564c8a8555c0831ce9bb5",
+   "modules": [
+    "controllers.maxio.mas1102.catalogue",
+    "controllers.maxio.mas1102.codeblock_build",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.locate",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.passport_nand",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.retry",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-06T16:04:13+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "MAS1102: пороги достройки по меткам (стёртые строки, разрыв поколений эха, бюджеты) читаются из облачной настройки mas1102.p2l_* при сборке поставщика; нет ключа — свои значения; бюджеты берутся в момент вызова"
   }
  ],
  "revoked": [
@@ -4461,6 +4496,6 @@
    "version": 12
   }
  ],
- "issued": "2026-11-06T15:54:22+05:00",
- "sig": "682a92a49584ad0b0ba763fb26b05b2a72f40bb5fa07916b1a9b7fb8f50e0940329ba374c8acfdd1820f639dae79d10e3d31a89159173972df39c8e50b476e28e85042d46ac7f2af526c7f938281bb9f3a7008c2dc8e695bc02897281946f5f24c69e906e0d6199b8cbc68b560f3944c49746c39af6dcfedcdfa8f12e5e5c32423d7b5a1fa50dbf3fe96d1f3c610990bbce0fe63a0d80913da9a1c68403a8b66681584dede0d620e743252ea8a6e9f95e941d3abedf17c133710c1e1fabbf3ea318227995c97ecddb34d7d3d00b0e106817dbb5da90a56e59b723859bd88470b29ac50bcbf11133a7db0511ae1314f315d2b6072317484d57df49d0a97c264dad02f22632167887c8d27e6e1c8366748f7bef072fe07855993f4a884134809412e05bc51152b99a9cf6c88790bad155a8ad390e050e4934330991ca196ebfc0820a914a0ad4df2d78a24180fc520448af3792456e7c71c864056efc57bb8c4d25018fb3bcf09bd9b298515bf7c251b667e4a8141eca417043726dce8c468c0ac"
+ "issued": "2026-11-06T16:04:14+05:00",
+ "sig": "472cb6be6584c3cc0661a76c33bdbb1ea94ba3602b07dcd934b82aaa726e78d5409f984e6cadc066a83f564442df571877f67769b00aef258deb1bd42e189d0becaef5a0cfc4cdfab305358f45cece11da1cf5359be2cd1e26ba05b9fe245a7ce007ac9a36146b5740bf8a752c52e3228b41f945f3cddfe6010ae57b8f19dd911e2ed90f25a4a400c02506d4b2c8059ec7bd2197bd2dd9286795e378831ccc25fffc23dbc05d41e310c77ca81c00ab75feb5b0bcee5039f6f1d8f55675731f1486136d769222d114c6e33eb19ce7f4ca3e6f1af6cb6d0b97cf9f8496f254c34327f3df24a28d87aa702fb82cb20bca1dbdb18fb5f07b6c8664b9d23192b3c253281230f5da9917cdfb13c3290c14bfbde976bdc081afc99b7a875a4f9cbd91b54f06c393572791f9b34e6b9042d0cc2c6dac514fca3afdff67ad51cd17b33dc33c92804370ebfcf8fcb71cbbc292703636a3d047cf4a2c71c5d4c1c486c88461b9266102cbc4b124fd739a3598a34dc77efa4c97008890d724c01cd1602bc6e1"
 }
