@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 146,
+ "serial": 147,
  "modules": [
   {
    "family": "smi_nvme",
@@ -4339,6 +4339,41 @@
    "issued": "2026-11-06T01:58:28+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "MAS1102: после достройки транслятора метками страниц нет ложного «транслятор почти пуст» — строка «таблицы X %, по меткам до Y %» (998F, замечание головной)"
+  },
+  {
+   "family": "maxio",
+   "version": 40,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-40.ssdmod",
+   "size": 2645976,
+   "sha256": "9bcae11dd75c00e721dea7a27879bf913d981739de0ce51ead772c1aabbbf15a",
+   "modules": [
+    "controllers.maxio.mas1102.catalogue",
+    "controllers.maxio.mas1102.codeblock_build",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.locate",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.passport_nand",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.retry",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-06T12:06:47+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "MAS1102: P2L на общем слое ядра (лист — поставщик parts/read_rows/pointer; на EXE 200 без слоя — прежний путь), готовность по вехам терминала с переподключением узла и контроллера порта, без модального окна «не вышел в готовность — ждём/отмена» (ожидание молча, строка «Жду запуска диска: N мин; последняя веха»), 998F диск 0 — эталон 0 расхождений"
   }
  ],
  "revoked": [
@@ -4391,6 +4426,6 @@
    "version": 12
   }
  ],
- "issued": "2026-11-06T01:58:47+05:00",
- "sig": "86778b4699ae7af34c832b868ccd641625a64e153f1d81ab9baf92d713748765384e76c69374c74cdad93041c3ee50b8d3a205288421ed4ec9a78c47d77819b02c50f69f4b3b7fbd9522b4315a8c31414b4f4780c0c243cedd4abdb926867a56fa224f5beb9fb74a66eb80db1fb4f94e648b1143c8b0bd85fe228c329fa7ed9fb7055161c5f36dc2508432f7582053f156a667ca3391263829553ba5db603a47832ee898251ee305784521215aebcc2942422d7428bab1844492a04f6998a74696098ff2492d9e0ec42231f3f6b2c5ad67d54a062a078233d2bc0d744ad1907dd779eb7caca92370e7730621c0b339f0f07a2db04ffdd6d23cda84b71a8d93ce20564181f27a0eb6f0389084b956c48ed30ec1e9e17c13b0a136afba8bbcb137ef8ba867c7d04d681a07e1842df18c2dfa49c97a5058a2d130d9f16edd0337ea07d9741771900ce292aaa2c976d384688bd463d2c37a86d2c8230aad1ce5c4bc01efff13b83a2203a4b8c259eb85993f65703e37c046dc87e991d5eac255940e"
+ "issued": "2026-11-06T12:06:49+05:00",
+ "sig": "2e2c83f2833e9a5f2c87b5716b0da67dc196f4989a7a3de193d4cfe62f12f0d6eeb2750155b599382237212847f46b9725c6b3f491107bdb1c68f2af83f137f9e0d0c4b838c044d607f79c6aa2155c93b9fb245d6ca1a9264bca32bfbf33bbcf857c26b8fb9e79e4223d4ce16e5ed485c466cfae0ae339ab9f055925296f4beaf8cefcf0e6754428361e596c2eca58fb19a47ec18ac947280d030b134f702f9937191cbbea77cd7afd854e533164b3acbbf224c0f44757d5070ce29682050aa49246681f5e2c1ddaf20f2244f94e9dbb091ad3524d5c661250d3ceea483286c9dd1970f72748fd7834c3e3e5cd6c658eb4c357198aaa2cafdf4fac2a549d32ea1149e573bd2a46aceff72ef2757c5b7264d2d117c4dcef24c4c5f3cca21830a73988ea5d4ceb03983a4a2a153714a1d57d864431359b8c92d7a86c8e00224bff1ef053953f397c4a76b29868bae2aaf0969fc32f1b73c8fd105262be0c02136a207cc4808c1f97b450e18675e5de2bd04036b97ea48d7077566b14e47e8e371c"
 }
