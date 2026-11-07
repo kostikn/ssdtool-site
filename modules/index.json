@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 158,
+ "serial": 159,
  "modules": [
   {
    "family": "smi_nvme",
@@ -4685,6 +4685,43 @@
    "issued": "2026-11-07T20:15:33+05:00",
    "python_tag": "cp313-win_amd64",
    "note": "N38A/N38B: строки блока по UDP 0xa52; SLC-блок по UDP 0x554 при подтверждении таблицами диска (доля указателей за границей ≤ 1 %); строки сверх по таблицам (диск 16, 07.11)"
+  },
+  {
+   "family": "maxio",
+   "version": 45,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-45.ssdmod",
+   "size": 2839154,
+   "sha256": "86c5a4bd11643d5b3b6857d5d4694f4c492236b8285575d76c082ad0528d29f4",
+   "modules": [
+    "controllers.maxio.mas1102.catalogue",
+    "controllers.maxio.mas1102.codeblock_build",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.locate",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.passport_nand",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.retry",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.state_marks",
+    "controllers.maxio.mas1102.thumb_nop",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-07T20:32:16+05:00",
+   "python_tag": "cp313-win_amd64",
+   "case": "MAS1102 после 42: NOP C046 (Thumb-1), reflash без capstone, кэш SLC вне карты в транслятор, отпечаток SLC_CACHE_IN_MAP, P2L слой (б) в листе; диск 0 07.11"
   }
  ],
  "revoked": [
@@ -4745,6 +4782,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-07T20:15:35+05:00",
- "sig": "2d8bdd22063f2ab1a3e043f17c50f0c2d09842e8ce336831f3506d11096934984680f54fbe31786ada0a16c72a43a29fc70ed2d82b760a6a00c1ba8933944e6b9e34696fdeac390125d1d3530c62043b7200eace919e330a6b569be9244aba3603b88f0b7a22bfa97a83a91dd2d7c1cba1da326e52b27f566f2c2b0db1773e6e9701f3de9cbcf946feecec417a83c497a9b360bb2e13536ad4cee84ec3360c8d1a1fa112cb4aa79bc5f121ad3b773d0a291cd869aadc9bc08408f5c9244a87e6d21ae548bf197a31949f0e844f7933169743b0e1aa13444b78492387a909e215546b8c1bbd8938d888a7df93d11a4d0aa88ce6aa2a2de48471ccae3f1a5aec64877f095db79a521ddc15f23ecaea267f0a1daf5e428f357770472a3e657cc29b33fbd19a0c4fba97d486709b8818cdd83fbd77c83c6635bb9f69477defe52398f365d0c3436d46934e47c967b6a999f9a2339481a983aa27e1c2de76f7c98ca0c2da2895bd1106fc0ffd06da4aa109172f106f33b8b6c4436769488b1a37ca20"
+ "issued": "2026-11-07T20:32:18+05:00",
+ "sig": "07d7420b64339ece544c332afd2d23aaf38099c92bede56a10c34a805cf80636128b7940b63aa4026a704a79b0944702aa91a24171e023b724a385e72e77c79568b8768cb57053744f70cf4a3fb271ce9c0c6d63791cf885f2a2dd8ab1ff8dea8bc43dc0cf5043356a8d8f476c29556290965d5a3b49123125897fd890b42566ba83c1da744da5aaeb0e9ab9efaa6dd4a943711e8c0db462fa77992ade739c5202f192edbabd304fb5f424b90cb0ef7a958e3571c68d4093f82609fc3b83dcd8a0322b85aecbc37607cb0f1dca780eef7e320200cf8226feaba7a292bc81529c89c1c3fd19bc0670a20bbeb3e0b39d99c973e389a178c339d38c749a1724f111b43a5de1e914b27d9d0bc77dfe04718b94cec33a558039b7a12608fef598864076e10d1c44613dea1b961b95a3d76253b84aebd88a00b6a7530e1ba32d8d185f2f8e2ac3c0cba4744dbd4f9ad1d265c3d4e5e2aa343f4b8b0983de960e9c71fbe9be58bd948dc2a389a359c21ec3936911a6296a774644c33c612c43b5e076ac"
 }
