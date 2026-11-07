@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 157,
+ "serial": 158,
  "modules": [
   {
    "family": "smi_nvme",
@@ -4662,6 +4662,29 @@
    "issued": "2026-11-07T14:42:28+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "07.11: порядок записи TLC измеряется (line_steps, Apacer SSV6 83/83); заголовок ROM NN 00 00 00 по содержимому; свой порт sm3281"
+  },
+  {
+   "family": "yeestor",
+   "version": 22,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-22.ssdmod",
+   "size": 640615,
+   "sha256": "3ba4743b5500ba9ebca952dd7786b4c5ee9d28aea7f2bd1495a24592d4073f1e",
+   "modules": [
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.p2l",
+    "controllers.yeestor._shared.progress",
+    "controllers.yeestor._shared.table_address",
+    "controllers.yeestor._shared.tail_scan",
+    "controllers.yeestor._shared.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-07T20:15:33+05:00",
+   "python_tag": "cp313-win_amd64",
+   "note": "N38A/N38B: строки блока по UDP 0xa52; SLC-блок по UDP 0x554 при подтверждении таблицами диска (доля указателей за границей ≤ 1 %); строки сверх по таблицам (диск 16, 07.11)"
   }
  ],
  "revoked": [
@@ -4722,6 +4745,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-07T14:42:31+05:00",
- "sig": "57cd52638ec1fc101d54cfa2eba1cc3a84b38151886250c883dcced046bca32280528e4f3638a76aa8a870b9f385da6c478f66b3a7d755d17c1b19809ed806e4c83065858660c6ed177f2ae3521d1469ca754d0cd899497998feb49b1ad157a03f50b3d775f60abfbb73e72c728b1601c856348d4df4e345d1423fc41975e38c10efb2b3ef27c2439192a603fbf4b40818b7302a75f3c30b3fe1a8e589af0d1487d7b05a2125ed0072473b3ed025d24dc4b41587872f9f0a9ba4406937e6e54c809d33e15623a37ecc56ea7b1101c409c4f2eef790c9c218f7cae7dab5ab0cff28d623ca1b1e070cfd306c8ab133a1965ef591b70d56d7fc762b8b54679af05a4c0d47d45b0387d72e29d67e02a93efffbefae5bdffc0208a5dbab6893eee1244eb980aed7a7f4eeb966f7ee8625bee4ec1cc13015035de993f1fbc80a62d9f4da3ddda333a0c00d1b1273650447274910b0ec8354aac52133e37de2420ef089e686624f4ccfcefa989fa266d71aa805ab3fe40b30534a1f4cffb647f0f99145"
+ "issued": "2026-11-07T20:15:35+05:00",
+ "sig": "2d8bdd22063f2ab1a3e043f17c50f0c2d09842e8ce336831f3506d11096934984680f54fbe31786ada0a16c72a43a29fc70ed2d82b760a6a00c1ba8933944e6b9e34696fdeac390125d1d3530c62043b7200eace919e330a6b569be9244aba3603b88f0b7a22bfa97a83a91dd2d7c1cba1da326e52b27f566f2c2b0db1773e6e9701f3de9cbcf946feecec417a83c497a9b360bb2e13536ad4cee84ec3360c8d1a1fa112cb4aa79bc5f121ad3b773d0a291cd869aadc9bc08408f5c9244a87e6d21ae548bf197a31949f0e844f7933169743b0e1aa13444b78492387a909e215546b8c1bbd8938d888a7df93d11a4d0aa88ce6aa2a2de48471ccae3f1a5aec64877f095db79a521ddc15f23ecaea267f0a1daf5e428f357770472a3e657cc29b33fbd19a0c4fba97d486709b8818cdd83fbd77c83c6635bb9f69477defe52398f365d0c3436d46934e47c967b6a999f9a2339481a983aa27e1c2de76f7c98ca0c2da2895bd1106fc0ffd06da4aa109172f106f33b8b6c4436769488b1a37ca20"
 }
