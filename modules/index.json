@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 165,
+ "serial": 166,
  "modules": [
   {
    "family": "smi_nvme",
@@ -4959,6 +4959,48 @@
    "min_build": 201,
    "python_tag": "cp313-win_amd64",
    "case": "PS3111 0ED5 (Димитр): после неудачи своей прошивки в SATAFIRM — подбор сборок каталога за ключом/опцией (выкл.); свой порт, соседи без перебора дисков, cold_verify через drive_state"
+  },
+  {
+   "family": "phison",
+   "version": 15,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-15.ssdmod",
+   "size": 1978753,
+   "sha256": "26b77e04d46b33e27aac06a458ea94e5c871d25a8c62d9a409d50faa8d7edbee",
+   "modules": [
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.neighbours",
+    "controllers.phison._shared.passport_reader",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison._shared.session",
+    "controllers.phison.as2258.loader",
+    "controllers.phison.as2258.passport_reader",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.burner_reader",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.plugin",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.ram_snapshot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.restart",
+    "controllers.phison.ps3111.revive",
+    "controllers.phison.ps3111.sa_diagnosis"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-08T22:13:59+05:00",
+   "min_build": 202,
+   "python_tag": "cp313-win_amd64",
+   "case": "PS3111 аудит №16/18/19: бит защиты в живой разбор, окно флага из своей секции данных (запасной — константа), резерв блоков перед DLMC из карты служебных блоков диска"
   }
  ],
  "revoked": [
@@ -5019,6 +5061,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-08T20:29:49+05:00",
- "sig": "6e65c2741a7e202140196102aa42f249d6e99b2d52f17aa3c4c264ffbfa369d87c1595e54a35f5b247a087248556fc5fc4906517607d3446bad4e02be68e26b96e5869346f87548a928610bc67b5b28b32f0fd3411b330ada586c142eabd77985c70b91c8f4e89ecfd49155b4c633c18c70f1e08d67e1f8cde34f1c9efbb0cb61eadcfdb8a9029a832a296d97a3b0e509e7ffea51ec32855a6141afa12c39e841d636b82e0b4574663cd47992f06641280be0e028bfa1ffedcf85d8b59a1017bfb901b6be8fa1ac84d25b64b046679e766a4bc866401f674fb78d10498209f9ccd85ad58165838b771efe3b5a956a82fa6592fa5505385d78cd7c353ef8634e5c016c1199f3d33b2f6964ac816010a0c8f11ea0ca23dfef99c797905a1e85826484d1a36482fabc088ff02715ac4b3916cf5d6bf5f66fc9bae9927bcc618a32ac191b3e3026542f85428988a5602894a1cd6c50ba63cfea73473970699c91aa8067fe14b5c1c1c7cc22329cee2de0d3b499c27af8d3aff2166027fe59e51417b"
+ "issued": "2026-11-08T22:14:01+05:00",
+ "sig": "449e380e3c024db7ae907f336cfa4a88a8895d44f9f5d831e5bc3ce80e7d4eea35e1cdcf71d35aee5de6928117f115e78e23a74be332a4d24a6e08a81e8641d650a00a626d0f1b59e54d76f5ed1e0f1f6c68d8b1f72e8fc934fc6a5e32173f62f086aca4e49c4fd595eab28974630b627f3c961778c85261048ba138c3568bbd59b351f4153cc1ce0cf6403c2f566b37605842966623808c67c8c5d5434cef68150bcb262c48eedc201da5bed2b3ea778f76ba0a24e74b9f00599ee416f44aafd15963664ff9f7bbc3c894c22839f6ad385e56edaa2914173649f79b43af26a2827923ccb083b5a7dcd36555c872814e6b6cc93092c560204cccdcd396a7a6a9b9b88c72c17777a14451d6cc14fe5eae00f6e60499dcdbca86e6df1363e9cbe3f1a0415d8015257336fb73e80800ef0a567c44f2facb22e8f44e5e8b91d0e29ef1354b9d42f397ad9234731b88d6884807e48f6874dc51bbc723dda024fe61f4aa7f29baa1c3f7d838b06b26ca31bbcd5e365090881017c9000ac6b0c21452b4"
 }
