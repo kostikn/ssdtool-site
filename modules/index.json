@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 166,
+ "serial": 167,
  "modules": [
   {
    "family": "smi_nvme",
@@ -5001,6 +5001,55 @@
    "min_build": 202,
    "python_tag": "cp313-win_amd64",
    "case": "PS3111 аудит №16/18/19: бит защиты в живой разбор, окно флага из своей секции данных (запасной — константа), резерв блоков перед DLMC из карты служебных блоков диска"
+  },
+  {
+   "family": "yeestor",
+   "version": 24,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-24.ssdmod",
+   "size": 2387440,
+   "sha256": "2ef9f8a67d49bd88ba6f9a25df0b47f492ba40557addf16320e42a226f9e04d6",
+   "modules": [
+    "controllers.yeestor._shared.boot_area",
+    "controllers.yeestor._shared.boot_search",
+    "controllers.yeestor._shared.cache_index",
+    "controllers.yeestor._shared.client_log",
+    "controllers.yeestor._shared.container_gen",
+    "controllers.yeestor._shared.dialect",
+    "controllers.yeestor._shared.family_select",
+    "controllers.yeestor._shared.flash_id",
+    "controllers.yeestor._shared.freshness",
+    "controllers.yeestor._shared.generation_branch",
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.index_checkpoint",
+    "controllers.yeestor._shared.leaf_history",
+    "controllers.yeestor._shared.leaf_store",
+    "controllers.yeestor._shared.mailbox",
+    "controllers.yeestor._shared.open_streams",
+    "controllers.yeestor._shared.p2l",
+    "controllers.yeestor._shared.passport_search",
+    "controllers.yeestor._shared.por_journal",
+    "controllers.yeestor._shared.progress",
+    "controllers.yeestor._shared.raw_nand",
+    "controllers.yeestor._shared.read_retry",
+    "controllers.yeestor._shared.service_bringup",
+    "controllers.yeestor._shared.slc_stream",
+    "controllers.yeestor._shared.table_address",
+    "controllers.yeestor._shared.table_cache",
+    "controllers.yeestor._shared.tail_scan",
+    "controllers.yeestor._shared.translator",
+    "controllers.yeestor._shared.translator_ecc_reader",
+    "controllers.yeestor._shared.wire",
+    "controllers.yeestor._shared.ys_state"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-08T22:26:39+05:00",
+   "min_build": 202,
+   "python_tag": "cp313-win_amd64",
+   "case": "yeestor аудит 2: ленивый сброс опции 0x6C (settle перед обычным чтением и в конце прохода), read_udp по page_bytes, один предел топологии UDP (8 кан./4 CE), база HC без строки одного чипа"
   }
  ],
  "revoked": [
@@ -5061,6 +5110,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-08T22:14:01+05:00",
- "sig": "449e380e3c024db7ae907f336cfa4a88a8895d44f9f5d831e5bc3ce80e7d4eea35e1cdcf71d35aee5de6928117f115e78e23a74be332a4d24a6e08a81e8641d650a00a626d0f1b59e54d76f5ed1e0f1f6c68d8b1f72e8fc934fc6a5e32173f62f086aca4e49c4fd595eab28974630b627f3c961778c85261048ba138c3568bbd59b351f4153cc1ce0cf6403c2f566b37605842966623808c67c8c5d5434cef68150bcb262c48eedc201da5bed2b3ea778f76ba0a24e74b9f00599ee416f44aafd15963664ff9f7bbc3c894c22839f6ad385e56edaa2914173649f79b43af26a2827923ccb083b5a7dcd36555c872814e6b6cc93092c560204cccdcd396a7a6a9b9b88c72c17777a14451d6cc14fe5eae00f6e60499dcdbca86e6df1363e9cbe3f1a0415d8015257336fb73e80800ef0a567c44f2facb22e8f44e5e8b91d0e29ef1354b9d42f397ad9234731b88d6884807e48f6874dc51bbc723dda024fe61f4aa7f29baa1c3f7d838b06b26ca31bbcd5e365090881017c9000ac6b0c21452b4"
+ "issued": "2026-11-08T22:26:42+05:00",
+ "sig": "71fa05fa85f8670ee660f4a29a20491fd354b7bb5aded17984b3b912e7c19bc7a5d979a6d9df92e76db11c1d94bbe933d4cecaa03a451f4d841a6bff5bea3a0969054dbbcf69c52517446b8213a8da3d0c9fb49c70c7bcb355c07225fba947f741b1cac34f492b6bcb3fdc26aa34a06d1757eb5b86bb343bc01046ab78688b2eca2ff2c609b50e8185ff539be0a7f637249065711dfedf30b83f6715f7039fc626b83ae4bc1703f28edcc79b7e4935cd550061194f8bbea174d2f0bc80e3ab2ac0d53328ad2d0c18040d59df034ad11d60a4f4ccf1bc5ddb9972529e3bf5607fcc83f38f78738c067bc8db5d6c244352f76f20ba30162429a6697b0409516dd70f668e6e964706c5c1f80ffe658bab44e5bb88cbe9fcc0baffec32cd6fd561da9e45fb5a997d872a035abc2580a64fe5388273257d4a92d0dd2ef0301d0df096734222605d50c12eb89b941b79f2dd8b86923eae989d1e25f112c914879c6d2606177a62774b5a04551b1ff7b50b30a7c188ba693bd99f267f40bf2f7fe94675"
 }
