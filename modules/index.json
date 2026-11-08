@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 164,
+ "serial": 165,
  "modules": [
   {
    "family": "smi_nvme",
@@ -4918,6 +4918,47 @@
    "issued": "2026-11-08T20:20:09+05:00",
    "python_tag": "cp313-win_amd64",
    "case": "MAS1102 «Запустить через ОЗУ из файла»: наблюдатель терминала как у start_from_ram — вехи готовности видны, перескан порта по READY_ESCALATE_S (998F 1106-02/1107-01: прошивка выходила, ожидание её не видело)"
+  },
+  {
+   "family": "phison",
+   "version": 14,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-14.ssdmod",
+   "size": 1934513,
+   "sha256": "1f37e2adf591df15a7e9e60896abe5fc56e6a1c20065b4e07f8530429b7e6402",
+   "modules": [
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.neighbours",
+    "controllers.phison._shared.passport_reader",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison._shared.session",
+    "controllers.phison.as2258.loader",
+    "controllers.phison.as2258.passport_reader",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.burner_reader",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.plugin",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.restart",
+    "controllers.phison.ps3111.revive",
+    "controllers.phison.ps3111.sa_diagnosis"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-08T20:29:47+05:00",
+   "min_build": 201,
+   "python_tag": "cp313-win_amd64",
+   "case": "PS3111 0ED5 (Димитр): после неудачи своей прошивки в SATAFIRM — подбор сборок каталога за ключом/опцией (выкл.); свой порт, соседи без перебора дисков, cold_verify через drive_state"
   }
  ],
  "revoked": [
@@ -4978,6 +5019,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-08T20:20:11+05:00",
- "sig": "887acf0fa92a8ad524b1915ec4e352f1c051cddd251c8db9f6a09fcf9d1ee99791e490f69f8fee1d865028e5b358e621e6f1b778889f90e3ca27ee5ad20db9992868ff324f6c51f88373a71705c9fbedad3486f773c6e9888dade80297ef1e67a6e6ec664ac400b4d2ff783602db57fa171ce1ce91cd82a206cd37c58a64cea4ffd5e0bde5335bb6e2d635eb46904693efb99d503e2ce5e392732c87467dac3b94e6bd6554efc5f9845c74542416c7be8674af7694659ee236710b96f92499ce5ea18c1df666438c665ca27d489c76d04425e882beebab2432d8f8f46d242d4171764d52bc8fcd9326ba4428bc47821e30fccaf6c46d6de78635c50b0a5a82105a1c0c69a7c85cd4360013316fbb9be9e7445005c6febc678e45ee34e9fdcb1d5addb2bb3a5fcad7c885c4e48cb0fc38b11299f46356d39e71cad64cf45eb56133a5bdbaa4a51bbb5a14499ecba30ce8436301c8ccdd786c08ec57129957b640867d104a3288ecf1debfca1d76237f4031cfa0220574b4b3fd368d27075007cc"
+ "issued": "2026-11-08T20:29:49+05:00",
+ "sig": "6e65c2741a7e202140196102aa42f249d6e99b2d52f17aa3c4c264ffbfa369d87c1595e54a35f5b247a087248556fc5fc4906517607d3446bad4e02be68e26b96e5869346f87548a928610bc67b5b28b32f0fd3411b330ada586c142eabd77985c70b91c8f4e89ecfd49155b4c633c18c70f1e08d67e1f8cde34f1c9efbb0cb61eadcfdb8a9029a832a296d97a3b0e509e7ffea51ec32855a6141afa12c39e841d636b82e0b4574663cd47992f06641280be0e028bfa1ffedcf85d8b59a1017bfb901b6be8fa1ac84d25b64b046679e766a4bc866401f674fb78d10498209f9ccd85ad58165838b771efe3b5a956a82fa6592fa5505385d78cd7c353ef8634e5c016c1199f3d33b2f6964ac816010a0c8f11ea0ca23dfef99c797905a1e85826484d1a36482fabc088ff02715ac4b3916cf5d6bf5f66fc9bae9927bcc618a32ac191b3e3026542f85428988a5602894a1cd6c50ba63cfea73473970699c91aa8067fe14b5c1c1c7cc22329cee2de0d3b499c27af8d3aff2166027fe59e51417b"
 }
