@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-08T22:53:34",
+ "generated": "2026-11-08T23:39:59",
  "files": {
   "_detect/signatures.json.sealed": {
    "size": 35824,
@@ -89,6 +89,574 @@
   "YS9085N/flash_id.json.sealed": {
    "size": 886,
    "sha256": "627ce20e8b91fbbc261c9e21afed29402d1a6ff2ac4642409254f8766e454028"
+  },
+  "FirstChip/3532/extmp.bin.sealed": {
+   "size": 8241,
+   "sha256": "e81ec26587ce1d7fe7430d4ff8d4b97727a1496a17a035663ea3396b7a3510ec"
+  },
+  "FirstChip/3532/extmp_7thl.bin.sealed": {
+   "size": 8241,
+   "sha256": "c76092547726c88bd826474a2852344a8613564d85393aaedc42d28cf60848b5"
+  },
+  "FirstChip/3532/extmp_882b.bin.sealed": {
+   "size": 8241,
+   "sha256": "2a80b3385ad6c234158c791ed45f133b08789666794dd42a6530091c61d1a566"
+  },
+  "FirstChip/3532/extmp_8m2a.bin.sealed": {
+   "size": 8241,
+   "sha256": "f2d3f9c293184fa45f81b15a76562b560a8a3f21e3d08a069faff83118e7b4f8"
+  },
+  "FirstChip/3532/extmp_8m3m.bin.sealed": {
+   "size": 8241,
+   "sha256": "d12525dd583e435f4b18b41b31a2dfaefe3b81649775afc3f15044cb814db26b"
+  },
+  "FirstChip/3532/extmp_8T24.bin.sealed": {
+   "size": 8241,
+   "sha256": "03abb5839f43a3e381408fcfe542d84ec0133770b823a570e642c37686e33afd"
+  },
+  "FirstChip/3532/extmp_b0kb.bin.sealed": {
+   "size": 8241,
+   "sha256": "cc7d68ac421d3d5717f4ff7a8cdb68bfd254524f3ec8b3eb2a427089057dd08d"
+  },
+  "FirstChip/3532/extmp_b16a.bin.sealed": {
+   "size": 8241,
+   "sha256": "228e1178f136a4c63235da24a5432a2f30863093e3d2790db58d2911660bc7c3"
+  },
+  "FirstChip/3532/extmp_b37r.bin.sealed": {
+   "size": 8241,
+   "sha256": "b940f1bcb6677e8b88caa409f1cad901aaf773c324eba93eac945344c5ac67e7"
+  },
+  "FirstChip/3532/extmp_hy3d.bin.sealed": {
+   "size": 8241,
+   "sha256": "9314480bf6515494dfed3063f35851f6b380d78f0c8966d9d280e52022b69ecb"
+  },
+  "FirstChip/3532/extmp_hy3d1v8.bin.sealed": {
+   "size": 8241,
+   "sha256": "6dc16d10ccac07b4751dc25f3673c235f4a27bfdfc3ac74511ba2cdabbdb962f"
+  },
+  "FirstChip/3532/extmp_l06b.bin.sealed": {
+   "size": 8241,
+   "sha256": "fd1209135ad6a27141d31b79634f8aff208f9c116ac96aa763212f02f606b7ee"
+  },
+  "FirstChip/3532/extmp_QEMB0.bin.sealed": {
+   "size": 8241,
+   "sha256": "23733f1c5c7983e6a0483b2a9aa1f2530a2867b4ea4f44fcc72e01657418ad7b"
+  },
+  "FirstChip/3532/extmp_ss27.bin.sealed": {
+   "size": 8241,
+   "sha256": "a85c3c00ec44b787ac65d691be561a1194740948c498708f942f5c34a0598211"
+  },
+  "FirstChip/3532/extmp_ss32.bin.sealed": {
+   "size": 8241,
+   "sha256": "9e25fd5d478bb50d07bcac77ed1bbfb1bb122f2e3ff17770552f9b7d04a77d86"
+  },
+  "FirstChip/3532/extmp_ss3d.bin.sealed": {
+   "size": 8241,
+   "sha256": "219ee63c70fb55028ad8b68473bf2e1bcc9742b2535e23578ff329ee64027e72"
+  },
+  "FirstChip/3532/extmp_ss3dh0a.bin.sealed": {
+   "size": 8241,
+   "sha256": "5c8581991cb1a9c71076b1a679e3a73a8d3b56e0551a4201aede77f73444de87"
+  },
+  "FirstChip/3532/extmp_ss3du0c.bin.sealed": {
+   "size": 8241,
+   "sha256": "a0675b49248180337e792dee03235e7279499578acf8bc2f9611b6b82397b733"
+  },
+  "FirstChip/3532/extmp_ts3d.bin.sealed": {
+   "size": 8241,
+   "sha256": "bc3e88d8b294be527159a55e81aec2b68da7ec386a5c09c14d545439b8541e76"
+  },
+  "FirstChip/3532/extmp_xT2E.bin.sealed": {
+   "size": 8241,
+   "sha256": "81f7cd9e0054b4282ac7c508282ed63e1210328c1f32bcf766dfb5cbd2f6f368"
+  },
+  "FirstChip/3532/extmp_xT2E_boot.bin.sealed": {
+   "size": 8241,
+   "sha256": "0f1f99f6dbbcac2fa2e9a555bbc45828a8aad270019c1407413727cd3db16c5e"
+  },
+  "FirstChip/3532AB/extmp.bin.sealed": {
+   "size": 8241,
+   "sha256": "fe80d52ba1d82b0f714205d6a8457399423592a7f5e600ad6476958e1487cb15"
+  },
+  "FirstChip/3532AB/extmp_3dvx.bin.sealed": {
+   "size": 8241,
+   "sha256": "e9da60f48d7897feeacc62e6a0cd5c4a77689ede44b8e8fb38f113576412711c"
+  },
+  "FirstChip/3532AB/extmp_3dvx_1v2.bin.sealed": {
+   "size": 8241,
+   "sha256": "14073cd35819a947e7448631270581f9d037b28030c328c47b9989a2e50440f8"
+  },
+  "FirstChip/3532AB/extmp_3dvx_1v2_80.bin.sealed": {
+   "size": 8241,
+   "sha256": "e507102d5cd4b24fb76cbabf3fdab702d371056b755f1cc04d945c1fa3b3536e"
+  },
+  "FirstChip/3532AB/extmp_7thl.bin.sealed": {
+   "size": 8241,
+   "sha256": "137209ff5793a961c429a4bbc1c3abb2f8e202efbc825917effe29a000e5b6f9"
+  },
+  "FirstChip/3532AB/extmp_882b.bin.sealed": {
+   "size": 8241,
+   "sha256": "1fcf31a53b6baae7da29df4d46f0032e99f707a2e434abc8fba67bbc34bbfca1"
+  },
+  "FirstChip/3532AB/extmp_8m2a.bin.sealed": {
+   "size": 8241,
+   "sha256": "cfdff995fd0fed8c15df685a1f7f130850558a7264ae484c581bada11bc5f3de"
+  },
+  "FirstChip/3532AB/extmp_8m2a_1v2.bin.sealed": {
+   "size": 8241,
+   "sha256": "a6824eb0d831e36e13f69cfa0f13f66080597f45e2acaa3ca4591707da09ddd0"
+  },
+  "FirstChip/3532AB/extmp_8m2a_1v2_80.bin.sealed": {
+   "size": 8241,
+   "sha256": "22571f08ea671bff94a34e51a0376627ef29e2a831b9de2fab9a62fc7c3b385b"
+  },
+  "FirstChip/3532AB/extmp_8m2m.bin.sealed": {
+   "size": 8241,
+   "sha256": "777162a0b57f6e65c2d4ab9acb20ded47042ef4e1a717870d48664e0ebe2512c"
+  },
+  "FirstChip/3532AB/extmp_8m3m.bin.sealed": {
+   "size": 8241,
+   "sha256": "1fd77a8aa201688cb2d88a9fcc57025276468e070be8623141f0184a36ea2ed4"
+  },
+  "FirstChip/3532AB/extmp_8T24.bin.sealed": {
+   "size": 8241,
+   "sha256": "1b877ca61b3705f6e215e99a4672fff135850c231ef0298d2b47486831d09085"
+  },
+  "FirstChip/3532AB/extmp_8T24_1v2.bin.sealed": {
+   "size": 8241,
+   "sha256": "3dbce9d4c63522ffbc92601c752a598c8ec1bf8cadfd4dff409b74a34d54dec2"
+  },
+  "FirstChip/3532AB/extmp_8tb1.bin.sealed": {
+   "size": 8241,
+   "sha256": "f475fe99f7efe596a79d239a7d253c2d558a8200289252a318aafeedecd1a1c0"
+  },
+  "FirstChip/3532AB/extmp_9tc1.bin.sealed": {
+   "size": 8241,
+   "sha256": "c79a93a08f0634668450cff4846605133b310e229ec583f36664d92ce09844db"
+  },
+  "FirstChip/3532AB/extmp_b0kb.bin.sealed": {
+   "size": 8241,
+   "sha256": "ba9a97ab61160b56eb50a92692eacc65705daa44c26f58fa5c695ba1045fd919"
+  },
+  "FirstChip/3532AB/extmp_b16a.bin.sealed": {
+   "size": 8241,
+   "sha256": "3fe289eb7bea31f973b1d77952542ad2c0e929e5a0dbed717e18ffefa8f15de3"
+  },
+  "FirstChip/3532AB/extmp_b27.bin.sealed": {
+   "size": 8241,
+   "sha256": "74966b7e1c7051f7356c0ffc66baa80f36c45c2d09a17025c0879767d1c3259c"
+  },
+  "FirstChip/3532AB/extmp_b27b.bin.sealed": {
+   "size": 8241,
+   "sha256": "1595f59aefa824398b2fed13ab15e962243e8f98c59a67273733ec71927963a9"
+  },
+  "FirstChip/3532AB/extmp_b37r.bin.sealed": {
+   "size": 8241,
+   "sha256": "ffac746185a387bdd1c1e11be48659591a560d25793590c35e7be046249b7431"
+  },
+  "FirstChip/3532AB/extmp_b47r.bin.sealed": {
+   "size": 8241,
+   "sha256": "c8557e3cb2e0e128a9a5322a1d0fb17160a64b0fff52d42b1747331b768432c4"
+  },
+  "FirstChip/3532AB/extmp_b58r.bin.sealed": {
+   "size": 8241,
+   "sha256": "1d9763ca9cc5257643143f45af2f2db4e0802cb904516feb7ab2bcff81fa87ff"
+  },
+  "FirstChip/3532AB/extmp_bics6.bin.sealed": {
+   "size": 8241,
+   "sha256": "56f505d63af5c1122d0372cea0f4f967283055c7b8e01c90b872f68c8d11210f"
+  },
+  "FirstChip/3532AB/extmp_bs5q.bin.sealed": {
+   "size": 8241,
+   "sha256": "6c8c498af33df507b55ef17158aafd3e88d687970f3d5a70b36eae4013d29b58"
+  },
+  "FirstChip/3532AB/extmp_dgu0f.bin.sealed": {
+   "size": 8241,
+   "sha256": "dcb693b1d32652b0a9314b82f83f970ccb2f56553a25b9ccfd72115f1f9a6141"
+  },
+  "FirstChip/3532AB/extmp_ds.bin.sealed": {
+   "size": 8241,
+   "sha256": "28725cabb6c97acc17079e8091be6f0553290492bc743eb6007b02235d0047e7"
+  },
+  "FirstChip/3532AB/extmp_ems.bin.sealed": {
+   "size": 8241,
+   "sha256": "46a95e6ae36e5a782527b516ce1fbb73286ed3d46114271f712afb052c876343"
+  },
+  "FirstChip/3532AB/extmp_f0m.bin.sealed": {
+   "size": 8241,
+   "sha256": "cba84a2993e0b60858bd3f6df1e5cd07958ba80d57dce8230fc06429d5917f95"
+  },
+  "FirstChip/3532AB/extmp_fsp0.bin.sealed": {
+   "size": 8241,
+   "sha256": "2d330656b44d9f130bb788a7832c8c3cdc647e0c1b23d1a00ffa5d00cfa02817"
+  },
+  "FirstChip/3532AB/extmp_hy3d.bin.sealed": {
+   "size": 8241,
+   "sha256": "cee22ccd18be1c028c7b58d0c25c984f24b0f0613cb3462013574e2eaf42493a"
+  },
+  "FirstChip/3532AB/extmp_hy3d1v8.bin.sealed": {
+   "size": 8241,
+   "sha256": "b68587d8b801e44b11258621fd684513322177acef770d42a1ea5d2d82d20a49"
+  },
+  "FirstChip/3532AB/extmp_l06b.bin.sealed": {
+   "size": 8241,
+   "sha256": "e13ffa581f4def4d41aa843241646e5f74ad7d0f301a9aa158d1460d86a694d3"
+  },
+  "FirstChip/3532AB/extmp_n18.bin.sealed": {
+   "size": 8241,
+   "sha256": "aaae97b2173dda4e9b994c8937a498509627c1268fdd60fb8bc6eb382005dfc9"
+  },
+  "FirstChip/3532AB/extmp_n28.bin.sealed": {
+   "size": 8241,
+   "sha256": "0f5e5f76ae8280681c0a7c70fcecfe5369b9c604ef972878c721f70671c7a244"
+  },
+  "FirstChip/3532AB/extmp_n38.bin.sealed": {
+   "size": 8241,
+   "sha256": "575d656e307baf680a256399a180fe4282197822c10ef561e75af187253594d7"
+  },
+  "FirstChip/3532AB/extmp_n48r.bin.sealed": {
+   "size": 8241,
+   "sha256": "728b6da0829ba34708836ae28e512855b6b0a492e814b65087120e885a90e618"
+  },
+  "FirstChip/3532AB/extmp_q8a1m.bin.sealed": {
+   "size": 8241,
+   "sha256": "61300f544c5bc44c8d21b8c0b28673f2781737fcb312a41b8316821ed9e03079"
+  },
+  "FirstChip/3532AB/extmp_QEMB0.bin.sealed": {
+   "size": 8241,
+   "sha256": "e1b4e3ece47193fc186a3fb70a22b6cddb0a33e03d0231effa21b29c708ef891"
+  },
+  "FirstChip/3532AB/extmp_readid.bin.sealed": {
+   "size": 8241,
+   "sha256": "e99cd1a35ce22e8c08cbdc05d868f75766ea43d558106150d5df1c0bb98086c2"
+  },
+  "FirstChip/3532AB/extmp_ss27.bin.sealed": {
+   "size": 8241,
+   "sha256": "2ad7dfa79e2fe894e78e6d91d0212e809d9a2889878972e181238a2eafae8741"
+  },
+  "FirstChip/3532AB/extmp_ss3d.bin.sealed": {
+   "size": 8241,
+   "sha256": "72c9f0224f0f2de814226f772839d433d03863d90da9779a7db684fca32f81c2"
+  },
+  "FirstChip/3532AB/extmp_ss3dh0a.bin.sealed": {
+   "size": 8241,
+   "sha256": "41fd695ff7e2233f4fa8f0369a11f0ab683d450f389f42784047f0d38fda6887"
+  },
+  "FirstChip/3532AB/extmp_ss3dj0a.bin.sealed": {
+   "size": 8241,
+   "sha256": "89d91921394df21a233f0ba64af95eca0aa65f6f807469c3181bafc15be6092d"
+  },
+  "FirstChip/3532AB/extmp_ss3dj0c.bin.sealed": {
+   "size": 8241,
+   "sha256": "7220c2a8aeaba4f334efd30aaf2139408759909c6c192b9d09ebe566fe43b279"
+  },
+  "FirstChip/3532AB/extmp_ss3dj0d.bin.sealed": {
+   "size": 8241,
+   "sha256": "ba92230e2261c5cb1e01785851ae221e18ebb571a692e66006556357e4436781"
+  },
+  "FirstChip/3532AB/extmp_ss3dmlc.bin.sealed": {
+   "size": 8241,
+   "sha256": "71987c2b17cc067ad5c2c1903bc51dc45f05a3ee451e2b035234043606605f18"
+  },
+  "FirstChip/3532AB/extmp_ss3du0c.bin.sealed": {
+   "size": 8241,
+   "sha256": "f82d33c3a709ce1628421c9edbb6f72d96dc25008c5b375af58764d20bea6f37"
+  },
+  "FirstChip/3532AB/extmp_ss8k.bin.sealed": {
+   "size": 8241,
+   "sha256": "6689697dc6c56f8c97db53c2b3420a4b7feaccc39bc5a2291c10b2d35d3328c1"
+  },
+  "FirstChip/3532AB/extmp_ts3d.bin.sealed": {
+   "size": 8241,
+   "sha256": "c5d86ba7508549d488bfceca146a90163abce7c90b626b1605320c7de7a16fba"
+  },
+  "FirstChip/3532AB/extmp_ts8k.bin.sealed": {
+   "size": 8241,
+   "sha256": "970f90aa69128b8374a53612d4157a47a0ee966580624cb2557b9a5847149a12"
+  },
+  "FirstChip/3532AB/extmp_wds.bin.sealed": {
+   "size": 8241,
+   "sha256": "23fcf8bb2c4ad4c17e80efcc59300a11fce7fa587b694e6a8fa1185ae26479aa"
+  },
+  "FirstChip/3532AB/extmp_xT2E.bin.sealed": {
+   "size": 8241,
+   "sha256": "30aec5c67554792419b33304f501501f7ce044cc37e9fa14d6f0a8e80e1d39f7"
+  },
+  "FirstChip/3532AB/extmp_xT2E_boot.bin.sealed": {
+   "size": 8241,
+   "sha256": "40c1ab5137f831f7c9cbe49a089d4353aa3f57de5f67bf7b50eda00178c78180"
+  },
+  "FirstChip/3532AB/extmp_yths.bin.sealed": {
+   "size": 8241,
+   "sha256": "36bb9849403a0b3302eee7f1a383a977408a440dbcf70d3980ec4345ba13e73c"
+  },
+  "FirstChip/3532BB/extmp.bin.sealed": {
+   "size": 8241,
+   "sha256": "31699fa8f1a125bb8de36b2f62d3a934c1919bd1932f8f209d8b52f26761fa5d"
+  },
+  "FirstChip/3552/extmp.bin.sealed": {
+   "size": 8241,
+   "sha256": "4b453c983bf679449a4a758ea4a0a8223100d15df29f82e029b852a4845e95da"
+  },
+  "FirstChip/3552/extmp_3dvx.bin.sealed": {
+   "size": 8241,
+   "sha256": "2e0c7abe657fdd4f9dbd437aafdeea61dc8670c17a180c01bf9fe36bf631ca27"
+  },
+  "FirstChip/3552/extmp_3dvx_1v2.bin.sealed": {
+   "size": 8241,
+   "sha256": "5e360d7832c8fbd1edefa47e623e49a5e12cbae01521846cbcdd8f0587b98a24"
+  },
+  "FirstChip/3552/extmp_3dvx_1v2_80.bin.sealed": {
+   "size": 8241,
+   "sha256": "fef38f067e37311578e342c4fcabf1f054c61523300202f2f6945bebc0fc21dd"
+  },
+  "FirstChip/3552/extmp_7thl.bin.sealed": {
+   "size": 8241,
+   "sha256": "acd7d30c38a4933812f6998a867a6a56c2ebb3e51b66d2b8f8763b8b1a48e88f"
+  },
+  "FirstChip/3552/extmp_882b.bin.sealed": {
+   "size": 8241,
+   "sha256": "838f92e6a5edc67d516ef419302b0e8aaa780cb552ef8095eb55c4baa74f2c10"
+  },
+  "FirstChip/3552/extmp_8m2a.bin.sealed": {
+   "size": 8241,
+   "sha256": "3acfd69220a09011b5fda6e7641b7072bc4335256414cab508f471b66eecd7aa"
+  },
+  "FirstChip/3552/extmp_8m2a_1v2.bin.sealed": {
+   "size": 8241,
+   "sha256": "f19e79016d6afe2dc296bb16cd5b5b61c8226796115e95c2a7594b94ca3ca7ff"
+  },
+  "FirstChip/3552/extmp_8m2a_1v2_80.bin.sealed": {
+   "size": 8241,
+   "sha256": "91dca757db7badda2e8bbd18927498c72e909784092edc8082044f7b9306a463"
+  },
+  "FirstChip/3552/extmp_8m2m.bin.sealed": {
+   "size": 8241,
+   "sha256": "63d19fa6520392908f0f5bdc89b963d704cfbaa0a413338f213b2af28aa9a8e6"
+  },
+  "FirstChip/3552/extmp_8m3m.bin.sealed": {
+   "size": 8241,
+   "sha256": "b763d7266a766a56225a478574a4afb9152c1035b9468cf4a97308e7bdfcffca"
+  },
+  "FirstChip/3552/extmp_8T24.bin.sealed": {
+   "size": 8241,
+   "sha256": "885ca80ba682cae19e3f16ad41c836df99daa59e8c5b8ae332d49b11db8c817c"
+  },
+  "FirstChip/3552/extmp_8T24_1v2.bin.sealed": {
+   "size": 8241,
+   "sha256": "7ca316b96f75cffc993c508d603b3de04c8cbd027ce2267466d0bbb0cab95e08"
+  },
+  "FirstChip/3552/extmp_8tb1.bin.sealed": {
+   "size": 8241,
+   "sha256": "6d6a537a23fd0282fb273fe6d0a9fa3594e4a042aeb616016b2a07c5da0bda1a"
+  },
+  "FirstChip/3552/extmp_9tc1.bin.sealed": {
+   "size": 8241,
+   "sha256": "99cd23704b27855ed832217bc4a605d4ef7ddf48f3b490c13244459671e7cf36"
+  },
+  "FirstChip/3552/extmp_b0kb.bin.sealed": {
+   "size": 8241,
+   "sha256": "a71174d0c3db72287f0907a085f5207a430dd08480861a4b32550cf25c56447e"
+  },
+  "FirstChip/3552/extmp_b16a.bin.sealed": {
+   "size": 8241,
+   "sha256": "7fa7f394c137c0815a156a70a7061953feb950e0effeaf895c506e45bdbe2c8e"
+  },
+  "FirstChip/3552/extmp_b27.bin.sealed": {
+   "size": 8241,
+   "sha256": "39afd07c64bad8eaef4b5d9db3069ea681f22b6748518334b257f275aaeb850e"
+  },
+  "FirstChip/3552/extmp_b27b.bin.sealed": {
+   "size": 8241,
+   "sha256": "845650d0bf0f4cb7cdb2c11c03b58dcc0b3c20a1be80a14486414c05748b0574"
+  },
+  "FirstChip/3552/extmp_b37r.bin.sealed": {
+   "size": 8241,
+   "sha256": "b9dd318d04fa274b2c61b84ac0fb72323f05ef7a4e9539048fa65749ab4a21ce"
+  },
+  "FirstChip/3552/extmp_b47r.bin.sealed": {
+   "size": 8241,
+   "sha256": "402b28e2dcc393f34259032c1d737be233c83591fc5eddc486fb5ee9cf4c51e2"
+  },
+  "FirstChip/3552/extmp_b58r.bin.sealed": {
+   "size": 8241,
+   "sha256": "44c2bd521a99e5944e1962bc72f97be1427d761ee760db255f8ca1fc2f52ca53"
+  },
+  "FirstChip/3552/extmp_bics6.bin.sealed": {
+   "size": 8241,
+   "sha256": "73b1f01c5db17e256611f5fd814848e9be83e57864890fbb27a3b2049866bf62"
+  },
+  "FirstChip/3552/extmp_bics6_1v2.bin.sealed": {
+   "size": 8241,
+   "sha256": "2b1b8951ac0c49de0a057ceea0816afc717a8ff054a56697bab0ee72df100b79"
+  },
+  "FirstChip/3552/extmp_bs5q.bin.sealed": {
+   "size": 8241,
+   "sha256": "6eaa34023a8f8df238055f530ab0fe6c85ceb6b291b5339526f6dc0ea20ba211"
+  },
+  "FirstChip/3552/extmp_dgu0f.bin.sealed": {
+   "size": 8241,
+   "sha256": "d08bdd30c0bf93e62a95400ba3e86e7f8f77ab62cc933c9447fff925f3fc2b94"
+  },
+  "FirstChip/3552/extmp_ds.bin.sealed": {
+   "size": 8241,
+   "sha256": "e7b65fc1a33b530bb143f9a6ea5808e41f1a9c26fd808f417e8cd87fcae1dc61"
+  },
+  "FirstChip/3552/extmp_ems.bin.sealed": {
+   "size": 8241,
+   "sha256": "1139426ffbd0224fabb5e7c94ef58d6a4544921d51acd1d13812479bbc53f716"
+  },
+  "FirstChip/3552/extmp_f0m.bin.sealed": {
+   "size": 8241,
+   "sha256": "a4276f276010b4bb3db2970d123b967f86f54bb6f21ab3c93ad2741ba405f2b7"
+  },
+  "FirstChip/3552/extmp_fsp0.bin.sealed": {
+   "size": 8241,
+   "sha256": "9bf82d66b225a35f641961e0d407bdf2f5d5a1673e51b963ee77e428acaeef29"
+  },
+  "FirstChip/3552/extmp_hy3d.bin.sealed": {
+   "size": 8241,
+   "sha256": "54c73da9fab62282a245a627bbd0add8d1fc05ad8736631b31a0c9ca6dd78cb8"
+  },
+  "FirstChip/3552/extmp_hy3d1v8.bin.sealed": {
+   "size": 8241,
+   "sha256": "7c0bb553fbf532e1279c6987ffe6be34d4599d685420110f591cc53ab1eaf533"
+  },
+  "FirstChip/3552/extmp_l06b.bin.sealed": {
+   "size": 8241,
+   "sha256": "071f2b3fca9b6ea4ac4b3f544b18d2edbb7b9fe18e25ea4ef050f410e79b9236"
+  },
+  "FirstChip/3552/extmp_n18.bin.sealed": {
+   "size": 8241,
+   "sha256": "2b228a45c6b61f855ba9c8309f3ee6cadad472d8790f1f8dcba95a437084a2eb"
+  },
+  "FirstChip/3552/extmp_n28.bin.sealed": {
+   "size": 8241,
+   "sha256": "2334b75c3b9b53582f8e6f1e6e0eeea9d4dbc524030576a96699b2aff09e50b4"
+  },
+  "FirstChip/3552/extmp_n38.bin.sealed": {
+   "size": 8241,
+   "sha256": "dfb7a3b1e8fad51242d6a6fe3256645a51caba0941c61612c4a15f8aaa57fdef"
+  },
+  "FirstChip/3552/extmp_n48r.bin.sealed": {
+   "size": 8241,
+   "sha256": "52218101c937eb63bbef607a28dec797470d8e3e90cef6c97fd054571170a4a0"
+  },
+  "FirstChip/3552/extmp_q8a1m.bin.sealed": {
+   "size": 8241,
+   "sha256": "0ba1703924c15db73db5f07393d01921298509bc9ebb7aaa3b299edc88c93b9e"
+  },
+  "FirstChip/3552/extmp_QEMB0.bin.sealed": {
+   "size": 8241,
+   "sha256": "8034a938862b4ed7afdd3e6503ed10a66b6a03a11e35024eb02ff5267ddf881b"
+  },
+  "FirstChip/3552/extmp_readid.bin.sealed": {
+   "size": 8241,
+   "sha256": "8509de2d1dcd38afcb77ab18245ea489781626cb4f22171247fb09f34c55c27b"
+  },
+  "FirstChip/3552/extmp_ss27.bin.sealed": {
+   "size": 8241,
+   "sha256": "32ec1ac17b1094435bca456f542bc91fa6585079df436e5e8205968d4a08a361"
+  },
+  "FirstChip/3552/extmp_ss3d.bin.sealed": {
+   "size": 8241,
+   "sha256": "08a9baaa64167ca213b2ca4a3d506c723f7285a44b5d1d664aca0fe845f8c563"
+  },
+  "FirstChip/3552/extmp_ss3dh0a.bin.sealed": {
+   "size": 8241,
+   "sha256": "822b04d6abf38d820f36fda7cde16f45cc82c7649f5cf40d78c04bd6f4a9f0c4"
+  },
+  "FirstChip/3552/extmp_ss3dj0a.bin.sealed": {
+   "size": 8241,
+   "sha256": "5bd91bb4e652c595e1ecf18e0374d1c479aa2108414f2ca1ed95442e0914e5c8"
+  },
+  "FirstChip/3552/extmp_ss3dj0c.bin.sealed": {
+   "size": 8241,
+   "sha256": "786ff888e95e14a7730591438ccd400a0a4f13037b642b107d4a975edcc166d8"
+  },
+  "FirstChip/3552/extmp_ss3dj0d.bin.sealed": {
+   "size": 8241,
+   "sha256": "70a2396886d1ee2858157dea89c8c962a4831a23f458afb34e3d43618cb8eba7"
+  },
+  "FirstChip/3552/extmp_ss3dmlc.bin.sealed": {
+   "size": 8241,
+   "sha256": "998b1c6fd8555a56dc3fed1ffbe6fdd48dd48c4430777f4b520694c2627d04d9"
+  },
+  "FirstChip/3552/extmp_ss3du0c.bin.sealed": {
+   "size": 8241,
+   "sha256": "de2419c30bbb0eedf072584482983c7b65e4f22f71bb9689e68bc33218ddce20"
+  },
+  "FirstChip/3552/extmp_ss8k.bin.sealed": {
+   "size": 8241,
+   "sha256": "2f70222f19c6d67a92e664abe06fc0d2e507549946dd51f97327949a54b78edf"
+  },
+  "FirstChip/3552/extmp_ts3d.bin.sealed": {
+   "size": 8241,
+   "sha256": "9475a0e26de474da6241a7694af87ab7e738a11ab115e60ef0e1ab7a9db05f3f"
+  },
+  "FirstChip/3552/extmp_ts8k.bin.sealed": {
+   "size": 8241,
+   "sha256": "a2e978a84f5b610c34648f44f79dc59302964eb11c81373ede337bf5eb71a663"
+  },
+  "FirstChip/3552/extmp_wds.bin.sealed": {
+   "size": 8241,
+   "sha256": "d923fa20f84eec842d87157556583f7d082728f49418aade19a021a1614005f9"
+  },
+  "FirstChip/3552/extmp_xT2E.bin.sealed": {
+   "size": 8241,
+   "sha256": "551d45d21310548efb08565d469ddb05a034ea4756ba399b281b31e79cda9351"
+  },
+  "FirstChip/3552/extmp_xT2E_boot.bin.sealed": {
+   "size": 8241,
+   "sha256": "27b9e6e4a6ec20484676fc14c35a09437adecece9317106a0e5cc73bc3874f94"
+  },
+  "FirstChip/3552/extmp_yths.bin.sealed": {
+   "size": 8241,
+   "sha256": "648f1cf4bc2f37776f7a9e377bc7a98cd492f36005e85e29873a86e7d54fdd48"
+  },
+  "FirstChip/3552DC/extmp.bin.sealed": {
+   "size": 8241,
+   "sha256": "d7d0215f343887fe76ef1e2c53e9d7af5594fed13a8a7fa7b4150e53f27a344d"
+  },
+  "FirstChip/3552DC/extmp_l06b.bin.sealed": {
+   "size": 8241,
+   "sha256": "177a93cd573f27f53c1ecb7f5e7523d9357882d771a5f946c866f5a43244dc64"
+  },
+  "FirstChip/3552DC/extmp_ss3dmlc.bin.sealed": {
+   "size": 8241,
+   "sha256": "ff5423788ea4a8da385bcf63b7d1d8b4fac71ac9719e6bd9275f81512822d974"
+  },
+  "FirstChip/3552DC/extmp_ss8k.bin.sealed": {
+   "size": 8241,
+   "sha256": "a0fb869ad723eb2a28103042eec64bf5f8a619577c7ef09fd397807bba2b4b72"
+  },
+  "FirstChip/3552DC/extmp_ts8k.bin.sealed": {
+   "size": 8241,
+   "sha256": "2557735c27d0d31d84beec0b2c9619ce908bef4a71cf4688aaf745a42da6e2c8"
+  },
+  "FirstChip/U3/1e2c997b4e_ext_mp.bin.sealed": {
+   "size": 8243,
+   "sha256": "67be5fa8c37a0d66f06833b4858f33770da3e192862cf10900fd8faa42dde545"
+  },
+  "FirstChip/U3/5e855ef784_ext_mp_b16.bin.sealed": {
+   "size": 8243,
+   "sha256": "c61b6414de90d0d7c19a6f5e2d926a4cab31b8d5206a7eef22bc4cd73f9d06f4"
+  },
+  "FirstChip/U3/bd79ba3ae2_ext_general_b27.bin.sealed": {
+   "size": 8243,
+   "sha256": "866f8f8007de0ceec1966b28b708b2beee85d40bfe723f2a8806a9f1a563a55c"
+  },
+  "FirstChip/U3/cfed04b677_ext_mp_b16.bin.sealed": {
+   "size": 8243,
+   "sha256": "eb03da5f673548bda8475b4a85f1b65ffe55ac7d9ec3de74737c5fdc69852020"
+  },
+  "FirstChip/U3/dfba526ee1_ext_rebuild_b16.bin.sealed": {
+   "size": 8243,
+   "sha256": "81f12037638c81a5b9e466068976d04318b7a797f03876414bf1a8d28de0f11b"
+  },
+  "FirstChip/U3/fc3379_bringup.json.sealed": {
+   "size": 36945,
+   "sha256": "efd27f7f2df1d11d5081c1f0f4ec31a61c6c34e9b2b6a2e24600a0473fb7df9d"
   },
   "MAP1202/chips.json.sealed": {
    "size": 290661,
@@ -14843,5 +15411,5 @@
    "sha256": "9eb19364a85a095c58f3fb4b6fe98620f1b5c5655bf451ca2487c759e361060d"
   }
  },
- "sig": "7d968266bd4ac3b13a7b32586ddaae3bc19aa175124fda19de99c13f11af2e8cff573d4c6007c3be629f3e4f7c19dc4a76a7f90812a523b93374d833ddcdef3c36a137a045ae8db662b845145a388be6d39bdc9d01cca2c3a0caed535eeaad01a064d6751da0e435d14c11cb629f2411636c5f92406fb81c7c432f4d4b2deff9beeebcc3459c6be8b495ea40b2d2ea58c0558b45e01c328b8570259ae557022733c02d437396b417d0917cc5107b5a0ff14c3c49ad0b6f27a46d075cb787ee660172e02a8b4754b6eb4b1c3c4499bf7a3186b4fa7927fbdda9b43628fcb4c4449d849068401b9660b326fca69315e5c955d3fbff82296beaab52f66156f01b6ac990325e0fdf7ff34666eab6f7d06fa623b92bffd06de90a7a5e02f1fb7fd09e8b7ed63fecad20eb10888cad5c9133fce1689ad64633203c176d2742a7aea8751a2afa1951a3fe38149311f656855866fbff19f30d08b7eae79c5147ed5a4896e0c0cca86820dd48a53b39e5809653375022f537ec9d523b579931953eed4ea4"
+ "sig": "71637d3b125f1439e4e362689344cd3af82556701edb7566ff93e2b63ced624d2ae714dd38b16c47c0ecd8c45525582bd2384ee1f9536740dcaee3ea1007b0ca1a1b309520b9c9d792ee4f47101732e11640d62dddaf3d81c365594d4a1e86ba1a59cb0a55b49b7581f948b6c11831830558b86ab3f433eb6e5456a22b8de1faae1398e44794b54a62475a7151aac0648a20fcdc877d60d6f585bfcb091f2295dc489528e299797363791e96e509663f89f3d89b2f20d7d8beadb0325fad6d4f71b9aa90fd9f208c2c65a67ef952ac6c9383152ef86edc247e77e244f4a8fea9021c4cc436023893bafda63ff5f3975950275bd73292f3ddf8e4ab3e3c23092a59687834fb3624b025dc6bf858a9ac6e2726608c79df7cde800b8293e5c397bc671e1b173acc95a77aa42a8356c8ad1f066931fe9e9875ab1ef174a4c3dc090b9b1649eb8b95d723b38501669fdea1e7226bad5ca50133955818376a30a775a28202484b661263ab587e76f76c6490a22338c9d8a7cd2daf8fef576f6419d72a"
 }
