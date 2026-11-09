@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 173,
+ "serial": 174,
  "modules": [
   {
    "family": "smi_nvme",
@@ -5310,6 +5310,52 @@
    "min_build": 203,
    "python_tag": "cp313-win_amd64",
    "case": "SMI SATA: подмена 8006 (выкл.), опорная страница только ECC 0, адрес пакета/карта блоков за ключами (выкл.), AC в окне, ответы загрузчика в журнал, слоты ROM без ответа, образ MPISP вручную (Авто); SM3270 запреты"
+  },
+  {
+   "family": "smi_sata",
+   "version": 21,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-21.ssdmod",
+   "size": 2564305,
+   "sha256": "0fdfc57f52837c4262a8697a0f833bbe0fac801b278afba450b8480054c1f41a",
+   "modules": [
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.dbg_reader",
+    "controllers.smi._shared.flash_block",
+    "controllers.smi._shared.flash_id",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.mpisp_flow",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.passport_sata",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.service",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_build",
+    "controllers.smi._shared.sm225x_ftl",
+    "controllers.smi._shared.sm225x_geometry",
+    "controllers.smi._shared.sm225x_remap",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work",
+    "controllers.smi.sm3281.binding",
+    "controllers.smi.sm3281.plan",
+    "controllers.smi.sm3281.pool",
+    "controllers.smi.sm3281.prepare",
+    "controllers.smi.sm3281.protocol",
+    "controllers.smi.sm3281.volume"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-09T15:01:12+05:00",
+   "min_build": 203,
+   "python_tag": "cp313-win_amd64",
+   "case": "SM225x: PARA того же кристалла в другом режиме ячейки принимается (109E: L06B/B0KB), ID из PARA и ROM в журнал при отказе; ручной выбор образа MPISP убран (владелец: всё автоматом)"
   }
  ],
  "revoked": [
@@ -5370,6 +5416,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-09T14:42:40+05:00",
- "sig": "9978dd488d970f0b1b60478c88d75e5845b1a4110b1b5363cde5e73987d10e7d57ec4f9b72af6fb1a35ab7a9b5cf13ded5a2f32f18ed2cf9b79da4045b0537ef87cd8cee00194eaa65151021bfaa0f6118597ae6dc8b31c227c16f5c237e63255fca0d5846a6a89833a1920708238e495665a42bef1df27ca2ac6ccae7a63485ed3d172d984b858da8691d9836abd3ce9094e91e8ddedcb38bb6da3cb30d517aa4917da19a4960a38c3d513372c83ea6db232a93bf1b1a7aed9f2a3b937ce13625ce758cb3a13d02169ccec0d4651ca71238a93865c92ac1d4540f094b2b6e724d9a78e6e111911a5740519ab87c7be6131f1180463209847481f02edf7d7dd2ef355f6329aeb505b3429a7f249a619c6eda21803854db758948d180cb2a94fee4ea90c20c25ac684888efe2d8b361c35ef96ddba330a311fc5590d0215f8a39e7fbcc6caf5b3fa85c4f19cd844f5acac409449a5059e7a0cea2914e6d2d7fbcd810356d2ada35fa1fae14208def8ef7a0f36648b3ec2c0d5c00a5f20739e00f"
+ "issued": "2026-11-09T15:01:14+05:00",
+ "sig": "228f2f3ff6004488ad3c553cc695d4ea8d69448587a9fa85e092114972a6788383809a457fa96a5839fd695e3f8456b54d93a1900fceb927a052ab0567938c52ea8978630ddd381dea36ce0897fb6fa150bef8997ea15a5175a0d1947e80180dace6402d249c116b54b874563fe8a0366c30c61f4f3fac21d37c1125c7c21b6f1d322d4e4a19075ab3a37b1bccf218c236fa640a0839c416f4e0120d246eef401e3608e1d7d24b34564f4127a54586586b3665a5ef414590cb84f47a201c8350032e79eaa4e8af82128ee8b9f9a336f0d2101a3e12979f45183424162e97829bc714a73c3b3913d7ff2253d4665518e665eb86e228e3fc523d0018d4d4c38907f4c522d7e43c880ee5452e67a40634cc982d2f4251f9dc28b5e727bac5448bd7d034cdd676dd8266e80f3dd870de88bda2072f0edadcf0182254d5c5b3832cef0dd4299d954f2f12c03f945194ddd2866239daf0a5c3c3aeba32ec5d0cd1ac6f5c3623134cfcd2fa5f5115b8249e02d21eaba4f3ac537375e59227a9e4663253"
 }
