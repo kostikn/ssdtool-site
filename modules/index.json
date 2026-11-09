@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 178,
+ "serial": 179,
  "modules": [
   {
    "family": "smi_nvme",
@@ -5542,6 +5542,53 @@
    "min_build": 203,
    "python_tag": "cp313-win_amd64",
    "case": "I-2026-1109-01-D0E5"
+  },
+  {
+   "family": "smi_sata",
+   "version": 26,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-26.ssdmod",
+   "size": 2670114,
+   "sha256": "4c603a92e2f7303cbbc85376a2f7a6e10e16e1fd180db05a29afd940f257e941",
+   "modules": [
+    "controllers.smi._shared.arc_busy",
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.dbg_reader",
+    "controllers.smi._shared.flash_block",
+    "controllers.smi._shared.flash_id",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.mpisp_flow",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.passport_sata",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.service",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_build",
+    "controllers.smi._shared.sm225x_ftl",
+    "controllers.smi._shared.sm225x_geometry",
+    "controllers.smi._shared.sm225x_remap",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work",
+    "controllers.smi.sm3281.binding",
+    "controllers.smi.sm3281.plan",
+    "controllers.smi.sm3281.pool",
+    "controllers.smi.sm3281.prepare",
+    "controllers.smi.sm3281.protocol",
+    "controllers.smi.sm3281.volume"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-09T17:05:08+05:00",
+   "min_build": 203,
+   "python_tag": "cp313-win_amd64",
+   "case": "I-2026-1109-01-109E"
   }
  ],
  "revoked": [
@@ -5602,6 +5649,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-09T16:43:19+05:00",
- "sig": "36001a555a19a9784900a216859f689ca1ca181208c9279983c763946c1482c4bd19064ebcd13ccec9514253f51f10fa7573285f06f5094c6c6575e4620fe7d3dd2d9663a84a7694b523daee2d6397df3a96d5d13424843d6184bccb4f8fa1b5a40cd93cf15f14b01ed06180a5a6d8926bbecca4dc8e1f2f94beadcf75a65d9735516d440040a79cb02ad67fee459c600db7aff81a4810da291a0ff2d0aa44075fdfa36e744725fec95e498b139a9fd544c0351b80c9cc17720cca8f0783f7dcf3a01b95412141a9803b01d4319051a370f60127d75985f235568aa116eabd6f49bf2332b52622ed6d0c4c70f20a90b7be07e8eabaac8c6694de5b2319438cc503eff9ff176b674fdabf68ffc678469e89c9a202d6ad638a77514b0bca20a55395db0d1bfd8e6cc99081c10349024089e6d84ea704f0b10bdf4a1ead1179a9c3f6f041376f04a2dbdb437c5990aac535a4652ef5d64c8a5ad52f87a433191781227c02763b1b389b2d0001ebcda2903d1896a15bc0fde777cb417426d7b974bb"
+ "issued": "2026-11-09T17:05:10+05:00",
+ "sig": "3987bbbc56fb0f4ab5d1e9fb3d3a837274619133a05d1874d56535cc6abdadf06906c595cf036d2b48e51221a1c8cd0cfb04ae86d9c1a7cf9149bbfb5876f1da01539d4a1c6373161523344408d816edf361f2cdb7752f52fb302a74b9517a8d7e8a1e5d8b1b2cc99c77b8b2f71f6296218593275e88b9db8026a9a7f08bfdd4d9d4233d1bc0cdaf92ee228521a813e28ac67a8fb6f9ab25d3020f0dc90e84e5ab6de8583de3841e28ae48dd6a3dd7cb0d1bf913f9e04cec4281687aaee5c40493a28489a3b136ab6f9e937427661c1f535c7905a6baae068bc0c4e7dabd3f0e5b4e97604037d69240f4d5761169ee30efa14bb4587f7a46b6d21ae3a018865a6b8c80d88361994f6accba869c2e2e5e2120d6d62c39a4b6dcb77e83fd350ba4816a5870a45666e9c6b153c37e1b66c450089d9107d04092a7f293bb8b592676ea56c264a4cf153cce7d8b22d252e9728629a343ae8316244fc4b62cd3f3fd72800129adf9b24cf93b8f5ac2c1557bb34d2b1ab6c9f7a3d6febb4f300fbbdfbb"
 }
