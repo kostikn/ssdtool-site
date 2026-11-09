@@ -1,0 +1,10 @@
+{
+ "package": "numpy",
+ "version": "2.5.4",
+ "python": "cp313-win_amd64",
+ "file": "numpy-2.5.4-cp313-win_amd64.zip",
+ "sha256": "22361b67de52fbc4d1db138ace13511e6f266539da63ccfb78ad6f52070e37a2",
+ "size": 10323411,
+ "files": 223,
+ "note": "распаковать в папку и добавить её в sys.path: numpy/ и numpy.libs/ лежат рядом"
+}
