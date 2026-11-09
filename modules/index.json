@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 181,
+ "serial": 182,
  "modules": [
   {
    "family": "smi_nvme",
@@ -5685,6 +5685,56 @@
    "min_build": 203,
    "python_tag": "cp313-win_amd64",
    "case": "I-2026-1109-13-109E"
+  },
+  {
+   "family": "yeestor",
+   "version": 26,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-26.ssdmod",
+   "size": 2479638,
+   "sha256": "47abba9173d6cac1a1412abc92d46b60738182812c604c0e51778474e3fd9467",
+   "modules": [
+    "controllers.yeestor._shared.bindmap",
+    "controllers.yeestor._shared.boot_area",
+    "controllers.yeestor._shared.boot_search",
+    "controllers.yeestor._shared.cache_index",
+    "controllers.yeestor._shared.client_log",
+    "controllers.yeestor._shared.container_gen",
+    "controllers.yeestor._shared.dialect",
+    "controllers.yeestor._shared.family_select",
+    "controllers.yeestor._shared.flash_id",
+    "controllers.yeestor._shared.freshness",
+    "controllers.yeestor._shared.generation_branch",
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.index_checkpoint",
+    "controllers.yeestor._shared.leaf_history",
+    "controllers.yeestor._shared.leaf_store",
+    "controllers.yeestor._shared.mailbox",
+    "controllers.yeestor._shared.open_streams",
+    "controllers.yeestor._shared.p2l",
+    "controllers.yeestor._shared.passport_search",
+    "controllers.yeestor._shared.por_journal",
+    "controllers.yeestor._shared.progress",
+    "controllers.yeestor._shared.raw_nand",
+    "controllers.yeestor._shared.read_retry",
+    "controllers.yeestor._shared.service_bringup",
+    "controllers.yeestor._shared.slc_stream",
+    "controllers.yeestor._shared.table_address",
+    "controllers.yeestor._shared.table_cache",
+    "controllers.yeestor._shared.tail_scan",
+    "controllers.yeestor._shared.translator",
+    "controllers.yeestor._shared.translator_ecc_reader",
+    "controllers.yeestor._shared.wire",
+    "controllers.yeestor._shared.ys_state"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-09T18:46:43+05:00",
+   "min_build": 203,
+   "python_tag": "cp313-win_amd64",
+   "case": "Шишкин YS9082HP PBBM v6"
   }
  ],
  "revoked": [
@@ -5745,6 +5795,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-09T18:42:08+05:00",
- "sig": "74a5d2d4552dc17783f983a7c2fb9c4989ab110e4a7b5ac428e12ffb289b24121afecf6745fc1a223aa24ffd684f6ed0de24cf5c2434df37e4443c0270865bee1d902fe7b9b6f014833a291a3fc9efbca8683c87b98cc6360f855446601e011194154fc9ef771b54f45b8ef38e83731a2b0c7f50fe73f92ecd931dd17a5c5bfdb5a80a7e529bea7a073d614dd292190c53e845a2dc954418e065aac0216a8100202a99776ba10c9bc90b71c780fc9e7bd6ba0979374292f864283e0f15983de8747c84baf57887d9f4ca2835b733554cddc67874a32a6a237c514a341a26e6383977298126df011680bcffc5e4053fa192914481baed7549f0b6c86fb4bc6e7aec386c539618414983e52c823fa4a9c453d5e40775e14be2562c88ff6815ef3e4dfc1a083e8b87a4773fa8c40dcb4df3a85dbb5f2c0401198d2387b2610688e8709a50216959bf1034a6b8f842a6b74da25e882a108234a7fc873da7f8f93d1526c716e6b4f3cc0982b94276b53e99ef2faf56214d9934aacc1037d4bbccf6c7"
+ "issued": "2026-11-09T18:46:45+05:00",
+ "sig": "9900d0dceb3d5d27971aa0b96adc65a05b5c93618337b99f76c8776974e73f1a5db061333ceebc8fdf63a0c005bd6ea1c0b4d7f275302c8c4ed97f72978548ca58d68a19abb251c67a74a0b2ba23ad0a45e6f0b80f6f542051d5b1e00ca4e67693d6aae37db3db550c5c18303858fbd6d0a82c063280090e5f40849d8de74e693773b053a8aa3426c4cfa7bd4555dbbe9c192855fe6776e98ce25e03d73dfd41b3aa32502e505c84ae7df1a298fe3547c001eba655cc437a44ba34254a08024a4d86dd9a2c5b3f4b672c9ba877c62ba5938449d3e41c039e9703bf16abe19c816a5f28ef1b9c175b15f8d45d65bf399e6ee697d1dae94ccc5d308d835ea4ca3fe07f123e55a4bc00bb48ea93fd9aa768e10e129ea81cc70421dd85b6571294822534f6617d19736af30adf4d76bf3046adbe6e1362d52b61d504e33aa62e28ad6746cf4aa93dee139c974d7b4b14ef3edd2803a8189b05f4ebd8037cc38e421d1f4d2daa0f4c5bc3ad799175f06091e5e8499e5938eb2ed7af01be653f0ac5c3"
 }
