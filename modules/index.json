@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 170,
+ "serial": 171,
  "modules": [
   {
    "family": "smi_nvme",
@@ -5172,6 +5172,55 @@
    "min_build": 202,
    "python_tag": "cp313-win_amd64",
    "case": "SM2263XT ускорения (владелец «Да, 2–4» + окно замера): fast_gone_on_identify 44/83, окно замера с первого чтения; ключи выкл."
+  },
+  {
+   "family": "yeestor",
+   "version": 25,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-25.ssdmod",
+   "size": 2413098,
+   "sha256": "ea6439f7d040432e57d1ec88bdb8eae1ce0606c7aadda9a21e043f22b27dbc45",
+   "modules": [
+    "controllers.yeestor._shared.boot_area",
+    "controllers.yeestor._shared.boot_search",
+    "controllers.yeestor._shared.cache_index",
+    "controllers.yeestor._shared.client_log",
+    "controllers.yeestor._shared.container_gen",
+    "controllers.yeestor._shared.dialect",
+    "controllers.yeestor._shared.family_select",
+    "controllers.yeestor._shared.flash_id",
+    "controllers.yeestor._shared.freshness",
+    "controllers.yeestor._shared.generation_branch",
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.index_checkpoint",
+    "controllers.yeestor._shared.leaf_history",
+    "controllers.yeestor._shared.leaf_store",
+    "controllers.yeestor._shared.mailbox",
+    "controllers.yeestor._shared.open_streams",
+    "controllers.yeestor._shared.p2l",
+    "controllers.yeestor._shared.passport_search",
+    "controllers.yeestor._shared.por_journal",
+    "controllers.yeestor._shared.progress",
+    "controllers.yeestor._shared.raw_nand",
+    "controllers.yeestor._shared.read_retry",
+    "controllers.yeestor._shared.service_bringup",
+    "controllers.yeestor._shared.slc_stream",
+    "controllers.yeestor._shared.table_address",
+    "controllers.yeestor._shared.table_cache",
+    "controllers.yeestor._shared.tail_scan",
+    "controllers.yeestor._shared.translator",
+    "controllers.yeestor._shared.translator_ecc_reader",
+    "controllers.yeestor._shared.wire",
+    "controllers.yeestor._shared.ys_state"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-09T10:08:45+05:00",
+   "min_build": 202,
+   "python_tag": "cp313-win_amd64",
+   "case": "Yeestor: P2L группами по 3 с самосверкой (вкл.), ленивый сброс 0x6C под ключом (выкл.)"
   }
  ],
  "revoked": [
@@ -5232,6 +5281,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-09T10:04:34+05:00",
- "sig": "08d74f994c96d3bcd0e0b0085eaad76b432f372bf8e3adcb671caa2ccafb42d9fd29d139a78eaba9cedf50f692a8d8e6ad615428b3c5805a3f71422bf2e48232929a96316ed0298af745105eec4999df9a4ec46b7d55e9e08c03032417666077321908cae12670387ce596e2f99b1e9b3242af07515ca9c7bf2de4f739ab3d7267a090749372e659d44b8bad286866856f6c98396c76be69c34e90f3b2a7b3fbf8240a1359a47856d5a1f5a0134b51f8a43241bc9f373575b3b32b9b2e8c1d847bef252b1f60b2e6622f845f088ba8433e4663eb39334d73e3b286616ce8738dbc2ee61bacf5ec34741f30f9c41d25ce2dae0cdb9293ef1623c9045a29c9dd1d8b898257aa0cda69338146f2cc4de830a44fa93fae89ab6858b91f3c3da6901be7f0c705bf9d4e1a070a30642c8586199794311a6f4dc61923d883bd92f6b64bab42aa6a948c7d2194386ba7b1510ac6a8a0eec0c28d7ca2c97755614ca8f5d806dd48667816c93796a6f82906586418a43f460299f25a5959331e468c84086d"
+ "issued": "2026-11-09T10:08:50+05:00",
+ "sig": "0bee917d5835683b4a0ceb989312cd99f590eaeef57722faec35418abcddec5334a85fb1dd6e9e8826b06e9b0c554508555f2d35040a41019fc03f6f0bb693f5272484f2fc008c6f99f13edfd3222f8bfa1bb83793862a562e9dea4f4099890979592360385c29a1c9beb050aca4d68f52b0d6ba09d6e636a9440aa0f83b55ed0982ee511a2eb6a32d10ab8b62abc3e86deabd356ae27e0742c34b57245ea15c7268123431d8184ab58c0c5cd4fef0e0a080958a1816ac316375d20df7b14a46b7e8ffd8975f4841d829f9e2f5b76d9d06a71d341440ca9f4f71600fa321a107ac5fb3ea6777d9fbd54739748eaa4c7d154fb2760b3a305015f849d056f26240e9006b0dde6fb1abda72e5f3b797a949d6e64ff593145927f90b3069237afc558043a8422ea90899b46a8ff6a55f3c6e44ae3939d1bea29cfb3a38520a8f6e3385dcf31a26f627263371e30b73b985ba25f3acbdb11d58973601f9d6d75603c4721b2ad68743898c913d5603f9fcc1217a1d8d495a5b25ebc1a2f4c62d92e325"
 }
