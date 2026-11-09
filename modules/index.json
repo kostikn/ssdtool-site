@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 167,
+ "serial": 168,
  "modules": [
   {
    "family": "smi_nvme",
@@ -5050,6 +5050,47 @@
    "min_build": 202,
    "python_tag": "cp313-win_amd64",
    "case": "yeestor аудит 2: ленивый сброс опции 0x6C (settle перед обычным чтением и в конце прохода), read_udp по page_bytes, один предел топологии UDP (8 кан./4 CE), база HC без строки одного чипа"
+  },
+  {
+   "family": "maxio",
+   "version": 48,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-48.ssdmod",
+   "size": 3254641,
+   "sha256": "437cf14faaa79bb396e518e0ed39f529ede84c74939de67cdf05f80bb1719c09",
+   "modules": [
+    "controllers.maxio.map1202.ram_start",
+    "controllers.maxio.map1202.self_repair",
+    "controllers.maxio.mas1102.binding",
+    "controllers.maxio.mas1102.catalogue",
+    "controllers.maxio.mas1102.codeblock_build",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.locate",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.passport_nand",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.retry",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.state_marks",
+    "controllers.maxio.mas1102.thumb_nop",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-09T09:23:36+05:00",
+   "min_build": 203,
+   "python_tag": "cp313-win_amd64",
+   "case": "MAP1202 ARDOR прогон 7: отказ словами по отложенному стиранию (ERA+BE WARN cmd 9); self_repair метки"
   }
  ],
  "revoked": [
@@ -5110,6 +5151,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-08T22:26:42+05:00",
- "sig": "71fa05fa85f8670ee660f4a29a20491fd354b7bb5aded17984b3b912e7c19bc7a5d979a6d9df92e76db11c1d94bbe933d4cecaa03a451f4d841a6bff5bea3a0969054dbbcf69c52517446b8213a8da3d0c9fb49c70c7bcb355c07225fba947f741b1cac34f492b6bcb3fdc26aa34a06d1757eb5b86bb343bc01046ab78688b2eca2ff2c609b50e8185ff539be0a7f637249065711dfedf30b83f6715f7039fc626b83ae4bc1703f28edcc79b7e4935cd550061194f8bbea174d2f0bc80e3ab2ac0d53328ad2d0c18040d59df034ad11d60a4f4ccf1bc5ddb9972529e3bf5607fcc83f38f78738c067bc8db5d6c244352f76f20ba30162429a6697b0409516dd70f668e6e964706c5c1f80ffe658bab44e5bb88cbe9fcc0baffec32cd6fd561da9e45fb5a997d872a035abc2580a64fe5388273257d4a92d0dd2ef0301d0df096734222605d50c12eb89b941b79f2dd8b86923eae989d1e25f112c914879c6d2606177a62774b5a04551b1ff7b50b30a7c188ba693bd99f267f40bf2f7fe94675"
+ "issued": "2026-11-09T09:23:41+05:00",
+ "sig": "237f0b15f49ec371ae4d35b429fa037e84f28eb8c326a0c9b67a24d348598d54788c9023e5c4ae676a0e693d2b20f3af19ff839bd96b512a783a56e6b7f91b8aae50c6abeb500889ed793574e12e0ca5efa569496f948ffa93a25235a75722f67dde39f59df7c87bf663b3d8e7dd0e94dfa096ee0875534cfdb5448c42366c5a015040de82c0e73f46993c4a23e54de3bfcde7af319f84dcaaf9b273de59d93c6c1b6339e559a99362b2a6484cb7486e77501be1cd145847e27d562239a2227ba85dc0edbe7c2ca15707f766284e1a415c398bd240810386f80904199a3020dd9de7112cf1f6fd2659a42233b530c07e6938c360662e9410572d864b4a5e44c11e47502fc419e97a9d875504b9230ff51173af7ab086536e49c22fbd3a03d146d6968e311b8560989ef82f4785e0e9ebe9e39fbbe08b86cd2ffee4030f43ee7a7808fe1eeef0870d3a735f82c0b1441da168c79f05aeb6de821087b9ccfef596ed7e908401e8a00025b5f7b48de8d506a439090252ddb959054c76682c2705b1"
 }
