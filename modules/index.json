@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 172,
+ "serial": 173,
  "modules": [
   {
    "family": "smi_nvme",
@@ -5264,6 +5264,52 @@
    "min_build": 202,
    "python_tag": "cp313-win_amd64",
    "case": "SMI SATA: сторож синхронизации DBG (ключ smi.sync_hang_s, выкл.), аудит 4/5/10/14, sm3281 9/19 (замер затравки на флэшке), карта блоков SM225x (а)+(б)"
+  },
+  {
+   "family": "smi_sata",
+   "version": 20,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-20.ssdmod",
+   "size": 2562194,
+   "sha256": "767ff7b0eb4e38930949096eaed1c115110ff60d40b64f5ca813654c4786dd70",
+   "modules": [
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.dbg_reader",
+    "controllers.smi._shared.flash_block",
+    "controllers.smi._shared.flash_id",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.mpisp_flow",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.passport_sata",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.service",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_build",
+    "controllers.smi._shared.sm225x_ftl",
+    "controllers.smi._shared.sm225x_geometry",
+    "controllers.smi._shared.sm225x_remap",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work",
+    "controllers.smi.sm3281.binding",
+    "controllers.smi.sm3281.plan",
+    "controllers.smi.sm3281.pool",
+    "controllers.smi.sm3281.prepare",
+    "controllers.smi.sm3281.protocol",
+    "controllers.smi.sm3281.volume"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-09T14:42:38+05:00",
+   "min_build": 203,
+   "python_tag": "cp313-win_amd64",
+   "case": "SMI SATA: подмена 8006 (выкл.), опорная страница только ECC 0, адрес пакета/карта блоков за ключами (выкл.), AC в окне, ответы загрузчика в журнал, слоты ROM без ответа, образ MPISP вручную (Авто); SM3270 запреты"
   }
  ],
  "revoked": [
@@ -5324,6 +5370,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-09T11:24:55+05:00",
- "sig": "31facb216cbed93cbe6153e5b8d01c6369b81635f829576c249827b14da1769c139d2e4c1929a92f0fb0158200daddf6c3b043dab85d844f604b9e6a3431dbd619020368e069e2d78198d86b99f6accbea1870bc0cd85410f8e08e12560be7d934e74a670e85b4fcd870377400d71eb070f84eb3f4ab7e0dcc2c2b9a5521a6f8fd10dd4095eb9dc5d3e5c96c67881e0984e77f9262b3fc40bb9cbb8dc24f12f83e3e1309d152f82e76f43783394c9bee17d1165a2c5a3d4479b74525dbf1663c5e89e1cfb90b36eab99b30b8b8ae4e61bc2fc6da8ac694b9301bcab75b0aeed2aa320d3f8158c2fdc15c167db602892fc2cf136308cfa9b8626d91639174864516de6030e2748a9afa615a32ede6811ee93c941f843c8cd8a412eaa73a630aa5e1104957deb922387bebdf4ab030921e3f35bc4da9e2ad810041cd7281bbf4dbf338f94a731c3dd7388c7741805aa720af34f00515abb476fbc54b19bf99c4e80dc4bc61622b78cec373e76c18e60d61951d5408551e1e82fae4a8ed0350b547"
+ "issued": "2026-11-09T14:42:40+05:00",
+ "sig": "9978dd488d970f0b1b60478c88d75e5845b1a4110b1b5363cde5e73987d10e7d57ec4f9b72af6fb1a35ab7a9b5cf13ded5a2f32f18ed2cf9b79da4045b0537ef87cd8cee00194eaa65151021bfaa0f6118597ae6dc8b31c227c16f5c237e63255fca0d5846a6a89833a1920708238e495665a42bef1df27ca2ac6ccae7a63485ed3d172d984b858da8691d9836abd3ce9094e91e8ddedcb38bb6da3cb30d517aa4917da19a4960a38c3d513372c83ea6db232a93bf1b1a7aed9f2a3b937ce13625ce758cb3a13d02169ccec0d4651ca71238a93865c92ac1d4540f094b2b6e724d9a78e6e111911a5740519ab87c7be6131f1180463209847481f02edf7d7dd2ef355f6329aeb505b3429a7f249a619c6eda21803854db758948d180cb2a94fee4ea90c20c25ac684888efe2d8b361c35ef96ddba330a311fc5590d0215f8a39e7fbcc6caf5b3fa85c4f19cd844f5acac409449a5059e7a0cea2914e6d2d7fbcd810356d2ada35fa1fae14208def8ef7a0f36648b3ec2c0d5c00a5f20739e00f"
 }
