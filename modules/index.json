@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 171,
+ "serial": 172,
  "modules": [
   {
    "family": "smi_nvme",
@@ -5221,6 +5221,49 @@
    "min_build": 202,
    "python_tag": "cp313-win_amd64",
    "case": "Yeestor: P2L группами по 3 с самосверкой (вкл.), ленивый сброс 0x6C под ключом (выкл.)"
+  },
+  {
+   "family": "smi_sata",
+   "version": 19,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-19.ssdmod",
+   "size": 2374331,
+   "sha256": "0bdbdbdb7b0d90b79fc4c468671a23c10ae16184056ebba205ab01b8dba7e32c",
+   "modules": [
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.dbg_reader",
+    "controllers.smi._shared.flash_block",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.mpisp_flow",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.passport_sata",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.service",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_build",
+    "controllers.smi._shared.sm225x_ftl",
+    "controllers.smi._shared.sm225x_geometry",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work",
+    "controllers.smi.sm3281.binding",
+    "controllers.smi.sm3281.plan",
+    "controllers.smi.sm3281.pool",
+    "controllers.smi.sm3281.prepare",
+    "controllers.smi.sm3281.volume"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-09T11:24:53+05:00",
+   "min_build": 202,
+   "python_tag": "cp313-win_amd64",
+   "case": "SMI SATA: сторож синхронизации DBG (ключ smi.sync_hang_s, выкл.), аудит 4/5/10/14, sm3281 9/19 (замер затравки на флэшке), карта блоков SM225x (а)+(б)"
   }
  ],
  "revoked": [
@@ -5281,6 +5324,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-09T10:08:50+05:00",
- "sig": "0bee917d5835683b4a0ceb989312cd99f590eaeef57722faec35418abcddec5334a85fb1dd6e9e8826b06e9b0c554508555f2d35040a41019fc03f6f0bb693f5272484f2fc008c6f99f13edfd3222f8bfa1bb83793862a562e9dea4f4099890979592360385c29a1c9beb050aca4d68f52b0d6ba09d6e636a9440aa0f83b55ed0982ee511a2eb6a32d10ab8b62abc3e86deabd356ae27e0742c34b57245ea15c7268123431d8184ab58c0c5cd4fef0e0a080958a1816ac316375d20df7b14a46b7e8ffd8975f4841d829f9e2f5b76d9d06a71d341440ca9f4f71600fa321a107ac5fb3ea6777d9fbd54739748eaa4c7d154fb2760b3a305015f849d056f26240e9006b0dde6fb1abda72e5f3b797a949d6e64ff593145927f90b3069237afc558043a8422ea90899b46a8ff6a55f3c6e44ae3939d1bea29cfb3a38520a8f6e3385dcf31a26f627263371e30b73b985ba25f3acbdb11d58973601f9d6d75603c4721b2ad68743898c913d5603f9fcc1217a1d8d495a5b25ebc1a2f4c62d92e325"
+ "issued": "2026-11-09T11:24:55+05:00",
+ "sig": "31facb216cbed93cbe6153e5b8d01c6369b81635f829576c249827b14da1769c139d2e4c1929a92f0fb0158200daddf6c3b043dab85d844f604b9e6a3431dbd619020368e069e2d78198d86b99f6accbea1870bc0cd85410f8e08e12560be7d934e74a670e85b4fcd870377400d71eb070f84eb3f4ab7e0dcc2c2b9a5521a6f8fd10dd4095eb9dc5d3e5c96c67881e0984e77f9262b3fc40bb9cbb8dc24f12f83e3e1309d152f82e76f43783394c9bee17d1165a2c5a3d4479b74525dbf1663c5e89e1cfb90b36eab99b30b8b8ae4e61bc2fc6da8ac694b9301bcab75b0aeed2aa320d3f8158c2fdc15c167db602892fc2cf136308cfa9b8626d91639174864516de6030e2748a9afa615a32ede6811ee93c941f843c8cd8a412eaa73a630aa5e1104957deb922387bebdf4ab030921e3f35bc4da9e2ad810041cd7281bbf4dbf338f94a731c3dd7388c7741805aa720af34f00515abb476fbc54b19bf99c4e80dc4bc61622b78cec373e76c18e60d61951d5408551e1e82fae4a8ed0350b547"
 }
