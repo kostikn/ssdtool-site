@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 188,
+ "serial": 189,
  "modules": [
   {
    "family": "smi_nvme",
@@ -5958,6 +5958,56 @@
    "min_build": 206,
    "python_tag": "cp313-win_amd64",
    "case": "4B3F 07/08: обход разметки падал — путь сессии ОЗУ после переноса папки прогона в профиль (staged_backend.live_session, recovery_pipeline evidence_folder)"
+  },
+  {
+   "family": "yeestor",
+   "version": 29,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-29.ssdmod",
+   "size": 2521291,
+   "sha256": "404074a588a5fdb60cd95df94bbc39146795bdb93614707270fd753072caa69d",
+   "modules": [
+    "controllers.yeestor._shared.bindmap",
+    "controllers.yeestor._shared.boot_area",
+    "controllers.yeestor._shared.boot_search",
+    "controllers.yeestor._shared.cache_index",
+    "controllers.yeestor._shared.client_log",
+    "controllers.yeestor._shared.container_gen",
+    "controllers.yeestor._shared.dialect",
+    "controllers.yeestor._shared.family_select",
+    "controllers.yeestor._shared.flash_id",
+    "controllers.yeestor._shared.freshness",
+    "controllers.yeestor._shared.generation_branch",
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.index_checkpoint",
+    "controllers.yeestor._shared.leaf_history",
+    "controllers.yeestor._shared.leaf_store",
+    "controllers.yeestor._shared.mailbox",
+    "controllers.yeestor._shared.open_streams",
+    "controllers.yeestor._shared.p2l",
+    "controllers.yeestor._shared.passport_search",
+    "controllers.yeestor._shared.por_journal",
+    "controllers.yeestor._shared.progress",
+    "controllers.yeestor._shared.raw_nand",
+    "controllers.yeestor._shared.read_retry",
+    "controllers.yeestor._shared.service_bringup",
+    "controllers.yeestor._shared.slc_stream",
+    "controllers.yeestor._shared.table_address",
+    "controllers.yeestor._shared.table_cache",
+    "controllers.yeestor._shared.tail_scan",
+    "controllers.yeestor._shared.translator",
+    "controllers.yeestor._shared.translator_ecc_reader",
+    "controllers.yeestor._shared.wire",
+    "controllers.yeestor._shared.ys_state"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-10T20:40:42+05:00",
+   "min_build": 206,
+   "python_tag": "cp313-win_amd64",
+   "case": "BB74: перечитывание «стёртых» колонок таблиц, когда соседи прочитаны (ERASED_REREADS 4), счётчик «восстановлено N»"
   }
  ],
  "revoked": [
@@ -6018,6 +6068,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-10T20:35:54+05:00",
- "sig": "08c02454d2fa160798ad67afe8eb79cd35770972c4111d6c68c306b48cda9179944025976593eabb400c31598861deaf04ca34cd491044e76bbef99234a2a4d27efb92dd19f4acfff383e8a7235b3b16bc457354a74ed853e28ac1362c93984956a24f3f8fa589af6fe3ddccceac7a01d6fce70fefe7b0fa60a4fda5250bd3b3e256768cd6599c59d35c00bd69f5426012db27dc230137432e17c02911b3acc20dacd4275eba48cfe8d73c7c920a7d09dc8a5e9b73da19eb3e2c1f50dc89b886ba8bf00797874d492d18b32f695472753fe07aec320d00023001f3808a65fca0b7c01691a149258e639770281b0f1286534566f3ae1ca039afc1af1ce459695bdb975d148246a1e979cbe65dc4ac2c877b58663544503a8776ecaef5537fb6b26afb08f0cafa8eebc86bc69038f821262ed726bfbd016f05437a001ce21d515aabb1de48a34ef82c9825473f13277604ed6ffae862f2e5ddb0d1e54794676d9c92169785b80bc1087d24e5ccca0f0fec82b3adc2ede180e2a8c7efe95800b380"
+ "issued": "2026-11-10T20:41:07+05:00",
+ "sig": "48b34a3e0b068e518f2e7d8167fb6829debfea1337f5b714eca8063cf312cff9c481d53f5ba85eb84e31ff7038c0eb918d11507767be1c76614ca60f43cf302b27848b37034f27814fa892302df9dbc05ce487505cb95c66af7f0087e065826b3f7f399b2674e7735a34453063d95e5b506268eac859d67704a7b6d71ff8ccc1fa4e2d05a14ac99d0a3bf732fe91793f148245c67e4d283334aa6f8efd62750e455ab1755908f4c1f08daebe121c654be4079bb753786d2318dddaca371956d34d2bac2ca79948dc178d059f3af300d61ea2a0e92c9cfe5868c118f8bb5849820de90d7eb4374caacabd9d240928d5f75904fca1b7ee1ae85856de2f697c50db65e6e053a141189172ea179bd78f4bc4837c983b7cac5afc7e46fa38d35c61d4bb1bdb4b7bffb46920fa5d2b371b38e23f28a5dbc595fa49fad65b227b30c2311c2ca50f7b544016f57b517b3ca6caa229849545640b1508478872d115c5b83fe29b24115892edc193b96f5cb57e457e6ca310196a63df541d2680fd935bf30a"
 }
