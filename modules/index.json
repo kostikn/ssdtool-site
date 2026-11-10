@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 190,
+ "serial": 191,
  "modules": [
   {
    "family": "smi_nvme",
@@ -6049,6 +6049,56 @@
    "min_build": 206,
    "python_tag": "cp313-win_amd64",
    "case": "C100: блокировка переносов снова ВЫКЛ по умолчанию (цикл map_faa:1f14bb3 с ней на mapfix_noasrt_nolog) — владелец «maxio 51 без блокировки — ок»"
+  },
+  {
+   "family": "yeestor",
+   "version": 30,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-30.ssdmod",
+   "size": 2530651,
+   "sha256": "51af86efcbf12c9f1d5f6a3abeb89ab597e204b67827d962164a09570ede0018",
+   "modules": [
+    "controllers.yeestor._shared.bindmap",
+    "controllers.yeestor._shared.boot_area",
+    "controllers.yeestor._shared.boot_search",
+    "controllers.yeestor._shared.cache_index",
+    "controllers.yeestor._shared.client_log",
+    "controllers.yeestor._shared.container_gen",
+    "controllers.yeestor._shared.dialect",
+    "controllers.yeestor._shared.family_select",
+    "controllers.yeestor._shared.flash_id",
+    "controllers.yeestor._shared.freshness",
+    "controllers.yeestor._shared.generation_branch",
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.index_checkpoint",
+    "controllers.yeestor._shared.leaf_history",
+    "controllers.yeestor._shared.leaf_store",
+    "controllers.yeestor._shared.mailbox",
+    "controllers.yeestor._shared.open_streams",
+    "controllers.yeestor._shared.p2l",
+    "controllers.yeestor._shared.passport_search",
+    "controllers.yeestor._shared.por_journal",
+    "controllers.yeestor._shared.progress",
+    "controllers.yeestor._shared.raw_nand",
+    "controllers.yeestor._shared.read_retry",
+    "controllers.yeestor._shared.service_bringup",
+    "controllers.yeestor._shared.slc_stream",
+    "controllers.yeestor._shared.table_address",
+    "controllers.yeestor._shared.table_cache",
+    "controllers.yeestor._shared.tail_scan",
+    "controllers.yeestor._shared.translator",
+    "controllers.yeestor._shared.translator_ecc_reader",
+    "controllers.yeestor._shared.wire",
+    "controllers.yeestor._shared.ys_state"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-10T21:20:29+05:00",
+   "min_build": 206,
+   "python_tag": "cp313-win_amd64",
+   "case": "Yeestor: загрузочный каталог (код прошивки, UDP, паспорт) сохраняется в SA/<stamp>/Boot при «Подготовке» — улика для сдвига порогов (BB74)"
   }
  ],
  "revoked": [
@@ -6109,6 +6159,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-10T21:01:38+05:00",
- "sig": "0dfde05df6e8da043adc0dc97af5b5b3750723eae8b92224db0c45b99598f8f90400f5aa5048e5bc88cece3af3681d302dbc1222df7ac116d8b7f03ddcffc5de4a0a5654b7696b9b678ca9c0f64cfe666a4b7d8a1f05949970c1c332a3bdf7c5e1f99d072c7bd29960c2b01d1a3a8de06ddc87c578b484a3350750abf587bfc591bcbd7a98fe92b8e0e5d9769ef683b847167d14fc3cbd25c210129e698e26263db9891a4bad20697fe7bb2a1ceecc4fbca09a3eae6a0ecb423560ee192e1003222c84b6a4872a9e4807c469b727df0c8caf80d31a899f5392e0d56303c2d32f197c7d4cd6990bdddfeed55b93b7ec6397657347767c0f652863c42be6ef7d15de4f1247e91b5c23d3a32ea35f057c6368f49fe6186693c0a05a96f3680b582bee8135fde9ebd6c3fe47d97455a1ecc62f6e580749f8c253522752495b895906632f2055a0b155b9b4c3915a433543fd9fa2781b8a2da8533bfb563b47f3db328e2693eef4b44eacf25c204b9361f0a566634c6d53edf59d220de8cb7b1c5ed4"
+ "issued": "2026-11-10T21:20:52+05:00",
+ "sig": "999ca01e468019f38e531002b523f922fa2bef1c5109e0da4616702fd30a0db96b4d09fcd64d22867399f8e123f4470e95892a17498693b73e0c69fe5cf529234c6fc2b88a8e3594c19e479d07a4c7d617d6459560badfc67be55a34fb0464f0e27dd6ff98a1d0fd314a258afd921382e1057264684488f8bc0e3c5ec2efb2bf8885de960c9ab425649eba7d3066a725f96b5c3fcef2d0525f9d276c3177ccded3061bf2b4fa8f5aa731b0f9e06c3e3d0d0b4eca8dfd5f8c38640f68e0a8f378fb774abdbf86dac69bdeceb4af6f4fc41584681a6c2f376e7516cd9156eb81e214b2d2aa0db8f3e4ffacb0faabd3574dd09b148d2f01b7ff04079b067bd99ddcb7e2613549e08ca0faea07c0157aa5f544c443f876fe08dfe63496a654a60605b84113cf53462f7ba679688497bf74880a32673f0516cfed275a65f8c42be73483f05c5b155fc20c9705c650f4cc64d190b258a21b77baaed5c547044d0477d296a2fc44e8aa77d5990f7a640b332aaa50d92cd3eecf15ef1d91ac77e86f73e7"
 }
