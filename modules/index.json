@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 185,
+ "serial": 186,
  "modules": [
   {
    "family": "smi_nvme",
@@ -5867,6 +5867,56 @@
    "min_build": 206,
    "python_tag": "cp313-win_amd64",
    "case": "BB74 YS9085N: итог поиска журнала INDEX новее — всегда строкой в окно и журнал (стёрто N из M, порог, найдено/нет)"
+  },
+  {
+   "family": "yeestor",
+   "version": 28,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-28.ssdmod",
+   "size": 2510735,
+   "sha256": "faa18edca9ec8d20e60d624c9811ddaa3d1a4b3cc82b53cdefc0f443f211a0f6",
+   "modules": [
+    "controllers.yeestor._shared.bindmap",
+    "controllers.yeestor._shared.boot_area",
+    "controllers.yeestor._shared.boot_search",
+    "controllers.yeestor._shared.cache_index",
+    "controllers.yeestor._shared.client_log",
+    "controllers.yeestor._shared.container_gen",
+    "controllers.yeestor._shared.dialect",
+    "controllers.yeestor._shared.family_select",
+    "controllers.yeestor._shared.flash_id",
+    "controllers.yeestor._shared.freshness",
+    "controllers.yeestor._shared.generation_branch",
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.index_checkpoint",
+    "controllers.yeestor._shared.leaf_history",
+    "controllers.yeestor._shared.leaf_store",
+    "controllers.yeestor._shared.mailbox",
+    "controllers.yeestor._shared.open_streams",
+    "controllers.yeestor._shared.p2l",
+    "controllers.yeestor._shared.passport_search",
+    "controllers.yeestor._shared.por_journal",
+    "controllers.yeestor._shared.progress",
+    "controllers.yeestor._shared.raw_nand",
+    "controllers.yeestor._shared.read_retry",
+    "controllers.yeestor._shared.service_bringup",
+    "controllers.yeestor._shared.slc_stream",
+    "controllers.yeestor._shared.table_address",
+    "controllers.yeestor._shared.table_cache",
+    "controllers.yeestor._shared.tail_scan",
+    "controllers.yeestor._shared.translator",
+    "controllers.yeestor._shared.translator_ecc_reader",
+    "controllers.yeestor._shared.wire",
+    "controllers.yeestor._shared.ys_state"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-10T20:20:54+05:00",
+   "min_build": 206,
+   "python_tag": "cp313-win_amd64",
+   "case": "BB74: «Подготовка» Yeestor регистрирует папку SA прогона и Translator\\Autosave для «Данные диска» (и при отказе)"
   }
  ],
  "revoked": [
@@ -5927,6 +5977,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-10T20:10:31+05:00",
- "sig": "83fdb5457804179ea6a6d5c9cb41c53bec3687464011e4e44b7401a016d8d0d30458dffc3f4f06baea803533d16d659d8cdc32fc172b709bbf147f38fafede3cb490a07dd9af03410ff90e7c6699650a79fdb2e458a07bc5d4c43f3ace0f61d3558fbc98dadf9cb0c12f616101358d3f99aec11a40ec6cfe6923bd8f296d5a95d1d009b461d346323ad3600bbc015df2c76f8fa7fd429b528a08afeea12e75816d03d02b968cc2b84f80160529d75abcb41161b15b0cb6ab704a5f716939208f10e19114629e07c80c6acc459971d81da85bfb1f1a3e2106f037d3b2edfa916ef22f073146e7eb41164ff90ab580564597d6ff8e03ff479085aa2cc0ed3d3bb28490f6e4689f5b8cef1a6b8f86729f762cd24e7fcf06725edfe0d837feebaae1594d4319284f0e0811b69ad88b11b5933be11f907606ab560800ed87e51f32c963d798138b5aed74457952839059b2b74d340593f86ee8071a8eb3911267c1eedacca8769b5e3ec8b7a9ce1f1cea5349d44bcad598f895323cc7e82a64f5b3c1"
+ "issued": "2026-11-10T20:21:02+05:00",
+ "sig": "31cf60411e0c9252fc1cc9a9030bf2e28dd225431679766f4cea92087638c13298901c02ac6c4c15fa215bf252ca1c801fa112728b0613938a45c4bd0ae56afa6ce1000442ee2b626799831ae27b4141e502c6d826f47b7841a42af482307d0f665f8214c4da32f6f21e234be09eba5514da67e789fcfcaf52273ffb5f08a75eccd4861309077b4cd5fdc0739413dc702466f50b0843cf1ae96f06c1630d741f27e1e8acd494da884385a37f5443b648fca1290aca3f1eac64cacd191905640e14452b7dbc41b3eb8daaac467760d5e27ea2d5b1afb9b37202c3303e79578129ec56d75fd0b5d9955f553af75aead66b911344818959d2f5fc7cf413dd67af83218115aae1be32a11e42ef1d2d41c3c4037d3b880019b88aad00f9c9fd1286138dd3e2ac14d07907ebbbba237b5b4c7b81483c8205ee9cfc931627b1ece9f067923094bb2e08312fc12c664c255d5e44b2bb66d6a47a710ca385736a390a882f1833787cf7bb29a10ef05ae258d59005ff0cda9a3723ebbcf7e00dc23ca92e24"
 }
