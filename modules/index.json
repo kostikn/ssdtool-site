@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 186,
+ "serial": 187,
  "modules": [
   {
    "family": "smi_nvme",
@@ -5917,6 +5917,26 @@
    "min_build": 206,
    "python_tag": "cp313-win_amd64",
    "case": "BB74: «Подготовка» Yeestor регистрирует папку SA прогона и Translator\\Autosave для «Данные диска» (и при отказе)"
+  },
+  {
+   "family": "realtek",
+   "version": 1,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/realtek-1.ssdmod",
+   "size": 152265,
+   "sha256": "a0abcb8e694a05282796320347e3abc74f09058ffd037b621c1fea4e3eb1b027",
+   "modules": [
+    "controllers.realtek.rts5735dlq.ram_resume",
+    "controllers.realtek.rts5735dlq.recovery_pipeline"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-10T20:31:33+05:00",
+   "min_build": 206,
+   "python_tag": "cp313-win_amd64",
+   "case": "4B3F (RL6643/SU650, шаг блоков 4): продолжение из ОЗУ — зеркала паспорта с шагом блоков, обход разметки и при продолжении; приоритет улик trace/bank/configuration_reconfigured"
   }
  ],
  "revoked": [
@@ -5977,6 +5997,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-10T20:21:02+05:00",
- "sig": "31cf60411e0c9252fc1cc9a9030bf2e28dd225431679766f4cea92087638c13298901c02ac6c4c15fa215bf252ca1c801fa112728b0613938a45c4bd0ae56afa6ce1000442ee2b626799831ae27b4141e502c6d826f47b7841a42af482307d0f665f8214c4da32f6f21e234be09eba5514da67e789fcfcaf52273ffb5f08a75eccd4861309077b4cd5fdc0739413dc702466f50b0843cf1ae96f06c1630d741f27e1e8acd494da884385a37f5443b648fca1290aca3f1eac64cacd191905640e14452b7dbc41b3eb8daaac467760d5e27ea2d5b1afb9b37202c3303e79578129ec56d75fd0b5d9955f553af75aead66b911344818959d2f5fc7cf413dd67af83218115aae1be32a11e42ef1d2d41c3c4037d3b880019b88aad00f9c9fd1286138dd3e2ac14d07907ebbbba237b5b4c7b81483c8205ee9cfc931627b1ece9f067923094bb2e08312fc12c664c255d5e44b2bb66d6a47a710ca385736a390a882f1833787cf7bb29a10ef05ae258d59005ff0cda9a3723ebbcf7e00dc23ca92e24"
+ "issued": "2026-11-10T20:31:35+05:00",
+ "sig": "6c2d22d463a501166ca8c4b5a5822b88a607b7fae15e54d417f30ce97e30f3b31603f050ca0d7a531fc25913ca1c90016ab3896f2498ea6dea96d8908dc75a8162f4625cbc0924a707a261b83a0aff36b1ab841223e389d769b0a9a51620c9cbfcea324030692a77ad737519dba0dc3ad58e8bdbbb708a42befcb8d980dc6cdcb266b11545080563167c19c174c5f488257590918027b16d2317c1c9fc319af2562ecf7bae038a36a32dbd83b32d1e8a0c42cb9cddf8752dc2142cbdcbbccd77c0aca9aa0a218796d432a3db9007a6cee07bd84264ba223cf9794779babf662c8cc863512677ddcfdaa05810fcae759fecc8b87f9f3b10ca5ebdb657ad7d8b487dfc15dfb6cb54ba8a28301b28937eea3fb69cceed1a09bfdfb0506167a0186a96a7896d7fb9f703cb326e751b869e7bb7a5778210fef338d26c05ca5e7c87d1def01bc45d0b44908cb934eae5fcc5856fc7baf97cfe912d072d28086ff92a55ab5239028f7dae294770458c6759b671f82f7330106d7b1e486f9263003d74e6"
 }
