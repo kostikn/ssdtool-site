@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 208,
+ "serial": 209,
  "modules": [
   {
    "family": "smi_nvme",
@@ -6825,6 +6825,29 @@
    "cases": [
     "I-2026-1111-01-D1BD"
    ]
+  },
+  {
+   "family": "firstchip",
+   "version": 1,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/firstchip-1.ssdmod",
+   "size": 463449,
+   "sha256": "3658abd2a440924ee0f11b4dddbaeae7f0fa0dee5c16008e3f2d15daa39c2225",
+   "modules": [
+    "controllers.firstchip.fc.reader",
+    "controllers.firstchip.fc.u3_cache4k",
+    "controllers.firstchip.fc.u3_prepare",
+    "controllers.firstchip.fc.u3_scan",
+    "controllers.firstchip.fc.u3_source"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-11T22:31:53+05:00",
+   "min_build": 210,
+   "python_tag": "cp313-win_amd64",
+   "note": "FirstChip FC3379 (U3): кэш мелкой записи 4 КБ в трансляторе — только в пустые места"
   }
  ],
  "revoked": [
@@ -6885,6 +6908,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-11T22:01:43+05:00",
- "sig": "48e51e6bb956172f767467becbf867067109b433422654c88f102da5e27205595f2f0a137ca5f5a162e1416d0e1a8ebe2135a2a55f2fd0737f4616885657f29d6002754fb07618a4f05976e4da29ca53d3821f8e62c2d1ac61ba3f4c2a7fca2b4b6dbc54c76e40be71cdf63bb35e9b00fe57a4c3739fd6957fb9a49455a2199b2f07efef5d1fb219c5912fa1d0ffe2776f2c77dc1180b6ae60f217b9875745bb7fb1dfe075ee72b295d2fd0ec6bf2a1e44ff448b090e8327f28c80f1967d6d5bf2beb5ad8f4805c775540b91a06d8258e8f9362f59e206c5bd5977c50c003013adf58c26db1bc1ec8ffaf7b9476ac0f190d1729d14c6348d2c267f57af7ef45cd42c2075dcabf7c8601af8743a98bc28e48ba26ba03f4c08c2a7979763270c17f63e425c3a3cbc43fa035f23854dd7641a8d4b3ac0a2e4ddb867aa0ab73b0edd9ca36964c20db48d3c70baae432045bd4a9d9983ff65e19b35558851c28c4ff029bb43b2982f3afeac95aae88f0a74f1eb5c76c7e19be4bc4d1a867f49cdf3e9"
+ "issued": "2026-11-11T22:31:56+05:00",
+ "sig": "652929c91299706001f8d5dd3f5df01482022dce52cd56bce00b1f43aa371c0f809ece15a70087aa7e6b0091aa17cc7aa51e974ad95bd4c5ce8bb6c53f68bf9e3fe8644edd1a7b79ca1fde554904a379ed8b62f14bc0855ed2157c09f32c247fe7f3ee7fc98b1575760350c2841651298db04b76f454c806e9c3c363fb1c6e3b490b90b258b51a40508bdbd9bb120f86f99cd1b661e76b67edd039ebf138d5b39a54d916ac321ac0d6212acfef2a69d2b7bc3e80e846c2e1e00518300f97a0a1c3be2bed1e22d365f7966e7688a7d75c3a3080ede005afcfa9bc59ab30e5b33b35d05af4969288d94f7174ec25d4150239d9f843569e8060f9f89b82576bceb5f2bcdb1c9aaca5fe7e27713fbf008212091a2f7def7dffdbf71dbd8636a3b65d8f0a000ab8a689a2f17d625cc39b271b82519c3d2f903a64e2e8d5cfe17a7c7eed1cd885992b54f4806a0b56cbd8055469a5b3521f30495040f039e0ca7b09c07a14fac409af340008f337d1d39bab170d8b422a58ad5ba166ccaa845094a6d0"
 }
