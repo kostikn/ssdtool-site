@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 206,
+ "serial": 207,
  "modules": [
   {
    "family": "smi_nvme",
@@ -6717,6 +6717,60 @@
     "I-2026-1111-27-5A1D",
     "I-2026-1111-28-5A1D"
    ]
+  },
+  {
+   "family": "yeestor",
+   "version": 32,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-32.ssdmod",
+   "size": 2687634,
+   "sha256": "18584297e3c4c910b6b40ef3419e50943d88841aff4b62336687d9122d071c24",
+   "modules": [
+    "controllers.yeestor._shared.bindmap",
+    "controllers.yeestor._shared.boot_area",
+    "controllers.yeestor._shared.boot_search",
+    "controllers.yeestor._shared.cache_index",
+    "controllers.yeestor._shared.client_log",
+    "controllers.yeestor._shared.container_gen",
+    "controllers.yeestor._shared.dialect",
+    "controllers.yeestor._shared.family_select",
+    "controllers.yeestor._shared.flash_id",
+    "controllers.yeestor._shared.freshness",
+    "controllers.yeestor._shared.generation_branch",
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.index_checkpoint",
+    "controllers.yeestor._shared.leaf_history",
+    "controllers.yeestor._shared.leaf_store",
+    "controllers.yeestor._shared.mailbox",
+    "controllers.yeestor._shared.open_streams",
+    "controllers.yeestor._shared.p2l",
+    "controllers.yeestor._shared.passport_search",
+    "controllers.yeestor._shared.por_journal",
+    "controllers.yeestor._shared.progress",
+    "controllers.yeestor._shared.raw_nand",
+    "controllers.yeestor._shared.read_retry",
+    "controllers.yeestor._shared.retry_table",
+    "controllers.yeestor._shared.service_bringup",
+    "controllers.yeestor._shared.slc_stream",
+    "controllers.yeestor._shared.table_address",
+    "controllers.yeestor._shared.table_cache",
+    "controllers.yeestor._shared.tail_scan",
+    "controllers.yeestor._shared.translator",
+    "controllers.yeestor._shared.translator_ecc_reader",
+    "controllers.yeestor._shared.wire",
+    "controllers.yeestor._shared.ys_state"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-11T21:51:51+05:00",
+   "min_build": 209,
+   "python_tag": "cp313-win_amd64",
+   "note": "Yeestor: повторы «стёртых» колонок таблиц выключаются сами при малой отдаче (256 повторов, <1/10)",
+   "cases": [
+    "I-2026-1111-01-D1BD"
+   ]
   }
  ],
  "revoked": [
@@ -6777,6 +6831,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-11T21:19:07+05:00",
- "sig": "41a0df5c207b5e3feba1d0a2346d121792867af1e30fff68a80fd7c276383d9038425ae3f0482c27f120cee1c94b1058e1b8871ef4a5bb74c98eedf837e074d128048b0a3d34d7fe916b4dd8ede2b46987d10e42bb56b1e78e234acc8c8f55f6ae56cfb643a7dd468292172badb42d8cb071b1202c68468665c53ebb21efd0c55bb7e7dca471b7b62dfd5b49c0b21ccbbe435a80541e339166023075b43a4845afa309105fc0c92ecc23d6ce3d5003949af7cb1954fe8199bc1a7a6a6fd22e43904baf8a0e936cb98cc2ae7f5e33250dbf96dc4ec33c4b132db33e8b443623612e25618dfd17c9ca08708e0ccd84209439e06f77ca97eada04c0b1c8605c2bc0adddd3179f96e21c54d0e330eb69e0fb2f5472744fffa46b16c54de6cc7047a1856b5e39651b72e0ed99d18f2f9979d5c9f85d1a044acddf8d1d63917326b19d89b000be7910a86f85212357984cdea6e35f1db809cb7afec8d6979f7676e5352958cb741dc10388065f595d791bd090db9e3c1dc11821a7e73323f3603e1da3"
+ "issued": "2026-11-11T21:52:02+05:00",
+ "sig": "7fcb9a929c650cb17782589595063cc11f291370fd1f5f4c455eaca0cfa5691285a4a618dd8fc20176fbdc850d5326cc7735065bcd35963f929fb4f80539de9de01a9818376d1b99944fab8283a03d3b778762464988149fc19f74ba61e1fbadf9bb45eaf32cfd8d448d26c8f43c452ebf91a4942a54e603aaa8aa49130bf6fb7005f3d2916e8e1dab1a446a7ad5ed2ba18ba48bca76eea0defdd2368be5231b6a01bb32b90b30b08fcd834b9a92c40c026576842524e940d048e427d4be2f999418908b1087d1720b3c4d7ec861a626c4480121a0663f4ed81abfb07436f7c78902fafdaccf938b43b1fe1a2967eb48be389e49b75f2038ab29ec528f103a7fb968a6e93ceacff12ac86b6e2f35e882ac26770225afbe604fe64adc827c91a339db91edfd1d88830f071f5647c3947ed7e04a67814ec00eba6f2c0efafe1558650ed0c8eb304e2e2e2cb518cafd69a42db14ed7c912609aeb4d6ad14988414c729a8996430f7046dcbf9455608d04e9de4341c2649cfa30cc9f4d76dd47e6be"
 }
