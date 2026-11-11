@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 203,
+ "serial": 204,
  "modules": [
   {
    "family": "smi_nvme",
@@ -6584,6 +6584,57 @@
    "cases": [
     "I-2026-1111-26-5A1D"
    ]
+  },
+  {
+   "family": "yeestor",
+   "version": 31,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-31.ssdmod",
+   "size": 2686288,
+   "sha256": "03ba91668c2816fab4270e422f64904ac8735d6045f364bcb84b6951b543a2ee",
+   "modules": [
+    "controllers.yeestor._shared.bindmap",
+    "controllers.yeestor._shared.boot_area",
+    "controllers.yeestor._shared.boot_search",
+    "controllers.yeestor._shared.cache_index",
+    "controllers.yeestor._shared.client_log",
+    "controllers.yeestor._shared.container_gen",
+    "controllers.yeestor._shared.dialect",
+    "controllers.yeestor._shared.family_select",
+    "controllers.yeestor._shared.flash_id",
+    "controllers.yeestor._shared.freshness",
+    "controllers.yeestor._shared.generation_branch",
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.index_checkpoint",
+    "controllers.yeestor._shared.leaf_history",
+    "controllers.yeestor._shared.leaf_store",
+    "controllers.yeestor._shared.mailbox",
+    "controllers.yeestor._shared.open_streams",
+    "controllers.yeestor._shared.p2l",
+    "controllers.yeestor._shared.passport_search",
+    "controllers.yeestor._shared.por_journal",
+    "controllers.yeestor._shared.progress",
+    "controllers.yeestor._shared.raw_nand",
+    "controllers.yeestor._shared.read_retry",
+    "controllers.yeestor._shared.retry_table",
+    "controllers.yeestor._shared.service_bringup",
+    "controllers.yeestor._shared.slc_stream",
+    "controllers.yeestor._shared.table_address",
+    "controllers.yeestor._shared.table_cache",
+    "controllers.yeestor._shared.tail_scan",
+    "controllers.yeestor._shared.translator",
+    "controllers.yeestor._shared.translator_ecc_reader",
+    "controllers.yeestor._shared.wire",
+    "controllers.yeestor._shared.ys_state"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-11T21:13:14+05:00",
+   "min_build": 209,
+   "python_tag": "cp313-win_amd64",
+   "note": "Yeestor: без ложной строки «read-retry нет», когда у службы есть таблица порогов из прошивки"
   }
  ],
  "revoked": [
@@ -6644,6 +6695,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-11T21:09:39+05:00",
- "sig": "3eb14e941a02ccdc6c4a4743b16cdbb558952b1229ed150d4995c118c1c8c66d501f2e371e211a735dbc8157ccdb57abe6ca05c0e55a904ffe6b55d473505990dd316592bf2702f30ae19ba050aa16dbc559b70b02d9f7cfbab7c6d1ac2327fc2fe926de7b3e6168e5f9da61936c607ac99f7e04748ed42ce647f41ad0c09785fcaeb6a327408786d84402098ac4708e8e45669472d3414b093accb3233d7064c01a8f1277e32292063f16823725124fd679a7c0c91c427d3aac8272f893346e3f63abd86a6699c59d1ebbc40b41c8d7ad62d5dfe4274b7675ba2fa556e6759506da47490f9df6853f7efb1aa21e54060ff18e6d175193bfb61534ea9b62fe00f193bc8e5c3120df560707a68265130575e585d5096942c4580767295ad2c461d08bac5295581d718e14a39e867a1797e5dcb35c61cf89f01637993fcba3c404633050fb7e5e92f481cc95f4c23e18fb48997d38317352a702c11cb42c13728ad552e3d2f1c3d8496e27fb21fea782d7b756f6a5a809a9f1b115e4a76ced2fab"
+ "issued": "2026-11-11T21:13:24+05:00",
+ "sig": "42b50dad8b1233f020eb28f911a011ee430b19ab9a569a16026921c52c2bc1996c95376b05cfde9a52b66d0d5a6cd95fbb353a8fc2896276b04d27a805129ed1fa75e32168a8507ee101ac134611bacf34d8589cdac692600626be4476e3c28ac4b96db69672f485ca6731f38dba97e3a40d52ab9319dcca2fbf91a501595e49b84b05dc3365dccaee53a53c8d6acdf7f6ec58e4fbb18c09d8ebf1b0fbab96997f31bc6a6fa3f4ccddd7bfbb35f9de0eb6a26f89fe5131bbcd19919d883f2d6d8d7543050a551bba09fc250b409300d933592223502927ed53619657125dccf3715ced29ac88a884e2ce83d219617a4980e75d4b19a4166565694d04cf489cfdab9f3b1abc653ae0ac257f77487b4df450655b75e44bb8606cd8dc7957b4d4e1739a147d19d746b994e08bf760143698403a51ef246478467b29a304a367e8e3d0815f49f1227627730ac7d07ffd52de373b49a748adb674a25c3a57bac698bb4ad70ee38e8e1ec5f2ff11690a44d58fb48de9d7228b97123f4b07f64365cfe6"
 }
