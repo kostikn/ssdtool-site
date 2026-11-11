@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 196,
+ "serial": 197,
  "modules": [
   {
    "family": "smi_nvme",
@@ -6310,6 +6310,37 @@
    "cases": [
     "I-2026-1111-08-998F"
    ]
+  },
+  {
+   "family": "realtek",
+   "version": 4,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/realtek-4.ssdmod",
+   "size": 808295,
+   "sha256": "eed2e51768acdef330015055f562dcd4a6c0565aa641298c79421e3888ba0fbc",
+   "modules": [
+    "controllers.realtek.rts5735dlq.original_parameters",
+    "controllers.realtek.rts5735dlq.ram_resume",
+    "controllers.realtek.rts5735dlq.recovery_backend",
+    "controllers.realtek.rts5735dlq.recovery_pipeline",
+    "controllers.realtek.rts5735dlq.retry_sequence_layout",
+    "controllers.realtek.rts5735dlq.schema_search",
+    "controllers.realtek.rts5735dlq.staged_backend",
+    "controllers.realtek.rts5735dlq.staged_reader",
+    "controllers.realtek.rts5735dlq.translator_evidence"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-11T20:09:16+05:00",
+   "min_build": 209,
+   "python_tag": "cp313-win_amd64",
+   "note": "RTS5735DLQ: SSV5 односегментный — параметры диска в поиск раскладки, вывод раскладки запуском кода прошивки",
+   "cases": [
+    "I-2026-1111-19-5A1D",
+    "I-2026-1111-20-5A1D"
+   ]
   }
  ],
  "revoked": [
@@ -6370,6 +6401,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-11T19:59:41+05:00",
- "sig": "566a803e94656e74b6ddddb0b583ddb0e5bfcca835a575dcbad8a83d4afaacc419120e7bc2decf9f96d1f8942c5726d98546e766457d90e37acac8a3cfba1367ea08b5942c9a0c2059d3f28ec60318718e1f82fd45fad9f01a4028109e1a87779fc9e800b973708b69822b07527fe73d273cadb289402a25689932ce12c199e8877ac5d42a812926e6c8cab61249c076d0e32af5f47a60555d6e1913c9bf07fbb01c34e6ca6933bae7ac927b45ff7d585a8f1ced2ce9b1e2035558d169d08279eef53a6778cd33e46e9d42491dcad4f381d9af8eb429da14e0cda4fe7aef3a6c7d01167ad007e7931ee8a9fa8c28bc29601b3fcb08ca9173a322af0e5ed5c85a703d206cea657696a1cb5c6ef3b402e8ea89a7ab5e4dd8b637562a904503aca8066ec9e1cf368c616ef591a054bc16d91920d5367e250c15f6204100cde38f33046192c72d71be469775a9f08a7ad54673459d2b92d37bacbb168ba7022733dd4d822cd538cede03288760a4c9d9378e93ade844c3d7c915f37cf6fc5155325d"
+ "issued": "2026-11-11T20:09:24+05:00",
+ "sig": "9cbe36e42a234617d5b569df178688038ba1d07861a441708cd00dc8851ef306164fd1f9c79edc110a7a1ce636f4795a3ed86f936a9820dc39f0e027a37464fdd28c6d33eb79a0f375d526dd152b5e9402398f07212fba4f10449c53cb3c745f1f66261922e7219eca558ac5ac219215fb63aba44ac92ac3ab51963d132755cc1bc60c31b3eac33f9a669c87eb8832251565af01e514dcd2644010ff2bc56344d64c798edfbcca1c98d30345da8ec1da05956206850ff7c498531cea37339ed3663698023b09a478cd9057341a8733e3b4214dc1adc36bed0a768c066fc38f235e7b809477f671fcc1415d5c3927312a496acf3b65d9438819cf56d725a2a868841e2f880ac20f80d98c878f3c1b9651095dc51dc47cd4e3ba74e763f9895d8ad4c23fc9b565c7747732b79480860c51e489099fc81ac14ad0b316c72f8222f6b20867f24d8dba86086844bee0469040878876e1b98c45582d0df38160f9840768e17a26ca39cb0ae1d38d38aabd2c7e736d28a593eb14142e2f93ae44356ec1"
 }
