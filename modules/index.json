@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 204,
+ "serial": 205,
  "modules": [
   {
    "family": "smi_nvme",
@@ -6635,6 +6635,54 @@
    "min_build": 209,
    "python_tag": "cp313-win_amd64",
    "note": "Yeestor: без ложной строки «read-retry нет», когда у службы есть таблица порогов из прошивки"
+  },
+  {
+   "family": "maxio",
+   "version": 59,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-59.ssdmod",
+   "size": 3711983,
+   "sha256": "33e87f515facdb54f10c86ff190caffdc34ab323f5975a816f289eba16415ee5",
+   "modules": [
+    "controllers.maxio.map1202.ram_start",
+    "controllers.maxio.map1202.self_repair",
+    "controllers.maxio.mas1102.binding",
+    "controllers.maxio.mas1102.catalogue",
+    "controllers.maxio.mas1102.codeblock_build",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.locate",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.passport_nand",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.probe_thresholds",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.retry",
+    "controllers.maxio.mas1102.rr_pio.c100",
+    "controllers.maxio.mas1102.rr_pio.c100_data",
+    "controllers.maxio.mas1102.rr_pio.c100_probe",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.state_marks",
+    "controllers.maxio.mas1102.thumb_nop",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-11T21:16:52+05:00",
+   "min_build": 209,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAS1102 C100: проба порогов v2 — все строки, GET после чтения, годная страница-контроль, SLC со сдвигом #25, предел 20 мин",
+   "cases": [
+    "I-2026-1111-14-998F"
+   ]
   }
  ],
  "revoked": [
@@ -6695,6 +6743,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-11T21:13:24+05:00",
- "sig": "42b50dad8b1233f020eb28f911a011ee430b19ab9a569a16026921c52c2bc1996c95376b05cfde9a52b66d0d5a6cd95fbb353a8fc2896276b04d27a805129ed1fa75e32168a8507ee101ac134611bacf34d8589cdac692600626be4476e3c28ac4b96db69672f485ca6731f38dba97e3a40d52ab9319dcca2fbf91a501595e49b84b05dc3365dccaee53a53c8d6acdf7f6ec58e4fbb18c09d8ebf1b0fbab96997f31bc6a6fa3f4ccddd7bfbb35f9de0eb6a26f89fe5131bbcd19919d883f2d6d8d7543050a551bba09fc250b409300d933592223502927ed53619657125dccf3715ced29ac88a884e2ce83d219617a4980e75d4b19a4166565694d04cf489cfdab9f3b1abc653ae0ac257f77487b4df450655b75e44bb8606cd8dc7957b4d4e1739a147d19d746b994e08bf760143698403a51ef246478467b29a304a367e8e3d0815f49f1227627730ac7d07ffd52de373b49a748adb674a25c3a57bac698bb4ad70ee38e8e1ec5f2ff11690a44d58fb48de9d7228b97123f4b07f64365cfe6"
+ "issued": "2026-11-11T21:17:04+05:00",
+ "sig": "59c057c1e10815cb245459dea31368ca137b7902a41b447d1951b993de8d7476af8ab1ddd2ab10fac2f9f2cd76a335b52947b76bbbc1459aaf45a6e20aee54e4bc1d389e077a2cdb9d55520f986b992f59338aecbbdb337fcdddf692e7fee3143e5d18d91b288691a4936b803d5c5183f462f34e5937bbffe7727ba66793cd6700b905a16a0d9983393b8268bdbb688ef0c8927cc02f8e1ad7d96ffa8ab50f6066aa4cbf99f2736ef8e4e6935b57b03308f4947e525ae71cae71bb525be3f8a3331191f77a6dbb1d259654ca27fc064ff640161e1fa543ac734d220a1a96a0507c640ee09facfc09ed471f67cdc5dfc0df644f6cd426e58f700dc336becbdf83ddab71b473b9471c0b7e29aa70e66dae0fa04258f76e24ed793614f8be95e3eb91e2abac27149f62c9fd1a5df508cba5566e6d66ef7207f3eb74a3b76b3aea049011315ce519706f1836284260c66959f943bc246a789a3b2e35a0eef6734ba5286b31b5c10f3c72b2677d4487920e80a62d368cbe51a838a44736913efd1481"
 }
