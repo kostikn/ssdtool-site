@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 195,
+ "serial": 196,
  "modules": [
   {
    "family": "smi_nvme",
@@ -6262,6 +6262,54 @@
     "I-2026-1111-12-5A1D",
     "I-2026-1111-13-5A1D"
    ]
+  },
+  {
+   "family": "maxio",
+   "version": 55,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-55.ssdmod",
+   "size": 3663936,
+   "sha256": "c5dc309cf1c3e229380938fd2164b977aa219f3246adda781b504cacec73ce14",
+   "modules": [
+    "controllers.maxio.map1202.ram_start",
+    "controllers.maxio.map1202.self_repair",
+    "controllers.maxio.mas1102.binding",
+    "controllers.maxio.mas1102.catalogue",
+    "controllers.maxio.mas1102.codeblock_build",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.locate",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.passport_nand",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.probe_thresholds",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.retry",
+    "controllers.maxio.mas1102.rr_pio.c100",
+    "controllers.maxio.mas1102.rr_pio.c100_data",
+    "controllers.maxio.mas1102.rr_pio.c100_probe",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.state_marks",
+    "controllers.maxio.mas1102.thumb_nop",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-11T19:59:18+05:00",
+   "min_build": 209,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAS1102: P2L при пустых таблицах — строит по меткам страниц, а не падает «нет листьев»",
+   "cases": [
+    "I-2026-1111-08-998F"
+   ]
   }
  ],
  "revoked": [
@@ -6322,6 +6370,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-11T19:20:33+05:00",
- "sig": "1a8b0d35eed4572e43dcdc41fc5dab6b78ba3a7bbb2749c63d716b66d5138468cdf06289857e3908f68c69bd75c6dfa640156eef544ff1beeb0820291dc3583e4268d45f6f357467eee04a71c3b05c9d88f756111251f33fb407de5d50f3a438d26f21f873b12fda43d96a143dc1f1c4ef6b9ed72eb05a7ae58acc20102f6555423d0f7f4100cab299b3fc61b4f7b148cef1d27f801ef369edef519faeab214b3c4aef94d66fc15211be81e3ebccb19a93047e56b8f8d248a8d057ca005e4daccb93318a55c710aa5708471c809b6adc44bc902ecd86beeda3f28e2b2effe291f708c67e7d97c7ea1ffd17884febec6aea1b579a0a2d50e5abc3e49a9e149881887c41b0531c1e8d790e669aca7d266f171e44c9831473bb3c1946fe6be4c3979e5c85aea21ed5098fb6c019892808a94d233d5146d1b4e8dfefc01713809013eafcfaf4c00ca82c828fd6dcd68c1671890c0c3989d6fdadbb8851a8789593d5f0d1aa720d91052ca6961a23180ed93c3229f1d6dca2515e82046a859d735adf"
+ "issued": "2026-11-11T19:59:41+05:00",
+ "sig": "566a803e94656e74b6ddddb0b583ddb0e5bfcca835a575dcbad8a83d4afaacc419120e7bc2decf9f96d1f8942c5726d98546e766457d90e37acac8a3cfba1367ea08b5942c9a0c2059d3f28ec60318718e1f82fd45fad9f01a4028109e1a87779fc9e800b973708b69822b07527fe73d273cadb289402a25689932ce12c199e8877ac5d42a812926e6c8cab61249c076d0e32af5f47a60555d6e1913c9bf07fbb01c34e6ca6933bae7ac927b45ff7d585a8f1ced2ce9b1e2035558d169d08279eef53a6778cd33e46e9d42491dcad4f381d9af8eb429da14e0cda4fe7aef3a6c7d01167ad007e7931ee8a9fa8c28bc29601b3fcb08ca9173a322af0e5ed5c85a703d206cea657696a1cb5c6ef3b402e8ea89a7ab5e4dd8b637562a904503aca8066ec9e1cf368c616ef591a054bc16d91920d5367e250c15f6204100cde38f33046192c72d71be469775a9f08a7ad54673459d2b92d37bacbb168ba7022733dd4d822cd538cede03288760a4c9d9378e93ade844c3d7c915f37cf6fc5155325d"
 }
