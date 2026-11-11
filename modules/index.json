@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 199,
+ "serial": 200,
  "modules": [
   {
    "family": "smi_nvme",
@@ -6421,6 +6421,39 @@
    "cases": [
     "I-2026-1111-10-998F"
    ]
+  },
+  {
+   "family": "realtek",
+   "version": 6,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/realtek-6.ssdmod",
+   "size": 971475,
+   "sha256": "4b29b5d803a6c59b6c3d58b29c0004b702d52a8bc306acd6ec1634a05575b7d8",
+   "modules": [
+    "controllers.realtek.rts5735dlq.committed_checkpoint",
+    "controllers.realtek.rts5735dlq.gui_actions",
+    "controllers.realtek.rts5735dlq.original_parameters",
+    "controllers.realtek.rts5735dlq.ram_resume",
+    "controllers.realtek.rts5735dlq.recovery_backend",
+    "controllers.realtek.rts5735dlq.recovery_pipeline",
+    "controllers.realtek.rts5735dlq.retry_sequence_layout",
+    "controllers.realtek.rts5735dlq.schema_search",
+    "controllers.realtek.rts5735dlq.staged_backend",
+    "controllers.realtek.rts5735dlq.staged_reader",
+    "controllers.realtek.rts5735dlq.translator_evidence"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-11T20:58:34+05:00",
+   "min_build": 210,
+   "python_tag": "cp313-win_amd64",
+   "note": "RTS5735DLQ: ABORT окна статуса кода в ОЗУ — сразу понятный текст «выключите питание»",
+   "cases": [
+    "I-2026-1111-23-5A1D",
+    "I-2026-1111-26-5A1D"
+   ]
   }
  ],
  "revoked": [
@@ -6481,6 +6514,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-11T20:35:48+05:00",
- "sig": "116a59736443742893f11c03d8cbc918259b2fb19ee49f2fddcec8231aa8fdad8aa89fde9f855bff732c41f30c0951462a145e055f84c169dcadfd1c1330c90640c59a1e0ed80ce704c12cd80d0161405e28fe95ede8c4d0387be28e44baa6e674e4c2648c9788561cb45d711ee5913a84a41689746b088513d3d39ec65775829ba96e24158d00b1fd6a8d87e490ab472b76bb97c29bf59751d981f4e18ec4d88838c3c95c2dcb0db90fa6b8bb409aed1a9333cf155cd9f9913f3f192ca818e99868e3388854608b1216e2faf8290f35f7e5f3290a47e3eec65ac9b02cfa85345f90ce8e3874b08d1f0d8dde6bf8c848e088a906bad9e619ea75ac1fdb0abc81b410795e700e06e661445a212fee27371c5cd92f95edab9848b45374727d7648d2d8ad0935f3fbe259809c24a813f30027e4ad4bf47b03e5beda80a545b55679c8902a942b46f0353a1b987da7aab1310d3fbbeebc27b185bd51591046f0589a63fe513bf3c5448fc4cfb6898a4f5c8f92af4087e4022c77e6ddd9022986f952"
+ "issued": "2026-11-11T20:58:41+05:00",
+ "sig": "26edd372ce95bb151860c209722f87307e1b49c693e055a88a26d860a5caa5139c3ddba5e6c32977bb22beab84328202c313ceb45f86c4b24dba140bc03998f2f4c10281011c89271def7e70f6fa9b700f56ef20b7f0b09d79b1107cebd94284dc6ff9d2911f0617530e592433ddcd6767a60a8b3d94f7717b19085edf759dc60d785917dbf83195d99c067777e5209bd8724eefb5810414396da65ab8a78e650ab5e3ce3e1f2dbadf0c56d38550718868fd6abca380530a0c2986acc7de817d0c07dcc86b60cfaff7544c97b526fadb2abbaca0c65016ae72c4f24e3bd3c8ae1afe437d6397faed667da11062b13955187d774de58507076293b4129888d127126dd8dc5e8fe5700f626c8f2a7927ea2069031e95d92a77f7b45ae777273e31bc6c1801527633f317ac5726f2a1b0d8d0e8b619169778e07229d92c5ce068c4aa46dd33f4ce5d00c388aea408530b94a19631999ae5c001581ee6e1c7d159eca153cefc0d86e8b6bc735c357343bcafc503bfdc87177d5162d5d4ad7207f670"
 }
