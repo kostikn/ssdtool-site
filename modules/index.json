@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 201,
+ "serial": 202,
  "modules": [
   {
    "family": "smi_nvme",
@@ -6504,6 +6504,54 @@
     "I-2026-1111-12-998F",
     "I-2026-1111-13-998F"
    ]
+  },
+  {
+   "family": "maxio",
+   "version": 58,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-58.ssdmod",
+   "size": 3679882,
+   "sha256": "21dd566bdc03fe9602dfb4fd9eb82ccbe15c10f4d139c18f8cfa86e5a330602c",
+   "modules": [
+    "controllers.maxio.map1202.ram_start",
+    "controllers.maxio.map1202.self_repair",
+    "controllers.maxio.mas1102.binding",
+    "controllers.maxio.mas1102.catalogue",
+    "controllers.maxio.mas1102.codeblock_build",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.locate",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.passport_nand",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.probe_thresholds",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.retry",
+    "controllers.maxio.mas1102.rr_pio.c100",
+    "controllers.maxio.mas1102.rr_pio.c100_data",
+    "controllers.maxio.mas1102.rr_pio.c100_probe",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.state_marks",
+    "controllers.maxio.mas1102.thumb_nop",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-11T21:06:29+05:00",
+   "min_build": 209,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAS1102: «Достроить по меткам» продолжает набор по частям после Стоп/перезапуска",
+   "cases": [
+    "I-2026-1111-13-998F"
+   ]
   }
  ],
  "revoked": [
@@ -6564,6 +6612,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-11T21:00:46+05:00",
- "sig": "235e1d8d7001ab9e28910e6f6ad2cdea105e05619876bd0bbd0e6cdeed88c6021d6155abd6e2a219ba3e6d51f470c56a760aaf9ef1983c1735d465db1ab26d487e1a11fb5e798987d6f29b82dfe962bee2008b1cd0ffa2b9528b46bf2d914a8f681af0853ccb720d500479e6850c9e163ace36bf5f01deb18296d64b79afff046afea9215926bd91472315f38c0e899147016a2dafcf51597627776a4d324ead44b10bcc45381118d9cfcb4b6b88d8842e06de39f265002bbd9aee726feb50fc3330f5ce18781f86b251a6c7e836d8b1c03d76703514a0e5ea51cf1833522485c7e3879c256c4dd152d6387597dc22664540f2bd8abc962cec5cbd384c76e7ab3f8a62c9422b88407fc530264025848c6398071dab9cafab4a4c8e04f0a6cf02fa90d43cf2f4d0cd01e5abf773be3b879661375dd28eae5488fce7c0e7806658585c2cb6ea53fa10211e9d35eed989800e7b4d29df66668b5a5bc8bf07b998abb4e82e7a3b4c056c48af73adebf9647db5c4162fdb5ea9084b770edcbee51970"
+ "issued": "2026-11-11T21:06:38+05:00",
+ "sig": "5a6fd56caccccdc9007386abd87e95b19b3487f001f54d07a13851a9533e48a0110c8218254b8052f736d5c36b9c2371cd5860fe4f6a1d1247f9c553d2305ff31006a15b808524536678085b7fb8bafbc5542f47fbef25df90d879ad7f808feb24e71ec032845f84154529df722069ed6bc70600a21dc4e18d7c29c026f1925f7dd0d15b559527f04c34025493dd42fb61519a35e4b86536f7dfb599b469b54a0cf75fcf721ab1693206cbc992d6290360d575ee5f2834a479571d5b491e5f72bf0d7914d3bf95bebbedd33e5217716b58923f89601e6904fd671f3c4d453c07ecfe60481f3b5b68af64a71967d57c5f95b23e0fab5121b1e5e38869bd6bd2d12d6dc567fbd2eab9a04554a9baad4ae3fb6648f7f309b25ffa9c43df1a609b298b1594280145f73a653a3dcb9805e6a2673d1132f93a64f0d8af8c2f57f06ca072190e705b7e4f3d9abe04c0a1b748a38ea1f0a3420bfd08b46307053d2088c7ef2c4ce5f2d6e3a9881d0b03d1dff1e96fbed91b6ed48af06310ccab2e85a1ff"
 }
