@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 194,
+ "serial": 195,
  "modules": [
   {
    "family": "smi_nvme",
@@ -6234,6 +6234,34 @@
    "cases": [
     "I-2026-1111-02-998F"
    ]
+  },
+  {
+   "family": "realtek",
+   "version": 3,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/realtek-3.ssdmod",
+   "size": 569993,
+   "sha256": "137d6dea3e5ef62205a9c1666859086ede2ce2dcf0f20e1809d96ca76fbd7b6b",
+   "modules": [
+    "controllers.realtek.rts5735dlq.original_parameters",
+    "controllers.realtek.rts5735dlq.ram_resume",
+    "controllers.realtek.rts5735dlq.recovery_pipeline",
+    "controllers.realtek.rts5735dlq.retry_sequence_layout",
+    "controllers.realtek.rts5735dlq.staged_backend",
+    "controllers.realtek.rts5735dlq.staged_reader"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-11T19:20:31+05:00",
+   "min_build": 209,
+   "python_tag": "cp313-win_amd64",
+   "note": "RTS5735DLQ: проверка геометрии собранной конфигурации без порядка SLC<=TLC (SSV5); повтор B47R — отказ до шага без программы",
+   "cases": [
+    "I-2026-1111-12-5A1D",
+    "I-2026-1111-13-5A1D"
+   ]
   }
  ],
  "revoked": [
@@ -6294,6 +6322,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-11T19:03:49+05:00",
- "sig": "4ec61f914687cc6b923dc375c9c4dcb71dbcf8019d5d19f4211e418254f2c8f1b630b51e6cd4212b72276c0fced1d1cef410dcda9c4b5edfd26bec97085400d1fb46bf64bf540f97a7e29759810e3c39904a33cc7885b54e76e645edba97d3e403ddf1c8511345a138d70670bf16937b48f2d0fbb36ff4965ceb3bb1d580cc09ba1b339fec78a1c7dd5193747e655d54f1c2ad3ccc6d842c9bdcb6f65607386621a65867e027230ad79b8425ccdb6d40b7d68db6c28234b296502bd06a3d1537aac8885bfed463692fd25169e0a7ac4c01ca16280ef72db5ed66cca858f8e0dd30accd0aa32c5b404624260e7779755cdb39381b8bb143d10261162ceff0823936150874c8ffc4ab6bc815fba9fb19eee3810af21a3d53225f0bb8083288e9dea8e72641eb6594c4f2f9feb2bfb9fb2f8a2ca9afb709beda57d4526a96edf28e6199959cd4f8f27a56553f14f3db05bfa10ddacd45c0daf243ef01309e6e87090e3d434f123f7fa7878464eef9ceb8ea7bbddc1110bd72d12a2fcabc064255a2"
+ "issued": "2026-11-11T19:20:33+05:00",
+ "sig": "1a8b0d35eed4572e43dcdc41fc5dab6b78ba3a7bbb2749c63d716b66d5138468cdf06289857e3908f68c69bd75c6dfa640156eef544ff1beeb0820291dc3583e4268d45f6f357467eee04a71c3b05c9d88f756111251f33fb407de5d50f3a438d26f21f873b12fda43d96a143dc1f1c4ef6b9ed72eb05a7ae58acc20102f6555423d0f7f4100cab299b3fc61b4f7b148cef1d27f801ef369edef519faeab214b3c4aef94d66fc15211be81e3ebccb19a93047e56b8f8d248a8d057ca005e4daccb93318a55c710aa5708471c809b6adc44bc902ecd86beeda3f28e2b2effe291f708c67e7d97c7ea1ffd17884febec6aea1b579a0a2d50e5abc3e49a9e149881887c41b0531c1e8d790e669aca7d266f171e44c9831473bb3c1946fe6be4c3979e5c85aea21ed5098fb6c019892808a94d233d5146d1b4e8dfefc01713809013eafcfaf4c00ca82c828fd6dcd68c1671890c0c3989d6fdadbb8851a8789593d5f0d1aa720d91052ca6961a23180ed93c3229f1d6dca2515e82046a859d735adf"
 }
