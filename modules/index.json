@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 207,
+ "serial": 208,
  "modules": [
   {
    "family": "smi_nvme",
@@ -6771,6 +6771,60 @@
    "cases": [
     "I-2026-1111-01-D1BD"
    ]
+  },
+  {
+   "family": "yeestor",
+   "version": 33,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-33.ssdmod",
+   "size": 2703790,
+   "sha256": "9fdd0703053f4181931a8374535112e1ea2077eb7431d729c7652b68249239d6",
+   "modules": [
+    "controllers.yeestor._shared.bindmap",
+    "controllers.yeestor._shared.boot_area",
+    "controllers.yeestor._shared.boot_search",
+    "controllers.yeestor._shared.cache_index",
+    "controllers.yeestor._shared.client_log",
+    "controllers.yeestor._shared.container_gen",
+    "controllers.yeestor._shared.dialect",
+    "controllers.yeestor._shared.family_select",
+    "controllers.yeestor._shared.flash_id",
+    "controllers.yeestor._shared.freshness",
+    "controllers.yeestor._shared.generation_branch",
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.index_checkpoint",
+    "controllers.yeestor._shared.leaf_history",
+    "controllers.yeestor._shared.leaf_store",
+    "controllers.yeestor._shared.mailbox",
+    "controllers.yeestor._shared.open_streams",
+    "controllers.yeestor._shared.p2l",
+    "controllers.yeestor._shared.passport_search",
+    "controllers.yeestor._shared.por_journal",
+    "controllers.yeestor._shared.progress",
+    "controllers.yeestor._shared.raw_nand",
+    "controllers.yeestor._shared.read_retry",
+    "controllers.yeestor._shared.retry_table",
+    "controllers.yeestor._shared.service_bringup",
+    "controllers.yeestor._shared.slc_stream",
+    "controllers.yeestor._shared.table_address",
+    "controllers.yeestor._shared.table_cache",
+    "controllers.yeestor._shared.tail_scan",
+    "controllers.yeestor._shared.translator",
+    "controllers.yeestor._shared.translator_ecc_reader",
+    "controllers.yeestor._shared.wire",
+    "controllers.yeestor._shared.ys_state"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-11T22:01:17+05:00",
+   "min_build": 209,
+   "python_tag": "cp313-win_amd64",
+   "note": "Yeestor: INDEX — 2 повтора перед голосованием; не хуже прежнего транслятора; прежние версии листьев при стёртых ≥30 %",
+   "cases": [
+    "I-2026-1111-01-D1BD"
+   ]
   }
  ],
  "revoked": [
@@ -6831,6 +6885,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-11T21:52:02+05:00",
- "sig": "7fcb9a929c650cb17782589595063cc11f291370fd1f5f4c455eaca0cfa5691285a4a618dd8fc20176fbdc850d5326cc7735065bcd35963f929fb4f80539de9de01a9818376d1b99944fab8283a03d3b778762464988149fc19f74ba61e1fbadf9bb45eaf32cfd8d448d26c8f43c452ebf91a4942a54e603aaa8aa49130bf6fb7005f3d2916e8e1dab1a446a7ad5ed2ba18ba48bca76eea0defdd2368be5231b6a01bb32b90b30b08fcd834b9a92c40c026576842524e940d048e427d4be2f999418908b1087d1720b3c4d7ec861a626c4480121a0663f4ed81abfb07436f7c78902fafdaccf938b43b1fe1a2967eb48be389e49b75f2038ab29ec528f103a7fb968a6e93ceacff12ac86b6e2f35e882ac26770225afbe604fe64adc827c91a339db91edfd1d88830f071f5647c3947ed7e04a67814ec00eba6f2c0efafe1558650ed0c8eb304e2e2e2cb518cafd69a42db14ed7c912609aeb4d6ad14988414c729a8996430f7046dcbf9455608d04e9de4341c2649cfa30cc9f4d76dd47e6be"
+ "issued": "2026-11-11T22:01:43+05:00",
+ "sig": "48e51e6bb956172f767467becbf867067109b433422654c88f102da5e27205595f2f0a137ca5f5a162e1416d0e1a8ebe2135a2a55f2fd0737f4616885657f29d6002754fb07618a4f05976e4da29ca53d3821f8e62c2d1ac61ba3f4c2a7fca2b4b6dbc54c76e40be71cdf63bb35e9b00fe57a4c3739fd6957fb9a49455a2199b2f07efef5d1fb219c5912fa1d0ffe2776f2c77dc1180b6ae60f217b9875745bb7fb1dfe075ee72b295d2fd0ec6bf2a1e44ff448b090e8327f28c80f1967d6d5bf2beb5ad8f4805c775540b91a06d8258e8f9362f59e206c5bd5977c50c003013adf58c26db1bc1ec8ffaf7b9476ac0f190d1729d14c6348d2c267f57af7ef45cd42c2075dcabf7c8601af8743a98bc28e48ba26ba03f4c08c2a7979763270c17f63e425c3a3cbc43fa035f23854dd7641a8d4b3ac0a2e4ddb867aa0ab73b0edd9ca36964c20db48d3c70baae432045bd4a9d9983ff65e19b35558851c28c4ff029bb43b2982f3afeac95aae88f0a74f1eb5c76c7e19be4bc4d1a867f49cdf3e9"
 }
