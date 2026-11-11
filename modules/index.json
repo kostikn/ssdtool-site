@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 202,
+ "serial": 203,
  "modules": [
   {
    "family": "smi_nvme",
@@ -6552,6 +6552,38 @@
    "cases": [
     "I-2026-1111-13-998F"
    ]
+  },
+  {
+   "family": "realtek",
+   "version": 7,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/realtek-7.ssdmod",
+   "size": 985116,
+   "sha256": "6f73ed716cb1b1895e8165c503c431340f468327f205ecb8e117a0ef4760e832",
+   "modules": [
+    "controllers.realtek.rts5735dlq.committed_checkpoint",
+    "controllers.realtek.rts5735dlq.gui_actions",
+    "controllers.realtek.rts5735dlq.original_parameters",
+    "controllers.realtek.rts5735dlq.ram_resume",
+    "controllers.realtek.rts5735dlq.recovery_backend",
+    "controllers.realtek.rts5735dlq.recovery_pipeline",
+    "controllers.realtek.rts5735dlq.retry_sequence_layout",
+    "controllers.realtek.rts5735dlq.schema_search",
+    "controllers.realtek.rts5735dlq.staged_backend",
+    "controllers.realtek.rts5735dlq.staged_reader",
+    "controllers.realtek.rts5735dlq.translator_evidence"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-11T21:09:31+05:00",
+   "min_build": 210,
+   "python_tag": "cp313-win_amd64",
+   "note": "RTS5735DLQ: поиск схемы FTL — сначала место из прошлого прогона (одно чтение), иначе полный поиск",
+   "cases": [
+    "I-2026-1111-26-5A1D"
+   ]
   }
  ],
  "revoked": [
@@ -6612,6 +6644,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-11T21:06:38+05:00",
- "sig": "5a6fd56caccccdc9007386abd87e95b19b3487f001f54d07a13851a9533e48a0110c8218254b8052f736d5c36b9c2371cd5860fe4f6a1d1247f9c553d2305ff31006a15b808524536678085b7fb8bafbc5542f47fbef25df90d879ad7f808feb24e71ec032845f84154529df722069ed6bc70600a21dc4e18d7c29c026f1925f7dd0d15b559527f04c34025493dd42fb61519a35e4b86536f7dfb599b469b54a0cf75fcf721ab1693206cbc992d6290360d575ee5f2834a479571d5b491e5f72bf0d7914d3bf95bebbedd33e5217716b58923f89601e6904fd671f3c4d453c07ecfe60481f3b5b68af64a71967d57c5f95b23e0fab5121b1e5e38869bd6bd2d12d6dc567fbd2eab9a04554a9baad4ae3fb6648f7f309b25ffa9c43df1a609b298b1594280145f73a653a3dcb9805e6a2673d1132f93a64f0d8af8c2f57f06ca072190e705b7e4f3d9abe04c0a1b748a38ea1f0a3420bfd08b46307053d2088c7ef2c4ce5f2d6e3a9881d0b03d1dff1e96fbed91b6ed48af06310ccab2e85a1ff"
+ "issued": "2026-11-11T21:09:39+05:00",
+ "sig": "3eb14e941a02ccdc6c4a4743b16cdbb558952b1229ed150d4995c118c1c8c66d501f2e371e211a735dbc8157ccdb57abe6ca05c0e55a904ffe6b55d473505990dd316592bf2702f30ae19ba050aa16dbc559b70b02d9f7cfbab7c6d1ac2327fc2fe926de7b3e6168e5f9da61936c607ac99f7e04748ed42ce647f41ad0c09785fcaeb6a327408786d84402098ac4708e8e45669472d3414b093accb3233d7064c01a8f1277e32292063f16823725124fd679a7c0c91c427d3aac8272f893346e3f63abd86a6699c59d1ebbc40b41c8d7ad62d5dfe4274b7675ba2fa556e6759506da47490f9df6853f7efb1aa21e54060ff18e6d175193bfb61534ea9b62fe00f193bc8e5c3120df560707a68265130575e585d5096942c4580767295ad2c461d08bac5295581d718e14a39e867a1797e5dcb35c61cf89f01637993fcba3c404633050fb7e5e92f481cc95f4c23e18fb48997d38317352a702c11cb42c13728ad552e3d2f1c3d8496e27fb21fea782d7b756f6a5a809a9f1b115e4a76ced2fab"
 }
