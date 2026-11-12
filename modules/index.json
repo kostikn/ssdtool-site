@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 212,
+ "serial": 213,
  "modules": [
   {
    "family": "smi_nvme",
@@ -7009,6 +7009,39 @@
    "cases": [
     "I-2026-1111-01-D1BD"
    ]
+  },
+  {
+   "family": "realtek",
+   "version": 9,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/realtek-9.ssdmod",
+   "size": 1037839,
+   "sha256": "73dcb6a4cddf6a081c1ec70377d22a55321e20a04732703e2bab99a6dda25530",
+   "modules": [
+    "controllers.realtek.rts5735dlq.committed_checkpoint",
+    "controllers.realtek.rts5735dlq.gui_actions",
+    "controllers.realtek.rts5735dlq.original_parameters",
+    "controllers.realtek.rts5735dlq.ram_resume",
+    "controllers.realtek.rts5735dlq.recovery_backend",
+    "controllers.realtek.rts5735dlq.recovery_pipeline",
+    "controllers.realtek.rts5735dlq.retry_sequence_layout",
+    "controllers.realtek.rts5735dlq.schema_search",
+    "controllers.realtek.rts5735dlq.snapshot_cache",
+    "controllers.realtek.rts5735dlq.staged_backend",
+    "controllers.realtek.rts5735dlq.staged_reader",
+    "controllers.realtek.rts5735dlq.translator_evidence"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-12T11:47:21+05:00",
+   "min_build": 210,
+   "python_tag": "cp313-win_amd64",
+   "note": "сохранённый прогон с выведенной схемой таблиц открывается для образа (ошибка evaluated layout)",
+   "cases": [
+    "I-2026-1112-01-5A1D"
+   ]
   }
  ],
  "revoked": [
@@ -7069,6 +7102,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-12T10:22:08+05:00",
- "sig": "679b9692055055a61fc852bbf524ee753c828ffb218836ee67bc54556e0693cde53611aed0e46e284eeecf0b0bb77053260b6e74c077ee1f6568c63efd79567c0b5574fb51bffd068d5e539f465a76d1e2ec4eb5da41a37491459a7e21b5b1460952d0553ef57202d52090919bc926c351fde67ab4f125ef37091a81ebc8e01a8a2bbf5c6e1f905746b9e4c221673121b88f550d91cbc62184b8cfc549f40ddaa895c97ebf8b414bc2b126ab9f33ee1f15a98d0a7fd9233c48375527b9671f9fd18b2b5637f4dc65eeaee598d2ab7e6421b5bc6219a8529001dd3ac0b1f61da4c4e3af882381e3f393c2e9e3f790ab9dd60e74834f6b3590867588635ae0bbb672ad46928f7bd91d8f6df4873500853f50d89a028459c0734f21b7d5afbfbb06ebb4f4330d8ddd4bdf27b95c0fd46a077315faae5d35ee884ca36f7706b2360d0e50e26ba667d3f4c4e1c5d4c5452b3bbd6f6f273edc0daec5a7eb84b98bc07c02ef9e46db9834153de66fb897621ad966c2b5e3b71b80b158155cbe38887ff5"
+ "issued": "2026-11-12T11:47:31+05:00",
+ "sig": "8df48edabd1821792f839f29d32519af1dafd2e577e7f3323788d5e59e662f9613d7679eedf8354810b9d0de79b97df0146f7ef25d67d1b3cc5bef8b46958b48ea8deed6a3f93c3cb9d131551f3099431674ca45777215ff5b4d8ecab9db3b4c9efdb65d846d29e918a951f1a171be2fe8a2978b0a1f2d4997f7a0721d911e6250b0d7f54e0e8404c8242da1e5dc3287a3d79487335bad1f40a6a94417d8ad91bebe90a9f88dbb43dd0cc4836bcb8aa9ea160d301eaaf634f924fae66dc67458c48334562dc7a9dfe4f205b97d632c42a7b296f950d177a5101c74477ffee3414fc39f7ccf2fa14e5b55de6ee0a8da5ec37809d95fd0eef23ac99c58e2ac8118393f32462e9324a96ed4711bcba30635b9e679adab5c5e3bc02983c00a06758a6403aea35c56946fdb65b8204b15f3851a2639f72966eb6ee5829d57697ff49b3ce93dc3baa0a2453001f332acd79eab00a7faef29e3926a4560088a62d810c4481590dc8f57afd851957302c6fcbd9d87f86e0dd6751f82fe7c1d67263a250f"
 }
