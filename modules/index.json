@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 215,
+ "serial": 216,
  "modules": [
   {
    "family": "smi_nvme",
@@ -7148,6 +7148,39 @@
    "cases": [
     "I-2026-1112-01-D0E5"
    ]
+  },
+  {
+   "family": "realtek",
+   "version": 10,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/realtek-10.ssdmod",
+   "size": 1042501,
+   "sha256": "83bd6b6e21a01e6848898f7ddd23dcc51e0eb427b53349660c0d8a4c9808d61b",
+   "modules": [
+    "controllers.realtek.rts5735dlq.committed_checkpoint",
+    "controllers.realtek.rts5735dlq.gui_actions",
+    "controllers.realtek.rts5735dlq.original_parameters",
+    "controllers.realtek.rts5735dlq.ram_resume",
+    "controllers.realtek.rts5735dlq.recovery_backend",
+    "controllers.realtek.rts5735dlq.recovery_pipeline",
+    "controllers.realtek.rts5735dlq.retry_sequence_layout",
+    "controllers.realtek.rts5735dlq.schema_search",
+    "controllers.realtek.rts5735dlq.snapshot_cache",
+    "controllers.realtek.rts5735dlq.staged_backend",
+    "controllers.realtek.rts5735dlq.staged_reader",
+    "controllers.realtek.rts5735dlq.translator_evidence"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-12T14:26:44+05:00",
+   "min_build": 210,
+   "python_tag": "cp313-win_amd64",
+   "note": "листья семьи как в дереве",
+   "cases": [
+    "I-2026-1112-09-5A1D"
+   ]
   }
  ],
  "revoked": [
@@ -7208,6 +7241,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-12T13:42:32+05:00",
- "sig": "9bbd1a62d2875c6e9d036dc19105bb665f1011293359ac1b7b9a058dfdf5e053d9ee81e0bda8a9dae1b9238acbe35f11f6c786151ee937129badb839330cfccbe9090840356b29353114738cc9134cfc3b26cf471bffc7149168b4428673f46d1cdfd8301b80579708ed7812796138dbc2504f245b2f42e3aebeaa8744700153271e9baa83348622744bc0f0af61145acc4caa511954031624a9804d5a578b43ded8d5537de2b8d135a1ea9bd79ddb4f5c3055eaf47d223283a45d38413f5abd8fb5bde95249955ad84b18fdeb265d60be1e0d3224b74befdd867b5322ca597d219cb57174921eda3328cf2e4e11605c2c51c7b10aeaa2c57022a3f100b08b47229946c395236c838d68f6b5964f0e5e1d94d50d46701d0907b2922fe5eacc9b1c2182aaeb99459103cf674c6d98fbb609d921236d4a8bbd4bf26089426bfd619506b8a8c7005d641cf81c615eda399a540b7909a3ea32bb4dcae327718c4a7c77146aade565327c089874d6a410f0ed8c3a84ff4d3481cc8ada920b62287464"
+ "issued": "2026-11-12T14:26:51+05:00",
+ "sig": "70434d1d4b52f9ebe66c8ec7eda9b2753f56afd3818a46553db007f0c90e185ad263fe1b9b48ef2ea660bd124975f95510786d7ee635af93045b996d420889ae23b3f7606ec47fd5db4875a14347d4f649063c3e9af88e1fe212e505dcf95724cab00997ff7979dc4446e45caa950cc69ec6cb5fd9d14cb9d17ff8b0cf526b75cb5c4814b6e6fce4af4ae308e2a2866f1512abeedf1fb01898a0cf6983b38149bd72a2db0ef16cafc6d8b07085912e2901ba4f18674262b3214eafb1f50549ae78e6ce2e30d14bed026c8517e9976ed75f56dde6cb417f46bf4e16383b3b5b2fb00729ed8cb5257ed13ee74dfa0850d4e23868e223fdcd42063f3337e1814ad7e3c3aa245a2a69394ee0f77b3c6e49ee504a75edccb3810703348300f446b7dee94522f6fd1f1441f5cdcf433140f6d3621acf3bf0fa88decade9f54f822dc5c1ddce9873fc4934aac27853f56a3e2aedf88352f7dc1db18e4e4ac42bfaef4d1a4ae7d418b2b758888acda2eedc72975c56e7d0ea7ef8d9383247347b970211a"
 }
