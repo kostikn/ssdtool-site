@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 218,
+ "serial": 219,
  "modules": [
   {
    "family": "smi_nvme",
@@ -7253,6 +7253,61 @@
    "cases": [
     "I-2026-1112-02-4B3F"
    ]
+  },
+  {
+   "family": "yeestor",
+   "version": 38,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/yeestor-38.ssdmod",
+   "size": 2944891,
+   "sha256": "106c59d5f2acfae979339ae86fabdbe4b0f8dae4f9f28e0e083ad253883820bc",
+   "modules": [
+    "controllers.yeestor._shared.bindmap",
+    "controllers.yeestor._shared.boot_area",
+    "controllers.yeestor._shared.boot_search",
+    "controllers.yeestor._shared.cache_index",
+    "controllers.yeestor._shared.client_log",
+    "controllers.yeestor._shared.container_gen",
+    "controllers.yeestor._shared.dialect",
+    "controllers.yeestor._shared.family_select",
+    "controllers.yeestor._shared.flash_id",
+    "controllers.yeestor._shared.freshness",
+    "controllers.yeestor._shared.generation_branch",
+    "controllers.yeestor._shared.gui_actions",
+    "controllers.yeestor._shared.index_checkpoint",
+    "controllers.yeestor._shared.leaf_history",
+    "controllers.yeestor._shared.leaf_store",
+    "controllers.yeestor._shared.mailbox",
+    "controllers.yeestor._shared.open_streams",
+    "controllers.yeestor._shared.p2l",
+    "controllers.yeestor._shared.passport_search",
+    "controllers.yeestor._shared.por_journal",
+    "controllers.yeestor._shared.progress",
+    "controllers.yeestor._shared.raw_nand",
+    "controllers.yeestor._shared.read_retry",
+    "controllers.yeestor._shared.retry_table",
+    "controllers.yeestor._shared.service_bringup",
+    "controllers.yeestor._shared.slc_stream",
+    "controllers.yeestor._shared.table_address",
+    "controllers.yeestor._shared.table_cache",
+    "controllers.yeestor._shared.tail_scan",
+    "controllers.yeestor._shared.threshold_probe",
+    "controllers.yeestor._shared.translator",
+    "controllers.yeestor._shared.translator_ecc_reader",
+    "controllers.yeestor._shared.wire",
+    "controllers.yeestor._shared.ys_state"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-12T16:42:30+05:00",
+   "min_build": 209,
+   "python_tag": "cp313-win_amd64",
+   "note": "P2L: стёртые страницы по слову службы, продолжение без перестройки таблиц; этапы подготовки",
+   "cases": [
+    "I-2026-1112-05-D1BD"
+   ]
   }
  ],
  "revoked": [
@@ -7313,6 +7368,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-12T16:38:57+05:00",
- "sig": "19c74f42d286e076a63ab0f181ad4c29e6801009c3b1561a39bb4db420cae2ae21a622168ec2ede8b582b6e0a24cdedef42e28ce36bf4876d061198ed9b6fd8eb2a64b79aebb533cc852391b5e514c0eec8679831bc60a0d27927c9e15a829cd8ae4ebde91f3595f95b051d26a3079d1fb8413f07d8b7bfd81140cad1ff2cac11ece8dc08fc4ee90825ab4e85669b8ccb36f1ee7b6c633139bcaa26218621764f0dd52d9648bea77722fa2dd2ae7584734a36962af0c00471a6bfc5ff9f437ff6b8480cb1ad092ac0c2a3e8ea634cc03781e1060e4c177fc2896b9a1e1dd4940a5116e40e0bbf720467f2fade8dd7543d005242446342c45d2a1dbbc3632bbb443c4679e227eade35a2682d442bccc42b1c880cb493f0be7d9a6b5721461110b71feb7ff1f1fb6b1c4282237e7755762e90ebd27d88ef8bb565374d9853dded1c14207be6eb17acb4d681a1cc9697ab0ac0bee9d96d2ff78db19a7a048e0771e2fb0bbdc6f3259d761941eb7919740caec5fa9c7ab2602265b63cbbf6c017208"
+ "issued": "2026-11-12T16:43:05+05:00",
+ "sig": "4c613d0489b3c6856a2b79a88efbdfb387abaaf766e79fb2d09b76f49cb47e13ca5679b8b813a74d24b60a8cd665710c652ff77e31f9852d257f98b35ee29c40bb5744a56e32f584636b6807c3c1b3e9443c9dbfe0311ec899220693288f10c10ff946918145a967ece9327db0a28266753882612904ee9347b936d82c25b7d24436b6b7c2d85b51c3c50696c9380d79a594eece04a0325b142d2e199c84e317926076c27bde99d89c75ddd0e73941e4ef8fec9854d45a93765ba3273cfbf5fc6340541b01f33349b34ea7f6c02531b5036bb69c4e3900facb4d35e17fae0525897e42bc5be34ca97d83feacdee848e9fa6285f72b1f2dcd3d3152dff5c87a52ce40264db0d0d9a8831cfbd809ac2b5c6fb31ebbc41ab3e796ee88624dbcec03a7f1f1d885833127ab8bcaabe4e22f6598a3070092fa025c0458a24ebb5d7aaf021a85ea698cdd13ead3c9efc01ec446efda0ffd905028b12f275b733c3aecfad2154b1c8ab0bef24207b47b0a0e9709102da8d15260aeadbef348d50494dbcb"
 }
