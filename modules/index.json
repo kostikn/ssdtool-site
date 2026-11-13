@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 225,
+ "serial": 226,
  "modules": [
   {
    "family": "smi_nvme",
@@ -7558,6 +7558,56 @@
    "cases": [
     "I-2026-1113-01-998F"
    ]
+  },
+  {
+   "family": "maxio",
+   "version": 61,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-61.ssdmod",
+   "size": 3875488,
+   "sha256": "6fbb2568207ba42db89bf512d784d7b9f4519c18728a0c719c3bbf30633fb7d8",
+   "modules": [
+    "controllers.maxio.map1202.ram_start",
+    "controllers.maxio.map1202.self_repair",
+    "controllers.maxio.mas1102.binding",
+    "controllers.maxio.mas1102.catalogue",
+    "controllers.maxio.mas1102.codeblock_build",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.locate",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.passport_nand",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.power_restart",
+    "controllers.maxio.mas1102.probe_thresholds",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.raw_probe",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.retry",
+    "controllers.maxio.mas1102.rr_pio.c100",
+    "controllers.maxio.mas1102.rr_pio.c100_data",
+    "controllers.maxio.mas1102.rr_pio.c100_probe",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.state_marks",
+    "controllers.maxio.mas1102.thumb_nop",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-13T14:19:14+05:00",
+   "min_build": 211,
+   "python_tag": "cp313-win_amd64",
+   "note": "C100: проба сырые байты + power_restart",
+   "cases": [
+    "I-2026-1113-01-998F"
+   ]
   }
  ],
  "revoked": [
@@ -7618,6 +7668,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-13T14:15:52+05:00",
- "sig": "1d98965c3e4fe3e98ae1644ee145912cf64bd57b9df33c6473842018f95af7d3bddb959f9985606e3a93247c654d91c88eec84de871363c2645bc8b6b8b476e9681ef068ce346ebfc3b2f0b8fc4cce41625cf772cbabe53fa44b23fb34cdcd4de9d8415945baa72b27e4292c60a39c750ff9730fee03b074f80abf83a1d760f21b6813184d6d979ee7b13b76353ed9e87a8b1bd62f780e637228aa110bec03ebda91e92f439f54e8a787eb9a42deeba2c3dd0ca7cdc89f53ec0a87023c4260a2825f315bd524cac4575bf8cf4105f1e96271b87ff56ceebf7a091fdfdb99fe780b8f71bef2705d1675fab8fa6a1a19571afce6ae34d530993ebb51dd7fb023210d0b1bc575e704d24074b2d45b88daf4120c13de5070f8cf06acd99a481532e0c40d19bf31bcc20f34a2aca8db7bace921d983118f68b0183821871e7c93924fde11ae63db19924d8e736734d5d7f19171f930195e14b564f17466f3c4fc1e023d7479957b8bef1e5b83200763674ea66b56e153b466106751f0cc9eb74dda35"
+ "issued": "2026-11-13T14:19:19+05:00",
+ "sig": "9acdb0720847a33086507186c573567479b044e72968d904fe41e81d6997eed3af4b9716f203c8e7011ffcc7c5d15511c38acdb58233e728555bbd36e65769922c12203f51effbbc4c00505e55fef1c59dfa966faf039e2055d309470111fed994647e3cc3be2af0b76f3c85fcdbf8a8a4a1f0dd01e94c2a621029fe6b1e9f1e033a104f9a85bd68530dbdae6657040ee5fea7794eadf3e00a3849dbd1d99754e192002f8e360afbe26b33d224dbf1509b85920afb43513ab6e9cb2849955167e7c8183019caf5810fb237bcaaf7e39268c63951c0bdc272400396638b1d8b20340bd73f2bc93e7c08df06e0e6f96bad36a9bbd0b9f3c1ef817af9b479c99d20173bf6b5efa1f2b448a4bea0ba2e2d0319b0358c5964052c2890cfea435bba79d1fe67d5cc707af2ed55c15fa2a83b15fdaabd168402b92c9b5a6f7b3d7b4e13cf72be565a9d05e12f62ff78c844166e260589380dbc3eb6b7ba883b8800fe6a6998b99cb866d90baa56b218f999c20be37be38814dd5fb2a2ca15e186b8c7ec"
 }
