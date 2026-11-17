@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 245,
+ "serial": 246,
  "modules": [
   {
    "family": "smi_nvme",
@@ -8370,6 +8370,61 @@
    "min_build": 218,
    "python_tag": "cp313-win_amd64",
    "note": "ROMDEBUG: sverka pula do konca zapisej perenaznachenij; odna zavisshaya stranica TLC ne obryvaet okno (cikl pitaniya, propusk); posle obryva - novyj vhod v DBG pered nizom"
+  },
+  {
+   "family": "smi_sata",
+   "version": 36,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-36.ssdmod",
+   "size": 3933377,
+   "sha256": "020065f71b76ef9a17b67494bfcf9aed631ebf43e4c3b0219276f56b33293ee8",
+   "modules": [
+    "controllers.smi._shared.arc_busy",
+    "controllers.smi._shared.cp_store",
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.dbg_prepare",
+    "controllers.smi._shared.dbg_reader",
+    "controllers.smi._shared.errlog",
+    "controllers.smi._shared.flash_block",
+    "controllers.smi._shared.flash_id",
+    "controllers.smi._shared.fold_seed",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.mpisp_flow",
+    "controllers.smi._shared.native_flow",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.passport_sata",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.romdebug_catalogue",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.service",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_build",
+    "controllers.smi._shared.sm225x_ftl",
+    "controllers.smi._shared.sm225x_geometry",
+    "controllers.smi._shared.sm225x_remap",
+    "controllers.smi._shared.sm225x_superblock",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work",
+    "controllers.smi._shared.unit_lists",
+    "controllers.smi.sm3281.binding",
+    "controllers.smi.sm3281.plan",
+    "controllers.smi.sm3281.pool",
+    "controllers.smi.sm3281.prepare",
+    "controllers.smi.sm3281.protocol",
+    "controllers.smi.sm3281.volume"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-18T01:38:23+05:00",
+   "min_build": 218,
+   "python_tag": "cp313-win_amd64",
+   "note": "SM225x: sborka translyatora vtroe bystree i vchetvero ekonomnee po pamyati (plotnye struktury), svoj etap s hodom; knopka ispravleniya svyornutyh stranic SM2259XT2 (rabotaet s EXE 219)"
   }
  ],
  "revoked": [
@@ -8430,6 +8485,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-17T23:40:50+05:00",
- "sig": "1e59999a1af62f26df38c3f082f32a765f06ac6cc0ec47a1a8f839b4ce8ed06ed5d37679651edd28e48c5c1f7c874e3abb58b9a107a855e385e6314fdbcec32a6a52b31695cc1265036a639ce1494efc7b505699716a273e929663119b17059be7fce6432a3e415a230532daf1930aee19d1802441aa7e0cfe038699de638a96867d45076402e91c8a489b6588f6d81df4e26e7a5898e190a23d05aa5d0d3eccca8f11455c7fd6e0a0ca67c1d9d71f611a79f8646e423c32cabcbef18f73955deb34828816829359e481b2fa323f9f07e98943c3470ef1cf7d7f6bbc380f35de51557a82c6658a89795656b9dd4a93b3e0e0451755ce79292b45049eced12a595cf88ed4b209feb787d79808f42e4756965cfeef6b151d3f36910c8f2528a031b6d3599fcb32088b1d93f6e20620b268c19e2ccd91fc338dfa396d549da5ff3958688e1d0937544323dfb6b3815f060924aff34f37f04f48ae42d79b23ef5f67a97a584dce6297e10ceb22cfba91d4a4f5d475b5ead30a6b069ff49ead81d87b"
+ "issued": "2026-11-18T01:38:50+05:00",
+ "sig": "53135c6c0221fae3805349355aaa701a2a9093b6426841b72c94b376604fcccb5baf7821358b56fa511be7fa0a0c3b57cccfa99c3efa88428ced47a7f91f4ad919657783e7d824ef2de06265d17c2896bd65a977ef8500322713c1469042a87d5554e1d2a3b607f086e4c4b65d35c8deca33c39fc865d972f17c00651ceb422e4c501c4cf4eaa7104f1e7984f941dce93cfc463ac52dea7edb17ae15dc76dc932335e15b81e468baffeeb3383740829bfa4096c4ec189c2ff6b0e16b04f17dd7efc439c159b92497020944cee751240ca19bd681f84b21ce87228ac39b8f855f0bb4c525250910ba1d62e68f6e00c2dd3ca159c871053902a2efe0b441f5ea7a4970fe475c00d1fe70f3bc99c38c9b5bfdd45f84d0b1db882b3c91d9c6ed0086d2877b6784d0d3e585b223affca3a096fe50dcfa2f91d2b1d44878541515009c8982b9bec66319fa8fe322ae0cc219aad220348059ce5270f25b116f2a49228dd34805fda4a5be593bf795c619c16b37a747a8a97f3c2a5f81bb4cd4e3fd7b9b"
 }
