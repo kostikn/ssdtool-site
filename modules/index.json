@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 233,
+ "serial": 234,
  "modules": [
   {
    "family": "smi_nvme",
@@ -7867,6 +7867,33 @@
    "min_build": 216,
    "python_tag": "cp313-win_amd64",
    "note": "MAS1102: вид метки страницы - по сборке прошивки диска с подтверждением замером; улики карты страниц при её неудаче (в «Данные диска»); «Сохранить FW» без ложного расхождения стр. 2"
+  },
+  {
+   "family": "maxio",
+   "version": 65,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-65.ssdmod",
+   "size": 1700907,
+   "sha256": "9ab0145e1d77b57d0d121127cc605fe755833f25e8186e3fe4328d8b047d62f5",
+   "modules": [
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.label_dialect",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.pagekey",
+    "controllers.maxio.mas1102.ram_plan",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-17T17:11:15+05:00",
+   "min_build": 216,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAS1102: улики карты страниц v2 - поток ключа службы (сырое и полное чтение пробного блока), только когда карта не измерилась"
   }
  ],
  "revoked": [
@@ -7927,6 +7954,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-17T16:03:29+05:00",
- "sig": "1d008128bc278b0ca52ea2d6bc92be3c18af80f6180ba3e32c49e7ad890743925123a7c7cf9cdb742dd9d700cc72d9ca762f8f8482767c03e58d1982f2f63eeb05e15a941988efb1807c8731ea53bc0e67f41b0701b9fa32b7d9654842dcb1238297d2691422a55dae1896a85d0319521d12ebe8eaa0c22917562a60e0e3f4dc4dd7674417a94146b0a8e605d8c656775adfaa0280011b6e32551ba253f966f2f1417c3aedfd9c78819e4c2286f7d28e7c35b87fabd18b45c3563a35f7cb66565f31606325a9d5bdaa00922bcefa63a6b2a06ef85e11f20964b20e211a682987597b399dfd77574850638ee5c4839b13317e906206e70e8ae5d473b7bf62e6e7ea7d48c58785fef9d31a0f3b60eb3a17bd37d8007bc4dc387b5f64a9cd228012e01efb0ae4a7c3b64daa364003c780c26761f7789fd61f63884a19cde2add1b3dd154ee37b815bfddca0c6aa62ab685c17807abf9e7ec76341f5a70b92fc556ebd35baffb81faabac61d7cf3e817604887cc564a534d3181f40590bae422c94b"
+ "issued": "2026-11-17T17:11:23+05:00",
+ "sig": "149937721b212c06b3711b8fac245c15b04831b80e9268a939aaa55a44cb09f14863f70b9acb7f7e8c4d9eb95a353ea232356bcbe60fa504a42da1f0c991f223ca82b7bae31bffd02f43e2b21fb9763f56b4287c1ef2c48d83dfb1424b7973e25a6c0f7914a1608c962dd5fc57d0159406fe302fa3e2b169081c36c0ca8a97122f6cab2655bfd692fd7d0ed446a07fa81bde469b1d41c74a305b7c38179bfc2c7136450c6898eebb3af9cce2b8fa9bf2fc8a0db9b5ce8a1078f850266525510147daaae6bda64984bb908ee250089f986fe22c9b644d9b8f5e25da08a12fc614752f1e661a2712b80ab4c8fc945cbbf8532614677d14758e44d2cb5f5a6a62fcaf05abd9ef3074258c4995cebec06b12d47a13fe635cca45bea06abf00804e1975a6067430efcda23e30ab988ef0f3b125fe830cdcd49a0561682e423288d36d2954fe0f503c13e05689052f2818fb5fcb98f81d6df2b27ceec1dfe07e83902356b9ff15681fe3b645b437bcd2cfc20e27359311ab6891b580e4bbedf44cf30b"
 }
