@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 231,
+ "serial": 232,
  "modules": [
   {
    "family": "smi_nvme",
@@ -7796,6 +7796,50 @@
    "min_build": 215,
    "python_tag": "cp313-win_amd64",
    "note": "Восстановление после шифровальщика: подготовка SM2259XT2/SM2258XT не читает журнал ошибок и не запускает прошивку диска из ОЗУ - сразу транслятор с историей (зависание на ram_start_errlog)"
+  },
+  {
+   "family": "phison",
+   "version": 17,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-17.ssdmod",
+   "size": 2242219,
+   "sha256": "b4a025a1c24bc82f5b6867b3751ab9d9435bd1417862478a425ffcc2ecd1a85d",
+   "modules": [
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.neighbours",
+    "controllers.phison._shared.passport_reader",
+    "controllers.phison._shared.sa",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison._shared.session",
+    "controllers.phison.as2258.loader",
+    "controllers.phison.as2258.passport_reader",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.burner_reader",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.nand_translator",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.plugin",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.ram_snapshot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.restart",
+    "controllers.phison.ps3111.revive",
+    "controllers.phison.ps3111.sa_diagnosis"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-17T15:56:23+05:00",
+   "min_build": 216,
+   "python_tag": "cp313-win_amd64",
+   "note": "PS3111: номер кристалла для чтения страницы - из карты кристаллов диска; статус чтения - метрика ECC, а не «стёрто»; порядок проверок в NAND-трансляторе"
   }
  ],
  "revoked": [
@@ -7856,6 +7900,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-17T14:40:22+05:00",
- "sig": "42cdc24e50496f32c9ad01c0dc6613791f2edc1ee4f5ec4b294434689e603db2f6dae4e7822f6e438e54911205d2ffa160615560d137389526bb8ecdcbe9c575a69b9d67cc75d8e902a77d175665d624192f6ea159ce0f71c29d28cc438395a9e51b97a2cfb447b8715ece959a608f0aced4f22a4ec096a020e428e3bfcb69fe6eb11366ec19d6b08f434397fdb4eb14882e3c3cd977e46185ef43b4b57a5bd96a152cd37e8b9415aca747611f6a19da923bd067aeac47e3242288bd5e8d5063c9a2e45727d9cb5577884c63d236a2a01f54b132dc85f2f9cdade52ed181ce0f7266b40405eccf772bf9957d20021567229dcb251f465e2ba652827c82f45fcf4b6863d4fb9867cd8af738e6929e64e6fb3ee88bc3cb8ba076a98f09a76ca4dcccf33aa693bd5cf1b4a04d5df6270cf20e81345b958f88c3c339d2a3dca93e8a278945eb0adf12d4d616dc6c706fa32e5ef6b0e764bd640fd3c7bf6f708097001fe0f41d8ef33ff70ddcc8ad47760d7619d716f25f4b01e6a60ca2af1672e1f8"
+ "issued": "2026-11-17T15:56:25+05:00",
+ "sig": "628eda2820cda2486ca9a2b358f1ac542646477f5f1b1b67643ba9f36899474eb5a66fcbaaa89c8c4f1adecb3886aadeb60b84d62d856b90de863ab5f1094bdf243c6171383ba1425be4752ce2b14adc3e378cb2091c0106d9ceb1b34ca5546712c022bff2f8dd2717a679c9fc54be6b630ffa9d5bd4852846f7a6e1df4933f941c18e8fd19d9357058f2c47f49d5dba6729c28c25c1f44575f0c1248e3b286d04da9593cd38b8839148faa21c4918da07863df659d5c6699cc57566cd47624e0f29f2628b8647ee0b9f97c863f0d03939eedd9be162c6c149dd4aae0fa3b6f64ee06e54d0ce5cc511afe544dfd3d476dd3e7906a629bc3b1a1c2c05716b7341aac8fe1724e4c87968d6bc8ebc3caba124a004e341db12c82ab8c86a0f94f7f17fb65c756c5887b284c901e0436db87aa9f9e257138d341745e6dce1dcbf5c89c748f023218527af3d4dccb2047e6df2324487a4f9ff2125762c628c045abc213a512533f91066864bf0166740a6ddb3706709e4eb7cef04fdd838a615dccc29"
 }
