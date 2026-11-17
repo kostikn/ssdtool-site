@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 238,
+ "serial": 239,
  "modules": [
   {
    "family": "smi_nvme",
@@ -8033,6 +8033,39 @@
    "min_build": 216,
    "python_tag": "cp313-win_amd64",
    "note": "MAS1102: karta stranic tablicej po dannym samogo diska (zamer po polzovatelskim blokam, priyomka po izvestnym slovam), popravka LAA"
+  },
+  {
+   "family": "maxio",
+   "version": 69,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-69.ssdmod",
+   "size": 2669405,
+   "sha256": "6091024bda65e654e4561dcd4dbce2ffd5fec0483baf8e7802e915924eb891fe",
+   "modules": [
+    "controllers.maxio.mas1102.codeblock_keep",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.label_dialect",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.pagekey",
+    "controllers.maxio.mas1102.pagekey_table",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_plan",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-17T20:08:42+05:00",
+   "min_build": 216,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAS1102: zamer karty stranic terpim k shumu QLC, porog pokrytiya 90 %, sverka potokov dvuh blokov; pri otkaze - uliki v3"
   }
  ],
  "revoked": [
@@ -8093,6 +8126,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-17T19:36:23+05:00",
- "sig": "660a66fc58bc5d44285ebfdf7991e56b65c9c466579a6db416ce1f3803ec5bf996ed2d2b12b9f1b5f205da19448799f116d4df6159b2e5ded53e9edc2dc9c8d4083f6e3cc7322d2e628685c98352d29e905fca44379b18f4c35d40ad42d1a46d210cca8999bfdb1aebf47d5b8764aef4808ca39cbdf969d747a8aec0902a632c130ebaf5d72ec72a1bdea4c6463af5e421ddabd2d9a5f6b4553b9824594e607655e4d61c28bd894e2d4bfb3581592a11411cfb570916a3a95e4db44cab985fd82b6f2ad8817743de9bff2733a6fc6e56a1363e2defc375db8d335a74dcb6fbd4421a3cc1b5bb8b1ec698a3ccbe5450c32e03bb5810407b885b19517f535a8892198909927ccb4de8b81e9e7cac73146c6902836223c73aabb7d89b0ed23b14086daccce6ce9699c9b3f8141895eadbaba9b6fc7055f6a5eed654e52b1c587e6e73636789aafc74131ee3b9706b37f38ef192c147b8e005cbab8fa8ec053db32e548aec6c599325a54b819a89e36a3cbccb755c76da74e8b0f9fba67459ce7168"
+ "issued": "2026-11-17T20:09:00+05:00",
+ "sig": "46655ea3f307603fa79afd58150ad9b9d2dec7304d96da6e0d50d322974873d298654f245c5588138ee42c9da970ceaef4f45926af6fc35f57febda4999e647d1971d9065667915e73a7a6d81be7481c69144a323fd1d639c1df2030aa43dced9da88c0519f20a23c91325f6b0ccafbfecf3b3bd089867d8d76795683e4e98150cf020435ca98f916697ef6b2decc499da55971641e7588d52f6c25b30bdab508ecf4f28c3f87cc081e4aff59ee9f76e2ef3e2157e87319192d3f3860b20ed5177f80cf5cc53eef569222491c5c0c00f13f1e54838686fe23f8dc35f876638c8c15ef6b3b3413a625688f0cb24b9d13c6c3db300470ae168a369d1de8ad86d7de5064851450e389f682775d713f5a54689b1d653b1e1525839938e4813028dea93a4175da03727623abe93934685fd1d10aca1398defd2fe04d455967714f8302ea7a386eed764ca055581b45b6d5d987ba328ce0f6d28e4660d09ffbff4d9a5f4ac9ec2fe0ab7805f5d6ff49b207a78823ff5e128159e7ac4d0e4496edbced8"
 }
