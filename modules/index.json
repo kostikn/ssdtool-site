@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 241,
+ "serial": 242,
  "modules": [
   {
    "family": "smi_nvme",
@@ -8170,6 +8170,58 @@
    "min_build": 218,
    "python_tag": "cp313-win_amd64",
    "note": "SM2259XT2: chastyj puls chteniya (0,3 s) derzhit proshivku ot svyortki na pauzah obraza"
+  },
+  {
+   "family": "smi_sata",
+   "version": 33,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-33.ssdmod",
+   "size": 3595884,
+   "sha256": "51d872cad612f4383abf9d50f6b0cf6c830153429320ee5873a9aafd6f7dcfbc",
+   "modules": [
+    "controllers.smi._shared.arc_busy",
+    "controllers.smi._shared.cp_store",
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.dbg_prepare",
+    "controllers.smi._shared.dbg_reader",
+    "controllers.smi._shared.errlog",
+    "controllers.smi._shared.flash_block",
+    "controllers.smi._shared.flash_id",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.mpisp_flow",
+    "controllers.smi._shared.native_flow",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.passport_sata",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.romdebug_catalogue",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.service",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_build",
+    "controllers.smi._shared.sm225x_ftl",
+    "controllers.smi._shared.sm225x_geometry",
+    "controllers.smi._shared.sm225x_remap",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work",
+    "controllers.smi.sm3281.binding",
+    "controllers.smi.sm3281.plan",
+    "controllers.smi.sm3281.pool",
+    "controllers.smi.sm3281.prepare",
+    "controllers.smi.sm3281.protocol",
+    "controllers.smi.sm3281.volume"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-17T22:26:44+05:00",
+   "min_build": 218,
+   "python_tag": "cp313-win_amd64",
+   "note": "SM2259XT2: puls chteniya s momenta zapuska proshivki do otkrytiya istochnika (pauza mezhdu podgotovkoj i obrazom ne tratit okno)"
   }
  ],
  "revoked": [
@@ -8230,6 +8282,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-17T22:06:31+05:00",
- "sig": "879010ee2e79dbb815fcc78a027488e5649b350f93370d33db654b3f5db2ea2554654c20e03eec3a09de485952d46289d2f6741d658fee64e3132203818aecf3acd647e424294fba413285b4972739c6bd57801f316a02795eb50b749cf29d8c9f96995e0dd95ef6a577d7b09757b2916cd1dff90037e42b461bbbb38817fef9817347719027f3dda56a8a72c9b59494c796d99850dc3dfb5688847a1aa06a2ea37200bad39ffea958a236a9e2f463fc34baec7530d73feb214d17df42f31a54529df74ac4cefd6aa99785216dadb9955acdf6c958abe9484697874e5214e38f63886831416b178ad67d7c51675b7f82093f54e1ddfc3c2f83d26b491a6862cf7223c4ecd126a5a0c02f89f233671c1a6b6b82675f5d9f927972b8789a695881da377892e1b845a7bbaa30402237da71c7eb59398f1fe742f185d53f41d4f0061b1fe453d6c916b4e60120593865d94f4fec455ba5d95694c5d3298fd6cc76838cd7289eac146f5c02c78dd5401e4e64b1517cb66cdc5915ccc5b17efab4b11b"
+ "issued": "2026-11-17T22:26:53+05:00",
+ "sig": "0c5de9ef04483ae36dd7df7876004b00832dd2a6115cebee4904bf4eba1ef29924429dab7c7f4d6e1a953721c9b99d30593a803213970a85472e6362c88d893c39dafd21e0eb86beb6b30b1809b34b4e136ad27ad602f115bc6da38421442c7809dc3695e6a3c78287d949ef4fae26e43098690f1e1307a8a7dcb98e89a2f1ed74529816499e6308440274653dfa8272c7ffc4326f20d631669bea2e626434788193843914856e88d7ee6fbcbbe92c18363ea8c574254d717246cbac8d71741dd8dc69e29ae20455eee4f1842ba2305c264e85ad2c000f019bc37036f67822dc857b6387e04b58f2da1966e6581623f5ff601a53d2c3a9429ca6caaa4b4dd5e51b057e53c27c3696f87acc4e462b8defccf7e37295672a4a4ec67b1a1369efdca72a6a9dfa9117db1484caf16d7c0cee8518d7e8c7aff92b336d1b8339c9683ce73b5787e91a053a328dac0072990ce536b3c9a7cade40bb82dd819b5e2233f9292da5a3af8f43e804961411bbecabb7f481f89cff5e7a560209a46acafe54e1"
 }
