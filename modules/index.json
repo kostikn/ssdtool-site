@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 242,
+ "serial": 243,
  "modules": [
   {
    "family": "smi_nvme",
@@ -8222,6 +8222,50 @@
    "min_build": 218,
    "python_tag": "cp313-win_amd64",
    "note": "SM2259XT2: puls chteniya s momenta zapuska proshivki do otkrytiya istochnika (pauza mezhdu podgotovkoj i obrazom ne tratit okno)"
+  },
+  {
+   "family": "phison",
+   "version": 19,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-19.ssdmod",
+   "size": 2268391,
+   "sha256": "46744061213923a40270f00b974924faec1e4cb674543dacc571c7d117a65e69",
+   "modules": [
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.neighbours",
+    "controllers.phison._shared.passport_reader",
+    "controllers.phison._shared.sa",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison._shared.session",
+    "controllers.phison.as2258.loader",
+    "controllers.phison.as2258.passport_reader",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.burner_reader",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.nand_translator",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.plugin",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.ram_snapshot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.restart",
+    "controllers.phison.ps3111.revive",
+    "controllers.phison.ps3111.sa_diagnosis"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-17T22:53:56+05:00",
+   "min_build": 218,
+   "python_tag": "cp313-win_amd64",
+   "note": "PS3111: versiya svoej sborki iz sluzhebnoj zony opredelyaetsya pri lyubom suffikse zagolovka i sveryaetsya s kodom proshivki - pravilo vybora proshivki (svoya, ta zhe, blizhajshaya) rabotaet"
   }
  ],
  "revoked": [
@@ -8282,6 +8326,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-17T22:26:53+05:00",
- "sig": "0c5de9ef04483ae36dd7df7876004b00832dd2a6115cebee4904bf4eba1ef29924429dab7c7f4d6e1a953721c9b99d30593a803213970a85472e6362c88d893c39dafd21e0eb86beb6b30b1809b34b4e136ad27ad602f115bc6da38421442c7809dc3695e6a3c78287d949ef4fae26e43098690f1e1307a8a7dcb98e89a2f1ed74529816499e6308440274653dfa8272c7ffc4326f20d631669bea2e626434788193843914856e88d7ee6fbcbbe92c18363ea8c574254d717246cbac8d71741dd8dc69e29ae20455eee4f1842ba2305c264e85ad2c000f019bc37036f67822dc857b6387e04b58f2da1966e6581623f5ff601a53d2c3a9429ca6caaa4b4dd5e51b057e53c27c3696f87acc4e462b8defccf7e37295672a4a4ec67b1a1369efdca72a6a9dfa9117db1484caf16d7c0cee8518d7e8c7aff92b336d1b8339c9683ce73b5787e91a053a328dac0072990ce536b3c9a7cade40bb82dd819b5e2233f9292da5a3af8f43e804961411bbecabb7f481f89cff5e7a560209a46acafe54e1"
+ "issued": "2026-11-17T22:54:04+05:00",
+ "sig": "0ddfbe3198ed161a60468748472f2c19ba5af5227c4ce57e6eee02f3aa4ce3f25f95ddecc46db8b20b48b722a98d7fed14d4440f0c50989ba139e021c3e46bbd8b0f669caa6a54130279b895c3b1cf84f0e1df6242820df8d4f5de9fe859177fde693110d342ab396c2acebf17f34080fce83a11fd94d14c81e55688e9e3f9dddd683a6923000001347f4cf1afbd8ad5e811cae969932270e420dd32970f6d45e5de5da2637c177b37829c57edf804481e23c08a96c6b862b759002e45bc4dc0a9d2c3681d802a41b8edbce75c4c4d919745c8ca04b1ba2eb88595b73748ef7f303bf20701946850c074b7b3da5d1beac9a9ce95a2dd095c2f79e21c683311dfd9937afd38f235bdc8d07724810c10ba70f9075ca5ef92a9793ce00c92b747a5e65efe56f5d1d8df9164644d2fa88255ce448a6c3b0464da55a9ec0c755f67ec793f2b2837539a6aff06a7ee21c0f9c0d6096275159af1a49cbf6e0b53b3ff691e965ffd35af94e9f4d02fc949aa3ed686f11cc9f2ef924f30b244a0cdd5d69f"
 }
