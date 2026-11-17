@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 236,
+ "serial": 237,
  "modules": [
   {
    "family": "smi_nvme",
@@ -7956,6 +7956,50 @@
    "min_build": 216,
    "python_tag": "cp313-win_amd64",
    "note": "MAS1102: sluzhebnaya zona perechityvaetsya pod sluzhboj, sobrannoj po tablicam diska; shagi vidny v zhurnale"
+  },
+  {
+   "family": "phison",
+   "version": 18,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-18.ssdmod",
+   "size": 2261764,
+   "sha256": "f353617be1f6dfd9880363f71c10c79adfd1fe6a1a9e5da143f2c74712b10b26",
+   "modules": [
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.neighbours",
+    "controllers.phison._shared.passport_reader",
+    "controllers.phison._shared.sa",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison._shared.session",
+    "controllers.phison.as2258.loader",
+    "controllers.phison.as2258.passport_reader",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.burner_reader",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.nand_translator",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.plugin",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.ram_snapshot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.restart",
+    "controllers.phison.ps3111.revive",
+    "controllers.phison.ps3111.sa_diagnosis"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-17T19:32:46+05:00",
+   "min_build": 216,
+   "python_tag": "cp313-win_amd64",
+   "note": "PS3111: perevod superbloka v fizicheskie bloki po tablice FFC0 s diska (soglasovannye polnye kopii), vyuchennye pary - zapas"
   }
  ],
  "revoked": [
@@ -8016,6 +8060,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-17T18:54:16+05:00",
- "sig": "2d0aadea3e6af672fe9372c1844e01d03ba42a30766c6bc481cfda0db61d1b85930977d0b7af8575b72dbf75ac45ed72dfe40d0f52c43adaaf9963bb6815daff6bf53d57286834c10b094954172bc65e0b9a8fcdc86cd3ce385f3e2553761bdf79ea344d94b6b3a8cfb49248bb7b193b08735a2830425512a7a67223c279ccf6ec00b1e1f7d5f4686f608bc8b7799e773e626523d2239fb5c77051376aec4cbd2a4e21e5729a78f3d2f6d1d1138ec60de564a00d31546e41ccf6de4c8faf5486389b1e0885b0a79ab294b590285160678f684dacdbfdcaa2e15c189f5345a06cb363df5979570df9b71d7b9ef6ef550caa9cd0297dd0c7553983df0457a7381df0a73752c37bd216893f2e304ba9ac9b9d34ae80a370914473b13a99dc95a51c91ade8008f1f6f4e13627a754db0011b7f70aeed8a944acb62c4b35d5e6ed23bfbdda318bcf036d811675515b003414b4c0e7ca14524fd383ab938e076ae13318b605af6e01c9b27a25dd4c60d5304354cb1bae16569b958d429d3823909fa4c"
+ "issued": "2026-11-17T19:32:53+05:00",
+ "sig": "34e00f6e58bc30ef755de682d3c660ca8236d42f7c0f8deb0980d7770dcb0ac46bdc6a953bdbdb45941d1356bd6b481952304dc68d722e242cb1431c565ec74d42e0761d36a1b79782cc9f720a7da455fe2f534eabab88acebffc5ebca68af414a27d9b14f8a5da9a143b967c2a35271ebd1ee29ab11024a51a10c6423cb5d1037d03576d7b0c6a1f59eb74b5a59a3f4eabbe08519b0144f60aa7387cbc4aae674f74edc0c3445fbf5fa5d69f7934577946eb78c886d1a414645404c4f47dc082cb28fb6fd3ac2b051116baf242edd5b410a670e2c55829384255f0bb227f67bbf502f89f095cbf7b0d29ebf3cddd61ca1512ea20c4ae42ec6965fa89b813e4e0a54f3c388ddfd0758dc14b477fc8c0edb78b3e0a655bbc574fa0f9daad15f01395c72f8f7a57f503f3bd1a14b31bf5ebef7fb1db3d2b5fa1c1fad1bf19e5271c35691201d609ff108a608719c236583a35b4222f0871094e330760cc399b719e0b35b2f84bc09ae11edbb6c1aed6d028d83a3222883e19154e3c63aae338b21"
 }
