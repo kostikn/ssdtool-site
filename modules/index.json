@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 240,
+ "serial": 241,
  "modules": [
   {
    "family": "smi_nvme",
@@ -8118,6 +8118,58 @@
    "min_build": 218,
    "python_tag": "cp313-win_amd64",
    "note": "SM2259XT2: chtenie oknami s avtopitaniem (ROM-start, snyatie fail-safe, puls); ROMDEBUG: istochnik indeksa perenaznachenij iz OZU, seed pri otkaze, proverennaya sborka pervoj"
+  },
+  {
+   "family": "smi_sata",
+   "version": 32,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-32.ssdmod",
+   "size": 3583019,
+   "sha256": "c64ac3546e3af53a939d48e48baa731b0d8b50ff8deacea20141915d4d7b6f56",
+   "modules": [
+    "controllers.smi._shared.arc_busy",
+    "controllers.smi._shared.cp_store",
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.dbg_prepare",
+    "controllers.smi._shared.dbg_reader",
+    "controllers.smi._shared.errlog",
+    "controllers.smi._shared.flash_block",
+    "controllers.smi._shared.flash_id",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.mpisp_flow",
+    "controllers.smi._shared.native_flow",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.passport_sata",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.romdebug_catalogue",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.service",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_build",
+    "controllers.smi._shared.sm225x_ftl",
+    "controllers.smi._shared.sm225x_geometry",
+    "controllers.smi._shared.sm225x_remap",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work",
+    "controllers.smi.sm3281.binding",
+    "controllers.smi.sm3281.plan",
+    "controllers.smi.sm3281.pool",
+    "controllers.smi.sm3281.prepare",
+    "controllers.smi.sm3281.protocol",
+    "controllers.smi.sm3281.volume"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-17T22:06:23+05:00",
+   "min_build": 218,
+   "python_tag": "cp313-win_amd64",
+   "note": "SM2259XT2: chastyj puls chteniya (0,3 s) derzhit proshivku ot svyortki na pauzah obraza"
   }
  ],
  "revoked": [
@@ -8178,6 +8230,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-17T21:43:10+05:00",
- "sig": "722246cf9899d2cdd93d9991919202b8976af85fd4616703fbe3fadb44ac9b4322bbc6160c76d0b20f77d39f56bda5bfd72ffc70849fd2d3698a19ea65f4a7e9616559bb1e04f6011c0193c8b196855d38e0e21fdc27d7f0d840a1f64f1ef9e394f129ef0d6589234c824c705483ca556099cc3b2dddc9c88202c1ae00d172351f6a9d02c8517c93a46f3c07997acf28ae806d71c344c8ba36935fd3921432f04b081c01a958b498f613dd98aa2c1c8082e54d0db345bf74999991a8a8e227a1af06b75d2d3fef625e10bf826ca44ca7afbea2d41033db08d61cd3c7fcec80fe890fe62f95e982610c9286e415e3eedd1bb551516bc52fe7d1ef2c834032b7195faff91d455159b2a0c660fa72cd1c7ddd06ed78587b0883e39ec53aeef480090e655dcef38502227dbd7163c8cc3a45d58e227852d66e3ffee413551c4911ea48ab330e9b89115454d39d55c99130df4fce77e87994e39c58112399e825fff91725d99af2938dffa44c897549e560b40fa570c041e3baa96c9d1fb174a84a05"
+ "issued": "2026-11-17T22:06:31+05:00",
+ "sig": "879010ee2e79dbb815fcc78a027488e5649b350f93370d33db654b3f5db2ea2554654c20e03eec3a09de485952d46289d2f6741d658fee64e3132203818aecf3acd647e424294fba413285b4972739c6bd57801f316a02795eb50b749cf29d8c9f96995e0dd95ef6a577d7b09757b2916cd1dff90037e42b461bbbb38817fef9817347719027f3dda56a8a72c9b59494c796d99850dc3dfb5688847a1aa06a2ea37200bad39ffea958a236a9e2f463fc34baec7530d73feb214d17df42f31a54529df74ac4cefd6aa99785216dadb9955acdf6c958abe9484697874e5214e38f63886831416b178ad67d7c51675b7f82093f54e1ddfc3c2f83d26b491a6862cf7223c4ecd126a5a0c02f89f233671c1a6b6b82675f5d9f927972b8789a695881da377892e1b845a7bbaa30402237da71c7eb59398f1fe742f185d53f41d4f0061b1fe453d6c916b4e60120593865d94f4fec455ba5d95694c5d3298fd6cc76838cd7289eac146f5c02c78dd5401e4e64b1517cb66cdc5915ccc5b17efab4b11b"
 }
