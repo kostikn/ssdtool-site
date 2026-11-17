@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 239,
+ "serial": 240,
  "modules": [
   {
    "family": "smi_nvme",
@@ -8066,6 +8066,58 @@
    "min_build": 216,
    "python_tag": "cp313-win_amd64",
    "note": "MAS1102: zamer karty stranic terpim k shumu QLC, porog pokrytiya 90 %, sverka potokov dvuh blokov; pri otkaze - uliki v3"
+  },
+  {
+   "family": "smi_sata",
+   "version": 31,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-31.ssdmod",
+   "size": 3582559,
+   "sha256": "6042a803e690f6fe96df1e196377de070ec16f28387f8a9e4077c5f0a56ea52d",
+   "modules": [
+    "controllers.smi._shared.arc_busy",
+    "controllers.smi._shared.cp_store",
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.dbg_prepare",
+    "controllers.smi._shared.dbg_reader",
+    "controllers.smi._shared.errlog",
+    "controllers.smi._shared.flash_block",
+    "controllers.smi._shared.flash_id",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.mpisp_flow",
+    "controllers.smi._shared.native_flow",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.passport_sata",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.romdebug_catalogue",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.service",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_build",
+    "controllers.smi._shared.sm225x_ftl",
+    "controllers.smi._shared.sm225x_geometry",
+    "controllers.smi._shared.sm225x_remap",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work",
+    "controllers.smi.sm3281.binding",
+    "controllers.smi.sm3281.plan",
+    "controllers.smi.sm3281.pool",
+    "controllers.smi.sm3281.prepare",
+    "controllers.smi.sm3281.protocol",
+    "controllers.smi.sm3281.volume"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-17T21:42:47+05:00",
+   "min_build": 218,
+   "python_tag": "cp313-win_amd64",
+   "note": "SM2259XT2: chtenie oknami s avtopitaniem (ROM-start, snyatie fail-safe, puls); ROMDEBUG: istochnik indeksa perenaznachenij iz OZU, seed pri otkaze, proverennaya sborka pervoj"
   }
  ],
  "revoked": [
@@ -8126,6 +8178,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-17T20:09:00+05:00",
- "sig": "46655ea3f307603fa79afd58150ad9b9d2dec7304d96da6e0d50d322974873d298654f245c5588138ee42c9da970ceaef4f45926af6fc35f57febda4999e647d1971d9065667915e73a7a6d81be7481c69144a323fd1d639c1df2030aa43dced9da88c0519f20a23c91325f6b0ccafbfecf3b3bd089867d8d76795683e4e98150cf020435ca98f916697ef6b2decc499da55971641e7588d52f6c25b30bdab508ecf4f28c3f87cc081e4aff59ee9f76e2ef3e2157e87319192d3f3860b20ed5177f80cf5cc53eef569222491c5c0c00f13f1e54838686fe23f8dc35f876638c8c15ef6b3b3413a625688f0cb24b9d13c6c3db300470ae168a369d1de8ad86d7de5064851450e389f682775d713f5a54689b1d653b1e1525839938e4813028dea93a4175da03727623abe93934685fd1d10aca1398defd2fe04d455967714f8302ea7a386eed764ca055581b45b6d5d987ba328ce0f6d28e4660d09ffbff4d9a5f4ac9ec2fe0ab7805f5d6ff49b207a78823ff5e128159e7ac4d0e4496edbced8"
+ "issued": "2026-11-17T21:43:10+05:00",
+ "sig": "722246cf9899d2cdd93d9991919202b8976af85fd4616703fbe3fadb44ac9b4322bbc6160c76d0b20f77d39f56bda5bfd72ffc70849fd2d3698a19ea65f4a7e9616559bb1e04f6011c0193c8b196855d38e0e21fdc27d7f0d840a1f64f1ef9e394f129ef0d6589234c824c705483ca556099cc3b2dddc9c88202c1ae00d172351f6a9d02c8517c93a46f3c07997acf28ae806d71c344c8ba36935fd3921432f04b081c01a958b498f613dd98aa2c1c8082e54d0db345bf74999991a8a8e227a1af06b75d2d3fef625e10bf826ca44ca7afbea2d41033db08d61cd3c7fcec80fe890fe62f95e982610c9286e415e3eedd1bb551516bc52fe7d1ef2c834032b7195faff91d455159b2a0c660fa72cd1c7ddd06ed78587b0883e39ec53aeef480090e655dcef38502227dbd7163c8cc3a45d58e227852d66e3ffee413551c4911ea48ab330e9b89115454d39d55c99130df4fce77e87994e39c58112399e825fff91725d99af2938dffa44c897549e560b40fa570c041e3baa96c9d1fb174a84a05"
 }
