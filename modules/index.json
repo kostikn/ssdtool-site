@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 232,
+ "serial": 233,
  "modules": [
   {
    "family": "smi_nvme",
@@ -7840,6 +7840,33 @@
    "min_build": 216,
    "python_tag": "cp313-win_amd64",
    "note": "PS3111: номер кристалла для чтения страницы - из карты кристаллов диска; статус чтения - метрика ECC, а не «стёрто»; порядок проверок в NAND-трансляторе"
+  },
+  {
+   "family": "maxio",
+   "version": 64,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-64.ssdmod",
+   "size": 1697851,
+   "sha256": "97b2a62b7893a67a1bf697a555c940c1b1c169d0170976df034514612962eaf6",
+   "modules": [
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.label_dialect",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.pagekey",
+    "controllers.maxio.mas1102.ram_plan",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-17T16:03:27+05:00",
+   "min_build": 216,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAS1102: вид метки страницы - по сборке прошивки диска с подтверждением замером; улики карты страниц при её неудаче (в «Данные диска»); «Сохранить FW» без ложного расхождения стр. 2"
   }
  ],
  "revoked": [
@@ -7900,6 +7927,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-17T15:56:25+05:00",
- "sig": "628eda2820cda2486ca9a2b358f1ac542646477f5f1b1b67643ba9f36899474eb5a66fcbaaa89c8c4f1adecb3886aadeb60b84d62d856b90de863ab5f1094bdf243c6171383ba1425be4752ce2b14adc3e378cb2091c0106d9ceb1b34ca5546712c022bff2f8dd2717a679c9fc54be6b630ffa9d5bd4852846f7a6e1df4933f941c18e8fd19d9357058f2c47f49d5dba6729c28c25c1f44575f0c1248e3b286d04da9593cd38b8839148faa21c4918da07863df659d5c6699cc57566cd47624e0f29f2628b8647ee0b9f97c863f0d03939eedd9be162c6c149dd4aae0fa3b6f64ee06e54d0ce5cc511afe544dfd3d476dd3e7906a629bc3b1a1c2c05716b7341aac8fe1724e4c87968d6bc8ebc3caba124a004e341db12c82ab8c86a0f94f7f17fb65c756c5887b284c901e0436db87aa9f9e257138d341745e6dce1dcbf5c89c748f023218527af3d4dccb2047e6df2324487a4f9ff2125762c628c045abc213a512533f91066864bf0166740a6ddb3706709e4eb7cef04fdd838a615dccc29"
+ "issued": "2026-11-17T16:03:29+05:00",
+ "sig": "1d008128bc278b0ca52ea2d6bc92be3c18af80f6180ba3e32c49e7ad890743925123a7c7cf9cdb742dd9d700cc72d9ca762f8f8482767c03e58d1982f2f63eeb05e15a941988efb1807c8731ea53bc0e67f41b0701b9fa32b7d9654842dcb1238297d2691422a55dae1896a85d0319521d12ebe8eaa0c22917562a60e0e3f4dc4dd7674417a94146b0a8e605d8c656775adfaa0280011b6e32551ba253f966f2f1417c3aedfd9c78819e4c2286f7d28e7c35b87fabd18b45c3563a35f7cb66565f31606325a9d5bdaa00922bcefa63a6b2a06ef85e11f20964b20e211a682987597b399dfd77574850638ee5c4839b13317e906206e70e8ae5d473b7bf62e6e7ea7d48c58785fef9d31a0f3b60eb3a17bd37d8007bc4dc387b5f64a9cd228012e01efb0ae4a7c3b64daa364003c780c26761f7789fd61f63884a19cde2add1b3dd154ee37b815bfddca0c6aa62ab685c17807abf9e7ec76341f5a70b92fc556ebd35baffb81faabac61d7cf3e817604887cc564a534d3181f40590bae422c94b"
 }
