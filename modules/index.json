@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 244,
+ "serial": 245,
  "modules": [
   {
    "family": "smi_nvme",
@@ -8318,6 +8318,58 @@
    "min_build": 218,
    "python_tag": "cp313-win_amd64",
    "note": "ROMDEBUG Kingston: vyvod istochnika indeksa iz OZU chitaet pul kuskami po 16 sektorov (v 31-33 ne rabotal)"
+  },
+  {
+   "family": "smi_sata",
+   "version": 35,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-35.ssdmod",
+   "size": 3608533,
+   "sha256": "221fff1dc6be20a5e287d498d591dd806a9371efcaf455f369192a904296b280",
+   "modules": [
+    "controllers.smi._shared.arc_busy",
+    "controllers.smi._shared.cp_store",
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.dbg_prepare",
+    "controllers.smi._shared.dbg_reader",
+    "controllers.smi._shared.errlog",
+    "controllers.smi._shared.flash_block",
+    "controllers.smi._shared.flash_id",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.mpisp_flow",
+    "controllers.smi._shared.native_flow",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.passport_sata",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.romdebug_catalogue",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.service",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_build",
+    "controllers.smi._shared.sm225x_ftl",
+    "controllers.smi._shared.sm225x_geometry",
+    "controllers.smi._shared.sm225x_remap",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work",
+    "controllers.smi.sm3281.binding",
+    "controllers.smi.sm3281.plan",
+    "controllers.smi.sm3281.pool",
+    "controllers.smi.sm3281.prepare",
+    "controllers.smi.sm3281.protocol",
+    "controllers.smi.sm3281.volume"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-17T23:40:27+05:00",
+   "min_build": 218,
+   "python_tag": "cp313-win_amd64",
+   "note": "ROMDEBUG: sverka pula do konca zapisej perenaznachenij; odna zavisshaya stranica TLC ne obryvaet okno (cikl pitaniya, propusk); posle obryva - novyj vhod v DBG pered nizom"
   }
  ],
  "revoked": [
@@ -8378,6 +8430,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-17T23:14:29+05:00",
- "sig": "6d822b16b0b5fd2bee9d16417e94f2df8b01425bc39146b7928c5ae3c243427be6a1b9478ac8432ea99794e861645008098e28b3b7a6eace60119fed8cfc19af8d2eb3910690ab2f61e04171fb16a7cd14cbe973f90d961dc346730350cca1a601396331ebdaae21ec285af98cbb88ab5fc084a2b602b21e7c134e03b037e97b8eeb2b225881eb247dd94222579252cfb1c60da95dddb708fbf834c08f9bc591bfd1121b7a4d12d1f958d7520504d32d1edfc875cd04d2b00c17982fe83b9ca9840ea728a735d4eb19d49f35f3812aa14249f6165510ccad2ded9dfdfd19a415aa0829d5965d2e611beeaad2a393033d4b1fe71c9d8ca23b421f3e7b1fc7dec39439b474ad512b64ac559850c96a2825ddaeca148c8bcaeedc4e136bdbe43d08de0b4c91c6920927153eeba9c6b619a890add9f2f06eca6bfca3d876d22945e323b12510faafca85099815608466cfc775f07da5ec0d7b83fdd9370006a4a2ed444c1f45a747282f921a0a7b48677be87de8b70657bb5e935832cd59504101ef"
+ "issued": "2026-11-17T23:40:50+05:00",
+ "sig": "1e59999a1af62f26df38c3f082f32a765f06ac6cc0ec47a1a8f839b4ce8ed06ed5d37679651edd28e48c5c1f7c874e3abb58b9a107a855e385e6314fdbcec32a6a52b31695cc1265036a639ce1494efc7b505699716a273e929663119b17059be7fce6432a3e415a230532daf1930aee19d1802441aa7e0cfe038699de638a96867d45076402e91c8a489b6588f6d81df4e26e7a5898e190a23d05aa5d0d3eccca8f11455c7fd6e0a0ca67c1d9d71f611a79f8646e423c32cabcbef18f73955deb34828816829359e481b2fa323f9f07e98943c3470ef1cf7d7f6bbc380f35de51557a82c6658a89795656b9dd4a93b3e0e0451755ce79292b45049eced12a595cf88ed4b209feb787d79808f42e4756965cfeef6b151d3f36910c8f2528a031b6d3599fcb32088b1d93f6e20620b268c19e2ccd91fc338dfa396d549da5ff3958688e1d0937544323dfb6b3815f060924aff34f37f04f48ae42d79b23ef5f67a97a584dce6297e10ceb22cfba91d4a4f5d475b5ead30a6b069ff49ead81d87b"
 }
