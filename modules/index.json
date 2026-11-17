@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 243,
+ "serial": 244,
  "modules": [
   {
    "family": "smi_nvme",
@@ -8266,6 +8266,58 @@
    "min_build": 218,
    "python_tag": "cp313-win_amd64",
    "note": "PS3111: versiya svoej sborki iz sluzhebnoj zony opredelyaetsya pri lyubom suffikse zagolovka i sveryaetsya s kodom proshivki - pravilo vybora proshivki (svoya, ta zhe, blizhajshaya) rabotaet"
+  },
+  {
+   "family": "smi_sata",
+   "version": 34,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-34.ssdmod",
+   "size": 3597497,
+   "sha256": "d3e2bf091db851e6c053cff68874f5443f978e4b8e00b81944bebd2c5f117b1b",
+   "modules": [
+    "controllers.smi._shared.arc_busy",
+    "controllers.smi._shared.cp_store",
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.dbg_prepare",
+    "controllers.smi._shared.dbg_reader",
+    "controllers.smi._shared.errlog",
+    "controllers.smi._shared.flash_block",
+    "controllers.smi._shared.flash_id",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.mpisp_flow",
+    "controllers.smi._shared.native_flow",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.passport_sata",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.romdebug_catalogue",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.service",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_build",
+    "controllers.smi._shared.sm225x_ftl",
+    "controllers.smi._shared.sm225x_geometry",
+    "controllers.smi._shared.sm225x_remap",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work",
+    "controllers.smi.sm3281.binding",
+    "controllers.smi.sm3281.plan",
+    "controllers.smi.sm3281.pool",
+    "controllers.smi.sm3281.prepare",
+    "controllers.smi.sm3281.protocol",
+    "controllers.smi.sm3281.volume"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-17T23:14:22+05:00",
+   "min_build": 218,
+   "python_tag": "cp313-win_amd64",
+   "note": "ROMDEBUG Kingston: vyvod istochnika indeksa iz OZU chitaet pul kuskami po 16 sektorov (v 31-33 ne rabotal)"
   }
  ],
  "revoked": [
@@ -8326,6 +8378,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-17T22:54:04+05:00",
- "sig": "0ddfbe3198ed161a60468748472f2c19ba5af5227c4ce57e6eee02f3aa4ce3f25f95ddecc46db8b20b48b722a98d7fed14d4440f0c50989ba139e021c3e46bbd8b0f669caa6a54130279b895c3b1cf84f0e1df6242820df8d4f5de9fe859177fde693110d342ab396c2acebf17f34080fce83a11fd94d14c81e55688e9e3f9dddd683a6923000001347f4cf1afbd8ad5e811cae969932270e420dd32970f6d45e5de5da2637c177b37829c57edf804481e23c08a96c6b862b759002e45bc4dc0a9d2c3681d802a41b8edbce75c4c4d919745c8ca04b1ba2eb88595b73748ef7f303bf20701946850c074b7b3da5d1beac9a9ce95a2dd095c2f79e21c683311dfd9937afd38f235bdc8d07724810c10ba70f9075ca5ef92a9793ce00c92b747a5e65efe56f5d1d8df9164644d2fa88255ce448a6c3b0464da55a9ec0c755f67ec793f2b2837539a6aff06a7ee21c0f9c0d6096275159af1a49cbf6e0b53b3ff691e965ffd35af94e9f4d02fc949aa3ed686f11cc9f2ef924f30b244a0cdd5d69f"
+ "issued": "2026-11-17T23:14:29+05:00",
+ "sig": "6d822b16b0b5fd2bee9d16417e94f2df8b01425bc39146b7928c5ae3c243427be6a1b9478ac8432ea99794e861645008098e28b3b7a6eace60119fed8cfc19af8d2eb3910690ab2f61e04171fb16a7cd14cbe973f90d961dc346730350cca1a601396331ebdaae21ec285af98cbb88ab5fc084a2b602b21e7c134e03b037e97b8eeb2b225881eb247dd94222579252cfb1c60da95dddb708fbf834c08f9bc591bfd1121b7a4d12d1f958d7520504d32d1edfc875cd04d2b00c17982fe83b9ca9840ea728a735d4eb19d49f35f3812aa14249f6165510ccad2ded9dfdfd19a415aa0829d5965d2e611beeaad2a393033d4b1fe71c9d8ca23b421f3e7b1fc7dec39439b474ad512b64ac559850c96a2825ddaeca148c8bcaeedc4e136bdbe43d08de0b4c91c6920927153eeba9c6b619a890add9f2f06eca6bfca3d876d22945e323b12510faafca85099815608466cfc775f07da5ec0d7b83fdd9370006a4a2ed444c1f45a747282f921a0a7b48677be87de8b70657bb5e935832cd59504101ef"
 }
