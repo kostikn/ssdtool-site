@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 269,
+ "serial": 270,
  "modules": [
   {
    "family": "smi_nvme",
@@ -9426,6 +9426,42 @@
    "cases": [
     "I-2026-1117-02-998F"
    ]
+  },
+  {
+   "family": "maxio",
+   "version": 77,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-77.ssdmod",
+   "size": 2998173,
+   "sha256": "91fdb40971dc87efe6addad523dec1df17a376cd6939cfdd9378736ca9a5be7a",
+   "modules": [
+    "controllers.maxio.mas1102.codeblock_keep",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.label_dialect",
+    "controllers.maxio.mas1102.mode_probe",
+    "controllers.maxio.mas1102.native_rr",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.pagekey",
+    "controllers.maxio.mas1102.pagekey_table",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_plan",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.seed_probe",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-18T19:28:02+05:00",
+   "min_build": 219,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAS1102: источник образа сообщает, чем и за сколько достроить транслятор (для вопроса о достройке, со следующей сборкой программы)"
   }
  ],
  "revoked": [
@@ -9486,6 +9522,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-18T19:22:04+05:00",
- "sig": "66627d99a3dfc1395b7b49edadb098e67192e13b9269a1d0bb4e8423fa522dba309a0dea98518aa3529fe78e6d699380bc79b715896fe032c75cb8a3b6700e84daaab541ce0595683125f6644f41aabfde67bcfc52ab2ff171f1f13cad02ac81724b0156c14416ba73a723ad9a22cdd7282cce5c912bbc2f5da6a9785f18a89873adbc3575ff9d9b44e612013801fb5d09b0ba62e8f7295c7966474e60ea2096eda2e0f3a3694e971c64d6690c4845f15cdd2797a91fca55e37cdc3996cd8b03fb4cc522e80c3f05507bef7bc95d26c6ad65a2ccd4a81db4e4aeb3f1619a8f5344268a9c51dcfc026c9006288717eefe67c2de85a93aa10aec97588efcb789a834a88962ed12f69b1aea67c2b1bc36b915bc44c44a574b49321739a39f88be5f6aa40c72305128bf4fa2103e96a3bc04f8123a728f2d1bc3494e464102af0fcb7deabc1618ebc01216052bd3aa6d33fe04826a16e654cb3ad56a2b156cf4b263923b22157fb60ac4a52a22d1a0cc38eeb157a613187de35201db700796276753"
+ "issued": "2026-11-18T19:28:05+05:00",
+ "sig": "165bdcbc1038250c3ceb1db399aab15a91d69f9f02afbf494ba08b6ff41fe07f08d869da22a0aa1808eb747f9c4f7749182fb9b3053a476e6e6e717a9f7880d6a19528b0e059773057bc167c6ff7965bc29b379cecc61fd043a5a3cac182f7678f118ac1e1c9e69803bd497703fcc5afbc2c09d36557c9557510ac92c6053427ccb337ec56c706890e239132d5479fca13289917042600fe2fddfa55685c19fece2e3dec23a7325e1a8b2aea35b3a525491d4cf6c7efd8e5f8e76e4f4ccfe3c36e28aa51c81becc0ff30b648b3ec629ab9bbbecfaba5bcdb578c8118429f5e4ac742657156772616c5393a6e3b317fca40f3253461e6366a829bf6efc80cc96b3be8f5cb51310b2c0181be753c663dfdfbdd9d8a429c1dbd0059ed886834c6a5d33f00315df7d1e789896f1d5ad591adc01cdb93c4f53b6b10cd0912502f437093f7276eb1ebb91dda8d9cbe8ba9ab8e108f7d7120f0e1c0f5478deef35faf8c558a7e98047b1d9efc94d9d229bd30947c0469d93854c86231bfc3c6c3456eed"
 }
