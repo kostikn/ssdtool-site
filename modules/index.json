@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 264,
+ "serial": 265,
  "modules": [
   {
    "family": "smi_nvme",
@@ -9210,6 +9210,64 @@
    "cases": [
     "I-2026-1118-05-D0E5"
    ]
+  },
+  {
+   "family": "smi_sata",
+   "version": 43,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-43.ssdmod",
+   "size": 4122637,
+   "sha256": "46b848c1aca62d6f7e616c00a4b8e186dc366769695b277aa289c35aece21867",
+   "modules": [
+    "controllers.smi._shared.arc_busy",
+    "controllers.smi._shared.bootisp_store",
+    "controllers.smi._shared.cp_store",
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.dbg_prepare",
+    "controllers.smi._shared.dbg_reader",
+    "controllers.smi._shared.errlog",
+    "controllers.smi._shared.flash_block",
+    "controllers.smi._shared.flash_id",
+    "controllers.smi._shared.fold_seed",
+    "controllers.smi._shared.full_repair",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.mpisp_flow",
+    "controllers.smi._shared.native_flow",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.passport_sata",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.romdebug_catalogue",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.service",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_build",
+    "controllers.smi._shared.sm225x_ftl",
+    "controllers.smi._shared.sm225x_geometry",
+    "controllers.smi._shared.sm225x_remap",
+    "controllers.smi._shared.sm225x_superblock",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work",
+    "controllers.smi._shared.unit_lists",
+    "controllers.smi.sm2259xt2.self_repair",
+    "controllers.smi.sm3281.binding",
+    "controllers.smi.sm3281.plan",
+    "controllers.smi.sm3281.pool",
+    "controllers.smi.sm3281.prepare",
+    "controllers.smi.sm3281.protocol",
+    "controllers.smi.sm3281.volume"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-18T18:02:27+05:00",
+   "min_build": 219,
+   "python_tag": "cp313-win_amd64",
+   "note": "SM225x Подготовка: запись настроек режима в ОЗУ после медленной TLC-страницы больше не обрывается по таймауту (сброс порта)"
   }
  ],
  "revoked": [
@@ -9270,6 +9328,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-18T17:42:11+05:00",
- "sig": "56e92909f4560b087790f2821d68227b5887b5baf7ab8c673f030a42646b63e84ea94193c47549d1ae39a3d5c0f114a3af6accb6715dd359d7882a7ae675dc8cb9cf6468f0fc59984c361e5dd42e78c94c4c15374c2d2fbfb52768da4cd8989b2d5a7f58fb2b707b297a2bb734f294a42caef39528feb53f9a63c0c774e050b233464550e8f974f18f8c28ec964fcc5884091885c39b1ba620a3e7ec9a17ad9b2177a71c7da035e7160e72918026c2d13287022fb0f81259439a80886566d06f193d1b1d27be380a1251a936b905471b6201972ec97e23af8c881d6f58479a2388cc2b5fe6499ea055961175fb3a40c01538529a05f390bc397ced41fd6cdd1df1ad7a56a07a126ccaa16d0d8cb04de036ece2041c507049722514b37d6ebb059d76e6110f8de57aa0f728e103ce5fde66785db88b5de51ec4de7f01ed5144082bd959272cc2223a46ff2cb767dac4ed7397e3335c37f7fb3849ceb650a6ab01f1190f31a728013bfe954eed8c734156b165a61afb56762f453edf1526687ade"
+ "issued": "2026-11-18T18:02:34+05:00",
+ "sig": "7d8ca7ca06b29d2c2973f8cc8cb0d3543091514054250c3fd6e28224f549aa950db0419dfa71f69e6f64f828f8ed266341f2ba40a8589c75696b986f79e6c21abf5b02c6537a2a757a0635dcad1a0d0ba7673eb5472f31a73d7a62e27297bd2ec7fedb7141187323ba130d5d831bc8923b660496196040078b6082fc03409ebd99a65189d1c4b441191eacbb41d0234995c14814c3c53259110b0781d6c8057c78318372cbab19987fddabb3b59db07bb4c6afa09585d5254e1179256696a18689cfae667d97aaf406dba066f1811b49d2be202fe2b31c5df55ac62cefa1bc729449b7b1e9d77fd9040fd18aa29369f9eec3794b755ca9a4e98f75ca51bf970e02161d5c3c82d036271dbdaca76bf08e6a66a541c165fe659d7b52b2adabaec44afa12bc4a4a40f4e1bb671bb901190387956ce6a3b8a11cf7fc3b17b438e811e96cdb79b78a61392d0dbd3def60ddf615d394ae833e10d0bdfe9de245c97cf603a16f46ba5d977e544a4c4d2b692bc4e0dcb4635ec25f0b5e7ecf58f7732ce8"
 }
