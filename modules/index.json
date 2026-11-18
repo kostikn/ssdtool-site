@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 257,
+ "serial": 258,
  "modules": [
   {
    "family": "smi_nvme",
@@ -8952,6 +8952,30 @@
    "min_build": 219,
    "python_tag": "cp313-win_amd64",
    "note": "FirstChip в ROM: ID памяти запоминается при первом обращении; три разные строки, когда ID не прочитан"
+  },
+  {
+   "family": "firstchip",
+   "version": 3,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/firstchip-3.ssdmod",
+   "size": 651694,
+   "sha256": "be2fc64a325204a125ac73c2b1d3a21ed4218fde7e1c9bca36eddee68d42a79f",
+   "modules": [
+    "controllers.firstchip.fc.plugin",
+    "controllers.firstchip.fc.reader",
+    "controllers.firstchip.fc.u3_cache4k",
+    "controllers.firstchip.fc.u3_prepare",
+    "controllers.firstchip.fc.u3_scan",
+    "controllers.firstchip.fc.u3_source"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-18T15:59:40+05:00",
+   "min_build": 219,
+   "python_tag": "cp313-win_amd64",
+   "note": "FirstChip в ROM: ID памяти запоминается при первом обращении; три разные строки, когда ID не прочитан"
   }
  ],
  "revoked": [
@@ -9012,6 +9036,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-18T15:56:11+05:00",
- "sig": "77cf17e8773e116ac82c773b220d5f5ea2b4d7623b06f172a1a7741b8852d36e4ac0bed7edfbb74f1457e1cb586df5c859951c91d38ca92bbb8677e9670ed7ac87163a60c18a9637555549494bed8f479595d15992be7191722bd4580c88d6f1a9098755442edd800a42079741e53d35dd3e7df77c7f04966ce44c2fb92ce085aa88b6718f8b825c54e9995d5e88fbc5a815b25b9fa6a1813c0240f23b68d964d4a80fcc97bb74709d9693c953017b0f8cb39300242c049018a7b0b9ecebb271228377cc026ca7d8f06fc31980c761f3da49afe602de53efa4fe1e22d0cf973ff7cdef2b096acef67959b789e6df3fb3a36ebc62c3428c189790dc8e9ab1d30d6b7c22861706cafd456a50baa7e1acc27184e342921877177841b36381726abb359bdf7556bfb2d1bc16f068980d076ef2b4dc04067caa64fed180bac05f2b18e8ac485905a38a0faa9348f12b4e13a391e92ba72b0bdace8b253e1a9925aa8ad38bf960f22025cbb99626905f2ffe70edfb965f73ff9c59e76890532656baa5"
+ "issued": "2026-11-18T15:59:46+05:00",
+ "sig": "4e0b31d80579f3886cf409ee836161b54ff7780189bb64c7782fce7e9d134b80a4002208a53d87a4f9d05529de0fb94430cbc650210ca738dad38f09dbb9c0dabb3c935fa66134a7996422decb46ab967ef608896360064fa074708d9d38d54df3e3ea79d0245b20bf23d7ee0af04c7d06b746816878433929c65820cf916f3e06a4e6d85176971fdd637e2e93447614f0144a7ab605b5798c0c1e599700dbfb35b3454e228e2797c7acc80204a6db257d0ee3aa65d27d0562447bd6a69555beed5eda187c32c13ecc08d45f91084439d335ca43b83a184eed77a88e1345235a622cdafa39113b3060c00b2c2cc777fd9b7159d18de71e1360d73b59e904d3f2ce42edeb0343bfb5ba6e5fee809ddb6e22d3b030761f97d644ea5fe2630bff9e592785d96a96db97e4ace79b4d67a97af39c4ca3a81c9ea892e6712d9cf0559f72e294475de77616c992dabec1d007873b6efcae9d17ad0c6ec2cc6c2054325c2d305227ba88ae399b801d56ccdbf6fdebf91cfad3378912c687e457b8f85277"
 }
