@@ -9270,42 +9270,50 @@
    "note": "SM225x Подготовка: запись настроек режима в ОЗУ после медленной TLC-страницы больше не обрывается по таймауту (сброс порта)"
   },
   {
-   "family": "maxio",
-   "version": 74,
+   "family": "phison",
+   "version": 24,
    "core_api": 1,
    "feature": "prepare",
    "period": "2026Q4",
-   "file": "modules/maxio-74.ssdmod",
-   "size": 2875534,
-   "sha256": "62e7fa95a6c12eead76af410f4863976b68bb892fce4bbd2f2efff280bfcb68e",
+   "file": "modules/phison-24.ssdmod",
+   "size": 2397495,
+   "sha256": "9bc158d7db67a0c176aa723d51d0560454f873cfae1d73abfa4d548cb5a6c866",
    "modules": [
-    "controllers.maxio.mas1102.codeblock_keep",
-    "controllers.maxio.mas1102.gdp_build",
-    "controllers.maxio.mas1102.gui_actions",
-    "controllers.maxio.mas1102.l2p",
-    "controllers.maxio.mas1102.label_dialect",
-    "controllers.maxio.mas1102.mode_probe",
-    "controllers.maxio.mas1102.p2l",
-    "controllers.maxio.mas1102.pagekey",
-    "controllers.maxio.mas1102.pagekey_table",
-    "controllers.maxio.mas1102.protocol",
-    "controllers.maxio.mas1102.ram_plan",
-    "controllers.maxio.mas1102.reflash",
-    "controllers.maxio.mas1102.save_fw",
-    "controllers.maxio.mas1102.seed_probe",
-    "controllers.maxio.mas1102.service",
-    "controllers.maxio.mas1102.start_check",
-    "controllers.maxio.mas1102.translator"
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.neighbours",
+    "controllers.phison._shared.passport_reader",
+    "controllers.phison._shared.sa",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison._shared.session",
+    "controllers.phison.as2258.loader",
+    "controllers.phison.as2258.passport_reader",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.burner_reader",
+    "controllers.phison.ps3111.cluster_codec",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.nand_translator",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.plugin",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.ram_snapshot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.restart",
+    "controllers.phison.ps3111.revive",
+    "controllers.phison.ps3111.sa_diagnosis",
+    "controllers.phison.ps3111.start_fixes"
    ],
    "restart": "suggest",
    "payload": "pyd",
-   "issued": "2026-11-18T18:12:20+05:00",
+   "issued": "2026-11-18T18:12:27+05:00",
    "min_build": 219,
    "python_tag": "cp313-win_amd64",
-   "note": "MAS1102: набор меток страниц, снятый с другим ключом, не используется повторно — достройка транслятора читает метки заново",
-   "cases": [
-    "I-2026-1118-06-D0E5"
-   ]
+   "note": "PS3111: ремонт штатным обновлением родной прошивки для дисков, поднятых из холодного ROM; ожидание паспорта при запуске 90 с"
   }
  ],
  "revoked": [
@@ -9366,6 +9374,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-18T18:12:30+05:00",
- "sig": "3a412dc55c84d6c3c8c1d158c07923528cb911cbac4bb834b7a845fe5a13e015db2048c528b835dd7516440f7968ae5b6d9bb7394826f504eef4c2c503b2e4a9eab0d31e910018fd0854aac954f132841a3526f1f293886398b27a5e821a470dd7ee49edcbb0de83883a4878993f155b821f2e1c7b0466e57456414c685b53b137ba0889b78154777d682c700781e1289471750addf7733753e78a572c6ada26182397941102a8a0dbb31eeb352101a357f120ed1067b4aa7518ebe772e967cf41fcecbeade45f5a6aad958983c79dafdc08bf5f04fed4232333e403221d5f1ed15a8887f5d300d166713ade54aeaf792a129e6ba3c5934dcd6ee08ac1e558986945a5959545fdc3efc042b80af682bc5bd7f385e157317ebeee77be0e12f1431f4866b2926f03c79b45e0f6f81a1db3ee68dd7fb1f1a1b821fc77e5647409bd1af65f4a196b1e6c23855e650f4810867f8b746fe0b5e8fe6987c2301176aae83bb3158a7bebc62cf6f7337955c269e99f647eaec556934726e6827d2c583626"
+ "issued": "2026-11-18T18:12:49+05:00",
+ "sig": "3eb56f42d3ccfcadc5dedfa30c6c008360f980b8d167123f7a32b25d96ba36ab366b0d001b720b7018ddcb1ddd121ba0b038c3fcbfa5adeef95f48a6c3a4829650924277d1662007e710095daaaf36e6a24ac6a0b5ec9adb4f80bed3a055a07fba36e0ded5609a63800aba59dfb9329c0fbf7d8025c36f5bf97e7aff141ad09616f21c67d72ee46a3bff79a377ef8a9fde1f575e27e94a4040bad7a33c87ed8c29802572fdb12e4d3a5d303753fa54c1185216ba0c741b8d179725299b63c02794ebb9ed04eba410e7243520d78443e66ca496fee71a9571c53eb845fce1f05d147f76a78007dc26325a434f199306cf3d225342bca2f877b25aadc7f4bc3d7a901ad9e86b2f6e1081b5bcb1e6c0b7eadbccb3e82aae0b6c3bddb5ccd05a46b09d7e8684863fe7ebc6ef546c1c06bad37241e989a53fbd0873b999c9d2bbc6c042ed4658b099a7f0a36381949e2e0deb7bfb30a97d5c5a45665bd35fed63bfeaba8a5ca38a1bd464e3e23988e377f58b1a9869f03c2f7b6daf163f2d8d88d9d5"
 }
