@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 246,
+ "serial": 247,
  "modules": [
   {
    "family": "smi_nvme",
@@ -8425,6 +8425,51 @@
    "min_build": 218,
    "python_tag": "cp313-win_amd64",
    "note": "SM225x: sborka translyatora vtroe bystree i vchetvero ekonomnee po pamyati (plotnye struktury), svoj etap s hodom; knopka ispravleniya svyornutyh stranic SM2259XT2 (rabotaet s EXE 219)"
+  },
+  {
+   "family": "phison",
+   "version": 20,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-20.ssdmod",
+   "size": 2309845,
+   "sha256": "25b3a65c084a1f7197d2f4782c4cb0ee03e97f7f55443a145cb2cd95ffd25552",
+   "modules": [
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.neighbours",
+    "controllers.phison._shared.passport_reader",
+    "controllers.phison._shared.sa",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison._shared.session",
+    "controllers.phison.as2258.loader",
+    "controllers.phison.as2258.passport_reader",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.burner_reader",
+    "controllers.phison.ps3111.cluster_codec",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.nand_translator",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.plugin",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.ram_snapshot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.restart",
+    "controllers.phison.ps3111.revive",
+    "controllers.phison.ps3111.sa_diagnosis"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-18T05:17:44+05:00",
+   "min_build": 218,
+   "python_tag": "cp313-win_amd64",
+   "note": "PS3111: распаковка сжатых кластеров (формат §35) в своём трансляторе — сжатое слово карты читается и распаковывается, сверка LBA-метки"
   }
  ],
  "revoked": [
@@ -8485,6 +8530,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-18T01:38:50+05:00",
- "sig": "53135c6c0221fae3805349355aaa701a2a9093b6426841b72c94b376604fcccb5baf7821358b56fa511be7fa0a0c3b57cccfa99c3efa88428ced47a7f91f4ad919657783e7d824ef2de06265d17c2896bd65a977ef8500322713c1469042a87d5554e1d2a3b607f086e4c4b65d35c8deca33c39fc865d972f17c00651ceb422e4c501c4cf4eaa7104f1e7984f941dce93cfc463ac52dea7edb17ae15dc76dc932335e15b81e468baffeeb3383740829bfa4096c4ec189c2ff6b0e16b04f17dd7efc439c159b92497020944cee751240ca19bd681f84b21ce87228ac39b8f855f0bb4c525250910ba1d62e68f6e00c2dd3ca159c871053902a2efe0b441f5ea7a4970fe475c00d1fe70f3bc99c38c9b5bfdd45f84d0b1db882b3c91d9c6ed0086d2877b6784d0d3e585b223affca3a096fe50dcfa2f91d2b1d44878541515009c8982b9bec66319fa8fe322ae0cc219aad220348059ce5270f25b116f2a49228dd34805fda4a5be593bf795c619c16b37a747a8a97f3c2a5f81bb4cd4e3fd7b9b"
+ "issued": "2026-11-18T05:17:53+05:00",
+ "sig": "48e31927dea20f665ceff9e5224ba9184c2844dcfebbcd77c5df052fd49d9964751ab4f5bbdcf48ad1a15f2056e1f9ce9dc40fbf3dee29abaa24ec5551f6ad8d68a9839ecfb3d711fd179ae54e858e03a0fe9204131aff9c8d032a7fe9bd405daaf6fab7882ce89066320b142ad181bba1c3beac9ca59c25954ae47fe52db2eaf8324e4170055827f1e4b3091482e3aedacd134440ee30a8fedc76395e743d6c001235f9b7b3eb0daed6c0c6d95c675953aa7995920637d356f386b36708b58c2f200508f69f0df5c32aad1d8d03b9defaf717a50b51db8dd4f08e2fd63475ebdcd4db05079bb91d386778aa4a6cc5e09282c7c98182e48fc89085871e4b25dfe160be2229420f36c513fce9d5a4460d20773b27ae7a98632dc88bbcc796e3c62bf131a5da8e03e5252a5cd6d0e39c8216e6f9d14b648fe65104bfc4cd895a9b9cba1792294da3bda39ab349aff2398f8dd299d20753942d44b6313d2fdc405ff9d90e61ba69cc525e49acf509854b55781366eba776ff26bf124c517ea32b07"
 }
