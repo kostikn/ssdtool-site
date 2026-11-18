@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 255,
+ "serial": 256,
  "modules": [
   {
    "family": "smi_nvme",
@@ -8871,6 +8871,64 @@
    "min_build": 219,
    "python_tag": "cp313-win_amd64",
    "note": "SM2259: чтение BootISP с диска выключено по умолчанию (не проверено на всех моделях); при потере связи с загрузчиком работа не продолжается"
+  },
+  {
+   "family": "smi_sata",
+   "version": 42,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-42.ssdmod",
+   "size": 4122631,
+   "sha256": "ee50beed2917bdc36a57cd610f7cd50e1870019c929ab8ae5be7c5ead38d8da0",
+   "modules": [
+    "controllers.smi._shared.arc_busy",
+    "controllers.smi._shared.bootisp_store",
+    "controllers.smi._shared.cp_store",
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.dbg_prepare",
+    "controllers.smi._shared.dbg_reader",
+    "controllers.smi._shared.errlog",
+    "controllers.smi._shared.flash_block",
+    "controllers.smi._shared.flash_id",
+    "controllers.smi._shared.fold_seed",
+    "controllers.smi._shared.full_repair",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.mpisp_flow",
+    "controllers.smi._shared.native_flow",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.passport_sata",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.romdebug_catalogue",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.service",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_build",
+    "controllers.smi._shared.sm225x_ftl",
+    "controllers.smi._shared.sm225x_geometry",
+    "controllers.smi._shared.sm225x_remap",
+    "controllers.smi._shared.sm225x_superblock",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work",
+    "controllers.smi._shared.unit_lists",
+    "controllers.smi.sm2259xt2.self_repair",
+    "controllers.smi.sm3281.binding",
+    "controllers.smi.sm3281.plan",
+    "controllers.smi.sm3281.pool",
+    "controllers.smi.sm3281.prepare",
+    "controllers.smi.sm3281.protocol",
+    "controllers.smi.sm3281.volume"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-18T15:53:53+05:00",
+   "min_build": 219,
+   "python_tag": "cp313-win_amd64",
+   "note": "SM225x: отказ записи в ОЗУ при обзоре блоков больше не роняет Подготовку (связь восстанавливается); BootISP из INFO: способ чтения по метке страницы, шаг выключен"
   }
  ],
  "revoked": [
@@ -8931,6 +8989,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-18T15:46:12+05:00",
- "sig": "5c95b79364896f6de30ed7f7db855560b23a61c3e843c9d00b8af54d1c9e558a43baa57d2788e1ee67bea992f0a1de125fc0c7efc48b06e7de87d42f32d875f60323efd550e16dabb991e5c9b659a15f089f32c48f18a4ec48082e3a84e24f5f2894f64c3f2cc64461b5af5a02718bf844b2bdbb441626095a528670c3f83cd0a600d5099855fe305015fc21a3c4e69906ad324970de568f39426f60124369a6bb442813ce8f16570895b7ab5fda436af07d6fb493c3e874fae7c4c2b8c97fa12c3946fafddfa0a84291ac6dbf09f3feddee88a99671d68b489c590c07667580ee9b35e76aada8e9fd0efeb7cefc9379cc8271ff198ae971e6ecbe584f6ec9809e61bb6ebde288a4a6836c50a2dc804a50b2cbe837d36d3ec00f3b1d920d76aceb2ba808c99be40043bd937bdc9c73e20868d7714d0bfcde47d36a53e043cfc7334c15e015a02b1c5176d363ccadbd261afb84af6e4bbbd42dfb2653f4a61dde6d89655d0b2e3ce47ee8d5e8a993fbe6be2eefd836ebb624ae235b15ff3d3090"
+ "issued": "2026-11-18T15:53:59+05:00",
+ "sig": "2c9d86c0f5d048a94a09d9b0a34839eca8de18006cb2ee7e98ba3a4663cbd88444c3b0238b881f3e3235ed0446d07971b8bcc3a5a01bf35f6d9917fde6072a4a69874572e913157881f12c4efb825c4ad9319013478c75b89afd21324a78f997c74566c6f25f3b7a926451a62df5de031c1577b402f5b32367d73b97518a051068feb4e470e65cc582e7793b19d00447c3e93524ea6652c38fefdbba55a408326c47697d6c7995431fe83e2c77d7eddaf8e2c68c5bca692366a1b63268cf74fedd9234e79079b5c2d126591faf277b893e553e7e0afb27529f3c4f32e545a375f90e66d03a4638eafbf306a5223c163f63925744321d6122d3f0093f39885f6365078ba8d0810076aa22806bf7c39fde38f8cfce95c1e668c961a62eea74bb9b03b099329a5ecb5575e4039d7d247051bd357c5e26fea97cbc5c192136a8640f1b29d9eab07f9ab7420495b6128d2ea4d7aa4c44eab612e49b69ffd919d9c6f62f8dd0b7b6e0faf54353f3515dd144b8b19f57f91716a4ba7317d63b7f6d22ef"
 }
