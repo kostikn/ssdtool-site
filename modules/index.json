@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 268,
+ "serial": 269,
  "modules": [
   {
    "family": "smi_nvme",
@@ -9387,6 +9387,45 @@
    "min_build": 219,
    "python_tag": "cp313-win_amd64",
    "note": "MAS1102: источник образа сообщает способ чтения (для сброса отложенного при смене ключа, с EXE 220)"
+  },
+  {
+   "family": "maxio",
+   "version": 76,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-76.ssdmod",
+   "size": 2998165,
+   "sha256": "cc06ea47d8988c4e61daeef4f11a5c3420cc2b6a6b4909eeb97742be13050014",
+   "modules": [
+    "controllers.maxio.mas1102.codeblock_keep",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.label_dialect",
+    "controllers.maxio.mas1102.mode_probe",
+    "controllers.maxio.mas1102.native_rr",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.pagekey",
+    "controllers.maxio.mas1102.pagekey_table",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_plan",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.seed_probe",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-18T19:21:10+05:00",
+   "min_build": 219,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAS1102 + YMTC X2-6070 QLC: пороги чтения как у родной прошивки диска — читаются страницы, которые раньше не брались",
+   "cases": [
+    "I-2026-1117-02-998F"
+   ]
   }
  ],
  "revoked": [
@@ -9447,6 +9486,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-18T18:35:21+05:00",
- "sig": "7420bf12d588f0e3bb9aad1423ef57d2d2cf494e94d231567e8b788417597118cfa3c21f71200319892fa7714ccdcfa24aa0b103b0ebdcb8225cf304c272cf1cc60b0bd3640293b4188c8f52c401db8cd220877d9708011ff6db7d08821912e23103489295ac91f6a182088cdd736cd26b13a4fd2d31bb22899b201ce21485a2bbe64a7494c66fbb20a77da4af57309044051465ef4452dd9ff0198c963e5501c5afe0f0806e24b30ef43ee758f02498620845cce086dd076a22567fc91625abed505a023acad6ce96a5b5d76a4f09d56fb92917236997c01ec272b108bd84b913accd03003409955bb079c15af8d0bc7a56fb0d1e60cce2a394490126aed7f8321ba7a7beff54ffc7d79a232a74f7c5937dd39217c946a909c9ee9707dcdc17dba499b4ef8b4f4689caf7a53086f6397d7f047e25ff463c31726a21cbda1a539ea5ccb174069dc44e5719a06300a5965aa8687c5367dbad8e096846251054b347065f3778690e82f94b128c90920a6ef7190ff313bd16665b36a2858e39c8e3"
+ "issued": "2026-11-18T19:22:04+05:00",
+ "sig": "66627d99a3dfc1395b7b49edadb098e67192e13b9269a1d0bb4e8423fa522dba309a0dea98518aa3529fe78e6d699380bc79b715896fe032c75cb8a3b6700e84daaab541ce0595683125f6644f41aabfde67bcfc52ab2ff171f1f13cad02ac81724b0156c14416ba73a723ad9a22cdd7282cce5c912bbc2f5da6a9785f18a89873adbc3575ff9d9b44e612013801fb5d09b0ba62e8f7295c7966474e60ea2096eda2e0f3a3694e971c64d6690c4845f15cdd2797a91fca55e37cdc3996cd8b03fb4cc522e80c3f05507bef7bc95d26c6ad65a2ccd4a81db4e4aeb3f1619a8f5344268a9c51dcfc026c9006288717eefe67c2de85a93aa10aec97588efcb789a834a88962ed12f69b1aea67c2b1bc36b915bc44c44a574b49321739a39f88be5f6aa40c72305128bf4fa2103e96a3bc04f8123a728f2d1bc3494e464102af0fcb7deabc1618ebc01216052bd3aa6d33fe04826a16e654cb3ad56a2b156cf4b263923b22157fb60ac4a52a22d1a0cc38eeb157a613187de35201db700796276753"
 }
