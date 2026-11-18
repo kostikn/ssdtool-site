@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 258,
+ "serial": 259,
  "modules": [
   {
    "family": "smi_nvme",
@@ -8976,6 +8976,34 @@
    "min_build": 219,
    "python_tag": "cp313-win_amd64",
    "note": "FirstChip в ROM: ID памяти запоминается при первом обращении; три разные строки, когда ID не прочитан"
+  },
+  {
+   "family": "firstchip",
+   "version": 4,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/firstchip-4.ssdmod",
+   "size": 656307,
+   "sha256": "a1e3f8fc605953e44a341a46344d445a42e98880ae2dc0bcb1e861d5c859ee36",
+   "modules": [
+    "controllers.firstchip.fc.plugin",
+    "controllers.firstchip.fc.reader",
+    "controllers.firstchip.fc.u3_cache4k",
+    "controllers.firstchip.fc.u3_prepare",
+    "controllers.firstchip.fc.u3_scan",
+    "controllers.firstchip.fc.u3_source"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-18T16:12:46+05:00",
+   "min_build": 219,
+   "python_tag": "cp313-win_amd64",
+   "note": "FirstChip в ROM: пустой ID и пустые настройки памяти — контроллер не получил ответ от микросхемы памяти (а не «спросили поздно»)",
+   "cases": [
+    "I-2026-1118-01-0A6F",
+    "I-2026-1118-02-0A6F"
+   ]
   }
  ],
  "revoked": [
@@ -9036,6 +9064,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-18T15:59:46+05:00",
- "sig": "4e0b31d80579f3886cf409ee836161b54ff7780189bb64c7782fce7e9d134b80a4002208a53d87a4f9d05529de0fb94430cbc650210ca738dad38f09dbb9c0dabb3c935fa66134a7996422decb46ab967ef608896360064fa074708d9d38d54df3e3ea79d0245b20bf23d7ee0af04c7d06b746816878433929c65820cf916f3e06a4e6d85176971fdd637e2e93447614f0144a7ab605b5798c0c1e599700dbfb35b3454e228e2797c7acc80204a6db257d0ee3aa65d27d0562447bd6a69555beed5eda187c32c13ecc08d45f91084439d335ca43b83a184eed77a88e1345235a622cdafa39113b3060c00b2c2cc777fd9b7159d18de71e1360d73b59e904d3f2ce42edeb0343bfb5ba6e5fee809ddb6e22d3b030761f97d644ea5fe2630bff9e592785d96a96db97e4ace79b4d67a97af39c4ca3a81c9ea892e6712d9cf0559f72e294475de77616c992dabec1d007873b6efcae9d17ad0c6ec2cc6c2054325c2d305227ba88ae399b801d56ccdbf6fdebf91cfad3378912c687e457b8f85277"
+ "issued": "2026-11-18T16:12:51+05:00",
+ "sig": "8eb08acd88d86a49799b351b612c91fb808ccf5777f16ccd51cebc45df5716d26babf63f3a5d2d1525c9fac4b708dc3fe485007fb37f9cf69c370728e7139f2e4883ef940bb4af7fd08dad90e52f40525107050ace93d5e8cdf1f5213ea8fbae9b90a785f54f62cb8a54ab7dae8ab019e2769f8a9c8388a10f695d4d84b3d31d9dc742ab4146a7c2882b3f566a28d9a09ef2c8c4d0f7ac1274e01f8263d93fd44710088bf78cdfd9e04d18bb8c651a0497e98bc9509520402cd6e6440187fd9810d2df452100845e20fc87ba9ca21867559771a9b298ae80730cf1938ddae6dbec8c4ac237a586f1ad0f7f0804c7476ce1c6752e7f616b61a3305054847c8cc99a0f0295d3952cbfdaecee111ab2e120e44693c842600a383c64b4a07982f0bf1d5cf02f365c509f59876bbfb1aaa4980c22da54b8e5cdbabff2e0855e91ae0a23f7416a901306bc868df32cd1d322a1497d908e90240bf1f5eaba67a4836ceb79f9f27772a3fb0da500e1072d7db616f54004cc69bdcab818c7b633f34bb4ca"
 }
