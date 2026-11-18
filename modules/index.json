@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 250,
+ "serial": 251,
  "modules": [
   {
    "family": "smi_nvme",
@@ -8625,6 +8625,62 @@
    "min_build": 218,
    "python_tag": "cp313-win_amd64",
    "note": "SM2259XT2: без BootISP запуск из ОЗУ не пробуется и цикл питания ради него не просится"
+  },
+  {
+   "family": "smi_sata",
+   "version": 39,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-39.ssdmod",
+   "size": 3989902,
+   "sha256": "4cd9be21aad7e3595a054301c70eef83b8c569b051d16e46be89bbf30b0d385b",
+   "modules": [
+    "controllers.smi._shared.arc_busy",
+    "controllers.smi._shared.bootisp_store",
+    "controllers.smi._shared.cp_store",
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.dbg_prepare",
+    "controllers.smi._shared.dbg_reader",
+    "controllers.smi._shared.errlog",
+    "controllers.smi._shared.flash_block",
+    "controllers.smi._shared.flash_id",
+    "controllers.smi._shared.fold_seed",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.mpisp_flow",
+    "controllers.smi._shared.native_flow",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.passport_sata",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.romdebug_catalogue",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.service",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_build",
+    "controllers.smi._shared.sm225x_ftl",
+    "controllers.smi._shared.sm225x_geometry",
+    "controllers.smi._shared.sm225x_remap",
+    "controllers.smi._shared.sm225x_superblock",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work",
+    "controllers.smi._shared.unit_lists",
+    "controllers.smi.sm3281.binding",
+    "controllers.smi.sm3281.plan",
+    "controllers.smi.sm3281.pool",
+    "controllers.smi.sm3281.prepare",
+    "controllers.smi.sm3281.protocol",
+    "controllers.smi.sm3281.volume"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-18T11:32:01+05:00",
+   "min_build": 218,
+   "python_tag": "cp313-win_amd64",
+   "note": "SM2259: BootISP снимается с самого диска при чтении служебной области"
   }
  ],
  "revoked": [
@@ -8685,6 +8741,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-18T11:03:42+05:00",
- "sig": "49a5e8992a242da7e35b20f6704fab0b2a262b459a01d8b4403dff21519e463180f2d63481a1ad75e6204d39fe2bedefbf6da460a39e22e7c961bac24a4b372c6cc3bc9cb54f149ae9d1737f0d76f36f0c6879accb6fa3818d588ab018e0a6c8ae893a33f4346ac5287e004abd20f789417940a46d1e0552d8767d3bfddd7b1931e530fed22e29f7cf2812d116753c357cdd88cf867348a86e76c2351be41db749a69bb928482f116fa7b854f60a881df4be68237c423eff5041407692f86eaab2533b96d6d2529ee629ecdb5ee372c23082867933f94ee7f0bbef87b7ea9c027c07a988ccaccacde5ce47a0ee939a23b9b38fb183784c70f692d062ab889e4fa32432a7b83a6fd273d4b7077bf20f257e421bf625f4beef701da3e60fbf7cd597c4c95478555722324b691e66de24f2cbe25d409e943b25264a924eff55f58997cb527c7b83abc5fc28ffb94081dc8753248b1c4a0e3c5ef7c1a66236b00593792a8019aec4b1354b43c874a4362fc85910e0f4206e1bad9f65df51bb975768"
+ "issued": "2026-11-18T11:32:23+05:00",
+ "sig": "217e7792e49195d2384ce04ae2573c6a96e430dc48cb3e7cd19d3aade70442235f3aeb777bae8978745aa0d4c173eb272968e403e1e95b6693e82a171bd80d7a0313a5a2e1fd738800e3d197a1b6aee38c9655c94275287b3ff2867ed191cf119c6f8f403aeefd18e6141a20fcc2cda80b2cce262ec90745804c385cec4c5163e920b592deca17c3029f732a898f406836d8626125480672f8468059396cbba334eea0f5708416e83cd0df90933a578e62deaf0549dcf9ac736410d4797c957a4dc7c32c27f533fe0b260236fe19e8a5a1a8a55e70606a47a8278077aaae6f1dc0b1950f5b0003768c713fa284f440f9a1af863e2ca820e99f7f9cbd0399ed971cec0b67f8b5f3c67ddcceed2eb9cccb3550503b1956b6820b10efec396f62bb42ee890d9dbc8f70c4dda01d55c66624356eff165323870e004c1e392535fe88c7cdf6409b95e5ecd682e15936cd40517109db9007df6ea64be7b8a4ab71ddc9f1cd2fb666ea934a92512700f3aa85909972481bd0f95308b674b530b36fd8c8"
 }
