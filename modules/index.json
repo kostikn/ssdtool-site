@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 261,
+ "serial": 262,
  "modules": [
   {
    "family": "smi_nvme",
@@ -9088,6 +9088,52 @@
    "min_build": 219,
    "python_tag": "cp313-win_amd64",
    "note": "PS3111: правки штатного старта из ОЗУ ищутся по образцу кода диска (по умолчанию выключено)"
+  },
+  {
+   "family": "phison",
+   "version": 23,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-23.ssdmod",
+   "size": 2385098,
+   "sha256": "56871656e1532256a4c03f86c7965bdab874d8768b054be5f529d76d1771a5fa",
+   "modules": [
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.neighbours",
+    "controllers.phison._shared.passport_reader",
+    "controllers.phison._shared.sa",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison._shared.session",
+    "controllers.phison.as2258.loader",
+    "controllers.phison.as2258.passport_reader",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.burner_reader",
+    "controllers.phison.ps3111.cluster_codec",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.nand_translator",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.plugin",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.ram_snapshot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.restart",
+    "controllers.phison.ps3111.revive",
+    "controllers.phison.ps3111.sa_diagnosis",
+    "controllers.phison.ps3111.start_fixes"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-18T17:35:38+05:00",
+   "min_build": 219,
+   "python_tag": "cp313-win_amd64",
+   "note": "PS3111: штатный старт своей прошивки из холодного ROM — правки включены (только полный набор по образцу кода диска; неполный — как раньше)"
   }
  ],
  "revoked": [
@@ -9148,6 +9194,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-18T17:24:43+05:00",
- "sig": "7e04937937845cd75c62e801b5f531655b76699663783bc75ee9dcafa9b074c7a6b25fa09ed0bbe7e33c1700678a28396c1a949700bf7285706c1ba51c288c912e8f0c388be04bd1f4d575c901de20c82b0eefaa48a82ae9798c27a87a3ce248183f01c2bece4afe7216abf1017e78018fc066fca1e2ffdd5f8c42c1e155263d3e50f82f5eaa3e2c4e630ff516a75dd14598ccda7698d0d387deb723a846eae344297d6ca93cacde93241d8cd99e8a653b31ba0f228d48a969d068cc69a006eb28292a78ec55083583ba34bba1fc0690c70444f3df08b9a377a922bcdff4fef8bc624ac704550041cd309883431631f493a7bdd3c403361ec7ee1fad4222b754090714bbed7e904307ff58b3b7892ee1326d22b53afdfe1bf3748eecd92d61aaf7ee08af2530be813a5643f73e54fa338438d79346e2913df993f1b672bf34098c27b592ff7613e11dcc97441dc9e24583a2f7d7ce4779c54ddf59b116f2f3c0c0c5fa06cfd6e88d73a06bc86970dc936e6dfee298f17043f0607dde3a547055"
+ "issued": "2026-11-18T17:35:48+05:00",
+ "sig": "3a1248a54117c271b116366be46d356bf8cf8beec74aa1c5d6708b7954029347646f6ec1b92a494c7f8fd758254860cac832c4352d257a8b33d3d945b245ea45518e3abaa0cda9f993af9ff21e99ff7b4bfcd9a694906f9b41151079d8a0906c38083a0e9813e2e81d2e35e7db4f6a73886f2bab914553fd24e04557511046ba1b50e8cca54bbbdc4309ee0b67b47a34c156b89b2d8f656c6201810df807d66c68e73dd064ddb582dbfce1382f4cbb2dd55056eedf20c966c6b1d50aec3c31408aeeb2a1bd19a83e96a997a3afcf9fc4c049da8e4e1ce3548420b3e6a70b570fdfda4c1ef8b08ef2cfa16d0d78357bbfb27ef2e0976469d92714d508f9b9ba04c146f81ee53544346a2c55fc0280d61d33470de1b818345d201162f80725bffee1a962bdc611941cba71f814dd366584baad3fdce2320ad036f3e47af4a8cfdc1c53a95b49425ad58e9e068fd14d0d8887a2648b102d38b6d77b5f94aa1daacf10c19573a4ac63aeb734da592b25d88f0c98080b36e944004bb4f2bf5eec35a9"
 }
