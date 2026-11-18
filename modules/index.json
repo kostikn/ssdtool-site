@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 260,
+ "serial": 261,
  "modules": [
   {
    "family": "smi_nvme",
@@ -9042,6 +9042,52 @@
    "cases": [
     "I-2026-1118-04-D0E5"
    ]
+  },
+  {
+   "family": "phison",
+   "version": 22,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-22.ssdmod",
+   "size": 2380966,
+   "sha256": "7777725c932212e8619444df7e277fbab1636a8f3e98783efe043afad93259d8",
+   "modules": [
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.neighbours",
+    "controllers.phison._shared.passport_reader",
+    "controllers.phison._shared.sa",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison._shared.session",
+    "controllers.phison.as2258.loader",
+    "controllers.phison.as2258.passport_reader",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.burner_reader",
+    "controllers.phison.ps3111.cluster_codec",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.nand_translator",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.plugin",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.ram_snapshot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.restart",
+    "controllers.phison.ps3111.revive",
+    "controllers.phison.ps3111.sa_diagnosis",
+    "controllers.phison.ps3111.start_fixes"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-18T17:24:32+05:00",
+   "min_build": 219,
+   "python_tag": "cp313-win_amd64",
+   "note": "PS3111: правки штатного старта из ОЗУ ищутся по образцу кода диска (по умолчанию выключено)"
   }
  ],
  "revoked": [
@@ -9102,6 +9148,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-18T17:11:27+05:00",
- "sig": "404276d70b9ff3603e3ebca09e99959645831c69db6680e3d49fe2a51d863b5df185e98111523b2ff224028b3116c5b3651a61fee6e90ead3e37f7f4a884c1bad483dee1265d359f77b7c1ff3934bac4ddf0e82216b9dce3929f29f9ee3909d5ad3d8f4131d2eb1097729c58b81c4f45ff7d24f37c789142a850e4ab0f23113e50c87500094ca49ae70eba8092cad3fe1cc1908fec3983296973945e387ab07d0a236fb1e0402a6b3f8fdfec505fa1ff974119dd996981a235c870b6b77a85d9862f26b206897acfeb641f99d55a764433e7e4e25e0a25668e7ae27b700a12a78aca95ee4ec0ecd077f779e59f8ba8a0187def496e433807936d4d156845f35ba10e016bb007e64e030fcf25481926a969b569c9d345aa0797adb64d291f37eefcf2d9ecafb688e5adcc9d8354f5f3343953a8f077daca294282281c65fe910c749d41859d6918ae733ac8adb641e5607ef539491d99e82754b7a7c2733059da2141333cb560936e8c9df5a2a0a4156d66b21cc6af99af703763fd5a7f55ad53"
+ "issued": "2026-11-18T17:24:43+05:00",
+ "sig": "7e04937937845cd75c62e801b5f531655b76699663783bc75ee9dcafa9b074c7a6b25fa09ed0bbe7e33c1700678a28396c1a949700bf7285706c1ba51c288c912e8f0c388be04bd1f4d575c901de20c82b0eefaa48a82ae9798c27a87a3ce248183f01c2bece4afe7216abf1017e78018fc066fca1e2ffdd5f8c42c1e155263d3e50f82f5eaa3e2c4e630ff516a75dd14598ccda7698d0d387deb723a846eae344297d6ca93cacde93241d8cd99e8a653b31ba0f228d48a969d068cc69a006eb28292a78ec55083583ba34bba1fc0690c70444f3df08b9a377a922bcdff4fef8bc624ac704550041cd309883431631f493a7bdd3c403361ec7ee1fad4222b754090714bbed7e904307ff58b3b7892ee1326d22b53afdfe1bf3748eecd92d61aaf7ee08af2530be813a5643f73e54fa338438d79346e2913df993f1b672bf34098c27b592ff7613e11dcc97441dc9e24583a2f7d7ce4779c54ddf59b116f2f3c0c0c5fa06cfd6e88d73a06bc86970dc936e6dfee298f17043f0607dde3a547055"
 }
