@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 256,
+ "serial": 257,
  "modules": [
   {
    "family": "smi_nvme",
@@ -8929,6 +8929,29 @@
    "min_build": 219,
    "python_tag": "cp313-win_amd64",
    "note": "SM225x: отказ записи в ОЗУ при обзоре блоков больше не роняет Подготовку (связь восстанавливается); BootISP из INFO: способ чтения по метке страницы, шаг выключен"
+  },
+  {
+   "family": "firstchip",
+   "version": 2,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/firstchip-2.ssdmod",
+   "size": 571650,
+   "sha256": "6c82feb6a34bf251f61666b5c8b4bd51cbb589417dce5d618c3e17a4d183efeb",
+   "modules": [
+    "controllers.firstchip.fc.reader",
+    "controllers.firstchip.fc.u3_cache4k",
+    "controllers.firstchip.fc.u3_prepare",
+    "controllers.firstchip.fc.u3_scan",
+    "controllers.firstchip.fc.u3_source"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-18T15:56:09+05:00",
+   "min_build": 219,
+   "python_tag": "cp313-win_amd64",
+   "note": "FirstChip в ROM: ID памяти запоминается при первом обращении; три разные строки, когда ID не прочитан"
   }
  ],
  "revoked": [
@@ -8989,6 +9012,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-18T15:53:59+05:00",
- "sig": "2c9d86c0f5d048a94a09d9b0a34839eca8de18006cb2ee7e98ba3a4663cbd88444c3b0238b881f3e3235ed0446d07971b8bcc3a5a01bf35f6d9917fde6072a4a69874572e913157881f12c4efb825c4ad9319013478c75b89afd21324a78f997c74566c6f25f3b7a926451a62df5de031c1577b402f5b32367d73b97518a051068feb4e470e65cc582e7793b19d00447c3e93524ea6652c38fefdbba55a408326c47697d6c7995431fe83e2c77d7eddaf8e2c68c5bca692366a1b63268cf74fedd9234e79079b5c2d126591faf277b893e553e7e0afb27529f3c4f32e545a375f90e66d03a4638eafbf306a5223c163f63925744321d6122d3f0093f39885f6365078ba8d0810076aa22806bf7c39fde38f8cfce95c1e668c961a62eea74bb9b03b099329a5ecb5575e4039d7d247051bd357c5e26fea97cbc5c192136a8640f1b29d9eab07f9ab7420495b6128d2ea4d7aa4c44eab612e49b69ffd919d9c6f62f8dd0b7b6e0faf54353f3515dd144b8b19f57f91716a4ba7317d63b7f6d22ef"
+ "issued": "2026-11-18T15:56:11+05:00",
+ "sig": "77cf17e8773e116ac82c773b220d5f5ea2b4d7623b06f172a1a7741b8852d36e4ac0bed7edfbb74f1457e1cb586df5c859951c91d38ca92bbb8677e9670ed7ac87163a60c18a9637555549494bed8f479595d15992be7191722bd4580c88d6f1a9098755442edd800a42079741e53d35dd3e7df77c7f04966ce44c2fb92ce085aa88b6718f8b825c54e9995d5e88fbc5a815b25b9fa6a1813c0240f23b68d964d4a80fcc97bb74709d9693c953017b0f8cb39300242c049018a7b0b9ecebb271228377cc026ca7d8f06fc31980c761f3da49afe602de53efa4fe1e22d0cf973ff7cdef2b096acef67959b789e6df3fb3a36ebc62c3428c189790dc8e9ab1d30d6b7c22861706cafd456a50baa7e1acc27184e342921877177841b36381726abb359bdf7556bfb2d1bc16f068980d076ef2b4dc04067caa64fed180bac05f2b18e8ac485905a38a0faa9348f12b4e13a391e92ba72b0bdace8b253e1a9925aa8ad38bf960f22025cbb99626905f2ffe70edfb965f73ff9c59e76890532656baa5"
 }
