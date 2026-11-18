@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 252,
+ "serial": 253,
  "modules": [
   {
    "family": "smi_nvme",
@@ -8718,6 +8718,43 @@
    "cases": [
     "I-2026-1118-02-4B3F"
    ]
+  },
+  {
+   "family": "maxio",
+   "version": 70,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-70.ssdmod",
+   "size": 2767660,
+   "sha256": "d308c4e648333ae618f1fe62afc9a3c938630f7b07a4638d556ce8659a8fe2f6",
+   "modules": [
+    "controllers.maxio.mas1102.codeblock_keep",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.label_dialect",
+    "controllers.maxio.mas1102.mode_probe",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.pagekey",
+    "controllers.maxio.mas1102.pagekey_table",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_plan",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-18T12:37:21+05:00",
+   "min_build": 218,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAS1102: проба режимов чтения страницы (только чтение) — точный ключ страниц для памяти QLC",
+   "cases": [
+    "I-2026-1118-03-D0E5"
+   ]
   }
  ],
  "revoked": [
@@ -8778,6 +8815,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-18T11:43:05+05:00",
- "sig": "228c49358635f0d4a0807aaea2225e0818766cc892b7ffa4379d09d816908385c0fb30b62c612d5415922c186caf33369e30ed651d47900ae5353ea199c0ccd120f7370ab188cde1f535327dd4c5766b00e64bfeccb1d499a5b461a4b7cf70d1fc0fae4c4042e660cc3f9a38324dc19a24f02e286788f39abeb33918cbf0e481ef3466be142800294c5085cda23c7b5927fbc2d204bd1661446db2c0705f5e6927fad1895d8c0f0c85d20351607b267c9666209edf8087328be63c610e628c9076d62c0f9c89993dc56fc8dbf164faee22f89c6cc65fd26351bb3d384116fb87400f714a7809d6d56db8e4b05606d4b00afd6d86ed83456e3e6026913612d66cbe07ff9ceff3cb8d7cdf2090dc8c90b199cb691510d65c9103203ddc60e736ec779ab1bced3e51a8ac36b4feba3f27a9687f2e203c11f993abe48e30f17e1371101f7c61e7aee5525afdbed185abf3677e86440627a737239d4715e6a82419d1ea2657250c28c8b878ff3b43d621777e477292ff86eb1fa31060b8ae888bfe72"
+ "issued": "2026-11-18T12:37:46+05:00",
+ "sig": "96ad04154d88346e3dbcae8f517705b1abe584086c7f0238041175d39ad7521223a8c1fa5455b931b1fa2c37d333708891505f476f6bc381055068515225fe0acfa6011a9cd2696094c81272cc3e705deb5fb4ea5f960b11bb0fb45b347379a0b2d9fb0ff358e19da154fb0a4fe3ab1dd3e67112ef5326d7579cd0107c1f76669eaf0892598e29fdf1813c80156e1dc16e1c94330bb0459d42999596ffdd518a43c8f58e0d5a9c02962a2f36654922d5e950871023b885a69d5258e597d579cfbe8fa16132116740ce540afc427b9210035a88e0dd41f861319c5106fb3976e1c99aa16a880bfcc904a84bf1f5766c817be599d4d143e5e3d3f5ab35a5c0a27c57f894cc0577591b749c37383b833894a7fc38e1e01646cdd1f5d4df2abaec956a4ac8f37a616d430ac2b4e410876982687107aa08e4b2aad2941f026c6539217fd75af6b0a57c6236a147571788fa4176433c551477e0b525ba9bcfe60e69532a7e233ad3c0934088ffacc55bd9f4e07af9c540e0f8b0b1083b9538b68fa660"
 }
