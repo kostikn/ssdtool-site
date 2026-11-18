@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 273,
+ "serial": 274,
  "modules": [
   {
    "family": "smi_nvme",
@@ -9577,6 +9577,45 @@
    "min_build": 221,
    "python_tag": "cp313-win_amd64",
    "note": "RTS5735DLQ: лишние кнопки скрыты (слово владельца 18.11)"
+  },
+  {
+   "family": "realtek",
+   "version": 22,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/realtek-22.ssdmod",
+   "size": 1868870,
+   "sha256": "b08971bec0b7efc2811f56a1de1e6a13de9a672efc014dff9557a22095236379",
+   "modules": [
+    "controllers.realtek.rts5735dlq.committed_checkpoint",
+    "controllers.realtek.rts5735dlq.gui_actions",
+    "controllers.realtek.rts5735dlq.original_parameters",
+    "controllers.realtek.rts5735dlq.partial_source",
+    "controllers.realtek.rts5735dlq.plugin",
+    "controllers.realtek.rts5735dlq.ram_resume",
+    "controllers.realtek.rts5735dlq.ram_start",
+    "controllers.realtek.rts5735dlq.ram_start_diagnosis",
+    "controllers.realtek.rts5735dlq.ram_start_stub",
+    "controllers.realtek.rts5735dlq.ram_window",
+    "controllers.realtek.rts5735dlq.recovery_backend",
+    "controllers.realtek.rts5735dlq.recovery_pipeline",
+    "controllers.realtek.rts5735dlq.retry_sequence_layout",
+    "controllers.realtek.rts5735dlq.schema_search",
+    "controllers.realtek.rts5735dlq.service_dump",
+    "controllers.realtek.rts5735dlq.single_segment_source",
+    "controllers.realtek.rts5735dlq.snapshot_cache",
+    "controllers.realtek.rts5735dlq.staged_backend",
+    "controllers.realtek.rts5735dlq.staged_reader",
+    "controllers.realtek.rts5735dlq.tester_read",
+    "controllers.realtek.rts5735dlq.translator_evidence"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-18T21:09:10+05:00",
+   "min_build": 221,
+   "python_tag": "cp313-win_amd64",
+   "note": "RTS5735DLQ: запуск через ОЗУ — без ложного «диск завис» при чтении (со следующей сборкой программы)"
   }
  ],
  "revoked": [
@@ -9637,6 +9676,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-18T21:05:32+05:00",
- "sig": "01220fe5794a6d016c9847ee402ce710583cd245d2e991cc5d85e90b0787866e90d1c3ac8b0388700d6eab04f15d25c0aa5edede9ab2e901d31b470298105dcc4ee6c2d72fc7743ea8aab10401ab98f8e7b48229f57f624f7e2cb942506f9e4929a65ba6d47bef8f974ab118df403f3964681a98c6483e533cf52f75878602993653eafaadb4b5c6ae051fe537725b1c57ca854260701883bb81f37a7744423ad80fd8f6df8c3a6d79375b7e132aca2999e276dcdf08c48a0784eeafd23bb7302dcdf04d9b717ce6fd2baf70e39ba985ba0916c52e95a6d4bce6c584878243cb69ac6d6adc4ae106c92e56e498e21edbd53be5cd03063c244487e994a924135894fa0f5e1dd79b4e5d309f520996ba90b65a42d9feaffabe36cfc9d225565c4159ab9da05e24887b92894243d854bed1557ee21058145c234b063ca8c235d50fe28e64b1733c4b4050bbb4cece74265a808d562f46dcee11d42e24927e1c6d7ad2341eb6650ce4336316700c70063fa8a4a24a3611c6005d0bf73c5a9311b420"
+ "issued": "2026-11-18T21:09:16+05:00",
+ "sig": "59f3b17339eaeec3776cf20a743745fd64c6f44169276c7425c29914a2a567e1225191b7516b22a818472e0a6aea76645f8739068f954bed09db165fb0702aef7082795596b2bbf6648882885d5929cde2b064b3f31c1ce372b2acf40b0e4595f3e4041a9f5c72554abb94fbde2e9ac088278ca81ceb95d00f4ab5dc431e95db8e4619deb4347df6bede2b8ef7155dc38b1be054a83fe389d0305384281e87df313ef92aa9ad95c9f0864cb74431ea0af58da4029aa7c34ed6b7b7c0a755f3a348da0cf20f63e8d2bb1b05df166f5564107e4a4d1facdb3094a3fb31718cc600ddb179e25d9913bef605de98d0e85c32c14f1f03cb239eca6b102aaee04e234ccc6d176b4313470be050a3d127eac4259f5fbc6fb20d01e9b7ba3914fa4a44b76574eb9451aaccbc7cf8e88224dd82dea86c30f66664d8d4d93816276974b6ee340b2a2a7a1e978fbc30b63072231361565ebb742c181b16a745d5dd721a1950dab7599635df4c332e1356708c5b3efb625b0db54ed20c88f126b557bcd9c2b2"
 }
