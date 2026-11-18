@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 247,
+ "serial": 248,
  "modules": [
   {
    "family": "smi_nvme",
@@ -8470,6 +8470,51 @@
    "min_build": 218,
    "python_tag": "cp313-win_amd64",
    "note": "PS3111: распаковка сжатых кластеров (формат §35) в своём трансляторе — сжатое слово карты читается и распаковывается, сверка LBA-метки"
+  },
+  {
+   "family": "phison",
+   "version": 21,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-21.ssdmod",
+   "size": 2315632,
+   "sha256": "a71e6ee0f20a55f0c3228e0bc934170b002869830f34d1b76036d39c56e538f9",
+   "modules": [
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.neighbours",
+    "controllers.phison._shared.passport_reader",
+    "controllers.phison._shared.sa",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison._shared.session",
+    "controllers.phison.as2258.loader",
+    "controllers.phison.as2258.passport_reader",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.burner_reader",
+    "controllers.phison.ps3111.cluster_codec",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.nand_translator",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.plugin",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.ram_snapshot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.restart",
+    "controllers.phison.ps3111.revive",
+    "controllers.phison.ps3111.sa_diagnosis"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-18T05:54:58+05:00",
+   "min_build": 218,
+   "python_tag": "cp313-win_amd64",
+   "note": "PS3111: маркер «нет записи» (как родная FW, без чтения NAND); вариант концовки сжатой записи по мете четверти"
   }
  ],
  "revoked": [
@@ -8530,6 +8575,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-18T05:17:53+05:00",
- "sig": "48e31927dea20f665ceff9e5224ba9184c2844dcfebbcd77c5df052fd49d9964751ab4f5bbdcf48ad1a15f2056e1f9ce9dc40fbf3dee29abaa24ec5551f6ad8d68a9839ecfb3d711fd179ae54e858e03a0fe9204131aff9c8d032a7fe9bd405daaf6fab7882ce89066320b142ad181bba1c3beac9ca59c25954ae47fe52db2eaf8324e4170055827f1e4b3091482e3aedacd134440ee30a8fedc76395e743d6c001235f9b7b3eb0daed6c0c6d95c675953aa7995920637d356f386b36708b58c2f200508f69f0df5c32aad1d8d03b9defaf717a50b51db8dd4f08e2fd63475ebdcd4db05079bb91d386778aa4a6cc5e09282c7c98182e48fc89085871e4b25dfe160be2229420f36c513fce9d5a4460d20773b27ae7a98632dc88bbcc796e3c62bf131a5da8e03e5252a5cd6d0e39c8216e6f9d14b648fe65104bfc4cd895a9b9cba1792294da3bda39ab349aff2398f8dd299d20753942d44b6313d2fdc405ff9d90e61ba69cc525e49acf509854b55781366eba776ff26bf124c517ea32b07"
+ "issued": "2026-11-18T05:55:06+05:00",
+ "sig": "7dbb73b977ab6263320108789cd09e8c3a22dd8d836f72e735378657f9c0cc3db8ac2f9bfdc90d0735190c9e4ec792d89e646fb777adc05682f6e607b535eef13c6e6230cb55f975d02c002fdbfcbe4c1a97493ce75f1960e60e45fa89692b8d3892cf09101fe8f9806c3085590ea411248c25e05a45fa60581316a18b93c7c06ecc5a36a38e4e08eb7974fac011adf0486246dd00c03074929459caf3caf400003dca09da12a98a3dd0a4e0712e2387231a5fae34f12652935634548e0d9b853647a129d6a0bf6dbae29be3e6afc1cfb734f859866ba4fda60be82f6dbba0bfa6bd44c83fb25f5b6bc0840507abab0b4ebb8430f886c99c022f09fed42e4984755e19d99b726dbce59916fa6e42b06471ede1425945d6de716a8a25937e5975cfbac097742b5450f192a6195802e80028550d64653f336bc35f5bff5f77bfee058145b580ff51f41c5e7e07aefc6a9cba1af908fa3136c4845b568431b76e817d64bc10b9ed3c1dfe73c0f16853070d0c7800c8b7ef0290b41192b18d0454d1"
 }
