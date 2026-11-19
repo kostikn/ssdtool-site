@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 288,
+ "serial": 289,
  "modules": [
   {
    "family": "smi_nvme",
@@ -10411,6 +10411,66 @@
    "min_build": 219,
    "python_tag": "cp313-win_amd64",
    "note": "SMI SATA: перебор MPISP сначала берёт образы, названные для этой памяти, из любого каталога; SM2259XT2: правки «Запуска из ОЗУ» с суммой и сверкой байтов"
+  },
+  {
+   "family": "smi_sata",
+   "version": 57,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-57.ssdmod",
+   "size": 4325133,
+   "sha256": "b10570897a98ad356e8dadbef92733510b40fa6291fbf6157caff7938795a417",
+   "modules": [
+    "controllers.smi._shared.arc_busy",
+    "controllers.smi._shared.bootisp_store",
+    "controllers.smi._shared.cp_store",
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.dbg_prepare",
+    "controllers.smi._shared.dbg_reader",
+    "controllers.smi._shared.errlog",
+    "controllers.smi._shared.flash_block",
+    "controllers.smi._shared.flash_id",
+    "controllers.smi._shared.fold_seed",
+    "controllers.smi._shared.full_repair",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.loader_sweep",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.mpisp_flow",
+    "controllers.smi._shared.native_flow",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.passport_sata",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.ram_start",
+    "controllers.smi._shared.romdebug_catalogue",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.service",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_build",
+    "controllers.smi._shared.sm225x_ftl",
+    "controllers.smi._shared.sm225x_geometry",
+    "controllers.smi._shared.sm225x_remap",
+    "controllers.smi._shared.sm225x_superblock",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work",
+    "controllers.smi._shared.unit_lists",
+    "controllers.smi.sm2259xt2.self_repair",
+    "controllers.smi.sm3281.binding",
+    "controllers.smi.sm3281.plan",
+    "controllers.smi.sm3281.pool",
+    "controllers.smi.sm3281.prepare",
+    "controllers.smi.sm3281.protocol",
+    "controllers.smi.sm3281.volume"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-19T15:19:50+05:00",
+   "min_build": 219,
+   "python_tag": "cp313-win_amd64",
+   "note": "SMI SATA: перебор MPISP идёт до конца списка, незапустившийся загрузчик распознаётся за секунды; SM2259XT2: в журнале итог сверки и SMART после «Запуска из ОЗУ»; QLC — порядок микросхем по линии"
   }
  ],
  "revoked": [
@@ -10471,6 +10531,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-19T14:25:05+05:00",
- "sig": "2ea23cf0ba3d07a06af80fce5ae62c345b8c2cf5d0ba15ffd51892dd16cec18473636eeeca812c5ee0590f47b4b388ec24c66220adc6308876de8c756ec2b7984eab6f33df1b3b1fe4653ec3eca91ce72b4a6da4c351defbad2f820f6dc4f33923a96ce3ff820530d77f7fd2c18691141f1cccb051e0415f2e6c2d5c0b4c8a83a4ee234d1037ad683fe9bdc42a585e4c223adcd180fd006f8c7d769a2a371b4ef2979329ceecdb2c48df7439955ed19cace874ad3235341d28647795d2c705eba5cd525e16ca39a37e33d347401979313f8364a849d47db942d22adf041e05d437727db09864ecb3e8fa11020471c9534430a934cdb18fcba75dd5e5f62f369f8d06c8dc583828e0fc69f8cce66a4d28315c961a735125252d66e14cf56a86d38380752f899368dffc86c2a69c24df98adcfae2aefd0de759d3013dc1c0653629c32bcf445c3c1aef6f3701a322f628c08422967113f5326ea70f8dd08271a18ad45bd7992dde9fed2f8551aa59c5c71d6af898a18d8382b8e24b80181e4492c"
+ "issued": "2026-11-19T15:19:59+05:00",
+ "sig": "10f538c12afa10758526243200a700b146dc96ec94516b8855304671b910ed5e584159e407b13442e5031903805e9b8c08a11d2625fda6c7ef2472ddd8f99ac5e3ee3a2109358638527932403acdb6089a868f555547d019cc9532480879f2c888822274538a5c4df4ac7bd875470d94f75e991662a24bc99957724e4990fad1d2030dd583773e394c410985a998771366dd78d6aea2fa632768a22a5c3b16a90b50f5fdab43c77fb7a414bfffbb43ed8f0f09557d9837c42e6fa81aec2e8b3773ddc89ea65bdd7f2af59ce1e2f60084697a995fe56dc052f31412505946a12fe053d87639a55027fe005297fe8dc12616b92ca70cb39a31b9cf006243621b12130c2ba6d192148f36b8141537906063a83effe6e807a51df47b80e2f46edc639e8bae1a0262a44b5eb66f15dc013fd878070ab612d3385e788f903bcb400b8e989c17c1843b7d02c81a194cbb057ba3b3a80642d310f77b5e40fa651cbb5de6c8e01048d2f97d2760e3d9ea399f6a18d580f446b54cca7d89beb6fa1b09c06e"
 }
