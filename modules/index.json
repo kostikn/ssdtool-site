@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 293,
+ "serial": 294,
  "modules": [
   {
    "family": "smi_nvme",
@@ -10693,6 +10693,46 @@
    "min_build": 219,
    "python_tag": "cp313-win_amd64",
    "note": "SM225x: «Чтение через DgISP» распознаёт DgISP прошивок вида V1011B0 (в 59 не было листа dgisp)"
+  },
+  {
+   "family": "maxio",
+   "version": 80,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-80.ssdmod",
+   "size": 3734175,
+   "sha256": "974d92c93c9dfbf8f991bd3c58779f4b59da2ea692a2e606c74a3e45b66612e4",
+   "modules": [
+    "controllers.maxio.mas1102.capture",
+    "controllers.maxio.mas1102.codeblock_keep",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.label_dialect",
+    "controllers.maxio.mas1102.mode_probe",
+    "controllers.maxio.mas1102.native_rr",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.pagekey",
+    "controllers.maxio.mas1102.pagekey_table",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.power_state",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_plan",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.seed_probe",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-19T16:16:08+05:00",
+   "min_build": 219,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAS1102: «Запустить диск через ОЗУ» — сначала свежее питание, если с диском уже работали в этом включении (сам через «Оборудование» или одной просьбой)"
   }
  ],
  "revoked": [
@@ -10753,6 +10793,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-19T16:08:07+05:00",
- "sig": "28f8581ef5503b6c959b3309285a3b83cbf73729c87b61d29cb7553b342f570bc083a8d3300cf7f035087cc80621c514b35420ee72a1b9f48e4aa8801556079e91aec69ad3edf3b8b9a2c43f5386d061252a90451816e5ed60916f64b5aa7cae4dad67ba71bdfb86c468118f0e6a677173bf69a9d9736823ef39d27516999e5cc70572997a9e24b27a9748b525ed4061d1be61afe4ea76ae2d015ca90cbf76381a502e5ee20e4bb156780a5746d2713aa146b855f2b9f41530b50020c315624f3b9277b1dd55432d7ff547917ce37d860819091048df14c12cb7c970abffe635dcb2b9f5d6915a2da772295ad87c81584fcc21c478b6bd315f61b1f33a2ab962ecf235c5d052c31ba7774278af176a5c6efe896625a81af399b820d5950790e6ef696d7fa0444b876f0de0c9497d423d7e146372c522b8115fe2d4273afa9a164340cf5745a1430e953ae3ef5c2ac419297fa6786fab9241c34c62e043d37f12731186482a4f0b65833623f90a663dd236018750b5e12b5add246dfe53af6ef4"
+ "issued": "2026-11-19T16:16:22+05:00",
+ "sig": "44317c0f92aa34a44fb7584f15da964957b194c3f96e9432cc77bb491327ff7e017866ab20831f6c1871fca46a809020243d2770d52f0134e6b5e511d051a487c5a1069e60eeece8d351e8da529518a7f2775cab4cfc63e98c19d98cbcdf861a41b48f927dfbb9854c5c87568fb24fdcc23cffd7176c0a4d060a36b32950a03c3e4bf8bb2cc195c69768cd250268c1cd9cd676f353b9b6a2cce646c90b5ba972012247ad591136d44d8bbc7ebd54c4d985557f1801431521ec95de93b0ef32d6c32d7a53129b8170647012f9a34780477e94cda369b777717348b6a1876da664cd3c56128a94f72c5bded14f70cbfbba38ed18127adc53b97ff452e43da92c547828f9753f427db5703faf39d20b752c44ff75f5ed314dbe1776cabdc78ca86f11428001caf7fc6c9c181f86be7fa2a933c0cb14460aa536923b41d52473a912b453fdad04ca3d288746f581e988cf5e4bfb17e0c567939dc8409939e16aaa10f8793ffc836d298c4d1fda1747b7e690eae435aecd190406abd72c0d382f9c35"
 }
