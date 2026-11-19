@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 277,
+ "serial": 278,
  "modules": [
   {
    "family": "smi_nvme",
@@ -9768,6 +9768,64 @@
    "min_build": 219,
    "python_tag": "cp313-win_amd64",
    "note": "SM2259XT2/SM2258XT: кнопка «Запуск из ОЗУ» — прошивка диска из ОЗУ в режиме только чтение и сразу в «Создание образа»"
+  },
+  {
+   "family": "smi_sata",
+   "version": 46,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-46.ssdmod",
+   "size": 4132828,
+   "sha256": "6e2a257c8bd9578c99af89916e4b9908cd6de537a923530b8672f2a404b1fd55",
+   "modules": [
+    "controllers.smi._shared.arc_busy",
+    "controllers.smi._shared.bootisp_store",
+    "controllers.smi._shared.cp_store",
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.dbg_prepare",
+    "controllers.smi._shared.dbg_reader",
+    "controllers.smi._shared.errlog",
+    "controllers.smi._shared.flash_block",
+    "controllers.smi._shared.flash_id",
+    "controllers.smi._shared.fold_seed",
+    "controllers.smi._shared.full_repair",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.mpisp_flow",
+    "controllers.smi._shared.native_flow",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.passport_sata",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.romdebug_catalogue",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.service",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_build",
+    "controllers.smi._shared.sm225x_ftl",
+    "controllers.smi._shared.sm225x_geometry",
+    "controllers.smi._shared.sm225x_remap",
+    "controllers.smi._shared.sm225x_superblock",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work",
+    "controllers.smi._shared.unit_lists",
+    "controllers.smi.sm2259xt2.self_repair",
+    "controllers.smi.sm3281.binding",
+    "controllers.smi.sm3281.plan",
+    "controllers.smi.sm3281.pool",
+    "controllers.smi.sm3281.prepare",
+    "controllers.smi.sm3281.protocol",
+    "controllers.smi.sm3281.volume"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-19T11:14:54+05:00",
+   "min_build": 219,
+   "python_tag": "cp313-win_amd64",
+   "note": "SM2259XT2/SM2258XT: «Запуск из ОЗУ» без вопроса — загрузочный модуль снимается с диска сам (одна попытка, только чтение)"
   }
  ],
  "revoked": [
@@ -9828,6 +9886,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-19T11:08:34+05:00",
- "sig": "44344ed8913d8d38dc981d6a69666b24df6fff4d4181379522e49f164e80bce15786f9bd4f6963b8ea190d54a52351951cdafe01ee0ad3c611ccaf0fb6add920c28191cff2c2f383234cdc8d0e000f2a6668dca1387c28eec011dcc2af88de212ed55885d6d492a828a9d107aa1145a292b0497753f3ca0fb4dc593efdab1ddd7d8d874dad4af6c49c809496db7e419e13ddb881c5e5fd1fa893d10ec59af85ae3358ef7ad97f1f8c2032c3c4a79807d4557fb46857bfc7bff1f76a5fce04bfeffb80c44189a8b8229cd8d64615f2655c97284d1ad163ca33549771fd50f423771e5fb2f55526123efc85553b34b9d12efa27f16b4cec3b0fb2dad4f688c24c087dfdd7184c0dd466fb04701f69c240bbd9957feddab6b3532b0ee1e27442eaf325d3ca458aae93c0baa1e060aae3eda73640c92d645560ad5b28ca2418c56da9b9180efe3b0e7b20d1fa5a5912c47ff6f25165d9405c2d12be8caef0c5d4dddd27e58a45f175192b2286a24e15d3e8c3b8d6e104f10e6ed862912e2495d74c4"
+ "issued": "2026-11-19T11:15:06+05:00",
+ "sig": "8c28527c473479e7c1b3c4a54c1bf88bd4f7ad4e5874159228029eac26ee25a5fa8f51377e293e2e817a334f72b8470e5d98d509537fc96d6e2472d7edf93fdd6db9d477a92edf3916c4ef6e87f84ebcb5229a599421f38fe5221ca8b5b63958fc1415150fd8d0628f1543a081e6ce91116a2d9e501ecbe3cdef0d083047c21e1fadc78382cb82a18f94b8f5ec460294a0ee2b694c24833d1f7bc06d0ef92cfd743d5f7d8c46cf9cb91e72b94eeb23a21fd5016554eb49df841cc3d5b33227eb3199dbcd673f5dce9274b545b02b47e58174c677375fb4085f68e5df174450220f8894e612187f179d1830a7df068282e6991483a1755e0441a2918e4bde4411d8093d81a908eaff9ee9a31c726b044ec3afc1b7f9dfa8385092b72aaf6841013f6b2b9728f347ab34aa2d66aa3331cf39a8cf05c2f88c0556e7ef5ce6312f4738b6aa87fd316ecf3c61d5598765fac082e5029140737495b91a4a4ec3baef3d3e4fb62b72aeab43def94ae6d557a4d3d5262cbd9c3a8069065ddf7297e6da4a"
 }
