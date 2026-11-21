@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 301,
+ "serial": 302,
  "modules": [
   {
    "family": "smi_nvme",
@@ -11101,6 +11101,68 @@
    "min_build": 219,
    "python_tag": "cp313-win_amd64",
    "note": "MAS1102: «Достроить транслятор по меткам страниц» — слияние без нехватки памяти на больших QLC"
+  },
+  {
+   "family": "smi_sata",
+   "version": 65,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-65.ssdmod",
+   "size": 4548149,
+   "sha256": "0b884a18f93f1bb684ef7971c7e433be479e372b09ee4cbc73d6c970d14e5691",
+   "modules": [
+    "controllers.smi._shared.arc_busy",
+    "controllers.smi._shared.bootisp_store",
+    "controllers.smi._shared.cp_store",
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.dbg_prepare",
+    "controllers.smi._shared.dbg_reader",
+    "controllers.smi._shared.dgisp",
+    "controllers.smi._shared.dgisp_flow",
+    "controllers.smi._shared.errlog",
+    "controllers.smi._shared.flash_block",
+    "controllers.smi._shared.flash_id",
+    "controllers.smi._shared.fold_seed",
+    "controllers.smi._shared.full_repair",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.loader_sweep",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.mpisp_flow",
+    "controllers.smi._shared.native_flow",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.passport_sata",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.ram_start",
+    "controllers.smi._shared.romdebug_catalogue",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.service",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_build",
+    "controllers.smi._shared.sm225x_ftl",
+    "controllers.smi._shared.sm225x_geometry",
+    "controllers.smi._shared.sm225x_remap",
+    "controllers.smi._shared.sm225x_superblock",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work",
+    "controllers.smi._shared.unit_lists",
+    "controllers.smi.sm2259xt2.self_repair",
+    "controllers.smi.sm3281.binding",
+    "controllers.smi.sm3281.plan",
+    "controllers.smi.sm3281.pool",
+    "controllers.smi.sm3281.prepare",
+    "controllers.smi.sm3281.protocol",
+    "controllers.smi.sm3281.volume"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-21T17:27:37+05:00",
+   "min_build": 219,
+   "python_tag": "cp313-win_amd64",
+   "note": "SM2259 AC: «Запуск из ОЗУ» снимает аварийный режим и на первом поколении; ход чтения журнала в окне"
   }
  ],
  "revoked": [
@@ -11161,6 +11223,6 @@
    "version": 43
   }
  ],
- "issued": "2026-11-20T22:29:15+05:00",
- "sig": "68790b944eb8eac893778f903438204f632ea31c73ab09b57db2497a4171f92b6c709af9fcc982da25a7c3cd1864eba88f15b0191b480055dbffc3a2ccc8e47c0013b2da773bd1f3d54d4870238ba06535fb31682de3a51424df0a2e1e4261c338ce6527c0b0faa17a092e57b48edd7b62fa951194f44cc724963bda51e7b4d86b8b309123f1bd34ff7ffbeea6374088f1abb27d1aba092b7e06aa82905dcbe123daa1f9b0292c7dc05984164a5e7d2b4aec48e2d7097e49537a504091e86ae5f865fcaf733f5db50b2dae811d8871c4bd20772f54375b253cc333246817c70a5941be62cc7f434a41460e2910235616c442953d836525f89083b5a8be60e2c536ea3a06257dbae46dbe4ce68f4aaccff3a5ce311e5e9e1421e030b52a013e9ac64789dc1c2606362941999b17ee863485827e74699147ebee335b501d0351998d8830a7e8bdc898672327fe2595d3d336dcbb525ae39feff6cd5703369230b6cf250cad0eae462158c75142c8761bd406d13947f9eefbfba29ae404e40f4bae"
+ "issued": "2026-11-21T17:27:48+05:00",
+ "sig": "447d9468226fc2d579c91e3295eadace6b992626b4cec808dabe63ee5556294ae249a4f1365d79466e2297187cf801efe3c4f2cf1055d376bb5100c0e9a78e050a1716af492ad43115f190d82d92683b96561cdbba19bb32a4f1850ebe776f688f98b051b465a88811c0c18e4648047a9bea00c1ee720294b31056753d1a22f499f8f4ffd6ebd4adc22af72df181a36ec7c89c92cfe6ddcacdb4adfcdc81baf2dc1187477cfc2e83641a9e5d9f7f2c3a35dfdce77fc899c336b396fc092679beb883b2a91a2bcabcaf7dda1009c469a20e7c442bee11216c40408f2a274f4d198ed4078bc92e7b6d8e667677f3a3e1338126d69ad15cdee2cc59a3852b1f4e3a40e7bf4d2b1537eb9509d004c13411ca9d8e1d83fd4eae9aa6ec6ce67cb06c213c14bfc6067a0d1749a141e3ae34a2cfe0ba13f3fa94986e382af522f59a23bc9449a49e41a10ff00b2aa2125f320ea922d26ebc604fda2c7524f94a9a53a86badb19db2f2cbb661b95cc7520f7eaf8e560f6f412411333324e1f76e8fdd5fed"
 }
