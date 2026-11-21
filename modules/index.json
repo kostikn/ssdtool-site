@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 307,
+ "serial": 308,
  "modules": [
   {
    "family": "smi_nvme",
@@ -11412,6 +11412,69 @@
    "min_build": 219,
    "python_tag": "cp313-win_amd64",
    "note": "SM2259 AC: ожидание запуска до 5 минут с ходом в журнале; настоящее имя контроллера (с EXE 223)"
+  },
+  {
+   "family": "smi_sata",
+   "version": 70,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-70.ssdmod",
+   "size": 4643932,
+   "sha256": "8bcf090212884e1e0ecb62b6e39b234fbba640025b271af7e688fd93c4a60e58",
+   "modules": [
+    "controllers.smi._shared.arc_busy",
+    "controllers.smi._shared.bootisp_store",
+    "controllers.smi._shared.cp_store",
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.dbg_prepare",
+    "controllers.smi._shared.dbg_reader",
+    "controllers.smi._shared.dgisp",
+    "controllers.smi._shared.dgisp_flow",
+    "controllers.smi._shared.errlog",
+    "controllers.smi._shared.flash_block",
+    "controllers.smi._shared.flash_id",
+    "controllers.smi._shared.fold_seed",
+    "controllers.smi._shared.full_repair",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.loader_sweep",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.mpisp_flow",
+    "controllers.smi._shared.native_flow",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.passport_sata",
+    "controllers.smi._shared.plugin",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.ram_start",
+    "controllers.smi._shared.romdebug_catalogue",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.service",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_build",
+    "controllers.smi._shared.sm225x_ftl",
+    "controllers.smi._shared.sm225x_geometry",
+    "controllers.smi._shared.sm225x_remap",
+    "controllers.smi._shared.sm225x_superblock",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_work",
+    "controllers.smi._shared.unit_lists",
+    "controllers.smi.sm2259xt2.self_repair",
+    "controllers.smi.sm3281.binding",
+    "controllers.smi.sm3281.plan",
+    "controllers.smi.sm3281.pool",
+    "controllers.smi.sm3281.prepare",
+    "controllers.smi.sm3281.protocol",
+    "controllers.smi.sm3281.volume"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-21T22:10:35+05:00",
+   "min_build": 219,
+   "python_tag": "cp313-win_amd64",
+   "note": "SM225x: транслятор берёт новейшие копии с учётом потоков записи и при пересборке старых обзоров"
   }
  ],
  "revoked": [
@@ -11476,6 +11539,6 @@
    "version": 65
   }
  ],
- "issued": "2026-11-21T19:35:53+05:00",
- "sig": "59273553fd2e6c8c264a63a004ddd4e72611b87c9b2df917797fe380b8502649d482b1014d1172d84b99120fc7aa586a35d5d12413b050b39023f1631021ad652c19ece61494b77df6c612f85821ff273276c8b104bfdbca39ccda6615075c377ce2699f4c990310d3d0b92b4be677f9b7925c455426ebc86a21f09fb1481fb273107fb047e9680c16a607b658f639fe8f0e8ec1b12dad856f64f0bcd5c6637a55ceb8d7d7341cbf8062bd027970e43f833d93a2ca733d69d27625f698d8133fbaa10e6856339aa2bc78400fd8ecffc32409398922f47997816ae1faeb55710d1239aacabd8c60682bbd67759245e893c7facfdb36340479b94717ec5fd8d1fb0d4bbe03ce8046a5b7a491fb57a66abdf4e4f270b551bea2c03b8cd5e70cdbc61e485503ffc83f0925eb44f1a3f74546ab5e5eecabcdbbbd3ca90328937a3c6f65f216523663c8b38beeb3fa9701d179ece2a17393c882b1d8127bdc5e64870a9aafd5ec54672c6dea9823680187849c86d33619187fc6f8f554a7e72c3661e3"
+ "issued": "2026-11-21T22:10:47+05:00",
+ "sig": "0bd3947cd9b4ce66f91de6f14b440a2e1dc5aad0fd1aa2587dee93f5b5eb971c082d9245d3e16fb13ae79956c99545856a2a46f2dd0ce684f719cdddb558f37d81eea6c1eda7fba4ab60c30a7830b5c56799d25067a0e66f2da54c279df1b09d58c0f0355a431f5467c3852f831dd06763e401a712325549a967afebe83a8ef288f1863a96ddea10e94ba604db519f06054b027b21010d3f65093a9845d75241eab3b52b79d7560735e5af3e93fd5aff02f917c5fd5aa88804984c89b9c6b273460782539ed8578fe2d0bcc4a1033c2d76344f0dbe26c8c70e73a694cec3e9f9c0ac1607d2d86121c9fa1d73f6ecb785c5c54ad2f6197c5b7283e6f4fbe1e5878362f726a8f42f882b29f5640e8938acf5fb4c5c6bf690677aff0da0526d6ead539c8d3bbe49577d66e00034e5fbb9b39d159c173ffc9c661e8987fe64f19b2ce2b40e9281314b46c188b25d195b2cc79fd137181b228fe2822434071d451fa5e64e7ad625ef128df5cc845a0eae3378e048318a3859c8bf30f8f8591760b924"
 }
