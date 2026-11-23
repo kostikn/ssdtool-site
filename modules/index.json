@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 322,
+ "serial": 323,
  "modules": [
   {
    "family": "smi_nvme",
@@ -12316,6 +12316,53 @@
    "min_build": 225,
    "python_tag": "cp313-win_amd64",
    "note": "SM2258H: второй вид загрузчика (один MPISP), выбор по результату на диске"
+  },
+  {
+   "family": "phison",
+   "version": 27,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-27.ssdmod",
+   "size": 2440431,
+   "sha256": "1a6a3136d4bdd00a637e77e37355c4d29fd0529ddb11016e1060b6456ced7cce",
+   "modules": [
+    "controllers.phison._shared.detect",
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.neighbours",
+    "controllers.phison._shared.passport_reader",
+    "controllers.phison._shared.sa",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison._shared.session",
+    "controllers.phison.as2258.loader",
+    "controllers.phison.as2258.passport_reader",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.burner_reader",
+    "controllers.phison.ps3111.cluster_codec",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.nand_translator",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.plugin",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.ram_snapshot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.restart",
+    "controllers.phison.ps3111.revive",
+    "controllers.phison.ps3111.sa_diagnosis",
+    "controllers.phison.ps3111.start_fixes"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-23T22:30:47+05:00",
+   "min_build": 225,
+   "python_tag": "cp313-win_amd64",
+   "note": "PS3111: подъём из SATAFIRM по аварийной записи без мест обхода (оба места флага), проверка транслятора после старта"
   }
  ],
  "revoked": [
@@ -12384,6 +12431,6 @@
    "version": 61
   }
  ],
- "issued": "2026-11-23T20:57:43+05:00",
- "sig": "59bd594737b3a57cffe860a334d180d2a1460a63597a7f31136e9656e37cb5853d94fe041bd9d280dc8dc84907975c6faec86e5b5219390b5bf4bd99640aa58d8c43b10604d7e8043e3e77bc900e976e718abf4ca49a7c75c29e5039885623047d5c9f7d798e20b6ad8428500b042ff08019e48fec458fb2b309c8d26679e0db23f995aa49cab0d8012d76ee2b6908c501cae138d17e6fe8f0eda2372394a50aa4d398a2e3f1499d8dd9c13915b3019fd163d727e84811e7c0bea231fdab5b8f28d10eef6897f1b7139ab7e0d8b79b43e32158f3d57b228dd3e5efd0085427da8eb6a01af643162a8cd4a27a2d67e678dd04b2aedef83844af8217014a81715132bbc010c774a0582451e19e1222270df7b10dcc0278af724947fb80d83a2c7cd66d9db9eb0e4af8d583142e9006bada6aec86465ec575833dc6cf522d51f436601da90bffd4d5a17adf348250406da8474596eff882d5faec766ae30c50288ac44439597ecda68092228dd017f23d5c8fa35425e9c0fb4383f17b82ccd1e232"
+ "issued": "2026-11-23T22:32:02+05:00",
+ "sig": "2f99408c9b174f8e745f0413a6e791aae18237ab6451d270abf9d074a083c71b7625a186ad647d51c30088bf2ed31dbc6dd8b3aafc9e29b82d37c5eb9809d5456711cbb450a4483a07df20f654df6a5d195f719e77f77727916052b0d13ae9ef598757a07429c0fd486857a50a8c33d0bd315e5641f9ca0b9769e8f4a90f127ad173b94cff97bc4ba5ef37fb2c9db96a831bb5872fc2c8cadeda0673548b2a1baeb93d1415223bb2eedbda3ecee8ce3eb2b63fb20c13f9b6f23f62da07949e499d87b4d35cf80098c045d8d09335bb87df9765de33f98b120d034245a4c4fe32ea7666d727233500915718cf245b80833f4d1bf2c00f2ea9a4396919b6c72966aab09ea6c7bc06b20759717b2bda9bb8b8ef8bc182fd7fd93bcaee125d54b86adb78bd25f6c5ad093a94705cb0031e2142eafbde47651fecaa36b6240c00d48503cfae10dbdbd5c8b3e89b05de691cf5263d239f9612ce8cad64734653490daddb630a6ab3799f1a711f9d015af2e9223b6d292539ae957c3260125fb8c2eaca"
 }
