@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 311,
+ "serial": 312,
  "modules": [
   {
    "family": "smi_nvme",
@@ -11642,6 +11642,74 @@
    "min_build": 224,
    "python_tag": "cp313-win_amd64",
    "note": "SM2263XT: шаг выборки и время на блок считаются от самого диска"
+  },
+  {
+   "family": "smi_sata",
+   "version": 73,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/smi_sata-73.ssdmod",
+   "size": 4984017,
+   "sha256": "a400c297c6b31bb74a03c554eecb40bbbbec1fffaf53fdd7612b2a47a42dbda3",
+   "modules": [
+    "controllers.smi._shared.arc_busy",
+    "controllers.smi._shared.bootisp_store",
+    "controllers.smi._shared.cp_store",
+    "controllers.smi._shared.dbg",
+    "controllers.smi._shared.dbg_link",
+    "controllers.smi._shared.dbg_prepare",
+    "controllers.smi._shared.dbg_reader",
+    "controllers.smi._shared.dgisp",
+    "controllers.smi._shared.dgisp_flow",
+    "controllers.smi._shared.disk_patches",
+    "controllers.smi._shared.errlog",
+    "controllers.smi._shared.flash_block",
+    "controllers.smi._shared.flash_id",
+    "controllers.smi._shared.full_repair",
+    "controllers.smi._shared.gui_actions",
+    "controllers.smi._shared.loader_catalogue",
+    "controllers.smi._shared.loader_sweep",
+    "controllers.smi._shared.mpisp",
+    "controllers.smi._shared.mpisp_flow",
+    "controllers.smi._shared.native_flow",
+    "controllers.smi._shared.para",
+    "controllers.smi._shared.passport_sata",
+    "controllers.smi._shared.plugin",
+    "controllers.smi._shared.progress",
+    "controllers.smi._shared.ram_start",
+    "controllers.smi._shared.romdebug_catalogue",
+    "controllers.smi._shared.sa",
+    "controllers.smi._shared.service",
+    "controllers.smi._shared.session",
+    "controllers.smi._shared.sm225x_build",
+    "controllers.smi._shared.sm225x_ftl",
+    "controllers.smi._shared.sm225x_geometry",
+    "controllers.smi._shared.sm225x_remap",
+    "controllers.smi._shared.sm225x_superblock",
+    "controllers.smi._shared.sm225x_survey",
+    "controllers.smi._shared.sm225x_translator",
+    "controllers.smi._shared.sm225x_versions",
+    "controllers.smi._shared.sm225x_work",
+    "controllers.smi._shared.unit_lists",
+    "controllers.smi.sm2258h.passport_reader",
+    "controllers.smi.sm2258h.ram_flow",
+    "controllers.smi.sm2258h.ram_start_h",
+    "controllers.smi.sm2258h.reader",
+    "controllers.smi.sm2259xt2.self_repair",
+    "controllers.smi.sm3281.binding",
+    "controllers.smi.sm3281.plan",
+    "controllers.smi.sm3281.pool",
+    "controllers.smi.sm3281.prepare",
+    "controllers.smi.sm3281.protocol",
+    "controllers.smi.sm3281.volume"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-23T17:42:42+05:00",
+   "min_build": 224,
+   "python_tag": "cp313-win_amd64",
+   "note": "SMI «Запуск из ОЗУ»: правки под каждый диск из облака по паспорту; SM2258H — запуск из ОЗУ"
   }
  ],
  "revoked": [
@@ -11706,6 +11774,6 @@
    "version": 65
   }
  ],
- "issued": "2026-11-23T17:37:57+05:00",
- "sig": "5f90b75e49318d09120fbd15da993de737fc5e6f3747bdca0b27c539eff311db6cf7ca632c3a4040dc18deaa30b2ec18df2e123c07d4d788fd5ddc4850e52ec1c6d89e0aeb15b066c0be47d5ca710178b0943905d43ae0feb5e637764da0d24682fbd368dfaf2f6d0db3fa20abc5bb016d4195cab93a72ead7f920833b3e4c0ddd8072528ff0c1ca00ef3c83d6b33dd5e004ee0b19b454c74fb6210f7d62e9c7d4cc63dab58092116dec654272706793299a4b2947b9fc266d2f48db720350e449390398c6125f249aede3a7f57c92ecadad0305e6407485772766e7aaa19d0774cb802454b3cc30e47758daaa866f40324068f9deb3504646d808042b171b41a498d5f2ab7dc5c1e407f3e1325246f8efb99546e3c5f5aeff82fb82242dc1bc6ef0c2c78a1954f46bf1cb2b51cc1d45c46e467757db69d51e5e1d2f93be1bad76293abd25a273d819496b71a68dadf6d538dffec0ffee0eccff8ba250540269379d9e1a07c6b2cd125c758a9439fa38905a8df88cede35adbf0f5b58cd64142"
+ "issued": "2026-11-23T17:43:15+05:00",
+ "sig": "7868f53940ff0f38c3643ff3aebff15f7330fab45fec990e7647ce0a7acfcf24d2630b2dc0258877133cee50ae9251ee8a52b0a5514edae2c0e9e1e91845fb453120a867be880e24471bb150f287028fa14cbba76a7bb6a89affe73edfa6c62ba9bee30723318a906ba201c7ce3f1e50ff5eb0bfeb80c4dd5d0b20baea983ada791182c63f8c8c91128ff16418ec945dcd8faf538e1332dedb48bf999e1ca960a59b6775d7c888f9df868f809145861992b8bbf9ec2c440ae0a33e5535cd3b73397c813878c343c472942eb340a94e1947092ffd40a23042d7288f13f74dee7d839a58c774dc3b82878adbfe8156c7ce6480e946984bdc17e012f93f36f8bec84173dcaa1f15072534ef81dfe6a74cdfb63fb65bf035d1f52fdf05e837dad30b9c6e8d63dd11a1f38ed8b1fbaa442a42e52ca1022b81adabb3d29351c90843c21dd2f5969d9c27468533dabf6e382933ef3747de3c4260267dc7ab33dbd1ad9c73f7f534892c42f669d49e504d678eb7bd514f090af4ef5f0e6627f7a2a7a034"
 }
