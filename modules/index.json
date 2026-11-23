@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 318,
+ "serial": 319,
  "modules": [
   {
    "family": "smi_nvme",
@@ -12072,6 +12072,52 @@
    "min_build": 225,
    "python_tag": "cp313-win_amd64",
    "note": "SM2259XT2: «Запуск из ОЗУ» узнаёт проверку холодного старта в BootISP прошивок вида W0704A0"
+  },
+  {
+   "family": "phison",
+   "version": 25,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-25.ssdmod",
+   "size": 2398219,
+   "sha256": "e6b8be93865ea65e93f380a39a68f9d813e3fcaac45a1b69ea6ff596b96594f1",
+   "modules": [
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.neighbours",
+    "controllers.phison._shared.passport_reader",
+    "controllers.phison._shared.sa",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison._shared.session",
+    "controllers.phison.as2258.loader",
+    "controllers.phison.as2258.passport_reader",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.burner_reader",
+    "controllers.phison.ps3111.cluster_codec",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.nand_translator",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.plugin",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.ram_snapshot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.restart",
+    "controllers.phison.ps3111.revive",
+    "controllers.phison.ps3111.sa_diagnosis",
+    "controllers.phison.ps3111.start_fixes"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-23T20:26:18+05:00",
+   "min_build": 225,
+   "python_tag": "cp313-win_amd64",
+   "note": "PS3111: диск с паспортом SATAFIRM S11 и прошивкой SB… опознаётся как PS3111"
   }
  ],
  "revoked": [
@@ -12140,6 +12186,6 @@
    "version": 61
   }
  ],
- "issued": "2026-11-23T19:58:16+05:00",
- "sig": "5f26f7e33afd82cdd4b265bcce0c371b1b6f260a7ef0e4c695f1f615a0e5e2cd28fdeba71f850f3a4b248eea6ecedd3417eade3660a2d08ffc418d8552299a8c6cae48e8fdb5c043cf2ffac2ca4d9c4127e61e5a147f8e59a589447f14a0d94acd3ca05b11a1b26d7e786b496d3cff9ea3f6b728d1674903e37024ed5a6881ae6cc75fe82a31c8a1b675a02b5ab419bbc4e4436f198e0d18759903b0183ea74891ea77b329dfd91bdcd1c7be9b7187f909de6498ab7bbda058e68dfe27faaf4b47d680f443eee9bf7665e908039bfd8ee616e6fb262dd3be66c00dda538fb89ea8e907fbf4d1c7012832c27fae87078936d5f47b8ae56912bd50aceb69408f0a5c8d1a6dae2b4c0f8338a2eaf6aaa98968a5974065e0d62d5ec20815ad311ef7dd484db136c9f641bc9c24dda5e033f7c0e4ffac56d5ca7f96e0c7c747ab787df2871754001d9dffa0cb48a7a8188bb4158d361929c3d8fc763751b7c2940b4a20734a33a8435a5627246704e52940efc64abed9876c5dd9407068b11a669e1b"
+ "issued": "2026-11-23T20:27:42+05:00",
+ "sig": "2445046fd2ebe7091be70092db740205f6dca087dfc9684a3fd0ca060dc2dcefc3a8d972cb7fba9f47316ed6495238fca9538946d21e061b26ca17d4bc063e8c0682d138a28de3e7f220b5bec44ae1c6f48ae7664edaf14e90a0d6e19c40e1c9901cbd874a7ca9cff158db31c5c675672cf07a49863e2cdbf29064d228a1fceb7178a5a578759611a47d2dcc8d86f27474f5fd2f94da1ee1d3935f64a6e114a162c344558e46de936b4cdde79254d997d9884db94f09c7f49da5c5a15e3ff7131e717271d4a0aa6842e58d4c822602cf05b0897fb0592c19f9fa7c2533aeeca89d8762bc02c5c292c46803965bd600db94e72bd4ece581c9f310754aaa7fe9b4931f147aa790787ab1d3b9a5bfc1c7fe525f63ab3b47c70b2d446f1d2cabf8789e005a5787b4dd43faf99475c422e40e533e273b2802aedf150c2ffb5a42dc5b7f179396bd427019ae2940be3f21ddc79b7fe2c8637c4a9f32f8ba1b83aca07e6be8935e8790d4b199923d1f9035d4104b236398a48aead279c2f5490775fea3"
 }
