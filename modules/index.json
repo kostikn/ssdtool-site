@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 320,
+ "serial": 321,
  "modules": [
   {
    "family": "smi_nvme",
@@ -12193,6 +12193,53 @@
    "min_build": 225,
    "python_tag": "cp313-win_amd64",
    "note": "SM2258H: настройка DRAM загрузчика берётся с самого диска (PARA)"
+  },
+  {
+   "family": "phison",
+   "version": 26,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-26.ssdmod",
+   "size": 2423790,
+   "sha256": "59ee80f3423d5aa554c0f7872cc592600c80364a84a4b147c900fa4148b7324c",
+   "modules": [
+    "controllers.phison._shared.detect",
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.neighbours",
+    "controllers.phison._shared.passport_reader",
+    "controllers.phison._shared.sa",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison._shared.session",
+    "controllers.phison.as2258.loader",
+    "controllers.phison.as2258.passport_reader",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.burner_reader",
+    "controllers.phison.ps3111.cluster_codec",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.nand_translator",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.plugin",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.ram_snapshot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.restart",
+    "controllers.phison.ps3111.revive",
+    "controllers.phison.ps3111.sa_diagnosis",
+    "controllers.phison.ps3111.start_fixes"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-23T20:51:10+05:00",
+   "min_build": 225,
+   "python_tag": "cp313-win_amd64",
+   "note": "PS3111: диск с нулевым полем размера страницы в System Info опознаётся и отдаёт паспорт"
   }
  ],
  "revoked": [
@@ -12261,6 +12308,6 @@
    "version": 61
   }
  ],
- "issued": "2026-11-23T20:41:43+05:00",
- "sig": "33fecadc05298a878ea0aeca72af75b208f6b6add31d97eb5147956d5452849ff338c1951483a379a7e1c6cdcafd0d7c149cca0a28a514903f25814ba10a861d2985e23d82dfea8a155cd873171926eaea01680daba53312ea111f8ec23b903b079d3df8c011b7706c0578c918f5798fa77a493d0fdc1acfa94d2f7d5e2895228196fc733dc299ab055c37fa430828416d5b7b1f154f11c569632b181c8c7545627f9f3c383c14ce1a8867c0cca08944b0ece25fcf45367f248921d32a49d9bb34c8e2b78b724225b97c252f730af3cf7a6ef5947ab12898647d826405e32d3a54cdfe4848c97de1ff56ee18238e6e7ad3d5d1726d13c62755a2baf65f49e2cd5f7058e45d895758223d86dcab0d6d33ef351566037f739921fa6db48aa4c7c471bad19b3ece87fd63304368599f8deeb1c15812e294824e3db387945f911db4c17c78105128264075ebc67a44189940c1ecd0263ee701f90c79131e10026214eeac9141f1c0bbe4514b1c07b23e2a641db6359786858aca8a365c79224bc1df"
+ "issued": "2026-11-23T20:52:31+05:00",
+ "sig": "1f515d0ea0bd500872177eb5d8480e58000e03a866e4defe45ee1e9537ea46834efb14a12077b86bdb9593c467214ed338a89d94c1b7daa0c8c2f3759ee0c3615d298be25945deea2a22f22de10f3fdcedda189aed22fb16d555c97e48dbcf6923a4762bc067ba7c9a9a01854db3c2bbb78db39eedd7a45e2350e4aa2633a02f46d65e17cd7994c9c66822015943e568dbd5315272ab30c5be94ce532953fded126e1d8ebcdfe1f6baa2e07bde767f68ea378a971100a318939e36de7aafde409c101a4a80c7841308364a11aea8e23ebd80a964c5dac1b8c708c6b9629d2d9296a93b57b097186565e6aeb58f87d6ea6e289086374c0a4003c1a677b2ea0bd8f9ee1b7570a7380fcf7780071a7a0e588e4c8a4bc617e0c9b809dfcb1c25d07940b717a57450db748dae135db83500a909be73e44f88343f5d5f75f8b423bcb3bec155c416e782b950a7f7ade76cd2b7a9cd56ff4c0deedf5a076578c55ed6da331f0b8eb554b001642774301ba3cca3bf00f47f3c50c51b27fe6e0300eefb66"
 }
