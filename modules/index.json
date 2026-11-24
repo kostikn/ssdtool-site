@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 337,
+ "serial": 338,
  "modules": [
   {
    "family": "smi_nvme",
@@ -13105,6 +13105,49 @@
    "min_build": 226,
    "python_tag": "cp313-win_amd64",
    "note": "MAP1202: запуск из ОЗУ только с защитой от записи служебных таблиц; защита подбирается по коду прошивки"
+  },
+  {
+   "family": "realtek",
+   "version": 27,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/realtek-27.ssdmod",
+   "size": 1969523,
+   "sha256": "afb9cbe97bb24a4600924ac856255fbf3bfb9944fc7ff306e1f82b9af5a347c3",
+   "modules": [
+    "controllers.realtek.rts5735dlq.committed_checkpoint",
+    "controllers.realtek.rts5735dlq.gui_actions",
+    "controllers.realtek.rts5735dlq.original_parameters",
+    "controllers.realtek.rts5735dlq.partial_source",
+    "controllers.realtek.rts5735dlq.plugin",
+    "controllers.realtek.rts5735dlq.ram_resume",
+    "controllers.realtek.rts5735dlq.ram_start",
+    "controllers.realtek.rts5735dlq.ram_start_diagnosis",
+    "controllers.realtek.rts5735dlq.ram_start_stub",
+    "controllers.realtek.rts5735dlq.ram_window",
+    "controllers.realtek.rts5735dlq.recovery_backend",
+    "controllers.realtek.rts5735dlq.recovery_pipeline",
+    "controllers.realtek.rts5735dlq.retry_sequence_layout",
+    "controllers.realtek.rts5735dlq.schema_search",
+    "controllers.realtek.rts5735dlq.service_dump",
+    "controllers.realtek.rts5735dlq.single_segment_source",
+    "controllers.realtek.rts5735dlq.snapshot_cache",
+    "controllers.realtek.rts5735dlq.staged_backend",
+    "controllers.realtek.rts5735dlq.staged_reader",
+    "controllers.realtek.rts5735dlq.tester_read",
+    "controllers.realtek.rts5735dlq.translator_evidence",
+    "controllers.realtek.rts5735dlq.uart_loop"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-24T15:06:36+05:00",
+   "min_build": 226,
+   "python_tag": "cp313-win_amd64",
+   "note": "RTS5735: загрузочные страницы читаются только обычным проверенным чтением; предел времени одного чтения",
+   "cases": [
+    "I-2026-1124-11-5A1D"
+   ]
   }
  ],
  "revoked": [
@@ -13181,6 +13224,6 @@
    "version": 25
   }
  ],
- "issued": "2026-11-24T15:02:20+05:00",
- "sig": "2b8b4d0fc88106c7e1b73d4e9bdc00929c2cf62bddaaabc89448c4e660815d14837285af0c6063b74781e1104016d0bdf579a7dfebe1e46d964a6a72b029bce7a828266d7b0a3ff73418bfd6390da61c28e0a5e2071ff44c6ae56194f1c6258b627dd5822537d60ef7dae0e66513baf86e82f392d24adb6d482f60100fc2b12d60b609c4180814a2c2a119c0f32f666ad4df79c27e610e867547b2725c00834ccbac39a52e8be61b5d2ee0182b2d98044c3c32cfed8bbd03b7a0d84b77926d777c21a358c207fcafd3d0a5675c63f955dbd41e2070344e584e05c4201c5c027fbc01876eaa32119d1c69fc544f972a72bf60197c0be046e090ef7fc27cae37454b40cd1c1d29d932c11124b96bbded36649813979f1ebb858573c421aa4ff5feb8cded914b051976782026ae1a16fb58edc249b02a41b62b89f686c010aea044c3772618fe803728b52f32d52d7b79782fca007a056ee202b20561f116913a9d65cf3c62d9ee435aad846b05109aa93131e45e74c9b83e2f3e1a81a46ad3aa84"
+ "issued": "2026-11-24T15:08:02+05:00",
+ "sig": "78cb5d26f15bb1a5bbd05c149319b18d0535ef00067d892e1f7e27d3792e37a63186cfef3afdfbcf7421df0f2f0383fda69ecffb40d3ae09a9bdcd8095162a112db805778f1e400357cca4480aa7d2a6f5380498778a6215dd90ae111b65013f20d1cb0c09ab72e83a07443ce08086187ceab558b9a981d15c35208efbe847ed0f801170e5e80eaa5c990deba0329b1f8d18741b4dcdca73bb77b2e05c7527d92b80bff382b225deb39dee7a0f269daf397a25f751eeb14e7bb9f2705ca454efd39410dbeb71f67ec9d2ddc6588ce5047ed58cdb3b6a4e8e12fb91960d7db30a64b7d860f9ded0bef880104c87c10f0e57b3983409a5c1b878859d56b3b0bcdea4263f1385cfd369cf955103ebe4ea1fe4bdc0328f63a44639481051bebf3cf090464bef058dadaabb6f0a0a11b37158a8261f45d65aa5e36c2039079e997b5639787b95483eca17758d6f3644323eeba94aadc584a028a00f6081206baf620e9d8e956873904f832b836838156a5c4627df8a4db68f4af3b17ca84585544716"
 }
