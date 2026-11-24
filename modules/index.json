@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 334,
+ "serial": 335,
  "modules": [
   {
    "family": "smi_nvme",
@@ -13060,6 +13060,51 @@
    "cases": [
     "I-2026-1124-01-1462"
    ]
+  },
+  {
+   "family": "maxio",
+   "version": 85,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-85.ssdmod",
+   "size": 4490407,
+   "sha256": "3ffee886f4880c97626020bad6d2d50dca1003ad8982481a5d7607f878056ed8",
+   "modules": [
+    "controllers.maxio._shared.start_stops",
+    "controllers.maxio.map1202.gui_actions",
+    "controllers.maxio.map1202.ram_patches",
+    "controllers.maxio.map1202.ram_start",
+    "controllers.maxio.map1202.start_heads",
+    "controllers.maxio.mas1102.capture",
+    "controllers.maxio.mas1102.codeblock_keep",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.label_dialect",
+    "controllers.maxio.mas1102.mode_probe",
+    "controllers.maxio.mas1102.native_rr",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.pagekey",
+    "controllers.maxio.mas1102.pagekey_table",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.power_state",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_plan",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.seed_probe",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-24T14:59:10+05:00",
+   "min_build": 226,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAP1202: запуск из ОЗУ только с защитой от записи служебных таблиц; защита подбирается по коду прошивки"
   }
  ],
  "revoked": [
@@ -13128,6 +13173,6 @@
    "version": 61
   }
  ],
- "issued": "2026-11-24T14:44:21+05:00",
- "sig": "4fb5434b6a618f73df5ec0ca94d01490de2088e52721a9eb530ce778beb413b71e2d3baac1b634cc850a5e1142fb82440ebe0212a26a47e633161896adbb9bb9061fa8ac0d6b1d2957e4e5d1d47a91db2b7dfb97c04e82564ad471c4a45d411a7d52507fb770cfb0af2b6bb5cd12b471851772cf0e0e7150af4c6f33878781672868b48cd4b65a728d439356eaabf189b4a7f5a7f59ed635707a829f8e6ea49a336e2f975f88523d39cae95fcf23d4c5a1c339573dc8c9747a33f9659f9fe096fee109e1c09521f2c3b9fcd91e0e76ac342fa2b4e6b91d04a32185815ec787c91aa0d4c8f1a58f4e7221e7c9dd45134dc5d14cdd5215bd957d6b5db40d77b6fd6d6a5b5ae4fe026c747befb35887b4ecfc2d8f7c81584f1094808af7469e679c048c3a2b8a774b3968f441c1252af5842d7b3de8e3cb74d3dc5939cbf5bd95988a6bc09bce744690c6072cfb47cb8f142cecdda2ae9754520d923d07ae98d06c6c022db1c9d1d456b24ffc2338fa60f85e2f48d9c7c6694e04fa6fca0fe66c8f"
+ "issued": "2026-11-24T15:00:38+05:00",
+ "sig": "747563ac4a9e6ba362faf35a7b493a588e58ef0ed94b45c91ccf999e6fa6843a6c1a004956e704daade073c9e5355b758ce91698440b8742836f92d2d9abcc749c95aa2b0ed84de001db4ce765e7261a073bf6c0d735f5956b897e8b9342fcda4aaca8b43fc8bf2aca654e3adf8e96a9fb488c9d7fd248a509b97a86f251028fe0d92f44866bd597a4345e58b9cba4b21a7c75cd6d40e4f7e65ddc6c2580a997179150ee53c28763098990055bc2c5ebc64eeb8d31ced98b558e5433430271ac3d731317a47cdc27728eb833507f9da0fef692b3252295dca9ed4a249abfb53c4281cf644b4c8371a27b2159065bcc9532ba1fff35ad0381c9ac1bf278c86b112a208dfcdac4758c628278437e1d6216e7fca631e1ffe77e0e26de25e80abbeda3a9ef29f85b1d56f9ff7fc9e4bf7af14ad24a62abce7165fb338d61eef2d4562daa32daa8a3e0ca7665dd2f2856e451e97e8b5272a5ee8a530389180e6d53227215cbd27fbe376b21c11068d5305fd81c610d52327b4b6bf092c54a066d126b"
 }
