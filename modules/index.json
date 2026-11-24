@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 330,
+ "serial": 331,
  "modules": [
   {
    "family": "smi_nvme",
@@ -12850,6 +12850,45 @@
    "min_build": 226,
    "python_tag": "cp313-win_amd64",
    "note": "SM2259: байт запуска подбирается сам; сверка кода в памяти контроллера перед запуском"
+  },
+  {
+   "family": "realtek",
+   "version": 24,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/realtek-24.ssdmod",
+   "size": 1918871,
+   "sha256": "492b0dba1bee0efa52eb107f695b59b21bdaba81333021fb4c8633e5afd15af3",
+   "modules": [
+    "controllers.realtek.rts5735dlq.committed_checkpoint",
+    "controllers.realtek.rts5735dlq.gui_actions",
+    "controllers.realtek.rts5735dlq.original_parameters",
+    "controllers.realtek.rts5735dlq.partial_source",
+    "controllers.realtek.rts5735dlq.plugin",
+    "controllers.realtek.rts5735dlq.ram_resume",
+    "controllers.realtek.rts5735dlq.ram_start",
+    "controllers.realtek.rts5735dlq.ram_start_diagnosis",
+    "controllers.realtek.rts5735dlq.ram_start_stub",
+    "controllers.realtek.rts5735dlq.ram_window",
+    "controllers.realtek.rts5735dlq.recovery_backend",
+    "controllers.realtek.rts5735dlq.recovery_pipeline",
+    "controllers.realtek.rts5735dlq.retry_sequence_layout",
+    "controllers.realtek.rts5735dlq.schema_search",
+    "controllers.realtek.rts5735dlq.service_dump",
+    "controllers.realtek.rts5735dlq.single_segment_source",
+    "controllers.realtek.rts5735dlq.snapshot_cache",
+    "controllers.realtek.rts5735dlq.staged_backend",
+    "controllers.realtek.rts5735dlq.staged_reader",
+    "controllers.realtek.rts5735dlq.tester_read",
+    "controllers.realtek.rts5735dlq.translator_evidence"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-24T13:35:50+05:00",
+   "min_build": 226,
+   "python_tag": "cp313-win_amd64",
+   "note": "RTS5735: подписи строк терминала; паспорт ждёт диск, пропавший из системы"
   }
  ],
  "revoked": [
@@ -12918,6 +12957,6 @@
    "version": 61
   }
  ],
- "issued": "2026-11-24T13:19:19+05:00",
- "sig": "27e5925ed2d1b5d3186abfe9cd07ee1fc700739638e9d35511e6715e8afc853c5954e3d4aa71fbf2a13bdc0b9a7d0f7a4f9c86385278dde645dd635f0e76b966f55c276e8d792833977a2b74085a8fc62c671d266dd57ce5439ead71c50cef9abb19167a96e7fab32dacacaab46788fb0f6bf20633a7966f4a6d3900da89e4e82cb9bbdcfe11343c293143c3c561baa3e2385d8579652c7f7471c8c009e2a21ce86e14ff10ebca69da2a9db0842b680cfca24c4aabc783fa544f5af46f9953ab07d5601f9893de8fdc5a0c0317c8f96e502fdcf1336f1bdba5a2017a5816874514826a7c64d92ada45633dc68c2121730a70014d506579cc0d22ed695d8c7ad9ea2f79fc37aa348e43c6399535a3aceb0af8c1668bd4a3e1c258bcc0a577404c02d5c0359d958a84c7caa8ca4e4da9c82ae504c04ceb2f2527f0d72328a2c972ba247f8ee89cf702292b720124513d24658e83ada5e933a2c62f4ef19f599f83c7f8f3e679446b60b69598903145a7e7e585a6ae117b48793826e8ce8b2517a9"
+ "issued": "2026-11-24T13:37:35+05:00",
+ "sig": "4186490fdd8da1660e2598f5114bcca28f36c25b0cf3369c54778dfff878ba523ce054935877e6a604325c29d4132f1649b6cdf4008e117e994070d6e95b598f95dc45a2cd471d63031c822037b1295be1869dfebc8631108ab2c629d2c6ac14fa31f14e3780a8c95ce89869e7944f238a040e29478126eb0c5dc1249c9c31ea5b67f0345de8df52c44ab465fb8a2ea230ea32adf64db38b76d01168e17c0eb371dca584c96ed11f5aa02a91e358636c855ff50299e7cc47cc872b1547ea38afb0a68a3cf4934028d2d0f6c0b4c53dcd3a26ed71a0c9eef09017c7dc4e3d4d9b3e32f5f4362d127a4deedabec2c218931e5ffee2d7926abe70989b652ffec5440ab817c769e167bf772e872ac72ff303f551534fbcc5e18c50396d6af617b3c453a3fd0b7f273194dc532c766a9488f4c6e6d037fde8663dbff4162fc6ef5d72d022869bba7d4edf70622b4caf8eac90d79ea4b1ab12b5d31a844cf00cb8c9402f19ac9e5393fdb6b13f6c80ae2b7c8358f797f02a7a5b0fa4def1d5c6b0ad14"
 }
