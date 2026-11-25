@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 346,
+ "serial": 347,
  "modules": [
   {
    "family": "smi_nvme",
@@ -13480,6 +13480,59 @@
     "I-2026-1125-02-5A1D",
     "I-2026-1125-01-5A1D"
    ]
+  },
+  {
+   "family": "phison",
+   "version": 29,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-29.ssdmod",
+   "size": 2731398,
+   "sha256": "ffcb4a9c1a46b4d8892688f9d096a030f7cb1e84804ce45122d7c5b8ff18dd6f",
+   "modules": [
+    "controllers.phison._shared.detect",
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.neighbours",
+    "controllers.phison._shared.passport_reader",
+    "controllers.phison._shared.sa",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison._shared.session",
+    "controllers.phison.as2258.loader",
+    "controllers.phison.as2258.passport_reader",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.burner_reader",
+    "controllers.phison.ps3111.cluster_codec",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.live_memory",
+    "controllers.phison.ps3111.nand_build",
+    "controllers.phison.ps3111.nand_translator",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.plugin",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.ram_snapshot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.restart",
+    "controllers.phison.ps3111.revive",
+    "controllers.phison.ps3111.sa_diagnosis",
+    "controllers.phison.ps3111.start_fixes"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-25T22:45:47+05:00",
+   "min_build": 228,
+   "python_tag": "cp313-win_amd64",
+   "note": "PS3111: кнопка «Снять память контроллера (только чтение)» для диска в режиме SATAFIRM S11",
+   "cases": [
+    "I-2026-1125-01-D1BD",
+    "I-2026-1125-02-D1BD"
+   ]
   }
  ],
  "revoked": [
@@ -13560,6 +13613,6 @@
    "version": 24
   }
  ],
- "issued": "2026-11-25T17:53:32+05:00",
- "sig": "77a75294cba1218449e520209e9b7af96e49fbd3a7942b559c074edba08ded1c850288050c2cebdbbe21b7d244f972cb318f13d79ab441b179e7b5912d51633eb66b5ba78d00e07b0c8fa9f4da838ad7d3fa8db74870982a00543ba7c608ee3222cbd98d9ca909d103ebb2ba629de6bb289155e5ef0e8637465ab82771b549adb52c6f04e0be3265416fc37898752e31c5c4db20e3213eecd7b3ecd859ede0db210c3b75524f8c027cbbd970be02ac6d1e8d285a4cf9b3399ca45a9dd5e44b37c735b15f050a137d2930a43ce917cf5876e2ea02f4500be90fe67851be3cd9245ed0e8f01f610455e7ab89dcc4b3197013978410e4eb9d898d0b752f8ef2aa2351584a2856b4f89aa0fa2dda5a0e4123dec9d3a92bd05e28d2e16b87b2434bb4088c859d3acf376f551bcb8a7df5fa3e7c9af45db0a171a9ae7ff84a4d6a1a31a3e068022f7b056e6444edea314dc000ebc498abb2c169fce2ba58497cbfb90a2e283f89d053e5ae103ba4edbd2147e2d441a5fc758dd5f9c95d0b03aa7448a6"
+ "issued": "2026-11-25T22:47:23+05:00",
+ "sig": "783090067ec0601c1eb482bf09634a2646aefdb5a780e7fe6c99d9bb73b6318b641c942d24f799ff83ad7be26a551e3232a9e23de59e9784b28f59da439be9cb950d582b7ff151bcbfe9458076b6418ad4a5a80e52476ea1bf5750426122890371b8a8b7333207d7b1303480655f4ef804957b7de33518f1f21cf7747c8312ccaac12279de7551273d0f7be5ca18ebe5dc157312c3c4b77887fc495a82f89c3aea23305b70b0f4b093d6bf0abbee9bc96c0af48f07aba1861795c403f2738c2284df792021ffce692680a958cfbebcee132ad6406e0560549b2a47fae7a0e769cef6e7ef651ae6391f0bad1a6aef05146c65753f1756f4275dc6d73ae16e207e08314e12e86b865f43c54adcc59311dc87de4a20d33132619413b23b0d514b83483d7994e512f2e1bea52b40bed891d3b94bfe5fc1678dee6e30b1072f011a80fa571101a269ce93e4d66f33180217553e274d63173888e448f6b3476e47809445372540a885afb03e1962da7cfdd8a308e00cf91c90e3e83ed62d36702c67c7"
 }
