@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 341,
+ "serial": 342,
  "modules": [
   {
    "family": "smi_nvme",
@@ -13239,6 +13239,58 @@
    "cases": [
     "I-2026-1124-07-0ED5"
    ]
+  },
+  {
+   "family": "phison",
+   "version": 28,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-28.ssdmod",
+   "size": 2632138,
+   "sha256": "3af5263c7bad5cc4bd9622760ffbeee35e537fa658f1d8c059a5c9699e7d7b5b",
+   "modules": [
+    "controllers.phison._shared.detect",
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.neighbours",
+    "controllers.phison._shared.passport_reader",
+    "controllers.phison._shared.sa",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison._shared.session",
+    "controllers.phison.as2258.loader",
+    "controllers.phison.as2258.passport_reader",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.burner_reader",
+    "controllers.phison.ps3111.cluster_codec",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.nand_build",
+    "controllers.phison.ps3111.nand_translator",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.plugin",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.ram_snapshot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.restart",
+    "controllers.phison.ps3111.revive",
+    "controllers.phison.ps3111.sa_diagnosis",
+    "controllers.phison.ps3111.start_fixes"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-25T11:37:53+05:00",
+   "min_build": 228,
+   "python_tag": "cp313-win_amd64",
+   "note": "PS3111: обход места сообщения после перехода в блок (0x52) и коды аварийных записей из прежних запусков этого диска",
+   "cases": [
+    "I-2026-1125-01-D1BD",
+    "I-2026-1125-02-D1BD"
+   ]
   }
  ],
  "revoked": [
@@ -13319,6 +13371,6 @@
    "version": 24
   }
  ],
- "issued": "2026-11-25T00:15:13+05:00",
- "sig": "2209dc1eb82f1693cd7fb46300095dda0ab5033e0fe923a65bbdbe7b845c52b5bbd998afe1adef10926dd4a8fb24df8f3dd853f8d322a70bb690a302a0b4f4e326e24b70a95b5ae855e237711bba06991e4a44cdb9d105ed76a4d2b8762011ec534235d9697bac8ff45df11c537301e8a4e8dab6fa03144aa2c8a8cd74e937419a12aec57021ee38bc1daf49bb61fd5bd4d4fddab746e79a25484311e788c0f85127b525af5dc8c114702f470b5c50b20db90a2838441ae2c55aa3697a2bcdaefbd282a111a8ae92dbcb49dc2c5fdcec0fa6cc2437d682d919be6364facdfb29a8c03e3bd94b133a93a9e4c23df3475a139b3c3970fdc0092cd4e373f3fa0310677a9cf4a6e6a3ea7ed1ad580907ae169efe530941e4849a8d55dedf0b0d2f3b1ec01d7015658ec20d66ba0792bf4ea222e1a4c10aaf4815ad01dc729f1fed997c597fb65eff79361a00285a3624e9bf4de2b3833a5bb1d9edcd937e2afb5352cb39d29dbf2e7162e7a0955681b53fbb098480317ac5e45d9100dc2a4364af5d"
+ "issued": "2026-11-25T11:39:47+05:00",
+ "sig": "4e02276eed04b84dbef2d74a9872e9bc3c779f023379c29e8ef74bc64b5efab4a7e2633a8e50351c070311d00d42bad6ce4b4005e1a112bf548114f72a0744eaaa9a36ca531bcba597700e17bb4efd330a56b2a5999d01a2aab23a143d994fd71f2abb4f2ce4b33f113cf2b792b1d350d00da08c6d4a5494c772447488d940fde39ce172ef540c887fb3a909f51fa1261b96bd4f90f3586e2e9d639602f504e99b60fe6908d59e7621d496dc9e771400d4189ddfc5551203a28e77aedefce4888f4a684f535483d297ca82f00e8b22c99a91121632cf730e95c76a461e08536b314059e0372977c01b9f7f3793b412e7c355434c70d2444e7f8551800c6dfebe36c6a92db9968cfc63a78b91084da9d2a600063f4e354ca0cdf816844d24161cbf5218188ba464775e306efc1af8284fa07504430e71c1ecc9cc3f87de64686f095b008e5dcde5071f6d4a459a0f1397cc8360d69d71f7beeef538e03b8312a63861e7a66179966976f68247e45996209ef5ec83e4c841b43a2826f5ecb84a53"
 }
