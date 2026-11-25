@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 342,
+ "serial": 343,
  "modules": [
   {
    "family": "smi_nvme",
@@ -13291,6 +13291,55 @@
     "I-2026-1125-01-D1BD",
     "I-2026-1125-02-D1BD"
    ]
+  },
+  {
+   "family": "maxio",
+   "version": 87,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-87.ssdmod",
+   "size": 4539792,
+   "sha256": "7434baa30dd688126a4fa9a2240252c6e186b1d7cbebea52339dbe27d4cc2ab6",
+   "modules": [
+    "controllers.maxio._shared.start_stops",
+    "controllers.maxio.map1202.gui_actions",
+    "controllers.maxio.map1202.ram_patches",
+    "controllers.maxio.map1202.ram_start",
+    "controllers.maxio.map1202.start_heads",
+    "controllers.maxio.mas1102.capture",
+    "controllers.maxio.mas1102.codeblock_keep",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.label_dialect",
+    "controllers.maxio.mas1102.mode_probe",
+    "controllers.maxio.mas1102.native_rr",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.pagekey",
+    "controllers.maxio.mas1102.pagekey_table",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.power_state",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_plan",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.seed_probe",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-25T14:22:32+05:00",
+   "min_build": 228,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAS1102: запущенный из ОЗУ диск не уводится в ROM; подсказка про шлейф данных SATA; программа сама подхватывает диск после сброса линии",
+   "cases": [
+    "I-2026-1124-07-0ED5",
+    "I-2026-1125-04-0ED5"
+   ]
   }
  ],
  "revoked": [
@@ -13371,6 +13420,6 @@
    "version": 24
   }
  ],
- "issued": "2026-11-25T11:39:47+05:00",
- "sig": "4e02276eed04b84dbef2d74a9872e9bc3c779f023379c29e8ef74bc64b5efab4a7e2633a8e50351c070311d00d42bad6ce4b4005e1a112bf548114f72a0744eaaa9a36ca531bcba597700e17bb4efd330a56b2a5999d01a2aab23a143d994fd71f2abb4f2ce4b33f113cf2b792b1d350d00da08c6d4a5494c772447488d940fde39ce172ef540c887fb3a909f51fa1261b96bd4f90f3586e2e9d639602f504e99b60fe6908d59e7621d496dc9e771400d4189ddfc5551203a28e77aedefce4888f4a684f535483d297ca82f00e8b22c99a91121632cf730e95c76a461e08536b314059e0372977c01b9f7f3793b412e7c355434c70d2444e7f8551800c6dfebe36c6a92db9968cfc63a78b91084da9d2a600063f4e354ca0cdf816844d24161cbf5218188ba464775e306efc1af8284fa07504430e71c1ecc9cc3f87de64686f095b008e5dcde5071f6d4a459a0f1397cc8360d69d71f7beeef538e03b8312a63861e7a66179966976f68247e45996209ef5ec83e4c841b43a2826f5ecb84a53"
+ "issued": "2026-11-25T14:24:06+05:00",
+ "sig": "4ac651f18d155b9d56278c745ffcecd8a5ac1665312abe53011df82520801f31c343967a4757c772d03e8121ca684ab6124055a97dbdbec81ada034c4d3e93715282e2fc0359b7bef0877d3d73664c16ad69ba514b026615e9572e48156b9d0d58d29a974b5682cc0eb61bcec2300be791319d52df1e6347bc4a6293be44b3c02156ba2d8856e5a5712c9f8dccdb474021a45ae635a9cb915c5a3beabc72eebe51963efaf1ccbe64947203e85cf64d6297dc089ad8b8ad2a2d0138f2eae7ac71194b0856d82e37db060a7e0ad4832bc16fb4ad6346bd85c22062f19de0cb570faa988b8a35f0d7898b357f923f8098571db2ada5f9e984674353285ac44f55e2318cdfbf04d9964bf8f96683ca097a0de486d3eeaf218e0fbff607c9edb1ce2b6730fe560104c0f15cb52eda2047f65348bf97d3b679dce60f014b6fafad5093aa81daa60fab2fb80bb69ca8f3231bb1c1e4e63bac1c2fcdbc99ed3f80f258774c2dd0cfa2c6fe211b338a2d2eb6c4710895421a97dff62630a78448da670ee6"
 }
