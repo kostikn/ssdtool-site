@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-25T18:53:05",
+ "generated": "2026-11-25T20:49:26",
  "files": {
   "runtime/numpy-2.5.4-cp313-win_amd64.zip": {
    "size": 10323411,
@@ -19,12 +19,12 @@
    "sha256": "f3d33264b73b24824de496a3eeeaf3976fec608e1cba0af9173d339c6fd5fdfe"
   },
   "_detect/signatures.json.sealed": {
-   "size": 37514,
-   "sha256": "bf841d074c7e9f8ffabf95911bfbde68ff73b0e6002056714a96db1297426554"
+   "size": 37898,
+   "sha256": "a87edf8aa6e498743f4b75773cdf52f074127009074faf55c75138e2f4bf5349"
   },
   "_firmware/known.json.sealed": {
-   "size": 9573,
-   "sha256": "b023d990e35844f71fb396317886e33a2f60d8345e5d9035951fe575431e47cf"
+   "size": 9715,
+   "sha256": "14b0efdb4d7cc3d65df683678acb465386047332ec6098ca66e2c38ab78cbc10"
   },
   "i18n/bg.json.sealed": {
    "size": 305108,
@@ -95,8 +95,8 @@
    "sha256": "336a1620c4f603cd63f8c0c3b5410d4db1017fd2398eba79c3395d580a5e96b1"
   },
   "_detect/usb_probes.json.sealed": {
-   "size": 12167,
-   "sha256": "a84503297dc80a00d0d3683320ff03762f41c167a4538f7b910947ffa302eb85"
+   "size": 14779,
+   "sha256": "28f87d7e5c10363c6aa9b39412ff70a8ea4efd0003f6cfa03e0b58594768efe1"
   },
   "YS9082HP/flash_id.json.sealed": {
    "size": 686,
@@ -10750,6 +10750,246 @@
    "size": 1678,
    "sha256": "9fa4649e61d9644fa88b0a029c409c4d146ff61ad2e037bc1b0d5633e562c4c8"
   },
+  "PS2251/ISP/08cefa7f7f_2303_fw_burner_res168.bin.sealed": {
+   "size": 33331,
+   "sha256": "30f21cd0215837a774d37509ca9d00b7622223edae02bf4700a1b32bf72eac74"
+  },
+  "PS2251/ISP/09f23c63ff_2261_hv_tester_fw_burner_res188.bin.sealed": {
+   "size": 25139,
+   "sha256": "1d4ee464c536d820dc7d352c585c5d868ebb3151588887b43923bb406b2b7f26"
+  },
+  "PS2251/ISP/0aaf88dc50_2261_hv_tester_fw_burner_res6104.bin.sealed": {
+   "size": 24115,
+   "sha256": "ccfcf786ac909fe7c4884f12460f5287e653c7b93a214d9e0ffb5a3e0e679617"
+  },
+  "PS2251/ISP/0e426165d2_2261_hv_tester_fw_burner_res6104.bin.sealed": {
+   "size": 24115,
+   "sha256": "408b8e277d6d5d41df9b2094fc17367c610ae28a1d77f14460c490320dce34e4"
+  },
+  "PS2251/ISP/0fa2b29947_mpall513_b2267_bank.bin.sealed": {
+   "size": 77363,
+   "sha256": "2f633539d5072aeae69e901cb89f1c49a85ecb14ffaddbbfc2d3263e73426e91"
+  },
+  "PS2251/ISP/0fb6847715_2307_hv_tester_res201.bin.sealed": {
+   "size": 25139,
+   "sha256": "d630a80c752b6a2ab96c3715e648c67a4b9de697692114286ab626816a19d1eb"
+  },
+  "PS2251/ISP/1b742a620a_2307_hv_tester_res6103.bin.sealed": {
+   "size": 23091,
+   "sha256": "cfb2d8610dc93a89d75db1a7d784ff09638af32c2670f450c9c2c9e9310b0975"
+  },
+  "PS2251/ISP/255aa951a9_2307_hv_tester_res168.bin.sealed": {
+   "size": 25139,
+   "sha256": "f4235381b5f51a1b710153a214ba1e889a2573f89507e3e353742f36266ca698"
+  },
+  "PS2251/ISP/2eda861f46_2261_hv_tester_fw_burner_res160.bin.sealed": {
+   "size": 25139,
+   "sha256": "3bc49f3176c557c799c788db0eddbf35f13dcc0881c77c0a182c1794d48830c1"
+  },
+  "PS2251/ISP/32d9ffad9c_2261_hv_tester_fw_burner_res157.bin.sealed": {
+   "size": 22067,
+   "sha256": "34131887e481a5ef1dc5a8bcf88dc3b04a93fb300d8124b48b06649a5d355840"
+  },
+  "PS2251/ISP/33af97bd6d_2261_fw_burner_res6071.bin.sealed": {
+   "size": 32307,
+   "sha256": "d9d6cb95591d21274de51390cc0667d16ddda4842c3c8b168110d9583cdebd51"
+  },
+  "PS2251/ISP/3438cc9752_2261_hv_tester_fw_burner_res172.bin.sealed": {
+   "size": 25139,
+   "sha256": "359ea6a48f8d7280b1bf3924087568a0dfe87c018c3148320bce5588578a7207"
+  },
+  "PS2251/ISP/358abb0f6b_2307_hv_tester_res174.bin.sealed": {
+   "size": 23091,
+   "sha256": "dc3197aab17cf535efa68b3e208e725df7d14cb4dc8a068a023ef8a7b6491a78"
+  },
+  "PS2251/ISP/360c3875aa_sttool_b2267_bank.bin.sealed": {
+   "size": 62003,
+   "sha256": "86909b213a124852bad4c80af0401220015c8e258dd2d8040b6c9ee6abdcfa0a"
+  },
+  "PS2251/ISP/3ae7589ae0_2309_fw_burner_res7034.bin.sealed": {
+   "size": 49715,
+   "sha256": "be47ca309078a06b0bd6622c5c53a1eff06f780655cd3f507a840a836675b9f4"
+  },
+  "PS2251/ISP/3b2e30f276_2307_hv_tester_res179.bin.sealed": {
+   "size": 15923,
+   "sha256": "8be7a3a704a73c0c1860dee2cf397a7b1ee1ab8d5c3b565f7b65d9b7a49bd08d"
+  },
+  "PS2251/ISP/3cbe3bb579_2307_hv_tester_res167.bin.sealed": {
+   "size": 24115,
+   "sha256": "cda2348ca7d27127c7f2ef5d0bdaaaef3969fe79dfe6237ef0933322aac2b6cc"
+  },
+  "PS2251/ISP/3e2bf2b3c3_2261_hv_tester_fw_burner_res154.bin.sealed": {
+   "size": 25139,
+   "sha256": "b2472a5d39d5b34e1d6612999d46a0932011f0e98318fb6efaefe0f49d87fa14"
+  },
+  "PS2251/ISP/3f09dcc578_sttool_b2269_bank.bin.sealed": {
+   "size": 84531,
+   "sha256": "946ba38e2adcd9a2d7e7501804f8221cd4a3074ccf0d2e013e0737cb59dce4b5"
+  },
+  "PS2251/ISP/47fd42ac09_226X_hv_tester_res169.bin.sealed": {
+   "size": 29235,
+   "sha256": "00f876d53121517a89ade03a2ca462d761afffb504b9c1eaeeec91023000a7bb"
+  },
+  "PS2251/ISP/4e6c8c192f_2307_hv_tester_emb0x6068e4.bin.sealed": {
+   "size": 25139,
+   "sha256": "e34d6a95ba255cd493e4f91f0c30d31dc0566797b228af607a1b0b93d55defcd"
+  },
+  "PS2251/ISP/4fdf905e2d_2309_hv_tester_emb0x5bfb00.bin.sealed": {
+   "size": 15923,
+   "sha256": "289c40ef5db3cbc868bed37d52f8f8e40b92f410acf2b73503e7b6eb3e30664c"
+  },
+  "PS2251/ISP/518a283d2e_sttool_b2309_bank.bin.sealed": {
+   "size": 102963,
+   "sha256": "a6881b0df3bca46d9068f3c2b7716ba8ddbdb35222589c4f774b0740b2bdac5d"
+  },
+  "PS2251/ISP/52eb03ecad_sttool_b2307_bank.bin.sealed": {
+   "size": 131635,
+   "sha256": "9fe22acb932d3db1bafc91445d33cde44ec0e909e22765c3feff7438abdf910d"
+  },
+  "PS2251/ISP/596bbc2669_2307_hv_tester_res175.bin.sealed": {
+   "size": 23091,
+   "sha256": "3449290eed57da48347d9fe126e3cef575c4df6e5bff1dfad3d219224c9e2625"
+  },
+  "PS2251/ISP/5b34a38924_2307_hv_tester_res4.bin.sealed": {
+   "size": 25139,
+   "sha256": "632efdb369a0da5b4f651708f8e6bb9fa6d5a39d2f319d0531f3c81a8410c578"
+  },
+  "PS2251/ISP/65e8221b5e_mpall513_b2307_bank.bin.sealed": {
+   "size": 164403,
+   "sha256": "61618c8ed987341a39134853536f39e82bae108876c8f7c563efac5a252dcfa2"
+  },
+  "PS2251/ISP/6751ac1a94_mpall513_b2309_bank.bin.sealed": {
+   "size": 139827,
+   "sha256": "118acc2682533b097f45885190dba1d651ada1ad9f4060a9e81af6437acf152f"
+  },
+  "PS2251/ISP/6758f70d71_2307_hv_tester_res165.bin.sealed": {
+   "size": 25139,
+   "sha256": "cb228ad1257a8a0921364ff93c24360b17429abea8edc8bb31dbbee67c75e5f6"
+  },
+  "PS2251/ISP/7749522ee0_2307_hv_tester_res180.bin.sealed": {
+   "size": 24115,
+   "sha256": "c493866b7c4c4905f0126ea613a8b190da0e4cf7630dda530422045bf98b9b6c"
+  },
+  "PS2251/ISP/8289fe558a_2261_hv_tester_fw_burner_res7005.bin.sealed": {
+   "size": 25139,
+   "sha256": "4ae67eb682ee4c1328d4df7afec47610a60e1e6752ef1339fdda551a8b3f582d"
+  },
+  "PS2251/ISP/845fe13ca8_2261_hv_tester_fw_burner_res7013.bin.sealed": {
+   "size": 24115,
+   "sha256": "e5594814ad65271017da8134f82feb260edebb01fb5f220a700883f2f9037364"
+  },
+  "PS2251/ISP/8eebc9e281_2261_hv_tester_fw_burner_res155.bin.sealed": {
+   "size": 25139,
+   "sha256": "44f32fdd2fcd3e22701264c2bead5d5b83a0f915eb6503b10529accade04d36f"
+  },
+  "PS2251/ISP/95821fa4a0_2307_hv_tester_res6103.bin.sealed": {
+   "size": 24115,
+   "sha256": "bb6f187181608e8bb1882fd1474f944c08aa31a86e842427095a7beabdc4b483"
+  },
+  "PS2251/ISP/9786da6200_2307_hv_tester_res7012.bin.sealed": {
+   "size": 23091,
+   "sha256": "68c1990262b5e82a82e9ff81d902109f7facfc7ac7eb4d06e01d3af5ec19511c"
+  },
+  "PS2251/ISP/98acf81b92_2307_hv_tester_res7418.bin.sealed": {
+   "size": 23091,
+   "sha256": "1b0845d4fd063f7c12a0e7e52cf9eaf385302dc6116b71148d0f32d67ba67541"
+  },
+  "PS2251/ISP/991f012db2_2261_hv_tester_fw_burner_res183.bin.sealed": {
+   "size": 25139,
+   "sha256": "e79fbeb3ac62e88d3a07129580d089f5fed4a0e6e2a24a8fff64190a5583e757"
+  },
+  "PS2251/ISP/9cf391de94_2307_hv_tester_res164.bin.sealed": {
+   "size": 29235,
+   "sha256": "616b8aefe659d4ce7824961c81bce45db385cf977cc9f729f4794eca767deb8e"
+  },
+  "PS2251/ISP/a810c7dfab_2261_hv_tester_fw_burner_res171.bin.sealed": {
+   "size": 25139,
+   "sha256": "80a0201c0127ef682814c5b122ada46cfcb728b505965f4a32429a4524a1611f"
+  },
+  "PS2251/ISP/a8e94fbeec_2261_hv_tester_fw_burner_res6102.bin.sealed": {
+   "size": 24115,
+   "sha256": "9597719206f7a2ab68911c23d903bdeabd9f824fef79fa8205354d8b6a02681a"
+  },
+  "PS2251/ISP/aa97cfbd41_2261_hv_tester_fw_burner_res193.bin.sealed": {
+   "size": 25139,
+   "sha256": "2746c86fdaa06967230eda6ea4a4fc438ad7756dc942ab311927d499f9b6d638"
+  },
+  "PS2251/ISP/b6452dd589_2261_hv_tester_fw_burner_res162.bin.sealed": {
+   "size": 25139,
+   "sha256": "b606dc2e97582c8a987d44328b420e0c2e92ea2835ab61840874f075b72e2d94"
+  },
+  "PS2251/ISP/bc69d4be03_2307_hv_tester_res173.bin.sealed": {
+   "size": 16947,
+   "sha256": "51486280c424e756078f6591471955377753b821847b9f25b8bcfa2dc0df20ff"
+  },
+  "PS2251/ISP/c8931b976e_2307_hv_tester_res164.bin.sealed": {
+   "size": 45619,
+   "sha256": "7c8a95bc352e8aa75bab6b8e3b947c96b3a152c045d7f8b5184fc79d19992e76"
+  },
+  "PS2251/ISP/c9c5b4c40e_226X_hv_tester_res169.bin.sealed": {
+   "size": 29235,
+   "sha256": "228d41314cf123d84ff27b2703b7b97a6a493e2b49b0ad87f9ccd75ed1a137e7"
+  },
+  "PS2251/ISP/d526cc05ef_mpall513_b2269_bank.bin.sealed": {
+   "size": 119347,
+   "sha256": "7e6211ddec0bc86b027e7d841cb6b40269e667b7314b91ca22fd838e48fdd9a2"
+  },
+  "PS2251/ISP/db1edb3a88_2307_fw_burner_res170.bin.sealed": {
+   "size": 43571,
+   "sha256": "bfa7e018452e9af5e0a658c4934d769fb75e9ef4463d956cdb5769f1b3611397"
+  },
+  "PS2251/ISP/dbc6dfe71b_2261_hv_tester_fw_burner_res186.bin.sealed": {
+   "size": 25139,
+   "sha256": "aff0103c03739c5861afb26eae9e507ca8441d5d69f3817d98fdb1fb5d7c8554"
+  },
+  "PS2251/ISP/e1eb57e682_2307_hv_tester_res6105.bin.sealed": {
+   "size": 25139,
+   "sha256": "3e1df10cf3569a9ec6ebed325a23740779c77bf910549ea224f529f32f0dd9ba"
+  },
+  "PS2251/ISP/e399233959_2307_hv_tester_res6106.bin.sealed": {
+   "size": 27187,
+   "sha256": "53ace8e63332c772ee25bfbeeea6ea5b88048b4d1a97fb9aa07d22379f55bb6f"
+  },
+  "PS2251/ISP/e465e2248d_2261_hv_tester_fw_burner_res163.bin.sealed": {
+   "size": 25139,
+   "sha256": "efdaa9b2397eb59ab9ee5deec5ff3bc9adf7fb9b6c7653b3068264c10d23fae5"
+  },
+  "PS2251/ISP/e9b25b2ce5_2307_hv_tester_res174.bin.sealed": {
+   "size": 23091,
+   "sha256": "6f1b01eace63978d706d21b1aa631cea314409e3922f654b96220cbf9e47d139"
+  },
+  "PS2251/ISP/eb4b17b0d3_2308_fw_burner_res200.bin.sealed": {
+   "size": 40499,
+   "sha256": "5112efbb4b2cfc7cada77069322dd5548670be75fb6ec86dab1701d29d2dcad4"
+  },
+  "PS2251/ISP/ed396cfb36_2261_hv_tester_fw_burner_res190.bin.sealed": {
+   "size": 25139,
+   "sha256": "df0b629a27358f9659e19e7a21c9b2ae4e8f0d3a5806e22df80b1838bce7c09a"
+  },
+  "PS2251/ISP/f4b7fac5f9_2307_hv_tester_res169.bin.sealed": {
+   "size": 23091,
+   "sha256": "2ed0becec6b67da2f6120594ef477024987067b6027fc0f171c74d6b84e3593c"
+  },
+  "PS2251/ISP/f4edc4b9a6_2306_hv_tester_res179.bin.sealed": {
+   "size": 28211,
+   "sha256": "65a4feb842213237785ef5eb05928f3cdef0f7486caff42a56c2c198b98120c9"
+  },
+  "PS2251/ISP/f6e3aa9a44_2261_hv_tester_fw_burner_res7029.bin.sealed": {
+   "size": 23091,
+   "sha256": "68fcf1a7b5c3164cdb016be2acbb193722656a47471e473636760321ea334665"
+  },
+  "PS2251/ISP/f96a89be05_2307_hv_tester_res177.bin.sealed": {
+   "size": 25139,
+   "sha256": "c992ea9865ce36aebbb31e7acf0d3efeea5e8b87251161150926429eaa8fadd2"
+  },
+  "PS2251/ISP/f9e191f65c_2311_fw_burner_res7416.bin.sealed": {
+   "size": 48691,
+   "sha256": "7b53286dd8d52e1b795ddc4a01408a26e52580a5cd5803914947185ad2260169"
+  },
+  "PS2251/isp_catalog.v1.json.sealed": {
+   "size": 227012,
+   "sha256": "54abf0c60bdaa4bf22f6a7726a5a5b49cbf4370cd13b93173e229134990b73ea"
+  },
   "PS3111/Firmware/(12.a)VG7_SBFA.BIN.sealed": {
    "size": 1479219,
    "sha256": "69f79a67270bdf91319b3f7e72236754f7c86ea815f3fa246bf540e767bf7410"
@@ -16487,5 +16727,5 @@
    "sha256": "9eb19364a85a095c58f3fb4b6fe98620f1b5c5655bf451ca2487c759e361060d"
   }
  },
- "sig": "637ca1f8c1b4aaa6ab24773079e4222190a41f6b046fa9f3ae288befa88f2ac97a00959c47998c35cedf5d8033181944c6d28c5398e0de00f9530b6cc94ddc868c8245ce4f3c3ad318929505818729242fa945507063a4b5257e950c94f5200631b18e64dc653639e90833ee849cdb959d556c598ac52de213d9a7c921c3632fad6a8c42b05843c1cadd4330b22943dd9b6464cfad8de0f1696e72fe10529279e28185b8e4cc72e55a720e1979357be6d6181c5ffee75b8101b7e1dd7d421effbc1a70c7ce347e4bb5c37c38cad3a3c45fa1639a25c67f0b7dac5546635b41efc5fce893ade60ad69f850ef5cd8b14a9287734c9ad1677c991bf4008453457b48c833fe5673ffc9cc91479cb256f6d7411a2399c83a916b15f84750082deb1cdb01466429dabe89fd5d19a823a8632b85d01e59d81ee84bfc4ae32d2991ee3f0a93943906dd57dec848fb65309bef683137b4dae6c48d1d5fcb450e29c6619fe229d6a885ca3d9612476aa9408be4d232d1a16c104652ab09ea672cb5c48cae9"
+ "sig": "273f6e430d4f391e1a56ca8c4aa72df8e08cb98d9fb42b7fe58de5741023fe8cab0eefd8e5465f6bb8b0c18240c944cc2a039aa5cde8f1708fb30bef6cb4defb092a5bf10198b75a83307299d6b90398ba6938ae97795274188ce44c79ecc7d93cfebc0e41181604f534fe5a04f90e2eb9a5216da56f97ab672a3c44c65af264851c76c90df3e7fefdb6df94be7ae57031fe864d1f2e32892f280f517b3c1eaab3d24f9344c7277abe7589c5ca88829e9f9c81ffea7e469785e097dd156b378f2ce5c834645a9529d6a3b4072c1bf924f49c2d9aa3e3e2ff6c0cf2a7ac43df32f1927df1ca3ee794fdd195a7d10b191ca8ccc9dc7647ab8ef39c7f4adb18b6f4d422f9f8b03847f1cedd7c4ce326c576bc775b8888df2140a76aa08c859de8f8a517005fa9e3b279dc7ba0136e1bfde58ab7da9aca7492e03c7febf0f116501853edf8d39ddf581ec955be563807c4c3914f8200c52fe7cc838a9315cf280cfc77ec4dad3f81a834a9b48c98b4116619fdb8974c074be48bcf3e85ca7ffefb01"
 }
