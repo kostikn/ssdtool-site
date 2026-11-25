@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 345,
+ "serial": 346,
  "modules": [
   {
    "family": "smi_nvme",
@@ -13436,6 +13436,50 @@
    "cases": [
     "I-2026-1125-05-0ED5"
    ]
+  },
+  {
+   "family": "realtek",
+   "version": 29,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/realtek-29.ssdmod",
+   "size": 2012010,
+   "sha256": "83f9852bf0429f72fae7cd3195e21ed59aa4f7f8c43aaf37324e73a5e42881c5",
+   "modules": [
+    "controllers.realtek.rts5735dlq.committed_checkpoint",
+    "controllers.realtek.rts5735dlq.gui_actions",
+    "controllers.realtek.rts5735dlq.original_parameters",
+    "controllers.realtek.rts5735dlq.partial_source",
+    "controllers.realtek.rts5735dlq.plugin",
+    "controllers.realtek.rts5735dlq.ram_resume",
+    "controllers.realtek.rts5735dlq.ram_start",
+    "controllers.realtek.rts5735dlq.ram_start_diagnosis",
+    "controllers.realtek.rts5735dlq.ram_start_stub",
+    "controllers.realtek.rts5735dlq.ram_window",
+    "controllers.realtek.rts5735dlq.recovery_backend",
+    "controllers.realtek.rts5735dlq.recovery_pipeline",
+    "controllers.realtek.rts5735dlq.retry_sequence_layout",
+    "controllers.realtek.rts5735dlq.schema_search",
+    "controllers.realtek.rts5735dlq.service_dump",
+    "controllers.realtek.rts5735dlq.single_segment_source",
+    "controllers.realtek.rts5735dlq.snapshot_cache",
+    "controllers.realtek.rts5735dlq.staged_backend",
+    "controllers.realtek.rts5735dlq.staged_reader",
+    "controllers.realtek.rts5735dlq.tester_read",
+    "controllers.realtek.rts5735dlq.translator_evidence",
+    "controllers.realtek.rts5735dlq.uart_loop"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-25T17:52:05+05:00",
+   "min_build": 228,
+   "python_tag": "cp313-win_amd64",
+   "note": "RTS5735DLQ: запуск через ОЗУ, когда страница 0 загрузочного блока не читается; исправление списка сборки мусора в памяти",
+   "cases": [
+    "I-2026-1125-02-5A1D",
+    "I-2026-1125-01-5A1D"
+   ]
   }
  ],
  "revoked": [
@@ -13516,6 +13560,6 @@
    "version": 24
   }
  ],
- "issued": "2026-11-25T14:52:15+05:00",
- "sig": "280fb32e5a2d8fffcf905858cbf34aede11115d2313018a162938a1b64e61c6b40d073eacd40fe637fac63776065b58147d648211ff700c094961525fc452d803f7d85f29b89b7357716fd39602c376cd29aea2826b0fb3a42969cff32bebc70afb041dc7737436ae118aca132a28321b72142bafd5833719eb1e02cdb63f576fade23f9228ff74aeb5c893eb5b765fc8983615cbff2a6963e7dac4a683b48578f2879dbc86c8ec7b542d39a248342f3254e8d6c0cc402e9a18e5da1e50fcdeee3d77327346d79ea0f291f18e21850ba15f002674d99aaef435effb19ba9b81e1bb1d7c3afb627ef0f0e7720d31f23a668044038f5c31c9967edcf1e711ed0626b7e6e232bf29619bcd4757e28f1b71c246d611af1d0f50ffcb8645e4434561ad1ba3b300058129a43741c023c614caab591265dcf5bb3511fdbbc89e44eb4029e48b08b9961584fe34022cfce61f833a59873396136e7ed812f3269900a26ff282ed42a31b95ea9cfc90eeeba863118460675f347d58e426f3ae1c977e75926"
+ "issued": "2026-11-25T17:53:32+05:00",
+ "sig": "77a75294cba1218449e520209e9b7af96e49fbd3a7942b559c074edba08ded1c850288050c2cebdbbe21b7d244f972cb318f13d79ab441b179e7b5912d51633eb66b5ba78d00e07b0c8fa9f4da838ad7d3fa8db74870982a00543ba7c608ee3222cbd98d9ca909d103ebb2ba629de6bb289155e5ef0e8637465ab82771b549adb52c6f04e0be3265416fc37898752e31c5c4db20e3213eecd7b3ecd859ede0db210c3b75524f8c027cbbd970be02ac6d1e8d285a4cf9b3399ca45a9dd5e44b37c735b15f050a137d2930a43ce917cf5876e2ea02f4500be90fe67851be3cd9245ed0e8f01f610455e7ab89dcc4b3197013978410e4eb9d898d0b752f8ef2aa2351584a2856b4f89aa0fa2dda5a0e4123dec9d3a92bd05e28d2e16b87b2434bb4088c859d3acf376f551bcb8a7df5fa3e7c9af45db0a171a9ae7ff84a4d6a1a31a3e068022f7b056e6444edea314dc000ebc498abb2c169fce2ba58497cbfb90a2e283f89d053e5ae103ba4edbd2147e2d441a5fc758dd5f9c95d0b03aa7448a6"
 }
