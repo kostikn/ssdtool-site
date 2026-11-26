@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 347,
+ "serial": 348,
  "modules": [
   {
    "family": "smi_nvme",
@@ -13533,6 +13533,53 @@
     "I-2026-1125-01-D1BD",
     "I-2026-1125-02-D1BD"
    ]
+  },
+  {
+   "family": "maxio",
+   "version": 90,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-90.ssdmod",
+   "size": 4656790,
+   "sha256": "abf1626ec76962e409455c66a963f6213e607132cc618b4ce097f3c94190617e",
+   "modules": [
+    "controllers.maxio._shared.start_stops",
+    "controllers.maxio.map1202.gui_actions",
+    "controllers.maxio.map1202.ram_patches",
+    "controllers.maxio.map1202.ram_start",
+    "controllers.maxio.map1202.start_heads",
+    "controllers.maxio.mas1102.binding",
+    "controllers.maxio.mas1102.capture",
+    "controllers.maxio.mas1102.codeblock_keep",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.label_dialect",
+    "controllers.maxio.mas1102.mode_probe",
+    "controllers.maxio.mas1102.native_rr",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.pagekey",
+    "controllers.maxio.mas1102.pagekey_table",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.power_state",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_plan",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.seed_probe",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-26T10:25:09+05:00",
+   "min_build": 228,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAS1102: честный общий ход при построении транслятора; кнопка «Дочитать трудные страницы» — продолжить дочитку с места"
   }
  ],
  "revoked": [
@@ -13613,6 +13660,6 @@
    "version": 24
   }
  ],
- "issued": "2026-11-25T22:47:23+05:00",
- "sig": "783090067ec0601c1eb482bf09634a2646aefdb5a780e7fe6c99d9bb73b6318b641c942d24f799ff83ad7be26a551e3232a9e23de59e9784b28f59da439be9cb950d582b7ff151bcbfe9458076b6418ad4a5a80e52476ea1bf5750426122890371b8a8b7333207d7b1303480655f4ef804957b7de33518f1f21cf7747c8312ccaac12279de7551273d0f7be5ca18ebe5dc157312c3c4b77887fc495a82f89c3aea23305b70b0f4b093d6bf0abbee9bc96c0af48f07aba1861795c403f2738c2284df792021ffce692680a958cfbebcee132ad6406e0560549b2a47fae7a0e769cef6e7ef651ae6391f0bad1a6aef05146c65753f1756f4275dc6d73ae16e207e08314e12e86b865f43c54adcc59311dc87de4a20d33132619413b23b0d514b83483d7994e512f2e1bea52b40bed891d3b94bfe5fc1678dee6e30b1072f011a80fa571101a269ce93e4d66f33180217553e274d63173888e448f6b3476e47809445372540a885afb03e1962da7cfdd8a308e00cf91c90e3e83ed62d36702c67c7"
+ "issued": "2026-11-26T10:27:07+05:00",
+ "sig": "5e127de084a2d5db22725a57417ec1d4e205205b03af065ad784c4a01e1cc2f3c38ddd30a8bee62d0425e6855c236d12d0df55297548491ac4f2490b2139ae62b0e12b9612c7ff7768363db4a6f10826a13c547bc9352ab94fa511c1308f96a5d62d5fbe2337d7250fba31b49d06bb08b1a36bd878cd27e2146ba1d472e7379e059ce87b1938da4b4bd7120fe1f117cd8ca5d090f1d4ea9552ae05705e7d457266475962210104371ee12df0e63a070aa4792cfec044731e1372933bc696041f507a71b67a081016c22c4142e8ca3148b10234a311eacf88f0f96eb3a55960de97e3b47ba9e9ed474ac7360fea0de9fc8122f5d05e5e5935bbd0def30fd36fb6839bdeb4562a0bfca1654096e2c20499203e208184dbd0efbeebdf8d1d2ee2a1e80d6ff3f8bddd8bbb250e59596c4bd55982a473cdb744f8a37af4b85191357a3d359293ce4a0547411714e04b839fef9e8a8f4a9d28302aa48e12e1373400c3f62406e58cccb4ca1b7b6ded4a089a25a9b9571e0a702aeb732d3d0da7d547dd"
 }
