@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 350,
+ "serial": 351,
  "modules": [
   {
    "family": "smi_nvme",
@@ -13685,6 +13685,53 @@
    "cases": [
     "I-2026-1126-03-D1BD"
    ]
+  },
+  {
+   "family": "maxio",
+   "version": 91,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-91.ssdmod",
+   "size": 4662676,
+   "sha256": "1f6a5195c971f68bd1389824599d612d94da69e4bfa6b36674ad26150870fa31",
+   "modules": [
+    "controllers.maxio._shared.start_stops",
+    "controllers.maxio.map1202.gui_actions",
+    "controllers.maxio.map1202.ram_patches",
+    "controllers.maxio.map1202.ram_start",
+    "controllers.maxio.map1202.start_heads",
+    "controllers.maxio.mas1102.binding",
+    "controllers.maxio.mas1102.capture",
+    "controllers.maxio.mas1102.codeblock_keep",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.label_dialect",
+    "controllers.maxio.mas1102.mode_probe",
+    "controllers.maxio.mas1102.native_rr",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.pagekey",
+    "controllers.maxio.mas1102.pagekey_table",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.power_state",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_plan",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.seed_probe",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-26T16:24:07+05:00",
+   "min_build": 228,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAS1102: «Остановить» при построении транслятора срабатывает в течение секунд, снятое сохраняется"
   }
  ],
  "revoked": [
@@ -13765,6 +13812,6 @@
    "version": 24
   }
  ],
- "issued": "2026-11-26T14:43:20+05:00",
- "sig": "31a0b4fb279de4ca73171ae0b661b9977ef3d1a5d57f77634575736040c7da64c175f126c80fab10abf4d51344e06301cf9b7025073e02c373a17aaa5228fa44325bb2f447f1327f65a1c27f008da14783150fab726b9fc800810babe0ceb687ec493307eafb906a6d5db1ea35474ce68bb45bc436952db6484f4abb706f1ade865f6cab47681b0a94d4f810639d5d3efad75ce2b52e722e2470d57cfbd65c0e04a83499757ec8d292eef73fd7d8a79e17411bdcf630ef381fbb853c14e4ad2617d7fae658634369b9d6c6017397091a8166de272e35c1ce6f97257ff18f1157eb2ead4213807280e0b8a3f2020eb83514f8d084767a6c2311dda34b5f54d0192fa268f335023667a03fc32fa5d14fe52da800075cef4cb26b99915baf0b130e43570de6caf3e8190f50032269a75de449ee5daf38e93f9c0a40de983597d71060c18bde5a8906981503810ed0106550e19ae6368b90a677c9870e9774fa7372434e95ce5b71acf627b0676438a14f9c0f80cdd8ddcd7706ebb85566fc6f2c48"
+ "issued": "2026-11-26T16:25:51+05:00",
+ "sig": "97a9043f86fc300cc289ace8023a26d9def358c0d7fbd042ca0dc71f88c4d838cb9c9ea195ea40aa65d2842b0a035a012a78e1ddf8cbc6d513a5ad0c5b6f9d841d9650340259b3929a50974a14b6c8abd94f99aea1f165b21ed3955d595eafe6301338563b9ddbe8fadd0d5595b284f39c4cb5368e7c5e2d09ba7fc332d860d1026a9e55159882b76d20b1e09d3f1410391796eef7423b6545ed9ea885277a25e4c9ba89848dec864ed9cf02b0bb764e362e36f6c010fdab2e90470d052b1ef145c8f06b0b377e2fb3d73856faf5ede6bbca764317caad6bf9cba6e8e64a6b7f704f0a601fd55330523586c835437be1e5485b0bc1dd533612ecf0a1407fbf637e490fb766e62b7fcd56712cb86e2c45be9a67a01ce7221b221941d14c433f2785c5f6101cf8843905f8ee69dd879282793683bff83f751219b05b8686b51d3236c47fc9654e49b6d37d375dbea78178b462cf383a23349106c35116e495954e56268e652911b0952f7bc3fe38521d4fae69b1d0f53071b4948d5afb0fcbceaf"
 }
