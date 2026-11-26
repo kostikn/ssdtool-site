@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 352,
+ "serial": 353,
  "modules": [
   {
    "family": "smi_nvme",
@@ -13816,6 +13816,53 @@
    "min_build": 228,
    "python_tag": "cp313-win_amd64",
    "note": "SM2259XT2: при запуске из ОЗУ программа считает записи прошивки в NAND и останавливает чтение, если прошивка начала писать во время образа"
+  },
+  {
+   "family": "maxio",
+   "version": 92,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-92.ssdmod",
+   "size": 4668283,
+   "sha256": "802fbd137ee2420f54ffa2c7a4362f3b19523980f009828004e138527f9feba1",
+   "modules": [
+    "controllers.maxio._shared.start_stops",
+    "controllers.maxio.map1202.gui_actions",
+    "controllers.maxio.map1202.ram_patches",
+    "controllers.maxio.map1202.ram_start",
+    "controllers.maxio.map1202.start_heads",
+    "controllers.maxio.mas1102.binding",
+    "controllers.maxio.mas1102.capture",
+    "controllers.maxio.mas1102.codeblock_keep",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.label_dialect",
+    "controllers.maxio.mas1102.mode_probe",
+    "controllers.maxio.mas1102.native_rr",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.pagekey",
+    "controllers.maxio.mas1102.pagekey_table",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.power_state",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_plan",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.seed_probe",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-26T16:37:39+05:00",
+   "min_build": 228,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAS1102: «Остановить» срабатывает и при слиянии меток и записи транслятора; прерванный транслятор не используется"
   }
  ],
  "revoked": [
@@ -13896,6 +13943,6 @@
    "version": 24
   }
  ],
- "issued": "2026-11-26T16:32:50+05:00",
- "sig": "960edf2c332e57cc70619a3ab998bfcf322dbc40b7bf7161cd1cee1eef5064bf8efe53555b89b247b92a975a2eb18059847df0e93f2741b861edb7a2e738c7047bf225a5aec8028451277091600620876b9ca6d5d073952ff28e136da5bc151a0262b27a5b414b3239e7712b5b4368ea7a43678a41ca64405ec7425da7412ec78bc0dc9b4e380db4c5b043aed4a41f73e101c6245b601b43a2c961eff10b3fa3ed6dcd2edf1c7abec8d5bacb7bdb54d2585a8e4aa37b305d16cd3685d14d4277533db991bebc375a5a00c4227e5484841d5450600507191d5028709500b648fca8e5421a65bf1f070c5351184708fb4917b0c3cddb88c7b68ac6f0ef278a3f7863fa9d8eeeb443366d36025e039e10c36a4e8d96b46ef1663297a5f71acf7138fb46278c5409b6648ab606980cc945c5d88dd2012da4aa1798ade74e678b0951e9099fd7502b51e685b47d7e3f1ee5a873d4a26c332117c26eafb2f4420b3f632cdfa211bf0adb0aabde156be08c1b7c094dc3e58a806da6ff5a8036f8de0a87"
+ "issued": "2026-11-26T16:39:34+05:00",
+ "sig": "1da721ff98cc712e9afbf1508cd1c3b105dee05f1a21d42b4bcbbff3582ca57a49598e4c1ffa311be2192fae671204dbeb744f2371829cda664958c189744ab06ef66a4d24dae7ce6444f3229cf4bbdec4fe59782199ee3c08da92a817ffd0499aaccc9a6fd3fb03911db358a0cef42c3875ff8c60648ad234265dda97ed22433db6be5e44d50e2010e6c6dfdf6126825659a65bc1cce54e891c9deb755aef8c52b5611f91ba796830d86fbcc23125c3236db648ab0c1b4a0e21bc68e7e62af17761522a6ef3ebf13790748a088f87cb92256f00cbd09ff9a6b32911d3aa9bb9b4b432c8072bd99a091805149586bcaaf291ed1154456c4b00aa8afb2ee8f0452fb8eb713df5d5db89d009012fda54cce9140c08db36f6f6d77ef2f713c556d7483109a99e56b15c0db52e11615e44434c2be29442abf90e6fb25c5fee27a57942e9bd1c7cbb3d5b2556dcdba33ca3d0c7f702d90f096dde736cc884912689e0acd330c1893980ea5b29c6ae8c4e6d1ff2d0b7b3c75764bde8279e2e0670e6bd"
 }
