@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 349,
+ "serial": 350,
  "modules": [
   {
    "family": "smi_nvme",
@@ -13633,6 +13633,58 @@
     "I-2026-1126-01-D1BD",
     "I-2026-1126-02-D1BD"
    ]
+  },
+  {
+   "family": "phison",
+   "version": 31,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-31.ssdmod",
+   "size": 2745446,
+   "sha256": "05343f02f3765a9bce2ebebd0e0bb71e361908aadaf15adcd6ffc09247223ca4",
+   "modules": [
+    "controllers.phison._shared.detect",
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.neighbours",
+    "controllers.phison._shared.passport_reader",
+    "controllers.phison._shared.sa",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison._shared.session",
+    "controllers.phison.as2258.loader",
+    "controllers.phison.as2258.passport_reader",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.burner_reader",
+    "controllers.phison.ps3111.cluster_codec",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.live_memory",
+    "controllers.phison.ps3111.nand_build",
+    "controllers.phison.ps3111.nand_translator",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.plugin",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.ram_snapshot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.restart",
+    "controllers.phison.ps3111.revive",
+    "controllers.phison.ps3111.sa_diagnosis",
+    "controllers.phison.ps3111.start_fixes"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-26T14:41:56+05:00",
+   "min_build": 228,
+   "python_tag": "cp313-win_amd64",
+   "note": "PS3111: «Снять память контроллера» — после основной памяти читает по словам указатели и таблицы, проблемную область не читает; при зависании канала сразу останавливается и сохраняет снятое",
+   "cases": [
+    "I-2026-1126-03-D1BD"
+   ]
   }
  ],
  "revoked": [
@@ -13713,6 +13765,6 @@
    "version": 24
   }
  ],
- "issued": "2026-11-26T11:53:47+05:00",
- "sig": "447b038e1a80069bfe00bcc37ca16e689e34d6532882aad6e095f8b6541c1d445e6c50ede0268a1f6e0481c3efcdc4ae20aa4033985aaced7ad7aff0a77e619c083b220cbcdb8349da50cb8b21bde397b33764ed057ee0194ff6c3f914f493b7eb5c9b0b5602856c8546a7cd2a3db5213ad86961609543912da5fcd521575589c71a4d761324dd1e21d5b73228b24a1e2ac5a1078197948743046c67a301f7decc55e1dd3d37cf7cedbad5d531272cbbcff7f6b7ddd6b7595d725fda884baf26e33001f84f59c38bc8eaea2c5e7bdb8253ae3c5aea88313308fbe27c4f0616bf101673828bdd83213339afb807a7209c543885b4a18859610c51a48128b0e586a1d24bd3fe1558822e9b6f1bf67e253db934dfbc168a62d291554c9ae4e6e4327871c509a79c1eac89c18ad75ea56dced80aa56eca50bf829d218f401ed51bd1d20c9d383d933006558480040aa6d4be3de321ec821c9fc6ca7c06bb005a8011f1fd7d8f825be71c4c7c628ca75526e2cb05ffaadc5370dbda13c375edf41444"
+ "issued": "2026-11-26T14:43:20+05:00",
+ "sig": "31a0b4fb279de4ca73171ae0b661b9977ef3d1a5d57f77634575736040c7da64c175f126c80fab10abf4d51344e06301cf9b7025073e02c373a17aaa5228fa44325bb2f447f1327f65a1c27f008da14783150fab726b9fc800810babe0ceb687ec493307eafb906a6d5db1ea35474ce68bb45bc436952db6484f4abb706f1ade865f6cab47681b0a94d4f810639d5d3efad75ce2b52e722e2470d57cfbd65c0e04a83499757ec8d292eef73fd7d8a79e17411bdcf630ef381fbb853c14e4ad2617d7fae658634369b9d6c6017397091a8166de272e35c1ce6f97257ff18f1157eb2ead4213807280e0b8a3f2020eb83514f8d084767a6c2311dda34b5f54d0192fa268f335023667a03fc32fa5d14fe52da800075cef4cb26b99915baf0b130e43570de6caf3e8190f50032269a75de449ee5daf38e93f9c0a40de983597d71060c18bde5a8906981503810ed0106550e19ae6368b90a677c9870e9774fa7372434e95ce5b71acf627b0676438a14f9c0f80cdd8ddcd7706ebb85566fc6f2c48"
 }
