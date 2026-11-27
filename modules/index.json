@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 359,
+ "serial": 360,
  "modules": [
   {
    "family": "smi_nvme",
@@ -14317,6 +14317,55 @@
    "cases": [
     "I-2026-1127-01-2843"
    ]
+  },
+  {
+   "family": "phison",
+   "version": 32,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-32.ssdmod",
+   "size": 2745197,
+   "sha256": "e4c5700167eadc95c3085ba894aa25eda0963c9d0bbf5661f8f89a1980b093fa",
+   "modules": [
+    "controllers.phison._shared.detect",
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.neighbours",
+    "controllers.phison._shared.passport_reader",
+    "controllers.phison._shared.sa",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison._shared.session",
+    "controllers.phison.as2258.loader",
+    "controllers.phison.as2258.passport_reader",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.burner_reader",
+    "controllers.phison.ps3111.cluster_codec",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.live_memory",
+    "controllers.phison.ps3111.nand_build",
+    "controllers.phison.ps3111.nand_translator",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.plugin",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.ram_snapshot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.restart",
+    "controllers.phison.ps3111.revive",
+    "controllers.phison.ps3111.sa_diagnosis",
+    "controllers.phison.ps3111.start_fixes"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-27T15:08:46+05:00",
+   "min_build": 232,
+   "python_tag": "cp313-win_amd64",
+   "note": "PS2251: опознание рабочей прошивки по 06 05 (только чтение), причина отказа"
   }
  ],
  "revoked": [
@@ -14397,6 +14446,6 @@
    "version": 24
   }
  ],
- "issued": "2026-11-27T15:05:10+05:00",
- "sig": "1d07d61984a859a587eb7e97273eac7c44982a38c6bedc345f6c8f472d62fb419c9018d44cc58944fb281dd92d5ab74df63128d946008155fb23363b17454fde112807bf29909b90a0f652719c59ce1bf24afb708082d7a67c8b8ae2e59610df2e2d552f8a4ad00cb14c4ac9b656b8768e53cb518fced9df54e81518bd534e5945331e42830d9de1fcedb823f73b7f91305217e721822c236dc3bc197815ab2472a99efec619f3cd456644a023c6fd267e52891305224d6d31c8e9b2dd76cd4a8faa1a527cd3ad33582b9a70cc3eedf36cd3691ade47aa1a36287c638e8bbc327e64c3a3e98f40b8e8809ce5dc69d8d581cdcb9b34e1282c281073691cdbfde9671b574d83d57970d35c2f3ff5fe71352b09e65c00976e67d2e12651401223d6aae054e54f88a4f44c37546ea4120e16acffec756b0ef8e2b38bb7f9bad8cd8f9a62b3464377e4982520c894efc8dbc9039a0f6840d0bac2f65c9dc4f0a537b7ded923f2a3385b55d5adb5191c62fd25892f46129c3c4afbd34687f9ef53d667"
+ "issued": "2026-11-27T15:10:54+05:00",
+ "sig": "6cdacca67df82a5b066e66a7c8a03661747bdfdabe3a271fcc0eacd7a3241109b1918be64383c424982615e6889c13534091fe451728c2319cde6d6683dd1300e9d57a23d6599229a2d1073d4af61608fff89520b2421d40540637463b3d81ee73ca0e69e4a60ed5ab92a12699884e510e569d8f21fdc483ed9c21fc35ad9364234e906971506bc699ed71b10a8d76d97c8d97ae54bf24463c725604d986b5d2a0b456a71c2e59ba5e6ba206abb16fd3d9d452cce43538bcf11aaa0c18a47ee546b9a6f79b8a19a67fa65b85b8b0dfffb30a620a12cfb510bb47e47f1edf21134bcee7f763f73329d55cc4c5bd44eb7cded19252f6aecc73150417c6000363946c6c55fe0940806bbf76001fd664ce02e0b3a39c5984510a5a444ae8b023e4249879bd18ff4d3b03c8427e6cc795d9a939bfdeb33552e57aba69bc7100e719c4de4cbcc03b3ec28f2d85d9869ca33e1d545a7149f9b18918047cb71d7fb4dbcdc6b34acaa02a65d67cdeed4655b431a5c98e15fdfc841d11f632ef771f1d190f"
 }
