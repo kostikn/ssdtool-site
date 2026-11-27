@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 360,
+ "serial": 361,
  "modules": [
   {
    "family": "smi_nvme",
@@ -14366,6 +14366,56 @@
    "min_build": 232,
    "python_tag": "cp313-win_amd64",
    "note": "PS2251: опознание рабочей прошивки по 06 05 (только чтение), причина отказа"
+  },
+  {
+   "family": "maxio",
+   "version": 95,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-95.ssdmod",
+   "size": 4701346,
+   "sha256": "57560901700c8d7fc407f3a278fa61c0bdfba5d21de415a5584ba64484400488",
+   "modules": [
+    "controllers.maxio._shared.start_stops",
+    "controllers.maxio.map1202.gui_actions",
+    "controllers.maxio.map1202.ram_patches",
+    "controllers.maxio.map1202.ram_start",
+    "controllers.maxio.map1202.start_heads",
+    "controllers.maxio.mas1102.binding",
+    "controllers.maxio.mas1102.capture",
+    "controllers.maxio.mas1102.codeblock_keep",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.label_dialect",
+    "controllers.maxio.mas1102.mode_probe",
+    "controllers.maxio.mas1102.native_rr",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.pagekey",
+    "controllers.maxio.mas1102.pagekey_table",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.power_state",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_plan",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.seed_probe",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-27T16:12:21+05:00",
+   "min_build": 228,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAS1102: работающую службу комплекта не менять на службу по таблицам при слабом совпадении; неудавшуюся службу запоминать; стоп по ASSERT загрузчика сразу",
+   "cases": [
+    "I-2026-1127-01-40D2"
+   ]
   }
  ],
  "revoked": [
@@ -14446,6 +14496,6 @@
    "version": 24
   }
  ],
- "issued": "2026-11-27T15:10:54+05:00",
- "sig": "6cdacca67df82a5b066e66a7c8a03661747bdfdabe3a271fcc0eacd7a3241109b1918be64383c424982615e6889c13534091fe451728c2319cde6d6683dd1300e9d57a23d6599229a2d1073d4af61608fff89520b2421d40540637463b3d81ee73ca0e69e4a60ed5ab92a12699884e510e569d8f21fdc483ed9c21fc35ad9364234e906971506bc699ed71b10a8d76d97c8d97ae54bf24463c725604d986b5d2a0b456a71c2e59ba5e6ba206abb16fd3d9d452cce43538bcf11aaa0c18a47ee546b9a6f79b8a19a67fa65b85b8b0dfffb30a620a12cfb510bb47e47f1edf21134bcee7f763f73329d55cc4c5bd44eb7cded19252f6aecc73150417c6000363946c6c55fe0940806bbf76001fd664ce02e0b3a39c5984510a5a444ae8b023e4249879bd18ff4d3b03c8427e6cc795d9a939bfdeb33552e57aba69bc7100e719c4de4cbcc03b3ec28f2d85d9869ca33e1d545a7149f9b18918047cb71d7fb4dbcdc6b34acaa02a65d67cdeed4655b431a5c98e15fdfc841d11f632ef771f1d190f"
+ "issued": "2026-11-27T16:14:42+05:00",
+ "sig": "9c34307a092a2338b74f6983185e0cd0859020111e85eb0e2b9be6fa128bea860acbd9b8faab1bd89e55645535fd3741a1c866788089eb66c868032bb670d8cecb25c2f538b7fcc46013a46cb451a3fa9a0a7dd7e57abacf8f1bfb2c3d02f940dbf05bb3deeeccca66e675cec3f942dfd8edbac8fe73217fad527bf0fa746433653c98fd53833b0a5d19aa4d56dcaa87560cd1c32ba19657519a74adc24d94160dcbcc7b3b4fba6cf2eb1588da5ab823767c74a3d98c947013c5d72ce2daa7e90c980cdd5561cbaa9fa8476210edab2975b8d8f7d02a767bb69f81dddfa069f23836bc77e109e94edfda564a1e81dd576d648891431f42bc9adea4b35d9d295c58411e254859ce26d6c2e839d43e703e378ed4d9687819acda9b6ea315cf0bed3908d6e6552435deb7592031f0e1aa81ac3c27feba7831c958d33ba40a1349097e84bd134d9ba3e70eaf54f75db7a1ace2780b3eb8013b4abefe1e627cb40c54dd7240baf902d5f30fe415cc4f6887f9d8fec102fc878acb9d699a1bb47a9a8f"
 }
