@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 356,
+ "serial": 357,
  "modules": [
   {
    "family": "smi_nvme",
@@ -14127,6 +14127,58 @@
     "I-2026-1126-04-F180",
     "I-2026-1126-05-F180"
    ]
+  },
+  {
+   "family": "maxio",
+   "version": 93,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-93.ssdmod",
+   "size": 4674077,
+   "sha256": "8451905b3e687a8b09bc1e740df6220b8b9f7a2403693bcad76322941174df2a",
+   "modules": [
+    "controllers.maxio._shared.start_stops",
+    "controllers.maxio.map1202.gui_actions",
+    "controllers.maxio.map1202.ram_patches",
+    "controllers.maxio.map1202.ram_start",
+    "controllers.maxio.map1202.start_heads",
+    "controllers.maxio.mas1102.binding",
+    "controllers.maxio.mas1102.capture",
+    "controllers.maxio.mas1102.codeblock_keep",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.label_dialect",
+    "controllers.maxio.mas1102.mode_probe",
+    "controllers.maxio.mas1102.native_rr",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.pagekey",
+    "controllers.maxio.mas1102.pagekey_table",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.power_state",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_plan",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.seed_probe",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-27T14:28:28+05:00",
+   "min_build": 228,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAS1102: живую FW в ОЗУ не переводить в ПЗУ; замер после старта 15 с, при зависании источник не отдавать до чтения сектора 0",
+   "cases": [
+    "I-2026-1127-01-0ED5",
+    "I-2026-1127-02-0ED5",
+    "I-2026-1127-03-0ED5"
+   ]
   }
  ],
  "revoked": [
@@ -14207,6 +14259,6 @@
    "version": 24
   }
  ],
- "issued": "2026-11-26T19:40:02+05:00",
- "sig": "8bf89718e864b373e9806c0bc760a6afd2df399f6192a8d39b57850b0b3899f3a4cc641f497b169a6b5019ce9727add0b5bba3ff448a013ec8c708fcc4f3e0c20f8bfbf2d6ca5dc04fccaf8652386032e05d46878bf2f53aeb207210487d7e4d9aa677820f9a298f16009b576aed1939c14981fb5dd0f594d43ef6318e112faa6deb6fb7b4b64caa94d86ab73bfe4cdce57bb059607150c0a8beaadabd76110873aac407369d215b51b1d8b2512e4e892eba6dcfdac32ce4bbd616c85bd818f4d81e31312f2902f076cc7c0121f923766b93da499d8ccde03631eb90e56435244ea386dd96f80e601b5cc1dac733246f96794d413b3e841a523e619609845fa858c27e9fff68ea646169414c4b42ea30cbcda7808df6b2030e9dca3a6a31d9350277324d2d305e54cf53935804b0548c7a024965c1ffdf5a56019ad7dc24d250f5cb5d164f3ad5dc9fa68c00f598c6aa9b73667f5dc3d3657c6c0f1f77bf7680181ae8efc1eb7cc5f8fe65605461202c7a6d09a9cefe36149b01355ecba91ebd"
+ "issued": "2026-11-27T14:30:00+05:00",
+ "sig": "6d70ce04ec25ef50e849540bd8261f06f3262fc1cf8ca5777d21763d9a3a61a5788d27056789015c5fb78efa33ab64d46a1a8396fb20e01f0056d71cb6a0c4d0d6cb6cb42341075dd919ff2699c18b787b582880512c0ff625e2b8350463a21278d663a4338e27ce7a3e6cff3e6a3b4cf4c346ab11f2cd15b25f6d2ce916708bd0e64960100d1060bafbddeb1f8fb917f06b6bb8a2166f26a47438fc0476d455fa59b72b2cc5e6135bb963f0fbc3f493a8c8a4efa47b1cced4d9fb1954eb73b6aae1cef55bc1175c185bcbbca50451f843e6768af8b2ef0350fd6eb33cbb1d6f1d0c75ce463b83bed912dfd68fec4c9b594eface12f2baed13981f385cb562dd3034b7e4e8ef7cb189ce436eae33932827bf6ca8f296b5d39398ae2b411febed68968ebd8079d35962fb4afea96857c2371cccb5330c248e40fbb9aca68d40c123f3270d1e2761fd90652cf60b8fdac9bf37fef84db730f26144bc70ce361b687744aa90bd6186ef5f1881352c1c744609c709fa04033b40f683dba32eef711c"
 }
