@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 358,
+ "serial": 359,
  "modules": [
   {
    "family": "smi_nvme",
@@ -14267,6 +14267,56 @@
     "I-2026-1022-02-7EC9",
     "I-2026-1022-07-7EC9"
    ]
+  },
+  {
+   "family": "maxio",
+   "version": 94,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-94.ssdmod",
+   "size": 4675117,
+   "sha256": "8793795d0451f24ce9d5206046fffb01460bdc18ce9162fc822155a16e9595c4",
+   "modules": [
+    "controllers.maxio._shared.start_stops",
+    "controllers.maxio.map1202.gui_actions",
+    "controllers.maxio.map1202.ram_patches",
+    "controllers.maxio.map1202.ram_start",
+    "controllers.maxio.map1202.start_heads",
+    "controllers.maxio.mas1102.binding",
+    "controllers.maxio.mas1102.capture",
+    "controllers.maxio.mas1102.codeblock_keep",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.label_dialect",
+    "controllers.maxio.mas1102.mode_probe",
+    "controllers.maxio.mas1102.native_rr",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.pagekey",
+    "controllers.maxio.mas1102.pagekey_table",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.power_state",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_plan",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.seed_probe",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-27T15:03:39+05:00",
+   "min_build": 228,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAS1102: поиск страниц чётности окном поколения, LAA вне диска пропускаются, строка хода слияния в журнал",
+   "cases": [
+    "I-2026-1127-01-2843"
+   ]
   }
  ],
  "revoked": [
@@ -14347,6 +14397,6 @@
    "version": 24
   }
  ],
- "issued": "2026-11-27T14:38:15+05:00",
- "sig": "07a9b8239a1609d6d7179aab4a5e0f6d0837c6af7cc836397b773f2a32ea304b6b1a22de06fb69b52291a9e14858b9e78716fab4f29e745ebd795be509056676d75150880d05f6d8a9416df8ba6da4c1b123cb260fc1cf277f4ac4e48afb62c77b8dc0752bda631ef3ca6088244cae003f67c5ae5854925c363ad7c4943ab571298aa5ef7878dae4fea71f0641f2e1bcff419ea56be83bee15d2bf049f85ea754c2379f2b36f8eb389c5d501b481356dd473ad1060298afeaf7300c94383c65c64badd09a05c7a7807efe9085455599068016f9e63a50aa0bc0d5930eb4bf0d9cd6a9952295324e384dbaccc55d449dd28bb060ba71c51faf7b3b2f4699669d5ebee548c0a347ef3ec5d3f7cd80fc3feaf2319d5a8b94d518e871db5777b95e69af2ef18b99d6502cea30e348cfad81d3c904de6d3b46b523d85e6f6de11ea45299962cade09f5c2e2e1b30b64a065c77c078146e2a1f9acdc8c108b6097748a9043aee59007acd2954bde0959d190ad3960a985fd431efdb31076c4f2230a9f"
+ "issued": "2026-11-27T15:05:10+05:00",
+ "sig": "1d07d61984a859a587eb7e97273eac7c44982a38c6bedc345f6c8f472d62fb419c9018d44cc58944fb281dd92d5ab74df63128d946008155fb23363b17454fde112807bf29909b90a0f652719c59ce1bf24afb708082d7a67c8b8ae2e59610df2e2d552f8a4ad00cb14c4ac9b656b8768e53cb518fced9df54e81518bd534e5945331e42830d9de1fcedb823f73b7f91305217e721822c236dc3bc197815ab2472a99efec619f3cd456644a023c6fd267e52891305224d6d31c8e9b2dd76cd4a8faa1a527cd3ad33582b9a70cc3eedf36cd3691ade47aa1a36287c638e8bbc327e64c3a3e98f40b8e8809ce5dc69d8d581cdcb9b34e1282c281073691cdbfde9671b574d83d57970d35c2f3ff5fe71352b09e65c00976e67d2e12651401223d6aae054e54f88a4f44c37546ea4120e16acffec756b0ef8e2b38bb7f9bad8cd8f9a62b3464377e4982520c894efc8dbc9039a0f6840d0bac2f65c9dc4f0a537b7ded923f2a3385b55d5adb5191c62fd25892f46129c3c4afbd34687f9ef53d667"
 }
