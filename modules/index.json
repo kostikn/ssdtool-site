@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 362,
+ "serial": 363,
  "modules": [
   {
    "family": "smi_nvme",
@@ -14467,6 +14467,58 @@
     "I-2026-1127-03-40D2",
     "I-2026-1127-04-40D2"
    ]
+  },
+  {
+   "family": "phison",
+   "version": 33,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/phison-33.ssdmod",
+   "size": 2746213,
+   "sha256": "737dfcc452d309de548d495b215b9e12b78774216ebce0ade004be75163618c0",
+   "modules": [
+    "controllers.phison._shared.detect",
+    "controllers.phison._shared.loader",
+    "controllers.phison._shared.neighbours",
+    "controllers.phison._shared.passport_reader",
+    "controllers.phison._shared.sa",
+    "controllers.phison._shared.sa_firmware",
+    "controllers.phison._shared.sa_passport",
+    "controllers.phison._shared.session",
+    "controllers.phison.as2258.loader",
+    "controllers.phison.as2258.passport_reader",
+    "controllers.phison.ps3111.api",
+    "controllers.phison.ps3111.burner_reader",
+    "controllers.phison.ps3111.cluster_codec",
+    "controllers.phison.ps3111.crash_analysis",
+    "controllers.phison.ps3111.firmware_package",
+    "controllers.phison.ps3111.firmware_update",
+    "controllers.phison.ps3111.firmware_writer",
+    "controllers.phison.ps3111.gui_actions",
+    "controllers.phison.ps3111.live_memory",
+    "controllers.phison.ps3111.nand_build",
+    "controllers.phison.ps3111.nand_translator",
+    "controllers.phison.ps3111.native_sa_writer",
+    "controllers.phison.ps3111.plugin",
+    "controllers.phison.ps3111.ram_analysis",
+    "controllers.phison.ps3111.ram_boot",
+    "controllers.phison.ps3111.ram_snapshot",
+    "controllers.phison.ps3111.recovery",
+    "controllers.phison.ps3111.restart",
+    "controllers.phison.ps3111.revive",
+    "controllers.phison.ps3111.sa_diagnosis",
+    "controllers.phison.ps3111.start_fixes"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-28T11:28:50+05:00",
+   "min_build": 232,
+   "python_tag": "cp313-win_amd64",
+   "note": "PS3111: после неудачной «Подготовки» список дисков обновляется сам (кнопка «Образ через NAND» появляется); текст окна ошибки ведёт к ней",
+   "cases": [
+    "I-2026-1127-01-D1BD"
+   ]
   }
  ],
  "revoked": [
@@ -14547,6 +14599,6 @@
    "version": 24
   }
  ],
- "issued": "2026-11-27T16:27:51+05:00",
- "sig": "62ab60bb9816a76079c9cb87e83d03b47f33dd53cd1182812ddc39e666e85d2c1965c30c6455d76eb3bfde140d0c2c6bd853dbb9c12b7ca0cd9b72067e7ac9554415fdf47fad54477bf120c582a160726bfdff6e25f25a9c98d759d0fa8b34e7047c745669be7b4aadb09e801b6c7072681220b8cedb1ec0e6890afc9a648cbedb3fc83bb40a0bb404324373751a96ef2fedffcba4c85d0cb7f4b6ea930805ba06812410e5eb0afee7e12ab3c4977e4bb56ef34cfe3b72074397ed6493466609bdf3defcc5998f7464102718c1a90926b5e61e4b7a420831321aaa923d8d1c8c2ffba1922eb0faac3eb91b58af1f8715eac4e49f6a5a724c1f377e27dbaa173206f7fa9105f5a01caf06fe9255a8ea85ecdb2168be27d4bf63820a75541d26134a077d7b353b66de68c376dd4560d9eb563c8abe88d6bcc05d22d9a921b6c391a0179d07e66535f851c9d29a2a86b87da38f414b080ed13d21557af98d1c492dcf1514d121379ad3c15c7dcf2451acaebc9130a8dba8b92796460f36e3cbd813"
+ "issued": "2026-11-28T11:30:36+05:00",
+ "sig": "520e6faa262a8a10f373c55eb6f300fc1e8a53d1a2e7291567648888f9a60d6be851f6c2efa097e7313ae94acd5a45cf614a0414b5a1bffcd4cccc5cc8c46489a253382a6bb7cfd652ae5828b46c7c9c8f1e3c6d964aa92142c5efe3b2fde83a1391446a4cf42e13d3b0bc925c8ae4766ad11c09d1bb852a5e6bbba57cf24060d616ed967cfc483fc939ea7a7a51564c2c68744107872699106849ba88f46544e0d6a27a9f55bce2555a9c7e8d2c1474a137dfac1115f988c0dca457a6705917635e1ae77c6bbcbebc4111efb3d0f7d1bbc6167a6a3b919d51f73c1b1d1b9bd922ad5297f4d42a9b7c9e5d48b89fffb67ee87cf7beb7ec54d6ffec87dcc3844fba4d050c4e0fdbc79cbff0992bf4d6b2b183082d6b66284ce53e420355e963d7c8f8a474a078f27c1f77958852b52952cbff96068560f39edf4ff71af0a9810dc4c90cd73a9350e2cd156d9a69771fa26777e4112d55e8c4057117d904b63c8ab6f17d3256f304f9d48962452376018d7d54562e07fff97b3561b9498b19419c"
 }
