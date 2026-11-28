@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 363,
+ "serial": 364,
  "modules": [
   {
    "family": "smi_nvme",
@@ -14519,6 +14519,56 @@
    "cases": [
     "I-2026-1127-01-D1BD"
    ]
+  },
+  {
+   "family": "maxio",
+   "version": 97,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-97.ssdmod",
+   "size": 4714838,
+   "sha256": "a23a202e0a5e6ff00dd448a3d0dad66685236b6753cc4f8d4457eebdd54ace7e",
+   "modules": [
+    "controllers.maxio._shared.start_stops",
+    "controllers.maxio.map1202.gui_actions",
+    "controllers.maxio.map1202.ram_patches",
+    "controllers.maxio.map1202.ram_start",
+    "controllers.maxio.map1202.start_heads",
+    "controllers.maxio.mas1102.binding",
+    "controllers.maxio.mas1102.capture",
+    "controllers.maxio.mas1102.codeblock_keep",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.label_dialect",
+    "controllers.maxio.mas1102.mode_probe",
+    "controllers.maxio.mas1102.native_rr",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.pagekey",
+    "controllers.maxio.mas1102.pagekey_table",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.power_state",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_plan",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.seed_probe",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-28T11:37:32+05:00",
+   "min_build": 228,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAS1102: пропуск трудных страниц запоминается для набора (возобновить — «Дочитать трудные страницы»); слияние — свой этап с ходом",
+   "cases": [
+    "I-2026-1127-01-2843"
+   ]
   }
  ],
  "revoked": [
@@ -14599,6 +14649,6 @@
    "version": 24
   }
  ],
- "issued": "2026-11-28T11:30:36+05:00",
- "sig": "520e6faa262a8a10f373c55eb6f300fc1e8a53d1a2e7291567648888f9a60d6be851f6c2efa097e7313ae94acd5a45cf614a0414b5a1bffcd4cccc5cc8c46489a253382a6bb7cfd652ae5828b46c7c9c8f1e3c6d964aa92142c5efe3b2fde83a1391446a4cf42e13d3b0bc925c8ae4766ad11c09d1bb852a5e6bbba57cf24060d616ed967cfc483fc939ea7a7a51564c2c68744107872699106849ba88f46544e0d6a27a9f55bce2555a9c7e8d2c1474a137dfac1115f988c0dca457a6705917635e1ae77c6bbcbebc4111efb3d0f7d1bbc6167a6a3b919d51f73c1b1d1b9bd922ad5297f4d42a9b7c9e5d48b89fffb67ee87cf7beb7ec54d6ffec87dcc3844fba4d050c4e0fdbc79cbff0992bf4d6b2b183082d6b66284ce53e420355e963d7c8f8a474a078f27c1f77958852b52952cbff96068560f39edf4ff71af0a9810dc4c90cd73a9350e2cd156d9a69771fa26777e4112d55e8c4057117d904b63c8ab6f17d3256f304f9d48962452376018d7d54562e07fff97b3561b9498b19419c"
+ "issued": "2026-11-28T11:39:08+05:00",
+ "sig": "0b7e55eb816064eabceccc56b33ed8bc67fa834c23d25d9c82c3ab53403b2aa88d7087582374dcfa014b374e0cd599503f00b21ede7ef70038fece6535575a18b12e1ddb8462b7a639d1897224721ad67a77e6482b376818c7acce54a52bc4909820322fb0720521a8dc541df6a7c0b9f468eee7880ecd3706bbd8558fd590af2ed300fa9b1f00f0fa3f8e31658108c83db4ce1b37875cffb8b69fc1993b46a6c140b9af524e8dee8cbc54f7ed478c01ae2d6c69081941ac2bad0fa5e06c4bcf90f34bd2868765aac296567eb537c89a0cb7b2aaec858880ee925434e340cf98d045afefef045a449b8bac1629265fc1e7b5cbb0574a45759d04071382230f21e0754e785e4ecabeae863347b76dbba00cc5436e8108c3981b05e83ab8a34945ed3ae5dfac6d0d5ed9151395b8483f69161db4112705043a6e208c59773fad10591b5e7d9a75779be784fc02fb402094c852e89577f1978f4e71d73eb5461a0100de5d4b1da140329bb02b8922b330cf2b84e4076768c3cf3c45313dd5acf536"
 }
