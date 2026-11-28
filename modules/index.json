@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 364,
+ "serial": 365,
  "modules": [
   {
    "family": "smi_nvme",
@@ -14569,6 +14569,57 @@
    "cases": [
     "I-2026-1127-01-2843"
    ]
+  },
+  {
+   "family": "maxio",
+   "version": 98,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/maxio-98.ssdmod",
+   "size": 4714846,
+   "sha256": "03e00cb0a39811159e1f6e9519c2b5ad00b44ae26822f8f5b54e8333f07801b6",
+   "modules": [
+    "controllers.maxio._shared.start_stops",
+    "controllers.maxio.map1202.gui_actions",
+    "controllers.maxio.map1202.ram_patches",
+    "controllers.maxio.map1202.ram_start",
+    "controllers.maxio.map1202.start_heads",
+    "controllers.maxio.mas1102.binding",
+    "controllers.maxio.mas1102.capture",
+    "controllers.maxio.mas1102.codeblock_keep",
+    "controllers.maxio.mas1102.gdp_build",
+    "controllers.maxio.mas1102.gui_actions",
+    "controllers.maxio.mas1102.l2p",
+    "controllers.maxio.mas1102.label_dialect",
+    "controllers.maxio.mas1102.mode_probe",
+    "controllers.maxio.mas1102.native_rr",
+    "controllers.maxio.mas1102.p2l",
+    "controllers.maxio.mas1102.pagekey",
+    "controllers.maxio.mas1102.pagekey_table",
+    "controllers.maxio.mas1102.patch",
+    "controllers.maxio.mas1102.power_state",
+    "controllers.maxio.mas1102.progress",
+    "controllers.maxio.mas1102.protocol",
+    "controllers.maxio.mas1102.ram_plan",
+    "controllers.maxio.mas1102.ram_start",
+    "controllers.maxio.mas1102.reflash",
+    "controllers.maxio.mas1102.save_fw",
+    "controllers.maxio.mas1102.seed_probe",
+    "controllers.maxio.mas1102.service",
+    "controllers.maxio.mas1102.start_check",
+    "controllers.maxio.mas1102.translator"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-28T11:44:11+05:00",
+   "min_build": 228,
+   "python_tag": "cp313-win_amd64",
+   "note": "MAS1102: ход укладки прошивки в память диска («X из Y КБ, осталось ~N мин»); молчание терминала во время укладки — не зависание",
+   "cases": [
+    "I-2026-1127-01-D0E5",
+    "I-2026-1127-02-D0E5"
+   ]
   }
  ],
  "revoked": [
@@ -14649,6 +14700,6 @@
    "version": 24
   }
  ],
- "issued": "2026-11-28T11:39:08+05:00",
- "sig": "0b7e55eb816064eabceccc56b33ed8bc67fa834c23d25d9c82c3ab53403b2aa88d7087582374dcfa014b374e0cd599503f00b21ede7ef70038fece6535575a18b12e1ddb8462b7a639d1897224721ad67a77e6482b376818c7acce54a52bc4909820322fb0720521a8dc541df6a7c0b9f468eee7880ecd3706bbd8558fd590af2ed300fa9b1f00f0fa3f8e31658108c83db4ce1b37875cffb8b69fc1993b46a6c140b9af524e8dee8cbc54f7ed478c01ae2d6c69081941ac2bad0fa5e06c4bcf90f34bd2868765aac296567eb537c89a0cb7b2aaec858880ee925434e340cf98d045afefef045a449b8bac1629265fc1e7b5cbb0574a45759d04071382230f21e0754e785e4ecabeae863347b76dbba00cc5436e8108c3981b05e83ab8a34945ed3ae5dfac6d0d5ed9151395b8483f69161db4112705043a6e208c59773fad10591b5e7d9a75779be784fc02fb402094c852e89577f1978f4e71d73eb5461a0100de5d4b1da140329bb02b8922b330cf2b84e4076768c3cf3c45313dd5acf536"
+ "issued": "2026-11-28T11:45:55+05:00",
+ "sig": "88991e945c3f97315747f46b70c12764fb740d15ba58a7dd0982f0fa2e63582af5b78c76149e39329c271b5e2571f83c87625147c10d563c899c135dc8e81831af79eb4c13df83f2b17fa166fa417bf4ae515ec86b16c55bdb357ffdb2b667fba0dfb5070358dae7ed9b6d5fb39f1bc9e51720be2c186c1516268b97a15ee30299eed3a5b0e5836ba79cfe0a30f0a6f573d87228a8b97f3190804200383966c78271f8d7eb0e6b0103f4e82cebf4780ffc65d1fdfaef1c2940d39138a4ae6c6b21b0283213cf1a72392672383a8fcafbd1bbbc5350bcec15cb4db8343437d8d599d83564789cc4cc27368ffa6a1eeb37d585b6578d9e8eefa8e6b38f3663a239b1b5b6feccdce1bc5ba581914fdd5a15c4068079ea8087ea47220ecc46fabe269599548cca989e1c26d7b920f0ee66a36d98329ec9c8a69ea99074b7148b735bdb1f0d400c9f909d758ddc6e1ee257315c7ef9e1bc28f1fe74f2815be858c5fc77b0923c09213e5e49ebe3dc836fbc6fd44d1e3e026899c14b90a4b22843a80f"
 }
