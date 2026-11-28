@@ -1,7 +1,7 @@
 {
  "v": 1,
  "kind": "modules",
- "serial": 365,
+ "serial": 366,
  "modules": [
   {
    "family": "smi_nvme",
@@ -14620,6 +14620,34 @@
     "I-2026-1127-01-D0E5",
     "I-2026-1127-02-D0E5"
    ]
+  },
+  {
+   "family": "firstchip",
+   "version": 5,
+   "core_api": 1,
+   "feature": "prepare",
+   "period": "2026Q4",
+   "file": "modules/firstchip-5.ssdmod",
+   "size": 1101018,
+   "sha256": "999d973cabf302d816408e797296c86c06a108ba9f00b52334c26bd55c15f8bd",
+   "modules": [
+    "controllers.firstchip.fc.plugin",
+    "controllers.firstchip.fc.prepare",
+    "controllers.firstchip.fc.reader",
+    "controllers.firstchip.fc.source",
+    "controllers.firstchip.fc.u3_cache4k",
+    "controllers.firstchip.fc.u3_ladder",
+    "controllers.firstchip.fc.u3_prepare",
+    "controllers.firstchip.fc.u3_scan",
+    "controllers.firstchip.fc.u3_source",
+    "controllers.firstchip.fc.word_cache"
+   ],
+   "restart": "suggest",
+   "payload": "pyd",
+   "issued": "2026-11-28T11:56:55+05:00",
+   "min_build": 228,
+   "python_tag": "cp313-win_amd64",
+   "note": "FirstChip: дочитка с порогами — кэш закрытых слов, число бит в ядро, уровень блока первым, причина отказа с перечнем уровней"
   }
  ],
  "revoked": [
@@ -14700,6 +14728,6 @@
    "version": 24
   }
  ],
- "issued": "2026-11-28T11:45:55+05:00",
- "sig": "88991e945c3f97315747f46b70c12764fb740d15ba58a7dd0982f0fa2e63582af5b78c76149e39329c271b5e2571f83c87625147c10d563c899c135dc8e81831af79eb4c13df83f2b17fa166fa417bf4ae515ec86b16c55bdb357ffdb2b667fba0dfb5070358dae7ed9b6d5fb39f1bc9e51720be2c186c1516268b97a15ee30299eed3a5b0e5836ba79cfe0a30f0a6f573d87228a8b97f3190804200383966c78271f8d7eb0e6b0103f4e82cebf4780ffc65d1fdfaef1c2940d39138a4ae6c6b21b0283213cf1a72392672383a8fcafbd1bbbc5350bcec15cb4db8343437d8d599d83564789cc4cc27368ffa6a1eeb37d585b6578d9e8eefa8e6b38f3663a239b1b5b6feccdce1bc5ba581914fdd5a15c4068079ea8087ea47220ecc46fabe269599548cca989e1c26d7b920f0ee66a36d98329ec9c8a69ea99074b7148b735bdb1f0d400c9f909d758ddc6e1ee257315c7ef9e1bc28f1fe74f2815be858c5fc77b0923c09213e5e49ebe3dc836fbc6fd44d1e3e026899c14b90a4b22843a80f"
+ "issued": "2026-11-28T11:58:29+05:00",
+ "sig": "508f5a5af5e4d7edf4ff5337425ceaf04aa5a33a63df9d932ca730e781b201e7525fe1fa0786a2f1a8fb89c60e7dbdae74dd0f915bed2dee0da2666225a130bfa322cac29a67a5e4be79354936d4271e858b5f6bfdb92d7975f382ca74dcba452e70f85a3a9fe115fdedbb6e9d649ca7c76584449d271d6f301971cdc292de075691d9361be2ffbf52128b62f3cf518874b125f56a0fd3e7d41a13a542c93f3f04521c36eeff9ee956580bb53c795489f74b968d2b79794f45be69af22cc45058410442c664a444de712974f0e8cd955e411726d0cdc05bcf3be56976c94a74d48e125b77d1146eb25e956a18d18058ce20bd23694d62be49906bfb10791a5b374f8096928e8f13d827bdac125821a55ab07429f06010d49af7cdd4403558fd5eb0b142810b9342dc331e3e51527b7fcd47a5ff8026f98ddf58223ac81b91afc566eb3b9b6afcde265eab90347564fd7b366d161fe425d180e06d3f68f81291d02cbf2b76cbe9959a12ad8490a178d2557ce3e0c9335c480c176920b30245113"
 }
